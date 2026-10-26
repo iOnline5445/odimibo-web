@@ -1,4 +1,134 @@
-window.AMIIBO_FULL_DB = [
+window.AMIIBO_ALL_DATABASE = window.AMIIBO_FULL_DB = [
+  {
+    "name": "Alm - ผู้กล้าแห่ง Valentia (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21060000",
+    "tail": "03601202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png",
+    "rewards": "【Engage】ตั๋วแลกชุดและเพลง Emblem 【Three Houses】เพลง March to Deliverance + Holy Tomb 【Echoes】ปลดล็อกดันเจี้ยนลับ Duma's Ordeal"
+  },
+  {
+    "name": "Byleth - อาจารย์แห่งตระกูลทั้งสาม (Engage / Three Houses / Three Hopes)",
+    "game": "Fire Emblem: Engage / Three Houses / Three Hopes / Smash Bros.",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "210b0000",
+    "tail": "03a50002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_210b0000-03a50002.png",
+    "rewards": "【Engage】ชุด Academy (Byleth) + เพลง Fódlan Winds + Fashion & Music Ticket 【Three Hopes】อาวุธระดับสูงและแร่ตีบวกที่ค่ายพักแรม"
+  },
+  {
+    "name": "Celica - นักบวชหญิงแห่ง Valentia (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21070000",
+    "tail": "03611202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21070000-03611202.png",
+    "rewards": "【Engage】ชุด Celica + เพลง With Mila's Divine Protection 【Three Houses】เพลงรบพิเศษ + Holy Tomb 【Echoes】ปลดล็อกดันเจี้ยนลับ Mila's Ordeal 【Warriors】ดาบ Golden Dagger"
+  },
+  {
+    "name": "Chrom (รุ่น Fire Emblem Series) - ใช้ได้ทุกภาค Fire Emblem",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21080000",
+    "tail": "036f1202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-036f1202.png",
+    "rewards": "【Engage】ตั๋วแลกชุดและเพลง Emblem 【Three Houses】เพลง Id (Purpose) + Holy Tomb 【Warriors】ปลดล็อกอาวุธ Chrom's Training Sword 【Echoes】อัญเชิญ Chrom"
+  },
+  {
+    "name": "Chrom (รุ่น Smash Bros.) - ใช้ได้ทุกภาค Fire Emblem",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21080000",
+    "tail": "03880002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png",
+    "rewards": "【Engage】ตั๋วแลกชุดและเพลง Emblem 【Three Houses】เพลง Id (Purpose) + Holy Tomb 【Warriors】ปลดล็อกอาวุธ Chrom's Training Sword 【Echoes】อัญเชิญ Chrom"
+  },
+  {
+    "name": "Corrin (ชาย) - สายเลือดมังกร (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21050000",
+    "tail": "025a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050000-025a0002.png",
+    "rewards": "【Engage】ชุด Corrin + เพลง Lost in Thoughts All Alone 【Three Houses】เพลง A Dark Fall + Holy Tomb 【Warriors】ดาบ Yato 【Echoes】อัญเชิญวิญญาณ Corrin"
+  },
+  {
+    "name": "Corrin Player 2 (หญิง) - สายเลือดมังกร (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21050100",
+    "tail": "03630002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050100-03630002.png",
+    "rewards": "【Engage】ชุด Corrin + เพลง Lost in Thoughts All Alone 【Three Houses】เพลง Alight (Storm) + Holy Tomb 【Warriors】ดาบ Yato 【Echoes】อัญเชิญวิญญาณ Corrin"
+  },
+  {
+    "name": "Ike - ทหารรับจ้างผู้กล้า (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21010000",
+    "tail": "00180002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21010000-00180002.png",
+    "rewards": "【Engage】ชุด Ike + เพลง Eternal Bond 【Three Houses】เพลง Eternal Bond + Holy Tomb 【Warriors】ดาบ Ragnell 【Fates/Echoes】เชิญ Ike เข้ากองทัพ"
+  },
+  {
+    "name": "Lucina - เจ้าหญิงข้ามเวลา (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21020000",
+    "tail": "00290002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21020000-00290002.png",
+    "rewards": "【Engage】ชุด Lucina + เพลง Destiny (Ablaze) 【Three Houses】เพลง Destiny + Holy Tomb 【Warriors】ดาบ Parallel Falchion 【Fates/Echoes】เชิญ Lucina เข้าทีม"
+  },
+  {
+    "name": "Marth - เจ้าชายผู้กล้า (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21000000",
+    "tail": "000b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png",
+    "rewards": "【Engage】ชุด Marth + เพลง Beneath a New Light 【Three Houses】เพลงรบพิเศษ + ของใน Holy Tomb 【Warriors/Three Hopes】ดาบ Falchion 【Fates/Echoes】เชิญ Marth เข้าทีม"
+  },
+  {
+    "name": "Robin - กุนซือเวทมนตร์ (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21030000",
+    "tail": "002a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png",
+    "rewards": "【Engage】ตั๋วแลกชุดและเพลง Emblem 【Three Houses】เพลง Conquest (Ablaze) + Holy Tomb 【Warriors】ดาบสายฟ้า Levin Sword 【Fates/Echoes】เชิญ Robin เข้าทีม"
+  },
+  {
+    "name": "Roy - ราชสีห์หนุ่ม (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21040000",
+    "tail": "02520002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png",
+    "rewards": "【Engage】ชุด Roy + เพลง Beneath a New Light 【Three Houses】เพลงรบพิเศษ + Holy Tomb 【Warriors/Three Hopes】ดาบ Binding Blade 【Echoes】อัญเชิญวิญญาณ Roy ช่วยรบ"
+  },
+  {
+    "name": "Tiki - ธิดามังกรเทพ (ใช้ได้ทุกภาค Fire Emblem)",
+    "game": "Fire Emblem: Engage / Three Houses / Warriors / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21090000",
+    "tail": "03701202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png",
+    "rewards": "【Engage】ตั๋วแลกชุดและเพลง Emblem 【Three Houses】เพลงรบพิเศษ + Holy Tomb 【Warriors】ปลดล็อก Tiki's Tear / Divinestone 【Echoes】อัญเชิญวิญญาณ Tiki"
+  },
   {
     "name": "Bokoblin - Breath of the Wild",
     "game": "The Legend of Zelda: Breath of the Wild",
@@ -120,6 +250,62 @@ window.AMIIBO_FULL_DB = [
     "rewards": "ผ้าคลุมร่มชูชีพ Champion's Leathers Fabric, ดาบ Knight's Broadsword, เห็ดและวัตถุดิบ"
   },
   {
+    "name": "Mineru's Construct (Sage of Spirit) - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "010d0000",
+    "tail": "04a70902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
+    "rewards": "ผ้าเครื่องร่อน Mineru's Construct Fabric, อาวุธ Zonai, แร่ Zonaite & วัตถุดิบโบราณ",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Riju (Sage of Lightning) - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "01090000",
+    "tail": "04a30902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01090000-04a30902.png",
+    "rewards": "ผ้าเครื่องร่อน Riju Fabric, ดาบโล่เผ่า Gerudo (Gerudo Scimitar/Shield), ผลไม้สายฟ้า",
+    "is2026": true
+  },
+  {
+    "name": "Sidon (Sage of Water) - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "010a0000",
+    "tail": "04a40902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
+    "rewards": "ผ้าเครื่องร่อน Sidon Fabric, หอกเผ่า Zora (Zora Spear/Sword), ปลาและวัตถุดิบน้ำ",
+    "is2026": true
+  },
+  {
+    "name": "Tulin (Sage of Wind) - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "010b0000",
+    "tail": "04a50902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010b0000-04a50902.png",
+    "rewards": "ผ้าเครื่องร่อน Tulin Fabric, ธนูเผ่า Rito (Swallow/Falcon Bow), ลูกธนูและเนื้อนก",
+    "is2026": true
+  },
+  {
+    "name": "Yunobo (Sage of Fire) - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "010c0000",
+    "tail": "04a60902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
+    "rewards": "ผ้าเครื่องร่อน Yunobo Fabric, ดาบทุบหินเผ่า Goron (Cobble Crusher), แร่เพชรพลอย",
+    "is2026": true
+  },
+  {
     "name": "Zelda - Tears of the Kingdom",
     "game": "The Legend of Zelda: Tears of the Kingdom",
     "series": "Legend Of Zelda",
@@ -130,2610 +316,231 @@ window.AMIIBO_FULL_DB = [
     "rewards": "ผ้าคลุมร่มชูชีพ Princess Zelda Fabric, ธนูหายาก, กองสมุนไพรและอัญมณี"
   },
   {
-    "name": "Marth (Emblem of Beginnings)",
-    "game": "Fire Emblem Engage / Shadow Dragon",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21000000",
-    "tail": "000b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png",
-    "rewards": "ชุด Lodestar (Marth Outfit) + เพลง Beneath a New Light + Fashion & Music Ticket ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "Celica (Emblem of Echoes)",
-    "game": "Fire Emblem Engage / Echoes",
-    "series": "Fire Emblem",
-    "cat": "Fire Emblem",
-    "head": "21070000",
-    "tail": "03611202",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21070000-03611202.png",
-    "rewards": "ชุด Priestess (Celica Outfit) + เพลง With Mila's Divine Protection + Fashion & Music Ticket"
-  },
-  {
-    "name": "Roy (Emblem of Binding)",
-    "game": "Fire Emblem Engage / Binding Blade",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21040000",
-    "tail": "02520002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png",
-    "rewards": "ชุด Young Lion (Roy Outfit) + เพลง Beneath a New Light + Fashion & Music Ticket"
-  },
-  {
-    "name": "Ike (Emblem of Radiance)",
-    "game": "Fire Emblem Engage / Radiant Dawn",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21010000",
-    "tail": "00180002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21010000-00180002.png",
-    "rewards": "ชุด Radiant Hero (Ike Outfit) + เพลง Eternal Bond + Fashion & Music Ticket"
-  },
-  {
-    "name": "Lucina (Emblem of Awakening)",
-    "game": "Fire Emblem Engage / Awakening",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21020000",
-    "tail": "00290002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21020000-00290002.png",
-    "rewards": "ชุด Noble Rapier (Lucina Outfit) + เพลง Destiny (Ablaze) + Fashion & Music Ticket"
-  },
-  {
-    "name": "Corrin - Male (Emblem of Fates)",
-    "game": "Fire Emblem Engage / Fates",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21050000",
-    "tail": "025a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050000-025a0002.png",
-    "rewards": "ชุด Crux of Fate (Corrin Outfit) + เพลง Lost in Thoughts All Alone + Fashion & Music Ticket"
-  },
-  {
-    "name": "Corrin - Player 2 Female (Emblem of Fates)",
-    "game": "Fire Emblem Engage / Fates",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21050100",
-    "tail": "03630002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050100-03630002.png",
-    "rewards": "ชุด Crux of Fate (Corrin Outfit) + เพลง Lost in Thoughts All Alone + Fashion & Music Ticket"
-  },
-  {
-    "name": "Byleth (Emblem of the Academy)",
-    "game": "Fire Emblem Engage / Three Houses",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "210b0000",
-    "tail": "03a50002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_210b0000-03a50002.png",
-    "rewards": "ชุด Academy (Byleth Outfit) + เพลง Fódlan Winds + Fashion & Music Ticket"
-  },
-  {
-    "name": "Chrom - Fire Emblem Series (Emblem of Bonds)",
-    "game": "Fire Emblem Engage / Awakening",
-    "series": "Fire Emblem",
-    "cat": "Fire Emblem",
-    "head": "21080000",
-    "tail": "036f1202",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-036f1202.png",
-    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "Chrom - Smash Bros. (Emblem of Bonds)",
-    "game": "Fire Emblem Engage / Awakening",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21080000",
-    "tail": "03880002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png",
-    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "Robin (Emblem of Bonds)",
-    "game": "Fire Emblem Engage / Awakening",
-    "series": "Super Smash Bros.",
-    "cat": "Fire Emblem",
-    "head": "21030000",
-    "tail": "002a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png",
-    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "Tiki (Emblem of the Divine Dragon)",
-    "game": "Fire Emblem Engage / Mystery of the Emblem",
-    "series": "Fire Emblem",
-    "cat": "Fire Emblem",
-    "head": "21090000",
-    "tail": "03701202",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png",
-    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "Alm (Fire Emblem Echoes)",
-    "game": "Fire Emblem Engage / Echoes",
-    "series": "Fire Emblem",
-    "cat": "Fire Emblem",
-    "head": "21060000",
-    "tail": "03601202",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png",
-    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
-  },
-  {
-    "name": "8-Bit Link",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "034f0902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034f0902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Ganondorf",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01020100",
-    "tail": "001b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "00040002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link - Link's Awakening",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "03990902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03990902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link - Majora's Mask",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "034c0902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link - Ocarina of Time",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "034b0902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link - Skyward Sword",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "034e0902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Link - Twilight Princess",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "034d0902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034d0902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Riju",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01090000",
-    "tail": "04a30902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01090000-04a30902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Sheik",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01010100",
-    "tail": "00170002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010100-00170002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Sidon",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "010a0000",
-    "tail": "04a40902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Toon Link",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01000100",
-    "tail": "00160002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-00160002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Toon Link - The Wind Waker",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01000100",
-    "tail": "03500902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-03500902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Toon Zelda - The Wind Waker",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01010000",
-    "tail": "03520902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03520902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Tulin",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "010b0000",
-    "tail": "04a50902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010b0000-04a50902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Young Link",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01000000",
-    "tail": "037c0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-037c0002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Yunobo",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "010c0000",
-    "tail": "04a60902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Zelda",
-    "game": "The Legend of Zelda",
-    "series": "Super Smash Bros.",
-    "cat": "Zelda",
-    "head": "01010000",
-    "tail": "000e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-000e0002.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "Zelda & Loftwing",
-    "game": "The Legend of Zelda",
-    "series": "Legend Of Zelda",
-    "cat": "Zelda",
-    "head": "01010300",
-    "tail": "04140902",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png",
-    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
-  },
-  {
-    "name": "8-Bit Mario Classic Color",
-    "game": "Super Mario",
-    "series": "8-bit Mario",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "02380602",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png"
-  },
-  {
-    "name": "8-Bit Mario Modern Color",
-    "game": "Super Mario",
-    "series": "8-bit Mario",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "02390602",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png"
-  },
-  {
-    "name": "Baby Luigi - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cd0201",
-    "tail": "02ab0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0201-02ab0e02.png"
-  },
-  {
-    "name": "Baby Luigi - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cd0401",
-    "tail": "02ad0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0401-02ad0e02.png"
-  },
-  {
-    "name": "Baby Luigi - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cd0501",
-    "tail": "02ae0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0501-02ae0e02.png"
-  },
-  {
-    "name": "Baby Luigi - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cd0101",
-    "tail": "02aa0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0101-02aa0e02.png"
-  },
-  {
-    "name": "Baby Luigi - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cd0301",
-    "tail": "02ac0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0301-02ac0e02.png"
-  },
-  {
-    "name": "Baby Mario - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cc0201",
-    "tail": "02a60e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png"
-  },
-  {
-    "name": "Baby Mario - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cc0401",
-    "tail": "02a80e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png"
-  },
-  {
-    "name": "Baby Mario - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cc0501",
-    "tail": "02a90e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png"
-  },
-  {
-    "name": "Baby Mario - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cc0101",
-    "tail": "02a50e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0101-02a50e02.png"
-  },
-  {
-    "name": "Baby Mario - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cc0301",
-    "tail": "02a70e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0301-02a70e02.png"
-  },
-  {
-    "name": "Birdo - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ce0201",
-    "tail": "02b00e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png"
-  },
-  {
-    "name": "Birdo - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ce0401",
-    "tail": "02b20e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png"
-  },
-  {
-    "name": "Birdo - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ce0501",
-    "tail": "02b30e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0501-02b30e02.png"
-  },
-  {
-    "name": "Birdo - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ce0101",
-    "tail": "02af0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0101-02af0e02.png"
-  },
-  {
-    "name": "Birdo - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ce0301",
-    "tail": "02b10e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png"
-  },
-  {
-    "name": "Boo",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00170000",
-    "tail": "02680102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00170000-02680102.png"
-  },
-  {
-    "name": "Boo - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cb0201",
-    "tail": "02a10e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0201-02a10e02.png"
-  },
-  {
-    "name": "Boo - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cb0401",
-    "tail": "02a30e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png"
-  },
-  {
-    "name": "Boo - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cb0501",
-    "tail": "02a40e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png"
-  },
-  {
-    "name": "Boo - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cb0101",
-    "tail": "02a00e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png"
-  },
-  {
-    "name": "Boo - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cb0301",
-    "tail": "02a20e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png"
-  },
-  {
-    "name": "Bowser",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00050000",
-    "tail": "00140002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00140002.png"
-  },
-  {
-    "name": "Bowser",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00050000",
-    "tail": "00390102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00390102.png"
-  },
-  {
-    "name": "Bowser - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c90201",
-    "tail": "02970e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png"
-  },
-  {
-    "name": "Bowser - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c90401",
-    "tail": "02990e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png"
-  },
-  {
-    "name": "Bowser - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c90501",
-    "tail": "029a0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90501-029a0e02.png"
-  },
-  {
-    "name": "Bowser - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c90101",
-    "tail": "02960e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90101-02960e02.png"
-  },
-  {
-    "name": "Bowser - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c90301",
-    "tail": "02980e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90301-02980e02.png"
-  },
-  {
-    "name": "Bowser - Wedding",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00050000",
-    "tail": "03730102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-03730102.png"
-  },
-  {
-    "name": "Bowser Jr.",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00060000",
-    "tail": "00150002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00060000-00150002.png"
-  },
-  {
-    "name": "Bowser Jr. - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ca0201",
-    "tail": "029c0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png"
-  },
-  {
-    "name": "Bowser Jr. - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ca0401",
-    "tail": "029e0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png"
-  },
-  {
-    "name": "Bowser Jr. - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ca0501",
-    "tail": "029f0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png"
-  },
-  {
-    "name": "Bowser Jr. - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ca0101",
-    "tail": "029b0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png"
-  },
-  {
-    "name": "Bowser Jr. - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09ca0301",
-    "tail": "029d0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png"
-  },
-  {
-    "name": "Daisy",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00130000",
-    "tail": "037a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png"
-  },
-  {
-    "name": "Daisy",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00130000",
-    "tail": "02660102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-02660102.png"
-  },
-  {
-    "name": "Daisy - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c30201",
-    "tail": "02790e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30201-02790e02.png"
-  },
-  {
-    "name": "Daisy - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c30401",
-    "tail": "027b0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png"
-  },
-  {
-    "name": "Daisy - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c30501",
-    "tail": "027c0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png"
-  },
-  {
-    "name": "Daisy - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00130003",
-    "tail": "039eff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130003-039eff02.png"
-  },
-  {
-    "name": "Daisy - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c30101",
-    "tail": "02780e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30101-02780e02.png"
-  },
-  {
-    "name": "Daisy - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c30301",
-    "tail": "027a0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30301-027a0e02.png"
-  },
-  {
-    "name": "Diddy Kong",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00090000",
-    "tail": "000d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-000d0002.png"
-  },
-  {
-    "name": "Diddy Kong",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00090000",
-    "tail": "02650102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-02650102.png"
-  },
-  {
-    "name": "Diddy Kong - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c80201",
-    "tail": "02920e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png"
-  },
-  {
-    "name": "Diddy Kong - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c80401",
-    "tail": "02940e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80401-02940e02.png"
-  },
-  {
-    "name": "Diddy Kong - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c80501",
-    "tail": "02950e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80501-02950e02.png"
-  },
-  {
-    "name": "Diddy Kong - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00090003",
-    "tail": "0432ff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090003-0432ff02.png"
-  },
-  {
-    "name": "Diddy Kong - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c80101",
-    "tail": "02910e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80101-02910e02.png"
-  },
-  {
-    "name": "Diddy Kong - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c80301",
-    "tail": "02930e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80301-02930e02.png"
-  },
-  {
-    "name": "Donkey Kong",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00080000",
-    "tail": "00030002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png"
-  },
-  {
-    "name": "Donkey Kong",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00080000",
-    "tail": "02640102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png"
-  },
-  {
-    "name": "Donkey Kong & Pauline",
-    "game": "Super Mario",
-    "series": "Donkey Kong",
-    "cat": "Mario",
-    "head": "00080100",
-    "tail": "042f1a02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080100-042f1a02.png"
-  },
-  {
-    "name": "Donkey Kong - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c70201",
-    "tail": "028d0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70201-028d0e02.png"
-  },
-  {
-    "name": "Donkey Kong - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c70401",
-    "tail": "028f0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70401-028f0e02.png"
-  },
-  {
-    "name": "Donkey Kong - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c70501",
-    "tail": "02900e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png"
-  },
-  {
-    "name": "Donkey Kong - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00080003",
-    "tail": "0431ff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png"
-  },
-  {
-    "name": "Donkey Kong - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c70101",
-    "tail": "028c0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70101-028c0e02.png"
-  },
-  {
-    "name": "Donkey Kong - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c70301",
-    "tail": "028e0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70301-028e0e02.png"
-  },
-  {
-    "name": "Dr. Mario",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00000100",
-    "tail": "00190002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000100-00190002.png"
-  },
-  {
-    "name": "Golden - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00000003",
-    "tail": "0430ff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-0430ff02.png"
-  },
-  {
-    "name": "Goomba",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00150000",
-    "tail": "03670102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png"
-  },
-  {
-    "name": "Green Yarn Yoshi",
-    "game": "Super Mario",
-    "series": "Yoshi's Woolly World",
-    "cat": "Mario",
-    "head": "00030102",
-    "tail": "00410302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png"
-  },
-  {
-    "name": "Hammer Slam Bowser",
-    "game": "Super Mario",
-    "series": "Skylanders",
-    "cat": "Mario",
-    "head": "0005ff00",
-    "tail": "023a0702",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png"
-  },
-  {
-    "name": "King K. Rool",
-    "game": "Donkey Kong",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00c00000",
-    "tail": "037b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png"
-  },
-  {
-    "name": "Koopa Troopa",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00230000",
-    "tail": "03680102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png"
-  },
-  {
-    "name": "Light Blue Yarn Yoshi",
-    "game": "Super Mario",
-    "series": "Yoshi's Woolly World",
-    "cat": "Mario",
-    "head": "00030102",
-    "tail": "00430302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00430302.png"
-  },
-  {
-    "name": "Luigi",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00010000",
-    "tail": "00350102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png"
-  },
-  {
-    "name": "Luigi",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00010000",
-    "tail": "000c0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-000c0002.png"
-  },
-  {
-    "name": "Luigi - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c10201",
-    "tail": "026f0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png"
-  },
-  {
-    "name": "Luigi - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c10401",
-    "tail": "02710e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10401-02710e02.png"
-  },
-  {
-    "name": "Luigi - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c10501",
-    "tail": "02720e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10501-02720e02.png"
-  },
-  {
-    "name": "Luigi - My Mario Wooden Blocks",
-    "game": "Super Mario",
-    "series": "My Mario Wooden Blocks",
-    "cat": "Mario",
-    "head": "00010004",
-    "tail": "04401c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png"
-  },
-  {
-    "name": "Luigi - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00010003",
-    "tail": "039cff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png"
-  },
-  {
-    "name": "Luigi - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c10101",
-    "tail": "026e0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10101-026e0e02.png"
-  },
-  {
-    "name": "Luigi - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c10301",
-    "tail": "02700e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10301-02700e02.png"
-  },
-  {
-    "name": "Mario",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "00340102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png"
-  },
-  {
-    "name": "Mario",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "00000002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png"
-  },
-  {
-    "name": "Mario - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c00201",
-    "tail": "026a0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png"
-  },
-  {
-    "name": "Mario - Cat",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00000300",
-    "tail": "03a60102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png"
-  },
-  {
-    "name": "Mario - Gold Edition",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "003c0102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png"
-  },
-  {
-    "name": "Mario - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c00401",
-    "tail": "026c0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00401-026c0e02.png"
-  },
-  {
-    "name": "Mario - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c00501",
-    "tail": "026d0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00501-026d0e02.png"
-  },
-  {
-    "name": "Mario - My Mario Wooden Blocks",
-    "game": "Super Mario",
-    "series": "My Mario Wooden Blocks",
-    "cat": "Mario",
-    "head": "00000004",
-    "tail": "043f1c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000004-043f1c02.png"
-  },
-  {
-    "name": "Mario - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00000003",
-    "tail": "039bff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-039bff02.png"
-  },
-  {
-    "name": "Mario - Silver Edition",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "003d0102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png"
-  },
-  {
-    "name": "Mario - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c00101",
-    "tail": "02690e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png"
-  },
-  {
-    "name": "Mario - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c00301",
-    "tail": "026b0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00301-026b0e02.png"
-  },
-  {
-    "name": "Mario - Wedding",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00000000",
-    "tail": "03710102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png"
-  },
-  {
-    "name": "Mega Yarn Yoshi",
-    "game": "Super Mario",
-    "series": "Yoshi's Woolly World",
-    "cat": "Mario",
-    "head": "00030102",
-    "tail": "023e0302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-023e0302.png"
-  },
-  {
-    "name": "Metal Mario - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d00201",
-    "tail": "02ba0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png"
-  },
-  {
-    "name": "Metal Mario - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d00401",
-    "tail": "02bc0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png"
-  },
-  {
-    "name": "Metal Mario - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d00501",
-    "tail": "02bd0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png"
-  },
-  {
-    "name": "Metal Mario - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d00101",
-    "tail": "02b90e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png"
-  },
-  {
-    "name": "Metal Mario - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d00301",
-    "tail": "02bb0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png"
-  },
-  {
-    "name": "Peach",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00020000",
-    "tail": "00360102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png"
-  },
-  {
-    "name": "Peach",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00020000",
-    "tail": "00010002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00010002.png"
-  },
-  {
-    "name": "Peach - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c20201",
-    "tail": "02740e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png"
-  },
-  {
-    "name": "Peach - Cat",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00020100",
-    "tail": "03a70102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020100-03a70102.png"
-  },
-  {
-    "name": "Peach - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c20401",
-    "tail": "02760e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png"
-  },
-  {
-    "name": "Peach - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c20501",
-    "tail": "02770e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png"
-  },
-  {
-    "name": "Peach - My Mario Wooden Blocks",
-    "game": "Super Mario",
-    "series": "My Mario Wooden Blocks",
-    "cat": "Mario",
-    "head": "00020004",
-    "tail": "04411c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020004-04411c02.png"
-  },
-  {
-    "name": "Peach - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00020003",
-    "tail": "039dff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png"
-  },
-  {
-    "name": "Peach - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c20101",
-    "tail": "02730e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png"
-  },
-  {
-    "name": "Peach - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c20301",
-    "tail": "02750e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png"
-  },
-  {
-    "name": "Peach - Wedding",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00020000",
-    "tail": "03720102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png"
-  },
-  {
-    "name": "Peaches",
-    "game": "Animal Crossing",
-    "series": "Animal Crossing",
-    "cat": "Mario",
-    "head": "03ac0001",
-    "tail": "01880502",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png"
-  },
-  {
-    "name": "Pink Gold Peach - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d10201",
-    "tail": "02bf0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png"
-  },
-  {
-    "name": "Pink Gold Peach - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d10401",
-    "tail": "02c10e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10401-02c10e02.png"
-  },
-  {
-    "name": "Pink Gold Peach - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d10501",
-    "tail": "02c20e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10501-02c20e02.png"
-  },
-  {
-    "name": "Pink Gold Peach - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d10101",
-    "tail": "02be0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10101-02be0e02.png"
-  },
-  {
-    "name": "Pink Gold Peach - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09d10301",
-    "tail": "02c00e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png"
-  },
-  {
-    "name": "Pink Yarn Yoshi",
-    "game": "Super Mario",
-    "series": "Yoshi's Woolly World",
-    "cat": "Mario",
-    "head": "00030102",
-    "tail": "00420302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00420302.png"
-  },
-  {
-    "name": "Piranha Plant",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00240000",
-    "tail": "038d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png"
-  },
-  {
-    "name": "Rosalina",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00040000",
-    "tail": "02620102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040000-02620102.png"
-  },
-  {
-    "name": "Rosalina & Luma",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00040100",
-    "tail": "00130002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png"
-  },
-  {
-    "name": "Rosalina - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cf0201",
-    "tail": "02b50e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png"
-  },
-  {
-    "name": "Rosalina - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cf0401",
-    "tail": "02b70e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0401-02b70e02.png"
-  },
-  {
-    "name": "Rosalina - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cf0501",
-    "tail": "02b80e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0501-02b80e02.png"
-  },
-  {
-    "name": "Rosalina - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cf0101",
-    "tail": "02b40e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png"
-  },
-  {
-    "name": "Rosalina - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09cf0301",
-    "tail": "02b60e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0301-02b60e02.png"
-  },
-  {
-    "name": "Toad",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "000a0000",
-    "tail": "00380102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png"
-  },
-  {
-    "name": "Toad - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "000a0003",
-    "tail": "03a0ff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png"
-  },
-  {
-    "name": "Turbo Charge Donkey Kong",
-    "game": "Super Mario",
-    "series": "Skylanders",
-    "cat": "Mario",
-    "head": "0008ff00",
-    "tail": "023b0702",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0008ff00-023b0702.png"
-  },
-  {
-    "name": "Waluigi",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00140000",
-    "tail": "02670102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00140000-02670102.png"
-  },
-  {
-    "name": "Waluigi - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c60201",
-    "tail": "02880e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60201-02880e02.png"
-  },
-  {
-    "name": "Waluigi - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c60401",
-    "tail": "028a0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png"
-  },
-  {
-    "name": "Waluigi - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c60501",
-    "tail": "028b0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60501-028b0e02.png"
-  },
-  {
-    "name": "Waluigi - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c60101",
-    "tail": "02870e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60101-02870e02.png"
-  },
-  {
-    "name": "Waluigi - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c60301",
-    "tail": "02890e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png"
-  },
-  {
-    "name": "Wario",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00070000",
-    "tail": "001a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-001a0002.png"
-  },
-  {
-    "name": "Wario",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00070000",
-    "tail": "02630102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-02630102.png"
-  },
-  {
-    "name": "Wario - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c50201",
-    "tail": "02830e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50201-02830e02.png"
-  },
-  {
-    "name": "Wario - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c50401",
-    "tail": "02850e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50401-02850e02.png"
-  },
-  {
-    "name": "Wario - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c50501",
-    "tail": "02860e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png"
-  },
-  {
-    "name": "Wario - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c50101",
-    "tail": "02820e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50101-02820e02.png"
-  },
-  {
-    "name": "Wario - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c50301",
-    "tail": "02840e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50301-02840e02.png"
-  },
-  {
-    "name": "Yoshi",
-    "game": "Super Mario",
-    "series": "Super Smash Bros.",
-    "cat": "Mario",
-    "head": "00030000",
-    "tail": "00020002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png"
-  },
-  {
-    "name": "Yoshi",
-    "game": "Super Mario",
-    "series": "Super Mario Bros.",
-    "cat": "Mario",
-    "head": "00030000",
-    "tail": "00370102",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00370102.png"
-  },
-  {
-    "name": "Yoshi - Baseball",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c40201",
-    "tail": "027e0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40201-027e0e02.png"
-  },
-  {
-    "name": "Yoshi - Golf",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c40401",
-    "tail": "02800e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png"
-  },
-  {
-    "name": "Yoshi - Horse Racing",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c40501",
-    "tail": "02810e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png"
-  },
-  {
-    "name": "Yoshi - My Mario Wooden Blocks",
-    "game": "Super Mario",
-    "series": "My Mario Wooden Blocks",
-    "cat": "Mario",
-    "head": "00030004",
-    "tail": "04421c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png"
-  },
-  {
-    "name": "Yoshi - Power Up Band",
-    "game": "Super Mario",
-    "series": "Super Nintendo World",
-    "cat": "Mario",
-    "head": "00030003",
-    "tail": "039fff02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png"
-  },
-  {
-    "name": "Yoshi - Soccer",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c40101",
-    "tail": "027d0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png"
-  },
-  {
-    "name": "Yoshi - Tennis",
-    "game": "Mario Sports Superstars",
-    "series": "Mario Sports Superstars",
-    "cat": "Mario",
-    "head": "09c40301",
-    "tail": "027f0e02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40301-027f0e02.png"
-  },
-  {
-    "name": "Alex",
-    "game": "Minecraft",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3dc10000",
-    "tail": "04230002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png"
-  },
-  {
-    "name": "Banjo & Kazooie",
-    "game": "Banjo Kazooie",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3b400000",
-    "tail": "03a30002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3b400000-03a30002.png"
-  },
-  {
-    "name": "Bayonetta",
-    "game": "Bayonetta",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "32400000",
-    "tail": "025b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400000-025b0002.png"
-  },
-  {
-    "name": "Bayonetta - Player 2",
-    "game": "Bayonetta",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "32400100",
-    "tail": "03640002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png"
-  },
-  {
-    "name": "Captain Falcon",
-    "game": "F-Zero",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "06000000",
-    "tail": "00120002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png"
-  },
-  {
-    "name": "Charizard",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19060000",
-    "tail": "00240002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png"
-  },
-  {
-    "name": "Cloud",
-    "game": "Final Fantasy",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "36000000",
-    "tail": "02590002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png"
-  },
-  {
-    "name": "Cloud - Player 2",
-    "game": "Final Fantasy",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "36000100",
-    "tail": "03620002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png"
-  },
-  {
-    "name": "Dark Pit",
-    "game": "Kid Icarus",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07410000",
-    "tail": "00200002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png"
-  },
-  {
-    "name": "Dark Samus",
-    "game": "Metroid",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05c30000",
-    "tail": "03800002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c30000-03800002.png"
-  },
-  {
-    "name": "Duck Hunt",
-    "game": "Classic Nintendo",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07820000",
-    "tail": "002f0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png"
-  },
-  {
-    "name": "Falco",
-    "game": "Star Fox",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05810000",
-    "tail": "001c0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png"
-  },
-  {
-    "name": "Fox",
-    "game": "Star Fox",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05800000",
-    "tail": "00050002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png"
-  },
-  {
-    "name": "Greninja",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1b920000",
-    "tail": "00250002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png"
-  },
-  {
-    "name": "Hero",
-    "game": "Dragon Quest",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "36400000",
-    "tail": "03a20002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png"
-  },
-  {
-    "name": "Ice Climbers",
-    "game": "Classic Nintendo",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "078f0000",
-    "tail": "03810002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png"
-  },
-  {
-    "name": "Incineroar",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1bd70000",
-    "tail": "03860002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1bd70000-03860002.png"
-  },
-  {
-    "name": "Inkling",
-    "game": "Splatoon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "08000100",
-    "tail": "03820002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03820002.png"
-  },
-  {
-    "name": "Isabelle",
-    "game": "Animal Crossing",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "01810000",
-    "tail": "037d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-037d0002.png"
-  },
-  {
-    "name": "Ivysaur",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19020000",
-    "tail": "03830002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19020000-03830002.png"
-  },
-  {
-    "name": "Jigglypuff",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19270000",
-    "tail": "00260002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19270000-00260002.png"
-  },
-  {
-    "name": "Joker",
-    "game": "Persona",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3a000000",
-    "tail": "03a10002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3a000000-03a10002.png"
-  },
-  {
-    "name": "Kazuya",
-    "game": "Tekken",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "33c00000",
-    "tail": "04200002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33c00000-04200002.png"
-  },
-  {
-    "name": "Ken",
-    "game": "Street Fighter",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "34c10000",
-    "tail": "03890002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10000-03890002.png"
-  },
-  {
-    "name": "King Dedede",
-    "game": "Kirby",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1f020000",
-    "tail": "00280002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png"
-  },
-  {
-    "name": "Kirby",
-    "game": "Kirby",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1f000000",
-    "tail": "000a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png"
-  },
-  {
-    "name": "Little Mac",
-    "game": "Punch Out",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "06c00000",
-    "tail": "000f0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png"
-  },
-  {
-    "name": "Lucario",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1ac00000",
-    "tail": "00110002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1ac00000-00110002.png"
-  },
-  {
-    "name": "Lucas",
-    "game": "Earthbound",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "22810000",
-    "tail": "02510002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png"
-  },
-  {
-    "name": "Mega Man",
-    "game": "Megaman",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "34800000",
-    "tail": "00310002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-00310002.png"
-  },
-  {
-    "name": "Mega Man - Gold Edition",
-    "game": "Megaman",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "34800000",
-    "tail": "02580002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-02580002.png"
-  },
-  {
-    "name": "Meta Knight",
-    "game": "Kirby",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1f010000",
-    "tail": "00270002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png"
-  },
-  {
-    "name": "Mewtwo",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19960000",
-    "tail": "023d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png"
-  },
-  {
-    "name": "Mii Brawler",
-    "game": "Mii",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07c00000",
-    "tail": "00210002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png"
-  },
-  {
-    "name": "Mii Gunner",
-    "game": "Mii",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07c00200",
-    "tail": "00230002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png"
-  },
-  {
-    "name": "Mii Swordfighter",
-    "game": "Mii",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07c00100",
-    "tail": "00220002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00100-00220002.png"
-  },
-  {
-    "name": "Min Min",
-    "game": "ARMS",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "0a400000",
-    "tail": "041d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png"
-  },
-  {
-    "name": "Mr. Game & Watch",
-    "game": "Classic Nintendo",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07800000",
-    "tail": "002d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07800000-002d0002.png"
-  },
-  {
-    "name": "Mythra",
-    "game": "Xenoblade",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "22420000",
-    "tail": "041f0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png"
-  },
-  {
-    "name": "Ness",
-    "game": "Earthbound",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "22800000",
-    "tail": "002c0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22800000-002c0002.png"
-  },
-  {
-    "name": "Olimar",
-    "game": "Pikmin",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "06400100",
-    "tail": "001e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png"
-  },
-  {
-    "name": "Pac-Man",
-    "game": "Pac-man",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "33400000",
-    "tail": "00320002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33400000-00320002.png"
-  },
-  {
-    "name": "Palutena",
-    "game": "Kid Icarus",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07420000",
-    "tail": "001f0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07420000-001f0002.png"
-  },
-  {
-    "name": "Pichu",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19ac0000",
-    "tail": "03850002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19ac0000-03850002.png"
-  },
-  {
-    "name": "Pikachu",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19190000",
-    "tail": "00090002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19190000-00090002.png"
-  },
-  {
-    "name": "Pit",
-    "game": "Kid Icarus",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07400000",
-    "tail": "00100002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07400000-00100002.png"
-  },
-  {
-    "name": "Pokemon Trainer",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "1d400000",
-    "tail": "03870002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png"
-  },
-  {
-    "name": "Pyra",
-    "game": "Xenoblade",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "22410000",
-    "tail": "041e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png"
-  },
-  {
-    "name": "R.O.B. - Famicom",
-    "game": "Classic Nintendo",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07810000",
-    "tail": "002e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-002e0002.png"
-  },
-  {
-    "name": "R.O.B. - NES",
-    "game": "Classic Nintendo",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07810000",
-    "tail": "00330002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png"
-  },
-  {
-    "name": "Richter",
-    "game": "Castlevania",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "37c10000",
-    "tail": "038c0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png"
-  },
-  {
-    "name": "Ridley",
-    "game": "Metroid",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05c20000",
-    "tail": "037f0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png"
-  },
-  {
-    "name": "Ryu",
-    "game": "Street Fighter",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "34c00000",
-    "tail": "02530002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png"
-  },
-  {
-    "name": "Samus",
-    "game": "Metroid",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05c00000",
-    "tail": "00060002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-00060002.png"
-  },
-  {
-    "name": "Sephiroth",
-    "game": "Final Fantasy",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "36010000",
-    "tail": "04210002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png"
-  },
-  {
-    "name": "Shulk",
-    "game": "Xenoblade",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "22400000",
-    "tail": "002b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png"
-  },
-  {
-    "name": "Simon",
-    "game": "Castlevania",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "37c00000",
-    "tail": "038b0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png"
-  },
-  {
-    "name": "Snake",
-    "game": "Metal Gear Solid",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "37800000",
-    "tail": "038a0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png"
-  },
-  {
-    "name": "Sonic",
-    "game": "Sonic",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "32000000",
-    "tail": "00300002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png"
-  },
-  {
-    "name": "Sora",
-    "game": "Kingdom Hearts",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3f000000",
-    "tail": "042e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png"
-  },
-  {
-    "name": "Squirtle",
-    "game": "Pokemon",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "19070000",
-    "tail": "03840002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png"
-  },
-  {
-    "name": "Steve",
-    "game": "Minecraft",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3dc00000",
-    "tail": "04220002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc00000-04220002.png"
-  },
-  {
-    "name": "Terry",
-    "game": "Fatal Fury",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "3c800000",
-    "tail": "03a40002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800000-03a40002.png"
-  },
-  {
-    "name": "Villager",
-    "game": "Animal Crossing",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "01800000",
-    "tail": "00080002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01800000-00080002.png"
-  },
-  {
-    "name": "Wii Fit Trainer",
-    "game": "Wii Fit",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "07000000",
-    "tail": "00070002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png"
-  },
-  {
-    "name": "Wolf",
-    "game": "Star Fox",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05840000",
-    "tail": "037e0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png"
-  },
-  {
-    "name": "Zero Suit Samus",
-    "game": "Metroid",
-    "series": "Super Smash Bros.",
-    "cat": "Smash",
-    "head": "05c00100",
-    "tail": "001d0002",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png"
+    "name": "Bandana Waddle Dee",
+    "game": "Kirby Air Riders (Switch 2 / 2025-2026)",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f030100",
+    "tail": "04c91e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกยานแข่ง Air Ride Machine พิเศษและสกินตัวละครใน Kirby Air Riders"
   },
   {
     "name": "Big Man",
-    "game": "Splatoon",
+    "game": "Splatoon 3: Side Order / Grand Festival",
     "series": "Splatoon",
     "cat": "Splatoon",
     "head": "08090000",
     "tail": "04350402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png"
-  },
-  {
-    "name": "Callie",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08010000",
-    "tail": "025d0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png"
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
   },
   {
     "name": "Callie - Alterna",
-    "game": "Splatoon",
+    "game": "Splatoon 3: Side Order / Grand Festival",
     "series": "Splatoon",
     "cat": "Splatoon",
     "head": "08010000",
     "tail": "04360402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-04360402.png"
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-04360402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
+  },
+  {
+    "name": "Captain Toad & Poplin - Super Mario Bros. Wonder",
+    "game": "Super Mario Bros. Wonder: Bellabel Park",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "000a0100",
+    "tail": "04ce0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png",
+    "rewards": "ปลดล็อกด่านค้นหาสมบัติ Poplin, 1-Up Mushroom & ชุด Toad Mii Suit",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Chef Kawasaki & Hop Star - Kirby Air Riders",
+    "game": "Kirby Air Riders (Switch 2)",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f040000",
+    "tail": "04cc1e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
+    "rewards": "ปลดล็อกยาน Hop Star + นักขับ Chef Kawasaki & ไอเทมอาหารฟื้นพลังใน Kirby Air Riders",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Diana - PRAGMATA (2026)",
+    "game": "PRAGMATA (Switch 2 / Capcom)",
+    "series": "Pragmata",
+    "cat": "Other",
+    "head": "34e00000",
+    "tail": "04f41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png",
+    "rewards": "ปลดล็อกสกินชุดอวกาศ Diana + ทรัพยากรอัปเกรดอาวุธในเกม PRAGMATA (2026)",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Diddy Kong - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00090003",
+    "tail": "0432ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090003-0432ff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario",
+    "is2026": true
+  },
+  {
+    "name": "Donkey Kong & Pauline (Donkey Kong Bananza)",
+    "game": "Donkey Kong Bananza (Switch 2) / Super Mario",
+    "series": "Donkey Kong",
+    "cat": "Mario",
+    "head": "00080100",
+    "tail": "042f1a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080100-042f1a02.png",
+    "rewards": "ปลดล็อกชุดทองคำและไอเทมพิเศษใน Donkey Kong Bananza (Switch 2) & เกมตระกูล Mario",
+    "is2026": true
+  },
+  {
+    "name": "Donkey Kong - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00080003",
+    "tail": "0431ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario",
+    "is2026": true
+  },
+  {
+    "name": "Elephant Mario - Super Mario Bros. Wonder",
+    "game": "Super Mario Bros. Wonder: Bellabel Park",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000400",
+    "tail": "04cc0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png",
+    "rewards": "ไอเทม Elephant Fruit (แปลงร่างช้าง), Wonder Tokens & Standee พิเศษใน Super Mario Bros. Wonder",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
     "name": "Frye",
-    "game": "Splatoon",
+    "game": "Splatoon 3: Side Order / Grand Festival",
     "series": "Splatoon",
     "cat": "Splatoon",
     "head": "08080000",
     "tail": "04340402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png"
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
   },
   {
-    "name": "Inkling - Yellow",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000100",
-    "tail": "04150402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png"
+    "name": "Golden - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00000003",
+    "tail": "0430ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-0430ff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario",
+    "is2026": true
   },
   {
-    "name": "Inkling Boy",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000200",
-    "tail": "003f0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-003f0402.png"
+    "name": "Grace Ashcroft - Resident Evil Requiem (2026)",
+    "game": "Resident Evil Requiem (Switch 2)",
+    "series": "Resident Evil",
+    "cat": "Other",
+    "head": "34e20000",
+    "tail": "04f61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04b01d02.png",
+    "rewards": "สกินพิเศษ Grace Ashcroft + พวงกุญแจ Charm เพิ่มพลังโจมตีใน Resident Evil Requiem",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
-    "name": "Inkling Boy - Neon Green",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000200",
-    "tail": "036a0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-036a0402.png"
+    "name": "Jamie",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30000",
+    "tail": "04ac1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
   },
   {
-    "name": "Inkling Boy - Purple",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000200",
-    "tail": "02600402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-02600402.png"
+    "name": "Kimberly",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40000",
+    "tail": "04ae1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
   },
   {
-    "name": "Inkling Girl",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000100",
-    "tail": "003e0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-003e0402.png"
+    "name": "King Dedede & Tank Star - Kirby Air Riders",
+    "game": "Kirby Air Riders (Switch 2)",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f020000",
+    "tail": "04cb1e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02600a02.png",
+    "rewards": "ปลดล็อกยาน Tank Star แต่งพิเศษ + นักขับ King Dedede ใน Kirby Air Riders (Switch 2)",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
-    "name": "Inkling Girl - Lime Green",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000100",
-    "tail": "025f0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png"
+    "name": "Kirby",
+    "game": "Kirby Air Riders (Switch 2 / 2025-2026)",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f000000",
+    "tail": "04c41e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกยานแข่ง Air Ride Machine พิเศษและสกินตัวละครใน Kirby Air Riders"
   },
   {
-    "name": "Inkling Girl - Neon Pink",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000100",
-    "tail": "03690402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png"
+    "name": "Leon S. Kennedy - Resident Evil Requiem (2026)",
+    "game": "Resident Evil Requiem (Switch 2)",
+    "series": "Resident Evil",
+    "cat": "Other",
+    "head": "34e10000",
+    "tail": "04f51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png",
+    "rewards": "สกินชุดเกราะ Leon Tactical + กระสุนปืนและสมุนไพรฟื้นพลังรายวันใน Resident Evil Requiem",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
-    "name": "Inkling Squid",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000300",
-    "tail": "00400402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-00400402.png"
+    "name": "Luigi - My Mario Wooden Blocks",
+    "game": "My Mario Wooden Blocks (2026) / Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00010004",
+    "tail": "04401c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png",
+    "rewards": "บล็อกไม้ Amiibo รุ่นปี 2026: สแกนรับชุดตัวละคร 1-Up & ชุดแข่ง Mii Suit ในเกมตระกูล Mario ทุกภาค",
+    "is2026": true
   },
   {
-    "name": "Inkling Squid - Neon Purple",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000300",
-    "tail": "036b0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-036b0402.png"
-  },
-  {
-    "name": "Inkling Squid - Orange",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08000300",
-    "tail": "02610402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png"
-  },
-  {
-    "name": "Marie",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08020000",
-    "tail": "025e0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-025e0402.png"
-  },
-  {
-    "name": "Marie - Alterna",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08020000",
-    "tail": "04370402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-04370402.png"
-  },
-  {
-    "name": "Marina",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08040000",
-    "tail": "03770402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-03770402.png"
-  },
-  {
-    "name": "Marina - Side Order",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08040000",
-    "tail": "04390402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-04390402.png"
-  },
-  {
-    "name": "Octoling - Blue",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08050200",
-    "tail": "041b0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-041b0402.png"
-  },
-  {
-    "name": "Octoling Boy",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08050200",
-    "tail": "038f0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png"
-  },
-  {
-    "name": "Octoling Girl",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08050100",
-    "tail": "038e0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050100-038e0402.png"
-  },
-  {
-    "name": "Octoling Octopus",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08050300",
-    "tail": "03900402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050300-03900402.png"
-  },
-  {
-    "name": "Pearl",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08030000",
-    "tail": "03760402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-03760402.png"
-  },
-  {
-    "name": "Pearl - Side Order",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08030000",
-    "tail": "04380402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-04380402.png"
-  },
-  {
-    "name": "Shiver",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08070000",
-    "tail": "04330402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png"
-  },
-  {
-    "name": "Smallfry",
-    "game": "Splatoon",
-    "series": "Splatoon",
-    "cat": "Splatoon",
-    "head": "08060100",
-    "tail": "041c0402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png"
-  },
-  {
-    "name": "Detective Pikachu",
-    "game": "Pokemon",
-    "series": "Pokemon",
-    "cat": "Pokemon",
-    "head": "1d010000",
-    "tail": "03750d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png"
-  },
-  {
-    "name": "Shadow Mewtwo",
-    "game": "Pokemon",
-    "series": "Pokemon",
-    "cat": "Pokemon",
-    "head": "1d000001",
-    "tail": "025c0d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d000001-025c0d02.png"
-  },
-  {
-    "name": "E.M.M.I.",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c40000",
-    "tail": "04131302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png"
-  },
-  {
-    "name": "Metroid",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c10000",
-    "tail": "03661302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png"
-  },
-  {
-    "name": "Samus",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c00000",
-    "tail": "043b1302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png"
-  },
-  {
-    "name": "Samus & Vi-O-La",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c00000",
-    "tail": "043a1302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png"
-  },
-  {
-    "name": "Samus - Metroid Dread",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c00000",
-    "tail": "04121302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png"
-  },
-  {
-    "name": "Samus Aran",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c00000",
-    "tail": "03651302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-03651302.png"
-  },
-  {
-    "name": "Sylux",
-    "game": "Metroid",
-    "series": "Metroid",
-    "cat": "Metroid",
-    "head": "05c50000",
-    "tail": "043c1302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png"
-  },
-  {
-    "name": "Barioth and Ayuria",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35030100",
-    "tail": "02e50f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png"
-  },
-  {
-    "name": "Ena",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35060000",
-    "tail": "040d0f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png"
-  },
-  {
-    "name": "Magnamalo",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter Rise",
-    "cat": "Monster Hunter",
-    "head": "35080000",
-    "tail": "040f1802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png"
+    "name": "Luke",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20000",
+    "tail": "04aa1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
   },
   {
     "name": "Malzeno",
@@ -2742,160 +549,1451 @@ window.AMIIBO_FULL_DB = [
     "cat": "Monster Hunter",
     "head": "350b0000",
     "tail": "042d1802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png"
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png",
+    "is2026": true
   },
   {
-    "name": "Nabiru",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35010000",
-    "tail": "02e30f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png"
+    "name": "Marie - Alterna",
+    "game": "Splatoon 3: Side Order / Grand Festival",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08020000",
+    "tail": "04370402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-04370402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
   },
   {
-    "name": "One-Eyed Rathalos and Rider - Female",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35000200",
-    "tail": "02e20f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png"
+    "name": "Marina - Side Order",
+    "game": "Splatoon 3: Side Order / Grand Festival",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08040000",
+    "tail": "04390402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-04390402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
   },
   {
-    "name": "One-Eyed Rathalos and Rider - Male",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35000100",
-    "tail": "02e10f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000100-02e10f02.png"
+    "name": "Mario & Luma (XL) - Super Mario Galaxy 40th Anniversary",
+    "game": "Super Mario Galaxy + Super Mario Galaxy 2",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "04ca0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png",
+    "rewards": "Star Bits พิเศษ, 1-Up Mushroom, ชุด Mario พิเศษใน Super Mario Galaxy / Odyssey / Mario Kart 8",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
-    "name": "Palamute",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter Rise",
-    "cat": "Monster Hunter",
-    "head": "350a0100",
-    "tail": "042c1802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png"
+    "name": "Mario - My Mario Wooden Blocks",
+    "game": "My Mario Wooden Blocks (2026) / Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00000004",
+    "tail": "043f1c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000004-043f1c02.png",
+    "rewards": "บล็อกไม้ Amiibo รุ่นปี 2026: สแกนรับชุดตัวละคร 1-Up & ชุดแข่ง Mii Suit ในเกมตระกูล Mario ทุกภาค",
+    "is2026": true
   },
   {
-    "name": "Palamute",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter Rise",
-    "cat": "Monster Hunter",
-    "head": "350a0000",
-    "tail": "04111802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0000-04111802.png"
-  },
-  {
-    "name": "Palico",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter Rise",
-    "cat": "Monster Hunter",
-    "head": "35090100",
-    "tail": "042b1802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090100-042b1802.png"
-  },
-  {
-    "name": "Palico",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter Rise",
-    "cat": "Monster Hunter",
-    "head": "35090000",
-    "tail": "04101802",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090000-04101802.png"
-  },
-  {
-    "name": "Qurupeco and Dan",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35040100",
-    "tail": "02e60f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png"
-  },
-  {
-    "name": "Rathian and Cheval",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35020100",
-    "tail": "02e40f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png"
-  },
-  {
-    "name": "Razewing Ratha",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35050000",
-    "tail": "040c0f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png"
-  },
-  {
-    "name": "Tsukino",
-    "game": "Monster Hunter",
-    "series": "Monster Hunter",
-    "cat": "Monster Hunter",
-    "head": "35070000",
-    "tail": "040e0f02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png"
-  },
-  {
-    "name": "Bandana Waddle Dee",
-    "game": "Kirby",
+    "name": "Meta Knight & Shadow Star - Kirby Air Riders",
+    "game": "Kirby Air Riders (Switch 2)",
     "series": "Kirby Air Riders",
-    "cat": "Kirby",
-    "head": "1f030100",
-    "tail": "04c91e03",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png"
-  },
-  {
-    "name": "King Dedede",
-    "game": "Kirby",
-    "series": "Kirby",
-    "cat": "Kirby",
-    "head": "1f020000",
-    "tail": "02560c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png"
-  },
-  {
-    "name": "Kirby",
-    "game": "Kirby",
-    "series": "Kirby",
-    "cat": "Kirby",
-    "head": "1f000000",
-    "tail": "02540c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-02540c02.png"
-  },
-  {
-    "name": "Kirby",
-    "game": "Kirby",
-    "series": "Kirby Air Riders",
-    "cat": "Kirby",
-    "head": "1f000000",
-    "tail": "04c41e03",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png"
-  },
-  {
-    "name": "Meta Knight",
-    "game": "Kirby",
-    "series": "Kirby",
     "cat": "Kirby",
     "head": "1f010000",
-    "tail": "02550c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-02550c02.png"
+    "tail": "04ca1e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-025f0a02.png",
+    "rewards": "ปลดล็อกยาน Shadow Star แต่งพิเศษ + นักขับ Meta Knight ใน Kirby Air Riders (Switch 2)",
+    "is2026": true,
+    "releaseYear": 2026
   },
   {
-    "name": "Waddle Dee",
-    "game": "Kirby",
-    "series": "Kirby",
+    "name": "Mio",
+    "game": "Xenoblade Chronicles 3",
+    "series": "Xenoblade Chronicles 3",
+    "cat": "Other",
+    "head": "22440000",
+    "tail": "043e1b02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกราะ Consul Armor ของ Noah & Mio และชุดตัวละคร N & M พิเศษใน Xenoblade 3"
+  },
+  {
+    "name": "Noah",
+    "game": "Xenoblade Chronicles 3",
+    "series": "Xenoblade Chronicles 3",
+    "cat": "Other",
+    "head": "22430000",
+    "tail": "043d1b02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกราะ Consul Armor ของ Noah & Mio และชุดตัวละคร N & M พิเศษใน Xenoblade 3"
+  },
+  {
+    "name": "Noir Dedede & Hydra - Kirby Air Riders",
+    "game": "Kirby Air Riders (Switch 2)",
+    "series": "Kirby Air Riders",
     "cat": "Kirby",
-    "head": "1f030000",
-    "tail": "02570c02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png"
+    "head": "1f020100",
+    "tail": "04ce1e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-001f0002.png",
+    "rewards": "ปลดล็อกยานในตำนาน Hydra + Noir Dedede ใน Kirby Air Riders (Switch 2)",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Peach - My Mario Wooden Blocks",
+    "game": "My Mario Wooden Blocks (2026) / Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00020004",
+    "tail": "04411c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020004-04411c02.png",
+    "rewards": "บล็อกไม้ Amiibo รุ่นปี 2026: สแกนรับชุดตัวละคร 1-Up & ชุดแข่ง Mii Suit ในเกมตระกูล Mario ทุกภาค",
+    "is2026": true
+  },
+  {
+    "name": "Pearl - Side Order",
+    "game": "Splatoon 3: Side Order / Grand Festival",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08030000",
+    "tail": "04380402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-04380402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
+  },
+  {
+    "name": "Ratha V (Rathalos) - Monster Hunter Stories 3",
+    "game": "Monster Hunter Stories 3: Twisted Reflection",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35100000",
+    "tail": "04d10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02690e02.png",
+    "rewards": "ชุดเกราะ Ratha V Layered Armor + เซ็ตไอเทมต่อสู้หายากใน MH Stories 3 (2026)",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Ratha the Rathalos - Monster Hunter Stories 3",
+    "game": "Monster Hunter Stories 3: Twisted Reflection",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "350f0000",
+    "tail": "04d00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-04110e02.png",
+    "rewards": "ชุดเกราะ Layered Armor พิเศษ + ไข่ Monstie Rathalos & ไอเทมรายวันใน MH Stories 3 (2026)",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Rosalina & Lumas (XL) - Super Mario Galaxy 40th Anniversary",
+    "game": "Super Mario Galaxy + Super Mario Galaxy 2",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00040100",
+    "tail": "04cb0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png",
+    "rewards": "Life Mushroom (เพิ่มพลังชีวิตเป็น 6), Star Bits, ชุด Rosalina Mii Suit ใน Mario Kart 8",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Rudy the Felyne - Monster Hunter Stories 3",
+    "game": "Monster Hunter Stories 3: Twisted Reflection",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35110000",
+    "tail": "04d20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090000-04130e02.png",
+    "rewards": "ชุดแมว Rudy Layered Armor + ลอตเตอรี่สุ่มไอเทมพิเศษกับ Tsukino/Rudy",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Samus",
+    "game": "Metroid Prime 4: Beyond (2025-2026)",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "043b1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสกินชุดเกราะ Samus / ยาน Vi-O-La, ฟื้นฟูถังพลังงาน Energy Tank & แกลเลอรีพิเศษ"
+  },
+  {
+    "name": "Samus & Vi-O-La",
+    "game": "Metroid Prime 4: Beyond (2025-2026)",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "043a1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสกินชุดเกราะ Samus / ยาน Vi-O-La, ฟื้นฟูถังพลังงาน Energy Tank & แกลเลอรีพิเศษ"
+  },
+  {
+    "name": "Shiver",
+    "game": "Splatoon 3: Side Order / Grand Festival",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08070000",
+    "tail": "04330402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกชุดเกียร์พิเศษระดับ 3 ดาวครบเซ็ต (Side Order / Alterna) + ถ่ายรูปคู่กับไอดอล"
+  },
+  {
+    "name": "Shiver - Splatoon Raiders (2026)",
+    "game": "Splatoon Raiders / Splatoon 3",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08070100",
+    "tail": "04f70402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png",
+    "rewards": "ชุดเกราะ Shiver Raiders Gear ครบเซ็ต + บันทึกชุดแต่งตัวด่วนและถ่ายรูปคู่ในเกม",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Sora",
+    "game": "Super Smash Bros. Ultimate (Kingdom Hearts)",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3f000000",
+    "tail": "042e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png",
+    "is2026": true,
+    "rewards": "ฝึกฝน Figure Player (FP) Sora ใน Smash Bros. Ultimate + รับวิญญาณ Sora Spirit"
+  },
+  {
+    "name": "Sword Kirby & Dragoon - Kirby Air Riders",
+    "game": "Kirby Air Riders (Switch 2)",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f000100",
+    "tail": "04cd1e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
+    "rewards": "ปลดล็อกยานในตำนาน Dragoon + Sword Kirby ใน Kirby Air Riders (Switch 2)",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Sylux",
+    "game": "Metroid Prime 4: Beyond (2025-2026)",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c50000",
+    "tail": "043c1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสกินชุดเกราะ Samus / ยาน Vi-O-La, ฟื้นฟูถังพลังงาน Energy Tank & แกลเลอรีพิเศษ"
+  },
+  {
+    "name": "Talking Flower - Super Mario Bros. Wonder",
+    "game": "Super Mario Bros. Wonder: Bellabel Park",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00250000",
+    "tail": "04cd0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png",
+    "rewards": "ปลดล็อกเสียงพากย์พิเศษ Talking Flower, เหรียญม่วง Flower Coins & ไอเทมช่วยเหลือ",
+    "is2026": true,
+    "releaseYear": 2026
+  },
+  {
+    "name": "Yoshi - My Mario Wooden Blocks",
+    "game": "My Mario Wooden Blocks (2026) / Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00030004",
+    "tail": "04421c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png",
+    "rewards": "บล็อกไม้ Amiibo รุ่นปี 2026: สแกนรับชุดตัวละคร 1-Up & ชุดแข่ง Mii Suit ในเกมตระกูล Mario ทุกภาค",
+    "is2026": true
+  },
+  {
+    "name": "8-Bit Mario Classic Color",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "8-bit Mario",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "02380602",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "8-Bit Mario Modern Color",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "8-bit Mario",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "02390602",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Boo",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00170000",
+    "tail": "02680102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00170000-02680102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Bowser",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "00140002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00140002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Bowser",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "00390102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00390102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Bowser - Wedding (ชุดแต่งงาน)",
+    "game": "Super Mario Odyssey / Bowser's Fury / Mario Kart 8",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "03730102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-03730102.png",
+    "rewards": "【Odyssey】ปลดล็อกชุด Bowser Wedding + เรดาร์ชี้ตำแหน่งเหรียญม่วง (Regional Coins) บนแผนที่!"
+  },
+  {
+    "name": "Bowser Jr.",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00060000",
+    "tail": "00150002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00060000-00150002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Daisy",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00130000",
+    "tail": "037a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Daisy",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00130000",
+    "tail": "02660102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-02660102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Daisy - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00130003",
+    "tail": "039eff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130003-039eff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "Diddy Kong",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00090000",
+    "tail": "000d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-000d0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Diddy Kong",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00090000",
+    "tail": "02650102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-02650102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Donkey Kong",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00080000",
+    "tail": "00030002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Donkey Kong",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00080000",
+    "tail": "02640102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Dr. Mario",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00000100",
+    "tail": "00190002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000100-00190002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Goomba",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00150000",
+    "tail": "03670102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Green Yarn Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00410302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Hammer Slam Bowser",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Skylanders",
+    "cat": "Mario",
+    "head": "0005ff00",
+    "tail": "023a0702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "King K. Rool",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00c00000",
+    "tail": "037b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Koopa Troopa",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00230000",
+    "tail": "03680102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Light Blue Yarn Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00430302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00430302.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Luigi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00010000",
+    "tail": "00350102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Luigi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00010000",
+    "tail": "000c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-000c0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Luigi - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00010003",
+    "tail": "039cff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "Mario",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "00340102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Mario",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "00000002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Mario - Cat (มาริโอ้แมว)",
+    "game": "Super Mario 3D World + Bowser's Fury / Odyssey / Wonder",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000300",
+    "tail": "03a60102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png",
+    "rewards": "【3D World】เสกกระดิ่งแมวขาวอมตะ (Invincible White Cat Bell)! 【Odyssey】ปลดล็อกชุดพิเศษ & หัวใจเพิ่ม"
+  },
+  {
+    "name": "Mario - Gold Edition (มาริโอ้ทองคำ)",
+    "game": "Super Mario Odyssey / Mario Kart 8 / 3D World",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "003c0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png",
+    "rewards": "【Odyssey】ปลดล็อกชุดทองคำ Gold Mario Suit + อมตะชั่วคราว 【3D World】ดาวอมตะ Super Star"
+  },
+  {
+    "name": "Mario - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00000003",
+    "tail": "039bff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-039bff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "Mario - Silver Edition (มาริโอ้เงิน)",
+    "game": "Super Mario Odyssey / Mario Kart 8 / 3D World",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "003d0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png",
+    "rewards": "【Odyssey】ปลดล็อกชุด Gold/Silver Mario + ดาวอมตะชั่วคราว 【MK8】ชุดแข่ง Mario Mii Racing Suit"
+  },
+  {
+    "name": "Mario - Wedding (ชุดแต่งงาน)",
+    "game": "Super Mario Odyssey / Mario Kart 8 / Wonder",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "03710102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png",
+    "rewards": "【Odyssey】ปลดล็อกชุดแต่งงาน Mario Wedding Tuxedo ทันที + อมตะชั่วคราว 【MK8】ชุดแข่ง Mario Mii Suit"
+  },
+  {
+    "name": "Mega Yarn Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "023e0302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-023e0302.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Peach",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "00360102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Peach",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "00010002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00010002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Peach - Cat (พีชแมว)",
+    "game": "Super Mario 3D World + Bowser's Fury / Odyssey / Wonder",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020100",
+    "tail": "03a70102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020100-03a70102.png",
+    "rewards": "【3D World】สุ่มไอเทม Power-Up พิเศษ (Super Bell / Fire Flower) 【Mario Kart 8】ชุดแข่ง Peach Mii Suit"
+  },
+  {
+    "name": "Peach - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00020003",
+    "tail": "039dff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "Peach - Wedding (ชุดแต่งงาน)",
+    "game": "Super Mario Odyssey / Mario Kart 8 / Wonder",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "03720102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png",
+    "rewards": "【Odyssey】ปลดล็อกชุดแต่งงาน Peach Wedding Dress + หัวใจ Life-Up Heart (เพิ่มเลือดเป็น 6)"
+  },
+  {
+    "name": "Pink Yarn Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00420302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00420302.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Piranha Plant",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00240000",
+    "tail": "038d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Poochy",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00800102",
+    "tail": "035d0302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Rosalina",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00040000",
+    "tail": "02620102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040000-02620102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Rosalina & Luma",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00040100",
+    "tail": "00130002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Super Mario Cereal",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Others",
+    "cat": "Mario",
+    "head": "37400001",
+    "tail": "03741402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Toad",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "000a0000",
+    "tail": "00380102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Toad - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "000a0003",
+    "tail": "03a0ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "Turbo Charge Donkey Kong",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Skylanders",
+    "cat": "Mario",
+    "head": "0008ff00",
+    "tail": "023b0702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0008ff00-023b0702.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Waluigi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00140000",
+    "tail": "02670102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00140000-02670102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Wario",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00070000",
+    "tail": "001a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-001a0002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Wario",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00070000",
+    "tail": "02630102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-02630102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00030000",
+    "tail": "00020002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Yoshi",
+    "game": "Super Mario (Odyssey / 3D World / Mario Kart 8 / Wonder)",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00030000",
+    "tail": "00370102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00370102.png",
+    "rewards": "【Odyssey】ชุดคอสตูม/หัวใจเพิ่ม/ค้นหา Power Moon 【3D World】ไอเทม Power-Up 【Mario Kart 8】ชุดแข่ง Mii Suit"
+  },
+  {
+    "name": "Yoshi - Power Up Band",
+    "game": "Super Nintendo World / Mario Kart 8 / Odyssey",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00030003",
+    "tail": "039fff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png",
+    "rewards": "สายรัดข้อมือสวนสนุก USJ: ใช้สแกนรับชุด Mii Racing Suit ใน Mario Kart 8 & ไอเทมในเกม Mario"
+  },
+  {
+    "name": "A.K.I",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d30001",
+    "tail": "04be1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04be1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "A.K.I",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d30001",
+    "tail": "04de1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04de1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Akuma",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d50001",
+    "tail": "04c01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Akuma",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d50001",
+    "tail": "04e01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04e01d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Alex",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34db0001",
+    "tail": "04e61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04e61d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Alex",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34db0001",
+    "tail": "04ef1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04ef1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Blanka",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c80001",
+    "tail": "04b31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04b31d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Blanka",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c80001",
+    "tail": "04d31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04d31d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "C. Viper",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34da0001",
+    "tail": "04e51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "C. Viper",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34da0001",
+    "tail": "04ee1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04ee1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Cammy",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d10001",
+    "tail": "04bc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Cammy",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d10001",
+    "tail": "04dc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Chun-Li",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c50001",
+    "tail": "04b01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04b01d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Chun-Li",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c50001",
+    "tail": "04d01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Dee Jay",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cb0001",
+    "tail": "04b61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Dee Jay",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cb0001",
+    "tail": "04d61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Dhalsim",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c90001",
+    "tail": "04b41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Dhalsim",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c90001",
+    "tail": "04d41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04d41d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "E. Honda",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ca0001",
+    "tail": "04b51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04b51d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "E. Honda",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ca0001",
+    "tail": "04d51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04d51d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ed",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d40001",
+    "tail": "04bf1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ed",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d40001",
+    "tail": "04df1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04df1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Elena",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d80001",
+    "tail": "04e31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04e31d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Elena",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d80001",
+    "tail": "04ec1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Guile",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c60001",
+    "tail": "04b11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04b11d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Guile",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c60001",
+    "tail": "04d11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04d11d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ingrid",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34dc0001",
+    "tail": "04e71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04e71d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ingrid",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34dc0001",
+    "tail": "04f01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "JP",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ce0001",
+    "tail": "04b91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04b91d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "JP",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ce0001",
+    "tail": "04d91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04d91d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Jamie",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30001",
+    "tail": "04ad1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ad1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Jamie",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30001",
+    "tail": "04ce1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Juri",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c70001",
+    "tail": "04b21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04b21d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Juri",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c70001",
+    "tail": "04d21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04d21d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ken",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c10001",
+    "tail": "04a91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04a91d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ken",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c10001",
+    "tail": "04cc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04cc1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Kimberly",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40001",
+    "tail": "04af1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04af1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Kimberly",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40001",
+    "tail": "04cf1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Lily",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d00001",
+    "tail": "04bb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Lily",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d00001",
+    "tail": "04db1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Luke",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20001",
+    "tail": "04ab1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Luke",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20001",
+    "tail": "04cd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "M. Bison",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d60001",
+    "tail": "04e11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04e11d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "M. Bison",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d60001",
+    "tail": "04eb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Mai",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c810001",
+    "tail": "04f21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f21d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Mai",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c810001",
+    "tail": "04f31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f31d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Manon",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cc0001",
+    "tail": "04b71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Manon",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cc0001",
+    "tail": "04d71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04d71d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Marisa",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cd0001",
+    "tail": "04b81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04b81d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Marisa",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cd0001",
+    "tail": "04d81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04d81d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Rashid",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d20001",
+    "tail": "04bd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Rashid",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d20001",
+    "tail": "04dd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c00001",
+    "tail": "04a81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04a81d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c00001",
+    "tail": "04cb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Sagat",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d90001",
+    "tail": "04e41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04e41d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Sagat",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d90001",
+    "tail": "04ed1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Terry",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c800001",
+    "tail": "04e81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04e81d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Terry",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c800001",
+    "tail": "04f11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Zangief",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cf0001",
+    "tail": "04ba1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
+  },
+  {
+    "name": "Zangief",
+    "game": "Street Fighter 6 (Switch 2 / 2025-2026)",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cf0001",
+    "tail": "04da1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png",
+    "is2026": true,
+    "rewards": "ปลดล็อกสีชุดตัวละคร, วอลเปเปอร์, เพลงประกอบ & กรอบรูปอุปกรณ์ใน Street Fighter 6"
   },
   {
     "name": "Ace",
@@ -6057,6 +5155,15 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ab0001-017c0502.png"
   },
   {
+    "name": "Peaches",
+    "game": "Animal Crossing: New Horizons",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ac0001",
+    "tail": "01880502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png"
+  },
+  {
     "name": "Peanut",
     "game": "Animal Crossing",
     "series": "Animal Crossing",
@@ -7614,58 +6721,1102 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d30101-031b0502.png"
   },
   {
-    "name": "A.K.I",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d30001",
-    "tail": "04be1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04be1d02.png"
+    "name": "King Dedede",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f020000",
+    "tail": "02560c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png"
   },
   {
-    "name": "A.K.I",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d30001",
-    "tail": "04de1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04de1d02.png"
+    "name": "Kirby",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f000000",
+    "tail": "02540c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-02540c02.png"
   },
   {
-    "name": "Akuma",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d50001",
-    "tail": "04c01d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png"
+    "name": "Meta Knight",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f010000",
+    "tail": "02550c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-02550c02.png"
   },
   {
-    "name": "Akuma",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d50001",
-    "tail": "04e01d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04e01d02.png"
+    "name": "Waddle Dee",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f030000",
+    "tail": "02570c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png"
   },
   {
-    "name": "Alex",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34db0001",
-    "tail": "04e61d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04e61d02.png"
+    "name": "Baby Luigi - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0201",
+    "tail": "02ab0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0201-02ab0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
   },
   {
-    "name": "Alex",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34db0001",
-    "tail": "04ef1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04ef1d02.png"
+    "name": "Baby Luigi - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0401",
+    "tail": "02ad0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0401-02ad0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Luigi - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0501",
+    "tail": "02ae0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0501-02ae0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Luigi - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0101",
+    "tail": "02aa0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0101-02aa0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Luigi - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0301",
+    "tail": "02ac0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0301-02ac0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Mario - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0201",
+    "tail": "02a60e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Mario - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0401",
+    "tail": "02a80e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Mario - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0501",
+    "tail": "02a90e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Mario - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0101",
+    "tail": "02a50e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0101-02a50e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Baby Mario - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0301",
+    "tail": "02a70e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0301-02a70e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Birdo - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0201",
+    "tail": "02b00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Birdo - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0401",
+    "tail": "02b20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Birdo - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0501",
+    "tail": "02b30e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0501-02b30e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Birdo - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0101",
+    "tail": "02af0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0101-02af0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Birdo - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0301",
+    "tail": "02b10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Boo - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0201",
+    "tail": "02a10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0201-02a10e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Boo - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0401",
+    "tail": "02a30e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Boo - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0501",
+    "tail": "02a40e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Boo - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0101",
+    "tail": "02a00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Boo - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0301",
+    "tail": "02a20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90201",
+    "tail": "02970e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90401",
+    "tail": "02990e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90501",
+    "tail": "029a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90501-029a0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90101",
+    "tail": "02960e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90101-02960e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90301",
+    "tail": "02980e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90301-02980e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser Jr. - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0201",
+    "tail": "029c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser Jr. - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0401",
+    "tail": "029e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser Jr. - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0501",
+    "tail": "029f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser Jr. - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0101",
+    "tail": "029b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Bowser Jr. - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0301",
+    "tail": "029d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Daisy - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30201",
+    "tail": "02790e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30201-02790e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Daisy - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30401",
+    "tail": "027b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Daisy - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30501",
+    "tail": "027c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Daisy - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30101",
+    "tail": "02780e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30101-02780e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Daisy - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30301",
+    "tail": "027a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30301-027a0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Diddy Kong - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80201",
+    "tail": "02920e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Diddy Kong - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80401",
+    "tail": "02940e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80401-02940e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Diddy Kong - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80501",
+    "tail": "02950e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80501-02950e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Diddy Kong - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80101",
+    "tail": "02910e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80101-02910e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Diddy Kong - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80301",
+    "tail": "02930e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80301-02930e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Donkey Kong - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70201",
+    "tail": "028d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70201-028d0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Donkey Kong - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70401",
+    "tail": "028f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70401-028f0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Donkey Kong - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70501",
+    "tail": "02900e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Donkey Kong - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70101",
+    "tail": "028c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70101-028c0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Donkey Kong - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70301",
+    "tail": "028e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70301-028e0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Luigi - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10201",
+    "tail": "026f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Luigi - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10401",
+    "tail": "02710e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10401-02710e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Luigi - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10501",
+    "tail": "02720e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10501-02720e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Luigi - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10101",
+    "tail": "026e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10101-026e0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Luigi - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10301",
+    "tail": "02700e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10301-02700e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Mario - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00201",
+    "tail": "026a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Mario - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00401",
+    "tail": "026c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00401-026c0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Mario - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00501",
+    "tail": "026d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00501-026d0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Mario - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00101",
+    "tail": "02690e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Mario - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00301",
+    "tail": "026b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00301-026b0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Metal Mario - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00201",
+    "tail": "02ba0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Metal Mario - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00401",
+    "tail": "02bc0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Metal Mario - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00501",
+    "tail": "02bd0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Metal Mario - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00101",
+    "tail": "02b90e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Metal Mario - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00301",
+    "tail": "02bb0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Peach - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20201",
+    "tail": "02740e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Peach - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20401",
+    "tail": "02760e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Peach - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20501",
+    "tail": "02770e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Peach - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20101",
+    "tail": "02730e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Peach - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20301",
+    "tail": "02750e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Pink Gold Peach - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10201",
+    "tail": "02bf0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Pink Gold Peach - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10401",
+    "tail": "02c10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10401-02c10e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Pink Gold Peach - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10501",
+    "tail": "02c20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10501-02c20e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Pink Gold Peach - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10101",
+    "tail": "02be0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10101-02be0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Pink Gold Peach - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10301",
+    "tail": "02c00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Rosalina - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0201",
+    "tail": "02b50e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Rosalina - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0401",
+    "tail": "02b70e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0401-02b70e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Rosalina - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0501",
+    "tail": "02b80e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0501-02b80e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Rosalina - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0101",
+    "tail": "02b40e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Rosalina - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0301",
+    "tail": "02b60e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0301-02b60e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Waluigi - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60201",
+    "tail": "02880e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60201-02880e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Waluigi - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60401",
+    "tail": "028a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Waluigi - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60501",
+    "tail": "028b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60501-028b0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Waluigi - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60101",
+    "tail": "02870e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60101-02870e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Waluigi - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60301",
+    "tail": "02890e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Wario - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50201",
+    "tail": "02830e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50201-02830e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Wario - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50401",
+    "tail": "02850e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50401-02850e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Wario - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50501",
+    "tail": "02860e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Wario - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50101",
+    "tail": "02820e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50101-02820e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Wario - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50301",
+    "tail": "02840e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50301-02840e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Yoshi - Baseball",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40201",
+    "tail": "027e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40201-027e0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Yoshi - Golf",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40401",
+    "tail": "02800e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Yoshi - Horse Racing",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40501",
+    "tail": "02810e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Yoshi - Soccer",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40101",
+    "tail": "027d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "Yoshi - Tennis",
+    "game": "Mario Sports Superstars / Super Mario",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40301",
+    "tail": "027f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40301-027f0e02.png",
+    "rewards": "ปลดล็อกตัวละครระดับ Superstar ใน Mario Sports + สแกนรับไอเทมรายวันในเกมตระกูล Mario"
+  },
+  {
+    "name": "E.M.M.I.",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c40000",
+    "tail": "04131302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png"
+  },
+  {
+    "name": "Metroid",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c10000",
+    "tail": "03661302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png"
+  },
+  {
+    "name": "Samus - Metroid Dread",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "04121302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png"
+  },
+  {
+    "name": "Samus Aran",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "03651302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-03651302.png"
+  },
+  {
+    "name": "Barioth and Ayuria",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35030100",
+    "tail": "02e50f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png"
+  },
+  {
+    "name": "Ena",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35060000",
+    "tail": "040d0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png"
+  },
+  {
+    "name": "Magnamalo",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35080000",
+    "tail": "040f1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png"
+  },
+  {
+    "name": "Nabiru",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35010000",
+    "tail": "02e30f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png"
+  },
+  {
+    "name": "One-Eyed Rathalos and Rider - Female",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35000200",
+    "tail": "02e20f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png"
+  },
+  {
+    "name": "One-Eyed Rathalos and Rider - Male",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35000100",
+    "tail": "02e10f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000100-02e10f02.png"
+  },
+  {
+    "name": "Palamute",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "350a0100",
+    "tail": "042c1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png"
+  },
+  {
+    "name": "Palamute",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "350a0000",
+    "tail": "04111802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0000-04111802.png"
+  },
+  {
+    "name": "Palico",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35090100",
+    "tail": "042b1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090100-042b1802.png"
+  },
+  {
+    "name": "Palico",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35090000",
+    "tail": "04101802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090000-04101802.png"
+  },
+  {
+    "name": "Qurupeco and Dan",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35040100",
+    "tail": "02e60f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png"
+  },
+  {
+    "name": "Rathian and Cheval",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35020100",
+    "tail": "02e40f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png"
+  },
+  {
+    "name": "Razewing Ratha",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35050000",
+    "tail": "040c0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png"
+  },
+  {
+    "name": "Tsukino",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35070000",
+    "tail": "040e0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png"
   },
   {
     "name": "Asana Mutsuba",
@@ -7677,60 +7828,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38460001-042a1902.png"
   },
   {
-    "name": "Blanka",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c80001",
-    "tail": "04b31d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04b31d02.png"
-  },
-  {
-    "name": "Blanka",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c80001",
-    "tail": "04d31d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04d31d02.png"
-  },
-  {
-    "name": "C. Viper",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34da0001",
-    "tail": "04e51d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png"
-  },
-  {
-    "name": "C. Viper",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34da0001",
-    "tail": "04ee1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04ee1d02.png"
-  },
-  {
-    "name": "Cammy",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d10001",
-    "tail": "04bc1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png"
-  },
-  {
-    "name": "Cammy",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d10001",
-    "tail": "04dc1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png"
-  },
-  {
     "name": "Chibi Robo",
     "game": "Chibi Robo",
     "series": "Chibi-Robo!",
@@ -7740,24 +7837,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22c00000-003a0202.png"
   },
   {
-    "name": "Chun-Li",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c50001",
-    "tail": "04b01d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04b01d02.png"
-  },
-  {
-    "name": "Chun-Li",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c50001",
-    "tail": "04d01d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png"
-  },
-  {
     "name": "Daijobu",
     "game": "Power Pros",
     "series": "Power Pros",
@@ -7765,96 +7844,6 @@ window.AMIIBO_FULL_DB = [
     "head": "38050001",
     "tail": "03981702",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38050001-03981702.png"
-  },
-  {
-    "name": "Dee Jay",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cb0001",
-    "tail": "04b61d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png"
-  },
-  {
-    "name": "Dee Jay",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cb0001",
-    "tail": "04d61d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png"
-  },
-  {
-    "name": "Dhalsim",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c90001",
-    "tail": "04b41d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png"
-  },
-  {
-    "name": "Dhalsim",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c90001",
-    "tail": "04d41d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04d41d02.png"
-  },
-  {
-    "name": "E. Honda",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34ca0001",
-    "tail": "04b51d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04b51d02.png"
-  },
-  {
-    "name": "E. Honda",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34ca0001",
-    "tail": "04d51d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04d51d02.png"
-  },
-  {
-    "name": "Ed",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d40001",
-    "tail": "04bf1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png"
-  },
-  {
-    "name": "Ed",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d40001",
-    "tail": "04df1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04df1d02.png"
-  },
-  {
-    "name": "Elena",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d80001",
-    "tail": "04e31d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04e31d02.png"
-  },
-  {
-    "name": "Elena",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d80001",
-    "tail": "04ec1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png"
   },
   {
     "name": "Gakuto Sōgetsu",
@@ -7875,24 +7864,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38040001-03971702.png"
   },
   {
-    "name": "Guile",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c60001",
-    "tail": "04b11d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04b11d02.png"
-  },
-  {
-    "name": "Guile",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c60001",
-    "tail": "04d11d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04d11d02.png"
-  },
-  {
     "name": "Hayakawa",
     "game": "Power Pros",
     "series": "Power Pros",
@@ -7911,132 +7882,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38010001-03941702.png"
   },
   {
-    "name": "Ingrid",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34dc0001",
-    "tail": "04e71d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04e71d02.png"
-  },
-  {
-    "name": "Ingrid",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34dc0001",
-    "tail": "04f01d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png"
-  },
-  {
-    "name": "JP",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34ce0001",
-    "tail": "04b91d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04b91d02.png"
-  },
-  {
-    "name": "JP",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34ce0001",
-    "tail": "04d91d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04d91d02.png"
-  },
-  {
-    "name": "Jamie",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c30000",
-    "tail": "04ac1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png"
-  },
-  {
-    "name": "Jamie",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c30001",
-    "tail": "04ad1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ad1d02.png"
-  },
-  {
-    "name": "Jamie",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c30001",
-    "tail": "04ce1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png"
-  },
-  {
-    "name": "Juri",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c70001",
-    "tail": "04b21d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04b21d02.png"
-  },
-  {
-    "name": "Juri",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c70001",
-    "tail": "04d21d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04d21d02.png"
-  },
-  {
-    "name": "Ken",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c10001",
-    "tail": "04a91d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04a91d02.png"
-  },
-  {
-    "name": "Ken",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c10001",
-    "tail": "04cc1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04cc1d02.png"
-  },
-  {
-    "name": "Kimberly",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c40000",
-    "tail": "04ae1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png"
-  },
-  {
-    "name": "Kimberly",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c40001",
-    "tail": "04af1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04af1d02.png"
-  },
-  {
-    "name": "Kimberly",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c40001",
-    "tail": "04cf1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png"
-  },
-  {
     "name": "King Knight",
     "game": "Shovel Knight",
     "series": "Shovel Knight",
@@ -8044,24 +7889,6 @@ window.AMIIBO_FULL_DB = [
     "head": "35c30000",
     "tail": "036e0a02",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c30000-036e0a02.png"
-  },
-  {
-    "name": "Lily",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d00001",
-    "tail": "04bb1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png"
-  },
-  {
-    "name": "Lily",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d00001",
-    "tail": "04db1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png"
   },
   {
     "name": "Loot Goblin",
@@ -8073,105 +7900,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38c00000-03911602.png"
   },
   {
-    "name": "Luke",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c20000",
-    "tail": "04aa1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png"
-  },
-  {
-    "name": "Luke",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c20001",
-    "tail": "04ab1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png"
-  },
-  {
-    "name": "Luke",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c20001",
-    "tail": "04cd1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png"
-  },
-  {
-    "name": "M. Bison",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d60001",
-    "tail": "04e11d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04e11d02.png"
-  },
-  {
-    "name": "M. Bison",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d60001",
-    "tail": "04eb1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png"
-  },
-  {
-    "name": "Mai",
-    "game": "Fatal Fury",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "3c810001",
-    "tail": "04f21d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f21d02.png"
-  },
-  {
-    "name": "Mai",
-    "game": "Fatal Fury",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "3c810001",
-    "tail": "04f31d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f31d02.png"
-  },
-  {
-    "name": "Manon",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cc0001",
-    "tail": "04b71d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png"
-  },
-  {
-    "name": "Manon",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cc0001",
-    "tail": "04d71d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04d71d02.png"
-  },
-  {
-    "name": "Marisa",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cd0001",
-    "tail": "04b81d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04b81d02.png"
-  },
-  {
-    "name": "Marisa",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cd0001",
-    "tail": "04d81d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04d81d02.png"
-  },
-  {
     "name": "Mega Man",
     "game": "Megaman",
     "series": "Mega Man",
@@ -8181,15 +7909,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-03791502.png"
   },
   {
-    "name": "Mio",
-    "game": "Xenoblade",
-    "series": "Xenoblade Chronicles 3",
-    "cat": "Other",
-    "head": "22440000",
-    "tail": "043e1b02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png"
-  },
-  {
     "name": "Nail Saionji",
     "game": "Yu-Gi-Oh!",
     "series": "Yu-Gi-Oh!",
@@ -8197,15 +7916,6 @@ window.AMIIBO_FULL_DB = [
     "head": "38450001",
     "tail": "04291902",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38450001-04291902.png"
-  },
-  {
-    "name": "Noah",
-    "game": "Xenoblade",
-    "series": "Xenoblade Chronicles 3",
-    "cat": "Other",
-    "head": "22430000",
-    "tail": "043d1b02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png"
   },
   {
     "name": "Pawapuro",
@@ -8235,15 +7945,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c10000-036c0a02.png"
   },
   {
-    "name": "Poochy",
-    "game": "Yoshi's Woolly World",
-    "series": "Yoshi's Woolly World",
-    "cat": "Other",
-    "head": "00800102",
-    "tail": "035d0302",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png"
-  },
-  {
     "name": "Qbby",
     "game": "BoxBoy!",
     "series": "BoxBoy!",
@@ -8251,24 +7952,6 @@ window.AMIIBO_FULL_DB = [
     "head": "1f400000",
     "tail": "035e1002",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f400000-035e1002.png"
-  },
-  {
-    "name": "Rashid",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d20001",
-    "tail": "04bd1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png"
-  },
-  {
-    "name": "Rashid",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d20001",
-    "tail": "04dd1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png"
   },
   {
     "name": "Roa Kirishima",
@@ -8287,42 +7970,6 @@ window.AMIIBO_FULL_DB = [
     "head": "38430001",
     "tail": "04271902",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38430001-04271902.png"
-  },
-  {
-    "name": "Ryu",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c00001",
-    "tail": "04a81d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04a81d02.png"
-  },
-  {
-    "name": "Ryu",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34c00001",
-    "tail": "04cb1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png"
-  },
-  {
-    "name": "Sagat",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d90001",
-    "tail": "04e41d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04e41d02.png"
-  },
-  {
-    "name": "Sagat",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34d90001",
-    "tail": "04ed1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png"
   },
   {
     "name": "Shovel Knight",
@@ -8361,15 +8008,6 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c20000-036d0a02.png"
   },
   {
-    "name": "Super Mario Cereal",
-    "game": "Kellogs",
-    "series": "Others",
-    "cat": "Other",
-    "head": "37400001",
-    "tail": "03741402",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png"
-  },
-  {
     "name": "Tatsuhisa “Luke” Kamijō",
     "game": "Yu-Gi-Oh!",
     "series": "Yu-Gi-Oh!",
@@ -8377,24 +8015,6 @@ window.AMIIBO_FULL_DB = [
     "head": "38410001",
     "tail": "04251902",
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38410001-04251902.png"
-  },
-  {
-    "name": "Terry",
-    "game": "Fatal Fury",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "3c800001",
-    "tail": "04e81d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04e81d02.png"
-  },
-  {
-    "name": "Terry",
-    "game": "Fatal Fury",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "3c800001",
-    "tail": "04f11d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png"
   },
   {
     "name": "Yabe",
@@ -8415,21 +8035,936 @@ window.AMIIBO_FULL_DB = [
     "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38400001-04241902.png"
   },
   {
-    "name": "Zangief",
-    "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cf0001",
-    "tail": "04ba1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png"
+    "name": "Detective Pikachu",
+    "game": "Pokemon",
+    "series": "Pokemon",
+    "cat": "Pokemon",
+    "head": "1d010000",
+    "tail": "03750d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png"
   },
   {
-    "name": "Zangief",
+    "name": "Shadow Mewtwo",
+    "game": "Pokemon",
+    "series": "Pokemon",
+    "cat": "Pokemon",
+    "head": "1d000001",
+    "tail": "025c0d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d000001-025c0d02.png"
+  },
+  {
+    "name": "Alex",
+    "game": "Minecraft",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3dc10000",
+    "tail": "04230002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png"
+  },
+  {
+    "name": "Banjo & Kazooie",
+    "game": "Banjo Kazooie",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3b400000",
+    "tail": "03a30002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3b400000-03a30002.png"
+  },
+  {
+    "name": "Bayonetta",
+    "game": "Bayonetta",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32400000",
+    "tail": "025b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400000-025b0002.png"
+  },
+  {
+    "name": "Bayonetta - Player 2",
+    "game": "Bayonetta",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32400100",
+    "tail": "03640002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png"
+  },
+  {
+    "name": "Captain Falcon",
+    "game": "F-Zero",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06000000",
+    "tail": "00120002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png"
+  },
+  {
+    "name": "Charizard",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19060000",
+    "tail": "00240002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png"
+  },
+  {
+    "name": "Cloud",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36000000",
+    "tail": "02590002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png"
+  },
+  {
+    "name": "Cloud - Player 2",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36000100",
+    "tail": "03620002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png"
+  },
+  {
+    "name": "Dark Pit",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07410000",
+    "tail": "00200002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png"
+  },
+  {
+    "name": "Dark Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c30000",
+    "tail": "03800002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c30000-03800002.png"
+  },
+  {
+    "name": "Duck Hunt",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07820000",
+    "tail": "002f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png"
+  },
+  {
+    "name": "Falco",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05810000",
+    "tail": "001c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png"
+  },
+  {
+    "name": "Fox",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05800000",
+    "tail": "00050002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png"
+  },
+  {
+    "name": "Greninja",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1b920000",
+    "tail": "00250002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png"
+  },
+  {
+    "name": "Hero",
+    "game": "Dragon Quest",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36400000",
+    "tail": "03a20002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png"
+  },
+  {
+    "name": "Ice Climbers",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "078f0000",
+    "tail": "03810002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png"
+  },
+  {
+    "name": "Incineroar",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1bd70000",
+    "tail": "03860002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1bd70000-03860002.png"
+  },
+  {
+    "name": "Inkling",
+    "game": "Splatoon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "08000100",
+    "tail": "03820002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03820002.png"
+  },
+  {
+    "name": "Isabelle",
+    "game": "Animal Crossing",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "01810000",
+    "tail": "037d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-037d0002.png"
+  },
+  {
+    "name": "Ivysaur",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19020000",
+    "tail": "03830002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19020000-03830002.png"
+  },
+  {
+    "name": "Jigglypuff",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19270000",
+    "tail": "00260002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19270000-00260002.png"
+  },
+  {
+    "name": "Joker",
+    "game": "Persona",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3a000000",
+    "tail": "03a10002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3a000000-03a10002.png"
+  },
+  {
+    "name": "Kazuya",
+    "game": "Tekken",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "33c00000",
+    "tail": "04200002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33c00000-04200002.png"
+  },
+  {
+    "name": "Ken",
     "game": "Street Fighter",
-    "series": "Street Fighter 6",
-    "cat": "Other",
-    "head": "34cf0001",
-    "tail": "04da1d02",
-    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png"
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34c10000",
+    "tail": "03890002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10000-03890002.png"
+  },
+  {
+    "name": "King Dedede",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f020000",
+    "tail": "00280002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png"
+  },
+  {
+    "name": "Kirby",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f000000",
+    "tail": "000a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png"
+  },
+  {
+    "name": "Little Mac",
+    "game": "Punch Out",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06c00000",
+    "tail": "000f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png"
+  },
+  {
+    "name": "Lucario",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1ac00000",
+    "tail": "00110002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1ac00000-00110002.png"
+  },
+  {
+    "name": "Lucas",
+    "game": "Earthbound",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22810000",
+    "tail": "02510002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png"
+  },
+  {
+    "name": "Mega Man",
+    "game": "Megaman",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34800000",
+    "tail": "00310002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-00310002.png"
+  },
+  {
+    "name": "Mega Man - Gold Edition",
+    "game": "Megaman",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34800000",
+    "tail": "02580002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-02580002.png"
+  },
+  {
+    "name": "Meta Knight",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f010000",
+    "tail": "00270002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png"
+  },
+  {
+    "name": "Mewtwo",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19960000",
+    "tail": "023d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png"
+  },
+  {
+    "name": "Mii Brawler",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00000",
+    "tail": "00210002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png"
+  },
+  {
+    "name": "Mii Gunner",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00200",
+    "tail": "00230002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png"
+  },
+  {
+    "name": "Mii Swordfighter",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00100",
+    "tail": "00220002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00100-00220002.png"
+  },
+  {
+    "name": "Min Min",
+    "game": "ARMS",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "0a400000",
+    "tail": "041d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png"
+  },
+  {
+    "name": "Mr. Game & Watch",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07800000",
+    "tail": "002d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07800000-002d0002.png"
+  },
+  {
+    "name": "Mythra",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22420000",
+    "tail": "041f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png"
+  },
+  {
+    "name": "Ness",
+    "game": "Earthbound",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22800000",
+    "tail": "002c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22800000-002c0002.png"
+  },
+  {
+    "name": "Olimar",
+    "game": "Pikmin",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06400100",
+    "tail": "001e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png"
+  },
+  {
+    "name": "Pac-Man",
+    "game": "Pac-man",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "33400000",
+    "tail": "00320002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33400000-00320002.png"
+  },
+  {
+    "name": "Palutena",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07420000",
+    "tail": "001f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07420000-001f0002.png"
+  },
+  {
+    "name": "Pichu",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19ac0000",
+    "tail": "03850002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19ac0000-03850002.png"
+  },
+  {
+    "name": "Pikachu",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19190000",
+    "tail": "00090002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19190000-00090002.png"
+  },
+  {
+    "name": "Pit",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07400000",
+    "tail": "00100002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07400000-00100002.png"
+  },
+  {
+    "name": "Pokemon Trainer",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1d400000",
+    "tail": "03870002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png"
+  },
+  {
+    "name": "Pyra",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22410000",
+    "tail": "041e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png"
+  },
+  {
+    "name": "R.O.B. - Famicom",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07810000",
+    "tail": "002e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-002e0002.png"
+  },
+  {
+    "name": "R.O.B. - NES",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07810000",
+    "tail": "00330002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png"
+  },
+  {
+    "name": "Richter",
+    "game": "Castlevania",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37c10000",
+    "tail": "038c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png"
+  },
+  {
+    "name": "Ridley",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c20000",
+    "tail": "037f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34c00000",
+    "tail": "02530002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png"
+  },
+  {
+    "name": "Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c00000",
+    "tail": "00060002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-00060002.png"
+  },
+  {
+    "name": "Sephiroth",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36010000",
+    "tail": "04210002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png"
+  },
+  {
+    "name": "Shulk",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22400000",
+    "tail": "002b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png"
+  },
+  {
+    "name": "Simon",
+    "game": "Castlevania",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37c00000",
+    "tail": "038b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png"
+  },
+  {
+    "name": "Snake",
+    "game": "Metal Gear Solid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37800000",
+    "tail": "038a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png"
+  },
+  {
+    "name": "Sonic",
+    "game": "Sonic",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32000000",
+    "tail": "00300002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png"
+  },
+  {
+    "name": "Squirtle",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19070000",
+    "tail": "03840002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png"
+  },
+  {
+    "name": "Steve",
+    "game": "Minecraft",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3dc00000",
+    "tail": "04220002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc00000-04220002.png"
+  },
+  {
+    "name": "Terry",
+    "game": "Fatal Fury",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3c800000",
+    "tail": "03a40002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800000-03a40002.png"
+  },
+  {
+    "name": "Villager",
+    "game": "Animal Crossing",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "01800000",
+    "tail": "00080002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01800000-00080002.png"
+  },
+  {
+    "name": "Wii Fit Trainer",
+    "game": "Wii Fit",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07000000",
+    "tail": "00070002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png"
+  },
+  {
+    "name": "Wolf",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05840000",
+    "tail": "037e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png"
+  },
+  {
+    "name": "Zero Suit Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c00100",
+    "tail": "001d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png"
+  },
+  {
+    "name": "Callie",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08010000",
+    "tail": "025d0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png"
+  },
+  {
+    "name": "Inkling - Yellow",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "04150402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png"
+  },
+  {
+    "name": "Inkling Boy",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "003f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-003f0402.png"
+  },
+  {
+    "name": "Inkling Boy - Neon Green",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "036a0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-036a0402.png"
+  },
+  {
+    "name": "Inkling Boy - Purple",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "02600402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-02600402.png"
+  },
+  {
+    "name": "Inkling Girl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "003e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-003e0402.png"
+  },
+  {
+    "name": "Inkling Girl - Lime Green",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "025f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png"
+  },
+  {
+    "name": "Inkling Girl - Neon Pink",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "03690402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png"
+  },
+  {
+    "name": "Inkling Squid",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "00400402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-00400402.png"
+  },
+  {
+    "name": "Inkling Squid - Neon Purple",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "036b0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-036b0402.png"
+  },
+  {
+    "name": "Inkling Squid - Orange",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "02610402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png"
+  },
+  {
+    "name": "Marie",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08020000",
+    "tail": "025e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-025e0402.png"
+  },
+  {
+    "name": "Marina",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08040000",
+    "tail": "03770402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-03770402.png"
+  },
+  {
+    "name": "Octoling - Blue",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050200",
+    "tail": "041b0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-041b0402.png"
+  },
+  {
+    "name": "Octoling Boy",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050200",
+    "tail": "038f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png"
+  },
+  {
+    "name": "Octoling Girl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050100",
+    "tail": "038e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050100-038e0402.png"
+  },
+  {
+    "name": "Octoling Octopus",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050300",
+    "tail": "03900402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050300-03900402.png"
+  },
+  {
+    "name": "Pearl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08030000",
+    "tail": "03760402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-03760402.png"
+  },
+  {
+    "name": "Smallfry",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08060100",
+    "tail": "041c0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png"
+  },
+  {
+    "name": "8-Bit Link",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034f0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034f0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Ganondorf",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01020100",
+    "tail": "001b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "00040002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Link's Awakening",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "03990902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03990902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Majora's Mask",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034c0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Ocarina of Time",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034b0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Skyward Sword",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034e0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Twilight Princess",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034d0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034d0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Sheik",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01010100",
+    "tail": "00170002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010100-00170002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000100",
+    "tail": "00160002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-00160002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Link - The Wind Waker",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000100",
+    "tail": "03500902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-03500902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Zelda - The Wind Waker",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01010000",
+    "tail": "03520902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03520902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Young Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "037c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-037c0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Zelda",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01010000",
+    "tail": "000e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-000e0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Zelda & Loftwing",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01010300",
+    "tail": "04140902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
   }
 ];
