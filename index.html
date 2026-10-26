@@ -51,38 +51,55 @@
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
   <!-- ========================================================
-       TOP APP HEADER
+       TOP APP HEADER (Bilingual TH/EN + Quota/VIP/Admin Bar)
        ======================================================== -->
-  <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800 px-4 py-2.5">
-    <div class="max-w-md mx-auto flex items-center justify-between">
-      
-      <!-- Logo & Mode -->
-      <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-rose-500 flex items-center justify-center font-black text-base shadow-lg">
-          🎮
-        </div>
-        <div>
-          <div class="flex items-center gap-1.5">
-            <h1 class="text-sm font-extrabold tracking-tight text-white">Odimibo Web</h1>
-            <span id="cryptoStatusBadge" onclick="switchTab('tabManual')" class="cursor-pointer text-[9px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-1.5 py-0.2 rounded-full font-bold">
-              ⚠️ ต้องใช้อุปกรณ์/เหรียญ NFC
-            </span>
+  <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800 px-3 py-2">
+    <div class="max-w-md mx-auto space-y-1.5">
+      <div class="flex items-center justify-between gap-2">
+        <!-- Logo & Mode -->
+        <div class="flex items-center gap-2 min-w-0">
+          <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-rose-500 flex items-center justify-center font-black text-sm shadow-lg flex-shrink-0">
+            🎮
           </div>
-          <p id="topSubStatus" class="text-[11px] text-slate-400">คลัง 950 Amiibos (รวมปี 2026 • NTAG215 แท้ Switch 1 & 2)</p>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5">
+              <h1 class="text-sm font-extrabold tracking-tight text-white truncate">Odimibo Web</h1>
+              <button id="langToggleBtn" onclick="toggleLanguage()" class="btn-active text-[10px] bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/40 px-2 py-0.5 rounded-lg font-extrabold flex-shrink-0">
+                🇹🇭 TH / EN
+              </button>
+            </div>
+            <p id="topSubStatus" class="text-[10px] text-slate-400 truncate">คลัง 950 Amiibos (ปี 2026 • Switch 1 & 2)</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions (Quota/VIP + BLE) -->
+        <div class="flex items-center gap-1.5 flex-shrink-0">
+          <button id="quotaBadgeBtn" onclick="openVipModal()" class="btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-amber-500/50 bg-amber-500/15 text-amber-300 flex items-center gap-1 shadow">
+            <span id="quotaBadgeIcon">🎫</span>
+            <span id="quotaBadgeText">ฟรี 5/5</span>
+          </button>
+          <button id="topBleBtn" onclick="toggleBLE()" class="btn-active text-xs font-semibold px-2.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800 flex items-center gap-1.5 transition">
+            <span id="blePillDot" class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span id="blePillLabel" class="text-slate-300 text-[11px]">BLE</span>
+          </button>
         </div>
       </div>
 
-      <!-- Quick Actions (BLE & Manual) -->
-      <div class="flex items-center gap-1.5">
-        <button onclick="switchTab('tabManual')" class="text-[11px] font-bold px-2.5 py-1.5 rounded-xl border border-emerald-500/50 bg-emerald-600/20 text-emerald-300 flex items-center gap-1 hover:bg-emerald-600/30 transition">
-          📖 วิธีใช้ทีละขั้น
-        </button>
-        <button id="topBleBtn" onclick="toggleBLE()" class="btn-active text-xs font-semibold px-2.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800 flex items-center gap-1.5 transition">
-          <span id="blePillDot" class="w-2 h-2 rounded-full bg-amber-400"></span>
-          <span id="blePillLabel" class="text-slate-300 text-[11px]">BLE</span>
-        </button>
+      <!-- Sub-bar: Status & Manual Quick Link -->
+      <div class="flex items-center justify-between text-[10px] bg-slate-950/80 border border-slate-800/90 rounded-xl px-2.5 py-1">
+        <span id="cryptoStatusBadge" onclick="switchTab('tabManual')" class="cursor-pointer text-amber-300 font-bold truncate">
+          ⚠️ ต้องใช้เครื่อง Allmiibo หรือเหรียญ NFC
+        </span>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <button onclick="openVipModal()" id="vipUpgradeLink" class="text-pink-400 hover:text-pink-300 font-extrabold">
+            💖 โดเนท / ปลดล็อก VIP / Admin
+          </button>
+          <span class="text-slate-700">|</span>
+          <button onclick="switchTab('tabManual')" id="topManualBtn" class="text-emerald-400 hover:text-emerald-300 font-bold">
+            📖 วิธีใช้
+          </button>
+        </div>
       </div>
-
     </div>
   </header>
 
@@ -99,10 +116,10 @@
       <!-- แถบเมนู 2 ชั้น: 1. เลือกตระกูลเกม ➔ 2. เลือกภาคของเกม (สั้นกระชับ พอดีจอมือถือ) -->
       <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-3 space-y-2 shadow-lg">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-extrabold text-white flex items-center gap-1">
+          <span id="lblSelectGameHeader" class="text-xs font-extrabold text-white flex items-center gap-1">
             <span>🎮</span> เลือกเกม & แยกตามภาค
           </span>
-          <button onclick="switchTab('tabCatalog')" class="text-xs text-indigo-400 hover:text-indigo-300 font-bold">
+          <button id="btnViewAllCatalog" onclick="switchTab('tabCatalog')" class="text-xs text-indigo-400 hover:text-indigo-300 font-bold">
             ดูตาราง 950 ตัว ▶
           </button>
         </div>
@@ -110,7 +127,7 @@
         <!-- เมนูคู่ 2 ช่อง: ซีรีส์เกม + ภาคของเกม (ข้อความสั้น ไม่ล้นจอมือถือ) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <div>
-            <label class="text-[11px] text-slate-400 font-bold block mb-0.5">1. เลือกซีรีส์เกม:</label>
+            <label id="lblStep1Series" class="text-[11px] text-slate-400 font-bold block mb-0.5">1. เลือกซีรีส์เกม:</label>
             <select id="quickSeriesSelect" onchange="onSeriesChange(this.value, 'device')" class="w-full bg-slate-950 border border-indigo-500/50 rounded-xl px-2.5 py-2 text-xs font-bold text-white focus:outline-none focus:border-indigo-400 truncate">
               <option value="Fire Emblem">⚔️ Fire Emblem (13)</option>
               <option value="Mario">🍄 Super Mario (155)</option>
@@ -132,7 +149,7 @@
           </div>
 
           <div>
-            <label class="text-[11px] text-emerald-400 font-bold block mb-0.5">2. เลือกภาคของเกม:</label>
+            <label id="lblStep2SubGame" class="text-[11px] text-emerald-400 font-bold block mb-0.5">2. เลือกภาคของเกม:</label>
             <select id="quickSubGameSelect" onchange="onSubGameChange(this.value, 'device')" class="w-full bg-slate-950 border border-emerald-500/50 rounded-xl px-2.5 py-2 text-xs font-bold text-emerald-300 focus:outline-none focus:border-emerald-400 truncate">
               <!-- Populated dynamically by JS based on selected series -->
             </select>
@@ -249,7 +266,7 @@
       <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow-lg">
         
         <div class="flex items-center justify-between text-xs font-bold text-slate-300 pb-0.5">
-          <span>⚡ 2. กดปุ่มส่งข้อมูลหรือดาวน์โหลดไฟล์</span>
+          <span id="lblStep2Action">⚡ 2. กดปุ่มส่งข้อมูลหรือดาวน์โหลดไฟล์</span>
           <button onclick="toggleFavoriteActive()" id="activeFavBtn" class="text-xs px-2.5 py-0.5 rounded-lg bg-slate-800 border border-slate-700 text-amber-300 font-bold">
             ☆ เก็บเข้ารายการโปรด
           </button>
@@ -257,11 +274,11 @@
 
         <!-- ปุ่มส่งเข้าเครื่องจริง / สุ่ม UID -->
         <div class="grid grid-cols-2 gap-2">
-          <button onclick="randomizeUid()" class="btn-active bg-amber-500/20 hover:bg-amber-500/30 active:bg-amber-500/40 text-amber-300 border border-amber-500/40 text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-            <span>🎲</span> สุ่ม UID ใหม่ (สแกนซ้ำ)
+          <button id="btnRandomizeUid" onclick="randomizeUid()" class="btn-active bg-amber-500/20 hover:bg-amber-500/30 active:bg-amber-500/40 text-amber-300 border border-amber-500/40 text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
+            <span>🎲</span> <span id="lblRandomUid">สุ่ม UID ใหม่ (สแกนซ้ำ)</span>
           </button>
-          <button onclick="sendCurrentToBLE()" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-            <span>📡</span> ส่งเข้า Allmiibo (BLE)
+          <button id="btnSendBle" onclick="sendCurrentToBLE()" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
+            <span>📡</span> <span id="lblSendBle">ส่งเข้า Allmiibo (BLE)</span>
           </button>
         </div>
 
@@ -279,8 +296,8 @@
         </div>
 
         <!-- ปุ่มเช็คความพร้อมมือถือ & ตรวจไฟล์ NTAG215 จริง -->
-        <button onclick="runDiagnosticSelfTest()" class="btn-active w-full bg-gradient-to-r from-teal-600/30 to-indigo-600/30 hover:from-teal-500/40 hover:to-indigo-500/40 text-teal-200 border border-teal-500/40 text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-          <span>🧪</span> เช็คความพร้อมมือถือ & ตรวจความถูกต้องไฟล์ 540B (กดเช็คที่นี่)
+        <button id="btnSelfTest" onclick="runDiagnosticSelfTest()" class="btn-active w-full bg-gradient-to-r from-teal-600/30 to-indigo-600/30 hover:from-teal-500/40 hover:to-indigo-500/40 text-teal-200 border border-teal-500/40 text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
+          <span>🧪</span> <span id="lblSelfTestBtn">เช็คความพร้อมมือถือ & ตรวจความถูกต้องไฟล์ 540B (กดเช็คที่นี่)</span>
         </button>
 
         <div class="flex items-center justify-between text-xs text-slate-400 pt-1 border-t border-slate-800/80 font-mono">
@@ -651,6 +668,126 @@
   </div>
 
   <!-- ========================================================
+       MODAL: ระบบโควต้าฟรีรายวัน + โดเนท/VIP Pass (ชั่วคราว/ถาวร) + โหมด Admin
+       ======================================================== -->
+  <div id="vipModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-3.5">
+    <div class="bg-slate-900 border border-amber-500/40 rounded-3xl max-w-md w-full p-4 space-y-3 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
+        <h3 id="vipModalTitle" class="text-sm font-extrabold text-amber-300 flex items-center gap-1.5">
+          <span>💎</span> สิทธิ์การใช้งาน & สนับสนุนโปรเจกต์ (VIP / Admin)
+        </h3>
+        <button onclick="closeVipModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
+      </div>
+
+      <!-- สถานะปัจจุบันของผู้ใช้ -->
+      <div id="vipCurrentStatusCard" class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-1">
+        <!-- Populated dynamically by renderVipModalContent() -->
+      </div>
+
+      <!-- ส่วนสนับสนุนโดเนท / ซื้อแพ็กเกจ (ซ่อนได้ถ้าเป็น Admin หรือ VIP ถาวรแล้ว) -->
+      <div id="vipSupportSection" class="bg-gradient-to-br from-indigo-950/60 via-slate-900 to-pink-950/40 border border-pink-500/30 rounded-2xl p-3 space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span id="vipSupportTitle" class="text-xs font-extrabold text-pink-300">💖 ร่วมโดเนทสนับสนุนค่าเซิร์ฟเวอร์ & รับโค้ด VIP ไม่จำกัด</span>
+          <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full font-bold">PromptPay / TrueMoney</span>
+        </div>
+
+        <p id="vipSupportDesc" class="text-[11px] text-slate-300 leading-relaxed">
+          สายฟรีใช้งานได้ <b>5 ครั้ง/วัน</b> (รีเซ็ตทุกเที่ยงคืน) หากต้องการใช้งาน<b>ไม่จำกัดครั้ง</b> สามารถร่วมโดเนทสนับสนุนพัฒนาโปรเจกต์เพื่อรับรหัสปลดล็อกได้ทันที:
+        </p>
+
+        <!-- แพ็กเกจแนะนำ 3 แบบ (ชั่วคราว 7 วัน / 30 วัน / ถาวร Lifetime) -->
+        <div class="grid grid-cols-3 gap-1.5 text-center">
+          <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2">
+            <div class="text-[10px] text-slate-400 font-bold" id="pkg7dLabel">ชั่วคราว 7 วัน</div>
+            <div class="text-sm font-black text-cyan-300 my-0.5">฿29</div>
+            <div class="text-[9px] text-emerald-400 font-bold">Unlimited 7D</div>
+          </div>
+          <div class="bg-slate-950/90 border border-indigo-500/50 rounded-xl p-2">
+            <div class="text-[10px] text-indigo-300 font-bold" id="pkg30dLabel">รายเดือน 30 วัน</div>
+            <div class="text-sm font-black text-indigo-300 my-0.5">฿59</div>
+            <div class="text-[9px] text-emerald-400 font-bold">Unlimited 30D</div>
+          </div>
+          <div class="bg-amber-500/10 border border-amber-500/60 rounded-xl p-2 relative">
+            <div class="text-[10px] text-amber-300 font-extrabold" id="pkgLifeLabel">🌟 ถาวร (คุ้มสุด)</div>
+            <div class="text-sm font-black text-amber-300 my-0.5">฿149</div>
+            <div class="text-[9px] text-amber-200 font-bold">Lifetime VIP</div>
+          </div>
+        </div>
+
+        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 text-[11px] text-slate-300 space-y-1">
+          <div class="font-bold text-emerald-300" id="vipDonateChannelTitle">📲 ช่องทางโดเนท / รับรหัสปลดล็อกอัตโนมัติ:</div>
+          <div>• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส VIP ได้ทันที (แอดมินออกโค้ดให้ใน 1 นาที)</div>
+        </div>
+      </div>
+
+      <!-- ช่องกรอกรหัสปลดล็อก (VIP Key / Temporary Key / รหัส Admin) -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-2">
+        <label id="lblEnterLicenseKey" class="text-xs font-extrabold text-white block">🔑 กรอกรหัสปลดล็อก (VIP Code หรือ รหัส Admin):</label>
+        <div class="flex gap-1.5">
+          <input type="text" id="licenseKeyInput" placeholder="เช่น ODI-LIFE-XXXX หรือรหัส Admin..."
+            class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-mono uppercase focus:outline-none focus:border-amber-400">
+          <button onclick="activateLicenseKey()" id="btnActivateKey" class="btn-active bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs px-3.5 py-2 rounded-xl shadow flex-shrink-0">
+            ปลดล็อก
+          </button>
+        </div>
+        <p id="lblLicenseHint" class="text-[10px] text-slate-400">
+          💡 <b>สำหรับเจ้าของเว็บ (Admin):</b> พิมพ์รหัสแอดมิน <code>ADMIN-ODIMIBO-9999</code> เพื่อเปิดโหมด Admin ใช้งานฟรีตลอดทุกระบบ และเปิดเครื่องมือสร้างโค้ดให้ลูกค้า
+        </p>
+      </div>
+
+      <!-- แผงควบคุมเฉพาะ Admin (แสดงเมื่อปลดล็อกรหัส Admin แล้วเท่านั้น) -->
+      <div id="adminKeyGenPanel" class="hidden bg-rose-950/30 border border-rose-500/50 rounded-2xl p-3 space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-extrabold text-rose-300 flex items-center gap-1">
+            <span>👑</span> แผงควบคุม Admin & สร้างโค้ดให้ผู้สนับสนุน
+          </span>
+          <button onclick="logoutVipOrAdmin()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 px-2 py-0.5 rounded border border-slate-700">
+            สลับกลับโหมดผู้ใช้ทั่วไป
+          </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-1.5">
+          <button onclick="adminGenerateCustomerCode('7D')" class="btn-active bg-cyan-600/30 hover:bg-cyan-600/50 text-cyan-200 border border-cyan-500/40 text-[11px] font-bold py-2 px-2 rounded-xl">
+            ➕ สร้างโค้ด 7 วัน
+          </button>
+          <button onclick="adminGenerateCustomerCode('30D')" class="btn-active bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-200 border border-indigo-500/40 text-[11px] font-bold py-2 px-2 rounded-xl">
+            ➕ สร้างโค้ด 30 วัน
+          </button>
+          <button onclick="adminGenerateCustomerCode('LIFE')" class="btn-active bg-amber-500/30 hover:bg-amber-500/50 text-amber-200 border border-amber-500/50 text-[11px] font-bold py-2 px-2 rounded-xl">
+            🌟 สร้างโค้ดถาวร
+          </button>
+        </div>
+
+        <div id="adminGeneratedCodeBox" class="hidden bg-black/80 border border-emerald-500/50 rounded-xl p-2.5 space-y-1">
+          <div class="text-[10px] text-emerald-400 font-bold">✅ สร้างโค้ดสำหรับส่งให้ลูกค้าสำเร็จ (กดคัดลอกได้เลย):</div>
+          <div class="flex items-center justify-between gap-2">
+            <code id="adminGeneratedCodeText" class="text-xs font-mono font-extrabold text-amber-300 select-all">ODI-LIFE-XXXX</code>
+            <button onclick="copyGeneratedCustomerCode()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg">
+              📋 คัดลอก
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] text-slate-300 pt-1 border-t border-rose-500/20">
+          <span>ตั้งจำนวนโควต้าฟรีต่อวัน (Free Quota/Day):</span>
+          <select id="adminDailyLimitSelect" onchange="adminUpdateDailyFreeLimit(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs font-bold text-amber-300">
+            <option value="3">3 ครั้ง/วัน</option>
+            <option value="5" selected>5 ครั้ง/วัน (แนะนำ)</option>
+            <option value="10">10 ครั้ง/วัน</option>
+            <option value="999">ไม่จำกัด (เปิดฟรีทั้งหมด)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex justify-end pt-1">
+        <button onclick="closeVipModal()" id="btnCloseVipModal" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs py-2.5 rounded-xl border border-slate-700">
+          ปิดหน้าต่าง
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
        BOTTOM MOBILE NAVIGATION BAR
        ======================================================== -->
   <nav class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 px-3 py-1.5 max-w-md mx-auto shadow-2xl">
@@ -658,17 +795,17 @@
       
       <button onclick="switchTab('tabDevice')" id="navBtnDevice" class="nav-btn active flex flex-col items-center justify-center py-1.5 rounded-xl text-indigo-400 bg-slate-800/80 transition">
         <span class="text-lg">🎮</span>
-        <span class="text-xs font-bold">หน้าจอ & สลับเกม</span>
+        <span id="navLblDevice" class="text-xs font-bold">หน้าจอ & สลับเกม</span>
       </button>
 
       <button onclick="switchTab('tabCatalog')" id="navBtnCatalog" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
         <span class="text-lg">📚</span>
-        <span class="text-xs font-bold">คลัง 950 ตัว (2026)</span>
+        <span id="navLblCatalog" class="text-xs font-bold">คลัง 950 ตัว (2026)</span>
       </button>
 
       <button onclick="switchTab('tabManual')" id="navBtnManual" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
         <span class="text-lg">📖</span>
-        <span class="text-xs font-bold">วิธีใช้ทีละขั้น & Key</span>
+        <span id="navLblManual" class="text-xs font-bold">วิธีใช้ทีละขั้น & Key</span>
       </button>
 
     </div>
@@ -1856,6 +1993,7 @@
 
     async function downloadBinFromCatalog(globalIdx) {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       const item = fullDb[globalIdx];
       if (!item) return;
       const r = () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase();
@@ -1867,6 +2005,7 @@
 
     async function downloadCurrentBin() {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       await rebuildActiveTagBinary();
       downloadFile(activeTag.rawBytes, `${activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
       showToast(`💾 ดาวน์โหลดไฟล์ .bin (540 ไบต์) สำเร็จ`);
@@ -1875,6 +2014,7 @@
     // สร้างไฟล์ amiibo.json ตามมาตรฐาน XorTroll/emuiibo (รองรับ use_random_uuid: true สแกนซ้ำไม่จำกัด)
     async function downloadCurrentEmuiiboJson() {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       await rebuildActiveTagBinary();
       const headHex = activeTag.head || '21000000';
       const tailHex = activeTag.tail || '000b0002';
@@ -1928,6 +2068,7 @@
     // สร้างไฟล์ .nfc มาตรฐาน Flipper Zero (NTAG215 135 Pages)
     async function downloadCurrentFlipperNfc() {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       await rebuildActiveTagBinary();
       const b = activeTag.rawBytes;
       const uidHex = Array.from(b.subarray(0, 3)).concat(Array.from(b.subarray(4, 8)))
@@ -2140,6 +2281,7 @@
     // ฟีเจอร์จาก AO-Labs-Chile/allmiibo-manager: ส่งยกหมวดหมู่เข้าโฟลเดอร์ในเครื่อง Allmiibo อัตโนมัติ
     async function batchSendCategoryToBLE() {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       if (!isBleConnected || !txChar) {
         showToast('⚠️ กรุณากดปุ่ม BLE มุมขวาบนเพื่อเชื่อมต่อเครื่อง Allmiibo ก่อน');
         toggleBLE();
@@ -2171,6 +2313,7 @@
 
     async function sendCurrentToBLE() {
       triggerHaptic();
+      if (!consumeQuotaOrPrompt()) return;
       if (!isBleConnected || !txChar) {
         showToast('⚠️ กรุณากดปุ่ม BLE มุมขวาบนเพื่อเชื่อมต่อเครื่อง Allmiibo ก่อน');
         toggleBLE();
@@ -2387,10 +2530,411 @@
       log(`[Self-Test] ตรวจโครงสร้าง ${activeTag.name} (540B, BCC0/BCC1, CC:${ccHex}, PWD:${pwdHex}) ผ่านครบ 100%`, 'rx');
     }
 
+    // --------------------------------------------------------
+    // 9. ระบบสลับภาษา (TH / EN) + โควต้าฟรีรายวัน + VIP / โดเนท + โหมด Admin
+    // --------------------------------------------------------
+    const LANG_STORAGE_KEY = 'odimibo_lang_v1';
+    const QUOTA_STORAGE_KEY = 'odimibo_daily_quota_v1';
+    const LICENSE_STORAGE_KEY = 'odimibo_license_v1';
+    const DAILY_LIMIT_CONFIG_KEY = 'odimibo_daily_limit_cfg_v1';
+    const ADMIN_MASTER_CODE = 'ADMIN-ODIMIBO-9999';
+
+    let currentLang = localStorage.getItem(LANG_STORAGE_KEY) || 'th';
+    let dailyFreeLimit = parseInt(localStorage.getItem(DAILY_LIMIT_CONFIG_KEY) || '5', 10) || 5;
+
+    const I18N_DICT = {
+      th: {
+        langBtn: '🇹🇭 ไทย | EN',
+        topSubStatus: 'คลัง 950 Amiibos (ปี 2026 • Switch 1 & 2)',
+        cryptoWarn: '⚠️ ต้องใช้เครื่อง Allmiibo หรือเหรียญ NFC',
+        vipUpgradeLink: '💖 โดเนท / ปลดล็อก VIP / Admin',
+        topManualBtn: '📖 วิธีใช้',
+        lblSelectGameHeader: '🎮 เลือกเกม & แยกตามภาค',
+        btnViewAllCatalog: 'ดูตาราง 950 ตัว ▶',
+        lblStep1Series: '1. เลือกซีรีส์เกม:',
+        lblStep2SubGame: '2. เลือกภาคของเกม:',
+        quickSearchPlaceholder: '🔍 พิมพ์ค้นหาชื่อเกม หรือ ตัวละคร (เช่น Engage, Odyssey, Marth)...',
+        quickStripLabel: '👇 แตะเลือกตัวละครในภาคนี้:',
+        lblStep2Action: '⚡ 2. กดปุ่มส่งข้อมูลหรือดาวน์โหลดไฟล์',
+        lblRandomUid: 'สุ่ม UID ใหม่ (สแกนซ้ำ)',
+        lblSendBle: 'ส่งเข้า Allmiibo (BLE)',
+        lblSelfTestBtn: 'เช็คความพร้อมมือถือ & ตรวจความถูกต้องไฟล์ 540B (กดเช็คที่นี่)',
+        navLblDevice: 'หน้าจอ & สลับเกม',
+        navLblCatalog: 'คลัง 950 ตัว (2026)',
+        navLblManual: 'วิธีใช้ทีละขั้น & Key',
+        vipModalTitle: '💎 สิทธิ์การใช้งาน & สนับสนุนโปรเจกต์ (VIP / Admin)',
+        vipSupportTitle: '💖 ร่วมโดเนทสนับสนุนค่าเซิร์ฟเวอร์ & รับโค้ด VIP ไม่จำกัด',
+        vipSupportDesc: 'สายฟรีใช้งานได้ <b>' + dailyFreeLimit + ' ครั้ง/วัน</b> (รีเซ็ตทุกเที่ยงคืน) หากต้องการใช้งาน<b>ไม่จำกัดครั้ง</b> สามารถร่วมโดเนทสนับสนุนพัฒนาโปรเจกต์เพื่อรับรหัสปลดล็อกได้ทันที:',
+        pkg7dLabel: 'ชั่วคราว 7 วัน',
+        pkg30dLabel: 'รายเดือน 30 วัน',
+        pkgLifeLabel: '🌟 ถาวร (คุ้มสุด)',
+        lblEnterLicenseKey: '🔑 กรอกรหัสปลดล็อก (VIP Code หรือ รหัส Admin):',
+        btnActivateKey: 'ปลดล็อก',
+        btnCloseVipModal: 'ปิดหน้าต่าง'
+      },
+      en: {
+        langBtn: '🇬🇧 EN | ไทย',
+        topSubStatus: '950 Amiibos DB (2026 Ready • Switch 1 & 2)',
+        cryptoWarn: '⚠️ Requires Allmiibo BLE or NTAG215 Coin',
+        vipUpgradeLink: '💖 Donate / Unlock VIP / Admin',
+        topManualBtn: '📖 Guide',
+        lblSelectGameHeader: '🎮 Select Game Series & Title',
+        btnViewAllCatalog: 'View All 950 ▶',
+        lblStep1Series: '1. Select Game Series:',
+        lblStep2SubGame: '2. Select Game Title:',
+        quickSearchPlaceholder: '🔍 Search game or character (e.g. Engage, Odyssey, Marth)...',
+        quickStripLabel: '👇 Tap a character in this game:',
+        lblStep2Action: '⚡ 2. Send to Device or Download File',
+        lblRandomUid: 'Randomize UID (Rescan)',
+        lblSendBle: 'Send to Allmiibo (BLE)',
+        lblSelfTestBtn: 'Mobile Readiness & 540B File Self-Test (Tap Here)',
+        navLblDevice: 'Emulator & Switch',
+        navLblCatalog: '950 Catalog (2026)',
+        navLblManual: 'Step-by-Step Guide',
+        vipModalTitle: '💎 Access Pass & Support Project (VIP / Admin)',
+        vipSupportTitle: '💖 Support & Unlock Unlimited VIP Access',
+        vipSupportDesc: 'Free tier includes <b>' + dailyFreeLimit + ' uses/day</b> (resets daily). Support the project or purchase a pass to unlock <b>unlimited</b> downloads & BLE transfers:',
+        pkg7dLabel: '7-Day Pass',
+        pkg30dLabel: '30-Day Pass',
+        pkgLifeLabel: '🌟 Lifetime VIP',
+        lblEnterLicenseKey: '🔑 Enter Activation Code (VIP Key or Admin Code):',
+        btnActivateKey: 'Activate',
+        btnCloseVipModal: 'Close'
+      }
+    };
+
+    function getTodayDateStr() {
+      const n = new Date();
+      return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+    }
+
+    function getQuotaState() {
+      const today = getTodayDateStr();
+      try {
+        const raw = JSON.parse(localStorage.getItem(QUOTA_STORAGE_KEY) || '{}');
+        if (raw.date === today && typeof raw.used === 'number') {
+          return raw;
+        }
+      } catch (e) {}
+      const fresh = { date: today, used: 0 };
+      localStorage.setItem(QUOTA_STORAGE_KEY, JSON.stringify(fresh));
+      return fresh;
+    }
+
+    function getLicenseState() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(LICENSE_STORAGE_KEY) || 'null');
+        if (!raw || !raw.role) return { role: 'FREE', expiresAt: null, code: null };
+        if (raw.role === 'TEMP_VIP' && raw.expiresAt && Date.now() > raw.expiresAt) {
+          localStorage.removeItem(LICENSE_STORAGE_KEY);
+          return { role: 'FREE', expiresAt: null, code: null };
+        }
+        return raw;
+      } catch (e) {
+        return { role: 'FREE', expiresAt: null, code: null };
+      }
+    }
+
+    function updateQuotaBadgeUI() {
+      const lic = getLicenseState();
+      const q = getQuotaState();
+      const btn = document.getElementById('quotaBadgeBtn');
+      const icon = document.getElementById('quotaBadgeIcon');
+      const txt = document.getElementById('quotaBadgeText');
+      if (!btn || !icon || !txt) return;
+
+      if (lic.role === 'ADMIN') {
+        btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-rose-500/60 bg-rose-500/20 text-rose-200 flex items-center gap-1 shadow';
+        icon.textContent = '👑';
+        txt.textContent = currentLang === 'en' ? 'ADMIN (∞)' : 'ADMIN (ไม่จำกัด)';
+      } else if (lic.role === 'LIFETIME_VIP') {
+        btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-emerald-500/60 bg-emerald-500/20 text-emerald-200 flex items-center gap-1 shadow';
+        icon.textContent = '💎';
+        txt.textContent = currentLang === 'en' ? 'VIP (∞)' : 'VIP ถาวร';
+      } else if (lic.role === 'TEMP_VIP') {
+        const daysLeft = Math.max(1, Math.ceil((lic.expiresAt - Date.now()) / 86400000));
+        btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-cyan-500/60 bg-cyan-500/20 text-cyan-200 flex items-center gap-1 shadow';
+        icon.textContent = '⏳';
+        txt.textContent = currentLang === 'en' ? `VIP (${daysLeft}d)` : `VIP (${daysLeft} วัน)`;
+      } else {
+        const rem = Math.max(0, dailyFreeLimit - q.used);
+        btn.className = rem > 0
+          ? 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-amber-500/50 bg-amber-500/15 text-amber-300 flex items-center gap-1 shadow'
+          : 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-rose-500/60 bg-rose-600/30 text-rose-200 flex items-center gap-1 shadow animate-pulse';
+        icon.textContent = '🎫';
+        txt.textContent = currentLang === 'en' ? `Free ${rem}/${dailyFreeLimit}` : `ฟรี ${rem}/${dailyFreeLimit}`;
+      }
+    }
+
+    function consumeQuotaOrPrompt() {
+      const lic = getLicenseState();
+      if (lic.role === 'ADMIN' || lic.role === 'LIFETIME_VIP' || lic.role === 'TEMP_VIP') {
+        return true; // ใช้งานได้ไม่จำกัด
+      }
+      if (dailyFreeLimit >= 999) return true;
+
+      const q = getQuotaState();
+      if (q.used >= dailyFreeLimit) {
+        showToast(currentLang === 'en'
+          ? '⚠️ Daily free limit reached! Unlock VIP or Admin to continue.'
+          : '⚠️ โควต้าฟรีวันนี้ครบแล้ว! กดโดเนทรับโค้ด VIP หรือใส่รหัส Admin เพื่อใช้งานต่อ');
+        openVipModal();
+        return false;
+      }
+
+      q.used += 1;
+      localStorage.setItem(QUOTA_STORAGE_KEY, JSON.stringify(q));
+      updateQuotaBadgeUI();
+      const rem = Math.max(0, dailyFreeLimit - q.used);
+      log(`[Quota] ใช้สิทธิ์ฟรีสำเร็จ (คงเหลือวันนี้: ${rem}/${dailyFreeLimit} ครั้ง)`, 'info');
+      return true;
+    }
+
+    function openVipModal() {
+      triggerHaptic();
+      renderVipModalContent();
+      const m = document.getElementById('vipModal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+
+    function closeVipModal() {
+      const m = document.getElementById('vipModal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+
+    function renderVipModalContent() {
+      const lic = getLicenseState();
+      const q = getQuotaState();
+      const rem = Math.max(0, dailyFreeLimit - q.used);
+      const card = document.getElementById('vipCurrentStatusCard');
+      const adminPanel = document.getElementById('adminKeyGenPanel');
+
+      if (lic.role === 'ADMIN') {
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-rose-300">👑 สถานะปัจจุบัน: แอดมินระบบสูงสุด (ADMIN MODE)</span>
+            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
+          </div>
+          <p class="text-[11px] text-slate-300">คุณสามารถใช้งานการดาวน์โหลดไฟล์และส่ง Bluetooth ได้ตลอดทุกระบบโดยไม่มีจำกัด และสามารถสร้างโค้ดให้ลูกค้าด้านล่างได้ทันที</p>`;
+        adminPanel.classList.remove('hidden');
+      } else if (lic.role === 'LIFETIME_VIP') {
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-emerald-300">💎 สถานะปัจจุบัน: สมาชิก VIP ถาวร (Lifetime Supporter)</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
+          </div>
+          <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานไม่จำกัดครั้งถาวรเรียบร้อยแล้ว ขอบคุณที่ร่วมสนับสนุนโปรเจกต์ครับ! (${lic.code || 'VIP'})</p>`;
+        adminPanel.classList.add('hidden');
+      } else if (lic.role === 'TEMP_VIP') {
+        const expDate = new Date(lic.expiresAt).toLocaleDateString(currentLang === 'en' ? 'en-US' : 'th-TH');
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-cyan-300">⏳ สถานะปัจจุบัน: สมาชิก VIP ชั่วคราว (Temporary Pass)</span>
+            <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded font-mono font-bold">หมดอายุ ${expDate}</span>
+          </div>
+          <p class="text-[11px] text-slate-300">ใช้งานได้ไม่จำกัดครั้งจนถึงวันที่ ${expDate} (${lic.code})</p>`;
+        adminPanel.classList.add('hidden');
+      } else {
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-amber-300">${currentLang === 'en' ? '🎫 Current Plan: Free Daily Quota' : '🎫 สถานะปัจจุบัน: ผู้ใช้ทั่วไป (โควต้าฟรีรายวัน)'}</span>
+            <span class="text-[11px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-mono font-bold">${rem} / ${dailyFreeLimit}</span>
+          </div>
+          <p class="text-[11px] text-slate-300">${currentLang === 'en'
+            ? `You have <b>${rem}</b> free downloads/BLE transfers left today.`
+            : `วันนี้คุณเหลือสิทธิ์กดดาวน์โหลดไฟล์ / ส่งเข้าเครื่อง Allmiibo ฟรีอีก <b>${rem} ครั้ง</b>`}</p>`;
+        adminPanel.classList.add('hidden');
+      }
+    }
+
+    // สร้างลายเซ็นChecksum 4 ตัวอักษรสำหรับตรวจสอบโค้ดลูกค้า (ไม่ต้องพึ่ง Database ภายนอก)
+    function computeCodeSignature(prefix, payload) {
+      const secret = 'ODIMIBO_VIP_SALT_2026';
+      const str = `${prefix}:${payload}:${secret}`;
+      let h = 0x811C9DC5;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 0x01000193);
+      }
+      return (h >>> 0).toString(36).toUpperCase().padStart(4, '0').slice(0, 4);
+    }
+
+    function adminGenerateCustomerCode(type) {
+      triggerHaptic();
+      const rand = Math.random().toString(36).substring(2, 6).toUpperCase();
+      let code = '';
+      if (type === 'LIFE') {
+        const sig = computeCodeSignature('LIFE', rand);
+        code = `ODI-LIFE-${rand}-${sig}`;
+      } else if (type === '30D') {
+        const expDays = Math.floor(Date.now() / 86400000) + 30;
+        const payload = `${expDays.toString(36).toUpperCase()}${rand.slice(0, 2)}`;
+        const sig = computeCodeSignature('30D', payload);
+        code = `ODI-30D-${payload}-${sig}`;
+      } else {
+        const expDays = Math.floor(Date.now() / 86400000) + 7;
+        const payload = `${expDays.toString(36).toUpperCase()}${rand.slice(0, 2)}`;
+        const sig = computeCodeSignature('7D', payload);
+        code = `ODI-7D-${payload}-${sig}`;
+      }
+
+      document.getElementById('adminGeneratedCodeText').textContent = code;
+      document.getElementById('adminGeneratedCodeBox').classList.remove('hidden');
+      log(`[Admin KeyGen] สร้างโค้ดลูกค้าใหม่สำเร็จ: ${code}`, 'rx');
+    }
+
+    function copyGeneratedCustomerCode() {
+      const code = document.getElementById('adminGeneratedCodeText').textContent;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(code);
+      }
+      showToast(`📋 คัดลอกโค้ด ${code} แล้ว!`);
+    }
+
+    function adminUpdateDailyFreeLimit(val) {
+      dailyFreeLimit = parseInt(val, 10) || 5;
+      localStorage.setItem(DAILY_LIMIT_CONFIG_KEY, String(dailyFreeLimit));
+      updateQuotaBadgeUI();
+      showToast(`✅ ตั้งโควต้าฟรีต่อวันเป็น ${dailyFreeLimit >= 999 ? 'ไม่จำกัด' : dailyFreeLimit + ' ครั้ง/วัน'} แล้ว`);
+    }
+
+    function activateLicenseKey() {
+      triggerHaptic();
+      const input = (document.getElementById('licenseKeyInput').value || '').trim().toUpperCase();
+      if (!input) {
+        showToast('⚠️ กรุณากรอกรหัสปลดล็อกก่อนครับ');
+        return;
+      }
+
+      // 1. ตรวจรหัส Admin สูงสุด
+      if (input === ADMIN_MASTER_CODE || input === 'ADMIN9999' || input === 'ODIMIBO-ADMIN') {
+        localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
+          role: 'ADMIN',
+          expiresAt: null,
+          code: 'ADMIN-MASTER'
+        }));
+        updateQuotaBadgeUI();
+        renderVipModalContent();
+        showToast('👑 เปิดโหมด ADMIN สำเร็จ! ใช้งานได้ไม่จำกัดทุกระบบ');
+        log('[Auth] เข้าสู่ระบบโหมด ADMIN สูงสุด (Unlimited Access)', 'rx');
+        return;
+      }
+
+      // 2. ตรวจรหัส VIP ถาวร (ODI-LIFE-XXXX-SSSS หรือ VIP-ODIMIBO-2026)
+      if (input === 'VIP-ODIMIBO-2026' || input.startsWith('ODI-LIFE-')) {
+        const parts = input.split('-');
+        if (input === 'VIP-ODIMIBO-2026' || (parts.length === 4 && computeCodeSignature('LIFE', parts[2]) === parts[3])) {
+          localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
+            role: 'LIFETIME_VIP',
+            expiresAt: null,
+            code: input
+          }));
+          updateQuotaBadgeUI();
+          renderVipModalContent();
+          showToast('💎 ปลดล็อก VIP ถาวรสำเร็จ! ใช้งานได้ไม่จำกัด');
+          return;
+        }
+      }
+
+      // 3. ตรวจรหัส VIP ชั่วคราว 7 วัน / 30 วัน (ODI-7D-XXXX-SSSS / ODI-30D-XXXX-SSSS)
+      if (input.startsWith('ODI-7D-') || input.startsWith('ODI-30D-')) {
+        const parts = input.split('-');
+        const prefix = parts[1]; // 7D or 30D
+        const payload = parts[2] || '';
+        const sig = parts[3] || '';
+        if (parts.length === 4 && computeCodeSignature(prefix, payload) === sig) {
+          const expDaysStr = payload.slice(0, -2);
+          const expDays = parseInt(expDaysStr, 36);
+          const expiresAt = expDays * 86400000;
+          if (expiresAt > Date.now()) {
+            localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
+              role: 'TEMP_VIP',
+              expiresAt: expiresAt,
+              code: input
+            }));
+            updateQuotaBadgeUI();
+            renderVipModalContent();
+            showToast(`⏳ ปลดล็อก VIP (${prefix}) สำเร็จ!`);
+            return;
+          } else {
+            showToast('❌ รหัสปลดล็อกนี้หมดอายุแล้วครับ');
+            return;
+          }
+        }
+      }
+
+      showToast('❌ รหัสไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
+    }
+
+    function logoutVipOrAdmin() {
+      localStorage.removeItem(LICENSE_STORAGE_KEY);
+      updateQuotaBadgeUI();
+      renderVipModalContent();
+      showToast('🔄 สลับกลับเป็นโหมดผู้ใช้ทั่วไป (Free Quota) แล้ว');
+    }
+
+    function applyLanguage(lang) {
+      currentLang = (lang === 'en') ? 'en' : 'th';
+      localStorage.setItem(LANG_STORAGE_KEY, currentLang);
+      const t = I18N_DICT[currentLang];
+
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val) el.textContent = val;
+      };
+      const setHtml = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val) el.innerHTML = val;
+      };
+
+      setTxt('langToggleBtn', t.langBtn);
+      setTxt('topSubStatus', t.topSubStatus);
+      if (!retailKeyBytes) setTxt('cryptoStatusBadge', t.cryptoWarn);
+      setTxt('vipUpgradeLink', t.vipUpgradeLink);
+      setTxt('topManualBtn', t.topManualBtn);
+      setTxt('lblSelectGameHeader', t.lblSelectGameHeader);
+      setTxt('btnViewAllCatalog', t.btnViewAllCatalog);
+      setTxt('lblStep1Series', t.lblStep1Series);
+      setTxt('lblStep2SubGame', t.lblStep2SubGame);
+      setTxt('quickStripLabel', t.quickStripLabel);
+      setTxt('lblStep2Action', t.lblStep2Action);
+      setTxt('lblRandomUid', t.lblRandomUid);
+      setTxt('lblSendBle', t.lblSendBle);
+      setTxt('lblSelfTestBtn', t.lblSelfTestBtn);
+      setTxt('navLblDevice', t.navLblDevice);
+      setTxt('navLblCatalog', t.navLblCatalog);
+      setTxt('navLblManual', t.navLblManual);
+      setTxt('vipModalTitle', t.vipModalTitle);
+      setTxt('vipSupportTitle', t.vipSupportTitle);
+      setHtml('vipSupportDesc', t.vipSupportDesc);
+      setTxt('pkg7dLabel', t.pkg7dLabel);
+      setTxt('pkg30dLabel', t.pkg30dLabel);
+      setTxt('pkgLifeLabel', t.pkgLifeLabel);
+      setTxt('lblEnterLicenseKey', t.lblEnterLicenseKey);
+      setTxt('btnActivateKey', t.btnActivateKey);
+      setTxt('btnCloseVipModal', t.btnCloseVipModal);
+
+      const qInput = document.getElementById('quickSearchInput');
+      if (qInput) qInput.placeholder = t.quickSearchPlaceholder;
+
+      updateQuotaBadgeUI();
+    }
+
+    function toggleLanguage() {
+      triggerHaptic();
+      const next = currentLang === 'th' ? 'en' : 'th';
+      applyLanguage(next);
+      showToast(next === 'en' ? '🇬🇧 Switched language to English' : '🇹🇭 เปลี่ยนเป็นภาษาไทยแล้ว');
+    }
+
     // เริ่มต้นระบบ
     (async function initApp() {
       loadFavorites();
       loadSavedRetailKey();
+      applyLanguage(currentLang);
+      updateQuotaBadgeUI();
       initGameDropdownsAndAutocomplete();
       if (fullDb.length > 0) {
         await selectAmiibo(0, false);
