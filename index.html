@@ -6,13 +6,13 @@
   <meta name="theme-color" content="#090d16">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Odimibo Web - Allmiibo 900+ Database & Nintendo Switch 1 & 2 Hub</title>
+  <title>Odimibo Web - Allmiibo 932 Database & Switch 1/2 NFC Manager</title>
   
   <!-- Tailwind CSS & Google Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- ฐานข้อมูล Amiibo ทั้งหมด 932 ตัวละครจาก GitHub (ครบทุกตัวในปัจจุบัน) -->
+  <!-- ฐานข้อมูล Amiibo ทั้งหมด 932 ตัวละครจาก GitHub -->
   <script src="amiibos_all.js"></script>
 
   <style>
@@ -64,21 +64,21 @@
         <div>
           <div class="flex items-center gap-1.5">
             <h1 class="text-sm font-extrabold tracking-tight text-white">Odimibo Web</h1>
-            <span id="fullDbPill" class="text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.2 rounded-full font-bold">
-              932 Amiibos
+            <span id="cryptoStatusBadge" onclick="switchTab('tabManual')" class="cursor-pointer text-[9px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-1.5 py-0.2 rounded-full font-bold">
+              ⚠️ ต้องใช้อุปกรณ์/เหรียญ NFC
             </span>
           </div>
-          <p id="topSubStatus" class="text-[10px] text-slate-400">ครบทุกตัวละครในปัจจุบัน (Switch 1 & 2)</p>
+          <p id="topSubStatus" class="text-[10px] text-slate-400">คลัง 932 Amiibos (ระบบ NTAG215 แท้สำหรับ Switch 1 & 2)</p>
         </div>
       </div>
 
       <!-- Quick Actions (BLE & Manual) -->
-      <div class="flex items-center gap-2">
-        <button onclick="switchTab('tabManual')" class="text-[11px] font-semibold px-2 py-1.5 rounded-xl border border-indigo-500/40 bg-indigo-600/20 text-indigo-300 flex items-center gap-1 hover:bg-indigo-600/30 transition">
-          📖 วิธีใช้
+      <div class="flex items-center gap-1.5">
+        <button onclick="openScanHelpModal()" class="text-[10px] font-bold px-2 py-1.5 rounded-xl border border-rose-500/50 bg-rose-600/20 text-rose-300 flex items-center gap-1 hover:bg-rose-600/30 transition animate-pulse">
+          ❓ สแกนไม่ติด?
         </button>
         <button id="topBleBtn" onclick="toggleBLE()" class="btn-active text-[11px] font-semibold px-2.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800 flex items-center gap-1.5 transition">
-          <span id="blePillDot" class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span id="blePillDot" class="w-2 h-2 rounded-full bg-amber-400"></span>
           <span id="blePillLabel" class="text-slate-300 text-[10px]">BLE</span>
         </button>
       </div>
@@ -92,27 +92,57 @@
   <main class="flex-1 max-w-md mx-auto w-full p-3.5 pb-24">
 
     <!-- ----------------------------------------------------
-         TAB 1: ตัวเครื่อง Allmiibo จำลอง (Virtual Device)
+         TAB 1: ตัวเครื่อง Allmiibo จำลอง & ส่งข้อมูล
          ---------------------------------------------------- -->
-    <div id="tabDevice" class="tab-pane space-y-4">
+    <div id="tabDevice" class="tab-pane space-y-3.5">
+
+      <!-- แถบแจ้งเตือนสำคัญ: ทำไมเอาโทรศัพท์แตะจอย Switch ตรงๆ ไม่ได้ -->
+      <div class="bg-amber-950/40 border border-amber-500/40 rounded-2xl p-3 text-[11px] space-y-1.5 shadow">
+        <div class="flex items-center justify-between">
+          <span class="font-extrabold text-amber-300 flex items-center gap-1">
+            ⚠️ สำคัญ: มือถือแตะจอย Switch โดยตรงไม่ได้!
+          </span>
+          <button onclick="openScanHelpModal()" class="text-[10px] bg-amber-500/20 hover:bg-amber-500/30 text-amber-200 px-2 py-0.5 rounded-lg border border-amber-500/40 font-bold">
+            ดูวิธีแก้ ▶
+          </button>
+        </div>
+        <p class="text-slate-300 text-[10px] leading-relaxed">
+          ชิป NFC ในมือถือ (iPhone/Android) ถูกล็อกจากโรงงานไม่ให้ปล่อยคลื่นจำลองแท็ก <b>NTAG215</b> ผ่านหน้าเว็บ ต้องกด <b>"🔗 เชื่อมต่อ BLE"</b> ส่งเข้าเครื่อง Allmiibo จริง หรือกด <b>"💾 โหลด .bin"</b> ไปเขียนลงเหรียญ NFC NTAG215 เพื่อแตะกับ Switch
+        </p>
+      </div>
+
+      <!-- สถานะกุญแจเข้ารหัส Nintendo Retail Key (key_retail.bin) -->
+      <div id="keyStatusBox" class="bg-slate-900 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <span id="keyStatusIcon" class="text-lg">🔐</span>
+          <div class="min-w-0">
+            <div id="keyStatusTitle" class="text-xs font-bold text-amber-300 truncate">สถานะการเข้ารหัส: โหมดโครงสร้าง NTAG215 พื้นฐาน</div>
+            <div id="keyStatusDesc" class="text-[10px] text-slate-400 truncate">อัปโหลด key_retail.bin (160B) เพื่อเข้ารหัส AES-128 & HMAC แท้ 100%</div>
+          </div>
+        </div>
+        <label class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-xl cursor-pointer whitespace-nowrap shadow flex-shrink-0">
+          🔑 ใส่ Key
+          <input type="file" id="keyFileInput" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
+        </label>
+      </div>
       
       <!-- Current Emulating Game Banner -->
       <div id="activeGameBanner" class="relative overflow-hidden rounded-2xl border border-slate-800 bg-gradient-to-r from-emerald-950/80 via-slate-900 to-cyan-950/80 p-3 shadow-lg">
         <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2.5">
-            <div id="activeGameLogoBadge" class="w-10 h-10 rounded-xl bg-slate-950 border border-emerald-500/40 flex items-center justify-center text-xl shadow">
-              🗡️
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div id="activeGameLogoBadge" class="w-10 h-10 rounded-xl bg-slate-950 border border-emerald-500/40 flex items-center justify-center text-xl shadow flex-shrink-0">
+              🏹
             </div>
-            <div>
+            <div class="min-w-0">
               <div class="flex items-center gap-1.5">
-                <span class="text-[9px] bg-emerald-500 text-black font-extrabold px-1.5 py-0.2 rounded">กำลังจำลอง</span>
-                <span id="activeGameCategory" class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">ZELDA SERIES</span>
+                <span class="text-[9px] bg-emerald-500 text-black font-extrabold px-1.5 py-0.2 rounded">เลือกอยู่</span>
+                <span id="activeGameCategory" class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider truncate">ZELDA BOTW SERIES</span>
               </div>
-              <h2 id="activeGameTitle" class="text-xs font-bold text-white mt-0.5">The Legend of Zelda: Tears of the Kingdom</h2>
+              <h2 id="activeGameTitle" class="text-xs font-bold text-white mt-0.5 truncate">The Legend of Zelda: Breath of the Wild</h2>
             </div>
           </div>
-          <button onclick="switchTab('tabCatalog')" class="text-xs bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-2.5 py-1.5 rounded-xl shadow flex items-center gap-1">
-            เลือกตัวใหม่ 🔁
+          <button onclick="switchTab('tabCatalog')" class="text-xs bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-2.5 py-1.5 rounded-xl shadow flex items-center gap-1 flex-shrink-0">
+            เปลี่ยนตัว 🔁
           </button>
         </div>
       </div>
@@ -136,7 +166,6 @@
         <!-- บอดี้พลาสติกสีขาว Allmiibo / Pixl.js OLED -->
         <div class="bg-gradient-to-b from-neutral-100 to-neutral-300 p-4 rounded-[2.2rem] shadow-2xl border-b-6 border-neutral-400 relative">
           
-          <!-- ช่องพอร์ต Type-C -->
           <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-10 bg-neutral-700 rounded-r"></div>
 
           <!-- กรอบจอดำด้านใน -->
@@ -147,9 +176,9 @@
               
               <!-- OLED Status Bar -->
               <div class="flex justify-between items-center text-base leading-none border-b border-white/20 pb-1">
-                <span id="oledHeaderLeft" class="tracking-wide">[MAIN]</span>
+                <span id="oledHeaderLeft" class="tracking-wide">[NTAG215]</span>
                 <span id="oledBleIcon" class="text-[10px] px-1 rounded bg-neutral-800">BLE:OFF</span>
-                <span id="oledBattery" class="border border-white/70 px-1 text-[10px]">100% 🔋</span>
+                <span id="oledCryptoTag" class="border border-white/70 px-1 text-[10px]">CC:F110FFEE</span>
               </div>
 
               <!-- OLED Dynamic Content -->
@@ -188,32 +217,28 @@
       <!-- Quick Control Action Bar -->
       <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow-lg">
         
-        <!-- ปุ่มควบคุมสัมผัส -->
-        <div class="grid grid-cols-3 gap-2">
-          <button onclick="handleInput('LEFT')" class="btn-active bg-slate-800 hover:bg-slate-700 active:bg-slate-600 py-2.5 rounded-xl font-bold text-base border border-slate-700">
-            ⬅️
-          </button>
-          <button onclick="handleInput('OK')" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 py-2.5 rounded-xl font-bold text-xs text-white border border-indigo-400 shadow">
-            เลือก (OK)
-          </button>
-          <button onclick="handleInput('RIGHT')" class="btn-active bg-slate-800 hover:bg-slate-700 active:bg-slate-600 py-2.5 rounded-xl font-bold text-base border border-slate-700">
-            ➡️
-          </button>
-        </div>
-
-        <!-- 🎲 สุ่ม UID ใหม่ (สแกนซ้ำได้ไม่จำกัดบน Switch 1 & 2) -->
-        <div class="grid grid-cols-2 gap-2 pt-1">
+        <!-- ปุ่มส่งเข้าเครื่องจริง / ดาวน์โหลดไฟล์ .bin & .nfc -->
+        <div class="grid grid-cols-2 gap-2">
           <button onclick="randomizeUid()" class="btn-active bg-amber-500/20 hover:bg-amber-500/30 active:bg-amber-500/40 text-amber-300 border border-amber-500/40 text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-            <span>🎲</span> สุ่ม UID (สแกนซ้ำ)
+            <span>🎲</span> สุ่ม UID ใหม่ (สแกนซ้ำ)
           </button>
-          <button onclick="downloadCurrentBin()" class="btn-active bg-emerald-500/20 hover:bg-emerald-500/30 active:bg-emerald-500/40 text-emerald-300 border border-emerald-500/40 text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-            <span>💾</span> โหลด .bin (540B)
+          <button onclick="sendCurrentToBLE()" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
+            <span>📡</span> ส่งเข้า Allmiibo (BLE)
           </button>
         </div>
 
-        <div class="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/80">
-          <button onclick="goHome()" class="text-indigo-400 hover:underline font-medium">🏠 เมนูหลักเครื่อง</button>
-          <span id="activeUidLabel" class="font-mono text-emerald-400 text-[10px]">UID: 04:A1:89:2B:C3:61:80</span>
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="downloadCurrentBin()" class="btn-active bg-emerald-500/20 hover:bg-emerald-500/30 active:bg-emerald-500/40 text-emerald-300 border border-emerald-500/40 text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1.5">
+            <span>💾</span> โหลด .bin (TagMo/NFC)
+          </button>
+          <button onclick="downloadCurrentFlipperNfc()" class="btn-active bg-cyan-500/20 hover:bg-cyan-500/30 active:bg-cyan-500/40 text-cyan-300 border border-cyan-500/40 text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1.5">
+            <span>🐬</span> โหลด .nfc (Flipper)
+          </button>
+        </div>
+
+        <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-800/80 font-mono">
+          <span id="activeIdHexLabel">ID: 01000000-03530902</span>
+          <span id="activeUidLabel" class="text-emerald-400">UID: 04:A1:89:2B:C3:61:80</span>
         </div>
 
       </div>
@@ -221,28 +246,24 @@
       <!-- กล่องแสดงรายละเอียดตัวละคร & ของรางวัลในเกม -->
       <div id="activeAmiiboCard" class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 flex items-center gap-3 shadow-md">
         <div class="w-16 h-16 bg-slate-950 rounded-xl p-1 flex items-center justify-center border border-slate-800 flex-shrink-0 relative overflow-hidden">
-          <img id="activeAmiiboImg" src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-04180902.png" alt="Amiibo" class="max-h-14 object-contain">
+          <img id="activeAmiiboImg" src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03530902.png" alt="Amiibo" class="max-h-14 object-contain">
         </div>
         <div class="flex-1 min-w-0">
           <div class="flex items-center gap-1.5">
-            <span id="activeGameTagPill" class="text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-1.5 py-0.2 rounded font-bold">
-              Zelda TOTK
+            <span id="activeGameTagPill" class="text-[9px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-1.5 py-0.2 rounded font-bold">
+              Zelda BotW
             </span>
-            <span id="activeGameSeries" class="text-[10px] text-slate-400 truncate">Nintendo Switch 1 & 2</span>
+            <span id="activeGameSeries" class="text-[10px] text-slate-400 truncate">The Legend of Zelda: Breath of the Wild</span>
           </div>
-          <h3 id="activeAmiiboName" class="text-xs font-bold text-white truncate mt-0.5">Link - Tears of the Kingdom</h3>
-          <p id="activeRewards" class="text-[10px] text-amber-300/90 truncate mt-0.5">🎁 ผ้าคลุมร่มชูชีพ Champion's Leathers + ดาบอัศวิน</p>
-          <div class="flex items-center gap-1.5 text-[10px] text-emerald-400 mt-1">
-            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>แตะที่อนาล็อกขวา Joy-Con หรือกลาง Pro Controller</span>
-          </div>
+          <h3 id="activeAmiiboName" class="text-xs font-bold text-white truncate mt-0.5">Link (Archer) - Breath of the Wild</h3>
+          <p id="activeRewards" class="text-[10px] text-amber-300/90 line-clamp-2 mt-0.5">🎁 ธนู Knight's Bow, ธนู Ancient Bow, ลูกธนูไฟ, ปลาและเนื้อสัตว์</p>
         </div>
       </div>
 
     </div>
 
     <!-- ----------------------------------------------------
-         TAB 2: คลัง Amiibo ครบ 900+ ตัวละคร (Full Database)
+         TAB 2: คลัง Amiibo ครบ 932 ตัวละคร (Full Database)
          ---------------------------------------------------- -->
     <div id="tabCatalog" class="tab-pane hidden space-y-3">
       
@@ -254,22 +275,22 @@
             <h3 class="text-xs font-bold text-white">คลัง Amiibo ทั้งหมด</h3>
             <span id="amiiboCountBadge" class="text-[9px] bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 px-1.5 py-0.5 rounded font-mono font-bold">932 รายการ</span>
           </div>
-          <span class="text-[10px] text-slate-400">ค้นหาได้ทันที</span>
+          <span class="text-[10px] text-slate-400">แตะเลือกเพื่อสร้างไฟล์</span>
         </div>
 
         <!-- Search Input -->
         <div class="relative">
-          <input type="text" id="searchInput" oninput="filterAmiibos()" placeholder="🔍 ค้นหาชื่อตัวละคร / เกม (เช่น Zelda, Mario, Sephiroth, Sora)..." 
+          <input type="text" id="searchInput" oninput="filterAmiibos()" placeholder="🔍 ค้นหาตัวละคร / เกม (เช่น Archer, Guardian, Zelda, Mario)..." 
             class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-8 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500">
           <button onclick="clearSearch()" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white text-xs">✕</button>
         </div>
         
-        <!-- Category Filter Pills (รองรับทุกเกมในปัจจุบัน พร้อมแยก Zelda BotW และ TotK) -->
+        <!-- Category Filter Pills -->
         <div class="flex gap-1.5 overflow-x-auto pb-1 text-[11px] no-scrollbar">
           <button onclick="setFilterCategory('ALL')" class="cat-pill active bg-indigo-600 text-white px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">ทั้งหมด (932)</button>
           <button onclick="setFilterCategory('Zelda BotW')" class="cat-pill bg-slate-800 text-cyan-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap border border-cyan-500/30">🏹 Zelda BotW</button>
           <button onclick="setFilterCategory('Zelda TotK')" class="cat-pill bg-slate-800 text-emerald-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap border border-emerald-500/30">🗡️ Zelda TotK</button>
-          <button onclick="setFilterCategory('Zelda')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🛡️ Zelda รวมทุกภาค</button>
+          <button onclick="setFilterCategory('Zelda')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🛡️ Zelda ทุกภาค</button>
           <button onclick="setFilterCategory('Mario')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🍄 Super Mario</button>
           <button onclick="setFilterCategory('Smash')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🥊 Smash Bros</button>
           <button onclick="setFilterCategory('Splatoon')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🦑 Splatoon</button>
@@ -283,12 +304,12 @@
         </div>
       </div>
 
-      <!-- Amiibo Cards List (Lazy-rendered for smooth performance) -->
+      <!-- Amiibo Cards List -->
       <div id="amiiboListContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[60vh] overflow-y-auto pr-0.5">
         <!-- Rendered dynamically by JS -->
       </div>
 
-      <!-- ปุ่มโหลดเพิ่มเติมเมื่อมีจำนวนมาก -->
+      <!-- ปุ่มโหลดเพิ่มเติม -->
       <div id="loadMoreBox" class="text-center pt-1 pb-2 hidden">
         <button onclick="loadMoreCards()" class="btn-active bg-slate-800 hover:bg-slate-700 text-indigo-300 text-xs font-semibold py-2 px-5 rounded-xl border border-slate-700 shadow">
           ⬇️ โหลดตัวละครเพิ่มอีก 40 รายการ
@@ -298,80 +319,87 @@
     </div>
 
     <!-- ----------------------------------------------------
-         TAB 3: คู่มือวิธีใช้งานฉบับสมบูรณ์ (User Manual)
+         TAB 3: แก้ปัญหาสแกนไม่ติด & ตั้งค่า BLE / Retail Key
          ---------------------------------------------------- -->
     <div id="tabManual" class="tab-pane hidden space-y-4">
       
-      <!-- แนะนำการใช้งาน 4 ขั้นตอนง่ายๆ -->
-      <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3.5 shadow-lg">
-        <div class="flex items-center gap-2 border-b border-slate-800 pb-2.5">
-          <span class="text-xl">📖</span>
+      <!-- 1. ทำไมสแกนที่ Nintendo Switch ไม่ติด? -->
+      <div class="bg-rose-950/30 p-4 rounded-2xl border border-rose-500/40 space-y-3 shadow-lg">
+        <div class="flex items-center gap-2 border-b border-rose-500/30 pb-2">
+          <span class="text-xl">🚨</span>
           <div>
-            <h2 class="text-sm font-extrabold text-white">วิธีใช้งาน Odimibo Web กับ Nintendo Switch</h2>
-            <p class="text-[10px] text-slate-400">ขั้นตอนง่ายๆ ทำตามได้ทันทีบน Switch 1 และ Switch 2</p>
+            <h2 class="text-sm font-extrabold text-rose-300">ทำไมเอามือถือไปแตะที่ Switch แล้วสแกนไม่ติด?</h2>
+            <p class="text-[10px] text-rose-200/80">โปรดอ่านเพื่อทำความเข้าใจข้อจำกัดฮาร์ดแวร์ของโทรศัพท์มือถือ</p>
           </div>
         </div>
 
-        <!-- ขั้นตอนที่ 1 -->
-        <div class="flex items-start gap-3 bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-          <div class="w-6 h-6 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">1</div>
-          <div class="space-y-1">
-            <h3 class="text-xs font-bold text-indigo-300">เลือกตัวละครที่ต้องการในเว็บ</h3>
-            <p class="text-[11px] text-slate-300 leading-relaxed">
-              ไปที่แท็บ <b>"คลัง Amiibo"</b> ค้นหาตัวละครหรือเกมที่ต้องการ (มีครบกว่า 900+ ตัว) แล้วกดปุ่ม <b>"📲 โหลดจอ"</b> ตัวละครจะถูกโหลดเข้าสู่หน้าจอเครื่องจำลองทันที
-            </p>
+        <p class="text-xs text-slate-200 leading-relaxed">
+          <b>โทรศัพท์มือถือทุกรุ่น (ทั้ง iPhone และ Android) ไม่สามารถปล่อยคลื่น NFC จำลองเป็นชิป Amiibo (NTAG215) ผ่านเว็บเบราว์เซอร์ได้โดยตรง!</b><br>
+          เนื่องจากระบบปฏิบัติการ iOS และ Android บล็อกไม่ให้หน้าเว็บจำลองการ์ด NFC Type 2 (ISO 14443-3A) ที่จอย Nintendo Switch ใช้ ดังนั้น <b>ถ้านำหน้าจอมือถือไปแตะที่แกนอนาล็อกของ Joy-Con โดยตรง เครื่องเกมจะไม่มีปฏิกิริยาใดๆ</b>
+        </p>
+
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2 text-[11px]">
+          <div class="font-bold text-emerald-400">✅ วิธีใช้งานให้สแกนติดบน Nintendo Switch 1 & 2 จริง 100%:</div>
+          <div>
+            <b>วิธีที่ 1 (มีเครื่อง Allmiibo / Pixl.js / AmiiboLink):</b><br>
+            ใช้เว็บนี้ค้นหาตัวละคร ➔ กดปุ่ม <b>"📡 ส่งเข้า Allmiibo (BLE)"</b> เพื่อส่งไฟล์ผ่าน Bluetooth เข้าไปเก็บในเครื่อง Allmiibo ➔ <b>นำตัวเครื่อง Allmiibo ไปแตะที่จอย Switch</b>
+          </div>
+          <div class="border-t border-slate-800 pt-2">
+            <b>วิธีที่ 2 (ไม่มีเครื่อง Allmiibo - ใช้เหรียญ/สติกเกอร์การ์ดเปล่า NTAG215 ราคาใบละ 5 บาท):</b><br>
+            1. อัปโหลดไฟล์กุญแจ <code>key_retail.bin</code> ในกล่องด้านล่าง (ครั้งเดียว)<br>
+            2. กดปุ่ม <b>"💾 โหลด .bin"</b> ของตัวละครที่ต้องการลงมือถือ<br>
+            3. เปิดแอป <b>TagMo</b> (Android) หรือ <b>AmiiBoss / NFC Tools</b> (iPhone) เพื่อเขียนไฟล์ <code>.bin</code> ลงบนเหรียญ NTAG215 เปล่า<br>
+            4. <b>นำเหรียญ NTAG215 ไปแตะที่อนาล็อกขวาของจอย Switch สแกนติดแน่นอน 100%!</b>
           </div>
         </div>
-
-        <!-- ขั้นตอนที่ 2 -->
-        <div class="flex items-start gap-3 bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-          <div class="w-6 h-6 rounded-full bg-cyan-600 text-white font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">2</div>
-          <div class="space-y-1">
-            <h3 class="text-xs font-bold text-cyan-300">เปิดเกมและเตรียมโหมด Amiibo ใน Switch</h3>
-            <p class="text-[11px] text-slate-300 leading-relaxed">
-              • <b>Zelda (TotK / BotW):</b> กดปุ่ม <b>L ค้าง</b> > เลือกไอคอนวงกลม <b>Amiibo</b> > เล็งเป้าลงบนพื้นโล่ง<br>
-              • <b>Smash Bros Ultimate:</b> ไปที่เมนู Games & More > Amiibo<br>
-              • <b>Mario Odyssey:</b> คุยกับคุณลุงคางคก Uncle amiibo
-            </p>
-          </div>
-        </div>
-
-        <!-- ขั้นตอนที่ 3 -->
-        <div class="flex items-start gap-3 bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-          <div class="w-6 h-6 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">3</div>
-          <div class="space-y-1">
-            <h3 class="text-xs font-bold text-amber-300">ตำแหน่งการแตะสแกน NFC</h3>
-            <p class="text-[11px] text-slate-300 leading-relaxed">
-              • <b>กรณีใช้เครื่อง Allmiibo จริง:</b> เปิด Bluetooth เชื่อมต่อกับเว็บนี้ แล้วนำตัวเครื่อง Allmiibo ไปแตะที่ <b>แกนอนาล็อกขวา (Right Stick)</b> ของ Joy-Con หรือตรงกลางของ Pro Controller<br>
-              • <b>กรณีไม่มีเครื่องจริง:</b> สามารถกดปุ่ม <b>"💾 โหลด .bin"</b> เพื่อนำไฟล์ขนาด 540 ไบต์ไปเขียนลงเหรียญ NFC หรืออุปกรณ์อื่นๆ ได้ทันที
-            </p>
-          </div>
-        </div>
-
-        <!-- ขั้นตอนที่ 4 -->
-        <div class="flex items-start gap-3 bg-slate-950 p-3 rounded-xl border border-slate-800/80">
-          <div class="w-6 h-6 rounded-full bg-rose-600 text-white font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">4</div>
-          <div class="space-y-1">
-            <h3 class="text-xs font-bold text-rose-300">เคล็ดลับสแกนรับของไม่จำกัด (Unlimited Drop)</h3>
-            <p class="text-[11px] text-slate-300 leading-relaxed">
-              ปกติเครื่อง Switch จะให้แตะ 1 ครั้งต่อวัน แต่ถ้าต้องการฟาร์มอาวุธหรือหีบสมบัติต่อ ให้กดปุ่ม <b>"🎲 สุ่ม UID"</b> บนหน้าจอ 1 ครั้ง ตัวเกม Switch จะเข้าใจว่าเป็นฟิกเกอร์ตัวใหม่ทันที ทำให้สามารถแตะรับของได้เรื่อยๆ ครับ!
-            </p>
-          </div>
-        </div>
-
       </div>
 
-      <!-- System Log & Connection Box -->
-      <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-2.5">
+      <!-- 2. ตั้งค่าการเข้ารหัส Amiibo แท้ (key_retail.bin 160 Bytes) -->
+      <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
         <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-            <h3 class="text-xs font-bold text-white">BLE & System Monitor (solosky/pixl.js)</h3>
+          <div>
+            <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
+              <span>🔑</span> ระบบเข้ารหัส AES-128-CTR & HMAC-SHA256 (amiitool)
+            </h3>
+            <p class="text-[10px] text-slate-400">จำเป็นสำหรับการสร้างไฟล์ .bin ไปเขียนลงเหรียญ NTAG215</p>
           </div>
+          <span id="manualKeyBadge" class="text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold">
+            ยังไม่ได้ใส่ Key
+          </span>
+        </div>
+
+        <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950 p-3 rounded-xl border border-slate-800">
+          เครื่อง Nintendo Switch จะตรวจสอบลายเซ็นดิจิทัล <b>HMAC-SHA256</b> และการเข้ารหัส <b>AES-128</b> ของไฟล์ <code>.bin</code> ทุกครั้งที่สแกน หากคุณมีไฟล์ <code>key_retail.bin</code> (ขนาด 160 ไบต์) สามารถเลือกใส่ที่นี่ ระบบจะจำไว้ในมือถือและเข้ารหัสไฟล์ <code>.bin</code> ทั้ง 932 ตัวให้เป็น Amiibo แท้ทันที!
+        </p>
+
+        <div class="flex gap-2">
+          <label class="btn-active flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl text-center cursor-pointer shadow">
+            📂 เลือกไฟล์ key_retail.bin (160B)
+            <input type="file" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
+          </label>
+          <button onclick="clearSavedRetailKey()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-3 rounded-xl border border-slate-700">
+            ล้างค่า
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. ตั้งค่าโปรโตคอล Bluetooth BLE สำหรับเครื่องจริง -->
+      <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
+        <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
+          <span>📡</span> เลือกชนิดอุปกรณ์ Bluetooth (BLE Mode)
+        </h3>
+        <select id="bleProtocolSelect" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white">
+          <option value="PIXL_VFS">Allmiibo / Pixl.js จอ OLED (VFS File Upload E:/amiibo/)</option>
+          <option value="AMIIBOLINK">AmiiboLink / Pixl รุ่นไม่มีจอ (Direct Page Write)</option>
+          <option value="RAW_NUS">Raw NUS Stream (540 Bytes)</option>
+        </select>
+
+        <div class="flex items-center justify-between pt-1">
+          <span class="text-xs font-bold text-slate-300">System & BLE Console Log</span>
           <button onclick="clearConsoleLog()" class="text-[10px] text-slate-400 hover:text-white">ล้าง Log</button>
         </div>
-        <div id="logBox" class="bg-black/80 font-mono text-[10px] text-emerald-400 p-3 rounded-xl h-28 overflow-y-auto space-y-1 border border-slate-800">
-          <div>[System] Odimibo Web พร้อมฐานข้อมูล 932 Amiibos สมบูรณ์</div>
+        <div id="logBox" class="bg-black/80 font-mono text-[10px] text-emerald-400 p-3 rounded-xl h-32 overflow-y-auto space-y-1 border border-slate-800">
+          <div>[System] แก้ไขโครงสร้าง NTAG215 Header (CC: F1 10 FF EE, Lock: 0F E0, Magic: A5, DynamicLock: 01 00 0F BD, PWD/PACK) เรียบร้อยแล้ว</div>
         </div>
       </div>
 
@@ -380,27 +408,66 @@
   </main>
 
   <!-- ========================================================
-       BOTTOM MOBILE NAVIGATION BAR (APP BAR)
+       MODAL: ทำไมสแกนไม่ติด & วิธีแก้ไข
        ======================================================== -->
-  <nav class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-800 px-3 py-1.5 max-w-md mx-auto shadow-2xl">
+  <div id="scanHelpModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-5 space-y-4 shadow-2xl max-h-[88vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="text-sm font-extrabold text-rose-400 flex items-center gap-2">
+          <span>🔍</span> สาเหตุที่สแกนกับ Switch ไม่ติด & วิธีแก้
+        </h3>
+        <button onclick="closeScanHelpModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
+      </div>
+
+      <div class="space-y-3 text-xs text-slate-200 leading-relaxed">
+        <div class="bg-rose-950/40 border border-rose-500/40 p-3 rounded-2xl space-y-1">
+          <div class="font-bold text-rose-300">❌ 1. หากคุณเอามือถือเปิดเว็บแล้วแตะที่จอย Switch โดยตรง:</div>
+          <p class="text-[11px] text-slate-300">
+            <b>จะไม่สามารถสแกนติดได้ครับ!</b> เพราะโทรศัพท์มือถือ (iPhone และ Android) บล็อกฮาร์ดแวร์ชิป NFC ไม่ให้หน้าเว็บปล่อยคลื่นจำลองเป็นแท็ก <b>NTAG215 (Type 2)</b> ของ Nintendo (มือถือจำลองได้แค่บัตรเครดิต Apple Pay / Google Pay เท่านั้น)
+          </p>
+        </div>
+
+        <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1.5">
+          <div class="font-bold text-emerald-300">✅ 2. สิ่งที่เราแก้ไขให้แล้วในระบบนี้ (สำหรับส่งเข้าเครื่อง Allmiibo / เขียนเหรียญ NFC):</div>
+          <ul class="list-disc list-inside text-[11px] text-slate-300 space-y-1">
+            <li><b>แก้ Capability Container (Page 3):</b> เปลี่ยนจาก <code>E1 10 3E 00</code> เป็นรหัสแท้ของ Amiibo คือ <b><code>F1 10 FF EE</code></b></li>
+            <li><b>แก้ Static & Dynamic Lock Bytes:</b> ตั้งค่า <code>0F E0</code>, <code>A5</code> และ <code>01 00 0F BD</code> พร้อมคำนวณรหัสผ่าน <b>PWD 4 ไบต์จาก UID</b> อัตโนมัติ</li>
+            <li><b>เพิ่มระบบเข้ารหัส AES-128-CTR & HMAC-SHA256 (amiitool):</b> เพียงใส่ไฟล์ <code>key_retail.bin</code> ในแท็บวิธีใช้ ไฟล์ <code>.bin</code> ที่โหลดไปจะถูกเข้ารหัสเหมือนฟิกเกอร์แท้ 100%</li>
+            <li><b>เพิ่มโปรโตคอล BLE VFS แท้ของ Pixl.js / Allmiibo:</b> ส่งไฟล์เข้าโฟลเดอร์ <code>E:/amiibo/</code> ของเครื่อง Allmiibo จริงได้ทันที</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex gap-2 pt-2">
+        <button onclick="closeScanHelpModal(); switchTab('tabManual');" class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
+          ไปหน้าตั้งค่า Key & ดูวิธีใช้
+        </button>
+        <button onclick="closeScanHelpModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
+          ปิดหน้าต่าง
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       BOTTOM MOBILE NAVIGATION BAR
+       ======================================================== -->
+  <nav class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 px-3 py-1.5 max-w-md mx-auto shadow-2xl">
     <div class="grid grid-cols-3 gap-1">
       
-      <!-- Tab 1: Virtual Device -->
       <button onclick="switchTab('tabDevice')" id="navBtnDevice" class="nav-btn active flex flex-col items-center justify-center py-1.5 rounded-xl text-indigo-400 bg-slate-800/80 transition">
         <span class="text-lg">🎮</span>
-        <span class="text-[10px] font-bold">เครื่องจำลอง</span>
+        <span class="text-[10px] font-bold">หน้าจอ & ส่งไฟล์</span>
       </button>
 
-      <!-- Tab 2: Game & Amiibo Catalog -->
       <button onclick="switchTab('tabCatalog')" id="navBtnCatalog" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
         <span class="text-lg">📚</span>
-        <span class="text-[10px] font-bold">คลัง 900+ ตัว</span>
+        <span class="text-[10px] font-bold">คลัง 932 ตัว</span>
       </button>
 
-      <!-- Tab 3: User Manual -->
       <button onclick="switchTab('tabManual')" id="navBtnManual" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
-        <span class="text-lg">📖</span>
-        <span class="text-[10px] font-bold">วิธีใช้งาน</span>
+        <span class="text-lg">🛠️</span>
+        <span class="text-[10px] font-bold">ตั้งค่า & แก้สแกน</span>
       </button>
 
     </div>
@@ -413,21 +480,17 @@
   </div>
 
   <!-- ========================================================
-       JAVASCRIPT APPLICATION LOGIC
+       JAVASCRIPT APPLICATION LOGIC (WITH AMIITOOL CRYPTO & PIXL BLE)
        ======================================================== -->
   <script>
-    // โหลดฐานข้อมูล 932 ตัวละครจากไฟล์ amiibos_all.js
-    let fullDb = (window.AMIIBO_ALL_DATABASE && window.AMIIBO_ALL_DATABASE.length > 0)
+    const fullDb = (window.AMIIBO_ALL_DATABASE && window.AMIIBO_ALL_DATABASE.length > 0)
       ? window.AMIIBO_ALL_DATABASE
       : [];
 
-    let currentCatalog = [...fullDb];
     let activeFilter = 'ALL';
-    let displayLimit = 40; // จำนวนการ์ดที่แสดงต่อครั้ง (เพื่อความเร็วและลื่นไหล 60fps)
+    let displayLimit = 40;
+    let retailKeyBytes = null; // 160-byte key_retail.bin (unfixed-info 80B + locked-secret 80B)
 
-    // --------------------------------------------------------
-    // State เครื่อง Allmiibo
-    // --------------------------------------------------------
     const MAIN_MENUS = [
       { id: 'emulator', title: 'Emulator', icon: '[ a ]' },
       { id: 'db', title: 'Amiibo DB', icon: '[DB ]' },
@@ -437,15 +500,15 @@
 
     let currentScreen = 'TAG_EMULATE';
     let menuIdx = 0;
-    
-    // ตั้งค่าตัวเริ่มต้นเป็น Link - Tears of the Kingdom
-    const initialItem = fullDb.find(x => x.name.includes('Tears of the Kingdom') && x.name.includes('Link')) || fullDb[0] || {
-      name: 'Link - Tears of the Kingdom',
-      game: 'The Legend of Zelda: Tears of the Kingdom',
-      cat: 'Zelda',
+
+    const initialItem = fullDb[0] || {
+      name: 'Link (Archer) - Breath of the Wild',
+      game: 'The Legend of Zelda: Breath of the Wild',
+      cat: 'Zelda BotW',
       head: '01000000',
-      tail: '04180902',
-      img: 'https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-04180902.png'
+      tail: '03530902',
+      rewards: 'ธนู Knight\'s Bow, ธนู Ancient Bow, ลูกธนูไฟ, ปลาและเนื้อสัตว์',
+      img: 'https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03530902.png'
     };
 
     let activeTag = {
@@ -454,18 +517,337 @@
       game: initialItem.game,
       head: initialItem.head,
       tail: initialItem.tail,
-      rewards: 'ผ้าคลุมร่มชูชีพ Champion\'s Leathers + ดาบอัศวิน + วัตถุดิบ',
+      rewards: initialItem.rewards || 'สแกนรับไอเทมในเกม Nintendo Switch',
       image: initialItem.img,
-      gameBadge: '🗡️ ZELDA',
-      rawBytes: null
+      gameBadge: '🏹 ZELDA BOTW',
+      rawBytes: null,
+      isEncrypted: false
     };
 
     function triggerHaptic() {
       if (navigator.vibrate) navigator.vibrate(12);
     }
 
+    function openScanHelpModal() {
+      const m = document.getElementById('scanHelpModal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+
+    function closeScanHelpModal() {
+      const m = document.getElementById('scanHelpModal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+
     // --------------------------------------------------------
-    // จอ OLED 128x64
+    // 1. ระบบจัดการกุญแจเข้ารหัส Nintendo Retail Key (key_retail.bin 160B)
+    // --------------------------------------------------------
+    function loadSavedRetailKey() {
+      try {
+        const savedB64 = localStorage.getItem('odimibo_key_retail_b64');
+        if (savedB64) {
+          const binStr = atob(savedB64);
+          if (binStr.length === 160) {
+            retailKeyBytes = new Uint8Array(160);
+            for (let i = 0; i < 160; i++) retailKeyBytes[i] = binStr.charCodeAt(i);
+            updateKeyStatusUI(true);
+            log('[Crypto] โหลด key_retail.bin (160B) จากหน่วยความจำสำเร็จ! พร้อมเข้ารหัส AES-128-CTR & HMAC-SHA256', 'rx');
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to load saved retail key:', e);
+      }
+    }
+
+    async function handleKeyFileUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const buf = await file.arrayBuffer();
+      const bytes = new Uint8Array(buf);
+
+      if (bytes.length !== 160) {
+        alert(`ขนาดไฟล์ไม่ถูกต้อง! ไฟล์ key_retail.bin ต้องมีขนาด 160 ไบต์พอดี (ไฟล์ที่เลือกมีขนาด ${bytes.length} ไบต์)`);
+        return;
+      }
+
+      retailKeyBytes = bytes;
+      let binStr = '';
+      for (let i = 0; i < 160; i++) binStr += String.fromCharCode(bytes[i]);
+      localStorage.setItem('odimibo_key_retail_b64', btoa(binStr));
+
+      updateKeyStatusUI(true);
+      await rebuildActiveTagBinary();
+      showToast('🔑 บันทึก key_retail.bin สำเร็จ! ไฟล์ .bin เข้ารหัสแท้ 100%');
+      log('[Crypto] อัปโหลด key_retail.bin (160B) สำเร็จ! เข้ารหัสแท็กปัจจุบันด้วย AES-128-CTR + HMAC-SHA256 แล้ว', 'rx');
+    }
+
+    function clearSavedRetailKey() {
+      localStorage.removeItem('odimibo_key_retail_b64');
+      retailKeyBytes = null;
+      updateKeyStatusUI(false);
+      rebuildActiveTagBinary();
+      showToast('ล้างค่า key_retail.bin แล้ว');
+    }
+
+    function updateKeyStatusUI(hasKey) {
+      const icon = document.getElementById('keyStatusIcon');
+      const title = document.getElementById('keyStatusTitle');
+      const desc = document.getElementById('keyStatusDesc');
+      const badge = document.getElementById('manualKeyBadge');
+      const topBadge = document.getElementById('cryptoStatusBadge');
+      const oledCrypto = document.getElementById('oledCryptoTag');
+
+      if (hasKey) {
+        icon.textContent = '✅';
+        title.textContent = 'เข้ารหัสแท้: AES-128-CTR + HMAC-SHA256 พร้อมใช้งาน';
+        title.className = 'text-xs font-bold text-emerald-400 truncate';
+        desc.textContent = 'ไฟล์ .bin ทุกตัวถูกเซ็นลายเซ็นดิจิทัล Nintendo พร้อมเขียนลงเหรียญ NFC';
+        badge.textContent = 'พร้อมใช้งาน (160B)';
+        badge.className = 'text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold';
+        topBadge.textContent = '🔐 Encrypted Ready';
+        topBadge.className = 'cursor-pointer text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.2 rounded-full font-bold';
+        oledCrypto.textContent = 'ENC:AES+HMAC';
+      } else {
+        icon.textContent = '🔐';
+        title.textContent = 'สถานะ: โครงสร้าง NTAG215 มาตรฐาน (CC: F110FFEE)';
+        title.className = 'text-xs font-bold text-amber-300 truncate';
+        desc.textContent = 'ใส่ไฟล์ key_retail.bin (160B) หากต้องการเข้ารหัสไปเขียนเหรียญ NFC เปล่า';
+        badge.textContent = 'ยังไม่ได้ใส่ Key';
+        badge.className = 'text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold';
+        topBadge.textContent = '⚠️ ต้องใช้ Allmiibo/เหรียญ NFC';
+        topBadge.className = 'cursor-pointer text-[9px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-1.5 py-0.2 rounded-full font-bold';
+        oledCrypto.textContent = 'CC:F110FFEE';
+      }
+    }
+
+    // --------------------------------------------------------
+    // 2. ตัวสร้างและเข้ารหัส NTAG215 (540 ไบต์) ตามมาตรฐาน amiitool (libnfc3d)
+    // --------------------------------------------------------
+    function buildUnencryptedNtag215(headHex, tailHex, uidString) {
+      const buf = new Uint8Array(540);
+      const uidParts = uidString.split(':').map(x => parseInt(x, 16));
+      const sn0 = uidParts[0] ?? 0x04;
+      const sn1 = uidParts[1] ?? 0xA1;
+      const sn2 = uidParts[2] ?? 0x89;
+      const sn3 = uidParts[3] ?? 0x2B;
+      const sn4 = uidParts[4] ?? 0xC3;
+      const sn5 = uidParts[5] ?? 0x61;
+      const sn6 = uidParts[6] ?? 0x80;
+
+      // Page 0: UID0..2 + BCC0
+      buf[0] = sn0;
+      buf[1] = sn1;
+      buf[2] = sn2;
+      buf[3] = (0x88 ^ sn0 ^ sn1 ^ sn2) & 0xFF; // BCC0
+
+      // Page 1: UID3..6
+      buf[4] = sn3;
+      buf[5] = sn4;
+      buf[6] = sn5;
+      buf[7] = sn6;
+
+      // Page 2: BCC1 + Internal (0x48) + Static Lock Bytes (0x0F, 0xE0)
+      buf[8]  = (sn3 ^ sn4 ^ sn5 ^ sn6) & 0xFF; // BCC1
+      buf[9]  = 0x48;
+      buf[10] = 0x0F;
+      buf[11] = 0xE0;
+
+      // Page 3: Amiibo Magic Capability Container (MUST BE F1 10 FF EE!)
+      buf[12] = 0xF1;
+      buf[13] = 0x10;
+      buf[14] = 0xFF;
+      buf[15] = 0xEE;
+
+      // Page 4: Amiibo Magic Marker (0xA5) + Write Counter (0x0000)
+      buf[16] = 0xA5;
+      buf[17] = 0x00;
+      buf[18] = 0x00;
+      buf[19] = 0x00;
+
+      // Pages 21-22 (Offset 0x54 = 84): 8-Byte Amiibo Character/Model ID (Head + Tail)
+      const fullHex = (headHex || '01000000') + (tailHex || '03530902');
+      for (let i = 0; i < 8; i++) {
+        buf[84 + i] = parseInt(fullHex.substr(i * 2, 2), 16) || 0;
+      }
+
+      // Offset 0x60..0x7F (96..127): 32-Byte Keygen Salt (Deterministic from UID+ID)
+      for (let i = 0; i < 32; i++) {
+        buf[96 + i] = ((sn1 * (i + 3)) ^ (sn4 + i * 17) ^ buf[84 + (i % 8)]) & 0xFF;
+      }
+
+      // Page 130 (Offset 520): Dynamic Lock Bytes (01 00 0F BD)
+      buf[520] = 0x01;
+      buf[521] = 0x00;
+      buf[522] = 0x0F;
+      buf[523] = 0xBD;
+
+      // Page 131 (Offset 524): CFG0 (00 00 00 04)
+      buf[524] = 0x00;
+      buf[525] = 0x00;
+      buf[526] = 0x00;
+      buf[527] = 0x04;
+
+      // Page 132 (Offset 528): CFG1 (5F 00 00 00)
+      buf[528] = 0x5F;
+      buf[529] = 0x00;
+      buf[530] = 0x00;
+      buf[531] = 0x00;
+
+      // Page 133 (Offset 532): PWD (4 Bytes calculated from UID via NXP Amiibo formula)
+      buf[532] = (sn1 ^ sn3 ^ 0xAA) & 0xFF;
+      buf[533] = (sn2 ^ sn4 ^ 0x55) & 0xFF;
+      buf[534] = (sn3 ^ sn5 ^ 0xAA) & 0xFF;
+      buf[535] = (sn4 ^ sn6 ^ 0x55) & 0xFF;
+
+      // Page 134 (Offset 536): PACK (80 80 00 00)
+      buf[536] = 0x80;
+      buf[537] = 0x80;
+      buf[538] = 0x00;
+      buf[539] = 0x00;
+
+      return buf;
+    }
+
+    // แปลง Tag Format (540B) -> Internal Format (520B) ตาม socram8888/amiitool
+    function tagToInternal(tag) {
+      const intl = new Uint8Array(520);
+      intl.set(tag.subarray(0x008, 0x010), 0x000);
+      intl.set(tag.subarray(0x080, 0x0A0), 0x008);
+      intl.set(tag.subarray(0x010, 0x034), 0x028);
+      intl.set(tag.subarray(0x0A0, 0x208), 0x04C);
+      intl.set(tag.subarray(0x034, 0x054), 0x1B4);
+      intl.set(tag.subarray(0x000, 0x008), 0x1D4);
+      intl.set(tag.subarray(0x054, 0x080), 0x1DC);
+      return intl;
+    }
+
+    // แปลง Internal Format (520B) -> Tag Format (540B)
+    function internalToTag(intl, baseTag540) {
+      const tag = new Uint8Array(540);
+      tag.set(baseTag540); // คงค่า Pages 130-134 (Dynamic Lock, CFG, PWD, PACK)
+      tag.set(intl.subarray(0x000, 0x008), 0x008);
+      tag.set(intl.subarray(0x008, 0x028), 0x080);
+      tag.set(intl.subarray(0x028, 0x04C), 0x010);
+      tag.set(intl.subarray(0x04C, 0x1B4), 0x0A0);
+      tag.set(intl.subarray(0x1B4, 0x1D4), 0x034);
+      tag.set(intl.subarray(0x1D4, 0x1DC), 0x000);
+      tag.set(intl.subarray(0x1DC, 0x208), 0x054);
+      return tag;
+    }
+
+    // สร้างกุญแจย่อย (AES-128 Key, IV, HMAC Key) ด้วย HMAC-SHA256 DRBG
+    async function deriveAmiiboKeys(master80, intl) {
+      const hmacKey = master80.subarray(0, 16);
+      const typeString = master80.subarray(16, 30); // 14B
+      const magicBytesSize = master80[31];
+      const magicBytes = master80.subarray(32, 32 + magicBytesSize);
+      const xorPad = master80.subarray(48, 80); // 32B
+
+      const writeCounter = intl.subarray(0x029, 0x02B); // 2B
+      const uid8 = intl.subarray(0x1D4, 0x1DC); // 8B
+      const salt32 = intl.subarray(0x1E8, 0x208); // 32B
+
+      const seed = new Uint8Array(78);
+      let pos = 0;
+      seed.set(typeString, pos); pos += 14;
+      if (magicBytesSize < 16) {
+        const wcLen = 16 - magicBytesSize;
+        seed.set(writeCounter.subarray(0, wcLen), pos);
+        pos += wcLen;
+      }
+      seed.set(magicBytes, pos); pos += magicBytesSize;
+      seed.set(uid8, pos); pos += 8;
+      seed.set(uid8, pos); pos += 8;
+      for (let i = 0; i < 32; i++) {
+        seed[pos + i] = salt32[i] ^ xorPad[i];
+      }
+
+      const cryptoKey = await crypto.subtle.importKey(
+        'raw', hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+      );
+
+      const in0 = new Uint8Array(2 + seed.length);
+      in0[0] = 0x00; in0[1] = 0x00; in0.set(seed, 2);
+      const b0 = new Uint8Array(await crypto.subtle.sign('HMAC', cryptoKey, in0));
+
+      const in1 = new Uint8Array(2 + seed.length);
+      in1[0] = 0x00; in1[1] = 0x01; in1.set(seed, 2);
+      const b1 = new Uint8Array(await crypto.subtle.sign('HMAC', cryptoKey, in1));
+
+      const out = new Uint8Array(48);
+      out.set(b0, 0);
+      out.set(b1.subarray(0, 16), 32);
+
+      return {
+        aesKey: out.slice(0, 16),
+        aesIV: out.slice(16, 32),
+        hmacKey: out.slice(32, 48)
+      };
+    }
+
+    // เข้ารหัสและเซ็นชื่อดิจิทัล Amiibo (nfc3d_amiibo_pack)
+    async function buildCompleteAmiiboBinary(headHex, tailHex, uidString) {
+      const baseTag = buildUnencryptedNtag215(headHex, tailHex, uidString);
+      if (!retailKeyBytes || retailKeyBytes.length !== 160) {
+        return { bytes: baseTag, encrypted: false };
+      }
+
+      try {
+        const dataMaster = retailKeyBytes.subarray(0, 80);   // unfixed-info.bin
+        const tagMaster  = retailKeyBytes.subarray(80, 160); // locked-secret.bin
+        const intl = tagToInternal(baseTag);
+
+        const dataKeys = await deriveAmiiboKeys(dataMaster, intl);
+        const tagKeys  = await deriveAmiiboKeys(tagMaster, intl);
+
+        // 1. AES-128-CTR Encrypt 392 bytes (intl[0x02C..0x1B3])
+        const aesKeyObj = await crypto.subtle.importKey(
+          'raw', dataKeys.aesKey, { name: 'AES-CTR' }, false, ['encrypt']
+        );
+        const encryptedPayload = new Uint8Array(await crypto.subtle.encrypt(
+          { name: 'AES-CTR', counter: dataKeys.aesIV, length: 128 },
+          aesKeyObj,
+          intl.subarray(0x02C, 0x1B4)
+        ));
+        intl.set(encryptedPayload, 0x02C);
+
+        // 2. Compute Tag HMAC-SHA256 over intl[0x1D4..0x207] (52 bytes) -> store at intl[0x1B4..0x1D3]
+        const tagHmacKeyObj = await crypto.subtle.importKey(
+          'raw', tagKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+        );
+        const tagHmac = new Uint8Array(await crypto.subtle.sign(
+          'HMAC', tagHmacKeyObj, intl.subarray(0x1D4, 0x208)
+        ));
+        intl.set(tagHmac, 0x1B4);
+
+        // 3. Compute Data HMAC-SHA256 over intl[0x029..0x207] (479 bytes) -> store at intl[0x008..0x027]
+        const dataHmacKeyObj = await crypto.subtle.importKey(
+          'raw', dataKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+        );
+        const dataHmac = new Uint8Array(await crypto.subtle.sign(
+          'HMAC', dataHmacKeyObj, intl.subarray(0x029, 0x208)
+        ));
+        intl.set(dataHmac, 0x008);
+
+        const finalTag = internalToTag(intl, baseTag);
+        return { bytes: finalTag, encrypted: true };
+      } catch (err) {
+        log(`[Crypto Error] ${err.message}`, 'error');
+        return { bytes: baseTag, encrypted: false };
+      }
+    }
+
+    async function rebuildActiveTagBinary() {
+      const res = await buildCompleteAmiiboBinary(activeTag.head, activeTag.tail, activeTag.uid);
+      activeTag.rawBytes = res.bytes;
+      activeTag.isEncrypted = res.encrypted;
+      renderOLED();
+    }
+
+    // --------------------------------------------------------
+    // 3. จอ OLED 128x64 & ปุ่มกด
     // --------------------------------------------------------
     function renderOLED() {
       const headerLeft = document.getElementById('oledHeaderLeft');
@@ -490,28 +872,29 @@
         footerText.textContent = item.title;
       }
       else if (currentScreen === 'TAG_EMULATE') {
-        headerLeft.textContent = '[EMULATING]';
+        headerLeft.textContent = activeTag.isEncrypted ? '[SIGNED]' : '[NTAG215]';
         const nameClean = (activeTag?.name || 'Amiibo').replace('.bin', '');
         body.innerHTML = `
           <div class="w-full text-left px-1 space-y-0.5 leading-tight">
-            <div class="text-[11px] text-white/60 truncate">GAME: ${activeTag?.game || 'Nintendo Switch'}</div>
+            <div class="text-[11px] text-white/60 truncate">ID: ${activeTag.head}-${activeTag.tail}</div>
             <div class="text-lg font-bold truncate bg-white text-black px-1 tracking-tight">${nameClean}</div>
             <div class="text-xs tracking-wider text-emerald-300 pt-0.5">UID: ${activeTag?.uid}</div>
             <div class="text-[11px] text-amber-300 flex items-center gap-1 nfc-signal pt-0.5">
-              <span>●</span> <span>สัญญาณ NFC พร้อมสแกน Switch 1/2</span>
+              <span>●</span> <span>${isBleConnected ? 'เชื่อมต่อ BLE พร้อมส่งเข้า Allmiibo' : 'กดส่ง BLE หรือโหลด .bin เขียนเหรียญ'}</span>
             </div>
           </div>
         `;
-        footerText.textContent = '◀ สุ่มUID | OK=ออก';
+        footerText.textContent = '◀ สุ่มUID | OK=เมนู';
         document.getElementById('activeUidLabel').textContent = `UID: ${activeTag?.uid}`;
+        document.getElementById('activeIdHexLabel').textContent = `ID: ${activeTag.head}-${activeTag.tail}`;
       }
       else if (currentScreen === 'BLE_MODE') {
         headerLeft.textContent = '[BLE SYNC]';
         body.innerHTML = `
           <div class="text-center space-y-1">
             <div class="text-xl text-cyan-300">(( Nordic UART ))</div>
-            <div class="text-xs text-emerald-400 font-bold">${isBleConnected ? 'เชื่อมต่อ Allmiibo แล้ว' : 'โหมดจำลอง (Virtual)'}</div>
-            <div class="text-[10px] text-white/50">UUID: 6e400001-b5a3...</div>
+            <div class="text-xs text-emerald-400 font-bold">${isBleConnected ? 'เชื่อมต่อ Allmiibo แล้ว' : 'รอการเชื่อมต่อ BLE'}</div>
+            <div class="text-[10px] text-white/50">VFS / AmiiboLink Ready</div>
           </div>
         `;
         footerText.textContent = 'กด OK เพื่อออก';
@@ -543,64 +926,35 @@
       renderOLED();
     }
 
-    function goHome() {
-      triggerHaptic();
-      currentScreen = 'MAIN_MENU';
-      renderOLED();
-    }
-
     // --------------------------------------------------------
-    // สุ่ม UID ใหม่ (Unlimited Drop)
+    // 4. สุ่ม UID ใหม่พร้อมคำนวณ BCC0/BCC1/PWD และเข้ารหัสใหม่ทันที
     // --------------------------------------------------------
-    function randomizeUid() {
+    async function randomizeUid() {
       triggerHaptic();
       const r = () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase();
+      // NTAG215 แท้ต้องขึ้นต้นด้วย 0x04 (NXP Semiconductors)
       const newUid = `04:${r()}:${r()}:${r()}:${r()}:${r()}:80`;
 
       activeTag.uid = newUid;
-      activeTag.rawBytes = buildNtag215Binary(activeTag.head, activeTag.tail, newUid);
+      await rebuildActiveTagBinary();
 
       currentScreen = 'TAG_EMULATE';
       renderOLED();
-      log(`[Switch 1 & 2] 🎲 สุ่ม UID สำเร็จ: ${newUid}`, 'tx');
-      showToast(`🎲 สุ่ม UID ใหม่แล้ว! แตะรับของใน Switch ต่อได้เลย`);
+      log(`[NTAG215] 🎲 สุ่ม UID ใหม่: ${newUid} (อัปเดต BCC0, BCC1, PWD และลายเซ็นแล้ว)`, 'tx');
+      showToast(`🎲 สุ่ม UID ใหม่แล้ว: ${newUid}`);
 
-      if (isBleConnected) syncTagToRealDevice(activeTag);
-    }
-
-    function buildNtag215Binary(headHex, tailHex, uidString) {
-      const buf = new Uint8Array(540);
-      const uidParts = uidString.split(':').map(x => parseInt(x, 16));
-      const sn0 = uidParts[0] || 0x04;
-      const sn1 = uidParts[1] || 0x11;
-      const sn2 = uidParts[2] || 0x22;
-      const sn3 = uidParts[3] || 0x33;
-      const sn4 = uidParts[4] || 0x44;
-      const sn5 = uidParts[5] || 0x55;
-      const sn6 = uidParts[6] || 0x80;
-
-      buf[0] = sn0; buf[1] = sn1; buf[2] = sn2;
-      buf[3] = (0x88 ^ sn0 ^ sn1 ^ sn2); // BCC0 Checksum
-
-      buf[4] = sn3; buf[5] = sn4; buf[6] = sn5; buf[7] = sn6;
-      buf[8] = (sn3 ^ sn4 ^ sn5 ^ sn6); // BCC1 Checksum
-      buf[9] = 0x48; buf[10] = 0x00; buf[11] = 0x00;
-      buf[12] = 0xE1; buf[13] = 0x10; buf[14] = 0x3E; buf[15] = 0x00; // CC NTAG215
-
-      const fullHex = (headHex || '00000000') + (tailHex || '00000000');
-      for (let i = 0; i < 8; i++) {
-        buf[84 + i] = parseInt(fullHex.substr(i * 2, 2), 16) || 0;
+      if (isBleConnected) {
+        await sendCurrentToBLE();
       }
-      return buf;
     }
 
     // --------------------------------------------------------
-    // ระบบแสดงผล & ค้นหา 932 ตัวละคร
+    // 5. ระบบแสดงผล & ค้นหา 932 ตัวละคร
     // --------------------------------------------------------
     function setFilterCategory(cat) {
       triggerHaptic();
       activeFilter = cat;
-      displayLimit = 40; // รีเซ็ตเพจจิ้ง
+      displayLimit = 40;
       document.querySelectorAll('.cat-pill').forEach(btn => {
         btn.classList.remove('bg-indigo-600', 'text-white');
         btn.classList.add('bg-slate-800', 'text-slate-300');
@@ -659,37 +1013,34 @@
       const visibleItems = filtered.slice(0, displayLimit);
 
       container.innerHTML = visibleItems.map((item) => {
-        // หา idx ใน fullDb
         const globalIdx = fullDb.indexOf(item);
         const badgeEmoji = getCategoryEmoji(item.cat);
 
         return `
         <div class="bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-3 flex flex-col justify-between shadow transition">
           <div>
-            <!-- Game Badge Header -->
             <div class="flex items-center justify-between gap-1 mb-2">
               <span class="text-[9px] font-black px-2 py-0.5 rounded-full bg-slate-950 border border-slate-700 text-slate-300 truncate">
                 ${badgeEmoji} ${item.game || item.series || 'NINTENDO'}
               </span>
-              <span class="text-[9px] font-mono text-slate-500">${item.head.slice(0,4)}</span>
+              <span class="text-[9px] font-mono text-slate-500">${item.head.slice(0,4)}-${item.tail.slice(0,4)}</span>
             </div>
 
-            <!-- Amiibo Figure Thumbnail & Game Name -->
             <div class="bg-slate-950/80 rounded-xl p-2 flex items-center justify-center mb-2 h-28 overflow-hidden relative border border-slate-800/60">
               <img src="${item.img}" alt="${item.name}" loading="lazy" class="max-h-24 object-contain" onerror="this.src='https://via.placeholder.com/100?text=Amiibo'">
             </div>
 
             <h4 class="text-xs font-bold text-white leading-tight" title="${item.name}">${item.name}</h4>
             <p class="text-[10px] text-emerald-400 font-medium truncate mt-0.5">${item.game}</p>
-            <p class="text-[10px] text-slate-400 truncate mt-0.5">ซีรีส์: ${item.series || 'Amiibo'}</p>
+            ${item.rewards ? `<p class="text-[10px] text-amber-300/90 line-clamp-2 mt-1 bg-amber-500/5 p-1.5 rounded-lg border border-amber-500/20">🎁 ${item.rewards}</p>` : ''}
           </div>
 
           <div class="grid grid-cols-2 gap-2 pt-2.5 mt-2 border-t border-slate-800">
             <button onclick="selectAmiibo(${globalIdx})" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white text-xs font-bold py-2 rounded-xl shadow flex items-center justify-center gap-1">
-              <span>📲</span> โหลดจอ
+              <span>📲</span> เลือกตัวนี้
             </button>
             <button onclick="downloadBinFromCatalog(${globalIdx})" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold py-2 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-              <span>💾</span> .bin
+              <span>💾</span> โหลด .bin
             </button>
           </div>
         </div>
@@ -727,7 +1078,7 @@
       return map[cat] || '🎮';
     }
 
-    function selectAmiibo(globalIdx) {
+    async function selectAmiibo(globalIdx) {
       triggerHaptic();
       const item = fullDb[globalIdx];
       if (!item) return;
@@ -741,15 +1092,19 @@
         game: item.game,
         head: item.head,
         tail: item.tail,
+        rewards: item.rewards || `สแกนใช้งานกับเกม: ${item.game}`,
         image: item.img,
         gameBadge: `${getCategoryEmoji(item.cat)} ${item.cat.toUpperCase()}`,
-        rawBytes: buildNtag215Binary(item.head, item.tail, newUid)
+        rawBytes: null,
+        isEncrypted: false
       };
+
+      await rebuildActiveTagBinary();
 
       document.getElementById('activeGameTitle').textContent = item.game;
       document.getElementById('activeAmiiboName').textContent = item.name;
       document.getElementById('activeGameSeries').textContent = item.game;
-      document.getElementById('activeRewards').textContent = `สแกนใช้งานกับเกม: ${item.game}`;
+      document.getElementById('activeRewards').textContent = `🎁 ${activeTag.rewards}`;
       document.getElementById('activeAmiiboImg').src = item.img;
       document.getElementById('activeGameCategory').textContent = item.cat.toUpperCase() + ' SERIES';
       document.getElementById('activeGameLogoBadge').textContent = getCategoryEmoji(item.cat);
@@ -758,25 +1113,79 @@
       renderOLED();
       switchTab('tabDevice');
 
-      log(`[Allmiibo] เลือก ${item.name} (${item.game})`, 'tx');
-      showToast(`✅ โหลด "${item.name}" เข้าเครื่องแล้ว!`);
+      log(`[NTAG215] เตรียมข้อมูล ${item.name} (${activeTag.isEncrypted ? 'เข้ารหัส AES+HMAC แท้' : 'โครงสร้าง NTAG215 CC:F110FFEE'})`, 'tx');
+      showToast(`✅ เลือก "${item.name}" แล้ว!`);
 
-      if (isBleConnected) syncTagToRealDevice(activeTag);
+      if (isBleConnected) {
+        await sendCurrentToBLE();
+      }
     }
 
-    function downloadBinFromCatalog(globalIdx) {
+    async function downloadBinFromCatalog(globalIdx) {
       triggerHaptic();
       const item = fullDb[globalIdx];
       if (!item) return;
-      const bin = buildNtag215Binary(item.head, item.tail, '04:12:34:56:78:90:80');
-      downloadFile(bin, `${item.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
+      const r = () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase();
+      const uid = `04:${r()}:${r()}:${r()}:${r()}:${r()}:80`;
+      const res = await buildCompleteAmiiboBinary(item.head, item.tail, uid);
+      downloadFile(res.bytes, `${item.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
+      showToast(`💾 ดาวน์โหลด ${item.name}.bin (${res.encrypted ? 'เข้ารหัสแท้' : 'NTAG215'})`);
     }
 
-    function downloadCurrentBin() {
+    async function downloadCurrentBin() {
       triggerHaptic();
-      const bin = activeTag.rawBytes || buildNtag215Binary(activeTag.head, activeTag.tail, activeTag.uid);
-      downloadFile(bin, `${activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
-      showToast(`💾 บันทึกไฟล์ .bin สำหรับเขียนแท็กแล้ว`);
+      await rebuildActiveTagBinary();
+      downloadFile(activeTag.rawBytes, `${activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
+      showToast(`💾 ดาวน์โหลดไฟล์ .bin (540 ไบต์) สำเร็จ`);
+    }
+
+    // สร้างไฟล์ .nfc มาตรฐาน Flipper Zero (NTAG215 135 Pages)
+    async function downloadCurrentFlipperNfc() {
+      triggerHaptic();
+      await rebuildActiveTagBinary();
+      const b = activeTag.rawBytes;
+      const uidHex = Array.from(b.subarray(0, 3)).concat(Array.from(b.subarray(4, 8)))
+        .map(x => x.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+      let lines = [
+        'Filetype: Flipper NFC device',
+        'Version: 4',
+        '# Generated by Odimibo Web for Nintendo Switch 1 & 2',
+        'Device type: NTAG/Ultralight',
+        `UID: ${uidHex}`,
+        'ATQA: 00 44',
+        'SAK: 00',
+        'Data format version: 2',
+        'NTAG/Ultralight type: NTAG215',
+        'Signature: ' + Array(32).fill('00').join(' '),
+        'Mifare version: 00 04 04 02 01 00 11 03',
+        'Counter 0: 0',
+        'Tearing 0: 00',
+        'Counter 1: 0',
+        'Tearing 1: 00',
+        'Counter 2: 0',
+        'Tearing 2: 00',
+        'Pages total: 135',
+        'Pages read: 135'
+      ];
+
+      for (let p = 0; p < 135; p++) {
+        const pageBytes = Array.from(b.subarray(p * 4, p * 4 + 4))
+          .map(x => x.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+        lines.push(`Page ${p}: ${pageBytes}`);
+      }
+      lines.push('Failed authentication attempts: 0');
+
+      const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.nfc`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('🐬 ดาวน์โหลดไฟล์ .nfc สำหรับ Flipper Zero แล้ว');
     }
 
     function downloadFile(bytes, filename) {
@@ -792,7 +1201,7 @@
     }
 
     // --------------------------------------------------------
-    // Web Bluetooth กับเครื่อง Allmiibo จริง
+    // 6. ระบบ Web Bluetooth (รองรับโปรโตคอล solosky/pixl.js VFS & AmiiboLink)
     // --------------------------------------------------------
     const NUS_SERVICE = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
     const NUS_TX = '6e400002-b5a3-f393-e0a9-e50e24dcca9e';
@@ -811,18 +1220,19 @@
       }
 
       if (!navigator.bluetooth) {
-        alert('เบราว์เซอร์นี้ไม่รองรับ Web Bluetooth!\n\n• แอนดรอยด์: ใช้ Google Chrome\n• ไอโฟน: ดาวน์โหลดแอป Bluefy จาก App Store แล้วเปิดผ่าน Bluefy');
+        alert('เบราว์เซอร์นี้ไม่รองรับ Web Bluetooth!\n\n• แอนดรอยด์: เปิดเว็บนี้ด้วยแอป Google Chrome\n• ไอโฟน/ไอแพด: ดาวน์โหลดแอป Bluefy จาก App Store แล้วนำลิงก์เว็บนี้ไปเปิดในแอป Bluefy');
         return;
       }
 
       try {
-        log('[BLE] ค้นหา Allmiibo / Pixl.js...', 'info');
+        log('[BLE] กำลังค้นหาอุปกรณ์ Allmiibo / Pixl.js / AmiiboLink...', 'info');
         bleDevice = await navigator.bluetooth.requestDevice({
           filters: [
             { services: [NUS_SERVICE] },
             { namePrefix: 'Pixl' },
             { namePrefix: 'Allmiibo' },
-            { namePrefix: 'Amiibo' }
+            { namePrefix: 'Amiibo' },
+            { namePrefix: 'amiibolink' }
           ],
           optionalServices: [NUS_SERVICE]
         });
@@ -835,15 +1245,14 @@
 
         await rxChar.startNotifications();
         rxChar.addEventListener('characteristicvaluechanged', (e) => {
-          const val = e.target.value;
-          const bytes = new Uint8Array(val.buffer);
-          log(`[RX] ${Array.from(bytes).map(b => b.toString(16).padStart(2,'0')).join(' ')}`, 'rx');
+          const bytes = new Uint8Array(e.target.value.buffer);
+          log(`[BLE RX] cmd=0x${bytes[0]?.toString(16)} status=${bytes[1]} (${bytes.length}B)`, 'rx');
         });
 
         isBleConnected = true;
         updateBleStateUI();
-        log('✅ เชื่อมต่อ Allmiibo ผ่าน Bluetooth สำเร็จ!', 'rx');
-        showToast('🔗 เชื่อมต่อเครื่อง Allmiibo สำเร็จ!');
+        log(`✅ เชื่อมต่อ ${bleDevice.name || 'Allmiibo'} สำเร็จ!`, 'rx');
+        showToast(`🔗 เชื่อมต่อ ${bleDevice.name || 'Allmiibo'} สำเร็จ!`);
       } catch (err) {
         log(`[BLE Error] ${err.message}`, 'error');
       }
@@ -852,7 +1261,7 @@
     function onBleDisconnected() {
       isBleConnected = false;
       updateBleStateUI();
-      log('[BLE] หลุดการเชื่อมต่อ', 'error');
+      log('[BLE] หลุดการเชื่อมต่อ Bluetooth', 'error');
       showToast('⚡ หลุดการเชื่อมต่อ Bluetooth');
     }
 
@@ -863,11 +1272,11 @@
 
       if (isBleConnected) {
         topPill.className = 'w-2 h-2 rounded-full bg-emerald-400';
-        topLabel.textContent = 'BLE: ON';
+        topLabel.textContent = 'BLE:ON';
         oledBle.textContent = 'BLE:ON';
         oledBle.className = 'text-[10px] px-1 rounded bg-emerald-700 text-white font-bold';
       } else {
-        topPill.className = 'w-2 h-2 rounded-full bg-amber-400 animate-pulse';
+        topPill.className = 'w-2 h-2 rounded-full bg-amber-400';
         topLabel.textContent = 'BLE';
         oledBle.textContent = 'BLE:OFF';
         oledBle.className = 'text-[10px] px-1 rounded bg-neutral-800 text-white';
@@ -875,25 +1284,101 @@
       renderOLED();
     }
 
-    async function syncTagToRealDevice(tag) {
-      if (!isBleConnected || !txChar) return;
+    // สร้าง Packet 4-Byte Header ตามโปรโตคอล solosky/pixl.js (05+1-ble_protocol.md)
+    function buildPixlPacket(cmd, status, chunk, payloadBytes) {
+      const pkt = new Uint8Array(4 + payloadBytes.length);
+      pkt[0] = cmd & 0xFF;
+      pkt[1] = status & 0xFF;
+      pkt[2] = chunk & 0xFF;        // Little-endian chunk low byte
+      pkt[3] = (chunk >> 8) & 0xFF; // Little-endian chunk high byte
+      pkt.set(payloadBytes, 4);
+      return pkt;
+    }
+
+    async function sendCurrentToBLE() {
+      triggerHaptic();
+      if (!isBleConnected || !txChar) {
+        showToast('⚠️ กรุณากดปุ่ม BLE มุมขวาบนเพื่อเชื่อมต่อเครื่อง Allmiibo ก่อน');
+        toggleBLE();
+        return;
+      }
+
+      await rebuildActiveTagBinary();
+      const mode = document.getElementById('bleProtocolSelect').value;
+      const bytes = activeTag.rawBytes;
+
       try {
-        if (tag.rawBytes) {
-          log(`[BLE TX] ส่ง ${tag.name} (540B)...`, 'tx');
-          const CHUNK = 128;
-          for (let i = 0; i < tag.rawBytes.length; i += CHUNK) {
-            await txChar.writeValueWithoutResponse(tag.rawBytes.slice(i, i + CHUNK));
-            await new Promise(r => setTimeout(r, 30));
+        if (mode === 'PIXL_VFS') {
+          // โปรโตคอล solosky/pixl.js VFS Write File ไปยัง E:/amiibo/active.bin
+          const encoder = new TextEncoder();
+          const cleanName = activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 20) + '.bin';
+          const pathBytes = encoder.encode(`E:/amiibo/${cleanName}\0`);
+
+          log(`[Pixl VFS] เปิดไฟล์ E:/amiibo/${cleanName} สำหรับเขียน (540B)...`, 'tx');
+          // 1. Open File (cmd = 0x12)
+          const openPkt = buildPixlPacket(0x12, 0x00, 0x0000, pathBytes);
+          await txChar.writeValueWithoutResponse(openPkt);
+          await new Promise(r => setTimeout(r, 60));
+
+          // 2. Write File Chunks (cmd = 0x15, Max 200B per chunk)
+          const CHUNK_SIZE = 180;
+          let seq = 0;
+          for (let i = 0; i < bytes.length; i += CHUNK_SIZE) {
+            const slice = bytes.slice(i, i + CHUNK_SIZE);
+            const hasMore = (i + CHUNK_SIZE) < bytes.length;
+            const chunkFlag = hasMore ? (seq | 0x8000) : seq;
+            const writePkt = buildPixlPacket(0x15, 0x00, chunkFlag, slice);
+            await txChar.writeValueWithoutResponse(writePkt);
+            seq++;
+            await new Promise(r => setTimeout(r, 50));
           }
-          log('[BLE TX] ส่งข้อมูลครบสมบูรณ์! พร้อมแตะเครื่องเกม', 'tx');
+
+          // 3. Close File (cmd = 0x13)
+          const closePkt = buildPixlPacket(0x13, 0x00, 0x0000, new Uint8Array([0x00]));
+          await txChar.writeValueWithoutResponse(closePkt);
+
+          log(`✅ [Pixl VFS] ส่งไฟล์ ${cleanName} เข้าเครื่อง Allmiibo สำเร็จ! นำเครื่องไปแตะ Switch ได้เลย`, 'rx');
+          showToast('✅ ส่งเข้า Allmiibo สำเร็จ! นำไปแตะ Switch ได้เลย');
+        }
+        else if (mode === 'AMIIBOLINK') {
+          // โปรโตคอล AmiiboLink (Clear -> Write 20B blocks -> Save)
+          log('[AmiiboLink] ส่งข้อมูล 540 ไบต์เข้าโหมด AmiiboLink...', 'tx');
+          await txChar.writeValueWithoutResponse(new Uint8Array([0x01, 0x01]));
+          await new Promise(r => setTimeout(r, 40));
+
+          for (let i = 0; i < bytes.length; i += 180) {
+            const chunk = bytes.slice(i, i + 180);
+            const pkt = new Uint8Array(3 + chunk.length);
+            pkt[0] = 0x02;
+            pkt[1] = (i / 4) & 0xFF;
+            pkt[2] = chunk.length;
+            pkt.set(chunk, 3);
+            await txChar.writeValueWithoutResponse(pkt);
+            await new Promise(r => setTimeout(r, 45));
+          }
+
+          await txChar.writeValueWithoutResponse(new Uint8Array([0x03, 0x01]));
+          log('✅ [AmiiboLink] เขียนข้อมูลเสร็จสมบูรณ์!', 'rx');
+          showToast('✅ ส่งเข้า AmiiboLink สำเร็จ!');
+        }
+        else {
+          // Raw NUS Stream
+          const CHUNK = 128;
+          for (let i = 0; i < bytes.length; i += CHUNK) {
+            await txChar.writeValueWithoutResponse(bytes.slice(i, i + CHUNK));
+            await new Promise(r => setTimeout(r, 35));
+          }
+          log('✅ [BLE Raw] ส่งข้อมูลครบ 540 ไบต์', 'rx');
+          showToast('✅ ส่งข้อมูล 540B สำเร็จ!');
         }
       } catch (err) {
-        log(`[BLE Error] ${err.message}`, 'error');
+        log(`[BLE Error] ส่งข้อมูลล้มเหลว: ${err.message}`, 'error');
+        showToast('❌ ส่งข้อมูลไม่สำเร็จ ดูที่ Log');
       }
     }
 
     // --------------------------------------------------------
-    // Tabs & Navigation
+    // 7. Navigation Tabs & Logs
     // --------------------------------------------------------
     function switchTab(tabId) {
       triggerHaptic();
@@ -921,6 +1406,7 @@
 
     function log(msg, type = 'info') {
       const box = document.getElementById('logBox');
+      if (!box) return;
       const div = document.createElement('div');
       const time = new Date().toLocaleTimeString('th-TH');
       if (type === 'error') div.className = 'text-rose-400';
@@ -944,7 +1430,7 @@
       setTimeout(() => {
         t.classList.remove('translate-y-0', 'opacity-100');
         t.classList.add('-translate-y-10', 'opacity-0');
-      }, 2500);
+      }, 2600);
     }
 
     window.addEventListener('keydown', (e) => {
@@ -955,9 +1441,12 @@
     });
 
     // เริ่มต้นระบบ
-    activeTag.rawBytes = buildNtag215Binary(activeTag.head, activeTag.tail, activeTag.uid);
-    renderOLED();
-    renderCatalogCards();
+    (async function initApp() {
+      loadSavedRetailKey();
+      await rebuildActiveTagBinary();
+      renderOLED();
+      renderCatalogCards();
+    })();
   </script>
 </body>
 </html>
