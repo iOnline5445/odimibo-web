@@ -1,1 +1,8435 @@
-window.AMIIBO_ALL_DATABASE = [{"name": "Bokoblin - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01410000", "tail": "035c0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01410000-035c0902.png", "rewards": "กระบอง Spiked Boko Bat, ชิ้นส่วนมอนสเตอร์, เนื้อย่าง Meat"}, {"name": "Daruk (Champion) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01050000", "tail": "03580902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01050000-03580902.png", "rewards": "หน้ากากเทพ Vah Rudania Divine Helm (กันไฟ), ค้อนหิน Cobble Crusher, กองแร่ทองคำ"}, {"name": "Guardian - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01400000", "tail": "03550902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01400000-03550902.png", "rewards": "กล่องสมบัติจักรกลโบราณ, Ancient Core, Ancient Shaft, ลูกธนูโบราณ Ancient Arrow"}, {"name": "Link (Archer) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01000000", "tail": "03530902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03530902.png", "rewards": "ธนู Knight's Bow, ธนู Ancient Bow, ลูกธนูไฟ, ปลา Hyrule Bass, เนื้อสัตว์"}, {"name": "Link (Rider) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01000000", "tail": "03540902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03540902.png", "rewards": "ดาบ Traveler's Claymore, อานม้า Traveler's Saddle, เห็ดและผลไม้"}, {"name": "Mipha (Champion) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01070000", "tail": "035a0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01070000-035a0902.png", "rewards": "หน้ากากเทพ Vah Ruta Divine Helm (ว่ายน้ำเร็ว), หอก Silverscale Spear, ปลาดาวหาง"}, {"name": "Revali (Champion) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01080000", "tail": "035b0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01080000-035b0902.png", "rewards": "หน้ากากเทพ Vah Medoh Divine Helm (กันหนาว), ธนู Falcon Bow, ลูกธนูระเบิด"}, {"name": "Urbosa (Champion) - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01060000", "tail": "03590902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01060000-03590902.png", "rewards": "หน้ากากเทพ Vah Naboris Divine Helm (กันไฟช็อต), ดาบ Scimitar of the Seven, เนื้อชั้นยอด"}, {"name": "Wolf Link & Midna (20 Hearts)", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01030000", "tail": "024f0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01030000-024f0902.png", "rewards": "เสกหมาป่า Wolf Link 20 หัวใจเต็มออกมาช่วยสู้มอนสเตอร์และล่าสัตว์ใน BotW 100%"}, {"name": "Zelda - Breath of the Wild", "game": "The Legend of Zelda: Breath of the Wild", "series": "Legend Of Zelda", "cat": "Zelda BotW", "head": "01010000", "tail": "03560902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03560902.png", "rewards": "โล่ Royal Shield, โล่ Knight's Shield, ดอกไม้ Silent Princess, อัญมณีล้ำค่า"}, {"name": "Ganondorf - Tears of the Kingdom", "game": "The Legend of Zelda: Tears of the Kingdom", "series": "Legend Of Zelda", "cat": "Zelda TotK", "head": "01020100", "tail": "041a0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-041a0902.png", "rewards": "ผ้าคลุมร่มชูชีพ Demon King Fabric, ดาบ Gerudo Scimitar, วัตถุดิบมอนสเตอร์ชั้นสูง"}, {"name": "Link - Tears of the Kingdom", "game": "The Legend of Zelda: Tears of the Kingdom", "series": "Legend Of Zelda", "cat": "Zelda TotK", "head": "01000000", "tail": "04180902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-04180902.png", "rewards": "ผ้าคลุมร่มชูชีพ Champion's Leathers Fabric, ดาบ Knight's Broadsword, เห็ดและวัตถุดิบ"}, {"name": "Zelda - Tears of the Kingdom", "game": "The Legend of Zelda: Tears of the Kingdom", "series": "Legend Of Zelda", "cat": "Zelda TotK", "head": "01010000", "tail": "04190902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-04190902.png", "rewards": "ผ้าคลุมร่มชูชีพ Princess Zelda Fabric, ธนูหายาก, กองสมุนไพรและอัญมณี"}, {"name": "8-Bit Link", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "034f0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034f0902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Ganondorf", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01020100", "tail": "001b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01000000", "tail": "00040002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link - Link's Awakening", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "03990902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03990902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link - Majora's Mask", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "034c0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link - Ocarina of Time", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "034b0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link - Skyward Sword", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "034e0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Link - Twilight Princess", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000000", "tail": "034d0902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034d0902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Riju", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01090000", "tail": "04a30902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01090000-04a30902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Sheik", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01010100", "tail": "00170002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010100-00170002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Sidon", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "010a0000", "tail": "04a40902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Toon Link", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01000100", "tail": "00160002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-00160002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Toon Link - The Wind Waker", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01000100", "tail": "03500902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-03500902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Toon Zelda - The Wind Waker", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01010000", "tail": "03520902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03520902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Tulin", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "010b0000", "tail": "04a50902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010b0000-04a50902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Young Link", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01000000", "tail": "037c0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-037c0002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Yunobo", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "010c0000", "tail": "04a60902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Zelda", "game": "The Legend of Zelda", "series": "Super Smash Bros.", "cat": "Zelda", "head": "01010000", "tail": "000e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-000e0002.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "Zelda & Loftwing", "game": "The Legend of Zelda", "series": "Legend Of Zelda", "cat": "Zelda", "head": "01010300", "tail": "04140902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png", "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"}, {"name": "8-Bit Mario Classic Color", "game": "Super Mario", "series": "8-bit Mario", "cat": "Mario", "head": "00000000", "tail": "02380602", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png"}, {"name": "8-Bit Mario Modern Color", "game": "Super Mario", "series": "8-bit Mario", "cat": "Mario", "head": "00000000", "tail": "02390602", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png"}, {"name": "Baby Luigi - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cd0201", "tail": "02ab0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0201-02ab0e02.png"}, {"name": "Baby Luigi - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cd0401", "tail": "02ad0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0401-02ad0e02.png"}, {"name": "Baby Luigi - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cd0501", "tail": "02ae0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0501-02ae0e02.png"}, {"name": "Baby Luigi - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cd0101", "tail": "02aa0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0101-02aa0e02.png"}, {"name": "Baby Luigi - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cd0301", "tail": "02ac0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0301-02ac0e02.png"}, {"name": "Baby Mario - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cc0201", "tail": "02a60e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png"}, {"name": "Baby Mario - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cc0401", "tail": "02a80e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png"}, {"name": "Baby Mario - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cc0501", "tail": "02a90e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png"}, {"name": "Baby Mario - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cc0101", "tail": "02a50e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0101-02a50e02.png"}, {"name": "Baby Mario - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cc0301", "tail": "02a70e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0301-02a70e02.png"}, {"name": "Birdo - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ce0201", "tail": "02b00e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png"}, {"name": "Birdo - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ce0401", "tail": "02b20e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png"}, {"name": "Birdo - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ce0501", "tail": "02b30e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0501-02b30e02.png"}, {"name": "Birdo - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ce0101", "tail": "02af0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0101-02af0e02.png"}, {"name": "Birdo - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ce0301", "tail": "02b10e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png"}, {"name": "Boo", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00170000", "tail": "02680102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00170000-02680102.png"}, {"name": "Boo - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cb0201", "tail": "02a10e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0201-02a10e02.png"}, {"name": "Boo - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cb0401", "tail": "02a30e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png"}, {"name": "Boo - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cb0501", "tail": "02a40e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png"}, {"name": "Boo - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cb0101", "tail": "02a00e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png"}, {"name": "Boo - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cb0301", "tail": "02a20e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png"}, {"name": "Bowser", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00050000", "tail": "00140002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00140002.png"}, {"name": "Bowser", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00050000", "tail": "00390102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00390102.png"}, {"name": "Bowser - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c90201", "tail": "02970e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png"}, {"name": "Bowser - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c90401", "tail": "02990e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png"}, {"name": "Bowser - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c90501", "tail": "029a0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90501-029a0e02.png"}, {"name": "Bowser - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c90101", "tail": "02960e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90101-02960e02.png"}, {"name": "Bowser - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c90301", "tail": "02980e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90301-02980e02.png"}, {"name": "Bowser - Wedding", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00050000", "tail": "03730102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-03730102.png"}, {"name": "Bowser Jr.", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00060000", "tail": "00150002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00060000-00150002.png"}, {"name": "Bowser Jr. - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ca0201", "tail": "029c0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png"}, {"name": "Bowser Jr. - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ca0401", "tail": "029e0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png"}, {"name": "Bowser Jr. - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ca0501", "tail": "029f0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png"}, {"name": "Bowser Jr. - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ca0101", "tail": "029b0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png"}, {"name": "Bowser Jr. - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09ca0301", "tail": "029d0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png"}, {"name": "Daisy", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00130000", "tail": "037a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png"}, {"name": "Daisy", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00130000", "tail": "02660102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-02660102.png"}, {"name": "Daisy - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c30201", "tail": "02790e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30201-02790e02.png"}, {"name": "Daisy - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c30401", "tail": "027b0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png"}, {"name": "Daisy - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c30501", "tail": "027c0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png"}, {"name": "Daisy - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00130003", "tail": "039eff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130003-039eff02.png"}, {"name": "Daisy - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c30101", "tail": "02780e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30101-02780e02.png"}, {"name": "Daisy - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c30301", "tail": "027a0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30301-027a0e02.png"}, {"name": "Diddy Kong", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00090000", "tail": "000d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-000d0002.png"}, {"name": "Diddy Kong", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00090000", "tail": "02650102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-02650102.png"}, {"name": "Diddy Kong - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c80201", "tail": "02920e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png"}, {"name": "Diddy Kong - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c80401", "tail": "02940e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80401-02940e02.png"}, {"name": "Diddy Kong - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c80501", "tail": "02950e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80501-02950e02.png"}, {"name": "Diddy Kong - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00090003", "tail": "0432ff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090003-0432ff02.png"}, {"name": "Diddy Kong - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c80101", "tail": "02910e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80101-02910e02.png"}, {"name": "Diddy Kong - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c80301", "tail": "02930e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80301-02930e02.png"}, {"name": "Donkey Kong", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00080000", "tail": "00030002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png"}, {"name": "Donkey Kong", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00080000", "tail": "02640102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png"}, {"name": "Donkey Kong & Pauline", "game": "Super Mario", "series": "Donkey Kong", "cat": "Mario", "head": "00080100", "tail": "042f1a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080100-042f1a02.png"}, {"name": "Donkey Kong - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c70201", "tail": "028d0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70201-028d0e02.png"}, {"name": "Donkey Kong - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c70401", "tail": "028f0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70401-028f0e02.png"}, {"name": "Donkey Kong - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c70501", "tail": "02900e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png"}, {"name": "Donkey Kong - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00080003", "tail": "0431ff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png"}, {"name": "Donkey Kong - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c70101", "tail": "028c0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70101-028c0e02.png"}, {"name": "Donkey Kong - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c70301", "tail": "028e0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70301-028e0e02.png"}, {"name": "Dr. Mario", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00000100", "tail": "00190002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000100-00190002.png"}, {"name": "Golden - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00000003", "tail": "0430ff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-0430ff02.png"}, {"name": "Goomba", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00150000", "tail": "03670102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png"}, {"name": "Green Yarn Yoshi", "game": "Super Mario", "series": "Yoshi's Woolly World", "cat": "Mario", "head": "00030102", "tail": "00410302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png"}, {"name": "Hammer Slam Bowser", "game": "Super Mario", "series": "Skylanders", "cat": "Mario", "head": "0005ff00", "tail": "023a0702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png"}, {"name": "King K. Rool", "game": "Donkey Kong", "series": "Super Smash Bros.", "cat": "Mario", "head": "00c00000", "tail": "037b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png"}, {"name": "Koopa Troopa", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00230000", "tail": "03680102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png"}, {"name": "Light Blue Yarn Yoshi", "game": "Super Mario", "series": "Yoshi's Woolly World", "cat": "Mario", "head": "00030102", "tail": "00430302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00430302.png"}, {"name": "Luigi", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00010000", "tail": "00350102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png"}, {"name": "Luigi", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00010000", "tail": "000c0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-000c0002.png"}, {"name": "Luigi - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c10201", "tail": "026f0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png"}, {"name": "Luigi - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c10401", "tail": "02710e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10401-02710e02.png"}, {"name": "Luigi - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c10501", "tail": "02720e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10501-02720e02.png"}, {"name": "Luigi - My Mario Wooden Blocks", "game": "Super Mario", "series": "My Mario Wooden Blocks", "cat": "Mario", "head": "00010004", "tail": "04401c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png"}, {"name": "Luigi - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00010003", "tail": "039cff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png"}, {"name": "Luigi - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c10101", "tail": "026e0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10101-026e0e02.png"}, {"name": "Luigi - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c10301", "tail": "02700e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10301-02700e02.png"}, {"name": "Mario", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00000000", "tail": "00340102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png"}, {"name": "Mario", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00000000", "tail": "00000002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png"}, {"name": "Mario - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c00201", "tail": "026a0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png"}, {"name": "Mario - Cat", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00000300", "tail": "03a60102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png"}, {"name": "Mario - Gold Edition", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00000000", "tail": "003c0102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png"}, {"name": "Mario - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c00401", "tail": "026c0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00401-026c0e02.png"}, {"name": "Mario - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c00501", "tail": "026d0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00501-026d0e02.png"}, {"name": "Mario - My Mario Wooden Blocks", "game": "Super Mario", "series": "My Mario Wooden Blocks", "cat": "Mario", "head": "00000004", "tail": "043f1c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000004-043f1c02.png"}, {"name": "Mario - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00000003", "tail": "039bff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-039bff02.png"}, {"name": "Mario - Silver Edition", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00000000", "tail": "003d0102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png"}, {"name": "Mario - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c00101", "tail": "02690e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png"}, {"name": "Mario - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c00301", "tail": "026b0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00301-026b0e02.png"}, {"name": "Mario - Wedding", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00000000", "tail": "03710102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png"}, {"name": "Mega Yarn Yoshi", "game": "Super Mario", "series": "Yoshi's Woolly World", "cat": "Mario", "head": "00030102", "tail": "023e0302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-023e0302.png"}, {"name": "Metal Mario - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d00201", "tail": "02ba0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png"}, {"name": "Metal Mario - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d00401", "tail": "02bc0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png"}, {"name": "Metal Mario - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d00501", "tail": "02bd0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png"}, {"name": "Metal Mario - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d00101", "tail": "02b90e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png"}, {"name": "Metal Mario - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d00301", "tail": "02bb0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png"}, {"name": "Peach", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00020000", "tail": "00360102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png"}, {"name": "Peach", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00020000", "tail": "00010002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00010002.png"}, {"name": "Peach - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c20201", "tail": "02740e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png"}, {"name": "Peach - Cat", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00020100", "tail": "03a70102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020100-03a70102.png"}, {"name": "Peach - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c20401", "tail": "02760e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png"}, {"name": "Peach - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c20501", "tail": "02770e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png"}, {"name": "Peach - My Mario Wooden Blocks", "game": "Super Mario", "series": "My Mario Wooden Blocks", "cat": "Mario", "head": "00020004", "tail": "04411c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020004-04411c02.png"}, {"name": "Peach - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00020003", "tail": "039dff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png"}, {"name": "Peach - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c20101", "tail": "02730e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png"}, {"name": "Peach - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c20301", "tail": "02750e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png"}, {"name": "Peach - Wedding", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00020000", "tail": "03720102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png"}, {"name": "Peaches", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Mario", "head": "03ac0001", "tail": "01880502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png"}, {"name": "Pink Gold Peach - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d10201", "tail": "02bf0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png"}, {"name": "Pink Gold Peach - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d10401", "tail": "02c10e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10401-02c10e02.png"}, {"name": "Pink Gold Peach - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d10501", "tail": "02c20e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10501-02c20e02.png"}, {"name": "Pink Gold Peach - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d10101", "tail": "02be0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10101-02be0e02.png"}, {"name": "Pink Gold Peach - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09d10301", "tail": "02c00e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png"}, {"name": "Pink Yarn Yoshi", "game": "Super Mario", "series": "Yoshi's Woolly World", "cat": "Mario", "head": "00030102", "tail": "00420302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00420302.png"}, {"name": "Piranha Plant", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00240000", "tail": "038d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png"}, {"name": "Rosalina", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00040000", "tail": "02620102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040000-02620102.png"}, {"name": "Rosalina & Luma", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00040100", "tail": "00130002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png"}, {"name": "Rosalina - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cf0201", "tail": "02b50e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png"}, {"name": "Rosalina - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cf0401", "tail": "02b70e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0401-02b70e02.png"}, {"name": "Rosalina - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cf0501", "tail": "02b80e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0501-02b80e02.png"}, {"name": "Rosalina - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cf0101", "tail": "02b40e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png"}, {"name": "Rosalina - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09cf0301", "tail": "02b60e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0301-02b60e02.png"}, {"name": "Toad", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "000a0000", "tail": "00380102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png"}, {"name": "Toad - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "000a0003", "tail": "03a0ff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png"}, {"name": "Turbo Charge Donkey Kong", "game": "Super Mario", "series": "Skylanders", "cat": "Mario", "head": "0008ff00", "tail": "023b0702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0008ff00-023b0702.png"}, {"name": "Waluigi", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00140000", "tail": "02670102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00140000-02670102.png"}, {"name": "Waluigi - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c60201", "tail": "02880e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60201-02880e02.png"}, {"name": "Waluigi - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c60401", "tail": "028a0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png"}, {"name": "Waluigi - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c60501", "tail": "028b0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60501-028b0e02.png"}, {"name": "Waluigi - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c60101", "tail": "02870e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60101-02870e02.png"}, {"name": "Waluigi - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c60301", "tail": "02890e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png"}, {"name": "Wario", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00070000", "tail": "001a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-001a0002.png"}, {"name": "Wario", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00070000", "tail": "02630102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-02630102.png"}, {"name": "Wario - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c50201", "tail": "02830e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50201-02830e02.png"}, {"name": "Wario - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c50401", "tail": "02850e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50401-02850e02.png"}, {"name": "Wario - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c50501", "tail": "02860e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png"}, {"name": "Wario - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c50101", "tail": "02820e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50101-02820e02.png"}, {"name": "Wario - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c50301", "tail": "02840e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50301-02840e02.png"}, {"name": "Yoshi", "game": "Super Mario", "series": "Super Smash Bros.", "cat": "Mario", "head": "00030000", "tail": "00020002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png"}, {"name": "Yoshi", "game": "Super Mario", "series": "Super Mario Bros.", "cat": "Mario", "head": "00030000", "tail": "00370102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00370102.png"}, {"name": "Yoshi - Baseball", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c40201", "tail": "027e0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40201-027e0e02.png"}, {"name": "Yoshi - Golf", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c40401", "tail": "02800e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png"}, {"name": "Yoshi - Horse Racing", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c40501", "tail": "02810e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png"}, {"name": "Yoshi - My Mario Wooden Blocks", "game": "Super Mario", "series": "My Mario Wooden Blocks", "cat": "Mario", "head": "00030004", "tail": "04421c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png"}, {"name": "Yoshi - Power Up Band", "game": "Super Mario", "series": "Super Nintendo World", "cat": "Mario", "head": "00030003", "tail": "039fff02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png"}, {"name": "Yoshi - Soccer", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c40101", "tail": "027d0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png"}, {"name": "Yoshi - Tennis", "game": "Mario Sports Superstars", "series": "Mario Sports Superstars", "cat": "Mario", "head": "09c40301", "tail": "027f0e02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40301-027f0e02.png"}, {"name": "Alex", "game": "Minecraft", "series": "Super Smash Bros.", "cat": "Smash", "head": "3dc10000", "tail": "04230002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png"}, {"name": "Banjo & Kazooie", "game": "Banjo Kazooie", "series": "Super Smash Bros.", "cat": "Smash", "head": "3b400000", "tail": "03a30002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3b400000-03a30002.png"}, {"name": "Bayonetta", "game": "Bayonetta", "series": "Super Smash Bros.", "cat": "Smash", "head": "32400000", "tail": "025b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400000-025b0002.png"}, {"name": "Bayonetta - Player 2", "game": "Bayonetta", "series": "Super Smash Bros.", "cat": "Smash", "head": "32400100", "tail": "03640002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png"}, {"name": "Byleth", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "210b0000", "tail": "03a50002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_210b0000-03a50002.png"}, {"name": "Captain Falcon", "game": "F-Zero", "series": "Super Smash Bros.", "cat": "Smash", "head": "06000000", "tail": "00120002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png"}, {"name": "Charizard", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19060000", "tail": "00240002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png"}, {"name": "Chrom", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21080000", "tail": "03880002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png"}, {"name": "Cloud", "game": "Final Fantasy", "series": "Super Smash Bros.", "cat": "Smash", "head": "36000000", "tail": "02590002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png"}, {"name": "Cloud - Player 2", "game": "Final Fantasy", "series": "Super Smash Bros.", "cat": "Smash", "head": "36000100", "tail": "03620002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png"}, {"name": "Corrin", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21050000", "tail": "025a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050000-025a0002.png"}, {"name": "Corrin - Player 2", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21050100", "tail": "03630002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050100-03630002.png"}, {"name": "Dark Pit", "game": "Kid Icarus", "series": "Super Smash Bros.", "cat": "Smash", "head": "07410000", "tail": "00200002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png"}, {"name": "Dark Samus", "game": "Metroid", "series": "Super Smash Bros.", "cat": "Smash", "head": "05c30000", "tail": "03800002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c30000-03800002.png"}, {"name": "Duck Hunt", "game": "Classic Nintendo", "series": "Super Smash Bros.", "cat": "Smash", "head": "07820000", "tail": "002f0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png"}, {"name": "Falco", "game": "Star Fox", "series": "Super Smash Bros.", "cat": "Smash", "head": "05810000", "tail": "001c0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png"}, {"name": "Fox", "game": "Star Fox", "series": "Super Smash Bros.", "cat": "Smash", "head": "05800000", "tail": "00050002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png"}, {"name": "Greninja", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "1b920000", "tail": "00250002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png"}, {"name": "Hero", "game": "Dragon Quest", "series": "Super Smash Bros.", "cat": "Smash", "head": "36400000", "tail": "03a20002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png"}, {"name": "Ice Climbers", "game": "Classic Nintendo", "series": "Super Smash Bros.", "cat": "Smash", "head": "078f0000", "tail": "03810002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png"}, {"name": "Ike", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21010000", "tail": "00180002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21010000-00180002.png"}, {"name": "Incineroar", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "1bd70000", "tail": "03860002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1bd70000-03860002.png"}, {"name": "Inkling", "game": "Splatoon", "series": "Super Smash Bros.", "cat": "Smash", "head": "08000100", "tail": "03820002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03820002.png"}, {"name": "Isabelle", "game": "Animal Crossing", "series": "Super Smash Bros.", "cat": "Smash", "head": "01810000", "tail": "037d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-037d0002.png"}, {"name": "Ivysaur", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19020000", "tail": "03830002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19020000-03830002.png"}, {"name": "Jigglypuff", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19270000", "tail": "00260002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19270000-00260002.png"}, {"name": "Joker", "game": "Persona", "series": "Super Smash Bros.", "cat": "Smash", "head": "3a000000", "tail": "03a10002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3a000000-03a10002.png"}, {"name": "Kazuya", "game": "Tekken", "series": "Super Smash Bros.", "cat": "Smash", "head": "33c00000", "tail": "04200002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33c00000-04200002.png"}, {"name": "Ken", "game": "Street Fighter", "series": "Super Smash Bros.", "cat": "Smash", "head": "34c10000", "tail": "03890002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10000-03890002.png"}, {"name": "King Dedede", "game": "Kirby", "series": "Super Smash Bros.", "cat": "Smash", "head": "1f020000", "tail": "00280002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png"}, {"name": "Kirby", "game": "Kirby", "series": "Super Smash Bros.", "cat": "Smash", "head": "1f000000", "tail": "000a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png"}, {"name": "Little Mac", "game": "Punch Out", "series": "Super Smash Bros.", "cat": "Smash", "head": "06c00000", "tail": "000f0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png"}, {"name": "Lucario", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "1ac00000", "tail": "00110002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1ac00000-00110002.png"}, {"name": "Lucas", "game": "Earthbound", "series": "Super Smash Bros.", "cat": "Smash", "head": "22810000", "tail": "02510002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png"}, {"name": "Lucina", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21020000", "tail": "00290002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21020000-00290002.png"}, {"name": "Marth", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21000000", "tail": "000b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png"}, {"name": "Mega Man", "game": "Megaman", "series": "Super Smash Bros.", "cat": "Smash", "head": "34800000", "tail": "00310002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-00310002.png"}, {"name": "Mega Man - Gold Edition", "game": "Megaman", "series": "Super Smash Bros.", "cat": "Smash", "head": "34800000", "tail": "02580002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-02580002.png"}, {"name": "Meta Knight", "game": "Kirby", "series": "Super Smash Bros.", "cat": "Smash", "head": "1f010000", "tail": "00270002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png"}, {"name": "Mewtwo", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19960000", "tail": "023d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png"}, {"name": "Mii Brawler", "game": "Mii", "series": "Super Smash Bros.", "cat": "Smash", "head": "07c00000", "tail": "00210002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png"}, {"name": "Mii Gunner", "game": "Mii", "series": "Super Smash Bros.", "cat": "Smash", "head": "07c00200", "tail": "00230002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png"}, {"name": "Mii Swordfighter", "game": "Mii", "series": "Super Smash Bros.", "cat": "Smash", "head": "07c00100", "tail": "00220002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00100-00220002.png"}, {"name": "Min Min", "game": "ARMS", "series": "Super Smash Bros.", "cat": "Smash", "head": "0a400000", "tail": "041d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png"}, {"name": "Mr. Game & Watch", "game": "Classic Nintendo", "series": "Super Smash Bros.", "cat": "Smash", "head": "07800000", "tail": "002d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07800000-002d0002.png"}, {"name": "Mythra", "game": "Xenoblade", "series": "Super Smash Bros.", "cat": "Smash", "head": "22420000", "tail": "041f0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png"}, {"name": "Ness", "game": "Earthbound", "series": "Super Smash Bros.", "cat": "Smash", "head": "22800000", "tail": "002c0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22800000-002c0002.png"}, {"name": "Olimar", "game": "Pikmin", "series": "Super Smash Bros.", "cat": "Smash", "head": "06400100", "tail": "001e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png"}, {"name": "Pac-Man", "game": "Pac-man", "series": "Super Smash Bros.", "cat": "Smash", "head": "33400000", "tail": "00320002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33400000-00320002.png"}, {"name": "Palutena", "game": "Kid Icarus", "series": "Super Smash Bros.", "cat": "Smash", "head": "07420000", "tail": "001f0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07420000-001f0002.png"}, {"name": "Pichu", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19ac0000", "tail": "03850002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19ac0000-03850002.png"}, {"name": "Pikachu", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19190000", "tail": "00090002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19190000-00090002.png"}, {"name": "Pit", "game": "Kid Icarus", "series": "Super Smash Bros.", "cat": "Smash", "head": "07400000", "tail": "00100002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07400000-00100002.png"}, {"name": "Pokemon Trainer", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "1d400000", "tail": "03870002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png"}, {"name": "Pyra", "game": "Xenoblade", "series": "Super Smash Bros.", "cat": "Smash", "head": "22410000", "tail": "041e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png"}, {"name": "R.O.B. - Famicom", "game": "Classic Nintendo", "series": "Super Smash Bros.", "cat": "Smash", "head": "07810000", "tail": "002e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-002e0002.png"}, {"name": "R.O.B. - NES", "game": "Classic Nintendo", "series": "Super Smash Bros.", "cat": "Smash", "head": "07810000", "tail": "00330002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png"}, {"name": "Richter", "game": "Castlevania", "series": "Super Smash Bros.", "cat": "Smash", "head": "37c10000", "tail": "038c0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png"}, {"name": "Ridley", "game": "Metroid", "series": "Super Smash Bros.", "cat": "Smash", "head": "05c20000", "tail": "037f0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png"}, {"name": "Robin", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21030000", "tail": "002a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png"}, {"name": "Roy", "game": "Fire Emblem", "series": "Super Smash Bros.", "cat": "Smash", "head": "21040000", "tail": "02520002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png"}, {"name": "Ryu", "game": "Street Fighter", "series": "Super Smash Bros.", "cat": "Smash", "head": "34c00000", "tail": "02530002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png"}, {"name": "Samus", "game": "Metroid", "series": "Super Smash Bros.", "cat": "Smash", "head": "05c00000", "tail": "00060002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-00060002.png"}, {"name": "Sephiroth", "game": "Final Fantasy", "series": "Super Smash Bros.", "cat": "Smash", "head": "36010000", "tail": "04210002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png"}, {"name": "Shulk", "game": "Xenoblade", "series": "Super Smash Bros.", "cat": "Smash", "head": "22400000", "tail": "002b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png"}, {"name": "Simon", "game": "Castlevania", "series": "Super Smash Bros.", "cat": "Smash", "head": "37c00000", "tail": "038b0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png"}, {"name": "Snake", "game": "Metal Gear Solid", "series": "Super Smash Bros.", "cat": "Smash", "head": "37800000", "tail": "038a0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png"}, {"name": "Sonic", "game": "Sonic", "series": "Super Smash Bros.", "cat": "Smash", "head": "32000000", "tail": "00300002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png"}, {"name": "Sora", "game": "Kingdom Hearts", "series": "Super Smash Bros.", "cat": "Smash", "head": "3f000000", "tail": "042e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png"}, {"name": "Squirtle", "game": "Pokemon", "series": "Super Smash Bros.", "cat": "Smash", "head": "19070000", "tail": "03840002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png"}, {"name": "Steve", "game": "Minecraft", "series": "Super Smash Bros.", "cat": "Smash", "head": "3dc00000", "tail": "04220002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc00000-04220002.png"}, {"name": "Terry", "game": "Fatal Fury", "series": "Super Smash Bros.", "cat": "Smash", "head": "3c800000", "tail": "03a40002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800000-03a40002.png"}, {"name": "Villager", "game": "Animal Crossing", "series": "Super Smash Bros.", "cat": "Smash", "head": "01800000", "tail": "00080002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01800000-00080002.png"}, {"name": "Wii Fit Trainer", "game": "Wii Fit", "series": "Super Smash Bros.", "cat": "Smash", "head": "07000000", "tail": "00070002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png"}, {"name": "Wolf", "game": "Star Fox", "series": "Super Smash Bros.", "cat": "Smash", "head": "05840000", "tail": "037e0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png"}, {"name": "Zero Suit Samus", "game": "Metroid", "series": "Super Smash Bros.", "cat": "Smash", "head": "05c00100", "tail": "001d0002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png"}, {"name": "Big Man", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08090000", "tail": "04350402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png"}, {"name": "Callie", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08010000", "tail": "025d0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png"}, {"name": "Callie - Alterna", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08010000", "tail": "04360402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-04360402.png"}, {"name": "Frye", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08080000", "tail": "04340402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png"}, {"name": "Inkling - Yellow", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000100", "tail": "04150402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png"}, {"name": "Inkling Boy", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000200", "tail": "003f0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-003f0402.png"}, {"name": "Inkling Boy - Neon Green", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000200", "tail": "036a0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-036a0402.png"}, {"name": "Inkling Boy - Purple", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000200", "tail": "02600402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-02600402.png"}, {"name": "Inkling Girl", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000100", "tail": "003e0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-003e0402.png"}, {"name": "Inkling Girl - Lime Green", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000100", "tail": "025f0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png"}, {"name": "Inkling Girl - Neon Pink", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000100", "tail": "03690402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png"}, {"name": "Inkling Squid", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000300", "tail": "00400402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-00400402.png"}, {"name": "Inkling Squid - Neon Purple", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000300", "tail": "036b0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-036b0402.png"}, {"name": "Inkling Squid - Orange", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08000300", "tail": "02610402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png"}, {"name": "Marie", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08020000", "tail": "025e0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-025e0402.png"}, {"name": "Marie - Alterna", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08020000", "tail": "04370402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-04370402.png"}, {"name": "Marina", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08040000", "tail": "03770402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-03770402.png"}, {"name": "Marina - Side Order", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08040000", "tail": "04390402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-04390402.png"}, {"name": "Octoling - Blue", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08050200", "tail": "041b0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-041b0402.png"}, {"name": "Octoling Boy", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08050200", "tail": "038f0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png"}, {"name": "Octoling Girl", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08050100", "tail": "038e0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050100-038e0402.png"}, {"name": "Octoling Octopus", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08050300", "tail": "03900402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050300-03900402.png"}, {"name": "Pearl", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08030000", "tail": "03760402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-03760402.png"}, {"name": "Pearl - Side Order", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08030000", "tail": "04380402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-04380402.png"}, {"name": "Shiver", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08070000", "tail": "04330402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png"}, {"name": "Smallfry", "game": "Splatoon", "series": "Splatoon", "cat": "Splatoon", "head": "08060100", "tail": "041c0402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png"}, {"name": "Detective Pikachu", "game": "Pokemon", "series": "Pokemon", "cat": "Pokemon", "head": "1d010000", "tail": "03750d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png"}, {"name": "Shadow Mewtwo", "game": "Pokemon", "series": "Pokemon", "cat": "Pokemon", "head": "1d000001", "tail": "025c0d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d000001-025c0d02.png"}, {"name": "E.M.M.I.", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c40000", "tail": "04131302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png"}, {"name": "Metroid", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c10000", "tail": "03661302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png"}, {"name": "Samus", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c00000", "tail": "043b1302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png"}, {"name": "Samus & Vi-O-La", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c00000", "tail": "043a1302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png"}, {"name": "Samus - Metroid Dread", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c00000", "tail": "04121302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png"}, {"name": "Samus Aran", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c00000", "tail": "03651302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-03651302.png"}, {"name": "Sylux", "game": "Metroid", "series": "Metroid", "cat": "Metroid", "head": "05c50000", "tail": "043c1302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png"}, {"name": "Barioth and Ayuria", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35030100", "tail": "02e50f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png"}, {"name": "Ena", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35060000", "tail": "040d0f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png"}, {"name": "Magnamalo", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "35080000", "tail": "040f1802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png"}, {"name": "Malzeno", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "350b0000", "tail": "042d1802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png"}, {"name": "Nabiru", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35010000", "tail": "02e30f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png"}, {"name": "One-Eyed Rathalos and Rider - Female", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35000200", "tail": "02e20f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png"}, {"name": "One-Eyed Rathalos and Rider - Male", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35000100", "tail": "02e10f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000100-02e10f02.png"}, {"name": "Palamute", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "350a0100", "tail": "042c1802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png"}, {"name": "Palamute", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "350a0000", "tail": "04111802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0000-04111802.png"}, {"name": "Palico", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "35090100", "tail": "042b1802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090100-042b1802.png"}, {"name": "Palico", "game": "Monster Hunter", "series": "Monster Hunter Rise", "cat": "Monster Hunter", "head": "35090000", "tail": "04101802", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090000-04101802.png"}, {"name": "Qurupeco and Dan", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35040100", "tail": "02e60f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png"}, {"name": "Rathian and Cheval", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35020100", "tail": "02e40f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png"}, {"name": "Razewing Ratha", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35050000", "tail": "040c0f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png"}, {"name": "Tsukino", "game": "Monster Hunter", "series": "Monster Hunter", "cat": "Monster Hunter", "head": "35070000", "tail": "040e0f02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png"}, {"name": "Alm", "game": "Fire Emblem", "series": "Fire Emblem", "cat": "Fire Emblem", "head": "21060000", "tail": "03601202", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png"}, {"name": "Celica", "game": "Fire Emblem", "series": "Fire Emblem", "cat": "Fire Emblem", "head": "21070000", "tail": "03611202", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21070000-03611202.png"}, {"name": "Chrom", "game": "Fire Emblem", "series": "Fire Emblem", "cat": "Fire Emblem", "head": "21080000", "tail": "036f1202", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-036f1202.png"}, {"name": "Tiki", "game": "Fire Emblem", "series": "Fire Emblem", "cat": "Fire Emblem", "head": "21090000", "tail": "03701202", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png"}, {"name": "Bandana Waddle Dee", "game": "Kirby", "series": "Kirby Air Riders", "cat": "Kirby", "head": "1f030100", "tail": "04c91e03", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png"}, {"name": "King Dedede", "game": "Kirby", "series": "Kirby", "cat": "Kirby", "head": "1f020000", "tail": "02560c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png"}, {"name": "Kirby", "game": "Kirby", "series": "Kirby", "cat": "Kirby", "head": "1f000000", "tail": "02540c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-02540c02.png"}, {"name": "Kirby", "game": "Kirby", "series": "Kirby Air Riders", "cat": "Kirby", "head": "1f000000", "tail": "04c41e03", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png"}, {"name": "Meta Knight", "game": "Kirby", "series": "Kirby", "cat": "Kirby", "head": "1f010000", "tail": "02550c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-02550c02.png"}, {"name": "Waddle Dee", "game": "Kirby", "series": "Kirby", "cat": "Kirby", "head": "1f030000", "tail": "02570c02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png"}, {"name": "Ace", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1b0001", "tail": "03d20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1b0001-03d20502.png"}, {"name": "Admiral", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02330001", "tail": "03060502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02330001-03060502.png"}, {"name": "Agent S", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e20001", "tail": "01090502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e20001-01090502.png"}, {"name": "Agnes", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04890001", "tail": "00ef0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04890001-00ef0502.png"}, {"name": "Al", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03710001", "tail": "005c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03710001-005c0502.png"}, {"name": "Alfonso", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02c30001", "tail": "00dc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c30001-00dc0502.png"}, {"name": "Alice", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03bd0001", "tail": "00f90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bd0001-00f90502.png"}, {"name": "Alli", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02c40001", "tail": "00670502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c40001-00670502.png"}, {"name": "Amelia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "044c0001", "tail": "008e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044c0001-008e0502.png"}, {"name": "Anabelle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02030001", "tail": "019a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02030001-019a0502.png"}, {"name": "Anchovy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "022f0001", "tail": "011e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022f0001-011e0502.png"}, {"name": "Angus", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "024a0001", "tail": "01d10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024a0001-01d10502.png"}, {"name": "Anicotti", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04160001", "tail": "00fb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04160001-00fb0502.png"}, {"name": "Ankha", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02700001", "tail": "00ff0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02700001-00ff0502.png"}, {"name": "Annalisa", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02080001", "tail": "00960502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02080001-00960502.png"}, {"name": "Annalise", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ad0001", "tail": "01b20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ad0001-01b20502.png"}, {"name": "Antonio", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02010001", "tail": "016a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02010001-016a0502.png"}, {"name": "Apollo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "044b0001", "tail": "016c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044b0001-016c0502.png"}, {"name": "Apple", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "037f0001", "tail": "01aa0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037f0001-01aa0502.png"}, {"name": "Astrid", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d60001", "tail": "01570502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d60001-01570502.png"}, {"name": "Audie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0c0001", "tail": "03c30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0c0001-03c30502.png"}, {"name": "Aurora", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "045f0001", "tail": "01a80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_045f0001-01a80502.png"}, {"name": "Ava", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "029e0001", "tail": "013d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029e0001-013d0502.png"}, {"name": "Avery", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04500001", "tail": "00cf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04500001-00cf0502.png"}, {"name": "Axel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03290001", "tail": "009d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03290001-009d0502.png"}, {"name": "Azalea", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1e0001", "tail": "03d50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1e0001-03d50502.png"}, {"name": "Baabara", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04c60001", "tail": "01670502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c60001-01670502.png"}, {"name": "Bam", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02d70001", "tail": "01300502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d70001-01300502.png"}, {"name": "Bangle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04fd0001", "tail": "007b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fd0001-007b0502.png"}, {"name": "Barold", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028d0001", "tail": "01bd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028d0001-01bd0502.png"}, {"name": "Bea", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f40001", "tail": "03050502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f40001-03050502.png"}, {"name": "Beardo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02210001", "tail": "013c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02210001-013c0502.png"}, {"name": "Beau", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02dd0001", "tail": "00ea0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dd0001-00ea0502.png"}, {"name": "Becky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02a20001", "tail": "01ba0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a20001-01ba0502.png"}, {"name": "Bella", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "040e0001", "tail": "00880502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040e0001-00880502.png"}, {"name": "Benedict", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "029a0001", "tail": "00ee0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029a0001-00ee0502.png"}, {"name": "Benjamin", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02fa0001", "tail": "00970502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fa0001-00970502.png"}, {"name": "Bertha", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03930001", "tail": "00a00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03930001-00a00502.png"}, {"name": "Bettina", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "041b0001", "tail": "00f10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041b0001-00f10502.png"}, {"name": "Bianca", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05000001", "tail": "00e70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05000001-00e70502.png"}, {"name": "Biff", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03940001", "tail": "00890502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03940001-00890502.png"}, {"name": "Big Top", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03250001", "tail": "010a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03250001-010a0502.png"}, {"name": "Bill", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03070001", "tail": "00640502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03070001-00640502.png"}, {"name": "Billy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03580001", "tail": "02fa0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03580001-02fa0502.png"}, {"name": "Biskit", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ed0001", "tail": "015a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ed0001-015a0502.png"}, {"name": "Bitty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03950001", "tail": "02fc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03950001-02fc0502.png"}, {"name": "Blaire", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04de0001", "tail": "00ce0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04de0001-00ce0502.png"}, {"name": "Blanca", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b30001", "tail": "00b50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b30001-00b50502.png"}, {"name": "Blanche", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "043e0001", "tail": "01490502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043e0001-01490502.png"}, {"name": "Blathers", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01920000", "tail": "02470502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920000-02470502.png"}, {"name": "Blathers", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01920001", "tail": "010d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-010d0502.png"}, {"name": "Blathers", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01920001", "tail": "03ad0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-03ad0502.png"}, {"name": "Bluebear", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "027d0001", "tail": "00630502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027d0001-00630502.png"}, {"name": "Bob", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "025d0001", "tail": "00550502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025d0001-00550502.png"}, {"name": "Bonbon", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a50001", "tail": "00740502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a50001-00740502.png"}, {"name": "Bones", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ee0001", "tail": "01990502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ee0001-01990502.png"}, {"name": "Booker", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019e0001", "tail": "00ad0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019e0001-00ad0502.png"}, {"name": "Boomer", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04690001", "tail": "01640502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04690001-01640502.png"}, {"name": "Boone", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "036b0001", "tail": "018b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036b0001-018b0502.png"}, {"name": "Boots", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02c50001", "tail": "03080502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c50001-03080502.png"}, {"name": "Boris", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04810001", "tail": "02f10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04810001-02f10502.png"}, {"name": "Boyd", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "036e0001", "tail": "02fb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036e0001-02fb0502.png"}, {"name": "Bree", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "040f0001", "tail": "01500502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040f0001-01500502.png"}, {"name": "Brewster", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01900001", "tail": "01710502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01900001-01710502.png"}, {"name": "Broccolo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04180001", "tail": "00d80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04180001-00d80502.png"}, {"name": "Broffina", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02a50001", "tail": "018c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a50001-018c0502.png"}, {"name": "Bruce", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02d90001", "tail": "01c80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d90001-01c80502.png"}, {"name": "Bubbles", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03920001", "tail": "01270502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03920001-01270502.png"}, {"name": "Buck", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a40001", "tail": "014f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a40001-014f0502.png"}, {"name": "Bud", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03e60001", "tail": "00ec0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e60001-00ec0502.png"}, {"name": "Bunnie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04940001", "tail": "009a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04940001-009a0502.png"}, {"name": "Butch", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02eb0001", "tail": "00de0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02eb0001-00de0502.png"}, {"name": "Buzz", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "044e0001", "tail": "03150502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044e0001-03150502.png"}, {"name": "C.J.", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a020001", "tail": "03b30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a020001-03b30502.png"}, {"name": "Cally", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e80001", "tail": "01ce0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e80001-01ce0502.png"}, {"name": "Camofrog", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033b0001", "tail": "00fa0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033b0001-00fa0502.png"}, {"name": "Canberra", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03c40001", "tail": "012b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c40001-012b0502.png"}, {"name": "Candi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04140001", "tail": "030a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04140001-030a0502.png"}, {"name": "Carmen", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a40001", "tail": "00d40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a40001-00d40502.png"}, {"name": "Caroline", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e30001", "tail": "01650502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e30001-01650502.png"}, {"name": "Carrie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d30001", "tail": "02f30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d30001-02f30502.png"}, {"name": "Cashmere", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04c90001", "tail": "030d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c90001-030d0502.png"}, {"name": "Celeste", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01930001", "tail": "03ae0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930001-03ae0502.png"}, {"name": "Celeste", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01930000", "tail": "02480502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930000-02480502.png"}, {"name": "Celeste", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01930001", "tail": "01740502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930001-01740502.png"}, {"name": "Celia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04540001", "tail": "01ae0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04540001-01ae0502.png"}, {"name": "Cephalobot", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a170001", "tail": "03ce0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a170001-03ce0502.png"}, {"name": "Cesar", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03690001", "tail": "00d30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03690001-00d30502.png"}, {"name": "Chabwick", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a190001", "tail": "03d00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a190001-03d00502.png"}, {"name": "Chadder", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "041e0001", "tail": "015f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png"}, {"name": "Chai", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "032e0101", "tail": "031c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032e0101-031c0502.png"}, {"name": "Charlise", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02200001", "tail": "00fd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02200001-00fd0502.png"}, {"name": "Chelsea", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02e00101", "tail": "031d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02e00101-031d0502.png"}, {"name": "Cheri", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02870001", "tail": "005a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02870001-005a0502.png"}, {"name": "Cherry", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02fb0001", "tail": "00900502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fb0001-00900502.png"}, {"name": "Chester", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028c0001", "tail": "013e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028c0001-013e0502.png"}, {"name": "Chevre", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03560001", "tail": "01350502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03560001-01350502.png"}, {"name": "Chief", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "050b0001", "tail": "00990502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050b0001-00990502.png"}, {"name": "Chip", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019a0001", "tail": "00b70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019a0001-00b70502.png"}, {"name": "Chops", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04860001", "tail": "00fc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04860001-00fc0502.png"}, {"name": "Chow", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02170001", "tail": "01b30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02170001-01b30502.png"}, {"name": "Chrissy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a10001", "tail": "016f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a10001-016f0502.png"}, {"name": "Claude", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049f0001", "tail": "03010502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049f0001-03010502.png"}, {"name": "Claudia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ff0001", "tail": "01620502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ff0001-01620502.png"}, {"name": "Clay", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03830001", "tail": "009b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03830001-009b0502.png"}, {"name": "Cleo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ab0001", "tail": "03160502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ab0001-03160502.png"}, {"name": "Clyde", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ae0001", "tail": "00870502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ae0001-00870502.png"}, {"name": "Coach", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02510001", "tail": "00c10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02510001-00c10502.png"}, {"name": "Cobb", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04800001", "tail": "008d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04800001-008d0502.png"}, {"name": "Coco", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04960001", "tail": "00d90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04960001-00d90502.png"}, {"name": "Cole", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a60001", "tail": "00a30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a60001-00a30502.png"}, {"name": "Colton", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03af0001", "tail": "012c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03af0001-012c0502.png"}, {"name": "Cookie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f20001", "tail": "00cc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f20001-00cc0502.png"}, {"name": "Copper", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019d0001", "tail": "00ac0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019d0001-00ac0502.png"}, {"name": "Cousteau", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03420001", "tail": "01280502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03420001-01280502.png"}, {"name": "Cranston", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "043c0001", "tail": "01cb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043c0001-01cb0502.png"}, {"name": "Croque", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03490001", "tail": "018d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03490001-018d0502.png"}, {"name": "Cube", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04610001", "tail": "01610502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04610001-01610502.png"}, {"name": "Curlos", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04cd0001", "tail": "01520502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cd0001-01520502.png"}, {"name": "Curly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04780001", "tail": "01630502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04780001-01630502.png"}, {"name": "Curt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02160001", "tail": "00570502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02160001-00570502.png"}, {"name": "Cyd", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0d0001", "tail": "03c40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0d0001-03c40502.png"}, {"name": "Cyrano", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02000001", "tail": "00a10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02000001-00a10502.png"}, {"name": "Cyrus", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018b0000", "tail": "02460502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0000-02460502.png"}, {"name": "Cyrus", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018b0001", "tail": "01150502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0001-01150502.png"}, {"name": "DJ KK", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01820101", "tail": "00460502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820101-00460502.png"}, {"name": "Daisy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f10001", "tail": "01450502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f10001-01450502.png"}, {"name": "Daisy Mae", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a040001", "tail": "03b50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a040001-03b50502.png"}, {"name": "Deena", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030b0001", "tail": "00790502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030b0001-00790502.png"}, {"name": "Deirdre", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02da0001", "tail": "01330502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02da0001-01330502.png"}, {"name": "Del", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02c70001", "tail": "01220502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c70001-01220502.png"}, {"name": "Deli", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04010001", "tail": "00660502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04010001-00660502.png"}, {"name": "Derwin", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030f0001", "tail": "016d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030f0001-016d0502.png"}, {"name": "Diana", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02de0001", "tail": "009c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02de0001-009c0502.png"}, {"name": "Digby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018c0000", "tail": "02430502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0000-02430502.png"}, {"name": "Digby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018c0001", "tail": "004c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0001-004c0502.png"}, {"name": "Digby - Raincoat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018c0101", "tail": "01180502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0101-01180502.png"}, {"name": "Diva", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "034a0001", "tail": "01430502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034a0001-01430502.png"}, {"name": "Dizzy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03240001", "tail": "01890502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03240001-01890502.png"}, {"name": "Dobie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "050f0001", "tail": "03140502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050f0001-03140502.png"}, {"name": "Doc", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049e0001", "tail": "01b70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049e0001-01b70502.png"}, {"name": "Dom", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0b0001", "tail": "03c20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0b0001-03c20502.png"}, {"name": "Don Resetti", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018f0001", "tail": "00b30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0001-00b30502.png"}, {"name": "Don Resetti - Without Hat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018f0101", "tail": "01190502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0101-01190502.png"}, {"name": "Dora", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "040c0001", "tail": "01590502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040c0001-01590502.png"}, {"name": "Dotty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04950001", "tail": "01920502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04950001-01920502.png"}, {"name": "Drago", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02cb0001", "tail": "01360502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02cb0001-01360502.png"}, {"name": "Drake", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03100001", "tail": "00f80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03100001-00f80502.png"}, {"name": "Drift", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033c0001", "tail": "01000502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033c0001-01000502.png"}, {"name": "Ed", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03aa0001", "tail": "00e60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03aa0001-00e60502.png"}, {"name": "Egbert", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "029b0001", "tail": "00cb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029b0001-00cb0502.png"}, {"name": "Elise", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03fe0001", "tail": "01a40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fe0001-01a40502.png"}, {"name": "Ellie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "032a0001", "tail": "03070502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032a0001-03070502.png"}, {"name": "Elmer", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a70001", "tail": "01a10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a70001-01a10502.png"}, {"name": "Eloise", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03260001", "tail": "01390502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03260001-01390502.png"}, {"name": "Elvis", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03e70001", "tail": "012a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e70001-012a0502.png"}, {"name": "Erik", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02df0001", "tail": "01910502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02df0001-01910502.png"}, {"name": "Eugene", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03c60001", "tail": "00930502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c60001-00930502.png"}, {"name": "Eunice", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04c70001", "tail": "00940502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c70001-00940502.png"}, {"name": "Faith", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a200001", "tail": "03d70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a200001-03d70502.png"}, {"name": "Fang", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05110001", "tail": "01950502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05110001-01950502.png"}, {"name": "Fauna", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02d60001", "tail": "00560502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d60001-00560502.png"}, {"name": "Felicity", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026e0001", "tail": "00ba0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026e0001-00ba0502.png"}, {"name": "Filbert", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04df0001", "tail": "00e80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04df0001-00e80502.png"}, {"name": "Flick", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a030001", "tail": "03b40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a030001-03b40502.png"}, {"name": "Flip", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ff0001", "tail": "00f40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ff0001-00f40502.png"}, {"name": "Flo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "046c0001", "tail": "008c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046c0001-008c0502.png"}, {"name": "Flora", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "043f0001", "tail": "01550502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043f0001-01550502.png"}, {"name": "Flurry", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03840001", "tail": "00860502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03840001-00860502.png"}, {"name": "Francine", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a00001", "tail": "016e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a00001-016e0502.png"}, {"name": "Frank", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04510001", "tail": "015e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04510001-015e0502.png"}, {"name": "Franklin", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01ae0001", "tail": "011b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ae0001-011b0502.png"}, {"name": "Freckles", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030e0001", "tail": "012f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030e0001-012f0502.png"}, {"name": "Frett", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1d0001", "tail": "03d40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1d0001-03d40502.png"}, {"name": "Freya", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05100001", "tail": "01070502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05100001-01070502.png"}, {"name": "Friga", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04630001", "tail": "01310502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04630001-01310502.png"}, {"name": "Frita", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04d00001", "tail": "01960502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d00001-01960502.png"}, {"name": "Frobert", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033a0001", "tail": "01cc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033a0001-01cc0502.png"}, {"name": "Fuchsia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02dc0001", "tail": "00be0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dc0001-00be0502.png"}, {"name": "Gabi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04990001", "tail": "00df0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04990001-00df0502.png"}, {"name": "Gala", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04850001", "tail": "014c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04850001-014c0502.png"}, {"name": "Gaston", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04980001", "tail": "014a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04980001-014a0502.png"}, {"name": "Gayle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ca0001", "tail": "01ca0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ca0001-01ca0502.png"}, {"name": "Genji", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049c0001", "tail": "01400502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049c0001-01400502.png"}, {"name": "Gigi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03480001", "tail": "006b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03480001-006b0502.png"}, {"name": "Gladys", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04370001", "tail": "01050502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04370001-01050502.png"}, {"name": "Gloria", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03160001", "tail": "01c00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03160001-01c00502.png"}, {"name": "Goldie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ea0001", "tail": "01800502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01800502.png"}, {"name": "Goldie - Amiibo Festival", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ea0001", "tail": "01d50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01d50502.png"}, {"name": "Gonzo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03c00001", "tail": "03100502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c00001-03100502.png"}, {"name": "Goose", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02990001", "tail": "00950502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02990001-00950502.png"}, {"name": "Gracie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a90001", "tail": "01760502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a90001-01760502.png"}, {"name": "Graham", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03800001", "tail": "01870502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03800001-01870502.png"}, {"name": "Grams", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01990001", "tail": "01160502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01990001-01160502.png"}, {"name": "Greta", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "041c0001", "tail": "01410502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041c0001-01410502.png"}, {"name": "Grizzly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021d0001", "tail": "01cd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021d0001-01cd0502.png"}, {"name": "Groucho", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021a0001", "tail": "00da0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021a0001-00da0502.png"}, {"name": "Gruff", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "035a0001", "tail": "00850502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035a0001-00850502.png"}, {"name": "Gulliver", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a20001", "tail": "03b90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-03b90502.png"}, {"name": "Gulliver", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a20001", "tail": "017d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-017d0502.png"}, {"name": "Gwen", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04640001", "tail": "00c00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04640001-00c00502.png"}, {"name": "Hamlet", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "037e0001", "tail": "01560502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037e0001-01560502.png"}, {"name": "Hamphrey", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03850001", "tail": "01060502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03850001-01060502.png"}, {"name": "Hans", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03730001", "tail": "01340502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03730001-01340502.png"}, {"name": "Harriet", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01910001", "tail": "004e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01910001-004e0502.png"}, {"name": "Harry", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03980001", "tail": "00bf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03980001-00bf0502.png"}, {"name": "Harvey", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a050001", "tail": "03b80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a050001-03b80502.png"}, {"name": "Hazel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ef0001", "tail": "013b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ef0001-013b0502.png"}, {"name": "Henry", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "034b0001", "tail": "009f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034b0001-009f0502.png"}, {"name": "Hippeux", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03990001", "tail": "01c20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03990001-01c20502.png"}, {"name": "Hopkins", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a20001", "tail": "02e80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a20001-02e80502.png"}, {"name": "Hopper", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04620001", "tail": "00f60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04620001-00f60502.png"}, {"name": "Hornsby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04b60001", "tail": "02ec0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b60001-02ec0502.png"}, {"name": "Huck", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03430001", "tail": "02ef0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03430001-02ef0502.png"}, {"name": "Hugh", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "047b0001", "tail": "00f50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047b0001-00f50502.png"}, {"name": "Iggly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "046a0001", "tail": "01d00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046a0001-01d00502.png"}, {"name": "Ike", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021f0001", "tail": "03170502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021f0001-03170502.png"}, {"name": "Ione", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a120001", "tail": "03c90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a120001-03c90502.png"}, {"name": "Isabelle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810001", "tail": "00440502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810001-00440502.png"}, {"name": "Isabelle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810401", "tail": "03aa0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810401-03aa0502.png"}, {"name": "Isabelle - Character Parfait", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810001", "tail": "01d40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810001-01d40502.png"}, {"name": "Isabelle - Dress", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810301", "tail": "01700502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810301-01700502.png"}, {"name": "Isabelle - Kimono", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810201", "tail": "011a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810201-011a0502.png"}, {"name": "Isabelle - Summer Outfit", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810000", "tail": "024b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-024b0502.png"}, {"name": "Isabelle - Sweater", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810501", "tail": "03bf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810501-03bf0502.png"}, {"name": "Isabelle - Winter", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810101", "tail": "00b40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810101-00b40502.png"}, {"name": "Isabelle - Winter Outfit", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01810100", "tail": "023f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810100-023f0502.png"}, {"name": "Jack", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01ad0001", "tail": "00b80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ad0001-00b80502.png"}, {"name": "Jacob", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02380001", "tail": "02f80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02380001-02f80502.png"}, {"name": "Jacques", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "023d0001", "tail": "01b50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023d0001-01b50502.png"}, {"name": "Jambette", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03450001", "tail": "005f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03450001-005f0502.png"}, {"name": "Jay", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "022d0001", "tail": "00f20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022d0001-00f20502.png"}, {"name": "Jeremiah", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033f0001", "tail": "008f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033f0001-008f0502.png"}, {"name": "Jingle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01af0001", "tail": "011c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01af0001-011c0502.png"}, {"name": "Jitters", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02310001", "tail": "006a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02310001-006a0502.png"}, {"name": "Joan", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a30001", "tail": "004a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a30001-004a0502.png"}, {"name": "Joey", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03080001", "tail": "014d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03080001-014d0502.png"}, {"name": "Judy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0e0001", "tail": "03c50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png"}, {"name": "Julia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "043b0001", "tail": "03030502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043b0001-03030502.png"}, {"name": "Julian", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03b10001", "tail": "00f00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b10001-00f00502.png"}, {"name": "June", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028a0001", "tail": "02e90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028a0001-02e90502.png"}, {"name": "K. K. Slider", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01820000", "tail": "02400502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820000-02400502.png"}, {"name": "K. K. Slider - Pikopuri", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01820001", "tail": "01d80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-01d80502.png"}, {"name": "K.K. Slider", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01820001", "tail": "00a80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-00a80502.png"}, {"name": "K.K. Slider", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01820001", "tail": "03b20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-03b20502.png"}, {"name": "Kabuki", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02660001", "tail": "00680502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02660001-00680502.png"}, {"name": "Kapp'n", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01960000", "tail": "024e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960000-024e0502.png"}, {"name": "Kapp'n", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01960001", "tail": "00480502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960001-00480502.png"}, {"name": "Katie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b60001", "tail": "00ae0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b60001-00ae0502.png"}, {"name": "Katrina", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a50001", "tail": "01720502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a50001-01720502.png"}, {"name": "Katt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02720001", "tail": "01860502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02720001-01860502.png"}, {"name": "Keaton", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04530001", "tail": "01040502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04530001-01040502.png"}, {"name": "Ken", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02a60001", "tail": "01240502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a60001-01240502.png"}, {"name": "Ketchup", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03140001", "tail": "02f40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03140001-02f40502.png"}, {"name": "Kevin", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04870001", "tail": "01bf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04870001-01bf0502.png"}, {"name": "Kicks", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01940000", "tail": "024a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940000-024a0502.png"}, {"name": "Kicks", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01940001", "tail": "00aa0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-00aa0502.png"}, {"name": "Kicks", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01940001", "tail": "03b60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-03b60502.png"}, {"name": "Kid Cat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02670001", "tail": "01080502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02670001-01080502.png"}, {"name": "Kidd", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "035d0001", "tail": "00c90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035d0001-00c90502.png"}, {"name": "Kiki", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02610001", "tail": "00650502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02610001-00650502.png"}, {"name": "Kitt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d10001", "tail": "00c20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d10001-00c20502.png"}, {"name": "Kitty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026b0001", "tail": "00e90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026b0001-00e90502.png"}, {"name": "Klaus", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02220001", "tail": "01440502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02220001-01440502.png"}, {"name": "Knox", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02a40001", "tail": "00720502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a40001-00720502.png"}, {"name": "Kody", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02810001", "tail": "01200502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02810001-01200502.png"}, {"name": "Kyle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05150001", "tail": "005b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05150001-005b0502.png"}, {"name": "Label", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01890101", "tail": "03b10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890101-03b10502.png"}, {"name": "Labelle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01890001", "tail": "00ab0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890001-00ab0502.png"}, {"name": "Leif", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b40001", "tail": "01130502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b40001-01130502.png"}, {"name": "Leila", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01980001", "tail": "00b10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01980001-00b10502.png"}, {"name": "Leilani", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01970001", "tail": "01770502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01970001-01770502.png"}, {"name": "Leonardo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04fe0001", "tail": "00590502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fe0001-00590502.png"}, {"name": "Leopold", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ea0001", "tail": "030b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ea0001-030b0502.png"}, {"name": "Lily", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03380001", "tail": "011d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03380001-011d0502.png"}, {"name": "Limberg", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "040d0001", "tail": "00780502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040d0001-00780502.png"}, {"name": "Lionel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ee0001", "tail": "008b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ee0001-008b0502.png"}, {"name": "Lobo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "050c0001", "tail": "01c10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050c0001-01c10502.png"}, {"name": "Lolly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026f0001", "tail": "01900502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026f0001-01900502.png"}, {"name": "Lopez", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02db0001", "tail": "005e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02db0001-005e0502.png"}, {"name": "Lottie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01c10000", "tail": "02440502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10000-02440502.png"}, {"name": "Lottie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01c10001", "tail": "00540502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10001-00540502.png"}, {"name": "Lottie - Black Skirt And Bow", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01c10101", "tail": "017a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10101-017a0502.png"}, {"name": "Lottie - Island", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01c10201", "tail": "03bb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10201-03bb0502.png"}, {"name": "Louie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "036d0001", "tail": "03040502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036d0001-03040502.png"}, {"name": "Lucha", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "023c0001", "tail": "00bd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023c0001-00bd0502.png"}, {"name": "Lucky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ec0001", "tail": "01c40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ec0001-01c40502.png"}, {"name": "Lucy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "047c0001", "tail": "01a00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047c0001-01a00502.png"}, {"name": "Luna", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b50001", "tail": "00510502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b50001-00510502.png"}, {"name": "Lyle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01aa0001", "tail": "00530502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01aa0001-00530502.png"}, {"name": "Lyman", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03c50001", "tail": "015c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c50001-015c0502.png"}, {"name": "Mabel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01880001", "tail": "01120502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-01120502.png"}, {"name": "Mabel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01880000", "tail": "02410502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880000-02410502.png"}, {"name": "Mabel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01880001", "tail": "03af0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-03af0502.png"}, {"name": "Mac", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f80001", "tail": "01380502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f80001-01380502.png"}, {"name": "Maddie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f30001", "tail": "02f90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f30001-02f90502.png"}, {"name": "Maelle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030a0001", "tail": "01c70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030a0001-01c70502.png"}, {"name": "Maggie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04820001", "tail": "02fd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04820001-02fd0502.png"}, {"name": "Mallary", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030d0001", "tail": "01840502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030d0001-01840502.png"}, {"name": "Maple", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "027e0001", "tail": "01690502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027e0001-01690502.png"}, {"name": "Marcel", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f90001", "tail": "01020502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f90001-01020502.png"}, {"name": "Marcie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03db0001", "tail": "006d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03db0001-006d0502.png"}, {"name": "Margie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03270001", "tail": "01c30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03270001-01c30502.png"}, {"name": "Marina", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "042a0001", "tail": "012d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042a0001-012d0502.png"}, {"name": "Marlo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a150001", "tail": "03cc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a150001-03cc0502.png"}, {"name": "Marshal", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ee0001", "tail": "014b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ee0001-014b0502.png"}, {"name": "Marty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028f0101", "tail": "031a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028f0101-031a0502.png"}, {"name": "Mathilda", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d20001", "tail": "00e50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d20001-00e50502.png"}, {"name": "Megan", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0a0001", "tail": "03c10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0a0001-03c10502.png"}, {"name": "Melba", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03be0001", "tail": "01980502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03be0001-01980502.png"}, {"name": "Merengue", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04b90001", "tail": "01600502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b90001-01600502.png"}, {"name": "Merry", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026d0001", "tail": "013f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026d0001-013f0502.png"}, {"name": "Midge", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02350001", "tail": "00840502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02350001-00840502.png"}, {"name": "Mint", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e60001", "tail": "00820502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e60001-00820502.png"}, {"name": "Mira", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a70001", "tail": "01a60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a70001-01a60502.png"}, {"name": "Miranda", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03130001", "tail": "01210502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03130001-01210502.png"}, {"name": "Mitzi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "025e0001", "tail": "01250502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025e0001-01250502.png"}, {"name": "Moe", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02650001", "tail": "01540502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02650001-01540502.png"}, {"name": "Molly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03170001", "tail": "00a60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03170001-00a60502.png"}, {"name": "Monique", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02680001", "tail": "007d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02680001-007d0502.png"}, {"name": "Monty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03fd0001", "tail": "01580502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fd0001-01580502.png"}, {"name": "Moose", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "041a0001", "tail": "00e00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041a0001-00e00502.png"}, {"name": "Mott", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ec0001", "tail": "01830502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ec0001-01830502.png"}, {"name": "Muffy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04d10001", "tail": "009e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d10001-009e0502.png"}, {"name": "Murphy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02840001", "tail": "02fe0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02840001-02fe0502.png"}, {"name": "Nan", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03570001", "tail": "00eb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03570001-00eb0502.png"}, {"name": "Nana", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03fa0001", "tail": "00d00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fa0001-00d00502.png"}, {"name": "Naomi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02b80001", "tail": "019c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b80001-019c0502.png"}, {"name": "Nat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019b0001", "tail": "00b60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019b0001-00b60502.png"}, {"name": "Nate", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02190001", "tail": "007e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02190001-007e0502.png"}, {"name": "Nibbles", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e10001", "tail": "01be0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e10001-01be0502.png"}, {"name": "Niko", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a070001", "tail": "03bc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a070001-03bc0502.png"}, {"name": "Norma", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02b70001", "tail": "030f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b70001-030f0502.png"}, {"name": "OHare", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a30001", "tail": "01c90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a30001-01c90502.png"}, {"name": "Octavian", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04290001", "tail": "00700502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04290001-00700502.png"}, {"name": "Olaf", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02090001", "tail": "019f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02090001-019f0502.png"}, {"name": "Olive", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02860001", "tail": "03130502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02860001-03130502.png"}, {"name": "Olivia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02600001", "tail": "00d20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02600001-00d20502.png"}, {"name": "Opal", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03230001", "tail": "00760502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03230001-00760502.png"}, {"name": "Orville", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a000001", "tail": "03ab0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a000001-03ab0502.png"}, {"name": "Ozzie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03c10001", "tail": "00bb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c10001-00bb0502.png"}, {"name": "Pancetti", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04880001", "tail": "00980502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04880001-00980502.png"}, {"name": "Pango", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02020001", "tail": "01030502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02020001-01030502.png"}, {"name": "Paolo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03280001", "tail": "02eb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03280001-02eb0502.png"}, {"name": "Papi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03b00001", "tail": "01a90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b00001-01a90502.png"}, {"name": "Pascal", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a40001", "tail": "004d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a40001-004d0502.png"}, {"name": "Pashmina", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "035e0001", "tail": "018e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035e0001-018e0502.png"}, {"name": "Pate", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03090001", "tail": "00c60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03090001-00c60502.png"}, {"name": "Patty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02b10001", "tail": "00690502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b10001-00690502.png"}, {"name": "Paula", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021e0001", "tail": "01230502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021e0001-01230502.png"}, {"name": "Pave", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01ab0001", "tail": "017c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ab0001-017c0502.png"}, {"name": "Peanut", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04dd0001", "tail": "00a20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04dd0001-00a20502.png"}, {"name": "Pecan", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e00001", "tail": "00f70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e00001-00f70502.png"}, {"name": "Peck", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "023e0001", "tail": "00d10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023e0001-00d10502.png"}, {"name": "Peewee", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "036a0001", "tail": "019d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036a0001-019d0502.png"}, {"name": "Peggy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04830001", "tail": "01b00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04830001-01b00502.png"}, {"name": "Pekoe", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028b0001", "tail": "00e30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028b0001-00e30502.png"}, {"name": "Pelly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a00001", "tail": "010f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a00001-010f0502.png"}, {"name": "Penelope", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "041d0001", "tail": "018a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041d0001-018a0502.png"}, {"name": "Pete", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019f0001", "tail": "01110502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019f0001-01110502.png"}, {"name": "Petri", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a160001", "tail": "03cd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a160001-03cd0502.png"}, {"name": "Phil", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "043d0001", "tail": "007c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043d0001-007c0502.png"}, {"name": "Phineas", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "019c0001", "tail": "01730502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019c0001-01730502.png"}, {"name": "Phoebe", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04400001", "tail": "00ca0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04400001-00ca0502.png"}, {"name": "Phyllis", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a10001", "tail": "01100502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a10001-01100502.png"}, {"name": "Pierce", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "044d0001", "tail": "01930502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044d0001-01930502.png"}, {"name": "Pietro", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04d20001", "tail": "01a70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d20001-01a70502.png"}, {"name": "Pinky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02150001", "tail": "01820502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02150001-01820502.png"}, {"name": "Piper", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02320001", "tail": "02ea0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02320001-02ea0502.png"}, {"name": "Pippy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049a0001", "tail": "014e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049a0001-014e0502.png"}, {"name": "Plucky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02a30001", "tail": "02ff0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a30001-02ff0502.png"}, {"name": "Pompom", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "030c0001", "tail": "01b80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030c0001-01b80502.png"}, {"name": "Poncho", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "027f0001", "tail": "00b90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027f0001-00b90502.png"}, {"name": "Poppy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ec0001", "tail": "00770502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ec0001-00770502.png"}, {"name": "Porter", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01950001", "tail": "00b00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01950001-00b00502.png"}, {"name": "Portia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02ef0001", "tail": "00580502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ef0001-00580502.png"}, {"name": "Prince", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03440001", "tail": "00c50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03440001-00c50502.png"}, {"name": "Puck", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04650001", "tail": "006e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04650001-006e0502.png"}, {"name": "Puddles", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033e0001", "tail": "01a20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033e0001-01a20502.png"}, {"name": "Pudge", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02800001", "tail": "00830502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02800001-00830502.png"}, {"name": "Punchy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02630001", "tail": "00750502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02630001-00750502.png"}, {"name": "Purrl", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02640001", "tail": "01ac0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02640001-01ac0502.png"}, {"name": "Queenie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04360001", "tail": "01940502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04360001-01940502.png"}, {"name": "Quillson", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03180001", "tail": "006c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03180001-006c0502.png"}, {"name": "Quinn", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a180001", "tail": "03cf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a180001-03cf0502.png"}, {"name": "Raddle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03470001", "tail": "03020502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03470001-03020502.png"}, {"name": "Rasher", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "047a0001", "tail": "00600502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047a0001-00600502.png"}, {"name": "Raymond", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a0f0001", "tail": "03c60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png"}, {"name": "Redd", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a80001", "tail": "004f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80001-004f0502.png"}, {"name": "Redd - Shirt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a80101", "tail": "017e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80101-017e0502.png"}, {"name": "Reese", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018a0000", "tail": "02450502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0000-02450502.png"}, {"name": "Reese", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018a0001", "tail": "00a90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0001-00a90502.png"}, {"name": "Reneigh", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a100001", "tail": "03c70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a100001-03c70502.png"}, {"name": "Renée", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ba0001", "tail": "005d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ba0001-005d0502.png"}, {"name": "Resetti", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018e0000", "tail": "02490502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0000-02490502.png"}, {"name": "Resetti", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018e0001", "tail": "00490502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0001-00490502.png"}, {"name": "Resetti - Without Hat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018e0101", "tail": "01780502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0101-01780502.png"}, {"name": "Rex", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03e80001", "tail": "02f50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e80001-02f50502.png"}, {"name": "Rhonda", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04b30001", "tail": "00dd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b30001-00dd0502.png"}, {"name": "Ribbot", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03390001", "tail": "01b10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03390001-01b10502.png"}, {"name": "Ricky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e70001", "tail": "01320502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e70001-01320502.png"}, {"name": "Rilla", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03740101", "tail": "03190502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03740101-03190502.png"}, {"name": "Rio", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1c0001", "tail": "03d30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1c0001-03d30502.png"}, {"name": "Rizzo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04150001", "tail": "01bb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04150001-01bb0502.png"}, {"name": "Roald", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04600001", "tail": "00a50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04600001-00a50502.png"}, {"name": "Robin", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "022e0001", "tail": "01d30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022e0001-01d30502.png"}, {"name": "Rocco", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03900001", "tail": "01850502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03900001-01850502.png"}, {"name": "Rocket", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03720001", "tail": "010b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03720001-010b0502.png"}, {"name": "Rod", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04110001", "tail": "01ab0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04110001-01ab0502.png"}, {"name": "Rodeo", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "024b0001", "tail": "01260502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024b0001-01260502.png"}, {"name": "Rodney", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03810001", "tail": "00d50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03810001-00d50502.png"}, {"name": "Rolf", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04fa0001", "tail": "01680502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fa0001-01680502.png"}, {"name": "Rooney", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03da0001", "tail": "01510502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03da0001-01510502.png"}, {"name": "Rory", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03ed0001", "tail": "01a30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ed0001-01a30502.png"}, {"name": "Roscoe", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a80001", "tail": "00910502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a80001-00910502.png"}, {"name": "Rosie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "025f0001", "tail": "01c50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01c50502.png"}, {"name": "Rosie - Amiibo Festival", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "025f0001", "tail": "01d70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01d70502.png"}, {"name": "Roswell", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1f0001", "tail": "03d60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1f0001-03d60502.png"}, {"name": "Rover", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018d0001", "tail": "010c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018d0001-010c0502.png"}, {"name": "Rover", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "018d0000", "tail": "024c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018d0000-024c0502.png"}, {"name": "Rowan", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04fb0001", "tail": "01c60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fb0001-01c60502.png"}, {"name": "Ruby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049d0001", "tail": "00ed0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049d0001-00ed0502.png"}, {"name": "Rudy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02710001", "tail": "019b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02710001-019b0502.png"}, {"name": "Sable", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01870001", "tail": "00470502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-00470502.png"}, {"name": "Sable", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01870001", "tail": "03b00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-03b00502.png"}, {"name": "Saharah", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a60001", "tail": "03b70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-03b70502.png"}, {"name": "Saharah", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a60001", "tail": "00500502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-00500502.png"}, {"name": "Sally", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e40001", "tail": "01b60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e40001-01b60502.png"}, {"name": "Samson", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04100001", "tail": "007f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04100001-007f0502.png"}, {"name": "Sandy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04380001", "tail": "03000502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png"}, {"name": "Sasha", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a110001", "tail": "03c80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a110001-03c80502.png"}, {"name": "Savannah", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a60001", "tail": "00c80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a60001-00c80502.png"}, {"name": "Scoot", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03110001", "tail": "00d60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03110001-00d60502.png"}, {"name": "Shari", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04000001", "tail": "006f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04000001-006f0502.png"}, {"name": "Sheldon", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ed0001", "tail": "00620502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ed0001-00620502.png"}, {"name": "Shep", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02fc0001", "tail": "018f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fc0001-018f0502.png"}, {"name": "Sherb", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a090001", "tail": "03c00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a090001-03c00502.png"}, {"name": "Shino", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a140001", "tail": "03cb0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a140001-03cb0502.png"}, {"name": "Shrunk", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b10001", "tail": "00b20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10001-00b20502.png"}, {"name": "Shrunk - Loud Jacket", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b10101", "tail": "017b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10101-017b0502.png"}, {"name": "Simon", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03fb0001", "tail": "01cf0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fb0001-01cf0502.png"}, {"name": "Skye", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05140001", "tail": "01530502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05140001-01530502.png"}, {"name": "Sly", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02c90001", "tail": "00cd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c90001-00cd0502.png"}, {"name": "Snake", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04970001", "tail": "007a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04970001-007a0502.png"}, {"name": "Snooty", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02060001", "tail": "03120502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02060001-03120502.png"}, {"name": "Soleil", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03820001", "tail": "016b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03820001-016b0502.png"}, {"name": "Sparro", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "023f0001", "tail": "01660502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023f0001-01660502.png"}, {"name": "Spike", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04b40001", "tail": "030c0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b40001-030c0502.png"}, {"name": "Spork/Crackle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "047d0001", "tail": "012e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047d0001-012e0502.png"}, {"name": "Sprinkle", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "046d0001", "tail": "00f30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046d0001-00f30502.png"}, {"name": "Sprocket", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04390001", "tail": "03110502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04390001-03110502.png"}, {"name": "Static", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04e50001", "tail": "01ad0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e50001-01ad0502.png"}, {"name": "Stella", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04c80001", "tail": "02ed0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c80001-02ed0502.png"}, {"name": "Sterling", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04520001", "tail": "00730502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04520001-00730502.png"}, {"name": "Stinky", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026a0001", "tail": "01460502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026a0001-01460502.png"}, {"name": "Stitches", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02820001", "tail": "01810502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01810502.png"}, {"name": "Stitches - Amiibo Festival", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02820001", "tail": "01d60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01d60502.png"}, {"name": "Stu", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "024d0001", "tail": "02f60502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024d0001-02f60502.png"}, {"name": "Sydney", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03bf0001", "tail": "01bc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bf0001-01bc0502.png"}, {"name": "Sylvana", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04eb0001", "tail": "02f00502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04eb0001-02f00502.png"}, {"name": "Sylvia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d70001", "tail": "01b40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d70001-01b40502.png"}, {"name": "T-Bone", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "024f0001", "tail": "00810502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024f0001-00810502.png"}, {"name": "Tabby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02690001", "tail": "011f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02690001-011f0502.png"}, {"name": "Tad", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03410001", "tail": "030e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03410001-030e0502.png"}, {"name": "Tammi", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03fc0001", "tail": "01470502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fc0001-01470502.png"}, {"name": "Tammy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "028e0001", "tail": "019e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028e0001-019e0502.png"}, {"name": "Tangy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02620001", "tail": "01370502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02620001-01370502.png"}, {"name": "Tank", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04b20001", "tail": "01b90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b20001-01b90502.png"}, {"name": "Tasha", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ea0001", "tail": "03180502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ea0001-03180502.png"}, {"name": "Teddy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02140001", "tail": "00e40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02140001-00e40502.png"}, {"name": "Tex", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "046b0001", "tail": "01970502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046b0001-01970502.png"}, {"name": "Tia", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "032d0001", "tail": "00bc0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032d0001-00bc0502.png"}, {"name": "Tiansheng", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a130001", "tail": "03ca0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a130001-03ca0502.png"}, {"name": "Tiffany", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "049b0001", "tail": "00610502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049b0001-00610502.png"}, {"name": "Timbra", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04cf0001", "tail": "00e10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cf0001-00e10502.png"}, {"name": "Timmy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01850001", "tail": "004b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850001-004b0502.png"}, {"name": "Timmy & Tommy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01840000", "tail": "024d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840000-024d0502.png"}, {"name": "Timmy & Tommy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01840501", "tail": "03a90502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840501-03a90502.png"}, {"name": "Timmy - Full Apron", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01850201", "tail": "01170502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850201-01170502.png"}, {"name": "Timmy - Suit", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01850401", "tail": "01790502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850401-01790502.png"}, {"name": "Tipper", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02b20001", "tail": "00c40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b20001-00c40502.png"}, {"name": "Toby", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04a80101", "tail": "031e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a80101-031e0502.png"}, {"name": "Tom", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "026c0001", "tail": "00c30502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026c0001-00c30502.png"}, {"name": "Tom Nook", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01830000", "tail": "02420502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830000-02420502.png"}, {"name": "Tom Nook", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01830201", "tail": "03a80502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830201-03a80502.png"}, {"name": "Tom Nook", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01830001", "tail": "00450502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830001-00450502.png"}, {"name": "Tom Nook - Coat", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01830301", "tail": "03be0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830301-03be0502.png"}, {"name": "Tom Nook - Jacket", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01830101", "tail": "010e0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830101-010e0502.png"}, {"name": "Tommy - Suit", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01860301", "tail": "01750502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860301-01750502.png"}, {"name": "Tommy - Uniform", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01860101", "tail": "00af0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860101-00af0502.png"}, {"name": "Tortimer", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01b00001", "tail": "00520502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b00001-00520502.png"}, {"name": "Truffles", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04790001", "tail": "00920502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04790001-00920502.png"}, {"name": "Tucker", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "032c0001", "tail": "01480502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032c0001-01480502.png"}, {"name": "Tutu", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021b0001", "tail": "00800502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021b0001-00800502.png"}, {"name": "Twiggy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02300001", "tail": "01d20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02300001-01d20502.png"}, {"name": "Tybalt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04fc0001", "tail": "02ee0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fc0001-02ee0502.png"}, {"name": "Ursala", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "021c0001", "tail": "02f70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021c0001-02f70502.png"}, {"name": "Velma", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "035c0001", "tail": "01290502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035c0001-01290502.png"}, {"name": "Vesta", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04c50001", "tail": "01010502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c50001-01010502.png"}, {"name": "Vic", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02520001", "tail": "00fe0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02520001-00fe0502.png"}, {"name": "Victoria", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a50001", "tail": "015b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a50001-015b0502.png"}, {"name": "Violet", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03700001", "tail": "015d0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03700001-015d0502.png"}, {"name": "Vivian", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "05130001", "tail": "02e70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05130001-02e70502.png"}, {"name": "Vladimir", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02830001", "tail": "00c70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02830001-00c70502.png"}, {"name": "Wade", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04680001", "tail": "02f20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04680001-02f20502.png"}, {"name": "Walker", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02f00001", "tail": "00a70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f00001-00a70502.png"}, {"name": "Walt", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03d90001", "tail": "01a50502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d90001-01a50502.png"}, {"name": "Wardell", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a080001", "tail": "03bd0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a080001-03bd0502.png"}, {"name": "Wart Jr.", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "033d0001", "tail": "013a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033d0001-013a0502.png"}, {"name": "Weber", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03120001", "tail": "03090502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03120001-03090502.png"}, {"name": "Wendell", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01a70001", "tail": "01140502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a70001-01140502.png"}, {"name": "Wendy", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04ce0001", "tail": "00db0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ce0001-00db0502.png"}, {"name": "Whitney", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "050e0001", "tail": "00d70502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050e0001-00d70502.png"}, {"name": "Wilbur", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a010001", "tail": "03ac0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a010001-03ac0502.png"}, {"name": "Willow", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04cc0001", "tail": "00a40502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cc0001-00a40502.png"}, {"name": "Winnie", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03a90001", "tail": "00710502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a90001-00710502.png"}, {"name": "Wisp", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a060001", "tail": "03ba0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a060001-03ba0502.png"}, {"name": "Wolfgang", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "050d0001", "tail": "01420502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050d0001-01420502.png"}, {"name": "Yuka", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "03bc0001", "tail": "008a0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bc0001-008a0502.png"}, {"name": "Zell", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "02d80001", "tail": "00e20502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d80001-00e20502.png"}, {"name": "Zipper", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "01ac0001", "tail": "017f0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ac0001-017f0502.png"}, {"name": "Zoe", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "0a1a0001", "tail": "03d10502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1a0001-03d10502.png"}, {"name": "Zucker", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "042b0001", "tail": "01af0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042b0001-01af0502.png"}, {"name": "Étoile", "game": "Animal Crossing", "series": "Animal Crossing", "cat": "Animal Crossing", "head": "04d30101", "tail": "031b0502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d30101-031b0502.png"}, {"name": "A.K.I", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d30001", "tail": "04be1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04be1d02.png"}, {"name": "A.K.I", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d30001", "tail": "04de1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04de1d02.png"}, {"name": "Akuma", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d50001", "tail": "04c01d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png"}, {"name": "Akuma", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d50001", "tail": "04e01d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04e01d02.png"}, {"name": "Alex", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34db0001", "tail": "04e61d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04e61d02.png"}, {"name": "Alex", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34db0001", "tail": "04ef1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04ef1d02.png"}, {"name": "Asana Mutsuba", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38460001", "tail": "042a1902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38460001-042a1902.png"}, {"name": "Blanka", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c80001", "tail": "04b31d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04b31d02.png"}, {"name": "Blanka", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c80001", "tail": "04d31d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04d31d02.png"}, {"name": "C. Viper", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34da0001", "tail": "04e51d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png"}, {"name": "C. Viper", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34da0001", "tail": "04ee1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04ee1d02.png"}, {"name": "Cammy", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d10001", "tail": "04bc1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png"}, {"name": "Cammy", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d10001", "tail": "04dc1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png"}, {"name": "Chibi Robo", "game": "Chibi Robo", "series": "Chibi-Robo!", "cat": "Other", "head": "22c00000", "tail": "003a0202", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22c00000-003a0202.png"}, {"name": "Chun-Li", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c50001", "tail": "04b01d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04b01d02.png"}, {"name": "Chun-Li", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c50001", "tail": "04d01d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png"}, {"name": "Daijobu", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38050001", "tail": "03981702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38050001-03981702.png"}, {"name": "Dee Jay", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cb0001", "tail": "04b61d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png"}, {"name": "Dee Jay", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cb0001", "tail": "04d61d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png"}, {"name": "Dhalsim", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c90001", "tail": "04b41d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png"}, {"name": "Dhalsim", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c90001", "tail": "04d41d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04d41d02.png"}, {"name": "E. Honda", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34ca0001", "tail": "04b51d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04b51d02.png"}, {"name": "E. Honda", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34ca0001", "tail": "04d51d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04d51d02.png"}, {"name": "Ed", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d40001", "tail": "04bf1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png"}, {"name": "Ed", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d40001", "tail": "04df1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04df1d02.png"}, {"name": "Elena", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d80001", "tail": "04e31d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04e31d02.png"}, {"name": "Elena", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d80001", "tail": "04ec1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png"}, {"name": "Gakuto Sōgetsu", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38420001", "tail": "04261902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38420001-04261902.png"}, {"name": "Ganda", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38040001", "tail": "03971702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38040001-03971702.png"}, {"name": "Guile", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c60001", "tail": "04b11d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04b11d02.png"}, {"name": "Guile", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c60001", "tail": "04d11d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04d11d02.png"}, {"name": "Hayakawa", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38030001", "tail": "03961702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38030001-03961702.png"}, {"name": "Ikari", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38010001", "tail": "03941702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38010001-03941702.png"}, {"name": "Ingrid", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34dc0001", "tail": "04e71d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04e71d02.png"}, {"name": "Ingrid", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34dc0001", "tail": "04f01d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png"}, {"name": "JP", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34ce0001", "tail": "04b91d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04b91d02.png"}, {"name": "JP", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34ce0001", "tail": "04d91d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04d91d02.png"}, {"name": "Jamie", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c30000", "tail": "04ac1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png"}, {"name": "Jamie", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c30001", "tail": "04ad1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ad1d02.png"}, {"name": "Jamie", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c30001", "tail": "04ce1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png"}, {"name": "Juri", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c70001", "tail": "04b21d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04b21d02.png"}, {"name": "Juri", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c70001", "tail": "04d21d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04d21d02.png"}, {"name": "Ken", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c10001", "tail": "04a91d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04a91d02.png"}, {"name": "Ken", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c10001", "tail": "04cc1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04cc1d02.png"}, {"name": "Kimberly", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c40000", "tail": "04ae1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png"}, {"name": "Kimberly", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c40001", "tail": "04af1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04af1d02.png"}, {"name": "Kimberly", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c40001", "tail": "04cf1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png"}, {"name": "King Knight", "game": "Shovel Knight", "series": "Shovel Knight", "cat": "Other", "head": "35c30000", "tail": "036e0a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c30000-036e0a02.png"}, {"name": "Lily", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d00001", "tail": "04bb1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png"}, {"name": "Lily", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d00001", "tail": "04db1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png"}, {"name": "Loot Goblin", "game": "Diablo", "series": "Diablo", "cat": "Other", "head": "38c00000", "tail": "03911602", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38c00000-03911602.png"}, {"name": "Luke", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c20000", "tail": "04aa1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png"}, {"name": "Luke", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c20001", "tail": "04ab1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png"}, {"name": "Luke", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c20001", "tail": "04cd1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png"}, {"name": "M. Bison", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d60001", "tail": "04e11d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04e11d02.png"}, {"name": "M. Bison", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d60001", "tail": "04eb1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png"}, {"name": "Mai", "game": "Fatal Fury", "series": "Street Fighter 6", "cat": "Other", "head": "3c810001", "tail": "04f21d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f21d02.png"}, {"name": "Mai", "game": "Fatal Fury", "series": "Street Fighter 6", "cat": "Other", "head": "3c810001", "tail": "04f31d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f31d02.png"}, {"name": "Manon", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cc0001", "tail": "04b71d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png"}, {"name": "Manon", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cc0001", "tail": "04d71d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04d71d02.png"}, {"name": "Marisa", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cd0001", "tail": "04b81d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04b81d02.png"}, {"name": "Marisa", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cd0001", "tail": "04d81d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04d81d02.png"}, {"name": "Mega Man", "game": "Megaman", "series": "Mega Man", "cat": "Other", "head": "34800000", "tail": "03791502", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-03791502.png"}, {"name": "Mio", "game": "Xenoblade", "series": "Xenoblade Chronicles 3", "cat": "Other", "head": "22440000", "tail": "043e1b02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png"}, {"name": "Nail Saionji", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38450001", "tail": "04291902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38450001-04291902.png"}, {"name": "Noah", "game": "Xenoblade", "series": "Xenoblade Chronicles 3", "cat": "Other", "head": "22430000", "tail": "043d1b02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png"}, {"name": "Pawapuro", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38000001", "tail": "03931702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38000001-03931702.png"}, {"name": "Pikmin", "game": "Pikmin", "series": "Pikmin", "cat": "Other", "head": "06420000", "tail": "035f1102", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06420000-035f1102.png"}, {"name": "Plague Knight", "game": "Shovel Knight", "series": "Shovel Knight", "cat": "Other", "head": "35c10000", "tail": "036c0a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c10000-036c0a02.png"}, {"name": "Poochy", "game": "Yoshi's Woolly World", "series": "Yoshi's Woolly World", "cat": "Other", "head": "00800102", "tail": "035d0302", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png"}, {"name": "Qbby", "game": "BoxBoy!", "series": "BoxBoy!", "cat": "Other", "head": "1f400000", "tail": "035e1002", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f400000-035e1002.png"}, {"name": "Rashid", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d20001", "tail": "04bd1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png"}, {"name": "Rashid", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d20001", "tail": "04dd1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png"}, {"name": "Roa Kirishima", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38440001", "tail": "04281902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38440001-04281902.png"}, {"name": "Romin Kirishima", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38430001", "tail": "04271902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38430001-04271902.png"}, {"name": "Ryu", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c00001", "tail": "04a81d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04a81d02.png"}, {"name": "Ryu", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34c00001", "tail": "04cb1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png"}, {"name": "Sagat", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d90001", "tail": "04e41d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04e41d02.png"}, {"name": "Sagat", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34d90001", "tail": "04ed1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png"}, {"name": "Shovel Knight", "game": "Shovel Knight", "series": "Shovel Knight", "cat": "Other", "head": "35c00000", "tail": "02500a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-02500a02.png"}, {"name": "Shovel Knight - Gold Edition", "game": "Shovel Knight", "series": "Shovel Knight", "cat": "Other", "head": "35c00000", "tail": "03920a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-03920a02.png"}, {"name": "Solaire of Astora", "game": "Dark Souls", "series": "Others", "cat": "Other", "head": "33800000", "tail": "03781402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33800000-03781402.png"}, {"name": "Specter Knight", "game": "Shovel Knight", "series": "Shovel Knight", "cat": "Other", "head": "35c20000", "tail": "036d0a02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c20000-036d0a02.png"}, {"name": "Super Mario Cereal", "game": "Kellogs", "series": "Others", "cat": "Other", "head": "37400001", "tail": "03741402", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png"}, {"name": "Tatsuhisa “Luke” Kamijō", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38410001", "tail": "04251902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38410001-04251902.png"}, {"name": "Terry", "game": "Fatal Fury", "series": "Street Fighter 6", "cat": "Other", "head": "3c800001", "tail": "04e81d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04e81d02.png"}, {"name": "Terry", "game": "Fatal Fury", "series": "Street Fighter 6", "cat": "Other", "head": "3c800001", "tail": "04f11d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png"}, {"name": "Yabe", "game": "Power Pros", "series": "Power Pros", "cat": "Other", "head": "38020001", "tail": "03951702", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38020001-03951702.png"}, {"name": "Yuga Ohdo", "game": "Yu-Gi-Oh!", "series": "Yu-Gi-Oh!", "cat": "Other", "head": "38400001", "tail": "04241902", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38400001-04241902.png"}, {"name": "Zangief", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cf0001", "tail": "04ba1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png"}, {"name": "Zangief", "game": "Street Fighter", "series": "Street Fighter 6", "cat": "Other", "head": "34cf0001", "tail": "04da1d02", "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png"}];
+window.AMIIBO_FULL_DB = [
+  {
+    "name": "Bokoblin - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01410000",
+    "tail": "035c0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01410000-035c0902.png",
+    "rewards": "กระบอง Spiked Boko Bat, ชิ้นส่วนมอนสเตอร์, เนื้อย่าง Meat"
+  },
+  {
+    "name": "Daruk (Champion) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01050000",
+    "tail": "03580902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01050000-03580902.png",
+    "rewards": "หน้ากากเทพ Vah Rudania Divine Helm (กันไฟ), ค้อนหิน Cobble Crusher, กองแร่ทองคำ"
+  },
+  {
+    "name": "Guardian - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01400000",
+    "tail": "03550902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01400000-03550902.png",
+    "rewards": "กล่องสมบัติจักรกลโบราณ, Ancient Core, Ancient Shaft, ลูกธนูโบราณ Ancient Arrow"
+  },
+  {
+    "name": "Link (Archer) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01000000",
+    "tail": "03530902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03530902.png",
+    "rewards": "ธนู Knight's Bow, ธนู Ancient Bow, ลูกธนูไฟ, ปลา Hyrule Bass, เนื้อสัตว์"
+  },
+  {
+    "name": "Link (Rider) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01000000",
+    "tail": "03540902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03540902.png",
+    "rewards": "ดาบ Traveler's Claymore, อานม้า Traveler's Saddle, เห็ดและผลไม้"
+  },
+  {
+    "name": "Mipha (Champion) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01070000",
+    "tail": "035a0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01070000-035a0902.png",
+    "rewards": "หน้ากากเทพ Vah Ruta Divine Helm (ว่ายน้ำเร็ว), หอก Silverscale Spear, ปลาดาวหาง"
+  },
+  {
+    "name": "Revali (Champion) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01080000",
+    "tail": "035b0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01080000-035b0902.png",
+    "rewards": "หน้ากากเทพ Vah Medoh Divine Helm (กันหนาว), ธนู Falcon Bow, ลูกธนูระเบิด"
+  },
+  {
+    "name": "Urbosa (Champion) - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01060000",
+    "tail": "03590902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01060000-03590902.png",
+    "rewards": "หน้ากากเทพ Vah Naboris Divine Helm (กันไฟช็อต), ดาบ Scimitar of the Seven, เนื้อชั้นยอด"
+  },
+  {
+    "name": "Wolf Link & Midna (20 Hearts)",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01030000",
+    "tail": "024f0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01030000-024f0902.png",
+    "rewards": "เสกหมาป่า Wolf Link 20 หัวใจเต็มออกมาช่วยสู้มอนสเตอร์และล่าสัตว์ใน BotW 100%"
+  },
+  {
+    "name": "Zelda - Breath of the Wild",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda BotW",
+    "head": "01010000",
+    "tail": "03560902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03560902.png",
+    "rewards": "โล่ Royal Shield, โล่ Knight's Shield, ดอกไม้ Silent Princess, อัญมณีล้ำค่า"
+  },
+  {
+    "name": "Ganondorf - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "01020100",
+    "tail": "041a0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-041a0902.png",
+    "rewards": "ผ้าคลุมร่มชูชีพ Demon King Fabric, ดาบ Gerudo Scimitar, วัตถุดิบมอนสเตอร์ชั้นสูง"
+  },
+  {
+    "name": "Link - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "01000000",
+    "tail": "04180902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-04180902.png",
+    "rewards": "ผ้าคลุมร่มชูชีพ Champion's Leathers Fabric, ดาบ Knight's Broadsword, เห็ดและวัตถุดิบ"
+  },
+  {
+    "name": "Zelda - Tears of the Kingdom",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda TotK",
+    "head": "01010000",
+    "tail": "04190902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-04190902.png",
+    "rewards": "ผ้าคลุมร่มชูชีพ Princess Zelda Fabric, ธนูหายาก, กองสมุนไพรและอัญมณี"
+  },
+  {
+    "name": "Marth (Emblem of Beginnings)",
+    "game": "Fire Emblem Engage / Shadow Dragon",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21000000",
+    "tail": "000b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png",
+    "rewards": "ชุด Lodestar (Marth Outfit) + เพลง Beneath a New Light + Fashion & Music Ticket ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "Celica (Emblem of Echoes)",
+    "game": "Fire Emblem Engage / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21070000",
+    "tail": "03611202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21070000-03611202.png",
+    "rewards": "ชุด Priestess (Celica Outfit) + เพลง With Mila's Divine Protection + Fashion & Music Ticket"
+  },
+  {
+    "name": "Roy (Emblem of Binding)",
+    "game": "Fire Emblem Engage / Binding Blade",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21040000",
+    "tail": "02520002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png",
+    "rewards": "ชุด Young Lion (Roy Outfit) + เพลง Beneath a New Light + Fashion & Music Ticket"
+  },
+  {
+    "name": "Ike (Emblem of Radiance)",
+    "game": "Fire Emblem Engage / Radiant Dawn",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21010000",
+    "tail": "00180002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21010000-00180002.png",
+    "rewards": "ชุด Radiant Hero (Ike Outfit) + เพลง Eternal Bond + Fashion & Music Ticket"
+  },
+  {
+    "name": "Lucina (Emblem of Awakening)",
+    "game": "Fire Emblem Engage / Awakening",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21020000",
+    "tail": "00290002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21020000-00290002.png",
+    "rewards": "ชุด Noble Rapier (Lucina Outfit) + เพลง Destiny (Ablaze) + Fashion & Music Ticket"
+  },
+  {
+    "name": "Corrin - Male (Emblem of Fates)",
+    "game": "Fire Emblem Engage / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21050000",
+    "tail": "025a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050000-025a0002.png",
+    "rewards": "ชุด Crux of Fate (Corrin Outfit) + เพลง Lost in Thoughts All Alone + Fashion & Music Ticket"
+  },
+  {
+    "name": "Corrin - Player 2 Female (Emblem of Fates)",
+    "game": "Fire Emblem Engage / Fates",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21050100",
+    "tail": "03630002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050100-03630002.png",
+    "rewards": "ชุด Crux of Fate (Corrin Outfit) + เพลง Lost in Thoughts All Alone + Fashion & Music Ticket"
+  },
+  {
+    "name": "Byleth (Emblem of the Academy)",
+    "game": "Fire Emblem Engage / Three Houses",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "210b0000",
+    "tail": "03a50002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_210b0000-03a50002.png",
+    "rewards": "ชุด Academy (Byleth Outfit) + เพลง Fódlan Winds + Fashion & Music Ticket"
+  },
+  {
+    "name": "Chrom - Fire Emblem Series (Emblem of Bonds)",
+    "game": "Fire Emblem Engage / Awakening",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21080000",
+    "tail": "036f1202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-036f1202.png",
+    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "Chrom - Smash Bros. (Emblem of Bonds)",
+    "game": "Fire Emblem Engage / Awakening",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21080000",
+    "tail": "03880002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png",
+    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "Robin (Emblem of Bonds)",
+    "game": "Fire Emblem Engage / Awakening",
+    "series": "Super Smash Bros.",
+    "cat": "Fire Emblem",
+    "head": "21030000",
+    "tail": "002a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png",
+    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "Tiki (Emblem of the Divine Dragon)",
+    "game": "Fire Emblem Engage / Mystery of the Emblem",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21090000",
+    "tail": "03701202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png",
+    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "Alm (Fire Emblem Echoes)",
+    "game": "Fire Emblem Engage / Echoes",
+    "series": "Fire Emblem",
+    "cat": "Fire Emblem",
+    "head": "21060000",
+    "tail": "03601202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png",
+    "rewards": "ตั๋วแลกชุดตัวละคร Emblem (Fashion Ticket) + ตั๋วเพลงประจำภาค (Music Ticket) ที่ Amiibo Gazebo"
+  },
+  {
+    "name": "8-Bit Link",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034f0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034f0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Ganondorf",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01020100",
+    "tail": "001b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "00040002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Link's Awakening",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "03990902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03990902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Majora's Mask",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034c0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Ocarina of Time",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034b0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Skyward Sword",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034e0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Link - Twilight Princess",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "034d0902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034d0902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Riju",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01090000",
+    "tail": "04a30902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01090000-04a30902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Sheik",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01010100",
+    "tail": "00170002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010100-00170002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Sidon",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "010a0000",
+    "tail": "04a40902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000100",
+    "tail": "00160002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-00160002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Link - The Wind Waker",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01000100",
+    "tail": "03500902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-03500902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Toon Zelda - The Wind Waker",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01010000",
+    "tail": "03520902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03520902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Tulin",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "010b0000",
+    "tail": "04a50902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010b0000-04a50902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Young Link",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01000000",
+    "tail": "037c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-037c0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Yunobo",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "010c0000",
+    "tail": "04a60902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Zelda",
+    "game": "The Legend of Zelda",
+    "series": "Super Smash Bros.",
+    "cat": "Zelda",
+    "head": "01010000",
+    "tail": "000e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-000e0002.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "Zelda & Loftwing",
+    "game": "The Legend of Zelda",
+    "series": "Legend Of Zelda",
+    "cat": "Zelda",
+    "head": "01010300",
+    "tail": "04140902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png",
+    "rewards": "อาวุธและชุดเกราะพิเศษสำหรับเกม Zelda บน Switch 1 & 2"
+  },
+  {
+    "name": "8-Bit Mario Classic Color",
+    "game": "Super Mario",
+    "series": "8-bit Mario",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "02380602",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png"
+  },
+  {
+    "name": "8-Bit Mario Modern Color",
+    "game": "Super Mario",
+    "series": "8-bit Mario",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "02390602",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png"
+  },
+  {
+    "name": "Baby Luigi - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0201",
+    "tail": "02ab0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0201-02ab0e02.png"
+  },
+  {
+    "name": "Baby Luigi - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0401",
+    "tail": "02ad0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0401-02ad0e02.png"
+  },
+  {
+    "name": "Baby Luigi - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0501",
+    "tail": "02ae0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0501-02ae0e02.png"
+  },
+  {
+    "name": "Baby Luigi - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0101",
+    "tail": "02aa0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0101-02aa0e02.png"
+  },
+  {
+    "name": "Baby Luigi - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cd0301",
+    "tail": "02ac0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0301-02ac0e02.png"
+  },
+  {
+    "name": "Baby Mario - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0201",
+    "tail": "02a60e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png"
+  },
+  {
+    "name": "Baby Mario - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0401",
+    "tail": "02a80e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png"
+  },
+  {
+    "name": "Baby Mario - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0501",
+    "tail": "02a90e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png"
+  },
+  {
+    "name": "Baby Mario - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0101",
+    "tail": "02a50e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0101-02a50e02.png"
+  },
+  {
+    "name": "Baby Mario - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cc0301",
+    "tail": "02a70e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0301-02a70e02.png"
+  },
+  {
+    "name": "Birdo - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0201",
+    "tail": "02b00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png"
+  },
+  {
+    "name": "Birdo - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0401",
+    "tail": "02b20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png"
+  },
+  {
+    "name": "Birdo - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0501",
+    "tail": "02b30e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0501-02b30e02.png"
+  },
+  {
+    "name": "Birdo - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0101",
+    "tail": "02af0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0101-02af0e02.png"
+  },
+  {
+    "name": "Birdo - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ce0301",
+    "tail": "02b10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png"
+  },
+  {
+    "name": "Boo",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00170000",
+    "tail": "02680102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00170000-02680102.png"
+  },
+  {
+    "name": "Boo - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0201",
+    "tail": "02a10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0201-02a10e02.png"
+  },
+  {
+    "name": "Boo - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0401",
+    "tail": "02a30e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png"
+  },
+  {
+    "name": "Boo - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0501",
+    "tail": "02a40e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png"
+  },
+  {
+    "name": "Boo - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0101",
+    "tail": "02a00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png"
+  },
+  {
+    "name": "Boo - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cb0301",
+    "tail": "02a20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png"
+  },
+  {
+    "name": "Bowser",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "00140002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00140002.png"
+  },
+  {
+    "name": "Bowser",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "00390102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00390102.png"
+  },
+  {
+    "name": "Bowser - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90201",
+    "tail": "02970e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png"
+  },
+  {
+    "name": "Bowser - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90401",
+    "tail": "02990e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png"
+  },
+  {
+    "name": "Bowser - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90501",
+    "tail": "029a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90501-029a0e02.png"
+  },
+  {
+    "name": "Bowser - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90101",
+    "tail": "02960e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90101-02960e02.png"
+  },
+  {
+    "name": "Bowser - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c90301",
+    "tail": "02980e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90301-02980e02.png"
+  },
+  {
+    "name": "Bowser - Wedding",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00050000",
+    "tail": "03730102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-03730102.png"
+  },
+  {
+    "name": "Bowser Jr.",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00060000",
+    "tail": "00150002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00060000-00150002.png"
+  },
+  {
+    "name": "Bowser Jr. - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0201",
+    "tail": "029c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png"
+  },
+  {
+    "name": "Bowser Jr. - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0401",
+    "tail": "029e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png"
+  },
+  {
+    "name": "Bowser Jr. - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0501",
+    "tail": "029f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png"
+  },
+  {
+    "name": "Bowser Jr. - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0101",
+    "tail": "029b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png"
+  },
+  {
+    "name": "Bowser Jr. - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09ca0301",
+    "tail": "029d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png"
+  },
+  {
+    "name": "Daisy",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00130000",
+    "tail": "037a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png"
+  },
+  {
+    "name": "Daisy",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00130000",
+    "tail": "02660102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-02660102.png"
+  },
+  {
+    "name": "Daisy - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30201",
+    "tail": "02790e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30201-02790e02.png"
+  },
+  {
+    "name": "Daisy - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30401",
+    "tail": "027b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png"
+  },
+  {
+    "name": "Daisy - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30501",
+    "tail": "027c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png"
+  },
+  {
+    "name": "Daisy - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00130003",
+    "tail": "039eff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130003-039eff02.png"
+  },
+  {
+    "name": "Daisy - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30101",
+    "tail": "02780e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30101-02780e02.png"
+  },
+  {
+    "name": "Daisy - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c30301",
+    "tail": "027a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30301-027a0e02.png"
+  },
+  {
+    "name": "Diddy Kong",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00090000",
+    "tail": "000d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-000d0002.png"
+  },
+  {
+    "name": "Diddy Kong",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00090000",
+    "tail": "02650102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-02650102.png"
+  },
+  {
+    "name": "Diddy Kong - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80201",
+    "tail": "02920e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png"
+  },
+  {
+    "name": "Diddy Kong - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80401",
+    "tail": "02940e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80401-02940e02.png"
+  },
+  {
+    "name": "Diddy Kong - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80501",
+    "tail": "02950e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80501-02950e02.png"
+  },
+  {
+    "name": "Diddy Kong - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00090003",
+    "tail": "0432ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090003-0432ff02.png"
+  },
+  {
+    "name": "Diddy Kong - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80101",
+    "tail": "02910e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80101-02910e02.png"
+  },
+  {
+    "name": "Diddy Kong - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c80301",
+    "tail": "02930e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80301-02930e02.png"
+  },
+  {
+    "name": "Donkey Kong",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00080000",
+    "tail": "00030002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png"
+  },
+  {
+    "name": "Donkey Kong",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00080000",
+    "tail": "02640102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png"
+  },
+  {
+    "name": "Donkey Kong & Pauline",
+    "game": "Super Mario",
+    "series": "Donkey Kong",
+    "cat": "Mario",
+    "head": "00080100",
+    "tail": "042f1a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080100-042f1a02.png"
+  },
+  {
+    "name": "Donkey Kong - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70201",
+    "tail": "028d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70201-028d0e02.png"
+  },
+  {
+    "name": "Donkey Kong - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70401",
+    "tail": "028f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70401-028f0e02.png"
+  },
+  {
+    "name": "Donkey Kong - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70501",
+    "tail": "02900e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png"
+  },
+  {
+    "name": "Donkey Kong - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00080003",
+    "tail": "0431ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png"
+  },
+  {
+    "name": "Donkey Kong - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70101",
+    "tail": "028c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70101-028c0e02.png"
+  },
+  {
+    "name": "Donkey Kong - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c70301",
+    "tail": "028e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70301-028e0e02.png"
+  },
+  {
+    "name": "Dr. Mario",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00000100",
+    "tail": "00190002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000100-00190002.png"
+  },
+  {
+    "name": "Golden - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00000003",
+    "tail": "0430ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-0430ff02.png"
+  },
+  {
+    "name": "Goomba",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00150000",
+    "tail": "03670102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png"
+  },
+  {
+    "name": "Green Yarn Yoshi",
+    "game": "Super Mario",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00410302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png"
+  },
+  {
+    "name": "Hammer Slam Bowser",
+    "game": "Super Mario",
+    "series": "Skylanders",
+    "cat": "Mario",
+    "head": "0005ff00",
+    "tail": "023a0702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png"
+  },
+  {
+    "name": "King K. Rool",
+    "game": "Donkey Kong",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00c00000",
+    "tail": "037b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png"
+  },
+  {
+    "name": "Koopa Troopa",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00230000",
+    "tail": "03680102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png"
+  },
+  {
+    "name": "Light Blue Yarn Yoshi",
+    "game": "Super Mario",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00430302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00430302.png"
+  },
+  {
+    "name": "Luigi",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00010000",
+    "tail": "00350102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png"
+  },
+  {
+    "name": "Luigi",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00010000",
+    "tail": "000c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-000c0002.png"
+  },
+  {
+    "name": "Luigi - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10201",
+    "tail": "026f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png"
+  },
+  {
+    "name": "Luigi - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10401",
+    "tail": "02710e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10401-02710e02.png"
+  },
+  {
+    "name": "Luigi - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10501",
+    "tail": "02720e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10501-02720e02.png"
+  },
+  {
+    "name": "Luigi - My Mario Wooden Blocks",
+    "game": "Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00010004",
+    "tail": "04401c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png"
+  },
+  {
+    "name": "Luigi - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00010003",
+    "tail": "039cff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png"
+  },
+  {
+    "name": "Luigi - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10101",
+    "tail": "026e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10101-026e0e02.png"
+  },
+  {
+    "name": "Luigi - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c10301",
+    "tail": "02700e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10301-02700e02.png"
+  },
+  {
+    "name": "Mario",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "00340102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png"
+  },
+  {
+    "name": "Mario",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "00000002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png"
+  },
+  {
+    "name": "Mario - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00201",
+    "tail": "026a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png"
+  },
+  {
+    "name": "Mario - Cat",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000300",
+    "tail": "03a60102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png"
+  },
+  {
+    "name": "Mario - Gold Edition",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "003c0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png"
+  },
+  {
+    "name": "Mario - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00401",
+    "tail": "026c0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00401-026c0e02.png"
+  },
+  {
+    "name": "Mario - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00501",
+    "tail": "026d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00501-026d0e02.png"
+  },
+  {
+    "name": "Mario - My Mario Wooden Blocks",
+    "game": "Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00000004",
+    "tail": "043f1c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000004-043f1c02.png"
+  },
+  {
+    "name": "Mario - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00000003",
+    "tail": "039bff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-039bff02.png"
+  },
+  {
+    "name": "Mario - Silver Edition",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "003d0102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png"
+  },
+  {
+    "name": "Mario - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00101",
+    "tail": "02690e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png"
+  },
+  {
+    "name": "Mario - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c00301",
+    "tail": "026b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00301-026b0e02.png"
+  },
+  {
+    "name": "Mario - Wedding",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00000000",
+    "tail": "03710102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png"
+  },
+  {
+    "name": "Mega Yarn Yoshi",
+    "game": "Super Mario",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "023e0302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-023e0302.png"
+  },
+  {
+    "name": "Metal Mario - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00201",
+    "tail": "02ba0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png"
+  },
+  {
+    "name": "Metal Mario - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00401",
+    "tail": "02bc0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png"
+  },
+  {
+    "name": "Metal Mario - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00501",
+    "tail": "02bd0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png"
+  },
+  {
+    "name": "Metal Mario - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00101",
+    "tail": "02b90e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png"
+  },
+  {
+    "name": "Metal Mario - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d00301",
+    "tail": "02bb0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png"
+  },
+  {
+    "name": "Peach",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "00360102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png"
+  },
+  {
+    "name": "Peach",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "00010002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00010002.png"
+  },
+  {
+    "name": "Peach - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20201",
+    "tail": "02740e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png"
+  },
+  {
+    "name": "Peach - Cat",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020100",
+    "tail": "03a70102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020100-03a70102.png"
+  },
+  {
+    "name": "Peach - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20401",
+    "tail": "02760e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png"
+  },
+  {
+    "name": "Peach - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20501",
+    "tail": "02770e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png"
+  },
+  {
+    "name": "Peach - My Mario Wooden Blocks",
+    "game": "Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00020004",
+    "tail": "04411c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020004-04411c02.png"
+  },
+  {
+    "name": "Peach - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00020003",
+    "tail": "039dff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png"
+  },
+  {
+    "name": "Peach - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20101",
+    "tail": "02730e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png"
+  },
+  {
+    "name": "Peach - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c20301",
+    "tail": "02750e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png"
+  },
+  {
+    "name": "Peach - Wedding",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00020000",
+    "tail": "03720102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png"
+  },
+  {
+    "name": "Peaches",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Mario",
+    "head": "03ac0001",
+    "tail": "01880502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png"
+  },
+  {
+    "name": "Pink Gold Peach - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10201",
+    "tail": "02bf0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png"
+  },
+  {
+    "name": "Pink Gold Peach - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10401",
+    "tail": "02c10e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10401-02c10e02.png"
+  },
+  {
+    "name": "Pink Gold Peach - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10501",
+    "tail": "02c20e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10501-02c20e02.png"
+  },
+  {
+    "name": "Pink Gold Peach - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10101",
+    "tail": "02be0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10101-02be0e02.png"
+  },
+  {
+    "name": "Pink Gold Peach - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09d10301",
+    "tail": "02c00e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png"
+  },
+  {
+    "name": "Pink Yarn Yoshi",
+    "game": "Super Mario",
+    "series": "Yoshi's Woolly World",
+    "cat": "Mario",
+    "head": "00030102",
+    "tail": "00420302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00420302.png"
+  },
+  {
+    "name": "Piranha Plant",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00240000",
+    "tail": "038d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png"
+  },
+  {
+    "name": "Rosalina",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00040000",
+    "tail": "02620102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040000-02620102.png"
+  },
+  {
+    "name": "Rosalina & Luma",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00040100",
+    "tail": "00130002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png"
+  },
+  {
+    "name": "Rosalina - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0201",
+    "tail": "02b50e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png"
+  },
+  {
+    "name": "Rosalina - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0401",
+    "tail": "02b70e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0401-02b70e02.png"
+  },
+  {
+    "name": "Rosalina - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0501",
+    "tail": "02b80e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0501-02b80e02.png"
+  },
+  {
+    "name": "Rosalina - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0101",
+    "tail": "02b40e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png"
+  },
+  {
+    "name": "Rosalina - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09cf0301",
+    "tail": "02b60e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0301-02b60e02.png"
+  },
+  {
+    "name": "Toad",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "000a0000",
+    "tail": "00380102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png"
+  },
+  {
+    "name": "Toad - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "000a0003",
+    "tail": "03a0ff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png"
+  },
+  {
+    "name": "Turbo Charge Donkey Kong",
+    "game": "Super Mario",
+    "series": "Skylanders",
+    "cat": "Mario",
+    "head": "0008ff00",
+    "tail": "023b0702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0008ff00-023b0702.png"
+  },
+  {
+    "name": "Waluigi",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00140000",
+    "tail": "02670102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00140000-02670102.png"
+  },
+  {
+    "name": "Waluigi - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60201",
+    "tail": "02880e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60201-02880e02.png"
+  },
+  {
+    "name": "Waluigi - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60401",
+    "tail": "028a0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png"
+  },
+  {
+    "name": "Waluigi - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60501",
+    "tail": "028b0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60501-028b0e02.png"
+  },
+  {
+    "name": "Waluigi - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60101",
+    "tail": "02870e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60101-02870e02.png"
+  },
+  {
+    "name": "Waluigi - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c60301",
+    "tail": "02890e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png"
+  },
+  {
+    "name": "Wario",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00070000",
+    "tail": "001a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-001a0002.png"
+  },
+  {
+    "name": "Wario",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00070000",
+    "tail": "02630102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-02630102.png"
+  },
+  {
+    "name": "Wario - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50201",
+    "tail": "02830e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50201-02830e02.png"
+  },
+  {
+    "name": "Wario - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50401",
+    "tail": "02850e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50401-02850e02.png"
+  },
+  {
+    "name": "Wario - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50501",
+    "tail": "02860e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png"
+  },
+  {
+    "name": "Wario - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50101",
+    "tail": "02820e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50101-02820e02.png"
+  },
+  {
+    "name": "Wario - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c50301",
+    "tail": "02840e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50301-02840e02.png"
+  },
+  {
+    "name": "Yoshi",
+    "game": "Super Mario",
+    "series": "Super Smash Bros.",
+    "cat": "Mario",
+    "head": "00030000",
+    "tail": "00020002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png"
+  },
+  {
+    "name": "Yoshi",
+    "game": "Super Mario",
+    "series": "Super Mario Bros.",
+    "cat": "Mario",
+    "head": "00030000",
+    "tail": "00370102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00370102.png"
+  },
+  {
+    "name": "Yoshi - Baseball",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40201",
+    "tail": "027e0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40201-027e0e02.png"
+  },
+  {
+    "name": "Yoshi - Golf",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40401",
+    "tail": "02800e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png"
+  },
+  {
+    "name": "Yoshi - Horse Racing",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40501",
+    "tail": "02810e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png"
+  },
+  {
+    "name": "Yoshi - My Mario Wooden Blocks",
+    "game": "Super Mario",
+    "series": "My Mario Wooden Blocks",
+    "cat": "Mario",
+    "head": "00030004",
+    "tail": "04421c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png"
+  },
+  {
+    "name": "Yoshi - Power Up Band",
+    "game": "Super Mario",
+    "series": "Super Nintendo World",
+    "cat": "Mario",
+    "head": "00030003",
+    "tail": "039fff02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png"
+  },
+  {
+    "name": "Yoshi - Soccer",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40101",
+    "tail": "027d0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png"
+  },
+  {
+    "name": "Yoshi - Tennis",
+    "game": "Mario Sports Superstars",
+    "series": "Mario Sports Superstars",
+    "cat": "Mario",
+    "head": "09c40301",
+    "tail": "027f0e02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40301-027f0e02.png"
+  },
+  {
+    "name": "Alex",
+    "game": "Minecraft",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3dc10000",
+    "tail": "04230002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png"
+  },
+  {
+    "name": "Banjo & Kazooie",
+    "game": "Banjo Kazooie",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3b400000",
+    "tail": "03a30002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3b400000-03a30002.png"
+  },
+  {
+    "name": "Bayonetta",
+    "game": "Bayonetta",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32400000",
+    "tail": "025b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400000-025b0002.png"
+  },
+  {
+    "name": "Bayonetta - Player 2",
+    "game": "Bayonetta",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32400100",
+    "tail": "03640002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png"
+  },
+  {
+    "name": "Captain Falcon",
+    "game": "F-Zero",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06000000",
+    "tail": "00120002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png"
+  },
+  {
+    "name": "Charizard",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19060000",
+    "tail": "00240002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png"
+  },
+  {
+    "name": "Cloud",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36000000",
+    "tail": "02590002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png"
+  },
+  {
+    "name": "Cloud - Player 2",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36000100",
+    "tail": "03620002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png"
+  },
+  {
+    "name": "Dark Pit",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07410000",
+    "tail": "00200002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png"
+  },
+  {
+    "name": "Dark Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c30000",
+    "tail": "03800002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c30000-03800002.png"
+  },
+  {
+    "name": "Duck Hunt",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07820000",
+    "tail": "002f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png"
+  },
+  {
+    "name": "Falco",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05810000",
+    "tail": "001c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png"
+  },
+  {
+    "name": "Fox",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05800000",
+    "tail": "00050002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png"
+  },
+  {
+    "name": "Greninja",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1b920000",
+    "tail": "00250002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png"
+  },
+  {
+    "name": "Hero",
+    "game": "Dragon Quest",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36400000",
+    "tail": "03a20002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png"
+  },
+  {
+    "name": "Ice Climbers",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "078f0000",
+    "tail": "03810002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png"
+  },
+  {
+    "name": "Incineroar",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1bd70000",
+    "tail": "03860002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1bd70000-03860002.png"
+  },
+  {
+    "name": "Inkling",
+    "game": "Splatoon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "08000100",
+    "tail": "03820002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03820002.png"
+  },
+  {
+    "name": "Isabelle",
+    "game": "Animal Crossing",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "01810000",
+    "tail": "037d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-037d0002.png"
+  },
+  {
+    "name": "Ivysaur",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19020000",
+    "tail": "03830002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19020000-03830002.png"
+  },
+  {
+    "name": "Jigglypuff",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19270000",
+    "tail": "00260002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19270000-00260002.png"
+  },
+  {
+    "name": "Joker",
+    "game": "Persona",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3a000000",
+    "tail": "03a10002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3a000000-03a10002.png"
+  },
+  {
+    "name": "Kazuya",
+    "game": "Tekken",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "33c00000",
+    "tail": "04200002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33c00000-04200002.png"
+  },
+  {
+    "name": "Ken",
+    "game": "Street Fighter",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34c10000",
+    "tail": "03890002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10000-03890002.png"
+  },
+  {
+    "name": "King Dedede",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f020000",
+    "tail": "00280002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png"
+  },
+  {
+    "name": "Kirby",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f000000",
+    "tail": "000a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png"
+  },
+  {
+    "name": "Little Mac",
+    "game": "Punch Out",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06c00000",
+    "tail": "000f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png"
+  },
+  {
+    "name": "Lucario",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1ac00000",
+    "tail": "00110002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1ac00000-00110002.png"
+  },
+  {
+    "name": "Lucas",
+    "game": "Earthbound",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22810000",
+    "tail": "02510002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png"
+  },
+  {
+    "name": "Mega Man",
+    "game": "Megaman",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34800000",
+    "tail": "00310002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-00310002.png"
+  },
+  {
+    "name": "Mega Man - Gold Edition",
+    "game": "Megaman",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34800000",
+    "tail": "02580002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-02580002.png"
+  },
+  {
+    "name": "Meta Knight",
+    "game": "Kirby",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1f010000",
+    "tail": "00270002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png"
+  },
+  {
+    "name": "Mewtwo",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19960000",
+    "tail": "023d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png"
+  },
+  {
+    "name": "Mii Brawler",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00000",
+    "tail": "00210002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png"
+  },
+  {
+    "name": "Mii Gunner",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00200",
+    "tail": "00230002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png"
+  },
+  {
+    "name": "Mii Swordfighter",
+    "game": "Mii",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07c00100",
+    "tail": "00220002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00100-00220002.png"
+  },
+  {
+    "name": "Min Min",
+    "game": "ARMS",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "0a400000",
+    "tail": "041d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png"
+  },
+  {
+    "name": "Mr. Game & Watch",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07800000",
+    "tail": "002d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07800000-002d0002.png"
+  },
+  {
+    "name": "Mythra",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22420000",
+    "tail": "041f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png"
+  },
+  {
+    "name": "Ness",
+    "game": "Earthbound",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22800000",
+    "tail": "002c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22800000-002c0002.png"
+  },
+  {
+    "name": "Olimar",
+    "game": "Pikmin",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "06400100",
+    "tail": "001e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png"
+  },
+  {
+    "name": "Pac-Man",
+    "game": "Pac-man",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "33400000",
+    "tail": "00320002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33400000-00320002.png"
+  },
+  {
+    "name": "Palutena",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07420000",
+    "tail": "001f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07420000-001f0002.png"
+  },
+  {
+    "name": "Pichu",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19ac0000",
+    "tail": "03850002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19ac0000-03850002.png"
+  },
+  {
+    "name": "Pikachu",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19190000",
+    "tail": "00090002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19190000-00090002.png"
+  },
+  {
+    "name": "Pit",
+    "game": "Kid Icarus",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07400000",
+    "tail": "00100002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07400000-00100002.png"
+  },
+  {
+    "name": "Pokemon Trainer",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "1d400000",
+    "tail": "03870002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png"
+  },
+  {
+    "name": "Pyra",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22410000",
+    "tail": "041e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png"
+  },
+  {
+    "name": "R.O.B. - Famicom",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07810000",
+    "tail": "002e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-002e0002.png"
+  },
+  {
+    "name": "R.O.B. - NES",
+    "game": "Classic Nintendo",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07810000",
+    "tail": "00330002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png"
+  },
+  {
+    "name": "Richter",
+    "game": "Castlevania",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37c10000",
+    "tail": "038c0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png"
+  },
+  {
+    "name": "Ridley",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c20000",
+    "tail": "037f0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "34c00000",
+    "tail": "02530002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png"
+  },
+  {
+    "name": "Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c00000",
+    "tail": "00060002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-00060002.png"
+  },
+  {
+    "name": "Sephiroth",
+    "game": "Final Fantasy",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "36010000",
+    "tail": "04210002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png"
+  },
+  {
+    "name": "Shulk",
+    "game": "Xenoblade",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "22400000",
+    "tail": "002b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png"
+  },
+  {
+    "name": "Simon",
+    "game": "Castlevania",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37c00000",
+    "tail": "038b0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png"
+  },
+  {
+    "name": "Snake",
+    "game": "Metal Gear Solid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "37800000",
+    "tail": "038a0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png"
+  },
+  {
+    "name": "Sonic",
+    "game": "Sonic",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "32000000",
+    "tail": "00300002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png"
+  },
+  {
+    "name": "Sora",
+    "game": "Kingdom Hearts",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3f000000",
+    "tail": "042e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png"
+  },
+  {
+    "name": "Squirtle",
+    "game": "Pokemon",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "19070000",
+    "tail": "03840002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png"
+  },
+  {
+    "name": "Steve",
+    "game": "Minecraft",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3dc00000",
+    "tail": "04220002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc00000-04220002.png"
+  },
+  {
+    "name": "Terry",
+    "game": "Fatal Fury",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "3c800000",
+    "tail": "03a40002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800000-03a40002.png"
+  },
+  {
+    "name": "Villager",
+    "game": "Animal Crossing",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "01800000",
+    "tail": "00080002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01800000-00080002.png"
+  },
+  {
+    "name": "Wii Fit Trainer",
+    "game": "Wii Fit",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "07000000",
+    "tail": "00070002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png"
+  },
+  {
+    "name": "Wolf",
+    "game": "Star Fox",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05840000",
+    "tail": "037e0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png"
+  },
+  {
+    "name": "Zero Suit Samus",
+    "game": "Metroid",
+    "series": "Super Smash Bros.",
+    "cat": "Smash",
+    "head": "05c00100",
+    "tail": "001d0002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png"
+  },
+  {
+    "name": "Big Man",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08090000",
+    "tail": "04350402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png"
+  },
+  {
+    "name": "Callie",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08010000",
+    "tail": "025d0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png"
+  },
+  {
+    "name": "Callie - Alterna",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08010000",
+    "tail": "04360402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-04360402.png"
+  },
+  {
+    "name": "Frye",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08080000",
+    "tail": "04340402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png"
+  },
+  {
+    "name": "Inkling - Yellow",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "04150402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png"
+  },
+  {
+    "name": "Inkling Boy",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "003f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-003f0402.png"
+  },
+  {
+    "name": "Inkling Boy - Neon Green",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "036a0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-036a0402.png"
+  },
+  {
+    "name": "Inkling Boy - Purple",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000200",
+    "tail": "02600402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-02600402.png"
+  },
+  {
+    "name": "Inkling Girl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "003e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-003e0402.png"
+  },
+  {
+    "name": "Inkling Girl - Lime Green",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "025f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png"
+  },
+  {
+    "name": "Inkling Girl - Neon Pink",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000100",
+    "tail": "03690402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png"
+  },
+  {
+    "name": "Inkling Squid",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "00400402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-00400402.png"
+  },
+  {
+    "name": "Inkling Squid - Neon Purple",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "036b0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-036b0402.png"
+  },
+  {
+    "name": "Inkling Squid - Orange",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08000300",
+    "tail": "02610402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png"
+  },
+  {
+    "name": "Marie",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08020000",
+    "tail": "025e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-025e0402.png"
+  },
+  {
+    "name": "Marie - Alterna",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08020000",
+    "tail": "04370402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-04370402.png"
+  },
+  {
+    "name": "Marina",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08040000",
+    "tail": "03770402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-03770402.png"
+  },
+  {
+    "name": "Marina - Side Order",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08040000",
+    "tail": "04390402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-04390402.png"
+  },
+  {
+    "name": "Octoling - Blue",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050200",
+    "tail": "041b0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-041b0402.png"
+  },
+  {
+    "name": "Octoling Boy",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050200",
+    "tail": "038f0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png"
+  },
+  {
+    "name": "Octoling Girl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050100",
+    "tail": "038e0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050100-038e0402.png"
+  },
+  {
+    "name": "Octoling Octopus",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08050300",
+    "tail": "03900402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050300-03900402.png"
+  },
+  {
+    "name": "Pearl",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08030000",
+    "tail": "03760402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-03760402.png"
+  },
+  {
+    "name": "Pearl - Side Order",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08030000",
+    "tail": "04380402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-04380402.png"
+  },
+  {
+    "name": "Shiver",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08070000",
+    "tail": "04330402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png"
+  },
+  {
+    "name": "Smallfry",
+    "game": "Splatoon",
+    "series": "Splatoon",
+    "cat": "Splatoon",
+    "head": "08060100",
+    "tail": "041c0402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png"
+  },
+  {
+    "name": "Detective Pikachu",
+    "game": "Pokemon",
+    "series": "Pokemon",
+    "cat": "Pokemon",
+    "head": "1d010000",
+    "tail": "03750d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png"
+  },
+  {
+    "name": "Shadow Mewtwo",
+    "game": "Pokemon",
+    "series": "Pokemon",
+    "cat": "Pokemon",
+    "head": "1d000001",
+    "tail": "025c0d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d000001-025c0d02.png"
+  },
+  {
+    "name": "E.M.M.I.",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c40000",
+    "tail": "04131302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png"
+  },
+  {
+    "name": "Metroid",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c10000",
+    "tail": "03661302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png"
+  },
+  {
+    "name": "Samus",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "043b1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png"
+  },
+  {
+    "name": "Samus & Vi-O-La",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "043a1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png"
+  },
+  {
+    "name": "Samus - Metroid Dread",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "04121302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png"
+  },
+  {
+    "name": "Samus Aran",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c00000",
+    "tail": "03651302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-03651302.png"
+  },
+  {
+    "name": "Sylux",
+    "game": "Metroid",
+    "series": "Metroid",
+    "cat": "Metroid",
+    "head": "05c50000",
+    "tail": "043c1302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png"
+  },
+  {
+    "name": "Barioth and Ayuria",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35030100",
+    "tail": "02e50f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png"
+  },
+  {
+    "name": "Ena",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35060000",
+    "tail": "040d0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png"
+  },
+  {
+    "name": "Magnamalo",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35080000",
+    "tail": "040f1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png"
+  },
+  {
+    "name": "Malzeno",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "350b0000",
+    "tail": "042d1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png"
+  },
+  {
+    "name": "Nabiru",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35010000",
+    "tail": "02e30f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png"
+  },
+  {
+    "name": "One-Eyed Rathalos and Rider - Female",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35000200",
+    "tail": "02e20f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png"
+  },
+  {
+    "name": "One-Eyed Rathalos and Rider - Male",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35000100",
+    "tail": "02e10f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000100-02e10f02.png"
+  },
+  {
+    "name": "Palamute",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "350a0100",
+    "tail": "042c1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png"
+  },
+  {
+    "name": "Palamute",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "350a0000",
+    "tail": "04111802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0000-04111802.png"
+  },
+  {
+    "name": "Palico",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35090100",
+    "tail": "042b1802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090100-042b1802.png"
+  },
+  {
+    "name": "Palico",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter Rise",
+    "cat": "Monster Hunter",
+    "head": "35090000",
+    "tail": "04101802",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090000-04101802.png"
+  },
+  {
+    "name": "Qurupeco and Dan",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35040100",
+    "tail": "02e60f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png"
+  },
+  {
+    "name": "Rathian and Cheval",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35020100",
+    "tail": "02e40f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png"
+  },
+  {
+    "name": "Razewing Ratha",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35050000",
+    "tail": "040c0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png"
+  },
+  {
+    "name": "Tsukino",
+    "game": "Monster Hunter",
+    "series": "Monster Hunter",
+    "cat": "Monster Hunter",
+    "head": "35070000",
+    "tail": "040e0f02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png"
+  },
+  {
+    "name": "Bandana Waddle Dee",
+    "game": "Kirby",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f030100",
+    "tail": "04c91e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png"
+  },
+  {
+    "name": "King Dedede",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f020000",
+    "tail": "02560c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png"
+  },
+  {
+    "name": "Kirby",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f000000",
+    "tail": "02540c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-02540c02.png"
+  },
+  {
+    "name": "Kirby",
+    "game": "Kirby",
+    "series": "Kirby Air Riders",
+    "cat": "Kirby",
+    "head": "1f000000",
+    "tail": "04c41e03",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png"
+  },
+  {
+    "name": "Meta Knight",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f010000",
+    "tail": "02550c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-02550c02.png"
+  },
+  {
+    "name": "Waddle Dee",
+    "game": "Kirby",
+    "series": "Kirby",
+    "cat": "Kirby",
+    "head": "1f030000",
+    "tail": "02570c02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png"
+  },
+  {
+    "name": "Ace",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1b0001",
+    "tail": "03d20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1b0001-03d20502.png"
+  },
+  {
+    "name": "Admiral",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02330001",
+    "tail": "03060502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02330001-03060502.png"
+  },
+  {
+    "name": "Agent S",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e20001",
+    "tail": "01090502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e20001-01090502.png"
+  },
+  {
+    "name": "Agnes",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04890001",
+    "tail": "00ef0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04890001-00ef0502.png"
+  },
+  {
+    "name": "Al",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03710001",
+    "tail": "005c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03710001-005c0502.png"
+  },
+  {
+    "name": "Alfonso",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02c30001",
+    "tail": "00dc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c30001-00dc0502.png"
+  },
+  {
+    "name": "Alice",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03bd0001",
+    "tail": "00f90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bd0001-00f90502.png"
+  },
+  {
+    "name": "Alli",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02c40001",
+    "tail": "00670502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c40001-00670502.png"
+  },
+  {
+    "name": "Amelia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "044c0001",
+    "tail": "008e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044c0001-008e0502.png"
+  },
+  {
+    "name": "Anabelle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02030001",
+    "tail": "019a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02030001-019a0502.png"
+  },
+  {
+    "name": "Anchovy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "022f0001",
+    "tail": "011e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022f0001-011e0502.png"
+  },
+  {
+    "name": "Angus",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "024a0001",
+    "tail": "01d10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024a0001-01d10502.png"
+  },
+  {
+    "name": "Anicotti",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04160001",
+    "tail": "00fb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04160001-00fb0502.png"
+  },
+  {
+    "name": "Ankha",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02700001",
+    "tail": "00ff0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02700001-00ff0502.png"
+  },
+  {
+    "name": "Annalisa",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02080001",
+    "tail": "00960502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02080001-00960502.png"
+  },
+  {
+    "name": "Annalise",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ad0001",
+    "tail": "01b20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ad0001-01b20502.png"
+  },
+  {
+    "name": "Antonio",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02010001",
+    "tail": "016a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02010001-016a0502.png"
+  },
+  {
+    "name": "Apollo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "044b0001",
+    "tail": "016c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044b0001-016c0502.png"
+  },
+  {
+    "name": "Apple",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "037f0001",
+    "tail": "01aa0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037f0001-01aa0502.png"
+  },
+  {
+    "name": "Astrid",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d60001",
+    "tail": "01570502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d60001-01570502.png"
+  },
+  {
+    "name": "Audie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0c0001",
+    "tail": "03c30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0c0001-03c30502.png"
+  },
+  {
+    "name": "Aurora",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "045f0001",
+    "tail": "01a80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_045f0001-01a80502.png"
+  },
+  {
+    "name": "Ava",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "029e0001",
+    "tail": "013d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029e0001-013d0502.png"
+  },
+  {
+    "name": "Avery",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04500001",
+    "tail": "00cf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04500001-00cf0502.png"
+  },
+  {
+    "name": "Axel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03290001",
+    "tail": "009d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03290001-009d0502.png"
+  },
+  {
+    "name": "Azalea",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1e0001",
+    "tail": "03d50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1e0001-03d50502.png"
+  },
+  {
+    "name": "Baabara",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04c60001",
+    "tail": "01670502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c60001-01670502.png"
+  },
+  {
+    "name": "Bam",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02d70001",
+    "tail": "01300502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d70001-01300502.png"
+  },
+  {
+    "name": "Bangle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04fd0001",
+    "tail": "007b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fd0001-007b0502.png"
+  },
+  {
+    "name": "Barold",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028d0001",
+    "tail": "01bd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028d0001-01bd0502.png"
+  },
+  {
+    "name": "Bea",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f40001",
+    "tail": "03050502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f40001-03050502.png"
+  },
+  {
+    "name": "Beardo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02210001",
+    "tail": "013c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02210001-013c0502.png"
+  },
+  {
+    "name": "Beau",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02dd0001",
+    "tail": "00ea0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dd0001-00ea0502.png"
+  },
+  {
+    "name": "Becky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02a20001",
+    "tail": "01ba0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a20001-01ba0502.png"
+  },
+  {
+    "name": "Bella",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "040e0001",
+    "tail": "00880502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040e0001-00880502.png"
+  },
+  {
+    "name": "Benedict",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "029a0001",
+    "tail": "00ee0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029a0001-00ee0502.png"
+  },
+  {
+    "name": "Benjamin",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02fa0001",
+    "tail": "00970502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fa0001-00970502.png"
+  },
+  {
+    "name": "Bertha",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03930001",
+    "tail": "00a00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03930001-00a00502.png"
+  },
+  {
+    "name": "Bettina",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "041b0001",
+    "tail": "00f10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041b0001-00f10502.png"
+  },
+  {
+    "name": "Bianca",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05000001",
+    "tail": "00e70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05000001-00e70502.png"
+  },
+  {
+    "name": "Biff",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03940001",
+    "tail": "00890502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03940001-00890502.png"
+  },
+  {
+    "name": "Big Top",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03250001",
+    "tail": "010a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03250001-010a0502.png"
+  },
+  {
+    "name": "Bill",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03070001",
+    "tail": "00640502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03070001-00640502.png"
+  },
+  {
+    "name": "Billy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03580001",
+    "tail": "02fa0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03580001-02fa0502.png"
+  },
+  {
+    "name": "Biskit",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ed0001",
+    "tail": "015a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ed0001-015a0502.png"
+  },
+  {
+    "name": "Bitty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03950001",
+    "tail": "02fc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03950001-02fc0502.png"
+  },
+  {
+    "name": "Blaire",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04de0001",
+    "tail": "00ce0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04de0001-00ce0502.png"
+  },
+  {
+    "name": "Blanca",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b30001",
+    "tail": "00b50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b30001-00b50502.png"
+  },
+  {
+    "name": "Blanche",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "043e0001",
+    "tail": "01490502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043e0001-01490502.png"
+  },
+  {
+    "name": "Blathers",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01920000",
+    "tail": "02470502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920000-02470502.png"
+  },
+  {
+    "name": "Blathers",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01920001",
+    "tail": "010d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-010d0502.png"
+  },
+  {
+    "name": "Blathers",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01920001",
+    "tail": "03ad0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-03ad0502.png"
+  },
+  {
+    "name": "Bluebear",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "027d0001",
+    "tail": "00630502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027d0001-00630502.png"
+  },
+  {
+    "name": "Bob",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "025d0001",
+    "tail": "00550502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025d0001-00550502.png"
+  },
+  {
+    "name": "Bonbon",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a50001",
+    "tail": "00740502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a50001-00740502.png"
+  },
+  {
+    "name": "Bones",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ee0001",
+    "tail": "01990502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ee0001-01990502.png"
+  },
+  {
+    "name": "Booker",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019e0001",
+    "tail": "00ad0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019e0001-00ad0502.png"
+  },
+  {
+    "name": "Boomer",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04690001",
+    "tail": "01640502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04690001-01640502.png"
+  },
+  {
+    "name": "Boone",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "036b0001",
+    "tail": "018b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036b0001-018b0502.png"
+  },
+  {
+    "name": "Boots",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02c50001",
+    "tail": "03080502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c50001-03080502.png"
+  },
+  {
+    "name": "Boris",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04810001",
+    "tail": "02f10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04810001-02f10502.png"
+  },
+  {
+    "name": "Boyd",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "036e0001",
+    "tail": "02fb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036e0001-02fb0502.png"
+  },
+  {
+    "name": "Bree",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "040f0001",
+    "tail": "01500502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040f0001-01500502.png"
+  },
+  {
+    "name": "Brewster",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01900001",
+    "tail": "01710502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01900001-01710502.png"
+  },
+  {
+    "name": "Broccolo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04180001",
+    "tail": "00d80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04180001-00d80502.png"
+  },
+  {
+    "name": "Broffina",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02a50001",
+    "tail": "018c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a50001-018c0502.png"
+  },
+  {
+    "name": "Bruce",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02d90001",
+    "tail": "01c80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d90001-01c80502.png"
+  },
+  {
+    "name": "Bubbles",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03920001",
+    "tail": "01270502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03920001-01270502.png"
+  },
+  {
+    "name": "Buck",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a40001",
+    "tail": "014f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a40001-014f0502.png"
+  },
+  {
+    "name": "Bud",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03e60001",
+    "tail": "00ec0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e60001-00ec0502.png"
+  },
+  {
+    "name": "Bunnie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04940001",
+    "tail": "009a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04940001-009a0502.png"
+  },
+  {
+    "name": "Butch",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02eb0001",
+    "tail": "00de0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02eb0001-00de0502.png"
+  },
+  {
+    "name": "Buzz",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "044e0001",
+    "tail": "03150502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044e0001-03150502.png"
+  },
+  {
+    "name": "C.J.",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a020001",
+    "tail": "03b30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a020001-03b30502.png"
+  },
+  {
+    "name": "Cally",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e80001",
+    "tail": "01ce0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e80001-01ce0502.png"
+  },
+  {
+    "name": "Camofrog",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033b0001",
+    "tail": "00fa0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033b0001-00fa0502.png"
+  },
+  {
+    "name": "Canberra",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03c40001",
+    "tail": "012b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c40001-012b0502.png"
+  },
+  {
+    "name": "Candi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04140001",
+    "tail": "030a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04140001-030a0502.png"
+  },
+  {
+    "name": "Carmen",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a40001",
+    "tail": "00d40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a40001-00d40502.png"
+  },
+  {
+    "name": "Caroline",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e30001",
+    "tail": "01650502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e30001-01650502.png"
+  },
+  {
+    "name": "Carrie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d30001",
+    "tail": "02f30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d30001-02f30502.png"
+  },
+  {
+    "name": "Cashmere",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04c90001",
+    "tail": "030d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c90001-030d0502.png"
+  },
+  {
+    "name": "Celeste",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01930001",
+    "tail": "03ae0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930001-03ae0502.png"
+  },
+  {
+    "name": "Celeste",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01930000",
+    "tail": "02480502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930000-02480502.png"
+  },
+  {
+    "name": "Celeste",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01930001",
+    "tail": "01740502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930001-01740502.png"
+  },
+  {
+    "name": "Celia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04540001",
+    "tail": "01ae0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04540001-01ae0502.png"
+  },
+  {
+    "name": "Cephalobot",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a170001",
+    "tail": "03ce0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a170001-03ce0502.png"
+  },
+  {
+    "name": "Cesar",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03690001",
+    "tail": "00d30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03690001-00d30502.png"
+  },
+  {
+    "name": "Chabwick",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a190001",
+    "tail": "03d00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a190001-03d00502.png"
+  },
+  {
+    "name": "Chadder",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "041e0001",
+    "tail": "015f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png"
+  },
+  {
+    "name": "Chai",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "032e0101",
+    "tail": "031c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032e0101-031c0502.png"
+  },
+  {
+    "name": "Charlise",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02200001",
+    "tail": "00fd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02200001-00fd0502.png"
+  },
+  {
+    "name": "Chelsea",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02e00101",
+    "tail": "031d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02e00101-031d0502.png"
+  },
+  {
+    "name": "Cheri",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02870001",
+    "tail": "005a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02870001-005a0502.png"
+  },
+  {
+    "name": "Cherry",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02fb0001",
+    "tail": "00900502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fb0001-00900502.png"
+  },
+  {
+    "name": "Chester",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028c0001",
+    "tail": "013e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028c0001-013e0502.png"
+  },
+  {
+    "name": "Chevre",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03560001",
+    "tail": "01350502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03560001-01350502.png"
+  },
+  {
+    "name": "Chief",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "050b0001",
+    "tail": "00990502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050b0001-00990502.png"
+  },
+  {
+    "name": "Chip",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019a0001",
+    "tail": "00b70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019a0001-00b70502.png"
+  },
+  {
+    "name": "Chops",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04860001",
+    "tail": "00fc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04860001-00fc0502.png"
+  },
+  {
+    "name": "Chow",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02170001",
+    "tail": "01b30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02170001-01b30502.png"
+  },
+  {
+    "name": "Chrissy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a10001",
+    "tail": "016f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a10001-016f0502.png"
+  },
+  {
+    "name": "Claude",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049f0001",
+    "tail": "03010502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049f0001-03010502.png"
+  },
+  {
+    "name": "Claudia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ff0001",
+    "tail": "01620502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ff0001-01620502.png"
+  },
+  {
+    "name": "Clay",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03830001",
+    "tail": "009b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03830001-009b0502.png"
+  },
+  {
+    "name": "Cleo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ab0001",
+    "tail": "03160502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ab0001-03160502.png"
+  },
+  {
+    "name": "Clyde",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ae0001",
+    "tail": "00870502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ae0001-00870502.png"
+  },
+  {
+    "name": "Coach",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02510001",
+    "tail": "00c10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02510001-00c10502.png"
+  },
+  {
+    "name": "Cobb",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04800001",
+    "tail": "008d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04800001-008d0502.png"
+  },
+  {
+    "name": "Coco",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04960001",
+    "tail": "00d90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04960001-00d90502.png"
+  },
+  {
+    "name": "Cole",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a60001",
+    "tail": "00a30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a60001-00a30502.png"
+  },
+  {
+    "name": "Colton",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03af0001",
+    "tail": "012c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03af0001-012c0502.png"
+  },
+  {
+    "name": "Cookie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f20001",
+    "tail": "00cc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f20001-00cc0502.png"
+  },
+  {
+    "name": "Copper",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019d0001",
+    "tail": "00ac0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019d0001-00ac0502.png"
+  },
+  {
+    "name": "Cousteau",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03420001",
+    "tail": "01280502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03420001-01280502.png"
+  },
+  {
+    "name": "Cranston",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "043c0001",
+    "tail": "01cb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043c0001-01cb0502.png"
+  },
+  {
+    "name": "Croque",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03490001",
+    "tail": "018d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03490001-018d0502.png"
+  },
+  {
+    "name": "Cube",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04610001",
+    "tail": "01610502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04610001-01610502.png"
+  },
+  {
+    "name": "Curlos",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04cd0001",
+    "tail": "01520502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cd0001-01520502.png"
+  },
+  {
+    "name": "Curly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04780001",
+    "tail": "01630502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04780001-01630502.png"
+  },
+  {
+    "name": "Curt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02160001",
+    "tail": "00570502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02160001-00570502.png"
+  },
+  {
+    "name": "Cyd",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0d0001",
+    "tail": "03c40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0d0001-03c40502.png"
+  },
+  {
+    "name": "Cyrano",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02000001",
+    "tail": "00a10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02000001-00a10502.png"
+  },
+  {
+    "name": "Cyrus",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018b0000",
+    "tail": "02460502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0000-02460502.png"
+  },
+  {
+    "name": "Cyrus",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018b0001",
+    "tail": "01150502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0001-01150502.png"
+  },
+  {
+    "name": "DJ KK",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01820101",
+    "tail": "00460502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820101-00460502.png"
+  },
+  {
+    "name": "Daisy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f10001",
+    "tail": "01450502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f10001-01450502.png"
+  },
+  {
+    "name": "Daisy Mae",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a040001",
+    "tail": "03b50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a040001-03b50502.png"
+  },
+  {
+    "name": "Deena",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030b0001",
+    "tail": "00790502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030b0001-00790502.png"
+  },
+  {
+    "name": "Deirdre",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02da0001",
+    "tail": "01330502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02da0001-01330502.png"
+  },
+  {
+    "name": "Del",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02c70001",
+    "tail": "01220502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c70001-01220502.png"
+  },
+  {
+    "name": "Deli",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04010001",
+    "tail": "00660502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04010001-00660502.png"
+  },
+  {
+    "name": "Derwin",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030f0001",
+    "tail": "016d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030f0001-016d0502.png"
+  },
+  {
+    "name": "Diana",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02de0001",
+    "tail": "009c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02de0001-009c0502.png"
+  },
+  {
+    "name": "Digby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018c0000",
+    "tail": "02430502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0000-02430502.png"
+  },
+  {
+    "name": "Digby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018c0001",
+    "tail": "004c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0001-004c0502.png"
+  },
+  {
+    "name": "Digby - Raincoat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018c0101",
+    "tail": "01180502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0101-01180502.png"
+  },
+  {
+    "name": "Diva",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "034a0001",
+    "tail": "01430502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034a0001-01430502.png"
+  },
+  {
+    "name": "Dizzy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03240001",
+    "tail": "01890502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03240001-01890502.png"
+  },
+  {
+    "name": "Dobie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "050f0001",
+    "tail": "03140502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050f0001-03140502.png"
+  },
+  {
+    "name": "Doc",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049e0001",
+    "tail": "01b70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049e0001-01b70502.png"
+  },
+  {
+    "name": "Dom",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0b0001",
+    "tail": "03c20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0b0001-03c20502.png"
+  },
+  {
+    "name": "Don Resetti",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018f0001",
+    "tail": "00b30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0001-00b30502.png"
+  },
+  {
+    "name": "Don Resetti - Without Hat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018f0101",
+    "tail": "01190502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0101-01190502.png"
+  },
+  {
+    "name": "Dora",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "040c0001",
+    "tail": "01590502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040c0001-01590502.png"
+  },
+  {
+    "name": "Dotty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04950001",
+    "tail": "01920502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04950001-01920502.png"
+  },
+  {
+    "name": "Drago",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02cb0001",
+    "tail": "01360502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02cb0001-01360502.png"
+  },
+  {
+    "name": "Drake",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03100001",
+    "tail": "00f80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03100001-00f80502.png"
+  },
+  {
+    "name": "Drift",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033c0001",
+    "tail": "01000502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033c0001-01000502.png"
+  },
+  {
+    "name": "Ed",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03aa0001",
+    "tail": "00e60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03aa0001-00e60502.png"
+  },
+  {
+    "name": "Egbert",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "029b0001",
+    "tail": "00cb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029b0001-00cb0502.png"
+  },
+  {
+    "name": "Elise",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03fe0001",
+    "tail": "01a40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fe0001-01a40502.png"
+  },
+  {
+    "name": "Ellie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "032a0001",
+    "tail": "03070502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032a0001-03070502.png"
+  },
+  {
+    "name": "Elmer",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a70001",
+    "tail": "01a10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a70001-01a10502.png"
+  },
+  {
+    "name": "Eloise",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03260001",
+    "tail": "01390502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03260001-01390502.png"
+  },
+  {
+    "name": "Elvis",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03e70001",
+    "tail": "012a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e70001-012a0502.png"
+  },
+  {
+    "name": "Erik",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02df0001",
+    "tail": "01910502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02df0001-01910502.png"
+  },
+  {
+    "name": "Eugene",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03c60001",
+    "tail": "00930502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c60001-00930502.png"
+  },
+  {
+    "name": "Eunice",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04c70001",
+    "tail": "00940502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c70001-00940502.png"
+  },
+  {
+    "name": "Faith",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a200001",
+    "tail": "03d70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a200001-03d70502.png"
+  },
+  {
+    "name": "Fang",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05110001",
+    "tail": "01950502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05110001-01950502.png"
+  },
+  {
+    "name": "Fauna",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02d60001",
+    "tail": "00560502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d60001-00560502.png"
+  },
+  {
+    "name": "Felicity",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026e0001",
+    "tail": "00ba0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026e0001-00ba0502.png"
+  },
+  {
+    "name": "Filbert",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04df0001",
+    "tail": "00e80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04df0001-00e80502.png"
+  },
+  {
+    "name": "Flick",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a030001",
+    "tail": "03b40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a030001-03b40502.png"
+  },
+  {
+    "name": "Flip",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ff0001",
+    "tail": "00f40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ff0001-00f40502.png"
+  },
+  {
+    "name": "Flo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "046c0001",
+    "tail": "008c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046c0001-008c0502.png"
+  },
+  {
+    "name": "Flora",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "043f0001",
+    "tail": "01550502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043f0001-01550502.png"
+  },
+  {
+    "name": "Flurry",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03840001",
+    "tail": "00860502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03840001-00860502.png"
+  },
+  {
+    "name": "Francine",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a00001",
+    "tail": "016e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a00001-016e0502.png"
+  },
+  {
+    "name": "Frank",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04510001",
+    "tail": "015e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04510001-015e0502.png"
+  },
+  {
+    "name": "Franklin",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01ae0001",
+    "tail": "011b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ae0001-011b0502.png"
+  },
+  {
+    "name": "Freckles",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030e0001",
+    "tail": "012f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030e0001-012f0502.png"
+  },
+  {
+    "name": "Frett",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1d0001",
+    "tail": "03d40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1d0001-03d40502.png"
+  },
+  {
+    "name": "Freya",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05100001",
+    "tail": "01070502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05100001-01070502.png"
+  },
+  {
+    "name": "Friga",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04630001",
+    "tail": "01310502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04630001-01310502.png"
+  },
+  {
+    "name": "Frita",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04d00001",
+    "tail": "01960502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d00001-01960502.png"
+  },
+  {
+    "name": "Frobert",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033a0001",
+    "tail": "01cc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033a0001-01cc0502.png"
+  },
+  {
+    "name": "Fuchsia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02dc0001",
+    "tail": "00be0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dc0001-00be0502.png"
+  },
+  {
+    "name": "Gabi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04990001",
+    "tail": "00df0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04990001-00df0502.png"
+  },
+  {
+    "name": "Gala",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04850001",
+    "tail": "014c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04850001-014c0502.png"
+  },
+  {
+    "name": "Gaston",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04980001",
+    "tail": "014a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04980001-014a0502.png"
+  },
+  {
+    "name": "Gayle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ca0001",
+    "tail": "01ca0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ca0001-01ca0502.png"
+  },
+  {
+    "name": "Genji",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049c0001",
+    "tail": "01400502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049c0001-01400502.png"
+  },
+  {
+    "name": "Gigi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03480001",
+    "tail": "006b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03480001-006b0502.png"
+  },
+  {
+    "name": "Gladys",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04370001",
+    "tail": "01050502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04370001-01050502.png"
+  },
+  {
+    "name": "Gloria",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03160001",
+    "tail": "01c00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03160001-01c00502.png"
+  },
+  {
+    "name": "Goldie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ea0001",
+    "tail": "01800502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01800502.png"
+  },
+  {
+    "name": "Goldie - Amiibo Festival",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ea0001",
+    "tail": "01d50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01d50502.png"
+  },
+  {
+    "name": "Gonzo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03c00001",
+    "tail": "03100502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c00001-03100502.png"
+  },
+  {
+    "name": "Goose",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02990001",
+    "tail": "00950502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02990001-00950502.png"
+  },
+  {
+    "name": "Gracie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a90001",
+    "tail": "01760502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a90001-01760502.png"
+  },
+  {
+    "name": "Graham",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03800001",
+    "tail": "01870502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03800001-01870502.png"
+  },
+  {
+    "name": "Grams",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01990001",
+    "tail": "01160502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01990001-01160502.png"
+  },
+  {
+    "name": "Greta",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "041c0001",
+    "tail": "01410502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041c0001-01410502.png"
+  },
+  {
+    "name": "Grizzly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021d0001",
+    "tail": "01cd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021d0001-01cd0502.png"
+  },
+  {
+    "name": "Groucho",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021a0001",
+    "tail": "00da0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021a0001-00da0502.png"
+  },
+  {
+    "name": "Gruff",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "035a0001",
+    "tail": "00850502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035a0001-00850502.png"
+  },
+  {
+    "name": "Gulliver",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a20001",
+    "tail": "03b90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-03b90502.png"
+  },
+  {
+    "name": "Gulliver",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a20001",
+    "tail": "017d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-017d0502.png"
+  },
+  {
+    "name": "Gwen",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04640001",
+    "tail": "00c00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04640001-00c00502.png"
+  },
+  {
+    "name": "Hamlet",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "037e0001",
+    "tail": "01560502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037e0001-01560502.png"
+  },
+  {
+    "name": "Hamphrey",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03850001",
+    "tail": "01060502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03850001-01060502.png"
+  },
+  {
+    "name": "Hans",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03730001",
+    "tail": "01340502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03730001-01340502.png"
+  },
+  {
+    "name": "Harriet",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01910001",
+    "tail": "004e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01910001-004e0502.png"
+  },
+  {
+    "name": "Harry",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03980001",
+    "tail": "00bf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03980001-00bf0502.png"
+  },
+  {
+    "name": "Harvey",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a050001",
+    "tail": "03b80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a050001-03b80502.png"
+  },
+  {
+    "name": "Hazel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ef0001",
+    "tail": "013b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ef0001-013b0502.png"
+  },
+  {
+    "name": "Henry",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "034b0001",
+    "tail": "009f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034b0001-009f0502.png"
+  },
+  {
+    "name": "Hippeux",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03990001",
+    "tail": "01c20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03990001-01c20502.png"
+  },
+  {
+    "name": "Hopkins",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a20001",
+    "tail": "02e80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a20001-02e80502.png"
+  },
+  {
+    "name": "Hopper",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04620001",
+    "tail": "00f60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04620001-00f60502.png"
+  },
+  {
+    "name": "Hornsby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04b60001",
+    "tail": "02ec0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b60001-02ec0502.png"
+  },
+  {
+    "name": "Huck",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03430001",
+    "tail": "02ef0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03430001-02ef0502.png"
+  },
+  {
+    "name": "Hugh",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "047b0001",
+    "tail": "00f50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047b0001-00f50502.png"
+  },
+  {
+    "name": "Iggly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "046a0001",
+    "tail": "01d00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046a0001-01d00502.png"
+  },
+  {
+    "name": "Ike",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021f0001",
+    "tail": "03170502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021f0001-03170502.png"
+  },
+  {
+    "name": "Ione",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a120001",
+    "tail": "03c90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a120001-03c90502.png"
+  },
+  {
+    "name": "Isabelle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810001",
+    "tail": "00440502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810001-00440502.png"
+  },
+  {
+    "name": "Isabelle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810401",
+    "tail": "03aa0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810401-03aa0502.png"
+  },
+  {
+    "name": "Isabelle - Character Parfait",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810001",
+    "tail": "01d40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810001-01d40502.png"
+  },
+  {
+    "name": "Isabelle - Dress",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810301",
+    "tail": "01700502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810301-01700502.png"
+  },
+  {
+    "name": "Isabelle - Kimono",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810201",
+    "tail": "011a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810201-011a0502.png"
+  },
+  {
+    "name": "Isabelle - Summer Outfit",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810000",
+    "tail": "024b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-024b0502.png"
+  },
+  {
+    "name": "Isabelle - Sweater",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810501",
+    "tail": "03bf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810501-03bf0502.png"
+  },
+  {
+    "name": "Isabelle - Winter",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810101",
+    "tail": "00b40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810101-00b40502.png"
+  },
+  {
+    "name": "Isabelle - Winter Outfit",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01810100",
+    "tail": "023f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810100-023f0502.png"
+  },
+  {
+    "name": "Jack",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01ad0001",
+    "tail": "00b80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ad0001-00b80502.png"
+  },
+  {
+    "name": "Jacob",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02380001",
+    "tail": "02f80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02380001-02f80502.png"
+  },
+  {
+    "name": "Jacques",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "023d0001",
+    "tail": "01b50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023d0001-01b50502.png"
+  },
+  {
+    "name": "Jambette",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03450001",
+    "tail": "005f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03450001-005f0502.png"
+  },
+  {
+    "name": "Jay",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "022d0001",
+    "tail": "00f20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022d0001-00f20502.png"
+  },
+  {
+    "name": "Jeremiah",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033f0001",
+    "tail": "008f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033f0001-008f0502.png"
+  },
+  {
+    "name": "Jingle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01af0001",
+    "tail": "011c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01af0001-011c0502.png"
+  },
+  {
+    "name": "Jitters",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02310001",
+    "tail": "006a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02310001-006a0502.png"
+  },
+  {
+    "name": "Joan",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a30001",
+    "tail": "004a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a30001-004a0502.png"
+  },
+  {
+    "name": "Joey",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03080001",
+    "tail": "014d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03080001-014d0502.png"
+  },
+  {
+    "name": "Judy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0e0001",
+    "tail": "03c50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png"
+  },
+  {
+    "name": "Julia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "043b0001",
+    "tail": "03030502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043b0001-03030502.png"
+  },
+  {
+    "name": "Julian",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03b10001",
+    "tail": "00f00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b10001-00f00502.png"
+  },
+  {
+    "name": "June",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028a0001",
+    "tail": "02e90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028a0001-02e90502.png"
+  },
+  {
+    "name": "K. K. Slider",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01820000",
+    "tail": "02400502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820000-02400502.png"
+  },
+  {
+    "name": "K. K. Slider - Pikopuri",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01820001",
+    "tail": "01d80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-01d80502.png"
+  },
+  {
+    "name": "K.K. Slider",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01820001",
+    "tail": "00a80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-00a80502.png"
+  },
+  {
+    "name": "K.K. Slider",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01820001",
+    "tail": "03b20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-03b20502.png"
+  },
+  {
+    "name": "Kabuki",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02660001",
+    "tail": "00680502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02660001-00680502.png"
+  },
+  {
+    "name": "Kapp'n",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01960000",
+    "tail": "024e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960000-024e0502.png"
+  },
+  {
+    "name": "Kapp'n",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01960001",
+    "tail": "00480502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960001-00480502.png"
+  },
+  {
+    "name": "Katie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b60001",
+    "tail": "00ae0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b60001-00ae0502.png"
+  },
+  {
+    "name": "Katrina",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a50001",
+    "tail": "01720502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a50001-01720502.png"
+  },
+  {
+    "name": "Katt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02720001",
+    "tail": "01860502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02720001-01860502.png"
+  },
+  {
+    "name": "Keaton",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04530001",
+    "tail": "01040502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04530001-01040502.png"
+  },
+  {
+    "name": "Ken",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02a60001",
+    "tail": "01240502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a60001-01240502.png"
+  },
+  {
+    "name": "Ketchup",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03140001",
+    "tail": "02f40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03140001-02f40502.png"
+  },
+  {
+    "name": "Kevin",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04870001",
+    "tail": "01bf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04870001-01bf0502.png"
+  },
+  {
+    "name": "Kicks",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01940000",
+    "tail": "024a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940000-024a0502.png"
+  },
+  {
+    "name": "Kicks",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01940001",
+    "tail": "00aa0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-00aa0502.png"
+  },
+  {
+    "name": "Kicks",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01940001",
+    "tail": "03b60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-03b60502.png"
+  },
+  {
+    "name": "Kid Cat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02670001",
+    "tail": "01080502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02670001-01080502.png"
+  },
+  {
+    "name": "Kidd",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "035d0001",
+    "tail": "00c90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035d0001-00c90502.png"
+  },
+  {
+    "name": "Kiki",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02610001",
+    "tail": "00650502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02610001-00650502.png"
+  },
+  {
+    "name": "Kitt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d10001",
+    "tail": "00c20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d10001-00c20502.png"
+  },
+  {
+    "name": "Kitty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026b0001",
+    "tail": "00e90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026b0001-00e90502.png"
+  },
+  {
+    "name": "Klaus",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02220001",
+    "tail": "01440502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02220001-01440502.png"
+  },
+  {
+    "name": "Knox",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02a40001",
+    "tail": "00720502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a40001-00720502.png"
+  },
+  {
+    "name": "Kody",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02810001",
+    "tail": "01200502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02810001-01200502.png"
+  },
+  {
+    "name": "Kyle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05150001",
+    "tail": "005b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05150001-005b0502.png"
+  },
+  {
+    "name": "Label",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01890101",
+    "tail": "03b10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890101-03b10502.png"
+  },
+  {
+    "name": "Labelle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01890001",
+    "tail": "00ab0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890001-00ab0502.png"
+  },
+  {
+    "name": "Leif",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b40001",
+    "tail": "01130502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b40001-01130502.png"
+  },
+  {
+    "name": "Leila",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01980001",
+    "tail": "00b10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01980001-00b10502.png"
+  },
+  {
+    "name": "Leilani",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01970001",
+    "tail": "01770502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01970001-01770502.png"
+  },
+  {
+    "name": "Leonardo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04fe0001",
+    "tail": "00590502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fe0001-00590502.png"
+  },
+  {
+    "name": "Leopold",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ea0001",
+    "tail": "030b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ea0001-030b0502.png"
+  },
+  {
+    "name": "Lily",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03380001",
+    "tail": "011d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03380001-011d0502.png"
+  },
+  {
+    "name": "Limberg",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "040d0001",
+    "tail": "00780502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040d0001-00780502.png"
+  },
+  {
+    "name": "Lionel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ee0001",
+    "tail": "008b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ee0001-008b0502.png"
+  },
+  {
+    "name": "Lobo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "050c0001",
+    "tail": "01c10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050c0001-01c10502.png"
+  },
+  {
+    "name": "Lolly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026f0001",
+    "tail": "01900502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026f0001-01900502.png"
+  },
+  {
+    "name": "Lopez",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02db0001",
+    "tail": "005e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02db0001-005e0502.png"
+  },
+  {
+    "name": "Lottie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01c10000",
+    "tail": "02440502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10000-02440502.png"
+  },
+  {
+    "name": "Lottie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01c10001",
+    "tail": "00540502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10001-00540502.png"
+  },
+  {
+    "name": "Lottie - Black Skirt And Bow",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01c10101",
+    "tail": "017a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10101-017a0502.png"
+  },
+  {
+    "name": "Lottie - Island",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01c10201",
+    "tail": "03bb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10201-03bb0502.png"
+  },
+  {
+    "name": "Louie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "036d0001",
+    "tail": "03040502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036d0001-03040502.png"
+  },
+  {
+    "name": "Lucha",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "023c0001",
+    "tail": "00bd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023c0001-00bd0502.png"
+  },
+  {
+    "name": "Lucky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ec0001",
+    "tail": "01c40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ec0001-01c40502.png"
+  },
+  {
+    "name": "Lucy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "047c0001",
+    "tail": "01a00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047c0001-01a00502.png"
+  },
+  {
+    "name": "Luna",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b50001",
+    "tail": "00510502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b50001-00510502.png"
+  },
+  {
+    "name": "Lyle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01aa0001",
+    "tail": "00530502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01aa0001-00530502.png"
+  },
+  {
+    "name": "Lyman",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03c50001",
+    "tail": "015c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c50001-015c0502.png"
+  },
+  {
+    "name": "Mabel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01880001",
+    "tail": "01120502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-01120502.png"
+  },
+  {
+    "name": "Mabel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01880000",
+    "tail": "02410502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880000-02410502.png"
+  },
+  {
+    "name": "Mabel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01880001",
+    "tail": "03af0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-03af0502.png"
+  },
+  {
+    "name": "Mac",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f80001",
+    "tail": "01380502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f80001-01380502.png"
+  },
+  {
+    "name": "Maddie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f30001",
+    "tail": "02f90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f30001-02f90502.png"
+  },
+  {
+    "name": "Maelle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030a0001",
+    "tail": "01c70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030a0001-01c70502.png"
+  },
+  {
+    "name": "Maggie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04820001",
+    "tail": "02fd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04820001-02fd0502.png"
+  },
+  {
+    "name": "Mallary",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030d0001",
+    "tail": "01840502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030d0001-01840502.png"
+  },
+  {
+    "name": "Maple",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "027e0001",
+    "tail": "01690502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027e0001-01690502.png"
+  },
+  {
+    "name": "Marcel",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f90001",
+    "tail": "01020502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f90001-01020502.png"
+  },
+  {
+    "name": "Marcie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03db0001",
+    "tail": "006d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03db0001-006d0502.png"
+  },
+  {
+    "name": "Margie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03270001",
+    "tail": "01c30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03270001-01c30502.png"
+  },
+  {
+    "name": "Marina",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "042a0001",
+    "tail": "012d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042a0001-012d0502.png"
+  },
+  {
+    "name": "Marlo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a150001",
+    "tail": "03cc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a150001-03cc0502.png"
+  },
+  {
+    "name": "Marshal",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ee0001",
+    "tail": "014b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ee0001-014b0502.png"
+  },
+  {
+    "name": "Marty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028f0101",
+    "tail": "031a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028f0101-031a0502.png"
+  },
+  {
+    "name": "Mathilda",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d20001",
+    "tail": "00e50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d20001-00e50502.png"
+  },
+  {
+    "name": "Megan",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0a0001",
+    "tail": "03c10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0a0001-03c10502.png"
+  },
+  {
+    "name": "Melba",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03be0001",
+    "tail": "01980502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03be0001-01980502.png"
+  },
+  {
+    "name": "Merengue",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04b90001",
+    "tail": "01600502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b90001-01600502.png"
+  },
+  {
+    "name": "Merry",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026d0001",
+    "tail": "013f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026d0001-013f0502.png"
+  },
+  {
+    "name": "Midge",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02350001",
+    "tail": "00840502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02350001-00840502.png"
+  },
+  {
+    "name": "Mint",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e60001",
+    "tail": "00820502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e60001-00820502.png"
+  },
+  {
+    "name": "Mira",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a70001",
+    "tail": "01a60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a70001-01a60502.png"
+  },
+  {
+    "name": "Miranda",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03130001",
+    "tail": "01210502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03130001-01210502.png"
+  },
+  {
+    "name": "Mitzi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "025e0001",
+    "tail": "01250502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025e0001-01250502.png"
+  },
+  {
+    "name": "Moe",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02650001",
+    "tail": "01540502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02650001-01540502.png"
+  },
+  {
+    "name": "Molly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03170001",
+    "tail": "00a60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03170001-00a60502.png"
+  },
+  {
+    "name": "Monique",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02680001",
+    "tail": "007d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02680001-007d0502.png"
+  },
+  {
+    "name": "Monty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03fd0001",
+    "tail": "01580502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fd0001-01580502.png"
+  },
+  {
+    "name": "Moose",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "041a0001",
+    "tail": "00e00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041a0001-00e00502.png"
+  },
+  {
+    "name": "Mott",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ec0001",
+    "tail": "01830502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ec0001-01830502.png"
+  },
+  {
+    "name": "Muffy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04d10001",
+    "tail": "009e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d10001-009e0502.png"
+  },
+  {
+    "name": "Murphy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02840001",
+    "tail": "02fe0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02840001-02fe0502.png"
+  },
+  {
+    "name": "Nan",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03570001",
+    "tail": "00eb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03570001-00eb0502.png"
+  },
+  {
+    "name": "Nana",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03fa0001",
+    "tail": "00d00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fa0001-00d00502.png"
+  },
+  {
+    "name": "Naomi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02b80001",
+    "tail": "019c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b80001-019c0502.png"
+  },
+  {
+    "name": "Nat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019b0001",
+    "tail": "00b60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019b0001-00b60502.png"
+  },
+  {
+    "name": "Nate",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02190001",
+    "tail": "007e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02190001-007e0502.png"
+  },
+  {
+    "name": "Nibbles",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e10001",
+    "tail": "01be0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e10001-01be0502.png"
+  },
+  {
+    "name": "Niko",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a070001",
+    "tail": "03bc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a070001-03bc0502.png"
+  },
+  {
+    "name": "Norma",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02b70001",
+    "tail": "030f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b70001-030f0502.png"
+  },
+  {
+    "name": "OHare",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a30001",
+    "tail": "01c90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a30001-01c90502.png"
+  },
+  {
+    "name": "Octavian",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04290001",
+    "tail": "00700502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04290001-00700502.png"
+  },
+  {
+    "name": "Olaf",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02090001",
+    "tail": "019f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02090001-019f0502.png"
+  },
+  {
+    "name": "Olive",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02860001",
+    "tail": "03130502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02860001-03130502.png"
+  },
+  {
+    "name": "Olivia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02600001",
+    "tail": "00d20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02600001-00d20502.png"
+  },
+  {
+    "name": "Opal",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03230001",
+    "tail": "00760502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03230001-00760502.png"
+  },
+  {
+    "name": "Orville",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a000001",
+    "tail": "03ab0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a000001-03ab0502.png"
+  },
+  {
+    "name": "Ozzie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03c10001",
+    "tail": "00bb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c10001-00bb0502.png"
+  },
+  {
+    "name": "Pancetti",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04880001",
+    "tail": "00980502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04880001-00980502.png"
+  },
+  {
+    "name": "Pango",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02020001",
+    "tail": "01030502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02020001-01030502.png"
+  },
+  {
+    "name": "Paolo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03280001",
+    "tail": "02eb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03280001-02eb0502.png"
+  },
+  {
+    "name": "Papi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03b00001",
+    "tail": "01a90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b00001-01a90502.png"
+  },
+  {
+    "name": "Pascal",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a40001",
+    "tail": "004d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a40001-004d0502.png"
+  },
+  {
+    "name": "Pashmina",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "035e0001",
+    "tail": "018e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035e0001-018e0502.png"
+  },
+  {
+    "name": "Pate",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03090001",
+    "tail": "00c60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03090001-00c60502.png"
+  },
+  {
+    "name": "Patty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02b10001",
+    "tail": "00690502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b10001-00690502.png"
+  },
+  {
+    "name": "Paula",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021e0001",
+    "tail": "01230502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021e0001-01230502.png"
+  },
+  {
+    "name": "Pave",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01ab0001",
+    "tail": "017c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ab0001-017c0502.png"
+  },
+  {
+    "name": "Peanut",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04dd0001",
+    "tail": "00a20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04dd0001-00a20502.png"
+  },
+  {
+    "name": "Pecan",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e00001",
+    "tail": "00f70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e00001-00f70502.png"
+  },
+  {
+    "name": "Peck",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "023e0001",
+    "tail": "00d10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023e0001-00d10502.png"
+  },
+  {
+    "name": "Peewee",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "036a0001",
+    "tail": "019d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036a0001-019d0502.png"
+  },
+  {
+    "name": "Peggy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04830001",
+    "tail": "01b00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04830001-01b00502.png"
+  },
+  {
+    "name": "Pekoe",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028b0001",
+    "tail": "00e30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028b0001-00e30502.png"
+  },
+  {
+    "name": "Pelly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a00001",
+    "tail": "010f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a00001-010f0502.png"
+  },
+  {
+    "name": "Penelope",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "041d0001",
+    "tail": "018a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041d0001-018a0502.png"
+  },
+  {
+    "name": "Pete",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019f0001",
+    "tail": "01110502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019f0001-01110502.png"
+  },
+  {
+    "name": "Petri",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a160001",
+    "tail": "03cd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a160001-03cd0502.png"
+  },
+  {
+    "name": "Phil",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "043d0001",
+    "tail": "007c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043d0001-007c0502.png"
+  },
+  {
+    "name": "Phineas",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "019c0001",
+    "tail": "01730502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019c0001-01730502.png"
+  },
+  {
+    "name": "Phoebe",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04400001",
+    "tail": "00ca0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04400001-00ca0502.png"
+  },
+  {
+    "name": "Phyllis",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a10001",
+    "tail": "01100502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a10001-01100502.png"
+  },
+  {
+    "name": "Pierce",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "044d0001",
+    "tail": "01930502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044d0001-01930502.png"
+  },
+  {
+    "name": "Pietro",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04d20001",
+    "tail": "01a70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d20001-01a70502.png"
+  },
+  {
+    "name": "Pinky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02150001",
+    "tail": "01820502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02150001-01820502.png"
+  },
+  {
+    "name": "Piper",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02320001",
+    "tail": "02ea0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02320001-02ea0502.png"
+  },
+  {
+    "name": "Pippy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049a0001",
+    "tail": "014e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049a0001-014e0502.png"
+  },
+  {
+    "name": "Plucky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02a30001",
+    "tail": "02ff0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a30001-02ff0502.png"
+  },
+  {
+    "name": "Pompom",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "030c0001",
+    "tail": "01b80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030c0001-01b80502.png"
+  },
+  {
+    "name": "Poncho",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "027f0001",
+    "tail": "00b90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027f0001-00b90502.png"
+  },
+  {
+    "name": "Poppy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ec0001",
+    "tail": "00770502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ec0001-00770502.png"
+  },
+  {
+    "name": "Porter",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01950001",
+    "tail": "00b00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01950001-00b00502.png"
+  },
+  {
+    "name": "Portia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02ef0001",
+    "tail": "00580502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ef0001-00580502.png"
+  },
+  {
+    "name": "Prince",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03440001",
+    "tail": "00c50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03440001-00c50502.png"
+  },
+  {
+    "name": "Puck",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04650001",
+    "tail": "006e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04650001-006e0502.png"
+  },
+  {
+    "name": "Puddles",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033e0001",
+    "tail": "01a20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033e0001-01a20502.png"
+  },
+  {
+    "name": "Pudge",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02800001",
+    "tail": "00830502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02800001-00830502.png"
+  },
+  {
+    "name": "Punchy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02630001",
+    "tail": "00750502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02630001-00750502.png"
+  },
+  {
+    "name": "Purrl",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02640001",
+    "tail": "01ac0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02640001-01ac0502.png"
+  },
+  {
+    "name": "Queenie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04360001",
+    "tail": "01940502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04360001-01940502.png"
+  },
+  {
+    "name": "Quillson",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03180001",
+    "tail": "006c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03180001-006c0502.png"
+  },
+  {
+    "name": "Quinn",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a180001",
+    "tail": "03cf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a180001-03cf0502.png"
+  },
+  {
+    "name": "Raddle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03470001",
+    "tail": "03020502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03470001-03020502.png"
+  },
+  {
+    "name": "Rasher",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "047a0001",
+    "tail": "00600502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047a0001-00600502.png"
+  },
+  {
+    "name": "Raymond",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a0f0001",
+    "tail": "03c60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png"
+  },
+  {
+    "name": "Redd",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a80001",
+    "tail": "004f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80001-004f0502.png"
+  },
+  {
+    "name": "Redd - Shirt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a80101",
+    "tail": "017e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80101-017e0502.png"
+  },
+  {
+    "name": "Reese",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018a0000",
+    "tail": "02450502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0000-02450502.png"
+  },
+  {
+    "name": "Reese",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018a0001",
+    "tail": "00a90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0001-00a90502.png"
+  },
+  {
+    "name": "Reneigh",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a100001",
+    "tail": "03c70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a100001-03c70502.png"
+  },
+  {
+    "name": "Renée",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ba0001",
+    "tail": "005d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ba0001-005d0502.png"
+  },
+  {
+    "name": "Resetti",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018e0000",
+    "tail": "02490502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0000-02490502.png"
+  },
+  {
+    "name": "Resetti",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018e0001",
+    "tail": "00490502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0001-00490502.png"
+  },
+  {
+    "name": "Resetti - Without Hat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018e0101",
+    "tail": "01780502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0101-01780502.png"
+  },
+  {
+    "name": "Rex",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03e80001",
+    "tail": "02f50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e80001-02f50502.png"
+  },
+  {
+    "name": "Rhonda",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04b30001",
+    "tail": "00dd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b30001-00dd0502.png"
+  },
+  {
+    "name": "Ribbot",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03390001",
+    "tail": "01b10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03390001-01b10502.png"
+  },
+  {
+    "name": "Ricky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e70001",
+    "tail": "01320502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e70001-01320502.png"
+  },
+  {
+    "name": "Rilla",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03740101",
+    "tail": "03190502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03740101-03190502.png"
+  },
+  {
+    "name": "Rio",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1c0001",
+    "tail": "03d30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1c0001-03d30502.png"
+  },
+  {
+    "name": "Rizzo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04150001",
+    "tail": "01bb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04150001-01bb0502.png"
+  },
+  {
+    "name": "Roald",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04600001",
+    "tail": "00a50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04600001-00a50502.png"
+  },
+  {
+    "name": "Robin",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "022e0001",
+    "tail": "01d30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022e0001-01d30502.png"
+  },
+  {
+    "name": "Rocco",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03900001",
+    "tail": "01850502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03900001-01850502.png"
+  },
+  {
+    "name": "Rocket",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03720001",
+    "tail": "010b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03720001-010b0502.png"
+  },
+  {
+    "name": "Rod",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04110001",
+    "tail": "01ab0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04110001-01ab0502.png"
+  },
+  {
+    "name": "Rodeo",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "024b0001",
+    "tail": "01260502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024b0001-01260502.png"
+  },
+  {
+    "name": "Rodney",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03810001",
+    "tail": "00d50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03810001-00d50502.png"
+  },
+  {
+    "name": "Rolf",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04fa0001",
+    "tail": "01680502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fa0001-01680502.png"
+  },
+  {
+    "name": "Rooney",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03da0001",
+    "tail": "01510502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03da0001-01510502.png"
+  },
+  {
+    "name": "Rory",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03ed0001",
+    "tail": "01a30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ed0001-01a30502.png"
+  },
+  {
+    "name": "Roscoe",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a80001",
+    "tail": "00910502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a80001-00910502.png"
+  },
+  {
+    "name": "Rosie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "025f0001",
+    "tail": "01c50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01c50502.png"
+  },
+  {
+    "name": "Rosie - Amiibo Festival",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "025f0001",
+    "tail": "01d70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01d70502.png"
+  },
+  {
+    "name": "Roswell",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1f0001",
+    "tail": "03d60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1f0001-03d60502.png"
+  },
+  {
+    "name": "Rover",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018d0001",
+    "tail": "010c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018d0001-010c0502.png"
+  },
+  {
+    "name": "Rover",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "018d0000",
+    "tail": "024c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018d0000-024c0502.png"
+  },
+  {
+    "name": "Rowan",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04fb0001",
+    "tail": "01c60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fb0001-01c60502.png"
+  },
+  {
+    "name": "Ruby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049d0001",
+    "tail": "00ed0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049d0001-00ed0502.png"
+  },
+  {
+    "name": "Rudy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02710001",
+    "tail": "019b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02710001-019b0502.png"
+  },
+  {
+    "name": "Sable",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01870001",
+    "tail": "00470502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-00470502.png"
+  },
+  {
+    "name": "Sable",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01870001",
+    "tail": "03b00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-03b00502.png"
+  },
+  {
+    "name": "Saharah",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a60001",
+    "tail": "03b70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-03b70502.png"
+  },
+  {
+    "name": "Saharah",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a60001",
+    "tail": "00500502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-00500502.png"
+  },
+  {
+    "name": "Sally",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e40001",
+    "tail": "01b60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e40001-01b60502.png"
+  },
+  {
+    "name": "Samson",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04100001",
+    "tail": "007f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04100001-007f0502.png"
+  },
+  {
+    "name": "Sandy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04380001",
+    "tail": "03000502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png"
+  },
+  {
+    "name": "Sasha",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a110001",
+    "tail": "03c80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a110001-03c80502.png"
+  },
+  {
+    "name": "Savannah",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a60001",
+    "tail": "00c80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a60001-00c80502.png"
+  },
+  {
+    "name": "Scoot",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03110001",
+    "tail": "00d60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03110001-00d60502.png"
+  },
+  {
+    "name": "Shari",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04000001",
+    "tail": "006f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04000001-006f0502.png"
+  },
+  {
+    "name": "Sheldon",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ed0001",
+    "tail": "00620502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ed0001-00620502.png"
+  },
+  {
+    "name": "Shep",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02fc0001",
+    "tail": "018f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fc0001-018f0502.png"
+  },
+  {
+    "name": "Sherb",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a090001",
+    "tail": "03c00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a090001-03c00502.png"
+  },
+  {
+    "name": "Shino",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a140001",
+    "tail": "03cb0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a140001-03cb0502.png"
+  },
+  {
+    "name": "Shrunk",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b10001",
+    "tail": "00b20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10001-00b20502.png"
+  },
+  {
+    "name": "Shrunk - Loud Jacket",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b10101",
+    "tail": "017b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10101-017b0502.png"
+  },
+  {
+    "name": "Simon",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03fb0001",
+    "tail": "01cf0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fb0001-01cf0502.png"
+  },
+  {
+    "name": "Skye",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05140001",
+    "tail": "01530502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05140001-01530502.png"
+  },
+  {
+    "name": "Sly",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02c90001",
+    "tail": "00cd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c90001-00cd0502.png"
+  },
+  {
+    "name": "Snake",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04970001",
+    "tail": "007a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04970001-007a0502.png"
+  },
+  {
+    "name": "Snooty",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02060001",
+    "tail": "03120502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02060001-03120502.png"
+  },
+  {
+    "name": "Soleil",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03820001",
+    "tail": "016b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03820001-016b0502.png"
+  },
+  {
+    "name": "Sparro",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "023f0001",
+    "tail": "01660502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023f0001-01660502.png"
+  },
+  {
+    "name": "Spike",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04b40001",
+    "tail": "030c0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b40001-030c0502.png"
+  },
+  {
+    "name": "Spork/Crackle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "047d0001",
+    "tail": "012e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047d0001-012e0502.png"
+  },
+  {
+    "name": "Sprinkle",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "046d0001",
+    "tail": "00f30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046d0001-00f30502.png"
+  },
+  {
+    "name": "Sprocket",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04390001",
+    "tail": "03110502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04390001-03110502.png"
+  },
+  {
+    "name": "Static",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04e50001",
+    "tail": "01ad0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e50001-01ad0502.png"
+  },
+  {
+    "name": "Stella",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04c80001",
+    "tail": "02ed0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c80001-02ed0502.png"
+  },
+  {
+    "name": "Sterling",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04520001",
+    "tail": "00730502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04520001-00730502.png"
+  },
+  {
+    "name": "Stinky",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026a0001",
+    "tail": "01460502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026a0001-01460502.png"
+  },
+  {
+    "name": "Stitches",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02820001",
+    "tail": "01810502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01810502.png"
+  },
+  {
+    "name": "Stitches - Amiibo Festival",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02820001",
+    "tail": "01d60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01d60502.png"
+  },
+  {
+    "name": "Stu",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "024d0001",
+    "tail": "02f60502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024d0001-02f60502.png"
+  },
+  {
+    "name": "Sydney",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03bf0001",
+    "tail": "01bc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bf0001-01bc0502.png"
+  },
+  {
+    "name": "Sylvana",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04eb0001",
+    "tail": "02f00502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04eb0001-02f00502.png"
+  },
+  {
+    "name": "Sylvia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d70001",
+    "tail": "01b40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d70001-01b40502.png"
+  },
+  {
+    "name": "T-Bone",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "024f0001",
+    "tail": "00810502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024f0001-00810502.png"
+  },
+  {
+    "name": "Tabby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02690001",
+    "tail": "011f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02690001-011f0502.png"
+  },
+  {
+    "name": "Tad",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03410001",
+    "tail": "030e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03410001-030e0502.png"
+  },
+  {
+    "name": "Tammi",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03fc0001",
+    "tail": "01470502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fc0001-01470502.png"
+  },
+  {
+    "name": "Tammy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "028e0001",
+    "tail": "019e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028e0001-019e0502.png"
+  },
+  {
+    "name": "Tangy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02620001",
+    "tail": "01370502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02620001-01370502.png"
+  },
+  {
+    "name": "Tank",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04b20001",
+    "tail": "01b90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b20001-01b90502.png"
+  },
+  {
+    "name": "Tasha",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ea0001",
+    "tail": "03180502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ea0001-03180502.png"
+  },
+  {
+    "name": "Teddy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02140001",
+    "tail": "00e40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02140001-00e40502.png"
+  },
+  {
+    "name": "Tex",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "046b0001",
+    "tail": "01970502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046b0001-01970502.png"
+  },
+  {
+    "name": "Tia",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "032d0001",
+    "tail": "00bc0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032d0001-00bc0502.png"
+  },
+  {
+    "name": "Tiansheng",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a130001",
+    "tail": "03ca0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a130001-03ca0502.png"
+  },
+  {
+    "name": "Tiffany",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "049b0001",
+    "tail": "00610502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049b0001-00610502.png"
+  },
+  {
+    "name": "Timbra",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04cf0001",
+    "tail": "00e10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cf0001-00e10502.png"
+  },
+  {
+    "name": "Timmy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01850001",
+    "tail": "004b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850001-004b0502.png"
+  },
+  {
+    "name": "Timmy & Tommy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01840000",
+    "tail": "024d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840000-024d0502.png"
+  },
+  {
+    "name": "Timmy & Tommy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01840501",
+    "tail": "03a90502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840501-03a90502.png"
+  },
+  {
+    "name": "Timmy - Full Apron",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01850201",
+    "tail": "01170502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850201-01170502.png"
+  },
+  {
+    "name": "Timmy - Suit",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01850401",
+    "tail": "01790502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850401-01790502.png"
+  },
+  {
+    "name": "Tipper",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02b20001",
+    "tail": "00c40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b20001-00c40502.png"
+  },
+  {
+    "name": "Toby",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04a80101",
+    "tail": "031e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a80101-031e0502.png"
+  },
+  {
+    "name": "Tom",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "026c0001",
+    "tail": "00c30502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026c0001-00c30502.png"
+  },
+  {
+    "name": "Tom Nook",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01830000",
+    "tail": "02420502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830000-02420502.png"
+  },
+  {
+    "name": "Tom Nook",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01830201",
+    "tail": "03a80502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830201-03a80502.png"
+  },
+  {
+    "name": "Tom Nook",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01830001",
+    "tail": "00450502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830001-00450502.png"
+  },
+  {
+    "name": "Tom Nook - Coat",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01830301",
+    "tail": "03be0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830301-03be0502.png"
+  },
+  {
+    "name": "Tom Nook - Jacket",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01830101",
+    "tail": "010e0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830101-010e0502.png"
+  },
+  {
+    "name": "Tommy - Suit",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01860301",
+    "tail": "01750502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860301-01750502.png"
+  },
+  {
+    "name": "Tommy - Uniform",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01860101",
+    "tail": "00af0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860101-00af0502.png"
+  },
+  {
+    "name": "Tortimer",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01b00001",
+    "tail": "00520502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b00001-00520502.png"
+  },
+  {
+    "name": "Truffles",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04790001",
+    "tail": "00920502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04790001-00920502.png"
+  },
+  {
+    "name": "Tucker",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "032c0001",
+    "tail": "01480502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032c0001-01480502.png"
+  },
+  {
+    "name": "Tutu",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021b0001",
+    "tail": "00800502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021b0001-00800502.png"
+  },
+  {
+    "name": "Twiggy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02300001",
+    "tail": "01d20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02300001-01d20502.png"
+  },
+  {
+    "name": "Tybalt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04fc0001",
+    "tail": "02ee0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fc0001-02ee0502.png"
+  },
+  {
+    "name": "Ursala",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "021c0001",
+    "tail": "02f70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021c0001-02f70502.png"
+  },
+  {
+    "name": "Velma",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "035c0001",
+    "tail": "01290502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035c0001-01290502.png"
+  },
+  {
+    "name": "Vesta",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04c50001",
+    "tail": "01010502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c50001-01010502.png"
+  },
+  {
+    "name": "Vic",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02520001",
+    "tail": "00fe0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02520001-00fe0502.png"
+  },
+  {
+    "name": "Victoria",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a50001",
+    "tail": "015b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a50001-015b0502.png"
+  },
+  {
+    "name": "Violet",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03700001",
+    "tail": "015d0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03700001-015d0502.png"
+  },
+  {
+    "name": "Vivian",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "05130001",
+    "tail": "02e70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05130001-02e70502.png"
+  },
+  {
+    "name": "Vladimir",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02830001",
+    "tail": "00c70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02830001-00c70502.png"
+  },
+  {
+    "name": "Wade",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04680001",
+    "tail": "02f20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04680001-02f20502.png"
+  },
+  {
+    "name": "Walker",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02f00001",
+    "tail": "00a70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f00001-00a70502.png"
+  },
+  {
+    "name": "Walt",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03d90001",
+    "tail": "01a50502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d90001-01a50502.png"
+  },
+  {
+    "name": "Wardell",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a080001",
+    "tail": "03bd0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a080001-03bd0502.png"
+  },
+  {
+    "name": "Wart Jr.",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "033d0001",
+    "tail": "013a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033d0001-013a0502.png"
+  },
+  {
+    "name": "Weber",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03120001",
+    "tail": "03090502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03120001-03090502.png"
+  },
+  {
+    "name": "Wendell",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01a70001",
+    "tail": "01140502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a70001-01140502.png"
+  },
+  {
+    "name": "Wendy",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04ce0001",
+    "tail": "00db0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ce0001-00db0502.png"
+  },
+  {
+    "name": "Whitney",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "050e0001",
+    "tail": "00d70502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050e0001-00d70502.png"
+  },
+  {
+    "name": "Wilbur",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a010001",
+    "tail": "03ac0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a010001-03ac0502.png"
+  },
+  {
+    "name": "Willow",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04cc0001",
+    "tail": "00a40502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cc0001-00a40502.png"
+  },
+  {
+    "name": "Winnie",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03a90001",
+    "tail": "00710502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a90001-00710502.png"
+  },
+  {
+    "name": "Wisp",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a060001",
+    "tail": "03ba0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a060001-03ba0502.png"
+  },
+  {
+    "name": "Wolfgang",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "050d0001",
+    "tail": "01420502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050d0001-01420502.png"
+  },
+  {
+    "name": "Yuka",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "03bc0001",
+    "tail": "008a0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bc0001-008a0502.png"
+  },
+  {
+    "name": "Zell",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "02d80001",
+    "tail": "00e20502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d80001-00e20502.png"
+  },
+  {
+    "name": "Zipper",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "01ac0001",
+    "tail": "017f0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ac0001-017f0502.png"
+  },
+  {
+    "name": "Zoe",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "0a1a0001",
+    "tail": "03d10502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1a0001-03d10502.png"
+  },
+  {
+    "name": "Zucker",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "042b0001",
+    "tail": "01af0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042b0001-01af0502.png"
+  },
+  {
+    "name": "Étoile",
+    "game": "Animal Crossing",
+    "series": "Animal Crossing",
+    "cat": "Animal Crossing",
+    "head": "04d30101",
+    "tail": "031b0502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d30101-031b0502.png"
+  },
+  {
+    "name": "A.K.I",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d30001",
+    "tail": "04be1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04be1d02.png"
+  },
+  {
+    "name": "A.K.I",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d30001",
+    "tail": "04de1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04de1d02.png"
+  },
+  {
+    "name": "Akuma",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d50001",
+    "tail": "04c01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png"
+  },
+  {
+    "name": "Akuma",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d50001",
+    "tail": "04e01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04e01d02.png"
+  },
+  {
+    "name": "Alex",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34db0001",
+    "tail": "04e61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04e61d02.png"
+  },
+  {
+    "name": "Alex",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34db0001",
+    "tail": "04ef1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04ef1d02.png"
+  },
+  {
+    "name": "Asana Mutsuba",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38460001",
+    "tail": "042a1902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38460001-042a1902.png"
+  },
+  {
+    "name": "Blanka",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c80001",
+    "tail": "04b31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04b31d02.png"
+  },
+  {
+    "name": "Blanka",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c80001",
+    "tail": "04d31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04d31d02.png"
+  },
+  {
+    "name": "C. Viper",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34da0001",
+    "tail": "04e51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png"
+  },
+  {
+    "name": "C. Viper",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34da0001",
+    "tail": "04ee1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04ee1d02.png"
+  },
+  {
+    "name": "Cammy",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d10001",
+    "tail": "04bc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png"
+  },
+  {
+    "name": "Cammy",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d10001",
+    "tail": "04dc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png"
+  },
+  {
+    "name": "Chibi Robo",
+    "game": "Chibi Robo",
+    "series": "Chibi-Robo!",
+    "cat": "Other",
+    "head": "22c00000",
+    "tail": "003a0202",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22c00000-003a0202.png"
+  },
+  {
+    "name": "Chun-Li",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c50001",
+    "tail": "04b01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04b01d02.png"
+  },
+  {
+    "name": "Chun-Li",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c50001",
+    "tail": "04d01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png"
+  },
+  {
+    "name": "Daijobu",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38050001",
+    "tail": "03981702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38050001-03981702.png"
+  },
+  {
+    "name": "Dee Jay",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cb0001",
+    "tail": "04b61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png"
+  },
+  {
+    "name": "Dee Jay",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cb0001",
+    "tail": "04d61d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png"
+  },
+  {
+    "name": "Dhalsim",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c90001",
+    "tail": "04b41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png"
+  },
+  {
+    "name": "Dhalsim",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c90001",
+    "tail": "04d41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04d41d02.png"
+  },
+  {
+    "name": "E. Honda",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ca0001",
+    "tail": "04b51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04b51d02.png"
+  },
+  {
+    "name": "E. Honda",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ca0001",
+    "tail": "04d51d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04d51d02.png"
+  },
+  {
+    "name": "Ed",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d40001",
+    "tail": "04bf1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png"
+  },
+  {
+    "name": "Ed",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d40001",
+    "tail": "04df1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04df1d02.png"
+  },
+  {
+    "name": "Elena",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d80001",
+    "tail": "04e31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04e31d02.png"
+  },
+  {
+    "name": "Elena",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d80001",
+    "tail": "04ec1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png"
+  },
+  {
+    "name": "Gakuto Sōgetsu",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38420001",
+    "tail": "04261902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38420001-04261902.png"
+  },
+  {
+    "name": "Ganda",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38040001",
+    "tail": "03971702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38040001-03971702.png"
+  },
+  {
+    "name": "Guile",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c60001",
+    "tail": "04b11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04b11d02.png"
+  },
+  {
+    "name": "Guile",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c60001",
+    "tail": "04d11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04d11d02.png"
+  },
+  {
+    "name": "Hayakawa",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38030001",
+    "tail": "03961702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38030001-03961702.png"
+  },
+  {
+    "name": "Ikari",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38010001",
+    "tail": "03941702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38010001-03941702.png"
+  },
+  {
+    "name": "Ingrid",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34dc0001",
+    "tail": "04e71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04e71d02.png"
+  },
+  {
+    "name": "Ingrid",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34dc0001",
+    "tail": "04f01d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png"
+  },
+  {
+    "name": "JP",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ce0001",
+    "tail": "04b91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04b91d02.png"
+  },
+  {
+    "name": "JP",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34ce0001",
+    "tail": "04d91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04d91d02.png"
+  },
+  {
+    "name": "Jamie",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30000",
+    "tail": "04ac1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png"
+  },
+  {
+    "name": "Jamie",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30001",
+    "tail": "04ad1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ad1d02.png"
+  },
+  {
+    "name": "Jamie",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c30001",
+    "tail": "04ce1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png"
+  },
+  {
+    "name": "Juri",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c70001",
+    "tail": "04b21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04b21d02.png"
+  },
+  {
+    "name": "Juri",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c70001",
+    "tail": "04d21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04d21d02.png"
+  },
+  {
+    "name": "Ken",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c10001",
+    "tail": "04a91d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04a91d02.png"
+  },
+  {
+    "name": "Ken",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c10001",
+    "tail": "04cc1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04cc1d02.png"
+  },
+  {
+    "name": "Kimberly",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40000",
+    "tail": "04ae1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png"
+  },
+  {
+    "name": "Kimberly",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40001",
+    "tail": "04af1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04af1d02.png"
+  },
+  {
+    "name": "Kimberly",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c40001",
+    "tail": "04cf1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png"
+  },
+  {
+    "name": "King Knight",
+    "game": "Shovel Knight",
+    "series": "Shovel Knight",
+    "cat": "Other",
+    "head": "35c30000",
+    "tail": "036e0a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c30000-036e0a02.png"
+  },
+  {
+    "name": "Lily",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d00001",
+    "tail": "04bb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png"
+  },
+  {
+    "name": "Lily",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d00001",
+    "tail": "04db1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png"
+  },
+  {
+    "name": "Loot Goblin",
+    "game": "Diablo",
+    "series": "Diablo",
+    "cat": "Other",
+    "head": "38c00000",
+    "tail": "03911602",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38c00000-03911602.png"
+  },
+  {
+    "name": "Luke",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20000",
+    "tail": "04aa1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png"
+  },
+  {
+    "name": "Luke",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20001",
+    "tail": "04ab1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png"
+  },
+  {
+    "name": "Luke",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c20001",
+    "tail": "04cd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png"
+  },
+  {
+    "name": "M. Bison",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d60001",
+    "tail": "04e11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04e11d02.png"
+  },
+  {
+    "name": "M. Bison",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d60001",
+    "tail": "04eb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png"
+  },
+  {
+    "name": "Mai",
+    "game": "Fatal Fury",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c810001",
+    "tail": "04f21d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f21d02.png"
+  },
+  {
+    "name": "Mai",
+    "game": "Fatal Fury",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c810001",
+    "tail": "04f31d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f31d02.png"
+  },
+  {
+    "name": "Manon",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cc0001",
+    "tail": "04b71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png"
+  },
+  {
+    "name": "Manon",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cc0001",
+    "tail": "04d71d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04d71d02.png"
+  },
+  {
+    "name": "Marisa",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cd0001",
+    "tail": "04b81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04b81d02.png"
+  },
+  {
+    "name": "Marisa",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cd0001",
+    "tail": "04d81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04d81d02.png"
+  },
+  {
+    "name": "Mega Man",
+    "game": "Megaman",
+    "series": "Mega Man",
+    "cat": "Other",
+    "head": "34800000",
+    "tail": "03791502",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-03791502.png"
+  },
+  {
+    "name": "Mio",
+    "game": "Xenoblade",
+    "series": "Xenoblade Chronicles 3",
+    "cat": "Other",
+    "head": "22440000",
+    "tail": "043e1b02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png"
+  },
+  {
+    "name": "Nail Saionji",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38450001",
+    "tail": "04291902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38450001-04291902.png"
+  },
+  {
+    "name": "Noah",
+    "game": "Xenoblade",
+    "series": "Xenoblade Chronicles 3",
+    "cat": "Other",
+    "head": "22430000",
+    "tail": "043d1b02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png"
+  },
+  {
+    "name": "Pawapuro",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38000001",
+    "tail": "03931702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38000001-03931702.png"
+  },
+  {
+    "name": "Pikmin",
+    "game": "Pikmin",
+    "series": "Pikmin",
+    "cat": "Other",
+    "head": "06420000",
+    "tail": "035f1102",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06420000-035f1102.png"
+  },
+  {
+    "name": "Plague Knight",
+    "game": "Shovel Knight",
+    "series": "Shovel Knight",
+    "cat": "Other",
+    "head": "35c10000",
+    "tail": "036c0a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c10000-036c0a02.png"
+  },
+  {
+    "name": "Poochy",
+    "game": "Yoshi's Woolly World",
+    "series": "Yoshi's Woolly World",
+    "cat": "Other",
+    "head": "00800102",
+    "tail": "035d0302",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png"
+  },
+  {
+    "name": "Qbby",
+    "game": "BoxBoy!",
+    "series": "BoxBoy!",
+    "cat": "Other",
+    "head": "1f400000",
+    "tail": "035e1002",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f400000-035e1002.png"
+  },
+  {
+    "name": "Rashid",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d20001",
+    "tail": "04bd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png"
+  },
+  {
+    "name": "Rashid",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d20001",
+    "tail": "04dd1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png"
+  },
+  {
+    "name": "Roa Kirishima",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38440001",
+    "tail": "04281902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38440001-04281902.png"
+  },
+  {
+    "name": "Romin Kirishima",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38430001",
+    "tail": "04271902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38430001-04271902.png"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c00001",
+    "tail": "04a81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04a81d02.png"
+  },
+  {
+    "name": "Ryu",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34c00001",
+    "tail": "04cb1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png"
+  },
+  {
+    "name": "Sagat",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d90001",
+    "tail": "04e41d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04e41d02.png"
+  },
+  {
+    "name": "Sagat",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34d90001",
+    "tail": "04ed1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png"
+  },
+  {
+    "name": "Shovel Knight",
+    "game": "Shovel Knight",
+    "series": "Shovel Knight",
+    "cat": "Other",
+    "head": "35c00000",
+    "tail": "02500a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-02500a02.png"
+  },
+  {
+    "name": "Shovel Knight - Gold Edition",
+    "game": "Shovel Knight",
+    "series": "Shovel Knight",
+    "cat": "Other",
+    "head": "35c00000",
+    "tail": "03920a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-03920a02.png"
+  },
+  {
+    "name": "Solaire of Astora",
+    "game": "Dark Souls",
+    "series": "Others",
+    "cat": "Other",
+    "head": "33800000",
+    "tail": "03781402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33800000-03781402.png"
+  },
+  {
+    "name": "Specter Knight",
+    "game": "Shovel Knight",
+    "series": "Shovel Knight",
+    "cat": "Other",
+    "head": "35c20000",
+    "tail": "036d0a02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c20000-036d0a02.png"
+  },
+  {
+    "name": "Super Mario Cereal",
+    "game": "Kellogs",
+    "series": "Others",
+    "cat": "Other",
+    "head": "37400001",
+    "tail": "03741402",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png"
+  },
+  {
+    "name": "Tatsuhisa “Luke” Kamijō",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38410001",
+    "tail": "04251902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38410001-04251902.png"
+  },
+  {
+    "name": "Terry",
+    "game": "Fatal Fury",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c800001",
+    "tail": "04e81d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04e81d02.png"
+  },
+  {
+    "name": "Terry",
+    "game": "Fatal Fury",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "3c800001",
+    "tail": "04f11d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png"
+  },
+  {
+    "name": "Yabe",
+    "game": "Power Pros",
+    "series": "Power Pros",
+    "cat": "Other",
+    "head": "38020001",
+    "tail": "03951702",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38020001-03951702.png"
+  },
+  {
+    "name": "Yuga Ohdo",
+    "game": "Yu-Gi-Oh!",
+    "series": "Yu-Gi-Oh!",
+    "cat": "Other",
+    "head": "38400001",
+    "tail": "04241902",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38400001-04241902.png"
+  },
+  {
+    "name": "Zangief",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cf0001",
+    "tail": "04ba1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png"
+  },
+  {
+    "name": "Zangief",
+    "game": "Street Fighter",
+    "series": "Street Fighter 6",
+    "cat": "Other",
+    "head": "34cf0001",
+    "tail": "04da1d02",
+    "img": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png"
+  }
+];

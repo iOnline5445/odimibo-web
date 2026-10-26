@@ -280,7 +280,7 @@
 
         <!-- Search Input -->
         <div class="relative">
-          <input type="text" id="searchInput" oninput="filterAmiibos()" placeholder="🔍 ค้นหาตัวละคร / เกม (เช่น Archer, Guardian, Zelda, Mario)..." 
+          <input type="text" id="searchInput" oninput="filterAmiibos()" placeholder="🔍 ค้นหาตัวละคร / เกม (เช่น Marth, Byleth, Engage, Zelda, Mario)..." 
             class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-8 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500">
           <button onclick="clearSearch()" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white text-xs">✕</button>
         </div>
@@ -288,6 +288,7 @@
         <!-- Category Filter Pills -->
         <div class="flex gap-1.5 overflow-x-auto pb-1 text-[11px] no-scrollbar">
           <button onclick="setFilterCategory('ALL')" class="cat-pill active bg-indigo-600 text-white px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">ทั้งหมด (932)</button>
+          <button onclick="setFilterCategory('Fire Emblem')" class="cat-pill bg-slate-800 text-rose-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap border border-rose-500/40">⚔️ Fire Emblem Engage (13)</button>
           <button onclick="setFilterCategory('Zelda BotW')" class="cat-pill bg-slate-800 text-cyan-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap border border-cyan-500/30">🏹 Zelda BotW</button>
           <button onclick="setFilterCategory('Zelda TotK')" class="cat-pill bg-slate-800 text-emerald-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap border border-emerald-500/30">🗡️ Zelda TotK</button>
           <button onclick="setFilterCategory('Zelda')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🛡️ Zelda ทุกภาค</button>
@@ -297,7 +298,6 @@
           <button onclick="setFilterCategory('Pokemon')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">⚡ Pokemon</button>
           <button onclick="setFilterCategory('Metroid')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🔫 Metroid</button>
           <button onclick="setFilterCategory('Monster Hunter')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🐉 Monster Hunter</button>
-          <button onclick="setFilterCategory('Fire Emblem')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">⚔️ Fire Emblem</button>
           <button onclick="setFilterCategory('Kirby')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">⭐ Kirby</button>
           <button onclick="setFilterCategory('Animal Crossing')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🍃 Animal Crossing</button>
           <button onclick="setFilterCategory('Other')" class="cat-pill bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg font-bold whitespace-nowrap">🌟 อื่นๆ</button>
@@ -978,7 +978,7 @@
     function getFilteredList() {
       const q = document.getElementById('searchInput').value.toLowerCase().trim();
       return fullDb.filter(item => {
-        const matchQ = !q || item.name.toLowerCase().includes(q) || item.game.toLowerCase().includes(q) || (item.series && item.series.toLowerCase().includes(q));
+        const matchQ = !q || item.name.toLowerCase().includes(q) || item.game.toLowerCase().includes(q) || (item.series && item.series.toLowerCase().includes(q)) || (item.rewards && item.rewards.toLowerCase().includes(q));
         let matchCat = (activeFilter === 'ALL');
         if (activeFilter === 'Zelda') {
           matchCat = item.cat.startsWith('Zelda');
@@ -986,6 +986,8 @@
           matchCat = (item.cat === 'Zelda BotW');
         } else if (activeFilter === 'Zelda TotK') {
           matchCat = (item.cat === 'Zelda TotK');
+        } else if (activeFilter === 'Smash') {
+          matchCat = (item.cat === 'Smash' || (item.series && item.series.includes('Smash')));
         } else if (activeFilter !== 'ALL') {
           matchCat = (item.cat === activeFilter);
         }
