@@ -12,8 +12,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- ฐานข้อมูล Amiibo ทั้งหมด 932 ตัวละครจาก GitHub -->
-  <script src="amiibos_all.js"></script>
+  <!-- ฐานข้อมูล Amiibo ทั้งหมด 950 ตัวละคร (รวมปี 2026) -->
+  <script src="amiibos_all.js?v=20261026_2"></script>
 
   <style>
     * {
@@ -96,28 +96,51 @@
          ---------------------------------------------------- -->
     <div id="tabDevice" class="tab-pane space-y-3.5">
 
-      <!-- แถบเลือกเปลี่ยนเกมด่วน (Quick Game Switcher + Character Strip) -->
-      <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-3 space-y-2.5 shadow-lg">
+      <!-- แถบเมนูเลือกชื่อเกม & พิมพ์ค้นหาชื่อเกม/ตัวละครด่วน (Quick Game Menu + Search + Character Strip) -->
+      <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-3.5 space-y-2.5 shadow-lg">
         <div class="flex items-center justify-between">
           <span class="text-xs font-extrabold text-white flex items-center gap-1.5">
-            <span>🎯</span> 1. เลือกเปลี่ยนเกมด่วน (แตะเลือกเกม & ตัวละคร)
+            <span>🎮</span> 1. เลือกชื่อเกม หรือ พิมพ์ค้นหาได้เลย
           </span>
           <button onclick="switchTab('tabCatalog')" class="text-xs text-indigo-400 hover:text-indigo-300 font-bold">
-            ดูทั้ง 950 ตัว ▶
+            ดูตาราง 950 ตัว ▶
           </button>
         </div>
 
-        <!-- ปุ่มสลับเกมยอดฮิต -->
-        <div id="quickGamePills" class="flex gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
-          <button onclick="selectQuickGame('Fire Emblem')" data-qcat="Fire Emblem" class="qgame-btn bg-rose-600 text-white px-3 py-1.5 rounded-xl font-bold whitespace-nowrap shadow">⚔️ Fire Emblem ทุกภาค (13)</button>
-          <button onclick="selectQuickGame('Mario')" data-qcat="Mario" class="qgame-btn bg-slate-800 text-amber-300 border border-amber-500/30 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🍄 Super Mario (155)</button>
-          <button onclick="selectQuickGame('2026')" data-qcat="2026" class="qgame-btn bg-slate-800 text-fuchsia-300 border border-fuchsia-500/30 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🔥 ออกใหม่ 2025-2026 (109)</button>
-          <button onclick="selectQuickGame('Zelda BotW')" data-qcat="Zelda BotW" class="qgame-btn bg-slate-800 text-cyan-300 border border-cyan-500/30 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🏹 Zelda BotW (10)</button>
-          <button onclick="selectQuickGame('Zelda TotK')" data-qcat="Zelda TotK" class="qgame-btn bg-slate-800 text-emerald-300 border border-emerald-500/30 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🗡️ Zelda TotK (8)</button>
-          <button onclick="selectQuickGame('Splatoon')" data-qcat="Splatoon" class="qgame-btn bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🦑 Splatoon</button>
-          <button onclick="selectQuickGame('Metroid')" data-qcat="Metroid" class="qgame-btn bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🔫 Metroid Prime 4</button>
-          <button onclick="selectQuickGame('Kirby')" data-qcat="Kirby" class="qgame-btn bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">⭐ Kirby Air Riders</button>
-          <button onclick="selectQuickGame('Monster Hunter')" data-qcat="Monster Hunter" class="qgame-btn bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🐉 Monster Hunter</button>
+        <!-- เมนู Dropdown เลือกชื่อเกม (ไม่ต้องเลื่อนแถบข้าง) -->
+        <div class="grid grid-cols-1 gap-2">
+          <select id="quickGameSelect" onchange="selectQuickGame(this.value)" class="w-full bg-slate-950 border border-indigo-500/50 rounded-xl px-3 py-2.5 text-xs font-bold text-white focus:outline-none focus:border-indigo-400 shadow-inner">
+            <option value="Fire Emblem">⚔️ Fire Emblem ทุกภาค: Engage / Three Houses / Warriors / Echoes / Fates (13 ตัว)</option>
+            <option value="Mario Figures">🍄 Super Mario (เฉพาะฟิกเกอร์: Odyssey / 3D World / Kart 8 / Wonder / Galaxy) (65 ตัว)</option>
+            <option value="Mario">🏇 Super Mario รวมทุกภาค + การ์ด Mario Sports (155 ตัว)</option>
+            <option value="2026">🔥 รวม Amiibo ออกใหม่ปี 2025–2026 ทุกเกม (109 ตัว)</option>
+            <option value="Zelda BotW">🏹 Zelda: Breath of the Wild (10 ตัว)</option>
+            <option value="Zelda TotK">🗡️ Zelda: Tears of the Kingdom (8 ตัว)</option>
+            <option value="Zelda">🛡️ The Legend of Zelda รวมทุกภาค (37 ตัว)</option>
+            <option value="Smash">🥊 Super Smash Bros. Ultimate (78 ตัว)</option>
+            <option value="Splatoon">🦑 Splatoon 1 / 2 / 3 / Raiders (28 ตัว)</option>
+            <option value="Metroid">🔫 Metroid Prime 4: Beyond & Metroid Dread (11 ตัว)</option>
+            <option value="Kirby">⭐ Kirby Air Riders (Switch 2) & Kirby Series (11 ตัว)</option>
+            <option value="Monster Hunter">🐉 Monster Hunter Stories 3 (2026) & Rise (18 ตัว)</option>
+            <option value="Street Fighter">👊 Street Fighter 6 & Fatal Fury (Switch 2) (66 ตัว)</option>
+            <option value="Pokemon">⚡ Pokémon (Pikachu, Charizard, Mewtwo, Lucario ฯลฯ)</option>
+            <option value="Xenoblade">⚔️ Xenoblade Chronicles 1 / 2 / 3 (Noah, Mio, Pyra, Mythra)</option>
+            <option value="Animal Crossing">🍃 Animal Crossing: New Horizons (525 ตัว)</option>
+            <option value="FAV">⭐ รายการโปรดที่บันทึกไว้</option>
+            <option value="ALL">🌐 แสดงทุกเกมทั้งหมด (950 ตัว)</option>
+          </select>
+
+          <!-- ช่องพิมพ์ชื่อเกม หรือ ชื่อตัวละครค้นหาด่วนในหน้าแรก -->
+          <div class="relative">
+            <input type="text" id="quickSearchInput" list="amiiboAutocompleteList" oninput="onQuickSearchInput()" placeholder="🔍 พิมพ์ชื่อเกม หรือ ตัวละคร (เช่น Engage, Mario, Wonder, Zelda, Marth, Byleth)..."
+              class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-8 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-indigo-400">
+            <button onclick="clearQuickSearch()" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs px-1">✕</button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-slate-400 pt-0.5">
+          <span id="quickStripLabel">👇 แตะรูปตัวละครด้านล่างเพื่อเลือกใช้งานทันที:</span>
+          <span id="quickStripCount" class="text-indigo-300 font-bold">13 ตัวละคร</span>
         </div>
 
         <!-- แถบเลื่อนรูปตัวละครในเกมที่เลือก (แตะรูปเพื่อเปลี่ยนตัวทันที) -->
@@ -301,12 +324,12 @@
          ---------------------------------------------------- -->
     <div id="tabCatalog" class="tab-pane hidden space-y-3">
       
-      <!-- Search & Filter Bar -->
-      <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow">
+      <!-- Search & Game Selector Menu Bar -->
+      <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow">
         <div class="flex items-center justify-between gap-2">
           <div class="flex items-center gap-1.5">
             <span class="text-base">📚</span>
-            <h3 class="text-sm font-bold text-white">คลัง Amiibo ครบทุกเกม (ถึงปี 2026)</h3>
+            <h3 class="text-sm font-bold text-white">คลัง Amiibo ครบทุกเกม</h3>
             <span id="amiiboCountBadge" class="text-xs bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 px-2 py-0.5 rounded-lg font-mono font-bold">950 รายการ</span>
           </div>
           <button onclick="batchSendCategoryToBLE()" class="text-xs bg-indigo-600/20 hover:bg-indigo-600/40 text-indigo-300 border border-indigo-500/40 px-2.5 py-1 rounded-lg font-bold">
@@ -314,32 +337,49 @@
           </button>
         </div>
 
-        <!-- Search Input -->
-        <div class="relative">
-          <input type="text" id="searchInput" oninput="filterAmiibos()" placeholder="🔍 ค้นหาตัวละคร / เกม (เช่น Marth, Engage, Three Houses, Mario, Wonder, 2026, Zelda)..." 
-            class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-8 py-2.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500">
-          <button onclick="clearSearch()" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs px-1">✕</button>
+        <!-- 1. เมนู Dropdown เลือกชื่อเกมโดยตรง -->
+        <div class="space-y-1">
+          <label for="catalogGameSelect" class="text-xs font-bold text-indigo-300 block">🎮 เลือกจากรายชื่อเกม:</label>
+          <select id="catalogGameSelect" onchange="setFilterCategory(this.value)" class="w-full bg-slate-950 border border-indigo-500/50 rounded-xl px-3 py-2.5 text-xs font-bold text-white focus:outline-none focus:border-indigo-400">
+            <option value="ALL">🌐 แสดงทุกเกมทั้งหมด (950 ตัวละคร)</option>
+            <option value="FAV">⭐ รายการโปรดที่บันทึกไว้</option>
+            <option value="2026">🔥 รวม Amiibo ออกใหม่ปี 2025–2026 ทุกเกม (109 ตัว)</option>
+            <optgroup label="── ตระกูลเกมยอดฮิต (เลือกตามชื่อเกม) ──">
+              <option value="Fire Emblem">⚔️ Fire Emblem ทุกภาค (Engage / Three Houses / Warriors / Echoes / Fates) (13 ตัว)</option>
+              <option value="Mario Figures">🍄 Super Mario เฉพาะฟิกเกอร์ (Odyssey / 3D World / Kart 8 / Wonder / Galaxy) (65 ตัว)</option>
+              <option value="Mario">🏇 Super Mario รวมทุกภาค + การ์ด Mario Sports (155 ตัว)</option>
+              <option value="Zelda BotW">🏹 The Legend of Zelda: Breath of the Wild (10 ตัว)</option>
+              <option value="Zelda TotK">🗡️ The Legend of Zelda: Tears of the Kingdom (8 ตัว)</option>
+              <option value="Zelda">🛡️ The Legend of Zelda รวมทุกภาค (37 ตัว)</option>
+              <option value="Smash">🥊 Super Smash Bros. Ultimate (78 ตัว)</option>
+              <option value="Splatoon">🦑 Splatoon 1 / 2 / 3 / Raiders (28 ตัว)</option>
+              <option value="Metroid">🔫 Metroid Prime 4: Beyond & Metroid Dread (11 ตัว)</option>
+              <option value="Kirby">⭐ Kirby Air Riders (Switch 2) & Kirby Series (11 ตัว)</option>
+              <option value="Monster Hunter">🐉 Monster Hunter Stories 3 (2026) & Rise/Stories (18 ตัว)</option>
+              <option value="Street Fighter">👊 Street Fighter 6 & Fatal Fury (Switch 2) (66 ตัว)</option>
+              <option value="Pokemon">⚡ Pokémon (Pikachu, Charizard, Mewtwo, Lucario ฯลฯ)</option>
+              <option value="Xenoblade">⚔️ Xenoblade Chronicles 1 / 2 / 3 (Noah, Mio, Pyra, Mythra, Shulk)</option>
+              <option value="Animal Crossing">🍃 Animal Crossing: New Horizons (525 ตัว)</option>
+              <option value="Other">🌟 เกมอื่นๆ (Resident Evil Requiem, Pragmata, Yu-Gi-Oh!, Shovel Knight, Mega Man)</option>
+            </optgroup>
+            <optgroup id="dynamicSpecificGamesOptgroup" label="── รายชื่อเกมแยกย่อยทั้งหมด ──">
+              <!-- Populated dynamically by JS -->
+            </optgroup>
+          </select>
         </div>
-        
-        <!-- Category Filter Pills -->
-        <div class="flex gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
-          <button onclick="setFilterCategory('ALL', this)" class="cat-pill active bg-indigo-600 text-white px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">ทั้งหมด (950)</button>
-          <button onclick="setFilterCategory('FAV', this)" class="cat-pill bg-slate-800 text-amber-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-amber-500/40">⭐ รายการโปรด</button>
-          <button onclick="setFilterCategory('2026', this)" class="cat-pill bg-slate-800 text-fuchsia-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-fuchsia-500/40">🔥 ออกใหม่ 2025-2026 (109)</button>
-          <button onclick="setFilterCategory('Fire Emblem', this)" class="cat-pill bg-slate-800 text-rose-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-rose-500/40">⚔️ Fire Emblem ทุกภาค (13)</button>
-          <button onclick="setFilterCategory('Mario', this)" class="cat-pill bg-slate-800 text-amber-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-amber-500/40">🍄 Super Mario ทุกภาค (155)</button>
-          <button onclick="setFilterCategory('Zelda BotW', this)" class="cat-pill bg-slate-800 text-cyan-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-cyan-500/30">🏹 Zelda BotW (10)</button>
-          <button onclick="setFilterCategory('Zelda TotK', this)" class="cat-pill bg-slate-800 text-emerald-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap border border-emerald-500/30">🗡️ Zelda TotK (8)</button>
-          <button onclick="setFilterCategory('Zelda', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🛡️ Zelda ทุกภาค</button>
-          <button onclick="setFilterCategory('Smash', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🥊 Smash Bros</button>
-          <button onclick="setFilterCategory('Splatoon', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🦑 Splatoon</button>
-          <button onclick="setFilterCategory('Metroid', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🔫 Metroid Prime 4</button>
-          <button onclick="setFilterCategory('Kirby', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">⭐ Kirby Air Riders</button>
-          <button onclick="setFilterCategory('Monster Hunter', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🐉 Monster Hunter</button>
-          <button onclick="setFilterCategory('Pokemon', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">⚡ Pokemon</button>
-          <button onclick="setFilterCategory('Animal Crossing', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🍃 Animal Crossing</button>
-          <button onclick="setFilterCategory('Other', this)" class="cat-pill bg-slate-800 text-slate-300 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap">🌟 Street Fighter 6 & อื่นๆ</button>
+
+        <!-- 2. ช่องพิมพ์ค้นหาชื่อเกม หรือ ชื่อตัวละครพร้อมระบบแนะนำคำ (Autocomplete) -->
+        <div class="space-y-1">
+          <label for="searchInput" class="text-xs font-bold text-emerald-300 block">🔍 หรือพิมพ์ชื่อเกม / ชื่อตัวละครค้นหาได้ทันที:</label>
+          <div class="relative">
+            <input type="text" id="searchInput" list="amiiboAutocompleteList" oninput="filterAmiibos()" placeholder="พิมพ์ชื่อเกม เช่น Fire Emblem, Mario, Zelda, 2026 หรือชื่อตัวละคร..." 
+              class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-16 py-2.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-400">
+            <button onclick="clearSearch()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-xs px-2 py-1 rounded-lg">ล้างคำ</button>
+          </div>
         </div>
+
+        <!-- Autocomplete Datalist สำหรับแนะนำชื่อเกมและชื่อตัวละคร -->
+        <datalist id="amiiboAutocompleteList"></datalist>
       </div>
 
       <!-- Amiibo Cards List -->
@@ -608,7 +648,7 @@
   <script>
     const fullDb = (window.AMIIBO_ALL_DATABASE && window.AMIIBO_ALL_DATABASE.length > 0)
       ? window.AMIIBO_ALL_DATABASE
-      : [];
+      : ((window.AMIIBO_FULL_DB && window.AMIIBO_FULL_DB.length > 0) ? window.AMIIBO_FULL_DB : []);
 
     let activeFilter = 'ALL';
     let displayLimit = 40;
@@ -1141,16 +1181,99 @@
       }
     }
 
+    function initGameDropdownsAndAutocomplete() {
+      // 1. Populate dynamic specific games in catalogGameSelect
+      const optGroup = document.getElementById('dynamicSpecificGamesOptgroup');
+      const datalist = document.getElementById('amiiboAutocompleteList');
+      if (!fullDb || fullDb.length === 0) return;
+
+      const gameCounts = new Map();
+      const charSuggestions = new Set();
+
+      fullDb.forEach(item => {
+        const g = item.game || item.series || 'Other';
+        gameCounts.set(g, (gameCounts.get(g) || 0) + 1);
+        charSuggestions.add(item.name);
+        if (item.game) charSuggestions.add(item.game);
+      });
+
+      if (optGroup) {
+        const sortedGames = Array.from(gameCounts.entries()).sort((a, b) => b[1] - a[1]);
+        optGroup.innerHTML = sortedGames.map(([gName, cnt]) => {
+          const safeVal = `GAME:${gName.replace(/"/g, '&quot;')}`;
+          return `<option value="${safeVal}">🎮 ${gName} (${cnt} ตัว)</option>`;
+        }).join('');
+      }
+
+      if (datalist) {
+        const popularKeywords = [
+          'Fire Emblem Engage',
+          'Fire Emblem: Three Houses',
+          'Fire Emblem Warriors: Three Hopes',
+          'Super Mario Odyssey',
+          'Super Mario 3D World + Bowser\'s Fury',
+          'Super Mario Bros. Wonder',
+          'Super Mario Galaxy',
+          'Mario Kart 8 Deluxe',
+          'Donkey Kong Bananza',
+          'The Legend of Zelda: Breath of the Wild',
+          'The Legend of Zelda: Tears of the Kingdom',
+          'Metroid Prime 4: Beyond',
+          'Kirby Air Riders',
+          'Monster Hunter Stories 3',
+          'Street Fighter 6',
+          'Resident Evil Requiem',
+          'PRAGMATA',
+          'Xenoblade Chronicles 3'
+        ];
+        const allOptions = Array.from(new Set([...popularKeywords, ...Array.from(charSuggestions)])).slice(0, 350);
+        datalist.innerHTML = allOptions.map(val => `<option value="${val.replace(/"/g, '&quot;')}"></option>`).join('');
+      }
+    }
+
+    function matchItemByCategory(item, cat) {
+      if (!cat || cat === 'ALL') return true;
+      if (cat === 'FAV') return favoriteKeys.has(getItemKey(item));
+      if (cat === '2026') return !!item.is2026;
+      if (cat === 'Mario Figures') {
+        return item.cat === 'Mario' && !(item.series && item.series.includes('Sports Superstars'));
+      }
+      if (cat === 'Zelda') return item.cat && item.cat.startsWith('Zelda');
+      if (cat === 'Smash') return item.cat === 'Smash' || (item.series && item.series.includes('Smash'));
+      if (cat === 'Street Fighter') {
+        const g = (item.game || '').toLowerCase();
+        const s = (item.series || '').toLowerCase();
+        return g.includes('street fighter') || s.includes('street fighter') || g.includes('fatal fury');
+      }
+      if (cat === 'Xenoblade') {
+        return (item.game || '').toLowerCase().includes('xenoblade') || (item.series || '').toLowerCase().includes('xenoblade');
+      }
+      if (cat === 'Pokemon') {
+        return item.cat === 'Pokemon' || (item.game || '').toLowerCase().includes('pokemon');
+      }
+      if (cat.startsWith('GAME:')) {
+        const targetGame = cat.slice(5);
+        return (item.game || item.series || 'Other') === targetGame;
+      }
+      return item.cat === cat;
+    }
+
     function selectQuickGame(qcat) {
       triggerHaptic();
       currentQuickGame = qcat;
-      document.querySelectorAll('.qgame-btn').forEach(btn => {
-        if (btn.dataset.qcat === qcat) {
-          btn.className = 'qgame-btn bg-indigo-600 text-white px-3 py-1.5 rounded-xl font-bold whitespace-nowrap shadow';
-        } else {
-          btn.className = 'qgame-btn bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap';
-        }
-      });
+      const qInput = document.getElementById('quickSearchInput');
+      if (qInput) qInput.value = '';
+
+      const qSelect = document.getElementById('quickGameSelect');
+      if (qSelect && qSelect.value !== qcat) qSelect.value = qcat;
+
+      const cSelect = document.getElementById('catalogGameSelect');
+      if (cSelect) {
+        cSelect.value = qcat;
+        activeFilter = qcat;
+        renderCatalogCards();
+      }
+
       renderQuickCharStrip();
       const list = getItemsByQuickCat(qcat);
       if (list.length > 0) {
@@ -1159,16 +1282,49 @@
       }
     }
 
+    function onQuickSearchInput() {
+      renderQuickCharStrip();
+      const q = (document.getElementById('quickSearchInput')?.value || '').trim();
+      const searchInCatalog = document.getElementById('searchInput');
+      if (searchInCatalog) {
+        searchInCatalog.value = q;
+        renderCatalogCards();
+      }
+    }
+
+    function clearQuickSearch() {
+      const qInput = document.getElementById('quickSearchInput');
+      if (qInput) qInput.value = '';
+      renderQuickCharStrip();
+    }
+
     function getItemsByQuickCat(qcat) {
-      if (qcat === '2026') return fullDb.filter(x => x.is2026);
-      if (qcat === 'Zelda') return fullDb.filter(x => x.cat.startsWith('Zelda'));
-      return fullDb.filter(x => x.cat === qcat);
+      const q = (document.getElementById('quickSearchInput')?.value || '').toLowerCase().trim();
+      if (q) {
+        return fullDb.filter(item =>
+          item.name.toLowerCase().includes(q) ||
+          (item.game && item.game.toLowerCase().includes(q)) ||
+          (item.series && item.series.toLowerCase().includes(q)) ||
+          (item.rewards && item.rewards.toLowerCase().includes(q)) ||
+          (q === '2026' && item.is2026)
+        );
+      }
+      return fullDb.filter(item => matchItemByCategory(item, qcat));
     }
 
     function renderQuickCharStrip() {
       const strip = document.getElementById('quickCharStrip');
+      const countEl = document.getElementById('quickStripCount');
       if (!strip) return;
-      const list = getItemsByQuickCat(currentQuickGame).slice(0, 30);
+      const fullList = getItemsByQuickCat(currentQuickGame);
+      if (countEl) countEl.textContent = `พบ ${fullList.length} ตัวละคร`;
+      const list = fullList.slice(0, 40);
+
+      if (list.length === 0) {
+        strip.innerHTML = `<div class="text-xs text-slate-400 py-2">ไม่พบตัวละครที่ค้นหา ลองพิมพ์ชื่อเกมหรือชื่อตัวละครอื่น</div>`;
+        return;
+      }
+
       strip.innerHTML = list.map(item => {
         const idx = fullDb.indexOf(item);
         const isCurrent = (activeTag.head === item.head && activeTag.tail === item.tail);
@@ -1200,19 +1356,12 @@
       return 'เข้าเมนู <b>amiibo</b> ภายในเกมเมื่อหน้าจอแจ้งให้สแกน ให้นำเครื่อง Allmiibo หรือเหรียญ NFC แตะที่ <b>แกนอนาล็อกขวาของ Joy-Con</b> ค้างไว้ 2 วินาที';
     }
 
-    function setFilterCategory(cat, btnEl) {
+    function setFilterCategory(cat) {
       triggerHaptic();
       activeFilter = cat;
       displayLimit = 40;
-      document.querySelectorAll('.cat-pill').forEach(btn => {
-        btn.classList.remove('bg-indigo-600', 'text-white');
-        btn.classList.add('bg-slate-800', 'text-slate-300');
-      });
-      const targetBtn = btnEl || (typeof event !== 'undefined' ? event.target : null);
-      if (targetBtn) {
-        targetBtn.classList.remove('bg-slate-800', 'text-slate-300');
-        targetBtn.classList.add('bg-indigo-600', 'text-white');
-      }
+      const cSelect = document.getElementById('catalogGameSelect');
+      if (cSelect && cSelect.value !== cat) cSelect.value = cat;
       renderCatalogCards();
     }
 
@@ -1228,27 +1377,22 @@
     }
 
     function getFilteredList() {
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
-      return fullDb.filter(item => {
-        const matchQ = !q || item.name.toLowerCase().includes(q) || item.game.toLowerCase().includes(q) || (item.series && item.series.toLowerCase().includes(q)) || (item.rewards && item.rewards.toLowerCase().includes(q)) || (q === '2026' && item.is2026);
-        let matchCat = (activeFilter === 'ALL');
-        if (activeFilter === 'FAV') {
-          matchCat = favoriteKeys.has(getItemKey(item));
-        } else if (activeFilter === '2026') {
-          matchCat = !!item.is2026;
-        } else if (activeFilter === 'Zelda') {
-          matchCat = item.cat.startsWith('Zelda');
-        } else if (activeFilter === 'Zelda BotW') {
-          matchCat = (item.cat === 'Zelda BotW');
-        } else if (activeFilter === 'Zelda TotK') {
-          matchCat = (item.cat === 'Zelda TotK');
-        } else if (activeFilter === 'Smash') {
-          matchCat = (item.cat === 'Smash' || (item.series && item.series.includes('Smash')));
-        } else if (activeFilter !== 'ALL') {
-          matchCat = (item.cat === activeFilter);
-        }
-        return matchQ && matchCat;
-      });
+      const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+      const matchesQuery = (item) =>
+        !q ||
+        item.name.toLowerCase().includes(q) ||
+        (item.game && item.game.toLowerCase().includes(q)) ||
+        (item.series && item.series.toLowerCase().includes(q)) ||
+        (item.rewards && item.rewards.toLowerCase().includes(q)) ||
+        (q === '2026' && item.is2026);
+
+      let list = fullDb.filter(item => matchesQuery(item) && matchItemByCategory(item, activeFilter));
+
+      // ถ้าพิมพ์ค้นหาชื่อเกม/ตัวละครที่อยู่นอกหมวดที่เลือกไว้ ให้ค้นหาจากทุกเกมทั้ง 950 ตัวอัตโนมัติ (ไม่ให้ขึ้น 0 รายการ)
+      if (q && list.length === 0 && activeFilter !== 'ALL') {
+        list = fullDb.filter(item => matchesQuery(item));
+      }
+      return list;
     }
 
     function renderCatalogCards() {
@@ -1835,6 +1979,7 @@
     (async function initApp() {
       loadFavorites();
       loadSavedRetailKey();
+      initGameDropdownsAndAutocomplete();
       await rebuildActiveTagBinary();
       renderQuickCharStrip();
       updateActiveFavBtn();
