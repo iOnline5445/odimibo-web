@@ -48,17 +48,220 @@
     .nfc-signal {
       animation: pulseNfc 2s infinite ease-in-out;
     }
+
+    /* ========================================================
+       GAME THEME ENGINE (10 Iconic Game Palettes)
+       ======================================================== */
+    :root, body[data-theme="odimibo"] {
+      --t-bg: #020617;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #020617 70%);
+      --t-panel: rgba(15, 23, 42, 0.94);
+      --t-border: #1e293b;
+      --t-accent: #6366f1;
+      --t-accent-hover: #4f46e5;
+      --t-accent-soft: rgba(99, 102, 241, 0.22);
+      --t-accent-text: #a5b4fc;
+      --t-shell-top: #f5f5f5;
+      --t-shell-bot: #d4d4d4;
+      --t-shell-border: #a3a3a3;
+      --t-oled-bg: #000000;
+      --t-oled-fg: #ffffff;
+      --t-oled-glow: rgba(34, 211, 238, 0.15);
+    }
+    body[data-theme="zelda"] {
+      --t-bg: #051811;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #11422f 0%, #051811 72%);
+      --t-panel: rgba(8, 34, 24, 0.94);
+      --t-border: #85621e;
+      --t-accent: #d97706;
+      --t-accent-hover: #b45309;
+      --t-accent-soft: rgba(245, 158, 11, 0.22);
+      --t-accent-text: #fde68a;
+      --t-shell-top: #fef08a;
+      --t-shell-bot: #ca8a04;
+      --t-shell-border: #854d0e;
+      --t-oled-bg: #02140e;
+      --t-oled-fg: #6ee7b7;
+      --t-oled-glow: rgba(52, 211, 153, 0.28);
+    }
+    body[data-theme="mario"] {
+      --t-bg: #1c0609;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #5c111b 0%, #18061c 72%);
+      --t-panel: rgba(36, 10, 18, 0.94);
+      --t-border: #7f1d1d;
+      --t-accent: #dc2626;
+      --t-accent-hover: #b91c1c;
+      --t-accent-soft: rgba(239, 68, 68, 0.24);
+      --t-accent-text: #fef08a;
+      --t-shell-top: #ef4444;
+      --t-shell-bot: #991b1b;
+      --t-shell-border: #fbbf24;
+      --t-oled-bg: #140404;
+      --t-oled-fg: #fef08a;
+      --t-oled-glow: rgba(250, 204, 21, 0.25);
+    }
+    body[data-theme="fe"] {
+      --t-bg: #060e24;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #172e6e 0%, #060e24 72%);
+      --t-panel: rgba(11, 23, 54, 0.94);
+      --t-border: #1e40af;
+      --t-accent: #2563eb;
+      --t-accent-hover: #1d4ed8;
+      --t-accent-soft: rgba(59, 130, 246, 0.24);
+      --t-accent-text: #bfdbfe;
+      --t-shell-top: #60a5fa;
+      --t-shell-bot: #1e3a8a;
+      --t-shell-border: #f59e0b;
+      --t-oled-bg: #030b1c;
+      --t-oled-fg: #93c5fd;
+      --t-oled-glow: rgba(96, 165, 250, 0.28);
+    }
+    body[data-theme="metroid"] {
+      --t-bg: #120904;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #4a1d06 0%, #090d16 74%);
+      --t-panel: rgba(28, 14, 8, 0.94);
+      --t-border: #9a3412;
+      --t-accent: #ea580c;
+      --t-accent-hover: #c2410c;
+      --t-accent-soft: rgba(249, 115, 22, 0.24);
+      --t-accent-text: #86efac;
+      --t-shell-top: #fb923c;
+      --t-shell-bot: #9a3412;
+      --t-shell-border: #22c55e;
+      --t-oled-bg: #021409;
+      --t-oled-fg: #4ade80;
+      --t-oled-glow: rgba(74, 222, 128, 0.3);
+    }
+    body[data-theme="kirby"] {
+      --t-bg: #210718;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #6b1648 0%, #210718 72%);
+      --t-panel: rgba(45, 11, 33, 0.94);
+      --t-border: #9d174d;
+      --t-accent: #ec4899;
+      --t-accent-hover: #db2777;
+      --t-accent-soft: rgba(236, 72, 153, 0.25);
+      --t-accent-text: #fbcfe8;
+      --t-shell-top: #f9a8d4;
+      --t-shell-bot: #ec4899;
+      --t-shell-border: #fde047;
+      --t-oled-bg: #1a0512;
+      --t-oled-fg: #fbcfe8;
+      --t-oled-glow: rgba(244, 114, 182, 0.3);
+    }
+    body[data-theme="mh"] {
+      --t-bg: #171007;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #452c0c 0%, #120d06 72%);
+      --t-panel: rgba(33, 23, 11, 0.94);
+      --t-border: #78350f;
+      --t-accent: #b45309;
+      --t-accent-hover: #92400e;
+      --t-accent-soft: rgba(217, 119, 6, 0.24);
+      --t-accent-text: #fcd34d;
+      --t-shell-top: #d97706;
+      --t-shell-bot: #78350f;
+      --t-shell-border: #fbbf24;
+      --t-oled-bg: #120c02;
+      --t-oled-fg: #fcd34d;
+      --t-oled-glow: rgba(245, 158, 11, 0.28);
+    }
+    body[data-theme="ac"] {
+      --t-bg: #041f1a;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #0f5243 0%, #041f1a 72%);
+      --t-panel: rgba(8, 43, 36, 0.94);
+      --t-border: #0d9488;
+      --t-accent: #10b981;
+      --t-accent-hover: #059669;
+      --t-accent-soft: rgba(16, 185, 129, 0.24);
+      --t-accent-text: #a7f3d0;
+      --t-shell-top: #a7f3d0;
+      --t-shell-bot: #34d399;
+      --t-shell-border: #fef08a;
+      --t-oled-bg: #031712;
+      --t-oled-fg: #a7f3d0;
+      --t-oled-glow: rgba(52, 211, 153, 0.28);
+    }
+    body[data-theme="pokemon"] {
+      --t-bg: #1a0808;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #5c1608 0%, #0f1126 74%);
+      --t-panel: rgba(31, 14, 24, 0.94);
+      --t-border: #b91c1c;
+      --t-accent: #eab308;
+      --t-accent-hover: #ca8a04;
+      --t-accent-soft: rgba(234, 179, 8, 0.24);
+      --t-accent-text: #fef08a;
+      --t-shell-top: #ef4444;
+      --t-shell-bot: #f8fafc;
+      --t-shell-border: #1e293b;
+      --t-oled-bg: #141102;
+      --t-oled-fg: #fef08a;
+      --t-oled-glow: rgba(250, 204, 21, 0.3);
+    }
+    body[data-theme="splatoon"] {
+      --t-bg: #130621;
+      --t-bg-grad: radial-gradient(circle at 50% 0%, #4c0d6b 0%, #0b1c08 75%);
+      --t-panel: rgba(28, 10, 46, 0.94);
+      --t-border: #a21caf;
+      --t-accent: #d946ef;
+      --t-accent-hover: #c026d3;
+      --t-accent-soft: rgba(217, 70, 239, 0.25);
+      --t-accent-text: #bef264;
+      --t-shell-top: #ec4899;
+      --t-shell-bot: #84cc16;
+      --t-shell-border: #d946ef;
+      --t-oled-bg: #0c0414;
+      --t-oled-fg: #bef264;
+      --t-oled-glow: rgba(163, 230, 53, 0.32);
+    }
+
+    body[data-theme] {
+      background-color: var(--t-bg) !important;
+      background-image: var(--t-bg-grad) !important;
+      background-attachment: fixed;
+      transition: background 0.3s ease;
+    }
+    body[data-theme] header,
+    body[data-theme] nav {
+      background-color: var(--t-panel) !important;
+      border-color: var(--t-border) !important;
+    }
+    body[data-theme] .bg-slate-900,
+    body[data-theme] .bg-slate-900\/95 {
+      background-color: var(--t-panel) !important;
+      border-color: var(--t-border) !important;
+    }
+    body[data-theme] #deviceShellBody {
+      background-image: linear-gradient(to bottom, var(--t-shell-top), var(--t-shell-bot)) !important;
+      border-color: var(--t-shell-border) !important;
+      transition: all 0.3s ease;
+    }
+    body[data-theme] #oledScreen {
+      background-color: var(--t-oled-bg) !important;
+      color: var(--t-oled-fg) !important;
+      box-shadow: inset 0 0 18px var(--t-oled-glow);
+    }
+    body[data-theme] #btnSendBle {
+      background-color: var(--t-accent) !important;
+      color: #ffffff !important;
+    }
+    body[data-theme="pokemon"] #btnSendBle {
+      color: #000000 !important;
+    }
+    body[data-theme] .nav-btn.active {
+      color: var(--t-accent-text) !important;
+      background-color: var(--t-accent-soft) !important;
+      border: 1px solid var(--t-border);
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
   <!-- ========================================================
-       TOP APP HEADER (OdimibO Custom Logo + Sliding TH/EN Switch + Quota/VIP Bar)
+       TOP APP HEADER (OdimibO Custom Logo + BLE + Gear Settings Button ⚙️)
        ======================================================== -->
   <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800 px-3 py-2">
     <div class="max-w-md mx-auto space-y-1.5">
       <div class="flex items-center justify-between gap-2">
-        <!-- Custom OdimibO Vector Emblem & Wordmark + Sliding TH|EN Switch -->
+        <!-- Custom OdimibO Vector Emblem & Wordmark -->
         <div class="flex items-center gap-2 min-w-0">
           <div class="w-9 h-9 rounded-xl bg-slate-950 border border-indigo-500/50 flex items-center justify-center shadow-lg flex-shrink-0 relative overflow-hidden">
             <svg viewBox="0 0 120 120" class="w-8 h-8">
@@ -78,25 +281,17 @@
             </svg>
           </div>
           <div class="min-w-0">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1.5">
               <h1 class="text-base font-black tracking-wider truncate leading-none">
                 <span class="text-cyan-400">O</span><span class="text-white">dimib</span><span class="text-rose-400">O</span>
               </h1>
-              <!-- ปุ่มสวิตช์เลื่อนสลับภาษา TH | EN -->
-              <div id="langToggleSwitch" onclick="toggleLanguage()" role="switch" aria-label="Toggle Language TH EN"
-                class="relative inline-flex items-center w-14 h-6 rounded-full bg-slate-950 border border-slate-700 p-0.5 cursor-pointer select-none shadow-inner flex-shrink-0">
-                <div id="langSwitchKnob" class="w-6 h-4.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 shadow transition-transform duration-200 transform translate-x-0"></div>
-                <div class="absolute inset-0 flex items-center justify-between px-1.5 text-[10px] font-black pointer-events-none">
-                  <span id="langSwitchLblTH" class="text-white">TH</span>
-                  <span id="langSwitchLblEN" class="text-slate-400">EN</span>
-                </div>
-              </div>
+              <span id="hdrLangPill" onclick="openVipModal()" class="cursor-pointer text-[9px] font-black px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-cyan-300">TH</span>
             </div>
             <p id="topSubStatus" class="text-[10px] text-slate-400 truncate mt-0.5">คลัง 950 OdimibO (ปี 2026 • NTAG215 Smart Tag)</p>
           </div>
         </div>
 
-        <!-- Quick Actions (Quota/VIP + BLE) -->
+        <!-- Quick Actions (Quota/VIP + BLE + Gear Settings Button ⚙️) -->
         <div class="flex items-center gap-1.5 flex-shrink-0">
           <button id="quotaBadgeBtn" onclick="openVipModal()" class="btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-amber-500/50 bg-amber-500/15 text-amber-300 flex items-center gap-1 shadow">
             <span id="quotaBadgeIcon">🎫</span>
@@ -106,21 +301,22 @@
             <span id="blePillDot" class="w-2 h-2 rounded-full bg-amber-400"></span>
             <span id="blePillLabel" class="text-slate-300 text-[11px]">BLE</span>
           </button>
+          <!-- ปุ่มเฟือง ⚙️ (ตั้งค่า / เปลี่ยนภาษา TH-EN / คู่มือวิธีใช้ / ใส่รหัส & KeyGen) -->
+          <button id="topGearBtn" onclick="openVipModal()" title="Settings / Language / Guide / KeyGen"
+            class="btn-active text-sm font-bold px-2.5 py-1.5 rounded-xl border border-indigo-500/50 bg-indigo-950/70 hover:bg-indigo-900/80 text-indigo-200 flex items-center justify-center shadow transition">
+            ⚙️
+          </button>
         </div>
       </div>
 
-      <!-- Sub-bar: Status & Manual Quick Link -->
+      <!-- Sub-bar: Status & Gear Menu Quick Link -->
       <div class="flex items-center justify-between text-[10px] bg-slate-950/80 border border-slate-800/90 rounded-xl px-2.5 py-1">
         <span id="cryptoStatusBadge" onclick="switchTab('tabManual')" class="cursor-pointer text-amber-300 font-bold truncate">
           ⚠️ ต้องใช้เครื่อง OdimibO BLE หรือเหรียญ NFC
         </span>
         <div class="flex items-center gap-2 flex-shrink-0">
-          <button onclick="openVipModal()" id="vipUpgradeLink" class="text-pink-400 hover:text-pink-300 font-extrabold">
-            💖 โดเนท / VIP / Admin
-          </button>
-          <span class="text-slate-700">|</span>
-          <button onclick="switchTab('tabManual')" id="topManualBtn" class="text-emerald-400 hover:text-emerald-300 font-bold">
-            📖 วิธีใช้
+          <button onclick="openVipModal()" id="vipUpgradeLink" class="text-indigo-300 hover:text-white font-extrabold flex items-center gap-1">
+            ⚙️ ตั้งค่า / ภาษา / วิธีใช้ / KeyGen
           </button>
         </div>
       </div>
@@ -136,6 +332,21 @@
          TAB 1: ตัวเครื่อง Allmiibo จำลอง & สลับเกมด่วน
          ---------------------------------------------------- -->
     <div id="tabDevice" class="tab-pane space-y-3.5">
+
+      <!-- แถบเลือกธีมสีตามเกมด่วน (10 Game Themes + Auto Sync) -->
+      <div class="bg-slate-900/95 border border-slate-800 rounded-2xl px-3 py-2 space-y-1.5 shadow-lg">
+        <div class="flex items-center justify-between">
+          <span id="lblQuickThemeTitle" class="text-[11px] font-extrabold text-white flex items-center gap-1">
+            <span>🎨</span> ธีมสีแอป & ตัวเครื่อง (Game Themes):
+          </span>
+          <button id="btnAutoThemeToggle" onclick="toggleAutoThemeBySeries()" class="text-[10px] font-bold px-2 py-0.5 rounded-lg border border-emerald-500/50 bg-emerald-500/20 text-emerald-300 transition">
+            🔄 เปลี่ยนสีตามเกม: เปิด
+          </button>
+        </div>
+        <div id="quickThemeStrip" class="flex gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
+          <!-- Rendered by renderThemeButtons() -->
+        </div>
+      </div>
 
       <!-- แถบเมนู 2 ชั้น: 1. เลือกตระกูลเกม ➔ 2. เลือกภาคของเกม (สั้นกระชับ พอดีจอมือถือ) -->
       <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-3 space-y-2 shadow-lg">
@@ -207,36 +418,36 @@
             </div>
             <div class="min-w-0">
               <div class="flex items-center gap-1.5">
-                <span class="text-[10px] bg-emerald-500 text-black font-extrabold px-1.5 py-0.2 rounded">กำลังใช้</span>
+                <span id="lblActiveBadge" class="text-[10px] bg-emerald-500 text-black font-extrabold px-1.5 py-0.2 rounded">กำลังใช้</span>
                 <span id="activeGameCategory" class="text-[11px] text-emerald-400 font-bold truncate">Fire Emblem Engage</span>
               </div>
               <h2 id="activeGameTitle" class="text-xs font-bold text-white truncate">Marth - เจ้าชายผู้กล้า</h2>
             </div>
           </div>
-          <button onclick="switchTab('tabManual')" class="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold px-2.5 py-1.5 rounded-xl shadow flex-shrink-0">
+          <button id="btnBannerHowToScan" onclick="switchTab('tabManual')" class="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold px-2.5 py-1.5 rounded-xl shadow flex-shrink-0">
             วิธีสแกน ❓
           </button>
         </div>
       </div>
 
-      <!-- Allmiibo Device Body Simulation -->
+      <!-- OdimibO Device Body Simulation -->
       <div class="relative pt-2">
         
         <!-- ปุ่มโยก 3 ปุ่มด้านบนตัวเครื่อง (Physical Top Rocker Switch) -->
         <div class="flex justify-center items-end gap-2.5 mb-[-6px] z-10 relative">
-          <button onclick="handleInput('LEFT')" title="ปุ่มซ้าย" class="btn-active bg-neutral-800 active:bg-neutral-900 text-neutral-300 border-t border-x border-neutral-600 px-4 py-2 rounded-t-xl text-[11px] font-bold shadow transition">
+          <button id="btnRockerLeft" onclick="handleInput('LEFT')" title="Left / Prev" class="btn-active bg-neutral-800 active:bg-neutral-900 text-neutral-300 border-t border-x border-neutral-600 px-4 py-2 rounded-t-xl text-[11px] font-bold shadow transition">
             ◀ ซ้าย (Prev)
           </button>
-          <button onclick="handleInput('OK')" title="ปุ่มตกลง" class="btn-active bg-neutral-900 active:bg-black text-amber-400 border-t-2 border-x border-amber-500/60 px-6 py-2.5 rounded-t-2xl text-xs font-black shadow-lg transition">
+          <button id="btnRockerOk" onclick="handleInput('OK')" title="Select / OK" class="btn-active bg-neutral-900 active:bg-black text-amber-400 border-t-2 border-x border-amber-500/60 px-6 py-2.5 rounded-t-2xl text-xs font-black shadow-lg transition">
             ● ตกลง (OK)
           </button>
-          <button onclick="handleInput('RIGHT')" title="ปุ่มขวา" class="btn-active bg-neutral-800 active:bg-neutral-900 text-neutral-300 border-t border-x border-neutral-600 px-4 py-2 rounded-t-xl text-[11px] font-bold shadow transition">
+          <button id="btnRockerRight" onclick="handleInput('RIGHT')" title="Right / Next" class="btn-active bg-neutral-800 active:bg-neutral-900 text-neutral-300 border-t border-x border-neutral-600 px-4 py-2 rounded-t-xl text-[11px] font-bold shadow transition">
             ขวา (Next) ▶
           </button>
         </div>
 
-        <!-- บอดี้พลาสติกสีขาว Allmiibo / Pixl.js OLED -->
-        <div class="bg-gradient-to-b from-neutral-100 to-neutral-300 p-4 rounded-[2.2rem] shadow-2xl border-b-6 border-neutral-400 relative">
+        <!-- บอดี้พลาสติก OdimibO OLED (เปลี่ยนสีตามธีมเกมได้) -->
+        <div id="deviceShellBody" class="bg-gradient-to-b from-neutral-100 to-neutral-300 p-4 rounded-[2.2rem] shadow-2xl border-b-6 border-neutral-400 relative">
           
           <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-10 bg-neutral-700 rounded-r"></div>
 
@@ -353,24 +564,23 @@
 
         <!-- คำแนะนำจุดสแกนในเกมของตัวละครที่เลือกอยู่ (Dynamic In-Game Scan Guide) -->
         <div id="inGameScanHint" class="bg-indigo-950/40 border border-indigo-500/30 rounded-xl p-2.5 text-xs text-slate-200 leading-relaxed">
-          <span class="font-bold text-indigo-300">🕹️ สแกนตอนไหนในเกมนี้:</span>
+          <span id="lblInGameScanTitle" class="font-bold text-indigo-300">🕹️ สแกนตอนไหนในเกมนี้:</span>
           <span id="inGameScanHintText">ใน <b>Fire Emblem Engage</b> ให้เดินไปที่ <b>ศาลา Gazebo (ใน Somniel)</b> ➔ กดเลือก <b>Scan Tag</b> ➔ นำเครื่อง OdimibO/เหรียญ NFC แตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></span>
         </div>
       </div>
 
-      <!-- สถานะกุญแจเข้ารหัส NTAG215 Key (key_retail.bin) -->
-      <div id="keyStatusBox" class="bg-slate-900 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+      <!-- กล่องใส่ KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอป -->
+      <div id="keyStatusBox" onclick="openVipModal()" class="cursor-pointer bg-slate-900 hover:bg-slate-800/90 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-3 flex items-center justify-between gap-2 transition">
         <div class="flex items-center gap-2.5 min-w-0">
-          <span id="keyStatusIcon" class="text-lg">🔐</span>
+          <span id="keyStatusIcon" class="text-lg">🔑</span>
           <div class="min-w-0">
-            <div id="keyStatusTitle" class="text-xs font-bold text-amber-300 truncate">สถานะ: โครงสร้าง OdimibO NTAG215 มาตรฐาน (CC: F110FFEE)</div>
-            <div id="keyStatusDesc" class="text-xs text-slate-400 truncate">ใส่ไฟล์ key_retail.bin (160B) หากต้องการเข้ารหัสไปเขียนเหรียญ NFC เปล่า</div>
+            <div id="keyStatusTitle" class="text-xs font-bold text-amber-300 truncate">ปลดล็อกเพิ่มความสามารถแอป (KeyGen)</div>
+            <div id="keyStatusDesc" class="text-xs text-slate-400 truncate">ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอปและใช้งานได้ไม่จำกัด</div>
           </div>
         </div>
-        <label class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-3 py-1.5 rounded-xl cursor-pointer whitespace-nowrap shadow flex-shrink-0">
-          🔑 ใส่ Key
-          <input type="file" id="keyFileInput" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
-        </label>
+        <button type="button" onclick="event.stopPropagation(); openVipModal();" class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-3 py-1.5 rounded-xl cursor-pointer whitespace-nowrap shadow flex-shrink-0">
+          <span id="lblBtnLoadKey">🔑 ใส่ KeyGen</span>
+        </button>
       </div>
 
       <!-- ข้อความคุ้มครองสิทธิ์ทางกฎหมาย (Independent Hardware Utility Disclaimer) -->
@@ -393,7 +603,7 @@
             <h3 id="lblCatalogHeaderTitle" class="text-xs font-bold text-white truncate">คลัง OdimibO แยกตามภาค</h3>
             <span id="amiiboCountBadge" class="text-[11px] bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 px-2 py-0.5 rounded-lg font-mono font-bold flex-shrink-0">950 ตัว</span>
           </div>
-          <button onclick="batchSendCategoryToBLE()" class="text-[11px] bg-indigo-600/20 hover:bg-indigo-600/40 text-indigo-300 border border-indigo-500/40 px-2 py-1 rounded-lg font-bold flex-shrink-0">
+          <button id="btnBatchSendBle" onclick="batchSendCategoryToBLE()" class="text-[11px] bg-indigo-600/20 hover:bg-indigo-600/40 text-indigo-300 border border-indigo-500/40 px-2 py-1 rounded-lg font-bold flex-shrink-0">
             📦 ส่งเข้าเครื่อง OdimibO
           </button>
         </div>
@@ -401,7 +611,7 @@
         <!-- 1. เลือกซีรีส์เกม & 2. เลือกภาคของเกม (ข้อความสั้น ไม่ล้นจอมือถือ) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <div>
-            <label for="catalogSeriesSelect" class="text-[11px] font-bold text-indigo-300 block mb-0.5">🎮 1. เลือกซีรีส์เกม:</label>
+            <label id="lblCatStep1Series" for="catalogSeriesSelect" class="text-[11px] font-bold text-indigo-300 block mb-0.5">🎮 1. เลือกซีรีส์เกม:</label>
             <select id="catalogSeriesSelect" onchange="onSeriesChange(this.value, 'catalog')" class="w-full bg-slate-950 border border-indigo-500/50 rounded-xl px-2.5 py-2 text-xs font-bold text-white focus:outline-none focus:border-indigo-400 truncate">
               <option value="ALL">🌐 ทุกเกมทั้งหมด (950)</option>
               <option value="Fire Emblem">⚔️ Fire Emblem (13)</option>
@@ -423,7 +633,7 @@
           </div>
 
           <div>
-            <label for="catalogSubGameSelect" class="text-[11px] font-bold text-emerald-300 block mb-0.5">💿 2. เลือกภาคของเกม:</label>
+            <label id="lblCatStep2SubGame" for="catalogSubGameSelect" class="text-[11px] font-bold text-emerald-300 block mb-0.5">💿 2. เลือกภาคของเกม:</label>
             <select id="catalogSubGameSelect" onchange="onSubGameChange(this.value, 'catalog')" class="w-full bg-slate-950 border border-emerald-500/50 rounded-xl px-2.5 py-2 text-xs font-bold text-emerald-300 focus:outline-none focus:border-emerald-400 truncate">
               <!-- Populated dynamically by JS -->
             </select>
@@ -434,7 +644,7 @@
         <div class="relative">
           <input type="text" id="searchInput" list="amiiboAutocompleteList" oninput="filterAmiibos()" placeholder="🔍 พิมพ์ชื่อเกม หรือ ตัวละคร (เช่น Engage, Odyssey, Zelda)..." 
             class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-3 pr-14 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-400">
-          <button onclick="clearSearch()" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-[11px] px-2 py-0.5 rounded-lg">ล้าง</button>
+          <button id="btnClearCatalogSearch" onclick="clearSearch()" class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-[11px] px-2 py-0.5 rounded-lg">ล้าง</button>
         </div>
 
         <!-- Autocomplete Datalist -->
@@ -448,7 +658,7 @@
 
       <!-- ปุ่มโหลดเพิ่มเติม -->
       <div id="loadMoreBox" class="text-center pt-1 pb-2 hidden">
-        <button onclick="loadMoreCards()" class="btn-active bg-slate-800 hover:bg-slate-700 text-indigo-300 text-xs font-semibold py-2.5 px-5 rounded-xl border border-slate-700 shadow">
+        <button id="btnLoadMoreCards" onclick="loadMoreCards()" class="btn-active bg-slate-800 hover:bg-slate-700 text-indigo-300 text-xs font-semibold py-2.5 px-5 rounded-xl border border-slate-700 shadow">
           ⬇️ โหลดตัวละครเพิ่มอีก 40 รายการ
         </button>
       </div>
@@ -456,151 +666,263 @@
     </div>
 
     <!-- ----------------------------------------------------
-         TAB 3: คู่มือการใช้งานทีละขั้นตอน (Step-by-Step Guide) & ตั้งค่า
+         TAB 3: คู่มือการใช้งานทีละขั้นตอน (Step-by-Step Guide TH / EN) & ตั้งค่า
          ---------------------------------------------------- -->
     <div id="tabManual" class="tab-pane hidden space-y-4">
       
-      <!-- ส่วนที่ 1: ขั้นตอนการกดใช้งานตั้งแต่ต้นจนจบ (4 ขั้นตอนเข้าใจง่าย) -->
-      <div class="bg-slate-900 p-4 rounded-2xl border border-indigo-500/40 space-y-3 shadow-lg">
-        <div class="flex items-center gap-2 border-b border-slate-800 pb-2.5">
-          <span class="text-xl">📘</span>
-          <div>
-            <h2 class="text-sm font-extrabold text-white">คู่มือการใช้งานทีละขั้นตอน (กดอะไร ➔ สแกนยังไง)</h2>
-            <p class="text-xs text-indigo-300">ทำตามลำดับ 1 ➔ 2 ➔ 3 ➔ 4 ด้านล่างนี้ สแกนติดแน่นอน 100%</p>
-          </div>
-        </div>
-
-        <div class="space-y-2.5 text-xs">
-          <!-- Step 1 -->
-          <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
-            <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 1</span>
-            <div class="space-y-1">
-              <div class="font-bold text-white">วิธีเลือกเกม & เปลี่ยนตัวละคร Amiibo</div>
-              <p class="text-slate-300 leading-relaxed">
-                • <b>วิธีด่วน (หน้าแรก 🎮):</b> แตะปุ่มชื่อเกมด้านบนสุด (เช่น <b>⚔️ Fire Emblem</b>, <b>🍄 Super Mario</b>, <b>🔥 ออกใหม่ 2026</b>, <b>🏹 Zelda</b>) แล้วแตะรูปตัวละครในแถบเลื่อนได้เลย หรือกดปุ่ม <b>◀ ซ้าย / ขวา ▶</b> บนหัวเครื่องจำลอง<br>
-                • <b>วิธีค้นหาทั้งหมด (แท็บ 📚 คลัง 950 ตัว):</b> พิมพ์ชื่อตัวละครหรือชื่อเกมในช่องค้นหา แล้วกดปุ่มสีม่วง <b>"📲 เลือกตัวนี้"</b>
-              </p>
+      <!-- คู่มือภาษาไทย (แสดงเมื่อเลือกภาษา TH) -->
+      <div id="manualContentTH" class="space-y-4">
+        <!-- ส่วนที่ 1: ขั้นตอนการกดใช้งานตั้งแต่ต้นจนจบ (4 ขั้นตอนเข้าใจง่าย) -->
+        <div class="bg-slate-900 p-4 rounded-2xl border border-indigo-500/40 space-y-3 shadow-lg">
+          <div class="flex items-center gap-2 border-b border-slate-800 pb-2.5">
+            <span class="text-xl">📘</span>
+            <div>
+              <h2 class="text-sm font-extrabold text-white">คู่มือการใช้งาน OdimibO ทีละขั้นตอน (กดอะไร ➔ สแกนยังไง)</h2>
+              <p class="text-xs text-indigo-300">ทำตามลำดับ 1 ➔ 2 ➔ 3 ➔ 4 ด้านล่างนี้ สแกนติดแน่นอน 100%</p>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
-            <span class="bg-emerald-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 2</span>
-            <div class="space-y-1">
-              <div class="font-bold text-emerald-300">นำข้อมูลไปแตะสแกน (เลือกวิธีตามอุปกรณ์ที่มี)</div>
-              <p class="text-rose-300 font-semibold">⚠️ ห้ามนำหน้าจอมือถือไปทาบกับจอย Switch โดยตรง (เพราะมือถือล็อกคลื่น NFC Type 2)</p>
-              <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1.5 mt-1 text-slate-200">
-                <div><b>🅰️ กรณีมีเครื่อง Allmiibo / Pixl.js / AmiiboLink:</b><br>1) บนตัวเครื่องจริง เลือกเมนู <code>AmiiboLink</code> หรือเปิด Bluetooth<br>2) บนเว็บ กดปุ่ม <b>"BLE"</b> มุมขวาบนเพื่อจับคู่ ➔ กดปุ่มสีม่วง <b>"📡 ส่งเข้า Allmiibo (BLE)"</b><br>3) ระบบจะสร้างโฟลเดอร์แยกตามเกม (เช่น <code>E:/Fire_Emblem/</code>) ในเครื่องให้อัตโนมัติ!</div>
-                <div class="border-t border-slate-800 pt-1.5"><b>🅱️ กรณีใช้เหรียญ/สติกเกอร์ NFC NTAG215 (ใบละ 5 บาท):</b><br>1) กดปุ่ม <b>"📂 เลือกไฟล์ key_retail.bin"</b> ในกล่องด้านล่าง (ทำครั้งเดียว)<br>2) กดปุ่มสีเขียว <b>"💾 .bin (NFC)"</b> เพื่อโหลดไฟล์ลงมือถือ<br>3) เปิดแอป <b>TagMo</b> (Android) หรือ <b>NFC Tools / AmiiBoss</b> (iPhone) เขียนไฟล์ลงเหรียญ NTAG215</div>
+          <div class="space-y-2.5 text-xs">
+            <!-- Step 1 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 1</span>
+              <div class="space-y-1">
+                <div class="font-bold text-white">วิธีเลือกเกม & เปลี่ยนโปรไฟล์ OdimibO</div>
+                <p class="text-slate-300 leading-relaxed">
+                  • <b>วิธีด่วน (หน้าแรก 🎮):</b> เลือก <b>1. ซีรีส์เกม</b> และ <b>2. ภาคของเกม</b> ด้านบนสุด แล้วแตะรูปตัวละครในแถบเลื่อนได้เลย หรือกดปุ่ม <b>◀ ซ้าย / ขวา ▶</b> บนหัวเครื่องจำลอง<br>
+                  • <b>วิธีค้นหาทั้งหมด (แท็บ 📚 คลัง 950 ตัว):</b> พิมพ์ชื่อตัวละครหรือชื่อเกมในช่องค้นหา แล้วกดปุ่มสีม่วง <b>"📲 เลือกใช้"</b>
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-emerald-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 2</span>
+              <div class="space-y-1">
+                <div class="font-bold text-emerald-300">นำข้อมูลไปแตะสแกน (เลือกวิธีตามอุปกรณ์ที่มี)</div>
+                <p class="text-rose-300 font-semibold">⚠️ ห้ามนำหน้าจอมือถือไปทาบกับจอยเกมโดยตรง (เพราะมือถือล็อกคลื่น NFC Type 2)</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1.5 mt-1 text-slate-200">
+                  <div><b>🅰️ กรณีมีเครื่องจำลอง OdimibO BLE / Pixl.js:</b><br>1) เปิด Bluetooth บนตัวเครื่องจำลอง<br>2) บนเว็บ กดปุ่ม <b>"BLE"</b> มุมขวาบนเพื่อจับคู่ ➔ กดปุ่มสีม่วง <b>"📡 ส่งเข้า OdimibO (BLE)"</b><br>3) ระบบจะสร้างโฟลเดอร์แยกตามเกม (เช่น <code>E:/Fire_Emblem/</code>) ในเครื่องให้อัตโนมัติ!</div>
+                  <div class="border-t border-slate-800 pt-1.5"><b>🅱️ กรณีใช้เหรียญ/สติกเกอร์ NFC NTAG215:</b><br>1) กดปุ่ม <b>"📂 เลือกไฟล์ key_retail.bin"</b> ในกล่องด้านล่าง (ทำครั้งเดียว)<br>2) กดปุ่มสีเขียว <b>"💾 .bin (NFC)"</b> เพื่อโหลดไฟล์ลงมือถือ<br>3) เปิดแอป <b>TagMo</b> (Android) หรือ <b>NFC Tools / AmiiBoss</b> (iPhone) เขียนไฟล์ลงเหรียญ NTAG215</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-amber-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 3</span>
+              <div class="space-y-1">
+                <div class="font-bold text-amber-300">เปิดโหมดสแกนในเกม แล้วแตะที่อนาล็อกขวา (R-Stick)</div>
+                <p class="text-slate-300 leading-relaxed">
+                  ต้องกดเข้าเมนูสแกน <b>ภายในเกมก่อน</b> (ดูวิธีเข้าเมนูของแต่ละเกมในตารางด้านล่าง) เมื่อหน้าจอแจ้งให้แตะสแกน จึงนำ <b>เครื่องจำลอง OdimibO หรือเหรียญ NFC</b> ไปแตะค้างไว้ที่ <b>แกนอนาล็อกขวา (R-Stick)</b> 2 วินาที
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-fuchsia-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 4</span>
+              <div class="space-y-1">
+                <div class="font-bold text-fuchsia-300">ทริคสแกนซ้ำตัวเดิมได้ไม่จำกัดครั้งในวันเดียว!</div>
+                <p class="text-slate-300 leading-relaxed">
+                  ปกติเกมจะจำกัดให้สแกนตัวเดิมได้วันละ 1 ครั้ง ➔ ให้กดปุ่มสีเหลือง <b>"🎲 สุ่ม UID ใหม่ (สแกนซ้ำ)"</b> บนหน้าเว็บ แล้วกดส่งเข้าเครื่องอีกครั้ง เครื่องเกมจะเข้าใจว่าเป็นแท็กใบใหม่ทันที!
+                </p>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Step 3 -->
-          <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
-            <span class="bg-amber-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 3</span>
-            <div class="space-y-1">
-              <div class="font-bold text-amber-300">เปิดโหมดสแกนในเกม Switch แล้วแตะที่อนาล็อกขวา (R-Stick)</div>
-              <p class="text-slate-300 leading-relaxed">
-                ต้องกดเข้าเมนูรับ Amiibo <b>ภายในเกมก่อน</b> (ดูวิธีเข้าเมนูของแต่ละเกมในตารางด้านล่าง) เมื่อหน้าจอทีวี/Switch บอกให้แตะ Amiibo จึงนำ <b>เครื่อง Allmiibo หรือเหรียญ NFC</b> ไปแตะค้างไว้ที่ <b>แกนอนาล็อกขวาของ Joy-Con (หรือตรงกลางจอย Pro Controller)</b> 2 วินาที
-              </p>
+        <!-- ส่วนที่ 2 (TH): ตารางวิธีเข้าจุดสแกนในแต่ละเกม -->
+        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
+          <div class="flex items-center gap-2 border-b border-slate-800 pb-2">
+            <span class="text-lg">🎮</span>
+            <div>
+              <h3 class="text-sm font-extrabold text-white">ในเกมต้องกดอะไร? สแกนตอนไหน? (แยกตามภาค)</h3>
+              <p class="text-xs text-slate-400">สรุปจุดกดเรียกสแกนของแต่ละเกมยอดฮิต</p>
             </div>
           </div>
 
-          <!-- Step 4 -->
-          <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
-            <span class="bg-fuchsia-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 4</span>
-            <div class="space-y-1">
-              <div class="font-bold text-fuchsia-300">ทริคสแกนซ้ำตัวเดิมได้ไม่จำกัดครั้งในวันเดียว!</div>
-              <p class="text-slate-300 leading-relaxed">
-                ปกติเกมจะจำกัดให้สแกนตุ๊กตาตัวเดิมได้วันละ 1 ครั้ง ➔ ให้กดปุ่มสีเหลือง <b>"🎲 สุ่ม UID ใหม่ (สแกนซ้ำ)"</b> บนหน้าเว็บ แล้วกดส่งเข้าเครื่อง Allmiibo อีกครั้ง เครื่อง Switch จะเข้าใจว่าเป็นตุ๊กตาตัวใหม่ทันที!
+          <div class="space-y-2.5 text-xs">
+            <div class="bg-rose-950/25 border border-rose-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-rose-300 text-sm">⚔️ ตระกูล Fire Emblem (ครบทุกภาค)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Fire Emblem Engage:</b> เล่นถึงฉากที่ 4 เปิดฐานทัพ <b>Somniel</b> ➔ เดินไปที่ <b>ศาลา Gazebo</b> ➔ กดสำรวจแล้วแตะสแกนรับตั๋วชุด (Fashion Ticket) & ตั๋วเพลง (Music Ticket)<br>
+                • <b>Fire Emblem: Three Houses:</b> เดินสำรวจโรงเรียน <b>Garreg Mach Monastery</b> ไปที่ศาลา <b>Gazebo</b> ➔ กดสแกนเพื่อปลดล็อกเพลงรบพิเศษและทางเข้า <b>Holy Tomb</b><br>
+                • <b>Fire Emblem Warriors / Three Hopes:</b> ที่เมนูค่ายพักแรม (Base Camp Menu) ➔ เลือก <b>System ➔ Tag Scan</b> ➔ แตะรับอาวุธเทพและแร่ตีบวกได้วันละ 5 ครั้ง<br>
+                • <b>Fire Emblem Echoes / Fates:</b> ใน <i>Echoes</i> เข้าเมนู <b>Mila's Turnwheel</b> เพื่อเรียกวิญญาณผู้กล้าช่วยรบ / ใน <i>Fates</i> ไปที่ <b>Crystal Ball ใน My Castle</b> เพื่อเชิญตัวละครเข้ากองทัพ
+              </p>
+            </div>
+
+            <div class="bg-amber-950/25 border border-amber-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-amber-300 text-sm">🍄 ตระกูล Super Mario (ครบทุกภาค)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Super Mario Odyssey:</b> ขณะเดินในด่าน กดปุ่ม <b>ลูกศรขวา (<code>▶</code> D-Pad Right) ค้างไว้</b> แล้วแตะที่อนาล็อกขวา (รับอมตะ/หัวใจเพิ่ม/ชุดพิเศษทันที) หรือคุยกับหุ่นข้างยานเพื่อหา Power Moon!<br>
+                • <b>Super Mario 3D World + Bowser's Fury:</b> ขณะอยู่ในด่าน กดปุ่ม <b>ลูกศรซ้าย (<code>◀</code> D-Pad Left) ค้างไว้</b> แล้วแตะ <b>Cat Mario</b> เพื่อเสก <b>กระดิ่งแมวขาวอมตะ (White Cat Bell)</b> ทันที!<br>
+                • <b>Mario Kart 8 Deluxe:</b> ที่หน้าเมนูหลักแรกสุด ➔ เลือกเมนูสแกนด้านล่าง ➔ แตะตัวละครเพื่อปลดล็อกชุดแข่ง Mii Racing Suit<br>
+                • <b>Super Mario Bros. Wonder / Galaxy / Donkey Kong Bananza:</b> กดปุ่ม <b><code>+</code> (Pause Menu)</b> ➔ เลือกไอคอนสแกน แล้วแตะที่อนาล็อกขวา
+              </p>
+            </div>
+
+            <div class="bg-cyan-950/25 border border-cyan-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-cyan-300 text-sm">🏹 Zelda: Breath of the Wild & 🗡️ Tears of the Kingdom</div>
+              <p class="text-slate-200 leading-relaxed">
+                1) เปิดใช้งานก่อน: กดปุ่ม <code>+</code> ➔ แท็บ <b>System (ฟันเฟือง) ➔ Options ➔ NFC Tag ➔ เลือก Enable</b><br>
+                2) วิธีเรียกใช้: กดปุ่ม <b><code>L</code> ค้างไว้</b> เพื่อเปิดวงล้อพลัง ➔ เลือกสัญลักษณ์สแกน<br>
+                3) กดปุ่ม <code>L</code> อีก 1 ครั้งให้เกิด <b>วงกลมเรืองแสงบนพื้น</b> ➔ นำเครื่อง OdimibO หรือเหรียญ NFC แตะที่อนาล็อกขวา ของรางวัลและหีบสมบัติจะหล่นลงมาทันที!
+              </p>
+            </div>
+
+            <div class="bg-fuchsia-950/25 border border-fuchsia-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-fuchsia-300 text-sm">🔥 เกมปี 2025–2026 (Splatoon 3 / Metroid Prime 4 / Kirby Air Riders / SF6)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Splatoon 3 / Raiders:</b> เดินไปที่ <b>กล่องแพ็กเกจขนาดใหญ่</b> ในจัตุรัสเมือง Splatsville ➔ กดปุ่ม <code>A</code> สำรวจกล่องแล้วแตะสแกนรับชุดเกียร์ครบเซ็ต<br>
+                • <b>Metroid Prime 4: Beyond / Kirby Air Riders / Street Fighter 6:</b> เข้าหน้าเมนูหลัก (Main Menu / Options) ➔ เลือกหัวข้อสแกนแท็ก แล้วแตะที่อนาล็อกขวา
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ส่วนที่ 2: ตารางวิธีเข้าจุดสแกน Amiibo ในแต่ละเกม (ต้องกดอะไร สแกนตอนไหน?) -->
-      <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
-        <div class="flex items-center gap-2 border-b border-slate-800 pb-2">
-          <span class="text-lg">🎮</span>
-          <div>
-            <h3 class="text-sm font-extrabold text-white">ในเกมต้องกดอะไร? สแกน Amiibo ตอนไหน? (แยกตามเกม)</h3>
-            <p class="text-xs text-slate-400">สรุปจุดกดเรียกสแกน Amiibo ของแต่ละเกมยอดฮิต</p>
+      <!-- คู่มือภาษาอังกฤษ (แสดงเมื่อเลื่อนสวิตช์เป็น EN) -->
+      <div id="manualContentEN" class="hidden space-y-4">
+        <!-- Part 1 (EN): 4-Step Quick Start Guide -->
+        <div class="bg-slate-900 p-4 rounded-2xl border border-indigo-500/40 space-y-3 shadow-lg">
+          <div class="flex items-center gap-2 border-b border-slate-800 pb-2.5">
+            <span class="text-xl">📘</span>
+            <div>
+              <h2 class="text-sm font-extrabold text-white">Step-by-Step OdimibO User Guide (How to Select & Scan)</h2>
+              <p class="text-xs text-indigo-300">Follow Steps 1 ➔ 2 ➔ 3 ➔ 4 below for 100% reliable scanning</p>
+            </div>
+          </div>
+
+          <div class="space-y-2.5 text-xs">
+            <!-- Step 1 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 1</span>
+              <div class="space-y-1">
+                <div class="font-bold text-white">Select Game Series, Title & OdimibO Profile</div>
+                <p class="text-slate-300 leading-relaxed">
+                  • <b>Quick Switch (Home Tab 🎮):</b> Choose <b>1. Game Series</b> and <b>2. Game Title</b> at the top, then tap any character icon in the horizontal strip (or press <b>◀ Left / Right ▶</b> on the virtual device).<br>
+                  • <b>Full Database Search (📚 950 DB Tab):</b> Type any game or character name in the search box and tap <b>"📲 Select"</b>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-emerald-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 2</span>
+              <div class="space-y-1">
+                <div class="font-bold text-emerald-300">Transfer Profile to Hardware or Write to NTAG215 Coin</div>
+                <p class="text-rose-300 font-semibold">⚠️ Do NOT tap your phone screen directly on the controller (mobile OSes block NFC Type 2 tag emulation).</p>
+                <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 space-y-1.5 mt-1 text-slate-200">
+                  <div><b>🅰️ Using OdimibO BLE / Pixl.js Hardware Emulator:</b><br>1) Turn on Bluetooth on your emulator device.<br>2) On this web app, tap <b>"BLE"</b> (top right) to pair ➔ tap <b>"📡 Send to OdimibO (BLE)"</b>.<br>3) Note: On iPhone/iPad, open this website inside the free <b>Bluefy – Web BLE Browser</b> app.</div>
+                  <div class="border-t border-slate-800 pt-1.5"><b>🅱️ Using Blank NTAG215 NFC Coins / Stickers:</b><br>1) Tap <b>"📂 1. Select key_retail.bin"</b> below (one-time setup; saved in browser).<br>2) Tap <b>"💾 .bin (NFC)"</b> to download the signed 540-byte binary.<br>3) Write the <code>.bin</code> file to a blank NTAG215 coin using <b>TagMo</b> (Android) or <b>NFC Tools / AmiiBoss</b> (iOS).</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-amber-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 3</span>
+              <div class="space-y-1">
+                <div class="font-bold text-amber-300">Activate In-Game Scan Mode & Touch Right Stick (R-Stick)</div>
+                <p class="text-slate-300 leading-relaxed">
+                  First, open the NFC scan menu <b>inside your game</b> (or test directly in <b>System Settings ⚙️ ➔ amiibo ➔ Register Owner</b>). When prompted on screen, hold your <b>OdimibO device or NTAG215 coin</b> on the <b>Right Joy-Con Analog Stick (R-Stick)</b> for 2 seconds.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
+              <span class="bg-fuchsia-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 4</span>
+              <div class="space-y-1">
+                <div class="font-bold text-fuchsia-300">Pro Tip: Unlimited Rescans on the Same Day!</div>
+                <p class="text-slate-300 leading-relaxed">
+                  Games normally limit each figure to once per day ➔ Simply tap the yellow <b>"🎲 Randomize UID (Rescan)"</b> button and send it to your OdimibO device again. The console will recognize it as a brand-new figure!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="space-y-2.5 text-xs">
-          <!-- Fire Emblem All Games -->
-          <div class="bg-rose-950/25 border border-rose-500/30 p-3 rounded-xl space-y-1.5">
-            <div class="font-extrabold text-rose-300 text-sm">⚔️ ตระกูล Fire Emblem (ครบทุกภาค)</div>
-            <p class="text-slate-200 leading-relaxed">
-              • <b>Fire Emblem Engage:</b> เล่นจนถึงฉากที่ 4 จะเปิดฐานทัพ <b>Somniel</b> ➔ เดินไปที่ <b>ศาลา Amiibo Gazebo</b> (สวนด้านข้าง) ➔ กดสำรวจเลือก <b>"Scan amiibo"</b> ➔ แตะตัวละคร Fire Emblem ทั้ง 13 ตัวเพื่อรับตั๋วชุด (Fashion Ticket) & ตั๋วเพลง (Music Ticket)<br>
-              • <b>Fire Emblem: Three Houses:</b> เดินสำรวจโรงเรียน <b>Garreg Mach Monastery</b> ไปที่ศาลา <b>Amiibo Gazebo</b> (ใกล้สะพานทางเข้า) ➔ กดสแกนเพื่อปลดล็อกเพลงรบพิเศษและทางเข้า <b>Holy Tomb</b><br>
-              • <b>Fire Emblem Warriors / Three Hopes:</b> ที่หน้าเมนูค่ายพักแรม (Base Camp Menu) ➔ เลือกหัวข้อ <b>System ➔ amiibo</b> ➔ แตะรับอาวุธเทพและแร่ตีบวกได้วันละ 5 ครั้ง<br>
-              • <b>Fire Emblem Echoes / Fates (3DS):</b> ใน <i>Echoes</i> เข้าเมนู <b>Mila's Turnwheel ➔ Amiibo</b> เพื่อเรียกวิญญาณผู้กล้าช่วยรบ / ใน <i>Fates</i> ไปที่ <b>Crystal Ball ใน My Castle</b> เพื่อเชิญ Marth, Ike, Lucina, Robin เข้ากองทัพ
-            </p>
+        <!-- Part 2 (EN): Per-Game Scan Locations & Button Guide -->
+        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
+          <div class="flex items-center gap-2 border-b border-slate-800 pb-2">
+            <span class="text-lg">🎮</span>
+            <div>
+              <h3 class="text-sm font-extrabold text-white">Where & When to Scan in Each Game (By Series)</h3>
+              <p class="text-xs text-slate-400">Quick reference for activating NFC scanning across major titles</p>
+            </div>
           </div>
 
-          <!-- Super Mario All Games -->
-          <div class="bg-amber-950/25 border border-amber-500/30 p-3 rounded-xl space-y-1.5">
-            <div class="font-extrabold text-amber-300 text-sm">🍄 ตระกูล Super Mario (ครบทุกภาค)</div>
-            <p class="text-slate-200 leading-relaxed">
-              • <b>Super Mario Odyssey:</b> ขณะเดินเล่นในด่าน ให้กดปุ่ม <b>ลูกศรขวา (<code>▶</code> D-Pad Right) ค้างไว้</b> แล้วแตะ Amiibo ที่อนาล็อกขวา (รับอมตะ/หัวใจเพิ่ม/ชุดพิเศษทันที) หรือคุยกับหุ่น <b>Uncle amiibo</b> ข้างยานเพื่อเปิดเรดาร์หา Power Moon!<br>
-              • <b>Super Mario 3D World + Bowser's Fury:</b> ขณะอยู่ในด่าน ให้กดปุ่ม <b>ลูกศรซ้าย (<code>◀</code> D-Pad Left) ค้างไว้</b> แล้วแตะ <b>Cat Mario</b> เพื่อเสก <b>กระดิ่งแมวขาวอมตะ (White Cat Bell)</b> ทันที!<br>
-              • <b>Mario Kart 8 Deluxe:</b> ที่หน้าเมนูหลักแรกสุด ➔ เลื่อนลงมาเลือกปุ่ม <b>"amiibo"</b> ➔ แตะตัวละครเพื่อปลดล็อกชุดแข่ง Mii Racing Suit<br>
-              • <b>Super Mario Bros. Wonder / Galaxy / Donkey Kong Bananza:</b> กดปุ่ม <b><code>+</code> (Pause Menu)</b> ➔ เลือกไอคอน <b>amiibo</b> แล้วแตะที่อนาล็อกขวา
-            </p>
-          </div>
+          <div class="space-y-2.5 text-xs">
+            <div class="bg-rose-950/25 border border-rose-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-rose-300 text-sm">⚔️ Fire Emblem Series (All Titles)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Fire Emblem Engage:</b> Reach Chapter 4 to unlock the <b>Somniel</b> ➔ walk to the <b>Gazebo</b> ➔ select <b>"Scan"</b> ➔ scan all 13 Fire Emblem profiles for Fashion Tickets & Music Tickets.<br>
+                • <b>Fire Emblem: Three Houses:</b> Explore <b>Garreg Mach Monastery</b> and visit the <b>Gazebo</b> ➔ scan to unlock legacy battle music and items in the <b>Holy Tomb</b>.<br>
+                • <b>Fire Emblem Warriors / Three Hopes:</b> In the Base Camp menu ➔ select <b>System ➔ NFC Scan</b> ➔ claim top-tier weapons & Smithing Stones (up to 5 times/day).<br>
+                • <b>Fire Emblem Echoes / Fates:</b> In <i>Echoes</i>, open <b>Mila's Turnwheel</b> to summon Illusory Hero allies; in <i>Fates</i>, visit the <b>Crystal Ball in My Castle</b> to recruit heroes.
+              </p>
+            </div>
 
-          <!-- Zelda BotW & TotK -->
-          <div class="bg-cyan-950/25 border border-cyan-500/30 p-3 rounded-xl space-y-1.5">
-            <div class="font-extrabold text-cyan-300 text-sm">🏹 Zelda: Breath of the Wild & 🗡️ Tears of the Kingdom</div>
-            <p class="text-slate-200 leading-relaxed">
-              1) เปิดใช้งานก่อน: กดปุ่ม <code>+</code> ➔ แท็บ <b>System (ฟันเฟือง) ➔ Options ➔ amiibo ➔ เลือก Enable</b><br>
-              2) วิธีเรียกใช้: กดปุ่ม <b><code>L</code> ค้างไว้</b> เพื่อเปิดวงล้อพลัง ➔ เลือกสัญลักษณ์ <b>รูปตัว <code>a</code> มีเสาสัญญาณ (amiibo)</b><br>
-              3) กดปุ่ม <code>L</code> อีก 1 ครั้งให้เกิด <b>วงกลมเรืองแสงบนพื้น</b> ➔ นำเครื่อง Allmiibo หรือเหรียญ NFC แตะที่อนาล็อกขวา ของรางวัลและหีบสมบัติจะหล่นลงมาจากฟ้าทันที!
-            </p>
-          </div>
+            <div class="bg-amber-950/25 border border-amber-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-amber-300 text-sm">🍄 Super Mario Series (All Titles)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Super Mario Odyssey:</b> Hold <b>D-Pad Right (<code>▶</code>)</b> during gameplay and touch R-Stick (grants invincibility, extra hearts, or Wedding outfits), or talk to <b>Uncle amiibo</b> to locate Power Moons!<br>
+                • <b>Super Mario 3D World + Bowser's Fury:</b> Hold <b>D-Pad Left (<code>◀</code>)</b> inside any stage and scan <b>Cat Mario</b> to spawn the <b>Invincible White Cat Bell</b>!<br>
+                • <b>Mario Kart 8 Deluxe:</b> On the main title menu ➔ scroll down to the scan icon ➔ scan to unlock Mii Racing Suits.<br>
+                • <b>Super Mario Bros. Wonder / Galaxy / Donkey Kong Bananza:</b> Press <b><code>+</code> (Pause Menu)</b> ➔ select the NFC icon and touch R-Stick.
+              </p>
+            </div>
 
-          <!-- Splatoon / Metroid / Kirby / Street Fighter 6 -->
-          <div class="bg-fuchsia-950/25 border border-fuchsia-500/30 p-3 rounded-xl space-y-1.5">
-            <div class="font-extrabold text-fuchsia-300 text-sm">🔥 เกมปี 2025–2026 (Splatoon 3 / Metroid Prime 4 / Kirby Air Riders / SF6)</div>
-            <p class="text-slate-200 leading-relaxed">
-              • <b>Splatoon 3 / Raiders:</b> เดินไปที่ <b>กล่องแพ็กเกจฟิกเกอร์ Amiibo ขนาดใหญ่</b> ในจัตุรัสเมือง Splatsville ➔ กดปุ่ม <code>A</code> สำรวจกล่องแล้วแตะสแกนรับชุดเกียร์ครบเซ็ต<br>
-              • <b>Metroid Prime 4: Beyond / Kirby Air Riders / Street Fighter 6:</b> เข้าหน้าเมนูหลัก (Main Menu / Options) ➔ เลือกหัวข้อ <b>amiibo</b> แล้วแตะสแกนที่อนาล็อกขวา
-            </p>
+            <div class="bg-cyan-950/25 border border-cyan-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-cyan-300 text-sm">🏹 Zelda: Breath of the Wild & 🗡️ Tears of the Kingdom</div>
+              <p class="text-slate-200 leading-relaxed">
+                1) Enable first: Press <code>+</code> ➔ <b>System ⚙️ ➔ Options ➔ NFC / amiibo ➔ Enable</b>.<br>
+                2) Hold <b><code>L</code></b> to open the ability wheel ➔ select the <b>NFC rune icon</b>.<br>
+                3) Press <code>L</code> once more to project a glowing targeting circle on the ground ➔ touch your OdimibO device or coin to R-Stick to drop treasure chests & rare weapons!
+              </p>
+            </div>
+
+            <div class="bg-fuchsia-950/25 border border-fuchsia-500/30 p-3 rounded-xl space-y-1.5">
+              <div class="font-extrabold text-fuchsia-300 text-sm">🔥 2025–2026 Releases (Splatoon 3 / Metroid Prime 4 / Kirby Air Riders / SF6)</div>
+              <p class="text-slate-200 leading-relaxed">
+                • <b>Splatoon 3 / Raiders:</b> Walk to the <b>giant figure display box</b> in Splatsville square ➔ press <code>A</code> and touch R-Stick to claim exclusive gear sets.<br>
+                • <b>Metroid Prime 4: Beyond / Kirby Air Riders / Street Fighter 6:</b> Open the Main Menu / Options ➔ select the NFC scan menu and touch R-Stick.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- ส่วนที่ 3: ตั้งค่าการเข้ารหัส Amiibo แท้ (key_retail.bin 160 Bytes) & ส่ง Key เข้าเครื่อง -->
+      <!-- ส่วนที่ 3: ตั้งค่าการเข้ารหัสแท้ (key_retail.bin 160 Bytes) & ส่ง Key เข้าเครื่อง -->
       <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
         <div class="flex items-center justify-between">
           <div>
-            <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
+            <h3 id="lblManualKeyTitle" class="text-xs font-bold text-white flex items-center gap-1.5">
               <span>🔑</span> ตั้งค่ากุญแจเข้ารหัสแท้ (key_retail.bin 160 ไบต์)
             </h3>
-            <p class="text-xs text-slate-400">อ้างอิงมาตรฐาน amiitool & AO-Labs-Chile/allmiibo-manager</p>
+            <p id="lblManualKeySub" class="text-xs text-slate-400">อ้างอิงมาตรฐาน amiitool & VFS Manager</p>
           </div>
           <span id="manualKeyBadge" class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-bold">
             ยังไม่ได้ใส่ Key
           </span>
         </div>
 
-        <p class="text-xs text-slate-300 leading-relaxed bg-slate-950 p-3 rounded-xl border border-slate-800">
-          เครื่อง Nintendo Switch จะตรวจสอบลายเซ็น <b>HMAC-SHA256</b> และการเข้ารหัส <b>AES-128-CTR</b> ทุกครั้งที่สแกน หากคุณใส่ไฟล์ <code>key_retail.bin</code> (160B) ที่นี่ ระบบจะเข้ารหัสไฟล์ <code>.bin</code> ทั้ง 950 ตัวให้อัตโนมัติ และสามารถกดส่งไฟล์ Key เข้าเครื่อง Allmiibo ผ่าน Bluetooth ได้ด้วย!
+        <p id="lblManualKeyDesc" class="text-xs text-slate-300 leading-relaxed bg-slate-950 p-3 rounded-xl border border-slate-800">
+          เครื่องเกมจะตรวจสอบลายเซ็น <b>HMAC-SHA256</b> และการเข้ารหัส <b>AES-128-CTR</b> ทุกครั้งที่สแกนเหรียญ NFC หากคุณใส่ไฟล์ <code>key_retail.bin</code> (160B) ที่นี่ ระบบจะเข้ารหัสไฟล์ <code>.bin</code> ทั้ง 950 ตัวให้อัตโนมัติ และสามารถกดส่งไฟล์ Key เข้าเครื่อง OdimibO ผ่าน Bluetooth ได้ด้วย!
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
           <label class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl text-center cursor-pointer shadow">
-            📂 1. เลือกไฟล์ key_retail.bin
+            <span id="lblBtnSelectKeyFile">📂 1. เลือกไฟล์ key_retail.bin</span>
             <input type="file" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
           </label>
-          <button onclick="uploadKeyToAllmiiboBLE()" class="btn-active bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/40 font-bold text-xs py-2.5 px-3 rounded-xl">
-            📡 2. ส่ง Key เข้าเครื่อง Allmiibo
+          <button id="btnUploadKeyBle" onclick="uploadKeyToAllmiiboBLE()" class="btn-active bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/40 font-bold text-xs py-2.5 px-3 rounded-xl">
+            📡 2. ส่ง Key เข้าเครื่อง OdimibO
           </button>
-          <button onclick="clearSavedRetailKey()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-2.5 px-3 rounded-xl border border-slate-700">
+          <button id="btnClearSavedKey" onclick="clearSavedRetailKey()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-2.5 px-3 rounded-xl border border-slate-700">
             ล้างค่า Key
           </button>
         </div>
@@ -608,21 +930,21 @@
 
       <!-- ส่วนที่ 4: ตั้งค่าโปรโตคอล Bluetooth BLE & Console Log -->
       <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
-        <h3 class="text-xs font-bold text-white flex items-center gap-1.5">
+        <h3 id="lblBleProtocolTitle" class="text-xs font-bold text-white flex items-center gap-1.5">
           <span>📡</span> เลือกโหมดการเชื่อมต่อ Bluetooth (BLE Protocol)
         </h3>
         <select id="bleProtocolSelect" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white">
-          <option value="PIXL_VFS">Allmiibo / Pixl.js จอ OLED (Auto-Folder VFS E:/&lt;Game&gt;/&lt;Name&gt;.bin)</option>
-          <option value="AMIIBOLINK">AmiiboLink / Pixl รุ่นไม่มีจอ (Direct Page Write)</option>
+          <option value="PIXL_VFS">OdimibO / Pixl.js OLED (Auto-Folder VFS E:/&lt;Game&gt;/&lt;Name&gt;.bin)</option>
+          <option value="AMIIBOLINK">Direct Page Write Mode (AmiiboLink Compatible)</option>
           <option value="RAW_NUS">Raw NUS Stream (540 Bytes)</option>
         </select>
 
         <div class="flex items-center justify-between pt-1">
           <span class="text-xs font-bold text-slate-300">System & BLE Console Log</span>
-          <button onclick="clearConsoleLog()" class="text-xs text-slate-400 hover:text-white">ล้าง Log</button>
+          <button id="btnClearLog" onclick="clearConsoleLog()" class="text-xs text-slate-400 hover:text-white">ล้าง Log</button>
         </div>
         <div id="logBox" class="bg-black/80 font-mono text-xs text-emerald-400 p-3 rounded-xl h-32 overflow-y-auto space-y-1 border border-slate-800">
-          <div>[System] โหลดคลัง 950 Amiibo (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อยแล้ว</div>
+          <div>[System] โหลดคลัง 950 OdimibO (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อยแล้ว</div>
         </div>
       </div>
 
@@ -631,40 +953,58 @@
   </main>
 
   <!-- ========================================================
-       MODAL: ทำไมสแกนไม่ติด & วิธีแก้ไข
+       MODAL: ทำไมสแกนไม่ติด & วิธีแก้ไข (Bilingual TH / EN)
        ======================================================== -->
   <div id="scanHelpModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-5 space-y-4 shadow-2xl max-h-[88vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-        <h3 class="text-sm font-extrabold text-rose-400 flex items-center gap-2">
+        <h3 id="scanHelpModalTitle" class="text-sm font-extrabold text-rose-400 flex items-center gap-2">
           <span>🔍</span> สาเหตุที่สแกนกับ Switch ไม่ติด & วิธีแก้
         </h3>
         <button onclick="closeScanHelpModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
       </div>
 
-      <div class="space-y-3 text-xs text-slate-200 leading-relaxed">
+      <div id="scanHelpBodyTH" class="space-y-3 text-xs text-slate-200 leading-relaxed">
         <div class="bg-rose-950/40 border border-rose-500/40 p-3 rounded-2xl space-y-1">
-          <div class="font-bold text-rose-300">❌ 1. หากคุณเอามือถือเปิดเว็บแล้วแตะที่จอย Switch โดยตรง:</div>
+          <div class="font-bold text-rose-300">❌ 1. หากคุณเอามือถือเปิดเว็บแล้วแตะที่จอยโดยตรง:</div>
           <p class="text-xs text-slate-300">
-            <b>จะไม่สามารถสแกนติดได้ครับ!</b> เพราะโทรศัพท์มือถือ (iPhone และ Android) บล็อกฮาร์ดแวร์ชิป NFC ไม่ให้หน้าเว็บปล่อยคลื่นจำลองเป็นแท็ก <b>NTAG215 (Type 2)</b> ของ Nintendo
+            <b>จะไม่สามารถสแกนติดได้ครับ!</b> เพราะโทรศัพท์มือถือ (iPhone และ Android) บล็อกฮาร์ดแวร์ชิป NFC ไม่ให้หน้าเว็บปล่อยคลื่นจำลองเป็นแท็ก <b>NTAG215 (Type 2)</b>
           </p>
         </div>
 
         <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1.5">
           <div class="font-bold text-emerald-300">✅ 2. วิธีใช้งานจริงให้สแกนติด 100%:</div>
           <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
-            <li><b>มีเครื่อง Allmiibo / Pixl.js:</b> กดปุ่ม <b>BLE</b> มุมขวาบนเพื่อเชื่อมต่อ แล้วกด <b>"📡 ส่งเข้า Allmiibo"</b> จากนั้นนำตัวเครื่อง Allmiibo ไปแตะจอย Switch</li>
+            <li><b>มีเครื่อง OdimibO BLE / Pixl.js:</b> กดปุ่ม <b>BLE</b> มุมขวาบนเพื่อเชื่อมต่อ แล้วกด <b>"📡 ส่งเข้า OdimibO (BLE)"</b> จากนั้นนำตัวเครื่องไปแตะจอยอนาล็อกขวา</li>
             <li><b>ใช้เหรียญ NFC NTAG215:</b> อัปโหลดไฟล์ <code>key_retail.bin</code> ในแท็บคู่มือ ➔ กดโหลด <code>.bin</code> ➔ เขียนลงเหรียญด้วยแอป TagMo / NFC Tools</li>
-            <li><b>ใช้บน Emulator / Switch แปลง (emuiibo):</b> กดปุ่ม <b>"🧩 emuiibo .json"</b> เพื่อนำไปวางในโฟลเดอร์ <code>sd:/emuiibo/amiibo/</code> ได้ทันที</li>
+            <li><b>ใช้บน Emulator / เครื่องแปลง (emuiibo):</b> กดปุ่ม <b>"🧩 emuiibo .json"</b> เพื่อนำไปวางในโฟลเดอร์ <code>sd:/emuiibo/amiibo/</code> ได้ทันที</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="scanHelpBodyEN" class="hidden space-y-3 text-xs text-slate-200 leading-relaxed">
+        <div class="bg-rose-950/40 border border-rose-500/40 p-3 rounded-2xl space-y-1">
+          <div class="font-bold text-rose-300">❌ 1. Why tapping your phone directly on the controller fails:</div>
+          <p class="text-xs text-slate-300">
+            <b>Mobile OSes block NFC Type 2 tag emulation!</b> Both iOS and Android restrict web browsers from emulating low-level <b>NTAG215 (Type 2)</b> hardware tags directly from the phone's NFC antenna.
+          </p>
+        </div>
+
+        <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1.5">
+          <div class="font-bold text-emerald-300">✅ 2. How to Scan 100% Successfully:</div>
+          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+            <li><b>Using OdimibO BLE / Pixl.js Hardware:</b> Tap <b>BLE</b> (top right) to connect, then tap <b>"📡 Send to OdimibO (BLE)"</b> and touch the hardware device to the Right Stick.</li>
+            <li><b>Using Blank NTAG215 NFC Coins:</b> Load your 160-byte <code>key_retail.bin</code> in the Guide tab ➔ tap <b>"💾 .bin (NFC)"</b> ➔ write to a blank NTAG215 coin using TagMo or NFC Tools.</li>
+            <li><b>Using Emulator / Custom Firmware (emuiibo):</b> Tap <b>"🧩 emuiibo .json"</b> and copy to <code>sd:/emuiibo/amiibo/</code>.</li>
           </ul>
         </div>
       </div>
 
       <div class="flex gap-2 pt-2">
-        <button onclick="closeScanHelpModal(); switchTab('tabManual');" class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
+        <button id="btnScanHelpOpenManual" onclick="closeScanHelpModal(); switchTab('tabManual');" class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
           📖 เปิดอ่านคู่มือทีละขั้นตอน
         </button>
-        <button onclick="closeScanHelpModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
+        <button id="btnScanHelpClose" onclick="closeScanHelpModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
           ปิด
         </button>
       </div>
@@ -677,8 +1017,8 @@
   <div id="diagnosticModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-slate-900 border border-teal-500/40 rounded-3xl max-w-md w-full p-4 space-y-3 shadow-2xl max-h-[88vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
-        <h3 class="text-sm font-extrabold text-teal-300 flex items-center gap-1.5">
-          <span>🧪</span> ผลตรวจความพร้อมมือถือ & ไฟล์ Amiibo จริง
+        <h3 id="diagModalTitle" class="text-sm font-extrabold text-teal-300 flex items-center gap-1.5">
+          <span>🧪</span> ผลตรวจความพร้อมมือถือ & ไฟล์ NTAG215 จริง
         </h3>
         <button onclick="closeDiagnosticModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
       </div>
@@ -688,10 +1028,10 @@
       </div>
 
       <div class="flex gap-2 pt-1">
-        <button onclick="runDiagnosticSelfTest()" class="flex-1 bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
+        <button id="btnDiagRetest" onclick="runDiagnosticSelfTest()" class="flex-1 bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
           🔄 กดตรวจซ้ำอีกครั้ง
         </button>
-        <button onclick="closeDiagnosticModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
+        <button id="btnDiagClose" onclick="closeDiagnosticModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
           ปิดหน้าต่าง
         </button>
       </div>
@@ -699,26 +1039,188 @@
   </div>
 
   <!-- ========================================================
-       MODAL: ระบบโควต้าฟรีรายวัน + โดเนท/VIP Pass (ชั่วคราว/ถาวร) + โหมด Admin
+       MODAL: เมนูฟันเฟือง ⚙️ (ตั้งค่าภาษา TH/EN + คู่มือวิธีใช้ + ใส่รหัส VIP & ระบบ KeyGen)
        ======================================================== -->
   <div id="vipModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-3.5">
-    <div class="bg-slate-900 border border-amber-500/40 rounded-3xl max-w-md w-full p-4 space-y-3 shadow-2xl max-h-[90vh] overflow-y-auto">
+    <div class="bg-slate-900 border border-indigo-500/40 rounded-3xl max-w-md w-full p-4 space-y-3 shadow-2xl max-h-[92vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
-        <h3 id="vipModalTitle" class="text-sm font-extrabold text-amber-300 flex items-center gap-1.5">
-          <span>💎</span> สิทธิ์การใช้งาน & สนับสนุนโปรเจกต์ (VIP / Admin)
+        <h3 id="vipModalTitle" class="text-sm font-extrabold text-indigo-300 flex items-center gap-1.5">
+          <span>⚙️</span> ตั้งค่าระบบ, ภาษา, วิธีใช้ & KeyGen
         </h3>
         <button onclick="closeVipModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
       </div>
 
-      <!-- สถานะปัจจุบันของผู้ใช้ -->
+      <!-- 1. เปลี่ยนภาษา (Language Switcher TH | EN) -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+        <div>
+          <div id="lblGearLangTitle" class="text-xs font-extrabold text-white flex items-center gap-1.5">
+            <span>🌐</span> ภาษาของระบบ (Language)
+          </div>
+          <p id="lblGearLangSub" class="text-[10px] text-slate-400">สลับภาษาเมนูและคู่มือทั้งหมด (ไทย / English)</p>
+        </div>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <!-- ปุ่มสวิตช์เลื่อนสลับภาษา TH | EN -->
+          <div id="langToggleSwitch" onclick="toggleLanguage()" role="switch" aria-label="Toggle Language TH EN"
+            class="relative inline-flex items-center w-16 h-7 rounded-full bg-slate-900 border border-indigo-500/50 p-0.5 cursor-pointer select-none shadow-inner">
+            <div id="langSwitchKnob" class="w-7 h-5.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 shadow transition-transform duration-200 transform translate-x-0"></div>
+            <div class="absolute inset-0 flex items-center justify-between px-2 text-[10px] font-black pointer-events-none">
+              <span id="langSwitchLblTH" class="text-white">TH</span>
+              <span id="langSwitchLblEN" class="text-slate-400">EN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1.5 เลือกธีมสีของแอปและตัวเครื่อง (10 Game Themes) -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-2">
+        <div class="flex items-center justify-between">
+          <div id="lblGearThemeTitle" class="text-xs font-extrabold text-white flex items-center gap-1.5">
+            <span>🎨</span> ปรับธีมสีตามเกม (Game Color Themes)
+          </div>
+          <button id="btnGearAutoTheme" onclick="toggleAutoThemeBySeries()" class="text-[10px] font-bold px-2 py-0.5 rounded-lg border border-emerald-500/50 bg-emerald-500/20 text-emerald-300">
+            🔄 เปลี่ยนตามเกม: เปิด
+          </button>
+        </div>
+        <div id="gearThemeGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+          <!-- Rendered by renderThemeButtons() -->
+        </div>
+      </div>
+
+      <!-- 2. ปุ่มลัดเปิดคู่มือวิธีการใช้งาน & เช็คความพร้อมมือถือ -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-2">
+        <div id="lblGearGuideTitle" class="text-xs font-extrabold text-emerald-300 flex items-center gap-1.5">
+          <span>📖</span> คู่มือวิธีการใช้งาน & ตรวจเช็คระบบ
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <button id="btnGearOpenManual" onclick="closeVipModal(); switchTab('tabManual');"
+            class="btn-active bg-emerald-600/25 hover:bg-emerald-600/35 border border-emerald-500/50 text-emerald-200 font-extrabold text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow">
+            📖 คู่มือวิธีใช้ทีละขั้นตอน
+          </button>
+          <button id="btnGearSelfTest" onclick="closeVipModal(); runDiagnosticSelfTest();"
+            class="btn-active bg-teal-600/20 hover:bg-teal-600/30 border border-teal-500/40 text-teal-200 font-bold text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow">
+            🧪 เช็คความพร้อมมือถือ & 540B
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. ช่องกรอกรหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอป -->
+      <div class="bg-slate-950 border border-amber-500/40 rounded-2xl p-3 space-y-2">
+        <div class="flex items-center justify-between">
+          <label id="lblEnterLicenseKey" class="text-xs font-extrabold text-amber-300 block">🔑 ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอป:</label>
+          <span class="text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-mono font-bold">KEYGEN</span>
+        </div>
+        <div class="flex gap-1.5">
+          <input type="password" id="licenseKeyInput" placeholder="กรอกรหัส KeyGen ที่นี่..."
+            class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-amber-400">
+          <button onclick="toggleLicenseInputVisibility()" type="button" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-2.5 rounded-xl border border-slate-700" title="Show/Hide">👁️</button>
+          <button onclick="activateLicenseKey()" id="btnActivateKey" class="btn-active bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs px-3.5 py-2 rounded-xl shadow flex-shrink-0">
+            ปลดล็อก
+          </button>
+        </div>
+        <p id="lblLicenseHint" class="text-[10px] text-slate-400">
+          ✨ ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอปและใช้งานได้ไม่จำกัดครั้ง
+        </p>
+      </div>
+
+      <!-- แผงควบคุม Admin Key Generator (ซ่อนสมบูรณ์สำหรับผู้ใช้ทั่วไป) -->
+      <div id="adminKeyGenPanel" class="hidden bg-rose-950/35 border-2 border-rose-500/60 rounded-2xl p-3.5 space-y-3 shadow-xl">
+        <div class="flex items-center justify-between border-b border-rose-500/30 pb-2">
+          <div>
+            <span class="text-xs font-black text-rose-300 flex items-center gap-1">
+              <span>👑</span> ADMIN KEY GENERATOR
+            </span>
+            <span id="lblAdminPanelSub" class="text-[10px] text-slate-400">สร้างรหัส KeyGen สำหรับปลดล็อกความสามารถแอป</span>
+          </div>
+          <button id="btnAdminLogout" onclick="logoutVipOrAdmin()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-rose-300 font-bold px-2.5 py-1 rounded-lg border border-rose-500/40">
+            🔒 ล็อกเอาท์ Admin
+          </button>
+        </div>
+
+        <!-- 1. เลือกประเภทอายุโค้ด & ชื่ออ้างอิงลูกค้า -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div>
+            <label id="lblAdminStep1Plan" class="text-[10px] font-bold text-rose-200 block mb-0.5">1. เลือกระยะเวลาโค้ดลูกค้า:</label>
+            <select id="adminGenPlanSelect" class="w-full bg-slate-950 border border-rose-500/50 rounded-xl px-2.5 py-1.5 text-xs font-bold text-white">
+              <option value="1D">⏱️ 1 Day (Trial 1D)</option>
+              <option value="7D">⏳ 7 Days (Weekly 7D)</option>
+              <option value="30D" selected>📅 30 Days (Monthly 30D)</option>
+              <option value="90D">🚀 90 Days (Quarterly 90D)</option>
+              <option value="LIFE">🌟 Lifetime VIP (Permanent)</option>
+            </select>
+          </div>
+          <div>
+            <label id="lblAdminStep2Ref" class="text-[10px] font-bold text-rose-200 block mb-0.5">2. ชื่อ/เลขอ้างอิงลูกค้า:</label>
+            <input type="text" id="adminCustomerRefInput" placeholder="USER01 / 4-digit ref"
+              class="w-full bg-slate-950 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white font-mono uppercase">
+          </div>
+        </div>
+
+        <!-- ปุ่มกด Generate โค้ด -->
+        <div class="grid grid-cols-2 gap-2">
+          <button id="btnAdminGen1" onclick="adminGenerateEncryptedKeys(1)" class="btn-active bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 text-black font-black text-xs py-2 px-3 rounded-xl shadow">
+            🔑 สร้าง KeyGen (1 รหัส)
+          </button>
+          <button id="btnAdminGen5" onclick="adminGenerateEncryptedKeys(5)" class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2 px-3 rounded-xl shadow">
+            📦 สร้างชุด 5 รหัสพร้อมกัน
+          </button>
+        </div>
+
+        <!-- กล่องแสดงโค้ดที่สร้างเสร็จพร้อมคัดลอก -->
+        <div id="adminGeneratedCodeBox" class="hidden bg-black/90 border border-emerald-500/60 rounded-xl p-2.5 space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span id="lblAdminGenSuccess" class="text-[10px] text-emerald-400 font-bold">✅ สร้างรหัส KeyGen สำเร็จ:</span>
+            <button id="btnAdminCopyAll" onclick="copyGeneratedCustomerCode()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg shadow">
+              📋 คัดลอกทั้งหมด
+            </button>
+          </div>
+          <pre id="adminGeneratedCodeText" class="text-xs font-mono font-extrabold text-amber-300 whitespace-pre-wrap break-all select-all bg-slate-950 p-2 rounded-lg border border-slate-800"></pre>
+        </div>
+
+        <!-- 3. เครื่องมือตรวจสอบโค้ดย้อนหลัง (Code Verifier) -->
+        <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2.5 space-y-1.5">
+          <label id="lblAdminVerifyTitle" class="text-[10px] font-bold text-cyan-300 block">🔍 ตรวจสอบวันหมดอายุโค้ดลูกค้า:</label>
+          <div class="flex gap-1.5">
+            <input type="text" id="adminVerifyCodeInput" placeholder="ODI-..."
+              class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-[11px] text-white font-mono uppercase">
+            <button id="btnAdminVerifyCode" onclick="adminInspectCustomerCode()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">
+              ตรวจโค้ด
+            </button>
+          </div>
+          <div id="adminVerifyResultText" class="text-[10px] font-mono text-slate-300"></div>
+        </div>
+
+        <!-- 4. ประวัติโค้ดที่สร้างล่าสุดในเครื่อง Admin -->
+        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-1">
+          <div class="flex items-center justify-between">
+            <span id="lblAdminHistoryTitle" class="text-[10px] font-bold text-slate-300">📜 ประวัติโค้ดที่ Admin สร้างล่าสุด:</span>
+            <button id="btnAdminClearHistory" onclick="clearAdminKeyHistory()" class="text-[10px] text-slate-400 hover:text-rose-400">ล้างประวัติ</button>
+          </div>
+          <div id="adminKeyHistoryList" class="max-h-24 overflow-y-auto text-[10px] font-mono text-slate-400 space-y-1">
+            <div>ยังไม่มีประวัติการสร้างโค้ด</div>
+          </div>
+        </div>
+
+        <!-- 5. ตั้งค่าโควต้าฟรีต่อวัน -->
+        <div class="flex items-center justify-between text-[11px] text-slate-300 pt-1 border-t border-rose-500/20">
+          <span id="lblAdminQuotaCfg">ตั้งจำนวนโควต้าฟรีต่อวัน (Free Quota/Day):</span>
+          <select id="adminDailyLimitSelect" onchange="adminUpdateDailyFreeLimit(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs font-bold text-amber-300">
+            <option value="3">3 / Day</option>
+            <option value="5" selected>5 / Day (Default)</option>
+            <option value="10">10 / Day</option>
+            <option value="999">Unlimited Free</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 4. สถานะปัจจุบันของผู้ใช้ & สนับสนุนโปรเจกต์ -->
       <div id="vipCurrentStatusCard" class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-1">
         <!-- Populated dynamically by renderVipModalContent() -->
       </div>
 
-      <!-- ส่วนสนับสนุนโดเนท / ซื้อแพ็กเกจ (ซ่อนได้ถ้าเป็น Admin หรือ VIP ถาวรแล้ว) -->
+      <!-- ส่วนสนับสนุนโดเนท / ซื้อแพ็กเกจ -->
       <div id="vipSupportSection" class="bg-gradient-to-br from-indigo-950/60 via-slate-900 to-pink-950/40 border border-pink-500/30 rounded-2xl p-3 space-y-2.5">
         <div class="flex items-center justify-between">
-          <span id="vipSupportTitle" class="text-xs font-extrabold text-pink-300">💖 ร่วมโดเนทสนับสนุนค่าเซิร์ฟเวอร์ & รับโค้ด VIP ไม่จำกัด</span>
+          <span id="vipSupportTitle" class="text-xs font-extrabold text-pink-300">💖 ร่วมโดเนทสนับสนุน & รับโค้ด VIP ไม่จำกัด</span>
           <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full font-bold">PromptPay / TrueMoney</span>
         </div>
 
@@ -747,113 +1249,7 @@
 
         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 text-[11px] text-slate-300 space-y-1">
           <div class="font-bold text-emerald-300" id="vipDonateChannelTitle">📲 ช่องทางโดเนท / รับรหัสปลดล็อกอัตโนมัติ:</div>
-          <div>• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส VIP ได้ทันที (แอดมินออกโค้ดให้ใน 1 นาที)</div>
-        </div>
-      </div>
-
-      <!-- ช่องกรอกรหัสปลดล็อก (VIP Key / Temporary Key / รหัส Super Admin) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-2">
-        <label id="lblEnterLicenseKey" class="text-xs font-extrabold text-white block">🔑 กรอกรหัสปลดล็อก OdimibO (VIP Code):</label>
-        <div class="flex gap-1.5">
-          <input type="password" id="licenseKeyInput" placeholder="กรอกรหัส VIP (เช่น ODI-LIFE-XXXX...)"
-            class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-amber-400">
-          <button onclick="toggleLicenseInputVisibility()" type="button" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-2.5 rounded-xl border border-slate-700" title="แสดง/ซ่อนรหัส">👁️</button>
-          <button onclick="activateLicenseKey()" id="btnActivateKey" class="btn-active bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs px-3.5 py-2 rounded-xl shadow flex-shrink-0">
-            ปลดล็อก
-          </button>
-        </div>
-        <p id="lblLicenseHint" class="text-[10px] text-slate-400">
-          🛡️ ระบบป้องกันการสุ่มเดารหัสด้วยลายเซ็นดิจิทัล <b>HMAC-SHA256 (WebCrypto 50-bit Signature)</b> หากรหัสถูกแก้ไขแม้แต่ตัวเดียวจะไม่สามารถใช้งานได้
-        </p>
-      </div>
-
-      <!-- แผงควบคุมเฉพาะ Super Admin สูงสุดเท่านั้น (ซ่อนสมบูรณ์สำหรับผู้ใช้ทั่วไป) -->
-      <div id="adminKeyGenPanel" class="hidden bg-rose-950/35 border-2 border-rose-500/60 rounded-2xl p-3.5 space-y-3 shadow-xl">
-        <div class="flex items-center justify-between border-b border-rose-500/30 pb-2">
-          <div>
-            <span class="text-xs font-black text-rose-300 flex items-center gap-1">
-              <span>👑</span> SUPER ADMIN KEY GENERATOR (HMAC-SHA256)
-            </span>
-            <span class="text-[10px] text-slate-400">เข้ารหัสป้องกันการปลอมแปลง 1.12 ล้านล้านล้านรูปแบบ (CSPRNG + HMAC)</span>
-          </div>
-          <button onclick="logoutVipOrAdmin()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-rose-300 font-bold px-2.5 py-1 rounded-lg border border-rose-500/40">
-            🔒 ล็อกเอาท์ Admin
-          </button>
-        </div>
-
-        <!-- 1. เลือกประเภทอายุโค้ด & ชื่ออ้างอิงลูกค้า -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <div>
-            <label class="text-[10px] font-bold text-rose-200 block mb-0.5">1. เลือกระยะเวลาโค้ดลูกค้า:</label>
-            <select id="adminGenPlanSelect" class="w-full bg-slate-950 border border-rose-500/50 rounded-xl px-2.5 py-1.5 text-xs font-bold text-white">
-              <option value="1D">⏱️ ชั่วคราว 1 วัน (Trial 1D)</option>
-              <option value="7D">⏳ ชั่วคราว 7 วัน (Weekly 7D)</option>
-              <option value="30D" selected>📅 รายเดือน 30 วัน (Monthly 30D)</option>
-              <option value="90D">🚀 รายไตรมาส 90 วัน (90D)</option>
-              <option value="LIFE">🌟 ถาวรตลอดชีพ (Lifetime VIP)</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-[10px] font-bold text-rose-200 block mb-0.5">2. ชื่อ/เลขอ้างอิงลูกค้า (ผูกในรหัส):</label>
-            <input type="text" id="adminCustomerRefInput" placeholder="เช่น USER01, เบอร์โทร 4 ตัวท้าย"
-              class="w-full bg-slate-950 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white font-mono uppercase">
-          </div>
-        </div>
-
-        <!-- ปุ่มกด Generate โค้ดเข้ารหัส -->
-        <div class="grid grid-cols-2 gap-2">
-          <button onclick="adminGenerateEncryptedKeys(1)" class="btn-active bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 text-black font-black text-xs py-2 px-3 rounded-xl shadow">
-            🔐 สร้างโค้ดใหม่ (1 รหัส)
-          </button>
-          <button onclick="adminGenerateEncryptedKeys(5)" class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2 px-3 rounded-xl shadow">
-            📦 สร้างชุด 5 รหัสพร้อมกัน
-          </button>
-        </div>
-
-        <!-- กล่องแสดงโค้ดที่สร้างเสร็จพร้อมคัดลอก -->
-        <div id="adminGeneratedCodeBox" class="hidden bg-black/90 border border-emerald-500/60 rounded-xl p-2.5 space-y-1.5">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] text-emerald-400 font-bold">✅ รหัสผ่านการเซ็นชื่อ HMAC-SHA256 สำเร็จ:</span>
-            <button onclick="copyGeneratedCustomerCode()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg shadow">
-              📋 คัดลอกทั้งหมด
-            </button>
-          </div>
-          <pre id="adminGeneratedCodeText" class="text-xs font-mono font-extrabold text-amber-300 whitespace-pre-wrap break-all select-all bg-slate-950 p-2 rounded-lg border border-slate-800"></pre>
-        </div>
-
-        <!-- 3. เครื่องมือตรวจสอบความแท้ของโค้ดย้อนหลัง (Code Verifier) -->
-        <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2.5 space-y-1.5">
-          <label class="text-[10px] font-bold text-cyan-300 block">🔍 ตรวจสอบโค้ดลูกค้า (ตรวจลายเซ็น HMAC & วันหมดอายุ):</label>
-          <div class="flex gap-1.5">
-            <input type="text" id="adminVerifyCodeInput" placeholder="วางโค้ด ODI-... เพื่อตรวจสอบความถูกต้อง"
-              class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-[11px] text-white font-mono uppercase">
-            <button onclick="adminInspectCustomerCode()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">
-              ตรวจโค้ด
-            </button>
-          </div>
-          <div id="adminVerifyResultText" class="text-[10px] font-mono text-slate-300"></div>
-        </div>
-
-        <!-- 4. ประวัติโค้ดที่สร้างล่าสุดในเครื่อง Admin -->
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-1">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-bold text-slate-300">📜 ประวัติโค้ดที่ Admin สร้างล่าสุด:</span>
-            <button onclick="clearAdminKeyHistory()" class="text-[10px] text-slate-400 hover:text-rose-400">ล้างประวัติ</button>
-          </div>
-          <div id="adminKeyHistoryList" class="max-h-24 overflow-y-auto text-[10px] font-mono text-slate-400 space-y-1">
-            <div>ยังไม่มีประวัติการสร้างโค้ด</div>
-          </div>
-        </div>
-
-        <!-- 5. ตั้งค่าโควต้าฟรีต่อวัน -->
-        <div class="flex items-center justify-between text-[11px] text-slate-300 pt-1 border-t border-rose-500/20">
-          <span>ตั้งจำนวนโควต้าฟรีต่อวัน (Free Quota/Day):</span>
-          <select id="adminDailyLimitSelect" onchange="adminUpdateDailyFreeLimit(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs font-bold text-amber-300">
-            <option value="3">3 ครั้ง/วัน</option>
-            <option value="5" selected>5 ครั้ง/วัน (แนะนำ)</option>
-            <option value="10">10 ครั้ง/วัน</option>
-            <option value="999">ไม่จำกัด (เปิดฟรีทั้งหมด)</option>
-          </select>
+          <div id="vipDonateChannelDesc">• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส VIP ได้ทันที (แอดมินออกโค้ดให้ใน 1 นาที)</div>
         </div>
       </div>
 
@@ -1012,30 +1408,59 @@
       const icon = document.getElementById('keyStatusIcon');
       const title = document.getElementById('keyStatusTitle');
       const desc = document.getElementById('keyStatusDesc');
+      const btnLbl = document.getElementById('lblBtnLoadKey');
       const badge = document.getElementById('manualKeyBadge');
       const topBadge = document.getElementById('cryptoStatusBadge');
       const oledCrypto = document.getElementById('oledCryptoTag');
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      const lic = (typeof getLicenseState === 'function') ? getLicenseState() : { role: 'FREE' };
+      const isUnlocked = (typeof isSuperAdminVerified === 'function' && isSuperAdminVerified())
+        || lic.role === 'LIFETIME_VIP' || lic.role === 'TEMP_VIP';
+
+      if (icon && title && desc) {
+        if (isUnlocked) {
+          icon.textContent = '✅';
+          title.textContent = isEn
+            ? 'Full App Features Unlocked (VIP / KeyGen Active)'
+            : 'ปลดล็อกเพิ่มความสามารถแอปเรียบร้อยแล้ว (KeyGen)';
+          title.className = 'text-xs font-bold text-emerald-400 truncate';
+          desc.textContent = isEn
+            ? 'Unlimited daily usage and all app features are active'
+            : 'ใช้งานได้ไม่จำกัดครั้งและเปิดความสามารถแอปครบทุกส่วนแล้ว';
+          if (btnLbl) btnLbl.textContent = isEn ? '⚙️ KeyGen' : '⚙️ จัดการ KeyGen';
+        } else {
+          icon.textContent = '🔑';
+          title.textContent = isEn
+            ? 'Unlock Full App Features (KeyGen)'
+            : 'ปลดล็อกเพิ่มความสามารถแอป (KeyGen)';
+          title.className = 'text-xs font-bold text-amber-300 truncate';
+          desc.textContent = isEn
+            ? 'Enter your KeyGen code to unlock full app features & unlimited access'
+            : 'ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอปและใช้งานได้ไม่จำกัด';
+          if (btnLbl) btnLbl.textContent = isEn ? '🔑 Enter KeyGen' : '🔑 ใส่ KeyGen';
+        }
+      }
 
       if (hasKey) {
-        icon.textContent = '✅';
-        title.textContent = 'เข้ารหัสแท้: AES-128-CTR + HMAC-SHA256 พร้อมใช้งาน';
-        title.className = 'text-xs font-bold text-emerald-400 truncate';
-        desc.textContent = 'ไฟล์ .bin ทุกตัวถูกเซ็นลายเซ็นดิจิทัล Nintendo พร้อมเขียนลงเหรียญ NFC';
-        badge.textContent = 'พร้อมใช้งาน (160B)';
-        badge.className = 'text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold';
-        topBadge.textContent = '🔐 Encrypted Ready';
-        topBadge.className = 'cursor-pointer text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.2 rounded-full font-bold';
-        oledCrypto.textContent = 'ENC:AES+HMAC';
+        if (badge) {
+          badge.textContent = isEn ? 'Ready' : 'พร้อมใช้งาน';
+          badge.className = 'text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold';
+        }
+        if (topBadge) {
+          topBadge.textContent = isEn ? '✅ NFC & BLE Ready' : '✅ พร้อมใช้งานครบทุกโหมด';
+          topBadge.className = 'cursor-pointer text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.2 rounded-full font-bold';
+        }
+        if (oledCrypto) oledCrypto.textContent = 'PRO:READY';
       } else {
-        icon.textContent = '🔐';
-        title.textContent = 'สถานะ: โครงสร้าง NTAG215 มาตรฐาน (CC: F110FFEE)';
-        title.className = 'text-xs font-bold text-amber-300 truncate';
-        desc.textContent = 'ใส่ไฟล์ key_retail.bin (160B) หากต้องการเข้ารหัสไปเขียนเหรียญ NFC เปล่า';
-        badge.textContent = 'ยังไม่ได้ใส่ Key';
-        badge.className = 'text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold';
-        topBadge.textContent = '⚠️ ต้องใช้ Allmiibo/เหรียญ NFC';
-        topBadge.className = 'cursor-pointer text-[9px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-1.5 py-0.2 rounded-full font-bold';
-        oledCrypto.textContent = 'CC:F110FFEE';
+        if (badge) {
+          badge.textContent = isEn ? 'Standard Mode' : 'โหมดมาตรฐาน';
+          badge.className = 'text-[9px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold';
+        }
+        if (topBadge) {
+          topBadge.textContent = isEn ? '⚠️ Requires OdimibO BLE or NTAG215 Coin' : '⚠️ ต้องใช้เครื่อง OdimibO BLE หรือเหรียญ NFC';
+          topBadge.className = 'cursor-pointer text-[9px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-1.5 py-0.2 rounded-full font-bold';
+        }
+        if (oledCrypto) oledCrypto.textContent = 'NTAG215';
       }
     }
 
@@ -1270,6 +1695,7 @@
       const headerLeft = document.getElementById('oledHeaderLeft');
       const body = document.getElementById('oledBody');
       const footerText = document.getElementById('oledFooterText');
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
 
       if (currentScreen === 'MAIN_MENU') {
         headerLeft.textContent = '[MAIN]';
@@ -1290,18 +1716,23 @@
       }
       else if (currentScreen === 'TAG_EMULATE') {
         headerLeft.textContent = activeTag.isEncrypted ? '[SIGNED]' : '[NTAG215]';
-        const nameClean = (activeTag?.name || 'Amiibo').replace('.bin', '');
+        const rawName = (activeTag?.name || 'OdimibO').replace('.bin', '');
+        const nameClean = isEn ? rawName.split(' - ')[0] : rawName;
+        const bleStatusMsg = isEn
+          ? (isBleConnected ? 'BLE Ready — Send to OdimibO' : 'Send via BLE or Download .bin')
+          : (isBleConnected ? 'เชื่อมต่อ BLE พร้อมส่งเข้า OdimibO' : 'กดส่ง BLE หรือโหลด .bin เขียนเหรียญ');
+
         body.innerHTML = `
           <div class="w-full text-left px-1 space-y-0.5 leading-tight">
             <div class="text-[11px] text-white/60 truncate">ID: ${activeTag.head}-${activeTag.tail}</div>
             <div class="text-lg font-bold truncate bg-white text-black px-1 tracking-tight">${nameClean}</div>
             <div class="text-xs tracking-wider text-emerald-300 pt-0.5">UID: ${activeTag?.uid}</div>
             <div class="text-[11px] text-amber-300 flex items-center gap-1 nfc-signal pt-0.5">
-              <span>●</span> <span>${isBleConnected ? 'เชื่อมต่อ BLE พร้อมส่งเข้า Allmiibo' : 'กดส่ง BLE หรือโหลด .bin เขียนเหรียญ'}</span>
+              <span>●</span> <span>${bleStatusMsg}</span>
             </div>
           </div>
         `;
-        footerText.textContent = '◀ สุ่มUID | OK=เมนู';
+        footerText.textContent = isEn ? '◀ Rand UID | OK=Menu' : '◀ สุ่มUID | OK=เมนู';
         document.getElementById('activeUidLabel').textContent = `UID: ${activeTag?.uid}`;
         document.getElementById('activeIdHexLabel').textContent = `ID: ${activeTag.head}-${activeTag.tail}`;
       }
@@ -1310,11 +1741,13 @@
         body.innerHTML = `
           <div class="text-center space-y-1">
             <div class="text-xl text-cyan-300">(( Nordic UART ))</div>
-            <div class="text-xs text-emerald-400 font-bold">${isBleConnected ? 'เชื่อมต่อ Allmiibo แล้ว' : 'รอการเชื่อมต่อ BLE'}</div>
-            <div class="text-[10px] text-white/50">VFS / AmiiboLink Ready</div>
+            <div class="text-xs text-emerald-400 font-bold">${isBleConnected
+              ? (isEn ? 'OdimibO BLE Connected' : 'เชื่อมต่อ OdimibO แล้ว')
+              : (isEn ? 'Waiting for BLE...' : 'รอการเชื่อมต่อ BLE')}</div>
+            <div class="text-[10px] text-white/50">VFS / NTAG215 Ready</div>
           </div>
         `;
-        footerText.textContent = 'กด OK เพื่อออก';
+        footerText.textContent = isEn ? 'Press OK to exit' : 'กด OK เพื่อออก';
       }
     }
 
@@ -1357,8 +1790,11 @@
 
       currentScreen = 'TAG_EMULATE';
       renderOLED();
-      log(`[NTAG215] 🎲 สุ่ม UID ใหม่: ${newUid} (อัปเดต BCC0, BCC1, PWD และลายเซ็นแล้ว)`, 'tx');
-      showToast(`🎲 สุ่ม UID ใหม่แล้ว: ${newUid}`);
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      log(isEn
+        ? `[NTAG215] 🎲 Randomized UID: ${newUid} (Updated BCC0, BCC1, PWD & Signature)`
+        : `[NTAG215] 🎲 สุ่ม UID ใหม่: ${newUid} (อัปเดต BCC0, BCC1, PWD และลายเซ็นแล้ว)`, 'tx');
+      showToast(isEn ? `🎲 New UID: ${newUid}` : `🎲 สุ่ม UID ใหม่แล้ว: ${newUid}`);
 
       if (isBleConnected) {
         await sendCurrentToBLE();
@@ -1390,13 +1826,14 @@
 
     function toggleFavoriteActive() {
       triggerHaptic();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const key = `${activeTag.head}-${activeTag.tail}`;
       if (favoriteKeys.has(key)) {
         favoriteKeys.delete(key);
-        showToast('ลบออกจากรายการโปรดแล้ว');
+        showToast(isEn ? 'Removed from Favorites' : 'ลบออกจากรายการโปรดแล้ว');
       } else {
         favoriteKeys.add(key);
-        showToast('⭐ บันทึกเข้ารายการโปรดแล้ว!');
+        showToast(isEn ? '⭐ Saved to Favorites!' : '⭐ บันทึกเข้ารายการโปรดแล้ว!');
       }
       saveFavorites();
       updateActiveFavBtn();
@@ -1406,15 +1843,17 @@
     function toggleFavoriteByIdx(globalIdx, ev) {
       if (ev) ev.stopPropagation();
       triggerHaptic();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const item = fullDb[globalIdx];
       if (!item) return;
+      const shortName = item.name.split(' - ')[0];
       const key = getItemKey(item);
       if (favoriteKeys.has(key)) {
         favoriteKeys.delete(key);
-        showToast(`ลบ "${item.name}" ออกจากรายการโปรด`);
+        showToast(isEn ? `Removed "${shortName}" from Favorites` : `ลบ "${shortName}" ออกจากรายการโปรด`);
       } else {
         favoriteKeys.add(key);
-        showToast(`⭐ เพิ่ม "${item.name}" เข้ารายการโปรด`);
+        showToast(isEn ? `⭐ Added "${shortName}" to Favorites` : `⭐ เพิ่ม "${shortName}" เข้ารายการโปรด`);
       }
       saveFavorites();
       updateActiveFavBtn();
@@ -1424,113 +1863,145 @@
     function updateActiveFavBtn() {
       const btn = document.getElementById('activeFavBtn');
       if (!btn) return;
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const key = `${activeTag.head}-${activeTag.tail}`;
       if (favoriteKeys.has(key)) {
-        btn.textContent = '⭐ อยู่ในรายการโปรดแล้ว';
+        btn.textContent = isEn ? '⭐ Saved in Favorites' : '⭐ อยู่ในรายการโปรดแล้ว';
         btn.className = 'text-xs px-2.5 py-0.5 rounded-lg bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold';
       } else {
-        btn.textContent = '☆ เก็บเข้ารายการโปรด';
+        btn.textContent = isEn ? '☆ Add to Favorites' : '☆ เก็บเข้ารายการโปรด';
         btn.className = 'text-xs px-2.5 py-0.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 font-bold';
       }
     }
 
-    // โครงสร้างเมนู 2 ชั้น: ซีรีส์เกม -> แยกตามภาค (ข้อความสั้นกระชับ พอดีหน้าจอมือถือ)
+    // ตัวเลือกหลัก 1. ซีรีส์เกม (รองรับทั้ง ไทย และ English)
+    const SERIES_MAIN_OPTIONS = [
+      { val: 'Fire Emblem', th: '⚔️ Fire Emblem (13)', en: '⚔️ Fire Emblem (13)' },
+      { val: 'Mario', th: '🍄 Super Mario (155)', en: '🍄 Super Mario (155)' },
+      { val: 'Zelda', th: '🏹 Zelda (37)', en: '🏹 The Legend of Zelda (37)' },
+      { val: '2026', th: '🔥 ออกใหม่ปี 2025-2026 (109)', en: '🔥 New 2025-2026 Releases (109)' },
+      { val: 'Smash', th: '🥊 Smash Bros. (78)', en: '🥊 Super Smash Bros. (78)' },
+      { val: 'Splatoon', th: '🦑 Splatoon (28)', en: '🦑 Splatoon Series (28)' },
+      { val: 'Metroid', th: '🔫 Metroid (11)', en: '🔫 Metroid Series (11)' },
+      { val: 'Kirby', th: '⭐ Kirby (11)', en: '⭐ Kirby Series (11)' },
+      { val: 'Monster Hunter', th: '🐉 Monster Hunter (18)', en: '🐉 Monster Hunter (18)' },
+      { val: 'Street Fighter', th: '👊 Street Fighter 6 (66)', en: '👊 Street Fighter 6 (66)' },
+      { val: 'Pokemon', th: '⚡ Pokémon (13)', en: '⚡ Pokémon Series (13)' },
+      { val: 'Xenoblade', th: '⚔️ Xenoblade (5)', en: '⚔️ Xenoblade Chronicles (5)' },
+      { val: 'Animal Crossing', th: '🍃 Animal Crossing (525)', en: '🍃 Animal Crossing (525)' },
+      { val: 'Other', th: '🌟 เกมอื่นๆ (38)', en: '🌟 Other Games (38)' },
+      { val: 'FAV', th: '⭐ รายการโปรด', en: '⭐ Saved Favorites' },
+      { val: 'ALL', th: '🌐 ทุกเกมทั้งหมด (950)', en: '🌐 All Games (950)' }
+    ];
+
+    // โครงสร้างเมนู 2 ชั้น: ซีรีส์เกม -> แยกตามภาค (รองรับทั้ง ไทย และ English)
     const SERIES_SUBGAMES_MAP = {
       'Fire Emblem': [
-        { val: 'FE_ENGAGE', label: '💍 Fire Emblem Engage (13)' },
-        { val: 'FE_3H', label: '🦅 FE: Three Houses (13)' },
-        { val: 'FE_3HOPES', label: '⚔️ FE Warriors: Three Hopes (13)' },
-        { val: 'FE_WARRIORS', label: '🛡️ Fire Emblem Warriors (13)' },
-        { val: 'FE_ECHOES', label: '👑 FE Echoes: Valentia (12)' },
-        { val: 'FE_FATES', label: '🏰 Fire Emblem Fates (6)' },
-        { val: 'FE_ALL', label: '📋 รวมทุกภาค Fire Emblem (13)' }
+        { val: 'FE_ENGAGE', label: '💍 Fire Emblem Engage (13)', labelEn: '💍 Fire Emblem Engage (13)' },
+        { val: 'FE_3H', label: '🦅 FE: Three Houses (13)', labelEn: '🦅 FE: Three Houses (13)' },
+        { val: 'FE_3HOPES', label: '⚔️ FE Warriors: Three Hopes (13)', labelEn: '⚔️ FE Warriors: Three Hopes (13)' },
+        { val: 'FE_WARRIORS', label: '🛡️ Fire Emblem Warriors (13)', labelEn: '🛡️ Fire Emblem Warriors (13)' },
+        { val: 'FE_ECHOES', label: '👑 FE Echoes: Valentia (12)', labelEn: '👑 FE Echoes: Valentia (12)' },
+        { val: 'FE_FATES', label: '🏰 Fire Emblem Fates (6)', labelEn: '🏰 Fire Emblem Fates (6)' },
+        { val: 'FE_ALL', label: '📋 รวมทุกภาค Fire Emblem (13)', labelEn: '📋 All Fire Emblem Titles (13)' }
       ],
       'Mario': [
-        { val: 'MARIO_ODYSSEY', label: '🎩 Super Mario Odyssey (65)' },
-        { val: 'MARIO_3DW', label: '🐱 Mario 3D World + Fury (65)' },
-        { val: 'MARIO_WONDER', label: '🐘 Super Mario Bros. Wonder (65)' },
-        { val: 'MARIO_GALAXY', label: '🌌 Super Mario Galaxy 1+2 (65)' },
-        { val: 'MARIO_KART', label: '🏎️ Mario Kart 8 Deluxe (65)' },
-        { val: 'MARIO_DK', label: '🍌 Donkey Kong Bananza (10)' },
-        { val: 'MARIO_BANDS', label: '🎡 สายรัด USJ Power-Up Band (9)' },
-        { val: 'MARIO_BLOCKS', label: '🧱 บล็อกไม้ My Mario 2026 (4)' },
-        { val: 'MARIO_SPORTS', label: '⚽ การ์ด Mario Sports (90)' },
-        { val: 'MARIO_ALL', label: '📋 รวม Mario ทั้งหมด (155)' }
+        { val: 'MARIO_ODYSSEY', label: '🎩 Super Mario Odyssey (65)', labelEn: '🎩 Super Mario Odyssey (65)' },
+        { val: 'MARIO_3DW', label: '🐱 Mario 3D World + Fury (65)', labelEn: '🐱 Mario 3D World + Fury (65)' },
+        { val: 'MARIO_WONDER', label: '🐘 Super Mario Bros. Wonder (65)', labelEn: '🐘 Super Mario Bros. Wonder (65)' },
+        { val: 'MARIO_GALAXY', label: '🌌 Super Mario Galaxy 1+2 (65)', labelEn: '🌌 Super Mario Galaxy 1+2 (65)' },
+        { val: 'MARIO_KART', label: '🏎️ Mario Kart 8 Deluxe (65)', labelEn: '🏎️ Mario Kart 8 Deluxe (65)' },
+        { val: 'MARIO_DK', label: '🍌 Donkey Kong Bananza (10)', labelEn: '🍌 Donkey Kong Bananza (10)' },
+        { val: 'MARIO_BANDS', label: '🎡 สายรัด USJ Power-Up Band (9)', labelEn: '🎡 USJ Power-Up Bands (9)' },
+        { val: 'MARIO_BLOCKS', label: '🧱 บล็อกไม้ My Mario 2026 (4)', labelEn: '🧱 My Mario Wooden Blocks 2026 (4)' },
+        { val: 'MARIO_SPORTS', label: '⚽ การ์ด Mario Sports (90)', labelEn: '⚽ Mario Sports Cards (90)' },
+        { val: 'MARIO_ALL', label: '📋 รวม Mario ทั้งหมด (155)', labelEn: '📋 All Mario Items (155)' }
       ],
       'Zelda': [
-        { val: 'ZELDA_BOTW', label: '🏹 Zelda: Breath of the Wild (10)' },
-        { val: 'ZELDA_TOTK', label: '🗡️ Zelda: Tears of the Kingdom (8)' },
-        { val: 'ZELDA_CLASSIC', label: '👑 Zelda ภาคคลาสสิก (19)' },
-        { val: 'ZELDA_ALL', label: '📋 รวม Zelda ทุกภาค (37)' }
+        { val: 'ZELDA_BOTW', label: '🏹 Zelda: Breath of the Wild (10)', labelEn: '🏹 Zelda: Breath of the Wild (10)' },
+        { val: 'ZELDA_TOTK', label: '🗡️ Zelda: Tears of the Kingdom (8)', labelEn: '🗡️ Zelda: Tears of the Kingdom (8)' },
+        { val: 'ZELDA_CLASSIC', label: '👑 Zelda ภาคคลาสสิก (19)', labelEn: '👑 Zelda Classic Series (19)' },
+        { val: 'ZELDA_ALL', label: '📋 รวม Zelda ทุกภาค (37)', labelEn: '📋 All Zelda Titles (37)' }
       ],
       '2026': [
-        { val: '2026_ALL', label: '🔥 รวมออกใหม่ 2025-2026 (109)' },
-        { val: '2026_ZELDA', label: '🗡️ Zelda: TotK Sages (5)' },
-        { val: '2026_MARIO', label: '🍄 Mario Galaxy/Wonder/Blocks (10)' },
-        { val: '2026_KIRBY', label: '🚀 Kirby Air Riders (7)' },
-        { val: '2026_MP4', label: '🏍️ Metroid Prime 4: Beyond (3)' },
-        { val: '2026_MHS3', label: '🥚 Monster Hunter Stories 3 (3)' },
-        { val: '2026_SF6', label: '👊 Street Fighter 6 & Fatal Fury (66)' },
-        { val: '2026_CAPCOM', label: '🧟 RE Requiem & PRAGMATA (3)' },
-        { val: '2026_SPLATOON', label: '🦑 Splatoon Side Order/Raiders (8)' }
+        { val: '2026_ALL', label: '🔥 รวมออกใหม่ 2025-2026 (109)', labelEn: '🔥 All 2025-2026 Releases (109)' },
+        { val: '2026_ZELDA', label: '🗡️ Zelda: TotK Sages (5)', labelEn: '🗡️ Zelda: TotK Sages (5)' },
+        { val: '2026_MARIO', label: '🍄 Mario Galaxy/Wonder/Blocks (10)', labelEn: '🍄 Mario Galaxy/Wonder/Blocks (10)' },
+        { val: '2026_KIRBY', label: '🚀 Kirby Air Riders (7)', labelEn: '🚀 Kirby Air Riders (7)' },
+        { val: '2026_MP4', label: '🏍️ Metroid Prime 4: Beyond (3)', labelEn: '🏍️ Metroid Prime 4: Beyond (3)' },
+        { val: '2026_MHS3', label: '🥚 Monster Hunter Stories 3 (3)', labelEn: '🥚 Monster Hunter Stories 3 (3)' },
+        { val: '2026_SF6', label: '👊 Street Fighter 6 & Fatal Fury (66)', labelEn: '👊 Street Fighter 6 & Fatal Fury (66)' },
+        { val: '2026_CAPCOM', label: '🧟 RE Requiem & PRAGMATA (3)', labelEn: '🧟 RE Requiem & PRAGMATA (3)' },
+        { val: '2026_SPLATOON', label: '🦑 Splatoon Side Order/Raiders (8)', labelEn: '🦑 Splatoon Side Order/Raiders (8)' }
       ],
       'Splatoon': [
-        { val: 'SPLAT_ALL', label: '🦑 รวม Splatoon ทุกภาค (28)' },
-        { val: 'SPLAT_3', label: '🎨 Splatoon 3 & Side Order (11)' },
-        { val: 'SPLAT_RAIDERS', label: '🏝️ Splatoon Raiders 2026 (1)' },
-        { val: 'SPLAT_1_2', label: '🐙 Splatoon 1 & 2 (16)' }
+        { val: 'SPLAT_ALL', label: '🦑 รวม Splatoon ทุกภาค (28)', labelEn: '🦑 All Splatoon Titles (28)' },
+        { val: 'SPLAT_3', label: '🎨 Splatoon 3 & Side Order (11)', labelEn: '🎨 Splatoon 3 & Side Order (11)' },
+        { val: 'SPLAT_RAIDERS', label: '🏝️ Splatoon Raiders 2026 (1)', labelEn: '🏝️ Splatoon Raiders 2026 (1)' },
+        { val: 'SPLAT_1_2', label: '🐙 Splatoon 1 & 2 (16)', labelEn: '🐙 Splatoon 1 & 2 (16)' }
       ],
       'Metroid': [
-        { val: 'METROID_ALL', label: '🔫 รวม Metroid ทุกภาค (11)' },
-        { val: 'METROID_MP4', label: '🏍️ Metroid Prime 4: Beyond (3)' },
-        { val: 'METROID_DREAD', label: '🤖 Metroid Dread & 2D (8)' }
+        { val: 'METROID_ALL', label: '🔫 รวม Metroid ทุกภาค (11)', labelEn: '🔫 All Metroid Titles (11)' },
+        { val: 'METROID_MP4', label: '🏍️ Metroid Prime 4: Beyond (3)', labelEn: '🏍️ Metroid Prime 4: Beyond (3)' },
+        { val: 'METROID_DREAD', label: '🤖 Metroid Dread & 2D (8)', labelEn: '🤖 Metroid Dread & 2D (8)' }
       ],
       'Kirby': [
-        { val: 'KIRBY_ALL', label: '⭐ รวม Kirby ทุกภาค (11)' },
-        { val: 'KIRBY_AIR', label: '🚀 Kirby Air Riders (Switch 2) (7)' },
-        { val: 'KIRBY_ROBO', label: '🌸 Kirby Planet Robobot (4)' }
+        { val: 'KIRBY_ALL', label: '⭐ รวม Kirby ทุกภาค (11)', labelEn: '⭐ All Kirby Titles (11)' },
+        { val: 'KIRBY_AIR', label: '🚀 Kirby Air Riders (Switch 2) (7)', labelEn: '🚀 Kirby Air Riders (Switch 2) (7)' },
+        { val: 'KIRBY_ROBO', label: '🌸 Kirby Planet Robobot (4)', labelEn: '🌸 Kirby Planet Robobot (4)' }
       ],
       'Monster Hunter': [
-        { val: 'MH_ALL', label: '🐉 รวม Monster Hunter (18)' },
-        { val: 'MH_STORIES3', label: '🥚 MH Stories 3 (2026) (3)' },
-        { val: 'MH_RISE', label: '⚔️ MH Rise & Sunbreak (6)' },
-        { val: 'MH_STORIES12', label: '🐾 MH Stories 1 & 2 (9)' }
+        { val: 'MH_ALL', label: '🐉 รวม Monster Hunter (18)', labelEn: '🐉 All Monster Hunter (18)' },
+        { val: 'MH_STORIES3', label: '🥚 MH Stories 3 (2026) (3)', labelEn: '🥚 MH Stories 3 (2026) (3)' },
+        { val: 'MH_RISE', label: '⚔️ MH Rise & Sunbreak (6)', labelEn: '⚔️ MH Rise & Sunbreak (6)' },
+        { val: 'MH_STORIES12', label: '🐾 MH Stories 1 & 2 (9)', labelEn: '🐾 MH Stories 1 & 2 (9)' }
       ],
       'Street Fighter': [
-        { val: 'SF_ALL', label: '👊 รวม SF6 & Fatal Fury (66)' },
-        { val: 'SF_FIGURES', label: '🥊 ฟิกเกอร์ Luke/Jamie/Kimberly (3)' },
-        { val: 'SF_CARDS', label: '🃏 การ์ดนักสู้ SF6 & Fatal Fury (63)' }
+        { val: 'SF_ALL', label: '👊 รวม SF6 & Fatal Fury (66)', labelEn: '👊 All SF6 & Fatal Fury (66)' },
+        { val: 'SF_FIGURES', label: '🥊 ฟิกเกอร์ Luke/Jamie/Kimberly (3)', labelEn: '🥊 Figures: Luke/Jamie/Kimberly (3)' },
+        { val: 'SF_CARDS', label: '🃏 การ์ดนักสู้ SF6 & Fatal Fury (63)', labelEn: '🃏 Fighter Cards: SF6 & Fatal Fury (63)' }
       ],
       'Xenoblade': [
-        { val: 'XENO_ALL', label: '⚔️ รวม Xenoblade 1 / 2 / 3 (5)' },
-        { val: 'XENO_3', label: '🪈 Xenoblade Chronicles 3 (2)' },
-        { val: 'XENO_1_2', label: '🗡️ Xenoblade 1 & 2 (3)' }
+        { val: 'XENO_ALL', label: '⚔️ รวม Xenoblade 1 / 2 / 3 (5)', labelEn: '⚔️ All Xenoblade 1 / 2 / 3 (5)' },
+        { val: 'XENO_3', label: '🪈 Xenoblade Chronicles 3 (2)', labelEn: '🪈 Xenoblade Chronicles 3 (2)' },
+        { val: 'XENO_1_2', label: '🗡️ Xenoblade 1 & 2 (3)', labelEn: '🗡️ Xenoblade 1 & 2 (3)' }
       ],
       'Smash': [
-        { val: 'SMASH_ALL', label: '🥊 Super Smash Bros. Ultimate (78)' }
+        { val: 'SMASH_ALL', label: '🥊 Super Smash Bros. Ultimate (78)', labelEn: '🥊 Super Smash Bros. Ultimate (78)' }
       ],
       'Pokemon': [
-        { val: 'POKEMON_ALL', label: '⚡ รวม Pokémon ทุกตัว (13)' }
+        { val: 'POKEMON_ALL', label: '⚡ รวม Pokémon ทุกตัว (13)', labelEn: '⚡ All Pokémon Profiles (13)' }
       ],
       'Animal Crossing': [
-        { val: 'AC_ALL', label: '🍃 Animal Crossing: New Horizons (525)' }
+        { val: 'AC_ALL', label: '🍃 Animal Crossing: New Horizons (525)', labelEn: '🍃 Animal Crossing: New Horizons (525)' }
       ],
       'Other': [
-        { val: 'OTHER_ALL', label: '🌟 รวมเกมอื่นๆ ทั้งหมด (38)' },
-        { val: 'OTHER_CAPCOM', label: '🧟 RE Requiem & PRAGMATA (3)' },
-        { val: 'OTHER_SHOVEL', label: '铲 Shovel Knight (5)' },
-        { val: 'OTHER_YUGIOH', label: '🃏 Yu-Gi-Oh! Rush Duel (7)' }
+        { val: 'OTHER_ALL', label: '🌟 รวมเกมอื่นๆ ทั้งหมด (38)', labelEn: '🌟 All Other Games (38)' },
+        { val: 'OTHER_CAPCOM', label: '🧟 RE Requiem & PRAGMATA (3)', labelEn: '🧟 RE Requiem & PRAGMATA (3)' },
+        { val: 'OTHER_SHOVEL', label: '铲 Shovel Knight (5)', labelEn: '🛡️ Shovel Knight Series (5)' },
+        { val: 'OTHER_YUGIOH', label: '🃏 Yu-Gi-Oh! Rush Duel (7)', labelEn: '🃏 Yu-Gi-Oh! Rush Duel (7)' }
       ],
       'FAV': [
-        { val: 'FAV_ALL', label: '⭐ รายการโปรดที่บันทึกไว้' }
+        { val: 'FAV_ALL', label: '⭐ รายการโปรดที่บันทึกไว้', labelEn: '⭐ Saved Favorite Profiles' }
       ],
       'ALL': [
-        { val: 'ALL', label: '🌐 แสดงทุกภาคทั้งหมด (950)' }
+        { val: 'ALL', label: '🌐 แสดงทุกภาคทั้งหมด (950)', labelEn: '🌐 Show All 950 Profiles' }
       ]
     };
 
     let currentSeries = 'Fire Emblem';
     let currentSubGame = 'FE_ENGAGE';
+
+    function renderSeriesMainSelects() {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      const html = SERIES_MAIN_OPTIONS.map(o =>
+        `<option value="${o.val}" ${o.val === currentSeries ? 'selected' : ''}>${isEn ? o.en : o.th}</option>`
+      ).join('');
+      const qSer = document.getElementById('quickSeriesSelect');
+      const cSer = document.getElementById('catalogSeriesSelect');
+      if (qSer) qSer.innerHTML = html;
+      if (cSer) cSer.innerHTML = html;
+    }
 
     function initGameDropdownsAndAutocomplete() {
       const datalist = document.getElementById('amiiboAutocompleteList');
@@ -1558,16 +2029,18 @@
         datalist.innerHTML = Array.from(charSuggestions).slice(0, 300)
           .map(val => `<option value="${val.replace(/"/g, '&quot;')}"></option>`).join('');
       }
+      renderSeriesMainSelects();
       populateSubGameSelects(currentSeries, currentSubGame);
     }
 
     function populateSubGameSelects(series, selectedSub) {
-      const options = SERIES_SUBGAMES_MAP[series] || [{ val: 'ALL', label: '🌐 แสดงทั้งหมด' }];
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      const options = SERIES_SUBGAMES_MAP[series] || [{ val: 'ALL', label: '🌐 แสดงทั้งหมด', labelEn: '🌐 Show All' }];
       const chosen = selectedSub || options[0].val;
       currentSubGame = chosen;
       activeFilter = chosen;
 
-      const html = options.map(o => `<option value="${o.val}" ${o.val === chosen ? 'selected' : ''}>${o.label}</option>`).join('');
+      const html = options.map(o => `<option value="${o.val}" ${o.val === chosen ? 'selected' : ''}>${isEn ? (o.labelEn || o.label) : o.label}</option>`).join('');
       const qSub = document.getElementById('quickSubGameSelect');
       const cSub = document.getElementById('catalogSubGameSelect');
       if (qSub) qSub.innerHTML = html;
@@ -1582,7 +2055,8 @@
     function onSeriesChange(series, source) {
       triggerHaptic();
       currentSeries = series;
-      const options = SERIES_SUBGAMES_MAP[series] || [{ val: 'ALL', label: '🌐 แสดงทั้งหมด' }];
+      if (typeof syncThemeWithSeries === 'function') syncThemeWithSeries(series);
+      const options = SERIES_SUBGAMES_MAP[series] || [{ val: 'ALL', label: '🌐 แสดงทั้งหมด', labelEn: '🌐 Show All' }];
       const firstSub = options[0].val;
       populateSubGameSelects(series, firstSub);
       applySubGameSelection(firstSub, source);
@@ -1720,51 +2194,66 @@
       return parseInt((item.tail || '0000').slice(0, 4), 16) || 0;
     }
 
-    // แปลงชื่อเกม + ของรางวัลให้สั้นกระชับตรงตาม "ภาค" ที่ผู้ใช้เลือก (พอดีจอมือถือ ไม่อ่านยาก)
+    // แปลงชื่อเกม + ของรางวัลให้สั้นกระชับตรงตาม "ภาค" และภาษาที่เลือก (TH / EN)
     function getInstallmentDisplayInfo(item, subVal) {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const shortChar = item.name.split(' - ')[0].split(' (')[0];
 
       // Fire Emblem แยกตามภาค
       if (item.cat === 'Fire Emblem') {
-        if (subVal === 'FE_ENGAGE') {
+        if (subVal === 'FE_ENGAGE' || (isEn && (!subVal || subVal === 'FE_ALL'))) {
           return {
             gameLabel: '💍 Fire Emblem Engage',
-            rewardText: (item.rewards && item.rewards.includes('【Engage】'))
-              ? item.rewards.split('【')[1].replace('Engage】', '').trim()
-              : `ตั๋วแลกชุด ${shortChar} (Fashion Ticket) + ตั๋วเพลงประจำภาค ที่ศาลา Somniel`
+            rewardText: isEn
+              ? `Unlocks ${shortChar}'s Outfit (Fashion Ticket) + Legacy Battle Music Ticket at Somniel Gazebo`
+              : ((item.rewards && item.rewards.includes('【Engage】'))
+                  ? item.rewards.split('【')[1].replace('Engage】', '').trim()
+                  : `ตั๋วแลกชุด ${shortChar} (Fashion Ticket) + ตั๋วเพลงประจำภาค ที่ศาลา Somniel`)
           };
         }
         if (subVal === 'FE_3H') {
           return {
             gameLabel: '🦅 FE: Three Houses',
-            rewardText: `ปลดล็อกเพลงรบพิเศษของ ${shortChar} + เปิดห้องลับ Holy Tomb รับโล่ Sothis's Shield`
+            rewardText: isEn
+              ? `Unlocks ${shortChar}'s special battle theme + Holy Tomb access (Sothis's Shield & items)`
+              : `ปลดล็อกเพลงรบพิเศษของ ${shortChar} + เปิดห้องลับ Holy Tomb รับโล่ Sothis's Shield`
           };
         }
         if (subVal === 'FE_3HOPES') {
           return {
             gameLabel: '⚔️ FE Warriors: Three Hopes',
-            rewardText: `สุ่มอาวุธระดับสูงประจำตัว ${shortChar} + แร่ตีบวก Smithing Stones (สแกนที่เมนูค่ายพักแรม)`
+            rewardText: isEn
+              ? `Grants high-tier ${shortChar} weapons + Smithing Stones (Scan in Base Camp menu)`
+              : `สุ่มอาวุธระดับสูงประจำตัว ${shortChar} + แร่ตีบวก Smithing Stones (สแกนที่เมนูค่ายพักแรม)`
           };
         }
         if (subVal === 'FE_WARRIORS') {
           return {
             gameLabel: '🛡️ Fire Emblem Warriors',
-            rewardText: `ปลดล็อกอาวุธประจำตัว ${shortChar} + วัตถุดิบอัปเกรดระดับท็อป (วันละ 5 ครั้ง)`
+            rewardText: isEn
+              ? `Unlocks ${shortChar}'s signature weapon + rare crafting materials (up to 5 scans/day)`
+              : `ปลดล็อกอาวุธประจำตัว ${shortChar} + วัตถุดิบอัปเกรดระดับท็อป (วันละ 5 ครั้ง)`
           };
         }
         if (subVal === 'FE_ECHOES') {
           const isAlmCelica = ['21060000', '21070000'].includes(item.head);
           return {
             gameLabel: '👑 FE Echoes: Valentia',
-            rewardText: isAlmCelica
-              ? `ปลดล็อกดันเจี้ยนลับ (${shortChar}'s Ordeal) + บันทึกสเตตัสเรียกวิญญาณช่วยรบ`
-              : `อัญเชิญวิญญาณผู้กล้า Illusory ${shortChar} ลงมาช่วยต่อสู้ในสนามรบ!`
+            rewardText: isEn
+              ? (isAlmCelica
+                  ? `Unlocks exclusive dungeon (${shortChar}'s Ordeal) + saves hero spirit stats`
+                  : `Summons Illusory Hero ${shortChar} as a phantom ally in battle!`)
+              : (isAlmCelica
+                  ? `ปลดล็อกดันเจี้ยนลับ (${shortChar}'s Ordeal) + บันทึกสเตตัสเรียกวิญญาณช่วยรบ`
+                  : `อัญเชิญวิญญาณผู้กล้า Illusory ${shortChar} ลงมาช่วยต่อสู้ในสนามรบ!`)
           };
         }
         if (subVal === 'FE_FATES') {
           return {
             gameLabel: '🏰 Fire Emblem Fates',
-            rewardText: `อัญเชิญ ${shortChar} เข้ากองทัพถาวรที่ปราสาท My Castle + รับอาวุธประจำตัว!`
+            rewardText: isEn
+              ? `Recruits ${shortChar} into your army at My Castle + unlocks signature weapons!`
+              : `อัญเชิญ ${shortChar} เข้ากองทัพถาวรที่ปราสาท My Castle + รับอาวุธประจำตัว!`
           };
         }
       }
@@ -1774,43 +2263,89 @@
         if (subVal === 'MARIO_ODYSSEY') {
           return {
             gameLabel: '🎩 Super Mario Odyssey',
-            rewardText: item.name.includes('Wedding')
-              ? 'ปลดล็อกชุดแต่งงาน Wedding Suit ทันที + อมตะ/เพิ่มหัวใจ/เรดาร์เหรียญม่วง'
-              : `กด ▶ ค้างเพื่อรับอมตะ/หัวใจเพิ่ม หรือคุยกับ Uncle amiibo เพื่อหา Power Moon`
+            rewardText: isEn
+              ? (item.name.includes('Wedding')
+                  ? 'Unlocks Wedding Outfit immediately + Invincibility / Life-Up Heart / Coin Radar'
+                  : 'Hold D-Pad Right (▶) for Invincibility/Hearts or talk to Uncle amiibo to locate Power Moons')
+              : (item.name.includes('Wedding')
+                  ? 'ปลดล็อกชุดแต่งงาน Wedding Suit ทันที + อมตะ/เพิ่มหัวใจ/เรดาร์เหรียญม่วง'
+                  : `กด ▶ ค้างเพื่อรับอมตะ/หัวใจเพิ่ม หรือคุยกับ Uncle amiibo เพื่อหา Power Moon`)
           };
         }
         if (subVal === 'MARIO_3DW') {
           return {
             gameLabel: '🐱 Mario 3D World + Fury',
-            rewardText: item.name.includes('Cat')
-              ? 'กด ◀ ค้างเพื่อเสกกระดิ่งแมวขาวอมตะ (Invincible White Cat Bell) ทันที!'
-              : 'กด ◀ ค้างระหว่างอยู่ในด่านเพื่อเสกไอเทม Power-Up / ดาวอมตะช่วยเหลือ!'
+            rewardText: isEn
+              ? (item.name.includes('Cat')
+                  ? 'Hold D-Pad Left (◀) to spawn the Invincible White Cat Bell immediately!'
+                  : 'Hold D-Pad Left (◀) inside stages to spawn Power-Ups & Super Star items!')
+              : (item.name.includes('Cat')
+                  ? 'กด ◀ ค้างเพื่อเสกกระดิ่งแมวขาวอมตะ (Invincible White Cat Bell) ทันที!'
+                  : 'กด ◀ ค้างระหว่างอยู่ในด่านเพื่อเสกไอเทม Power-Up / ดาวอมตะช่วยเหลือ!')
           };
         }
         if (subVal === 'MARIO_WONDER') {
           return {
             gameLabel: '🐘 Super Mario Bros. Wonder',
-            rewardText: item.rewards || 'รับไอเทมช่วยเหลือ Elephant Fruit, ป้าย Standee & เหรียญม่วงในด่าน'
+            rewardText: isEn
+              ? 'Grants Elephant Fruit, Standee surprises & bonus Flower Coins inside stages'
+              : (item.rewards || 'รับไอเทมช่วยเหลือ Elephant Fruit, ป้าย Standee & เหรียญม่วงในด่าน')
           };
         }
         if (subVal === 'MARIO_GALAXY') {
           return {
             gameLabel: '🌌 Super Mario Galaxy 1+2',
-            rewardText: 'รับเห็ดเพิ่มเลือด Life Mushroom / 1-Up Mushroom และแร่ดาว Star Bits พิเศษ'
+            rewardText: isEn
+              ? 'Grants Life Mushroom / 1-Up Mushroom and bonus Star Bits'
+              : 'รับเห็ดเพิ่มเลือด Life Mushroom / 1-Up Mushroom และแร่ดาว Star Bits พิเศษ'
           };
         }
         if (subVal === 'MARIO_KART') {
           return {
             gameLabel: '🏎️ Mario Kart 8 Deluxe',
-            rewardText: `ปลดล็อกชุดนักแข่ง Mii Racing Suit ลาย ${shortChar} ที่เมนู amiibo หน้าแรก`
+            rewardText: isEn
+              ? `Unlocks the ${shortChar} Mii Racing Suit in the main menu`
+              : `ปลดล็อกชุดนักแข่ง Mii Racing Suit ลาย ${shortChar} ที่เมนู amiibo หน้าแรก`
           };
         }
         if (subVal === 'MARIO_DK') {
           return {
             gameLabel: '🍌 Donkey Kong Bananza',
-            rewardText: 'ปลดล็อกชุดทองคำ/ไอเทมพิเศษใน Donkey Kong Bananza (Switch 2) & เกมตระกูล Mario'
+            rewardText: isEn
+              ? 'Unlocks Golden Kong outfit & bonus items in Donkey Kong Bananza (Switch 2) & Mario titles'
+              : 'ปลดล็อกชุดทองคำ/ไอเทมพิเศษใน Donkey Kong Bananza (Switch 2) & เกมตระกูล Mario'
           };
         }
+        if (isEn) {
+          return {
+            gameLabel: item.game || '🍄 Super Mario Series',
+            rewardText: `Unlocks exclusive ${shortChar} outfits, power-ups & bonuses across Super Mario titles`
+          };
+        }
+      }
+
+      if (isEn) {
+        const cat = item.cat || '';
+        let enReward = `Scan ${shortChar} to unlock exclusive in-game items, gear & bonuses in ${item.game || cat || 'compatible games'}`;
+        if (cat.startsWith('Zelda')) {
+          enReward = `Drops ${shortChar}'s exclusive weapon chest, Paraglider fabric, armor piece & rare materials in BotW / TotK`;
+        } else if (cat === 'Splatoon') {
+          enReward = `Unlocks ${shortChar}'s exclusive 3-piece Gear Set (Headgear, Clothing, Shoes) + photo mode poses`;
+        } else if (cat === 'Smash') {
+          enReward = `Trains ${shortChar} as a Figure Player (FP) + unlocks Spirit & bonus rewards in Smash Bros. Ultimate`;
+        } else if (cat === 'Metroid') {
+          enReward = `Unlocks Energy Tank / Missile+ reserves, gallery concept art & suit bonuses in Metroid Dread / Prime 4`;
+        } else if (cat === 'Kirby') {
+          enReward = `Unlocks Air Ride Machine parts (${shortChar}), Copy Abilities & rare healing items`;
+        } else if (cat === 'Monster Hunter') {
+          enReward = `Unlocks ${shortChar} Layered Armor set & daily lottery items in Monster Hunter Rise / Stories 3`;
+        } else if (cat === 'Animal Crossing') {
+          enReward = `Invites ${shortChar} to The Roost café, Harv's Photopia studio, or Happy Home Paradise`;
+        }
+        return {
+          gameLabel: item.game || item.cat || 'Nintendo Switch',
+          rewardText: enReward
+        };
       }
 
       return {
@@ -1853,12 +2388,13 @@
       const strip = document.getElementById('quickCharStrip');
       const countEl = document.getElementById('quickStripCount');
       if (!strip) return;
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const fullList = getItemsByQuickCat(currentSubGame);
-      if (countEl) countEl.textContent = `${fullList.length} ตัว`;
+      if (countEl) countEl.textContent = isEn ? `${fullList.length} items` : `${fullList.length} ตัว`;
       const list = fullList.slice(0, 40);
 
       if (list.length === 0) {
-        strip.innerHTML = `<div class="text-xs text-slate-400 py-1.5">ไม่พบตัวละครที่ค้นหา ลองพิมพ์คำอื่น</div>`;
+        strip.innerHTML = `<div class="text-xs text-slate-400 py-1.5">${isEn ? 'No matching character found. Try another keyword.' : 'ไม่พบตัวละครที่ค้นหา ลองพิมพ์คำอื่น'}</div>`;
         return;
       }
 
@@ -1876,7 +2412,25 @@
     }
 
     function getInGameScanHint(item) {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const sub = currentSubGame || '';
+      if (isEn) {
+        if (sub === 'FE_ENGAGE') return 'Walk to the <b>Gazebo in the Somniel</b> ➔ select <b>Scan</b> ➔ hold your OdimibO device or coin on the Right Stick (R-Stick)';
+        if (sub === 'FE_3H') return 'Walk to the <b>Gazebo in Garreg Mach Monastery</b> ➔ interact and touch the Right Stick (R-Stick)';
+        if (sub === 'FE_3HOPES' || sub === 'FE_WARRIORS') return 'Open the Base Camp menu ➔ select <b>System ➔ NFC Scan</b> ➔ touch the Right Stick (up to 5 times/day)';
+        if (sub === 'FE_ECHOES') return 'Open <b>Mila\'s Turnwheel ➔ NFC Scan</b> ➔ touch the Right Stick to summon an Illusory Hero ally';
+        if (sub === 'FE_FATES') return 'Interact with the <b>Crystal Ball in My Castle</b> ➔ scan to invite the hero to your castle';
+        if (sub === 'MARIO_ODYSSEY') return 'Hold <b>D-Pad Right (<code>▶</code>)</b> or talk to <b>Uncle amiibo</b>, then touch the Right Stick (R-Stick)';
+        if (sub === 'MARIO_3DW') return 'While inside a stage, hold <b>D-Pad Left (<code>◀</code>)</b> and touch the Right Stick (R-Stick)';
+        if (sub === 'MARIO_KART') return 'On the main title menu, select the <b>NFC icon</b> on the bottom bar and touch the Right Stick to unlock racing suits';
+        if (sub === 'MARIO_WONDER' || sub === 'MARIO_GALAXY' || sub === 'MARIO_DK') return 'Press <b><code>+</code> (Pause Menu)</b> ➔ select the <b>NFC icon</b> and touch the Right Stick';
+
+        const catEn = item.cat || '';
+        if (catEn.startsWith('Zelda')) return 'Hold <b><code>L</code></b> ➔ select the <b>NFC Rune</b> ➔ press <code>L</code> to project a circle on the ground and touch the Right Stick';
+        if (catEn === 'Splatoon') return 'Walk to the <b>giant figure display box</b> in Splatsville square, press <code>A</code>, and touch the Right Stick';
+        return 'Open the in-game <b>NFC scan menu</b>; when prompted, hold your OdimibO device or NTAG215 coin on the <b>Right Joy-Con Stick (R-Stick)</b> for 2 seconds';
+      }
+
       if (sub === 'FE_ENGAGE') return 'เดินไปที่ <b>ศาลา Amiibo Gazebo (ในฐานทัพ Somniel)</b> ➔ เลือก <b>Scan amiibo</b> ➔ แตะที่อนาล็อกขวา';
       if (sub === 'FE_3H') return 'เดินไปที่ <b>ศาลา Amiibo Gazebo (ในโรงเรียน Garreg Mach)</b> ➔ กดสำรวจแล้วแตะที่อนาล็อกขวา';
       if (sub === 'FE_3HOPES' || sub === 'FE_WARRIORS') return 'เปิดเมนูในค่ายพักแรม ➔ เลือก <b>System ➔ amiibo</b> ➔ แตะที่อนาล็อกขวา (ได้วันละ 5 ครั้ง)';
@@ -1926,13 +2480,16 @@
       const container = document.getElementById('amiiboListContainer');
       const loadMoreBox = document.getElementById('loadMoreBox');
       const filtered = getFilteredList();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
 
-      document.getElementById('amiiboCountBadge').textContent = `${filtered.length} ตัว`;
+      document.getElementById('amiiboCountBadge').textContent = isEn ? `${filtered.length} items` : `${filtered.length} ตัว`;
 
       if (filtered.length === 0) {
         container.innerHTML = `
           <div class="col-span-full py-10 text-center text-slate-400 text-xs">
-            ${activeFilter.startsWith('FAV') ? 'ยังไม่มีตัวละครในรายการโปรด กดปุ่ม ☆ บนการ์ดตัวละครเพื่อบันทึกเก็บไว้ได้เลย' : `ไม่พบตัวละครที่ตรงกับ "${document.getElementById('searchInput').value}"`}
+            ${activeFilter.startsWith('FAV')
+              ? (isEn ? 'No favorite profiles saved yet. Tap ☆ on any character card to bookmark it!' : 'ยังไม่มีตัวละครในรายการโปรด กดปุ่ม ☆ บนการ์ดตัวละครเพื่อบันทึกเก็บไว้ได้เลย')
+              : (isEn ? `No characters matching "${document.getElementById('searchInput').value}"` : `ไม่พบตัวละครที่ตรงกับ "${document.getElementById('searchInput').value}"`)}
           </div>
         `;
         loadMoreBox.classList.add('hidden');
@@ -1958,27 +2515,27 @@
                 </span>
                 ${item.is2026 ? '<span class="text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-fuchsia-600/30 border border-fuchsia-500/50 text-fuchsia-200 flex-shrink-0">🔥 2026</span>' : ''}
               </div>
-              <button onclick="toggleFavoriteByIdx(${globalIdx}, event)" class="text-sm px-1.5 py-0.5 rounded-lg flex-shrink-0 ${isFav ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:text-amber-300'}" title="รายการโปรด">
+              <button onclick="toggleFavoriteByIdx(${globalIdx}, event)" class="text-sm px-1.5 py-0.5 rounded-lg flex-shrink-0 ${isFav ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:text-amber-300'}" title="${isEn ? 'Favorite' : 'รายการโปรด'}">
                 ${isFav ? '⭐' : '☆'}
               </button>
             </div>
 
             <div class="bg-slate-950/80 rounded-xl p-2 flex items-center justify-center mb-1.5 h-24 overflow-hidden relative border border-slate-800/60">
-              <img src="${item.img}" alt="${shortTitle}" loading="lazy" class="max-h-20 object-contain" onerror="this.src='https://via.placeholder.com/100?text=Amiibo'">
+              <img src="${item.img}" alt="${shortTitle}" loading="lazy" class="max-h-20 object-contain" onerror="this.src='https://via.placeholder.com/100?text=OdimibO'">
               <span class="absolute bottom-1 right-1.5 text-[10px] font-mono text-slate-500">${item.head.slice(0,4)}-${item.tail.slice(0,4)}</span>
             </div>
 
-            <h4 class="text-xs font-bold text-white truncate" title="${item.name}">${shortTitle}</h4>
+            <h4 class="text-xs font-bold text-white truncate" title="${shortTitle}">${shortTitle}</h4>
             <p class="text-[11px] text-emerald-400 font-semibold truncate mt-0.5">${info.gameLabel}</p>
             <p class="text-[11px] text-amber-300/95 line-clamp-2 mt-1 bg-amber-500/5 p-1.5 rounded-lg border border-amber-500/20 leading-snug">🎁 ${info.rewardText}</p>
           </div>
 
           <div class="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-slate-800">
             <button onclick="selectAmiibo(${globalIdx}, true)" class="btn-active bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white text-xs font-bold py-1.5 rounded-xl shadow flex items-center justify-center gap-1">
-              <span>📲</span> เลือกใช้
+              <span>📲</span> ${isEn ? 'Select' : 'เลือกใช้'}
             </button>
             <button onclick="downloadBinFromCatalog(${globalIdx})" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold py-1.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-              <span>💾</span> โหลด .bin
+              <span>💾</span> ${isEn ? 'Get .bin' : 'โหลด .bin'}
             </button>
           </div>
         </div>
@@ -2016,10 +2573,35 @@
       return map[cat] || '🎮';
     }
 
+    let currentSelectedIdx = 0;
+
+    function refreshActiveCharacterDisplay() {
+      const item = fullDb[currentSelectedIdx] || fullDb[0];
+      if (!item) return;
+      const info = getInstallmentDisplayInfo(item, currentSubGame);
+      const shortTitle = item.name.split(' - ')[0];
+      activeTag.game = info.gameLabel;
+      activeTag.rewards = info.rewardText;
+
+      const setTxt = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+      setTxt('activeGameTitle', shortTitle);
+      setTxt('activeAmiiboName', shortTitle);
+      setTxt('activeGameSeries', info.gameLabel);
+      setTxt('activeGameTagPill', item.cat);
+      setTxt('activeRewards', `🎁 ${info.rewardText}`);
+      setTxt('activeGameCategory', info.gameLabel);
+      setTxt('activeGameLogoBadge', getCategoryEmoji(item.cat));
+
+      const hintEl = document.getElementById('inGameScanHintText');
+      if (hintEl) hintEl.innerHTML = getInGameScanHint(item);
+      updateActiveFavBtn();
+    }
+
     async function selectAmiibo(globalIdx, shouldSwitchTab = true) {
       triggerHaptic();
       const item = fullDb[globalIdx];
       if (!item) return;
+      currentSelectedIdx = globalIdx;
 
       const r = () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase();
       const newUid = `04:${r()}:${r()}:${r()}:${r()}:${r()}:80`;
@@ -2042,27 +2624,21 @@
 
       await rebuildActiveTagBinary();
 
-      document.getElementById('activeGameTitle').textContent = shortTitle;
-      document.getElementById('activeAmiiboName').textContent = shortTitle;
-      document.getElementById('activeGameSeries').textContent = info.gameLabel;
-      document.getElementById('activeGameTagPill').textContent = item.cat;
-      document.getElementById('activeRewards').textContent = `🎁 ${info.rewardText}`;
       document.getElementById('activeAmiiboImg').src = item.img;
-      document.getElementById('activeGameCategory').textContent = info.gameLabel;
-      document.getElementById('activeGameLogoBadge').textContent = getCategoryEmoji(item.cat);
-
-      const hintEl = document.getElementById('inGameScanHintText');
-      if (hintEl) hintEl.innerHTML = getInGameScanHint(item);
-
-      updateActiveFavBtn();
+      refreshActiveCharacterDisplay();
       renderQuickCharStrip();
 
       currentScreen = 'TAG_EMULATE';
       renderOLED();
       if (shouldSwitchTab) switchTab('tabDevice');
 
-      log(`[NTAG215] เตรียมข้อมูล ${shortTitle} (${info.gameLabel})`, 'tx');
-      showToast(`✅ เลือก "${shortTitle}" (${info.gameLabel})`);
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      log(isEn
+        ? `[NTAG215] Loaded profile: ${shortTitle} (${info.gameLabel})`
+        : `[NTAG215] เตรียมข้อมูล ${shortTitle} (${info.gameLabel})`, 'tx');
+      showToast(isEn
+        ? `✅ Selected "${shortTitle}" (${info.gameLabel})`
+        : `✅ เลือก "${shortTitle}" (${info.gameLabel})`);
 
       if (isBleConnected) {
         await sendCurrentToBLE();
@@ -2532,6 +3108,7 @@
       const hasWebBLE = !!(navigator.bluetooth && typeof navigator.bluetooth.requestDevice === 'function');
       const hasWebCrypto = !!(window.crypto && window.crypto.subtle);
       const hasKey = !!(retailKeyBytes && retailKeyBytes.length === 160);
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
 
       // ตรวจโครงสร้างไบต์ 540 ไบต์ (135 Pages) ของ NTAG215 จริง
       const is540B = b && b.length === 540;
@@ -2540,29 +3117,41 @@
       const bcc1Expected = (b[4] ^ b[5] ^ b[6] ^ b[7]) & 0xFF;
       const bcc1Ok = is540B && b[8] === bcc1Expected;
       const ccOk = is540B && b[12] === 0xF1 && b[13] === 0x10 && b[14] === 0xFF && b[15] === 0xEE;
-      const a5Ok = is540B && b[16] === 0xA5;
       const dynLockOk = is540B && b[520] === 0x01 && b[521] === 0x00 && b[522] === 0x0F && b[523] === 0xBD;
       const packOk = is540B && b[536] === 0x80 && b[537] === 0x80;
 
       const toHex = (arr) => Array.from(arr).map(x => x.toString(16).padStart(2, '0').toUpperCase()).join(' ');
       const pwdHex = is540B ? toHex(b.subarray(532, 536)) : '--';
       const ccHex  = is540B ? toHex(b.subarray(12, 16)) : '--';
+      const shortName = (activeTag.name || 'OdimibO').split(' - ')[0];
 
       let browserStatusHtml = '';
       if (isLineOrFB) {
-        browserStatusHtml = `
+        browserStatusHtml = isEn ? `
+          <div class="bg-rose-950/60 border border-rose-500/50 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-rose-300">⚠️ In-App Chat Browser Detected (LINE / Facebook)!</div>
+            <p class="text-[11px] text-slate-200">In-app browsers block Bluetooth and file downloads. Tap <b>⋮ (top/bottom corner)</b> and select <b>"Open in Default Browser (Chrome / Safari)"</b>.</p>
+          </div>` : `
           <div class="bg-rose-950/60 border border-rose-500/50 p-3 rounded-2xl space-y-1">
             <div class="font-bold text-rose-300">⚠️ ตรวจพบการเปิดเว็บผ่านแอปแชท (LINE / Facebook)!</div>
             <p class="text-[11px] text-slate-200">แอปแชทจะบล็อก Bluetooth และการดาวน์โหลดไฟล์ กรุณากดปุ่ม <b>⋮ (มุมขวาบน/ล่าง)</b> แล้วเลือก <b>"เปิดในเบราว์เซอร์เริ่มต้น (Open in Chrome / Safari)"</b> ก่อนใช้งานครับ</p>
           </div>`;
       } else if (isIOS && !hasWebBLE) {
-        browserStatusHtml = `
+        browserStatusHtml = isEn ? `
+          <div class="bg-amber-950/50 border border-amber-500/40 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-amber-300">📱 Device: iPhone / iPad (Safari blocks Web Bluetooth)</div>
+            <p class="text-[11px] text-slate-200">• <b>For OdimibO BLE Hardware:</b> Install the free <b>Bluefy – Web BLE Browser</b> app from the App Store and open this URL inside Bluefy.<br>• <b>For NTAG215 NFC Coins:</b> Download the <code>.bin</code> file directly in Safari and write it using <b>NFC Tools / AmiiBoss</b>.</p>
+          </div>` : `
           <div class="bg-amber-950/50 border border-amber-500/40 p-3 rounded-2xl space-y-1">
             <div class="font-bold text-amber-300">📱 อุปกรณ์: iPhone / iPad (Safari บล็อก Web Bluetooth)</div>
-            <p class="text-[11px] text-slate-200">• <b>ถ้าใช้เครื่องจำลอง Allmiibo (Bluetooth):</b> ให้โหลดแอปฟรีชื่อ <b>Bluefy – Web BLE Browser</b> จาก App Store แล้วนำลิงก์เว็บนี้ไปเปิดในแอป Bluefy<br>• <b>ถ้าเขียนเหรียญ NFC NTAG215:</b> ใช้ Safari กดดาวน์โหลดไฟล์ <code>.bin</code> บนหน้านี้ได้เลย แล้วเขียนผ่านแอป <b>NFC Tools / AmiiBoss</b></p>
+            <p class="text-[11px] text-slate-200">• <b>ถ้าใช้เครื่องจำลอง OdimibO (Bluetooth):</b> ให้โหลดแอปฟรีชื่อ <b>Bluefy – Web BLE Browser</b> จาก App Store แล้วนำลิงก์เว็บนี้ไปเปิดในแอป Bluefy<br>• <b>ถ้าเขียนเหรียญ NFC NTAG215:</b> ใช้ Safari กดดาวน์โหลดไฟล์ <code>.bin</code> บนหน้านี้ได้เลย แล้วเขียนผ่านแอป <b>NFC Tools / AmiiBoss</b></p>
           </div>`;
       } else {
-        browserStatusHtml = `
+        browserStatusHtml = isEn ? `
+          <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-emerald-300">✅ Browser Ready (${isAndroid ? 'Android Chrome' : 'WebBLE Ready'})</div>
+            <p class="text-[11px] text-slate-200">• <b>Web Bluetooth (BLE):</b> ${hasWebBLE ? '✅ Supported (Keep Bluetooth & Location enabled on mobile)' : '⚠️ Not supported in this browser (Use Google Chrome or Bluefy)'}<br>• <b>WebCrypto AES-128 / HMAC:</b> ${hasWebCrypto ? '✅ 100% Ready' : '❌ Not Supported'}</p>
+          </div>` : `
           <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1">
             <div class="font-bold text-emerald-300">✅ เบราว์เซอร์พร้อมใช้งานเต็มระบบ (${isAndroid ? 'Android Chrome' : 'WebBLE Ready'})</div>
             <p class="text-[11px] text-slate-200">• <b>Web Bluetooth (BLE):</b> ${hasWebBLE ? '✅ รองรับ (อย่าลืมเปิด Bluetooth + Location/ตำแหน่งที่ตั้งในมือถือ)' : '⚠️ ไม่รองรับในเบราว์เซอร์นี้ (แนะนำให้เปิดด้วย Google Chrome หรือแอป Bluefy)'}<br>• <b>WebCrypto AES-128 / HMAC:</b> ${hasWebCrypto ? '✅ พร้อมเข้ารหัส 100%' : '❌ ไม่รองรับ'}</p>
@@ -2572,32 +3161,39 @@
       const html = `
         ${browserStatusHtml}
 
-        <!-- 2. ผลตรวจโครงสร้างไบต์ 540B ของตัวละครที่เลือกอยู่ -->
+        <!-- 2. 540B Binary Verification -->
         <div class="bg-slate-950 border border-slate-800 p-3 rounded-2xl space-y-1.5">
           <div class="font-bold text-teal-300 flex items-center justify-between">
-            <span>🔬 ตรวจไฟล์จริง: ${activeTag.name}</span>
+            <span>🔬 ${isEn ? `540B Binary Check: ${shortName}` : `ตรวจไฟล์จริง: ${shortName}`}</span>
             <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono">${is540B && bcc0Ok && bcc1Ok && ccOk && dynLockOk && packOk ? 'PASS 100%' : 'CHECK'}</span>
           </div>
           <div class="grid grid-cols-1 gap-1 text-[11px] font-mono text-slate-300 pt-1">
-            <div class="flex justify-between"><span>• ขนาดไฟล์ NTAG215:</span><span class="text-emerald-400">${b.length} Bytes (135 Pages) ✅</span></div>
+            <div class="flex justify-between"><span>• ${isEn ? 'NTAG215 Size:' : 'ขนาดไฟล์ NTAG215:'}</span><span class="text-emerald-400">${b.length} Bytes (135 Pages) ✅</span></div>
             <div class="flex justify-between"><span>• UID & BCC0/BCC1:</span><span class="text-emerald-400">${activeTag.uid} (${bcc0Ok && bcc1Ok ? 'Valid ✅' : 'Err'})</span></div>
-            <div class="flex justify-between"><span>• Amiibo CC (Page 3):</span><span class="text-emerald-400">${ccHex} (${ccOk ? 'Valid ✅' : 'Err'})</span></div>
+            <div class="flex justify-between"><span>• Capability Container (P.3):</span><span class="text-emerald-400">${ccHex} (${ccOk ? 'Valid ✅' : 'Err'})</span></div>
             <div class="flex justify-between"><span>• Character ID (P.21-22):</span><span class="text-indigo-300">${activeTag.head}-${activeTag.tail} ✅</span></div>
             <div class="flex justify-between"><span>• Dynamic Lock & PACK:</span><span class="text-emerald-400">${dynLockOk && packOk ? '01000FBD / 8080 ✅' : 'Err'}</span></div>
-            <div class="flex justify-between"><span>• PWD คำนวณจาก UID:</span><span class="text-amber-300">${pwdHex} ✅</span></div>
-            <div class="flex justify-between"><span>• สถานะเข้ารหัส Retail Key:</span><span class="${hasKey ? 'text-emerald-400' : 'text-amber-300'}">${hasKey ? '🔐 เข้ารหัส AES+HMAC แล้ว ✅' : '⚡ โหมด Allmiibo (ยังไม่ใส่ Key)'}</span></div>
+            <div class="flex justify-between"><span>• Derived PWD (P.133):</span><span class="text-amber-300">${pwdHex} ✅</span></div>
+            <div class="flex justify-between"><span>• ${isEn ? 'Retail Key Status:' : 'สถานะเข้ารหัส Retail Key:'}</span><span class="${hasKey ? 'text-emerald-400' : 'text-amber-300'}">${hasKey ? (isEn ? '🔐 AES+HMAC Signed ✅' : '🔐 เข้ารหัส AES+HMAC แล้ว ✅') : (isEn ? '⚡ OdimibO BLE Mode (Unsigned)' : '⚡ โหมด OdimibO (ยังไม่ใส่ Key)')}</span></div>
           </div>
         </div>
 
-        <!-- 3. วิธีเช็คกับเครื่อง Nintendo Switch ทันทีใน 3 วินาที (ไม่ต้องเข้าเกม) -->
+        <!-- 3. 3-Second Console Verification -->
         <div class="bg-indigo-950/40 border border-indigo-500/40 p-3 rounded-2xl space-y-1.5">
-          <div class="font-bold text-indigo-300">🎮 วิธีทดสอบบน Nintendo Switch ทันที (ไม่ต้องเปิดเกม):</div>
+          <div class="font-bold text-indigo-300">🎮 ${isEn ? 'How to Test on Console in 3 Seconds (Without Launching a Game):' : 'วิธีทดสอบบนเครื่องเกมทันที (ไม่ต้องเปิดเกม):'}</div>
+          ${isEn ? `
           <ol class="list-decimal list-inside text-[11px] text-slate-200 space-y-1">
-            <li>ที่หน้าโฮมของ Switch ให้เข้าเมนู <b>System Settings (ตั้งค่าเครื่องรูปฟันเฟือง ⚙️)</b></li>
+            <li>On the console HOME Menu, open <b>System Settings (⚙️)</b>.</li>
+            <li>Scroll down to <b>amiibo</b> ➔ select <b>Register Owner and Nickname</b>.</li>
+            <li>Touch your <b>OdimibO BLE device</b> or <b>NTAG215 coin</b> to the <b>Right Joy-Con Analog Stick (R-Stick)</b>.</li>
+            <li>If working properly, the console will beep and display the character's name & figure within 2 seconds!</li>
+          </ol>` : `
+          <ol class="list-decimal list-inside text-[11px] text-slate-200 space-y-1">
+            <li>ที่หน้าโฮมของเครื่องเกม ให้เข้าเมนู <b>System Settings (ตั้งค่าเครื่องรูปฟันเฟือง ⚙️)</b></li>
             <li>เลื่อนซ้ายลงมาเลือกเมนู <b>amiibo</b> ➔ กดที่ <b>Register Owner and Nickname (ลงทะเบียนเจ้าของและชื่อเล่น)</b></li>
-            <li>นำเครื่อง <b>Allmiibo</b> (ที่กดส่งข้อมูลจากเว็บนี้แล้ว) หรือ <b>เหรียญ NFC</b> ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></li>
-            <li>ถ้าใช้งานได้จริง <b>หน้าจอ Switch จะดัง "ติ๊ด!" และเด้งรูป + ชื่อตัวละครขึ้นมาทันทีภายใน 2 วินาทีครับ!</b></li>
-          </ol>
+            <li>นำเครื่อง <b>OdimibO</b> (ที่กดส่งข้อมูลจากเว็บนี้แล้ว) หรือ <b>เหรียญ NFC</b> ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></li>
+            <li>ถ้าใช้งานได้จริง <b>หน้าจอจะดัง "ติ๊ด!" และเด้งรูป + ชื่อตัวละครขึ้นมาทันทีภายใน 2 วินาทีครับ!</b></li>
+          </ol>`}
         </div>
       `;
 
@@ -2605,7 +3201,9 @@
       const m = document.getElementById('diagnosticModal');
       m.classList.remove('hidden');
       m.classList.add('flex');
-      log(`[Self-Test] ตรวจโครงสร้าง ${activeTag.name} (540B, BCC0/BCC1, CC:${ccHex}, PWD:${pwdHex}) ผ่านครบ 100%`, 'rx');
+      log(isEn
+        ? `[Self-Test] Verified ${shortName} (540B, BCC0/BCC1, CC:${ccHex}, PWD:${pwdHex}) — PASS 100%`
+        : `[Self-Test] ตรวจโครงสร้าง ${shortName} (540B, BCC0/BCC1, CC:${ccHex}, PWD:${pwdHex}) ผ่านครบ 100%`, 'rx');
     }
 
     // --------------------------------------------------------
@@ -2629,62 +3227,158 @@
       th: {
         topSubStatus: 'คลัง 950 OdimibO (ปี 2026 • NTAG215 Smart Tag)',
         cryptoWarn: '⚠️ ต้องใช้เครื่อง OdimibO BLE หรือเหรียญ NFC',
-        vipUpgradeLink: '💖 โดเนท / VIP / Admin',
-        topManualBtn: '📖 วิธีใช้',
+        vipUpgradeLink: '⚙️ ตั้งค่า / ภาษา / วิธีใช้ / KeyGen',
         lblSelectGameHeader: '🎮 เลือกเกม & แยกตามภาค (OdimibO)',
         btnViewAllCatalog: 'ดูตาราง 950 ตัว ▶',
         lblStep1Series: '1. เลือกซีรีส์เกม:',
         lblStep2SubGame: '2. เลือกภาคของเกม:',
+        lblCatStep1Series: '1. เลือกซีรีส์เกม:',
+        lblCatStep2SubGame: '2. เลือกภาคของเกม:',
         quickSearchPlaceholder: '🔍 พิมพ์ค้นหาชื่อเกม หรือ ตัวละคร (เช่น Engage, Odyssey, Marth)...',
+        catalogSearchPlaceholder: '🔍 พิมพ์ชื่อตัวละคร หรือ ชื่อเกม (เช่น Engage, Mario, Rauru)...',
+        btnClearCatalogSearch: 'ล้าง',
         quickStripLabel: '👇 แตะเลือกโปรไฟล์ OdimibO ในภาคนี้:',
+        lblActiveBadge: 'กำลังใช้',
+        btnBannerHowToScan: 'วิธีสแกน ❓',
+        btnRockerLeft: '◀ ซ้าย (Prev)',
+        btnRockerOk: '● ตกลง (OK)',
+        btnRockerRight: 'ขวา (Next) ▶',
+        lblInGameScanTitle: '📍 วิธีสแกนในเกมนี้:',
         lblStep2Action: '⚡ 2. กดปุ่มส่งข้อมูลหรือดาวน์โหลดไฟล์',
         lblRandomUid: 'สุ่ม UID ใหม่ (สแกนซ้ำ)',
         lblSendBle: 'ส่งเข้า OdimibO (BLE)',
+        lblBtnLoadKey: '🔑 ใส่ KeyGen',
         lblSelfTestBtn: 'เช็คความพร้อมมือถือ & ตรวจความถูกต้องไฟล์ 540B (กดเช็คที่นี่)',
         lblCatalogHeaderTitle: 'คลัง OdimibO แยกตามภาค',
-        legalDisclaimerBox: '🛡️ <b>OdimibO</b> เป็นเครื่องมือเว็บอิสระสำหรับจัดการอุปกรณ์ Bluetooth BLE และโครงสร้างแท็ก NTAG215 มาตรฐานเท่านั้น ไม่ได้เป็นตัวแทนหรือมีส่วนเกี่ยวข้องกับผู้ผลิตเครื่องเกมใดๆ และไม่มีการแจกจ่ายไฟล์กุญแจเข้ารหัสอันมีลิขสิทธิ์บนเซิร์ฟเวอร์นี้',
+        btnBatchSendBle: '📦 ส่งหมวดนี้เข้าเครื่อง',
+        btnLoadMoreCards: '⬇️ โหลดตัวละครเพิ่มอีก 40 รายการ',
+        lblManualKeyTitle: '🔑 ตั้งค่าไฟล์เสริมสำหรับเขียนเหรียญ NFC (ทางเลือก)',
+        lblManualKeySub: 'สำหรับผู้ที่ต้องการเขียนลงเหรียญ NFC เปล่าโดยตรง',
+        lblManualKeyDesc: 'หากคุณใช้งานผ่านเครื่องจำลอง OdimibO BLE สามารถกดส่งข้อมูลใช้งานได้ทันที! ส่วนผู้ที่ต้องการเขียนลงเหรียญการ์ด NFC เปล่า สามารถเลือกไฟล์ตั้งค่าเสริมที่นี่เพื่อให้พร้อมเขียนลงเหรียญได้ทันที',
+        lblBtnSelectKeyFile: '📂 1. เลือกไฟล์ตั้งค่า (.bin)',
+        btnUploadKeyBle: '📡 2. ส่งเข้าเครื่อง OdimibO',
+        btnClearSavedKey: 'ล้างค่า',
+        lblBleProtocolTitle: '📡 เลือกโหมดการเชื่อมต่อ Bluetooth (BLE Protocol)',
+        btnClearLog: 'ล้าง Log',
+        legalDisclaimerBox: '🛡️ <b>OdimibO</b> เป็นเครื่องมือเว็บอิสระสำหรับจัดการอุปกรณ์ Bluetooth BLE และโครงสร้างแท็ก NTAG215 มาตรฐานเท่านั้น ไม่ได้เป็นตัวแทนหรือมีส่วนเกี่ยวข้องกับผู้ผลิตเครื่องเกมใดๆ',
         navLblDevice: 'หน้าจอ & สลับเกม',
         navLblCatalog: 'คลัง 950 OdimibO',
-        navLblManual: 'วิธีใช้ทีละขั้น & Key',
-        vipModalTitle: '💎 สิทธิ์การใช้งาน OdimibO & สนับสนุนโปรเจกต์ (VIP / Admin)',
-        vipSupportTitle: '💖 ร่วมโดเนทสนับสนุนพัฒนา OdimibO & รับโค้ด VIP ไม่จำกัด',
-        vipSupportDesc: 'สายฟรีใช้งานได้ <b>' + dailyFreeLimit + ' ครั้ง/วัน</b> (รีเซ็ตทุกเที่ยงคืน) หากต้องการใช้งาน<b>ไม่จำกัดครั้ง</b> สามารถร่วมโดเนทสนับสนุนพัฒนาโปรเจกต์ OdimibO เพื่อรับรหัสปลดล็อกได้ทันที:',
+        navLblManual: 'วิธีใช้ทีละขั้น',
+        scanHelpModalTitle: '🔍 สาเหตุที่สแกนไม่ติด & วิธีแก้',
+        btnScanHelpOpenManual: '📖 เปิดอ่านคู่มือทีละขั้นตอน',
+        btnScanHelpClose: 'ปิด',
+        diagModalTitle: '🧪 ผลตรวจความพร้อมมือถือ & ไฟล์ NTAG215 จริง',
+        btnDiagRetest: '🔄 กดตรวจซ้ำอีกครั้ง',
+        btnDiagClose: 'ปิดหน้าต่าง',
+        vipModalTitle: '⚙️ ตั้งค่าระบบ, ภาษา, วิธีใช้ & KeyGen',
+        lblGearLangTitle: '🌐 ภาษาของระบบ (Language)',
+        lblGearLangSub: 'สลับภาษาเมนูและคู่มือทั้งหมด (ไทย / English)',
+        lblGearGuideTitle: '📖 คู่มือวิธีการใช้งาน & ตรวจเช็คระบบ',
+        btnGearOpenManual: '📖 คู่มือวิธีใช้ทีละขั้นตอน',
+        btnGearSelfTest: '🧪 เช็คความพร้อมมือถือ & 540B',
+        lblEnterLicenseKey: '🔑 ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอป:',
+        licenseKeyPlaceholder: 'กรอกรหัส KeyGen ที่นี่...',
+        btnActivateKey: 'ปลดล็อก',
+        lblLicenseHint: '✨ ใส่รหัส KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอปและใช้งานได้ไม่จำกัดครั้ง',
+        lblAdminPanelSub: 'สร้างรหัส KeyGen สำหรับปลดล็อกความสามารถแอปให้ผู้ใช้งาน',
+        btnAdminLogout: '🔒 ล็อกเอาท์ Admin',
+        lblAdminStep1Plan: '1. เลือกระยะเวลาโค้ดลูกค้า:',
+        lblAdminStep2Ref: '2. ชื่อ/เลขอ้างอิงลูกค้า:',
+        btnAdminGen1: '🔑 สร้าง KeyGen (1 รหัส)',
+        btnAdminGen5: '📦 สร้างชุด 5 รหัสพร้อมกัน',
+        lblAdminGenSuccess: '✅ สร้างรหัส KeyGen สำเร็จ:',
+        btnAdminCopyAll: '📋 คัดลอกทั้งหมด',
+        lblAdminVerifyTitle: '🔍 ตรวจสอบวันหมดอายุโค้ดลูกค้า:',
+        btnAdminVerifyCode: 'ตรวจโค้ด',
+        lblAdminHistoryTitle: '📜 ประวัติโค้ดที่สร้างล่าสุด:',
+        btnAdminClearHistory: 'ล้างประวัติ',
+        lblAdminQuotaCfg: 'ตั้งจำนวนโควต้าฟรีต่อวัน (Free Quota/Day):',
+        vipSupportTitle: '💖 ร่วมโดเนทสนับสนุน & รับรหัส KeyGen ปลดล็อกไม่จำกัด',
+        vipSupportDesc: 'สายฟรีใช้งานได้ <b>' + dailyFreeLimit + ' ครั้ง/วัน</b> (รีเซ็ตทุกเที่ยงคืน) หากต้องการปลดล็อกความสามารถแอปใช้งาน<b>ไม่จำกัดครั้ง</b> สามารถร่วมสนับสนุนโปรเจกต์เพื่อรับรหัส KeyGen ได้ทันที:',
         pkg7dLabel: 'ชั่วคราว 7 วัน',
         pkg30dLabel: 'รายเดือน 30 วัน',
         pkgLifeLabel: '🌟 ถาวร (คุ้มสุด)',
-        lblEnterLicenseKey: '🔑 กรอกรหัสปลดล็อก OdimibO (VIP Code หรือ รหัส Admin):',
-        btnActivateKey: 'ปลดล็อก',
+        vipDonateChannelTitle: '📲 ช่องทางสนับสนุน / รับรหัส KeyGen:',
+        vipDonateChannelDesc: '• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส KeyGen ปลดล็อกได้ทันที',
         btnCloseVipModal: 'ปิดหน้าต่าง'
       },
       en: {
         topSubStatus: '950 OdimibO DB (2026 Ready • NTAG215 Smart Tag)',
         cryptoWarn: '⚠️ Requires OdimibO BLE Device or NTAG215 Coin',
-        vipUpgradeLink: '💖 Donate / VIP / Admin',
-        topManualBtn: '📖 Guide',
+        vipUpgradeLink: '⚙️ Settings / Lang / Guide / KeyGen',
         lblSelectGameHeader: '🎮 Select Game Series & Title (OdimibO)',
         btnViewAllCatalog: 'View All 950 ▶',
         lblStep1Series: '1. Select Game Series:',
         lblStep2SubGame: '2. Select Game Title:',
+        lblCatStep1Series: '1. Select Game Series:',
+        lblCatStep2SubGame: '2. Select Game Title:',
         quickSearchPlaceholder: '🔍 Search game or character (e.g. Engage, Odyssey, Marth)...',
+        catalogSearchPlaceholder: '🔍 Search character or game title (e.g. Engage, Mario, Rauru)...',
+        btnClearCatalogSearch: 'Clear',
         quickStripLabel: '👇 Tap an OdimibO profile in this game:',
+        lblActiveBadge: 'ACTIVE',
+        btnBannerHowToScan: 'How to Scan ❓',
+        btnRockerLeft: '◀ Left (Prev)',
+        btnRockerOk: '● Select (OK)',
+        btnRockerRight: 'Right (Next) ▶',
+        lblInGameScanTitle: '📍 How to Scan in This Game:',
         lblStep2Action: '⚡ 2. Send to OdimibO or Download File',
         lblRandomUid: 'Randomize UID (Rescan)',
         lblSendBle: 'Send to OdimibO (BLE)',
+        lblBtnLoadKey: '🔑 Enter KeyGen',
         lblSelfTestBtn: 'Mobile Readiness & 540B File Self-Test (Tap Here)',
         lblCatalogHeaderTitle: 'OdimibO Catalog by Game',
-        legalDisclaimerBox: '🛡️ <b>OdimibO</b> is an independent Bluetooth BLE & NTAG215 hardware management utility. It is not affiliated with or endorsed by any console manufacturer, and hosts no proprietary cryptographic keys.',
+        btnBatchSendBle: '📦 Send Category to BLE',
+        btnLoadMoreCards: '⬇️ Load 40 More Characters',
+        lblManualKeyTitle: '🔑 Optional NFC Coin Helper Setup (.bin)',
+        lblManualKeySub: 'For writing directly to blank physical NFC coins',
+        lblManualKeyDesc: 'If you use an OdimibO BLE hardware device, you can transfer profiles immediately! If you want to write files to blank physical NFC coins, you can load your helper file here.',
+        lblBtnSelectKeyFile: '📂 1. Select Helper File (.bin)',
+        btnUploadKeyBle: '📡 2. Send to OdimibO (BLE)',
+        btnClearSavedKey: 'Clear',
+        lblBleProtocolTitle: '📡 Select Bluetooth Transfer Mode (BLE Protocol)',
+        btnClearLog: 'Clear Log',
+        legalDisclaimerBox: '🛡️ <b>OdimibO</b> is an independent Bluetooth BLE & NTAG215 hardware management utility. It is not affiliated with or endorsed by any console manufacturer.',
         navLblDevice: 'OdimibO & Switch',
         navLblCatalog: '950 OdimibO DB',
         navLblManual: 'Step-by-Step Guide',
-        vipModalTitle: '💎 OdimibO Access Pass & Support (VIP / Admin)',
-        vipSupportTitle: '💖 Support OdimibO & Unlock Unlimited VIP Access',
-        vipSupportDesc: 'Free tier includes <b>' + dailyFreeLimit + ' uses/day</b> (resets daily). Support the OdimibO utility project to unlock <b>unlimited</b> downloads & BLE transfers:',
+        scanHelpModalTitle: '🔍 Why Scanning Fails & How to Fix It',
+        btnScanHelpOpenManual: '📖 Open Step-by-Step User Guide',
+        btnScanHelpClose: 'Close',
+        diagModalTitle: '🧪 Mobile Readiness & 540B NTAG215 Self-Test',
+        btnDiagRetest: '🔄 Run Self-Test Again',
+        btnDiagClose: 'Close',
+        vipModalTitle: '⚙️ Settings, Language, Guide & KeyGen',
+        lblGearLangTitle: '🌐 System Language (TH / EN)',
+        lblGearLangSub: 'Translate all menus, rewards & step-by-step guides',
+        lblGearGuideTitle: '📖 User Guide & Hardware Diagnostics',
+        btnGearOpenManual: '📖 Step-by-Step User Guide',
+        btnGearSelfTest: '🧪 Mobile & 540B Self-Test',
+        lblEnterLicenseKey: '🔑 Enter KeyGen Code to Unlock App Features:',
+        licenseKeyPlaceholder: 'Enter KeyGen code here...',
+        btnActivateKey: 'Unlock',
+        lblLicenseHint: '✨ Enter your KeyGen code to unlock full app capabilities and unlimited daily usage.',
+        lblAdminPanelSub: 'Generate KeyGen unlock codes for users',
+        btnAdminLogout: '🔒 Logout Admin',
+        lblAdminStep1Plan: '1. Select Pass Duration:',
+        lblAdminStep2Ref: '2. Customer Ref / Note:',
+        btnAdminGen1: '🔑 Generate 1 KeyGen',
+        btnAdminGen5: '📦 Generate Batch (5 Keys)',
+        lblAdminGenSuccess: '✅ KeyGen Code(s) Ready:',
+        btnAdminCopyAll: '📋 Copy All',
+        lblAdminVerifyTitle: '🔍 Check Customer KeyGen Expiry:',
+        btnAdminVerifyCode: 'Check',
+        lblAdminHistoryTitle: '📜 Recently Generated Codes:',
+        btnAdminClearHistory: 'Clear History',
+        lblAdminQuotaCfg: 'Configure Daily Free Quota (Uses/Day):',
+        vipSupportTitle: '💖 Support OdimibO & Unlock Unlimited KeyGen',
+        vipSupportDesc: 'Free tier includes <b>' + dailyFreeLimit + ' uses/day</b> (resets daily). Support the OdimibO project to receive a KeyGen code for <b>unlimited</b> access:',
         pkg7dLabel: '7-Day Pass',
         pkg30dLabel: '30-Day Pass',
         pkgLifeLabel: '🌟 Lifetime VIP',
-        lblEnterLicenseKey: '🔑 Enter OdimibO Code (VIP Key or Admin Code):',
-        btnActivateKey: 'Activate',
-        btnCloseVipModal: 'Close'
+        vipDonateChannelTitle: '📲 How to Support & Get Your KeyGen Code:',
+        vipDonateChannelDesc: '• <b>PromptPay / TrueMoney:</b> Scan to support the project and receive your KeyGen unlock code.',
+        btnCloseVipModal: 'Close Window'
       }
     };
 
@@ -2710,7 +3404,6 @@
       try {
         const raw = JSON.parse(localStorage.getItem(LICENSE_STORAGE_KEY) || 'null');
         if (!raw || !raw.role) return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
-        // ป้องกันการปลอมแปลงค่า localStorage โหมด ADMIN โดยตรวจ Hash Token
         if (raw.role === 'ADMIN' && raw.adminToken !== SUPER_ADMIN_SHA256_HASH) {
           localStorage.removeItem(LICENSE_STORAGE_KEY);
           return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
@@ -2741,7 +3434,7 @@
       if (isSuperAdminVerified()) {
         btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-rose-500/60 bg-rose-500/20 text-rose-200 flex items-center gap-1 shadow';
         icon.textContent = '👑';
-        txt.textContent = currentLang === 'en' ? 'SUPER ADMIN' : 'SUPER ADMIN';
+        txt.textContent = 'SUPER ADMIN';
       } else if (lic.role === 'LIFETIME_VIP') {
         btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-emerald-500/60 bg-emerald-500/20 text-emerald-200 flex items-center gap-1 shadow';
         icon.textContent = '💎';
@@ -2759,12 +3452,15 @@
         icon.textContent = '🎫';
         txt.textContent = currentLang === 'en' ? `Free ${rem}/${dailyFreeLimit}` : `ฟรี ${rem}/${dailyFreeLimit}`;
       }
+      if (typeof updateKeyStatusUI === 'function') {
+        updateKeyStatusUI(!!(typeof retailKeyBytes !== 'undefined' && retailKeyBytes && retailKeyBytes.length === 160));
+      }
     }
 
     function consumeQuotaOrPrompt() {
       const lic = getLicenseState();
       if (isSuperAdminVerified() || lic.role === 'LIFETIME_VIP' || lic.role === 'TEMP_VIP') {
-        return true; // ใช้งานได้ไม่จำกัด
+        return true;
       }
       if (dailyFreeLimit >= 999) return true;
 
@@ -2781,7 +3477,9 @@
       localStorage.setItem(QUOTA_STORAGE_KEY, JSON.stringify(q));
       updateQuotaBadgeUI();
       const rem = Math.max(0, dailyFreeLimit - q.used);
-      log(`[Quota] ใช้สิทธิ์ฟรีสำเร็จ (คงเหลือวันนี้: ${rem}/${dailyFreeLimit} ครั้ง)`, 'info');
+      log(currentLang === 'en'
+        ? `[Quota] Used 1 free action (Remaining today: ${rem}/${dailyFreeLimit})`
+        : `[Quota] ใช้สิทธิ์ฟรีสำเร็จ (คงเหลือวันนี้: ${rem}/${dailyFreeLimit} ครั้ง)`, 'info');
       return true;
     }
 
@@ -2811,18 +3509,29 @@
       const rem = Math.max(0, dailyFreeLimit - q.used);
       const card = document.getElementById('vipCurrentStatusCard');
       const adminPanel = document.getElementById('adminKeyGenPanel');
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
 
       if (isSuperAdminVerified()) {
-        card.innerHTML = `
+        card.innerHTML = isEn ? `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-rose-300">👑 Current Role: SUPER ADMIN (VERIFIED)</span>
+            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">VERIFIED</span>
+          </div>
+          <p class="text-[11px] text-slate-300">Unlimited system access & <b>Admin KeyGen</b> unlocked above.</p>` : `
           <div class="flex items-center justify-between">
             <span class="text-xs font-extrabold text-rose-300">👑 สถานะปัจจุบัน: แอดมินสูงสุด (SUPER ADMIN VERIFIED)</span>
-            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">SHA-256 AUTH</span>
+            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">VERIFIED</span>
           </div>
-          <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานทุกระบบไม่จำกัด และเปิดสิทธิ์เข้าถึง <b>เครื่องมือสร้างโค้ดเข้ารหัส HMAC-SHA256</b> ด้านล่างเรียบร้อยแล้ว</p>`;
+          <p class="text-[11px] text-slate-300">ปลดล็อกเพิ่มความสามารถแอปครบทุกระบบ และเปิดสิทธิ์ใช้งาน <b>เครื่องมือสร้างรหัส KeyGen</b> ด้านบนเรียบร้อยแล้ว</p>`;
         adminPanel.classList.remove('hidden');
         renderAdminKeyHistory();
       } else if (lic.role === 'LIFETIME_VIP') {
-        card.innerHTML = `
+        card.innerHTML = isEn ? `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-emerald-300">💎 Current Plan: Lifetime VIP Supporter</span>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
+          </div>
+          <p class="text-[11px] text-slate-300">Permanent unlimited access unlocked. Thank you for supporting OdimibO! (${lic.code || 'VIP'})</p>` : `
           <div class="flex items-center justify-between">
             <span class="text-xs font-extrabold text-emerald-300">💎 สถานะปัจจุบัน: สมาชิก VIP ถาวร (Lifetime Supporter)</span>
             <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
@@ -2830,8 +3539,13 @@
           <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานไม่จำกัดครั้งถาวรเรียบร้อยแล้ว ขอบคุณที่ร่วมสนับสนุนโปรเจกต์ OdimibO ครับ! (${lic.code || 'VIP'})</p>`;
         adminPanel.classList.add('hidden');
       } else if (lic.role === 'TEMP_VIP') {
-        const expDate = new Date(lic.expiresAt).toLocaleDateString(currentLang === 'en' ? 'en-US' : 'th-TH');
-        card.innerHTML = `
+        const expDate = new Date(lic.expiresAt).toLocaleDateString(isEn ? 'en-US' : 'th-TH');
+        card.innerHTML = isEn ? `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-cyan-300">⏳ Current Plan: Temporary VIP Pass</span>
+            <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded font-mono font-bold">Expires ${expDate}</span>
+          </div>
+          <p class="text-[11px] text-slate-300">Unlimited access active until ${expDate} (${lic.code})</p>` : `
           <div class="flex items-center justify-between">
             <span class="text-xs font-extrabold text-cyan-300">⏳ สถานะปัจจุบัน: สมาชิก VIP ชั่วคราว (Temporary Pass)</span>
             <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded font-mono font-bold">หมดอายุ ${expDate}</span>
@@ -2841,10 +3555,10 @@
       } else {
         card.innerHTML = `
           <div class="flex items-center justify-between">
-            <span class="text-xs font-extrabold text-amber-300">${currentLang === 'en' ? '🎫 Current Plan: Free Daily Quota' : '🎫 สถานะปัจจุบัน: ผู้ใช้ทั่วไป (โควต้าฟรีรายวัน)'}</span>
+            <span class="text-xs font-extrabold text-amber-300">${isEn ? '🎫 Current Plan: Free Daily Quota' : '🎫 สถานะปัจจุบัน: ผู้ใช้ทั่วไป (โควต้าฟรีรายวัน)'}</span>
             <span class="text-[11px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-mono font-bold">${rem} / ${dailyFreeLimit}</span>
           </div>
-          <p class="text-[11px] text-slate-300">${currentLang === 'en'
+          <p class="text-[11px] text-slate-300">${isEn
             ? `You have <b>${rem}</b> free downloads/BLE transfers left today.`
             : `วันนี้คุณเหลือสิทธิ์กดดาวน์โหลดไฟล์ / ส่งเข้าเครื่อง OdimibO ฟรีอีก <b>${rem} ครั้ง</b>`}</p>`;
         adminPanel.classList.add('hidden');
@@ -2868,7 +3582,6 @@
       const msg = enc.encode(`ODI_V2|${plan}|${payload}`);
       const sigBuf = new Uint8Array(await crypto.subtle.sign('HMAC', cryptoKey, msg));
 
-      // แปลง 10 ไบต์แรกของ HMAC-SHA256 เป็นรหัส Base32 จำนวน 10 ตัวอักษรที่เดาไม่ได้
       let out = '';
       for (let i = 0; i < 10; i++) {
         const idx = (sigBuf[i] ^ sigBuf[i + 10]) & 31;
@@ -2877,7 +3590,6 @@
       return out;
     }
 
-    // สุ่มรหัส CSPRNG (Cryptographically Secure Random) ป้องกันการคาดเดา
     function generateCsprngBase32(len) {
       const rnd = new Uint8Array(len);
       crypto.getRandomValues(rnd);
@@ -2891,8 +3603,9 @@
     // สร้างโค้ดลูกค้าได้เฉพาะ Super Admin สูงสุดเท่านั้น
     async function adminGenerateEncryptedKeys(count = 1) {
       triggerHaptic();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       if (!isSuperAdminVerified()) {
-        showToast('❌ ปฏิเสธการเข้าถึง: เฉพาะ Super Admin สูงสุดเท่านั้นที่สร้างโค้ดได้!');
+        showToast(isEn ? '❌ Access Denied: Super Admin authentication required!' : '❌ ปฏิเสธการเข้าถึง: เฉพาะ Super Admin สูงสุดเท่านั้นที่สร้างโค้ดได้!');
         return;
       }
 
@@ -2918,8 +3631,8 @@
       document.getElementById('adminGeneratedCodeText').textContent = generatedList.join('\n');
       document.getElementById('adminGeneratedCodeBox').classList.remove('hidden');
       renderAdminKeyHistory();
-      log(`[SuperAdmin HMAC KeyGen] สร้างรหัสเข้ารหัส ${count} รายการ (${plan}) สำเร็จ`, 'rx');
-      showToast(`🔐 สร้างโค้ดเข้ารหัส HMAC-SHA256 (${count} รหัส) สำเร็จ!`);
+      log(`[KeyGen] Generated ${count} key(s) (${plan})`, 'rx');
+      showToast(isEn ? `🔑 Generated ${count} KeyGen code(s)!` : `🔑 สร้างรหัส KeyGen (${count} รหัส) สำเร็จ!`);
     }
 
     function saveAdminKeyHistoryItem(code, plan, ref, expDayStamp) {
@@ -2929,7 +3642,7 @@
           code,
           plan,
           ref,
-          expDate: plan === 'LIFE' ? 'ถาวร (Lifetime)' : new Date(expDayStamp * 86400000).toLocaleDateString('th-TH'),
+          expDate: plan === 'LIFE' ? 'Lifetime' : new Date(expDayStamp * 86400000).toISOString().slice(0, 10),
           createdAt: new Date().toLocaleTimeString('th-TH')
         });
         localStorage.setItem(ADMIN_HISTORY_KEY, JSON.stringify(list.slice(0, 30)));
@@ -2939,16 +3652,17 @@
     function renderAdminKeyHistory() {
       const box = document.getElementById('adminKeyHistoryList');
       if (!box) return;
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       try {
         const list = JSON.parse(localStorage.getItem(ADMIN_HISTORY_KEY) || '[]');
         if (list.length === 0) {
-          box.innerHTML = '<div>ยังไม่มีประวัติการสร้างโค้ด</div>';
+          box.innerHTML = `<div>${isEn ? 'No keys generated yet' : 'ยังไม่มีประวัติการสร้างโค้ด'}</div>`;
           return;
         }
         box.innerHTML = list.map(item => `
           <div class="flex items-center justify-between bg-slate-900 px-2 py-1 rounded border border-slate-800">
             <span class="text-amber-300 font-bold select-all">${item.code}</span>
-            <span class="text-slate-400">[${item.plan} • ${item.ref} • หมดอายุ: ${item.expDate}]</span>
+            <span class="text-slate-400">[${item.plan} • ${item.ref} • Exp: ${item.expDate}]</span>
           </div>
         `).join('');
       } catch (e) {}
@@ -2958,29 +3672,35 @@
       if (!isSuperAdminVerified()) return;
       localStorage.removeItem(ADMIN_HISTORY_KEY);
       renderAdminKeyHistory();
-      showToast('🗑️ ล้างประวัติการสร้างโค้ดแล้ว');
+      showToast(currentLang === 'en' ? '🗑️ Key history cleared' : '🗑️ ล้างประวัติการสร้างโค้ดแล้ว');
     }
 
     // ตรวจสอบความถูกต้องของโค้ดด้วย HMAC-SHA256
     async function verifyCustomerCodeCryptographically(codeStr) {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const clean = (codeStr || '').trim().toUpperCase();
       const parts = clean.split('-');
       if (parts.length !== 4 || parts[0] !== 'ODI') {
-        return { valid: false, reason: 'รูปแบบรหัสไม่ถูกต้อง (ต้องขึ้นต้นด้วย ODI-...)' };
+        return { valid: false, reason: isEn ? 'Invalid format (must start with ODI-...)' : 'รูปแบบรหัสไม่ถูกต้อง (ต้องขึ้นต้นด้วย ODI-...)' };
       }
       const [, plan, payload, sigProvided] = parts;
       if (!['1D', '7D', '30D', '90D', 'LIFE'].includes(plan)) {
-        return { valid: false, reason: 'ประเภทแพ็กเกจในรหัสไม่ถูกต้อง' };
+        return { valid: false, reason: isEn ? 'Invalid plan type in code' : 'ประเภทแพ็กเกจในรหัสไม่ถูกต้อง' };
       }
 
       const expectedSig = await computeHmacBase32Sig(plan, payload);
       if (sigProvided !== expectedSig) {
-        return { valid: false, reason: '❌ ลายเซ็นดิจิทัล HMAC-SHA256 ไม่ตรง! (รหัสถูกปลอมแปลงหรือพิมพ์ผิด)' };
+        return {
+          valid: false,
+          reason: isEn
+            ? '❌ Invalid KeyGen code! (Please check for typos)'
+            : '❌ รหัส KeyGen ไม่ถูกต้อง! (กรุณาตรวจสอบตัวอักษรอีกครั้ง)'
+        };
       }
 
       const zIdx = payload.indexOf('Z');
       if (zIdx === -1) {
-        return { valid: false, reason: 'โครงสร้าง Payload ไม่ถูกต้อง' };
+        return { valid: false, reason: isEn ? 'Malformed payload structure' : 'โครงสร้าง Payload ไม่ถูกต้อง' };
       }
       const expBase36 = payload.slice(0, zIdx);
       const refAndSalt = payload.slice(zIdx + 1);
@@ -2988,12 +3708,13 @@
       const expiresAt = expDayStamp * 86400000;
 
       if (plan !== 'LIFE' && Date.now() > expiresAt) {
+        const dStr = new Date(expiresAt).toLocaleDateString(isEn ? 'en-US' : 'th-TH');
         return {
           valid: false,
           expired: true,
           plan,
           expiresAt,
-          reason: `⌛ รหัสนี้หมดอายุเมื่อวันที่ ${new Date(expiresAt).toLocaleDateString('th-TH')}`
+          reason: isEn ? `⌛ This code expired on ${dStr}` : `⌛ รหัสนี้หมดอายุเมื่อวันที่ ${dStr}`
         };
       }
 
@@ -3007,13 +3728,16 @@
 
     async function adminInspectCustomerCode() {
       if (!isSuperAdminVerified()) return;
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const val = document.getElementById('adminVerifyCodeInput').value;
       const out = document.getElementById('adminVerifyResultText');
       const res = await verifyCustomerCodeCryptographically(val);
       if (res.valid) {
-        const expTxt = res.plan === 'LIFE' ? 'ถาวร (Lifetime)' : new Date(res.expiresAt).toLocaleDateString('th-TH');
+        const expTxt = res.plan === 'LIFE' ? 'Lifetime' : new Date(res.expiresAt).toLocaleDateString(isEn ? 'en-US' : 'th-TH');
         out.className = 'text-[10px] font-mono text-emerald-400 pt-1';
-        out.textContent = `✅ โค้ดแท้ 100% (HMAC-SHA256 ผ่าน) | แพ็กเกจ: ${res.plan} | อ้างอิง: ${res.customerRef} | หมดอายุ: ${expTxt}`;
+        out.textContent = isEn
+          ? `✅ Valid KeyGen Code | Plan: ${res.plan} | Ref: ${res.customerRef} | Expires: ${expTxt}`
+          : `✅ รหัส KeyGen ถูกต้อง | แพ็กเกจ: ${res.plan} | อ้างอิง: ${res.customerRef} | หมดอายุ: ${expTxt}`;
       } else {
         out.className = 'text-[10px] font-mono text-rose-400 pt-1';
         out.textContent = res.reason;
@@ -3025,7 +3749,7 @@
       if (navigator.clipboard) {
         navigator.clipboard.writeText(code);
       }
-      showToast('📋 คัดลอกโค้ดเข้ารหัสทั้งหมดแล้ว!');
+      showToast(currentLang === 'en' ? '📋 Copied KeyGen code(s) to clipboard!' : '📋 คัดลอกรหัส KeyGen ทั้งหมดแล้ว!');
     }
 
     function adminUpdateDailyFreeLimit(val) {
@@ -3033,7 +3757,9 @@
       dailyFreeLimit = parseInt(val, 10) || 5;
       localStorage.setItem(DAILY_LIMIT_CONFIG_KEY, String(dailyFreeLimit));
       updateQuotaBadgeUI();
-      showToast(`✅ ตั้งโควต้าฟรีต่อวันเป็น ${dailyFreeLimit >= 999 ? 'ไม่จำกัด' : dailyFreeLimit + ' ครั้ง/วัน'} แล้ว`);
+      showToast(currentLang === 'en'
+        ? `✅ Daily free quota updated to ${dailyFreeLimit >= 999 ? 'Unlimited' : dailyFreeLimit + '/day'}`
+        : `✅ ตั้งโควต้าฟรีต่อวันเป็น ${dailyFreeLimit >= 999 ? 'ไม่จำกัด' : dailyFreeLimit + ' ครั้ง/วัน'} แล้ว`);
     }
 
     // ระบบป้องกันการสุ่มเดารหัส (Anti-Brute-Force Rate Limiter)
@@ -3054,7 +3780,7 @@
       try {
         const raw = JSON.parse(localStorage.getItem(BRUTE_FORCE_KEY) || '{"fails":0,"lockUntil":0}');
         const fails = (raw.fails || 0) + 1;
-        const lockUntil = fails >= 5 ? (Date.now() + 60000) : 0; // ล็อก 60 วินาทีถ้าเดาผิดครบ 5 ครั้ง
+        const lockUntil = fails >= 5 ? (Date.now() + 60000) : 0;
         localStorage.setItem(BRUTE_FORCE_KEY, JSON.stringify({ fails: fails >= 5 ? 0 : fails, lockUntil }));
       } catch (e) {}
     }
@@ -3065,15 +3791,18 @@
 
     async function activateLicenseKey() {
       triggerHaptic();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const guard = checkBruteForceGuard();
       if (guard.locked) {
-        showToast(`🛡️ ระบบล็อกป้องกันการสุ่มเดารหัส กรุณารอ ${guard.waitSec} วินาที`);
+        showToast(isEn
+          ? `🛡️ Anti-brute-force lock active. Please wait ${guard.waitSec}s.`
+          : `🛡️ ระบบล็อกป้องกันการสุ่มเดารหัส กรุณารอ ${guard.waitSec} วินาที`);
         return;
       }
 
       const input = (document.getElementById('licenseKeyInput').value || '').trim().toUpperCase();
       if (!input) {
-        showToast('⚠️ กรุณากรอกรหัสปลดล็อกก่อนครับ');
+        showToast(isEn ? '⚠️ Please enter an activation code first' : '⚠️ กรุณากรอกรหัสปลดล็อกก่อนครับ');
         return;
       }
 
@@ -3090,12 +3819,14 @@
         document.getElementById('licenseKeyInput').value = '';
         updateQuotaBadgeUI();
         renderVipModalContent();
-        showToast('👑 ยืนยันตัวตน SUPER ADMIN สำเร็จ! เปิดระบบ Key Generator แล้ว');
-        log('[Security] ยืนยันตัวตน SUPER ADMIN ด้วย SHA-256 สำเร็จ', 'rx');
+        showToast(isEn
+          ? '👑 SUPER ADMIN Verified! Key Generator unlocked.'
+          : '👑 ยืนยันตัวตน SUPER ADMIN สำเร็จ! เปิดระบบ Key Generator แล้ว');
+        log('[Security] SUPER ADMIN authenticated', 'rx');
         return;
       }
 
-      // 2. ตรวจรหัสลูกค้าด้วยลายเซ็นดิจิทัล HMAC-SHA256 (ป้องกันการปลอมแปลงและแก้ไขวันหมดอายุ)
+      // 2. ตรวจรหัสลูกค้า
       const verifyRes = await verifyCustomerCodeCryptographically(input);
       if (verifyRes.valid) {
         resetBruteForceGuard();
@@ -3105,14 +3836,14 @@
             expiresAt: null,
             code: input
           }));
-          showToast('💎 ปลดล็อก VIP ถาวร (HMAC-SHA256 Verified) สำเร็จ!');
+          showToast(isEn ? '💎 Lifetime VIP Unlocked!' : '💎 ปลดล็อกเพิ่มความสามารถแอป (VIP ถาวร) สำเร็จ!');
         } else {
           localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
             role: 'TEMP_VIP',
             expiresAt: verifyRes.expiresAt,
             code: input
           }));
-          showToast(`⏳ ปลดล็อก VIP (${verifyRes.plan}) สำเร็จ!`);
+          showToast(isEn ? `⏳ VIP Pass (${verifyRes.plan}) Unlocked!` : `⏳ ปลดล็อกเพิ่มความสามารถแอป (${verifyRes.plan}) สำเร็จ!`);
         }
         document.getElementById('licenseKeyInput').value = '';
         updateQuotaBadgeUI();
@@ -3121,14 +3852,140 @@
       }
 
       recordFailedAttempt();
-      showToast(verifyRes.reason || '❌ รหัสไม่ถูกต้องหรือถูกปลอมแปลง');
+      showToast(verifyRes.reason || (isEn ? '❌ Invalid or forged activation code' : '❌ รหัสไม่ถูกต้องหรือถูกปลอมแปลง'));
     }
 
     function logoutVipOrAdmin() {
       localStorage.removeItem(LICENSE_STORAGE_KEY);
       updateQuotaBadgeUI();
       renderVipModalContent();
-      showToast('🔒 ล็อกเอาท์กลับสู่โหมดผู้ใช้ทั่วไปเรียบร้อยแล้ว');
+      showToast(currentLang === 'en' ? '🔒 Logged out to standard free tier' : '🔒 ล็อกเอาท์กลับสู่โหมดผู้ใช้ทั่วไปเรียบร้อยแล้ว');
+    }
+
+    // --------------------------------------------------------
+    // 10. ระบบปรับธีมสีตามเกม (10 Game Color Themes + Auto-Sync)
+    // --------------------------------------------------------
+    const THEME_STORAGE_KEY = 'odimibo_theme_v1';
+    const AUTO_THEME_STORAGE_KEY = 'odimibo_auto_theme_v1';
+
+    const GAME_THEMES = [
+      { id: 'odimibo', icon: '🌌', labelTh: 'OdimibO', labelEn: 'OdimibO', swatch: 'from-cyan-400 via-indigo-500 to-rose-400', seriesMatch: null },
+      { id: 'zelda', icon: '🏹', labelTh: 'Zelda', labelEn: 'Zelda', swatch: 'from-amber-400 to-emerald-600', seriesMatch: 'Zelda' },
+      { id: 'mario', icon: '🍄', labelTh: 'Mario', labelEn: 'Mario', swatch: 'from-red-500 to-amber-400', seriesMatch: 'Mario' },
+      { id: 'fe', icon: '⚔️', labelTh: 'Fire Emblem', labelEn: 'Fire Emblem', swatch: 'from-blue-500 to-amber-400', seriesMatch: 'Fire Emblem' },
+      { id: 'metroid', icon: '🔫', labelTh: 'Metroid', labelEn: 'Metroid', swatch: 'from-orange-500 to-emerald-400', seriesMatch: 'Metroid' },
+      { id: 'kirby', icon: '⭐', labelTh: 'Kirby', labelEn: 'Kirby', swatch: 'from-pink-400 to-yellow-300', seriesMatch: 'Kirby' },
+      { id: 'mh', icon: '🐉', labelTh: 'Monster Hunter', labelEn: 'Monster Hunter', swatch: 'from-amber-600 to-yellow-400', seriesMatch: 'Monster Hunter' },
+      { id: 'ac', icon: '🍃', labelTh: 'Animal Crossing', labelEn: 'Animal Crossing', swatch: 'from-emerald-400 to-teal-300', seriesMatch: 'Animal Crossing' },
+      { id: 'pokemon', icon: '⚡', labelTh: 'Pokémon', labelEn: 'Pokémon', swatch: 'from-red-500 via-white to-yellow-400', seriesMatch: 'Pokemon' },
+      { id: 'splatoon', icon: '🦑', labelTh: 'Splatoon', labelEn: 'Splatoon', swatch: 'from-pink-500 to-lime-400', seriesMatch: 'Splatoon' }
+    ];
+
+    let currentTheme = localStorage.getItem(THEME_STORAGE_KEY) || 'fe';
+    let autoThemeBySeries = localStorage.getItem(AUTO_THEME_STORAGE_KEY) !== 'false';
+
+    function setAppTheme(themeId, showNotification = false) {
+      const found = GAME_THEMES.find(t => t.id === themeId) || GAME_THEMES[0];
+      currentTheme = found.id;
+      localStorage.setItem(THEME_STORAGE_KEY, currentTheme);
+      document.body.setAttribute('data-theme', currentTheme);
+      renderThemeButtons();
+      if (showNotification) {
+        triggerHaptic();
+        const isEn = currentLang === 'en';
+        showToast(isEn
+          ? `${found.icon} Theme switched to ${found.labelEn}!`
+          : `${found.icon} เปลี่ยนเป็นธีมสี ${found.labelTh} แล้ว!`);
+      }
+    }
+
+    function selectThemeAndSwitchSeries(themeId) {
+      setAppTheme(themeId, true);
+      const found = GAME_THEMES.find(t => t.id === themeId);
+      if (found && found.seriesMatch && currentSeries !== found.seriesMatch) {
+        onSeriesChange(found.seriesMatch, 'device');
+      }
+    }
+
+    function syncThemeWithSeries(series) {
+      if (!autoThemeBySeries) return;
+      const match = GAME_THEMES.find(t => t.seriesMatch === series);
+      if (match && match.id !== currentTheme) {
+        setAppTheme(match.id, false);
+      }
+    }
+
+    function toggleAutoThemeBySeries() {
+      triggerHaptic();
+      autoThemeBySeries = !autoThemeBySeries;
+      localStorage.setItem(AUTO_THEME_STORAGE_KEY, String(autoThemeBySeries));
+      if (autoThemeBySeries) {
+        syncThemeWithSeries(currentSeries);
+      }
+      renderThemeButtons();
+      const isEn = currentLang === 'en';
+      showToast(autoThemeBySeries
+        ? (isEn ? '🔄 Auto-Theme by Game: ON' : '🔄 เปิดโหมดเปลี่ยนธีมสีตามเกมอัตโนมัติ')
+        : (isEn ? '📌 Auto-Theme by Game: OFF (Locked current theme)' : '📌 ปิดโหมดเปลี่ยนสีอัตโนมัติ (ล็อกธีมสีปัจจุบัน)'));
+    }
+
+    function renderThemeButtons() {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      const strip = document.getElementById('quickThemeStrip');
+      const grid = document.getElementById('gearThemeGrid');
+      const autoBtn1 = document.getElementById('btnAutoThemeToggle');
+      const autoBtn2 = document.getElementById('btnGearAutoTheme');
+      const lbl1 = document.getElementById('lblQuickThemeTitle');
+      const lbl2 = document.getElementById('lblGearThemeTitle');
+
+      if (lbl1) lbl1.innerHTML = isEn ? '<span>🎨</span> Color Theme (App & Console):' : '<span>🎨</span> ธีมสีแอป & ตัวเครื่อง (Game Themes):';
+      if (lbl2) lbl2.innerHTML = isEn ? '<span>🎨</span> Game Color Themes' : '<span>🎨</span> ปรับธีมสีตามเกม (Game Color Themes)';
+
+      const autoLabel = autoThemeBySeries
+        ? (isEn ? '🔄 Auto: ON' : '🔄 เปลี่ยนตามเกม: เปิด')
+        : (isEn ? '📌 Auto: OFF' : '📌 ล็อกธีม: ปิด Auto');
+      const autoClass = autoThemeBySeries
+        ? 'text-[10px] font-bold px-2 py-0.5 rounded-lg border border-emerald-500/50 bg-emerald-500/20 text-emerald-300 transition'
+        : 'text-[10px] font-bold px-2 py-0.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-300 transition';
+      if (autoBtn1) { autoBtn1.textContent = autoLabel; autoBtn1.className = autoClass; }
+      if (autoBtn2) { autoBtn2.textContent = autoLabel; autoBtn2.className = autoClass; }
+
+      if (strip) {
+        strip.innerHTML = GAME_THEMES.map(t => {
+          const active = t.id === currentTheme;
+          return `
+            <button onclick="selectThemeAndSwitchSeries('${t.id}')"
+              class="btn-active flex-shrink-0 flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-bold border transition ${
+                active
+                  ? 'bg-white/15 border-amber-400 text-white shadow ring-1 ring-amber-400/50'
+                  : 'bg-slate-950/90 border-slate-800 text-slate-300 hover:border-slate-600'
+              }">
+              <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-br ${t.swatch} inline-block flex-shrink-0"></span>
+              <span>${t.icon} ${isEn ? t.labelEn : t.labelTh}</span>
+            </button>
+          `;
+        }).join('');
+      }
+
+      if (grid) {
+        grid.innerHTML = GAME_THEMES.map(t => {
+          const active = t.id === currentTheme;
+          return `
+            <button onclick="setAppTheme('${t.id}', true)"
+              class="btn-active flex items-center justify-between gap-1.5 px-2.5 py-1.5 rounded-xl text-[11px] font-bold border transition ${
+                active
+                  ? 'bg-white/15 border-amber-400 text-white shadow'
+                  : 'bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-700'
+              }">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-3 h-3 rounded-full bg-gradient-to-br ${t.swatch} inline-block flex-shrink-0"></span>
+                <span class="truncate">${t.icon} ${isEn ? t.labelEn : t.labelTh}</span>
+              </span>
+              ${active ? '<span class="text-[10px] text-amber-300 font-black">✓</span>' : ''}
+            </button>
+          `;
+        }).join('');
+      }
     }
 
     function applyLanguage(lang) {
@@ -3138,20 +3995,22 @@
 
       const setTxt = (id, val) => {
         const el = document.getElementById(id);
-        if (el && val) el.textContent = val;
+        if (el && val !== undefined) el.textContent = val;
       };
       const setHtml = (id, val) => {
         const el = document.getElementById(id);
-        if (el && val) el.innerHTML = val;
+        if (el && val !== undefined) el.innerHTML = val;
       };
 
-      // เลื่อนปุ่มสวิตช์ TH | EN
+      // เลื่อนปุ่มสวิตช์ TH | EN ในเมนูเฟือง ⚙️ และอัปเดตป้ายภาษาบน Header
       const knob = document.getElementById('langSwitchKnob');
       const lblTH = document.getElementById('langSwitchLblTH');
       const lblEN = document.getElementById('langSwitchLblEN');
+      const hdrPill = document.getElementById('hdrLangPill');
+      if (hdrPill) hdrPill.textContent = currentLang.toUpperCase();
       if (knob && lblTH && lblEN) {
         if (currentLang === 'en') {
-          knob.style.transform = 'translateX(26px)';
+          knob.style.transform = 'translateX(32px)';
           lblTH.className = 'text-slate-400';
           lblEN.className = 'text-white';
         } else {
@@ -3161,54 +4020,96 @@
         }
       }
 
-      setTxt('topSubStatus', t.topSubStatus);
-      if (!retailKeyBytes) setTxt('cryptoStatusBadge', t.cryptoWarn);
-      setTxt('vipUpgradeLink', t.vipUpgradeLink);
-      setTxt('topManualBtn', t.topManualBtn);
-      setTxt('lblSelectGameHeader', t.lblSelectGameHeader);
-      setTxt('btnViewAllCatalog', t.btnViewAllCatalog);
-      setTxt('lblStep1Series', t.lblStep1Series);
-      setTxt('lblStep2SubGame', t.lblStep2SubGame);
-      setTxt('quickStripLabel', t.quickStripLabel);
-      setTxt('lblStep2Action', t.lblStep2Action);
-      setTxt('lblRandomUid', t.lblRandomUid);
-      setTxt('lblSendBle', t.lblSendBle);
-      setTxt('lblSelfTestBtn', t.lblSelfTestBtn);
-      setTxt('lblCatalogHeaderTitle', t.lblCatalogHeaderTitle);
+      // สลับคู่มือภาษาไทย / อังกฤษ ทั้งหน้า (#manualContentTH / #manualContentEN & #scanHelpBodyTH / #scanHelpBodyEN)
+      const manTH = document.getElementById('manualContentTH');
+      const manEN = document.getElementById('manualContentEN');
+      if (manTH && manEN) {
+        if (currentLang === 'en') {
+          manTH.classList.add('hidden');
+          manEN.classList.remove('hidden');
+        } else {
+          manTH.classList.remove('hidden');
+          manEN.classList.add('hidden');
+        }
+      }
+
+      const scanTH = document.getElementById('scanHelpBodyTH');
+      const scanEN = document.getElementById('scanHelpBodyEN');
+      if (scanTH && scanEN) {
+        if (currentLang === 'en') {
+          scanTH.classList.add('hidden');
+          scanEN.classList.remove('hidden');
+        } else {
+          scanTH.classList.remove('hidden');
+          scanEN.classList.add('hidden');
+        }
+      }
+
+      // อัปเดตข้อความทุกจุดบนหน้าเว็บและใน Modal
+      const textKeys = [
+        'topSubStatus', 'vipUpgradeLink', 'lblSelectGameHeader', 'btnViewAllCatalog',
+        'lblStep1Series', 'lblStep2SubGame', 'lblCatStep1Series', 'lblCatStep2SubGame',
+        'btnClearCatalogSearch', 'quickStripLabel', 'lblActiveBadge', 'btnBannerHowToScan',
+        'btnRockerLeft', 'btnRockerOk', 'btnRockerRight', 'lblInGameScanTitle',
+        'lblStep2Action', 'lblRandomUid', 'lblSendBle', 'lblBtnLoadKey', 'lblSelfTestBtn',
+        'lblCatalogHeaderTitle', 'btnBatchSendBle', 'btnLoadMoreCards',
+        'lblManualKeyTitle', 'lblManualKeySub', 'lblBtnSelectKeyFile', 'btnUploadKeyBle',
+        'btnClearSavedKey', 'lblBleProtocolTitle', 'btnClearLog',
+        'navLblDevice', 'navLblCatalog', 'navLblManual',
+        'scanHelpModalTitle', 'btnScanHelpOpenManual', 'btnScanHelpClose',
+        'diagModalTitle', 'btnDiagRetest', 'btnDiagClose',
+        'vipModalTitle', 'lblGearLangTitle', 'lblGearLangSub', 'lblGearGuideTitle',
+        'btnGearOpenManual', 'btnGearSelfTest', 'lblEnterLicenseKey', 'btnActivateKey',
+        'lblAdminPanelSub', 'btnAdminLogout', 'lblAdminStep1Plan', 'lblAdminStep2Ref',
+        'btnAdminGen1', 'btnAdminGen5', 'lblAdminGenSuccess', 'btnAdminCopyAll',
+        'lblAdminVerifyTitle', 'btnAdminVerifyCode', 'lblAdminHistoryTitle',
+        'btnAdminClearHistory', 'lblAdminQuotaCfg',
+        'vipSupportTitle', 'pkg7dLabel', 'pkg30dLabel', 'pkgLifeLabel',
+        'vipDonateChannelTitle', 'btnCloseVipModal'
+      ];
+      textKeys.forEach(k => setTxt(k, t[k]));
+
+      setHtml('lblManualKeyDesc', t.lblManualKeyDesc);
       setHtml('legalDisclaimerBox', t.legalDisclaimerBox);
-      setTxt('navLblDevice', t.navLblDevice);
-      setTxt('navLblCatalog', t.navLblCatalog);
-      setTxt('navLblManual', t.navLblManual);
-      setTxt('vipModalTitle', t.vipModalTitle);
-      setTxt('vipSupportTitle', t.vipSupportTitle);
       setHtml('vipSupportDesc', t.vipSupportDesc);
-      setTxt('pkg7dLabel', t.pkg7dLabel);
-      setTxt('pkg30dLabel', t.pkg30dLabel);
-      setTxt('pkgLifeLabel', t.pkgLifeLabel);
-      setTxt('lblEnterLicenseKey', t.lblEnterLicenseKey);
-      setTxt('btnActivateKey', t.btnActivateKey);
-      setTxt('btnCloseVipModal', t.btnCloseVipModal);
+      setHtml('lblLicenseHint', t.lblLicenseHint);
+      setHtml('vipDonateChannelDesc', t.vipDonateChannelDesc);
 
       const qInput = document.getElementById('quickSearchInput');
       if (qInput) qInput.placeholder = t.quickSearchPlaceholder;
+      const cInput = document.getElementById('searchInput');
+      if (cInput) cInput.placeholder = t.catalogSearchPlaceholder;
+      const licInput = document.getElementById('licenseKeyInput');
+      if (licInput) licInput.placeholder = t.licenseKeyPlaceholder;
 
+      // รีเรนเดอร์ Dropdown, การ์ดตัวละคร, จอ OLED และสถานะ Key ให้เปลี่ยนภาษาทันที 100%
+      updateKeyStatusUI(!!(retailKeyBytes && retailKeyBytes.length === 160));
       updateQuotaBadgeUI();
+      if (typeof renderSeriesMainSelects === 'function') renderSeriesMainSelects();
+      if (typeof populateSubGameSelects === 'function') populateSubGameSelects(currentSeries, currentSubGame);
+      if (typeof refreshActiveCharacterDisplay === 'function') refreshActiveCharacterDisplay();
+      if (typeof renderQuickCharStrip === 'function') renderQuickCharStrip();
+      if (typeof renderCatalogCards === 'function') renderCatalogCards();
+      if (typeof renderOLED === 'function') renderOLED();
+      if (typeof renderVipModalContent === 'function') renderVipModalContent();
+      if (typeof renderThemeButtons === 'function') renderThemeButtons();
     }
 
     function toggleLanguage() {
       triggerHaptic();
       const next = currentLang === 'th' ? 'en' : 'th';
       applyLanguage(next);
-      showToast(next === 'en' ? '🇬🇧 Switched language to English' : '🇹🇭 เปลี่ยนเป็นภาษาไทยแล้ว');
+      showToast(next === 'en' ? '🇬🇧 Switched language to English (100%)' : '🇹🇭 เปลี่ยนเป็นภาษาไทยแล้ว');
     }
 
     // เริ่มต้นระบบ
     (async function initApp() {
       loadFavorites();
       loadSavedRetailKey();
+      initGameDropdownsAndAutocomplete();
+      setAppTheme(currentTheme, false);
       applyLanguage(currentLang);
       updateQuotaBadgeUI();
-      initGameDropdownsAndAutocomplete();
       if (fullDb.length > 0) {
         await selectAmiibo(0, false);
       } else {
