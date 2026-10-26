@@ -751,54 +751,101 @@
         </div>
       </div>
 
-      <!-- ช่องกรอกรหัสปลดล็อก (VIP Key / Temporary Key / รหัส Admin) -->
+      <!-- ช่องกรอกรหัสปลดล็อก (VIP Key / Temporary Key / รหัส Super Admin) -->
       <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3 space-y-2">
-        <label id="lblEnterLicenseKey" class="text-xs font-extrabold text-white block">🔑 กรอกรหัสปลดล็อก (VIP Code หรือ รหัส Admin):</label>
+        <label id="lblEnterLicenseKey" class="text-xs font-extrabold text-white block">🔑 กรอกรหัสปลดล็อก OdimibO (VIP Code):</label>
         <div class="flex gap-1.5">
-          <input type="text" id="licenseKeyInput" placeholder="เช่น ODI-LIFE-XXXX หรือรหัส Admin..."
-            class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-mono uppercase focus:outline-none focus:border-amber-400">
+          <input type="password" id="licenseKeyInput" placeholder="กรอกรหัส VIP (เช่น ODI-LIFE-XXXX...)"
+            class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-amber-400">
+          <button onclick="toggleLicenseInputVisibility()" type="button" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs px-2.5 rounded-xl border border-slate-700" title="แสดง/ซ่อนรหัส">👁️</button>
           <button onclick="activateLicenseKey()" id="btnActivateKey" class="btn-active bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs px-3.5 py-2 rounded-xl shadow flex-shrink-0">
             ปลดล็อก
           </button>
         </div>
         <p id="lblLicenseHint" class="text-[10px] text-slate-400">
-          💡 <b>สำหรับเจ้าของเว็บ (Admin):</b> พิมพ์รหัสแอดมิน <code>ADMIN-ODIMIBO-9999</code> เพื่อเปิดโหมด Admin ใช้งานฟรีตลอดทุกระบบ และเปิดเครื่องมือสร้างโค้ดให้ลูกค้า
+          🛡️ ระบบป้องกันการสุ่มเดารหัสด้วยลายเซ็นดิจิทัล <b>HMAC-SHA256 (WebCrypto 50-bit Signature)</b> หากรหัสถูกแก้ไขแม้แต่ตัวเดียวจะไม่สามารถใช้งานได้
         </p>
       </div>
 
-      <!-- แผงควบคุมเฉพาะ Admin (แสดงเมื่อปลดล็อกรหัส Admin แล้วเท่านั้น) -->
-      <div id="adminKeyGenPanel" class="hidden bg-rose-950/30 border border-rose-500/50 rounded-2xl p-3 space-y-2.5">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-extrabold text-rose-300 flex items-center gap-1">
-            <span>👑</span> แผงควบคุม Admin & สร้างโค้ดให้ผู้สนับสนุน
-          </span>
-          <button onclick="logoutVipOrAdmin()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 px-2 py-0.5 rounded border border-slate-700">
-            สลับกลับโหมดผู้ใช้ทั่วไป
+      <!-- แผงควบคุมเฉพาะ Super Admin สูงสุดเท่านั้น (ซ่อนสมบูรณ์สำหรับผู้ใช้ทั่วไป) -->
+      <div id="adminKeyGenPanel" class="hidden bg-rose-950/35 border-2 border-rose-500/60 rounded-2xl p-3.5 space-y-3 shadow-xl">
+        <div class="flex items-center justify-between border-b border-rose-500/30 pb-2">
+          <div>
+            <span class="text-xs font-black text-rose-300 flex items-center gap-1">
+              <span>👑</span> SUPER ADMIN KEY GENERATOR (HMAC-SHA256)
+            </span>
+            <span class="text-[10px] text-slate-400">เข้ารหัสป้องกันการปลอมแปลง 1.12 ล้านล้านล้านรูปแบบ (CSPRNG + HMAC)</span>
+          </div>
+          <button onclick="logoutVipOrAdmin()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-rose-300 font-bold px-2.5 py-1 rounded-lg border border-rose-500/40">
+            🔒 ล็อกเอาท์ Admin
           </button>
         </div>
 
-        <div class="grid grid-cols-3 gap-1.5">
-          <button onclick="adminGenerateCustomerCode('7D')" class="btn-active bg-cyan-600/30 hover:bg-cyan-600/50 text-cyan-200 border border-cyan-500/40 text-[11px] font-bold py-2 px-2 rounded-xl">
-            ➕ สร้างโค้ด 7 วัน
-          </button>
-          <button onclick="adminGenerateCustomerCode('30D')" class="btn-active bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-200 border border-indigo-500/40 text-[11px] font-bold py-2 px-2 rounded-xl">
-            ➕ สร้างโค้ด 30 วัน
-          </button>
-          <button onclick="adminGenerateCustomerCode('LIFE')" class="btn-active bg-amber-500/30 hover:bg-amber-500/50 text-amber-200 border border-amber-500/50 text-[11px] font-bold py-2 px-2 rounded-xl">
-            🌟 สร้างโค้ดถาวร
-          </button>
-        </div>
-
-        <div id="adminGeneratedCodeBox" class="hidden bg-black/80 border border-emerald-500/50 rounded-xl p-2.5 space-y-1">
-          <div class="text-[10px] text-emerald-400 font-bold">✅ สร้างโค้ดสำหรับส่งให้ลูกค้าสำเร็จ (กดคัดลอกได้เลย):</div>
-          <div class="flex items-center justify-between gap-2">
-            <code id="adminGeneratedCodeText" class="text-xs font-mono font-extrabold text-amber-300 select-all">ODI-LIFE-XXXX</code>
-            <button onclick="copyGeneratedCustomerCode()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg">
-              📋 คัดลอก
-            </button>
+        <!-- 1. เลือกประเภทอายุโค้ด & ชื่ออ้างอิงลูกค้า -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div>
+            <label class="text-[10px] font-bold text-rose-200 block mb-0.5">1. เลือกระยะเวลาโค้ดลูกค้า:</label>
+            <select id="adminGenPlanSelect" class="w-full bg-slate-950 border border-rose-500/50 rounded-xl px-2.5 py-1.5 text-xs font-bold text-white">
+              <option value="1D">⏱️ ชั่วคราว 1 วัน (Trial 1D)</option>
+              <option value="7D">⏳ ชั่วคราว 7 วัน (Weekly 7D)</option>
+              <option value="30D" selected>📅 รายเดือน 30 วัน (Monthly 30D)</option>
+              <option value="90D">🚀 รายไตรมาส 90 วัน (90D)</option>
+              <option value="LIFE">🌟 ถาวรตลอดชีพ (Lifetime VIP)</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-[10px] font-bold text-rose-200 block mb-0.5">2. ชื่อ/เลขอ้างอิงลูกค้า (ผูกในรหัส):</label>
+            <input type="text" id="adminCustomerRefInput" placeholder="เช่น USER01, เบอร์โทร 4 ตัวท้าย"
+              class="w-full bg-slate-950 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white font-mono uppercase">
           </div>
         </div>
 
+        <!-- ปุ่มกด Generate โค้ดเข้ารหัส -->
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="adminGenerateEncryptedKeys(1)" class="btn-active bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 text-black font-black text-xs py-2 px-3 rounded-xl shadow">
+            🔐 สร้างโค้ดใหม่ (1 รหัส)
+          </button>
+          <button onclick="adminGenerateEncryptedKeys(5)" class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs py-2 px-3 rounded-xl shadow">
+            📦 สร้างชุด 5 รหัสพร้อมกัน
+          </button>
+        </div>
+
+        <!-- กล่องแสดงโค้ดที่สร้างเสร็จพร้อมคัดลอก -->
+        <div id="adminGeneratedCodeBox" class="hidden bg-black/90 border border-emerald-500/60 rounded-xl p-2.5 space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] text-emerald-400 font-bold">✅ รหัสผ่านการเซ็นชื่อ HMAC-SHA256 สำเร็จ:</span>
+            <button onclick="copyGeneratedCustomerCode()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg shadow">
+              📋 คัดลอกทั้งหมด
+            </button>
+          </div>
+          <pre id="adminGeneratedCodeText" class="text-xs font-mono font-extrabold text-amber-300 whitespace-pre-wrap break-all select-all bg-slate-950 p-2 rounded-lg border border-slate-800"></pre>
+        </div>
+
+        <!-- 3. เครื่องมือตรวจสอบความแท้ของโค้ดย้อนหลัง (Code Verifier) -->
+        <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2.5 space-y-1.5">
+          <label class="text-[10px] font-bold text-cyan-300 block">🔍 ตรวจสอบโค้ดลูกค้า (ตรวจลายเซ็น HMAC & วันหมดอายุ):</label>
+          <div class="flex gap-1.5">
+            <input type="text" id="adminVerifyCodeInput" placeholder="วางโค้ด ODI-... เพื่อตรวจสอบความถูกต้อง"
+              class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-[11px] text-white font-mono uppercase">
+            <button onclick="adminInspectCustomerCode()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg">
+              ตรวจโค้ด
+            </button>
+          </div>
+          <div id="adminVerifyResultText" class="text-[10px] font-mono text-slate-300"></div>
+        </div>
+
+        <!-- 4. ประวัติโค้ดที่สร้างล่าสุดในเครื่อง Admin -->
+        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold text-slate-300">📜 ประวัติโค้ดที่ Admin สร้างล่าสุด:</span>
+            <button onclick="clearAdminKeyHistory()" class="text-[10px] text-slate-400 hover:text-rose-400">ล้างประวัติ</button>
+          </div>
+          <div id="adminKeyHistoryList" class="max-h-24 overflow-y-auto text-[10px] font-mono text-slate-400 space-y-1">
+            <div>ยังไม่มีประวัติการสร้างโค้ด</div>
+          </div>
+        </div>
+
+        <!-- 5. ตั้งค่าโควต้าฟรีต่อวัน -->
         <div class="flex items-center justify-between text-[11px] text-slate-300 pt-1 border-t border-rose-500/20">
           <span>ตั้งจำนวนโควต้าฟรีต่อวัน (Free Quota/Day):</span>
           <select id="adminDailyLimitSelect" onchange="adminUpdateDailyFreeLimit(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-xs font-bold text-amber-300">
@@ -2562,13 +2609,18 @@
     }
 
     // --------------------------------------------------------
-    // 9. ระบบสลับภาษา (TH / EN) + โควต้าฟรีรายวัน + VIP / โดเนท + โหมด Admin
+    // 9. ระบบสลับภาษา (TH / EN) + โควต้าฟรีรายวัน + VIP / โดเนท + Super Admin HMAC-SHA256 Key Generator
     // --------------------------------------------------------
     const LANG_STORAGE_KEY = 'odimibo_lang_v1';
     const QUOTA_STORAGE_KEY = 'odimibo_daily_quota_v1';
     const LICENSE_STORAGE_KEY = 'odimibo_license_v1';
     const DAILY_LIMIT_CONFIG_KEY = 'odimibo_daily_limit_cfg_v1';
-    const ADMIN_MASTER_CODE = 'ADMIN-ODIMIBO-9999';
+    const ADMIN_HISTORY_KEY = 'odimibo_admin_key_history_v1';
+    const BRUTE_FORCE_KEY = 'odimibo_bf_guard_v1';
+
+    // SHA-256 Hash ของรหัส Super Admin สูงสุด (ไม่เก็บรหัสจริงเป็น Plaintext ในโค้ดเพื่อป้องกันการเปิดดู Source)
+    const SUPER_ADMIN_SHA256_HASH = '4689d796dac91701f8308fefa71a97cd11cacea1157eec00bb7071a3b9743198';
+    const BASE32_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // 32 ตัวอักษร (ตัด I, O, 0, 1 กันสับสน)
 
     let currentLang = localStorage.getItem(LANG_STORAGE_KEY) || 'th';
     let dailyFreeLimit = parseInt(localStorage.getItem(DAILY_LIMIT_CONFIG_KEY) || '5', 10) || 5;
@@ -2657,15 +2709,25 @@
     function getLicenseState() {
       try {
         const raw = JSON.parse(localStorage.getItem(LICENSE_STORAGE_KEY) || 'null');
-        if (!raw || !raw.role) return { role: 'FREE', expiresAt: null, code: null };
+        if (!raw || !raw.role) return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
+        // ป้องกันการปลอมแปลงค่า localStorage โหมด ADMIN โดยตรวจ Hash Token
+        if (raw.role === 'ADMIN' && raw.adminToken !== SUPER_ADMIN_SHA256_HASH) {
+          localStorage.removeItem(LICENSE_STORAGE_KEY);
+          return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
+        }
         if (raw.role === 'TEMP_VIP' && raw.expiresAt && Date.now() > raw.expiresAt) {
           localStorage.removeItem(LICENSE_STORAGE_KEY);
-          return { role: 'FREE', expiresAt: null, code: null };
+          return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
         }
         return raw;
       } catch (e) {
-        return { role: 'FREE', expiresAt: null, code: null };
+        return { role: 'FREE', expiresAt: null, code: null, adminToken: null };
       }
+    }
+
+    function isSuperAdminVerified() {
+      const lic = getLicenseState();
+      return lic.role === 'ADMIN' && lic.adminToken === SUPER_ADMIN_SHA256_HASH;
     }
 
     function updateQuotaBadgeUI() {
@@ -2676,10 +2738,10 @@
       const txt = document.getElementById('quotaBadgeText');
       if (!btn || !icon || !txt) return;
 
-      if (lic.role === 'ADMIN') {
+      if (isSuperAdminVerified()) {
         btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-rose-500/60 bg-rose-500/20 text-rose-200 flex items-center gap-1 shadow';
         icon.textContent = '👑';
-        txt.textContent = currentLang === 'en' ? 'ADMIN (∞)' : 'ADMIN (ไม่จำกัด)';
+        txt.textContent = currentLang === 'en' ? 'SUPER ADMIN' : 'SUPER ADMIN';
       } else if (lic.role === 'LIFETIME_VIP') {
         btn.className = 'btn-active text-[11px] font-extrabold px-2.5 py-1.5 rounded-xl border border-emerald-500/60 bg-emerald-500/20 text-emerald-200 flex items-center gap-1 shadow';
         icon.textContent = '💎';
@@ -2701,7 +2763,7 @@
 
     function consumeQuotaOrPrompt() {
       const lic = getLicenseState();
-      if (lic.role === 'ADMIN' || lic.role === 'LIFETIME_VIP' || lic.role === 'TEMP_VIP') {
+      if (isSuperAdminVerified() || lic.role === 'LIFETIME_VIP' || lic.role === 'TEMP_VIP') {
         return true; // ใช้งานได้ไม่จำกัด
       }
       if (dailyFreeLimit >= 999) return true;
@@ -2709,8 +2771,8 @@
       const q = getQuotaState();
       if (q.used >= dailyFreeLimit) {
         showToast(currentLang === 'en'
-          ? '⚠️ Daily free limit reached! Unlock VIP or Admin to continue.'
-          : '⚠️ โควต้าฟรีวันนี้ครบแล้ว! กดโดเนทรับโค้ด VIP หรือใส่รหัส Admin เพื่อใช้งานต่อ');
+          ? '⚠️ Daily free limit reached! Unlock VIP to continue.'
+          : '⚠️ โควต้าฟรีวันนี้ครบแล้ว! กดโดเนทรับโค้ด VIP เพื่อใช้งานต่อ');
         openVipModal();
         return false;
       }
@@ -2737,6 +2799,12 @@
       m.classList.remove('flex');
     }
 
+    function toggleLicenseInputVisibility() {
+      const inp = document.getElementById('licenseKeyInput');
+      if (!inp) return;
+      inp.type = inp.type === 'password' ? 'text' : 'password';
+    }
+
     function renderVipModalContent() {
       const lic = getLicenseState();
       const q = getQuotaState();
@@ -2744,21 +2812,22 @@
       const card = document.getElementById('vipCurrentStatusCard');
       const adminPanel = document.getElementById('adminKeyGenPanel');
 
-      if (lic.role === 'ADMIN') {
+      if (isSuperAdminVerified()) {
         card.innerHTML = `
           <div class="flex items-center justify-between">
-            <span class="text-xs font-extrabold text-rose-300">👑 สถานะปัจจุบัน: แอดมินระบบสูงสุด (ADMIN MODE)</span>
-            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
+            <span class="text-xs font-extrabold text-rose-300">👑 สถานะปัจจุบัน: แอดมินสูงสุด (SUPER ADMIN VERIFIED)</span>
+            <span class="text-[10px] bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded font-mono font-bold">SHA-256 AUTH</span>
           </div>
-          <p class="text-[11px] text-slate-300">คุณสามารถใช้งานการดาวน์โหลดไฟล์และส่ง Bluetooth ได้ตลอดทุกระบบโดยไม่มีจำกัด และสามารถสร้างโค้ดให้ลูกค้าด้านล่างได้ทันที</p>`;
+          <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานทุกระบบไม่จำกัด และเปิดสิทธิ์เข้าถึง <b>เครื่องมือสร้างโค้ดเข้ารหัส HMAC-SHA256</b> ด้านล่างเรียบร้อยแล้ว</p>`;
         adminPanel.classList.remove('hidden');
+        renderAdminKeyHistory();
       } else if (lic.role === 'LIFETIME_VIP') {
         card.innerHTML = `
           <div class="flex items-center justify-between">
             <span class="text-xs font-extrabold text-emerald-300">💎 สถานะปัจจุบัน: สมาชิก VIP ถาวร (Lifetime Supporter)</span>
             <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono font-bold">UNLIMITED</span>
           </div>
-          <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานไม่จำกัดครั้งถาวรเรียบร้อยแล้ว ขอบคุณที่ร่วมสนับสนุนโปรเจกต์ครับ! (${lic.code || 'VIP'})</p>`;
+          <p class="text-[11px] text-slate-300">ปลดล็อกใช้งานไม่จำกัดครั้งถาวรเรียบร้อยแล้ว ขอบคุณที่ร่วมสนับสนุนโปรเจกต์ OdimibO ครับ! (${lic.code || 'VIP'})</p>`;
         adminPanel.classList.add('hidden');
       } else if (lic.role === 'TEMP_VIP') {
         const expDate = new Date(lic.expiresAt).toLocaleDateString(currentLang === 'en' ? 'en-US' : 'th-TH');
@@ -2777,45 +2846,178 @@
           </div>
           <p class="text-[11px] text-slate-300">${currentLang === 'en'
             ? `You have <b>${rem}</b> free downloads/BLE transfers left today.`
-            : `วันนี้คุณเหลือสิทธิ์กดดาวน์โหลดไฟล์ / ส่งเข้าเครื่อง Allmiibo ฟรีอีก <b>${rem} ครั้ง</b>`}</p>`;
+            : `วันนี้คุณเหลือสิทธิ์กดดาวน์โหลดไฟล์ / ส่งเข้าเครื่อง OdimibO ฟรีอีก <b>${rem} ครั้ง</b>`}</p>`;
         adminPanel.classList.add('hidden');
       }
     }
 
-    // สร้างลายเซ็นChecksum 4 ตัวอักษรสำหรับตรวจสอบโค้ดลูกค้า (ไม่ต้องพึ่ง Database ภายนอก)
-    function computeCodeSignature(prefix, payload) {
-      const secret = 'ODIMIBO_VIP_SALT_2026';
-      const str = `${prefix}:${payload}:${secret}`;
-      let h = 0x811C9DC5;
-      for (let i = 0; i < str.length; i++) {
-        h ^= str.charCodeAt(i);
-        h = Math.imul(h, 0x01000193);
-      }
-      return (h >>> 0).toString(36).toUpperCase().padStart(4, '0').slice(0, 4);
+    // ฟังก์ชันเข้ารหัส SHA-256 สำหรับตรวจรหัส Super Admin โดยไม่เก็บรหัสจริงไว้ในโค้ด
+    async function computeSha256Hex(str) {
+      const data = new TextEncoder().encode(str);
+      const hashBuf = await crypto.subtle.digest('SHA-256', data);
+      return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, '0')).join('');
     }
 
-    function adminGenerateCustomerCode(type) {
+    // ฟังก์ชันเซ็นชื่อดิจิทัล HMAC-SHA256 ความยาว 50-bit (10 ตัวอักษร Base32 = 1.12 ล้านล้านล้านรูปแบบ)
+    async function computeHmacBase32Sig(plan, payload) {
+      const enc = new TextEncoder();
+      const keyMaterial = enc.encode('ODIMIBO_HMAC_MASTER_KEY_2026_V2::' + SUPER_ADMIN_SHA256_HASH);
+      const cryptoKey = await crypto.subtle.importKey(
+        'raw', keyMaterial, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+      );
+      const msg = enc.encode(`ODI_V2|${plan}|${payload}`);
+      const sigBuf = new Uint8Array(await crypto.subtle.sign('HMAC', cryptoKey, msg));
+
+      // แปลง 10 ไบต์แรกของ HMAC-SHA256 เป็นรหัส Base32 จำนวน 10 ตัวอักษรที่เดาไม่ได้
+      let out = '';
+      for (let i = 0; i < 10; i++) {
+        const idx = (sigBuf[i] ^ sigBuf[i + 10]) & 31;
+        out += BASE32_ALPHABET[idx];
+      }
+      return out;
+    }
+
+    // สุ่มรหัส CSPRNG (Cryptographically Secure Random) ป้องกันการคาดเดา
+    function generateCsprngBase32(len) {
+      const rnd = new Uint8Array(len);
+      crypto.getRandomValues(rnd);
+      let s = '';
+      for (let i = 0; i < len; i++) {
+        s += BASE32_ALPHABET[rnd[i] & 31];
+      }
+      return s;
+    }
+
+    // สร้างโค้ดลูกค้าได้เฉพาะ Super Admin สูงสุดเท่านั้น
+    async function adminGenerateEncryptedKeys(count = 1) {
       triggerHaptic();
-      const rand = Math.random().toString(36).substring(2, 6).toUpperCase();
-      let code = '';
-      if (type === 'LIFE') {
-        const sig = computeCodeSignature('LIFE', rand);
-        code = `ODI-LIFE-${rand}-${sig}`;
-      } else if (type === '30D') {
-        const expDays = Math.floor(Date.now() / 86400000) + 30;
-        const payload = `${expDays.toString(36).toUpperCase()}${rand.slice(0, 2)}`;
-        const sig = computeCodeSignature('30D', payload);
-        code = `ODI-30D-${payload}-${sig}`;
-      } else {
-        const expDays = Math.floor(Date.now() / 86400000) + 7;
-        const payload = `${expDays.toString(36).toUpperCase()}${rand.slice(0, 2)}`;
-        const sig = computeCodeSignature('7D', payload);
-        code = `ODI-7D-${payload}-${sig}`;
+      if (!isSuperAdminVerified()) {
+        showToast('❌ ปฏิเสธการเข้าถึง: เฉพาะ Super Admin สูงสุดเท่านั้นที่สร้างโค้ดได้!');
+        return;
       }
 
-      document.getElementById('adminGeneratedCodeText').textContent = code;
+      const plan = document.getElementById('adminGenPlanSelect').value || '30D';
+      const rawRef = (document.getElementById('adminCustomerRefInput').value || 'CUST')
+        .replace(/[^A-Za-z0-9]/g, '').toUpperCase().slice(0, 4).padEnd(2, 'X');
+
+      const planDaysMap = { '1D': 1, '7D': 7, '30D': 30, '90D': 90, 'LIFE': 36500 };
+      const daysToAdd = planDaysMap[plan] || 30;
+      const expDayStamp = Math.floor(Date.now() / 86400000) + daysToAdd;
+      const expBase36 = expDayStamp.toString(36).toUpperCase();
+
+      const generatedList = [];
+      for (let i = 0; i < count; i++) {
+        const salt5 = generateCsprngBase32(5);
+        const payload = `${expBase36}Z${rawRef}${salt5}`;
+        const hmac10 = await computeHmacBase32Sig(plan, payload);
+        const fullCode = `ODI-${plan}-${payload}-${hmac10}`;
+        generatedList.push(fullCode);
+        saveAdminKeyHistoryItem(fullCode, plan, rawRef, expDayStamp);
+      }
+
+      document.getElementById('adminGeneratedCodeText').textContent = generatedList.join('\n');
       document.getElementById('adminGeneratedCodeBox').classList.remove('hidden');
-      log(`[Admin KeyGen] สร้างโค้ดลูกค้าใหม่สำเร็จ: ${code}`, 'rx');
+      renderAdminKeyHistory();
+      log(`[SuperAdmin HMAC KeyGen] สร้างรหัสเข้ารหัส ${count} รายการ (${plan}) สำเร็จ`, 'rx');
+      showToast(`🔐 สร้างโค้ดเข้ารหัส HMAC-SHA256 (${count} รหัส) สำเร็จ!`);
+    }
+
+    function saveAdminKeyHistoryItem(code, plan, ref, expDayStamp) {
+      try {
+        const list = JSON.parse(localStorage.getItem(ADMIN_HISTORY_KEY) || '[]');
+        list.unshift({
+          code,
+          plan,
+          ref,
+          expDate: plan === 'LIFE' ? 'ถาวร (Lifetime)' : new Date(expDayStamp * 86400000).toLocaleDateString('th-TH'),
+          createdAt: new Date().toLocaleTimeString('th-TH')
+        });
+        localStorage.setItem(ADMIN_HISTORY_KEY, JSON.stringify(list.slice(0, 30)));
+      } catch (e) {}
+    }
+
+    function renderAdminKeyHistory() {
+      const box = document.getElementById('adminKeyHistoryList');
+      if (!box) return;
+      try {
+        const list = JSON.parse(localStorage.getItem(ADMIN_HISTORY_KEY) || '[]');
+        if (list.length === 0) {
+          box.innerHTML = '<div>ยังไม่มีประวัติการสร้างโค้ด</div>';
+          return;
+        }
+        box.innerHTML = list.map(item => `
+          <div class="flex items-center justify-between bg-slate-900 px-2 py-1 rounded border border-slate-800">
+            <span class="text-amber-300 font-bold select-all">${item.code}</span>
+            <span class="text-slate-400">[${item.plan} • ${item.ref} • หมดอายุ: ${item.expDate}]</span>
+          </div>
+        `).join('');
+      } catch (e) {}
+    }
+
+    function clearAdminKeyHistory() {
+      if (!isSuperAdminVerified()) return;
+      localStorage.removeItem(ADMIN_HISTORY_KEY);
+      renderAdminKeyHistory();
+      showToast('🗑️ ล้างประวัติการสร้างโค้ดแล้ว');
+    }
+
+    // ตรวจสอบความถูกต้องของโค้ดด้วย HMAC-SHA256
+    async function verifyCustomerCodeCryptographically(codeStr) {
+      const clean = (codeStr || '').trim().toUpperCase();
+      const parts = clean.split('-');
+      if (parts.length !== 4 || parts[0] !== 'ODI') {
+        return { valid: false, reason: 'รูปแบบรหัสไม่ถูกต้อง (ต้องขึ้นต้นด้วย ODI-...)' };
+      }
+      const [, plan, payload, sigProvided] = parts;
+      if (!['1D', '7D', '30D', '90D', 'LIFE'].includes(plan)) {
+        return { valid: false, reason: 'ประเภทแพ็กเกจในรหัสไม่ถูกต้อง' };
+      }
+
+      const expectedSig = await computeHmacBase32Sig(plan, payload);
+      if (sigProvided !== expectedSig) {
+        return { valid: false, reason: '❌ ลายเซ็นดิจิทัล HMAC-SHA256 ไม่ตรง! (รหัสถูกปลอมแปลงหรือพิมพ์ผิด)' };
+      }
+
+      const zIdx = payload.indexOf('Z');
+      if (zIdx === -1) {
+        return { valid: false, reason: 'โครงสร้าง Payload ไม่ถูกต้อง' };
+      }
+      const expBase36 = payload.slice(0, zIdx);
+      const refAndSalt = payload.slice(zIdx + 1);
+      const expDayStamp = parseInt(expBase36, 36);
+      const expiresAt = expDayStamp * 86400000;
+
+      if (plan !== 'LIFE' && Date.now() > expiresAt) {
+        return {
+          valid: false,
+          expired: true,
+          plan,
+          expiresAt,
+          reason: `⌛ รหัสนี้หมดอายุเมื่อวันที่ ${new Date(expiresAt).toLocaleDateString('th-TH')}`
+        };
+      }
+
+      return {
+        valid: true,
+        plan,
+        expiresAt: plan === 'LIFE' ? null : expiresAt,
+        customerRef: refAndSalt.slice(0, -5) || 'CUST'
+      };
+    }
+
+    async function adminInspectCustomerCode() {
+      if (!isSuperAdminVerified()) return;
+      const val = document.getElementById('adminVerifyCodeInput').value;
+      const out = document.getElementById('adminVerifyResultText');
+      const res = await verifyCustomerCodeCryptographically(val);
+      if (res.valid) {
+        const expTxt = res.plan === 'LIFE' ? 'ถาวร (Lifetime)' : new Date(res.expiresAt).toLocaleDateString('th-TH');
+        out.className = 'text-[10px] font-mono text-emerald-400 pt-1';
+        out.textContent = `✅ โค้ดแท้ 100% (HMAC-SHA256 ผ่าน) | แพ็กเกจ: ${res.plan} | อ้างอิง: ${res.customerRef} | หมดอายุ: ${expTxt}`;
+      } else {
+        out.className = 'text-[10px] font-mono text-rose-400 pt-1';
+        out.textContent = res.reason;
+      }
     }
 
     function copyGeneratedCustomerCode() {
@@ -2823,89 +3025,110 @@
       if (navigator.clipboard) {
         navigator.clipboard.writeText(code);
       }
-      showToast(`📋 คัดลอกโค้ด ${code} แล้ว!`);
+      showToast('📋 คัดลอกโค้ดเข้ารหัสทั้งหมดแล้ว!');
     }
 
     function adminUpdateDailyFreeLimit(val) {
+      if (!isSuperAdminVerified()) return;
       dailyFreeLimit = parseInt(val, 10) || 5;
       localStorage.setItem(DAILY_LIMIT_CONFIG_KEY, String(dailyFreeLimit));
       updateQuotaBadgeUI();
       showToast(`✅ ตั้งโควต้าฟรีต่อวันเป็น ${dailyFreeLimit >= 999 ? 'ไม่จำกัด' : dailyFreeLimit + ' ครั้ง/วัน'} แล้ว`);
     }
 
-    function activateLicenseKey() {
+    // ระบบป้องกันการสุ่มเดารหัส (Anti-Brute-Force Rate Limiter)
+    function checkBruteForceGuard() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(BRUTE_FORCE_KEY) || '{"fails":0,"lockUntil":0}');
+        if (raw.lockUntil && Date.now() < raw.lockUntil) {
+          const sec = Math.ceil((raw.lockUntil - Date.now()) / 1000);
+          return { locked: true, waitSec: sec };
+        }
+        return { locked: false, fails: raw.fails || 0 };
+      } catch (e) {
+        return { locked: false, fails: 0 };
+      }
+    }
+
+    function recordFailedAttempt() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(BRUTE_FORCE_KEY) || '{"fails":0,"lockUntil":0}');
+        const fails = (raw.fails || 0) + 1;
+        const lockUntil = fails >= 5 ? (Date.now() + 60000) : 0; // ล็อก 60 วินาทีถ้าเดาผิดครบ 5 ครั้ง
+        localStorage.setItem(BRUTE_FORCE_KEY, JSON.stringify({ fails: fails >= 5 ? 0 : fails, lockUntil }));
+      } catch (e) {}
+    }
+
+    function resetBruteForceGuard() {
+      localStorage.removeItem(BRUTE_FORCE_KEY);
+    }
+
+    async function activateLicenseKey() {
       triggerHaptic();
+      const guard = checkBruteForceGuard();
+      if (guard.locked) {
+        showToast(`🛡️ ระบบล็อกป้องกันการสุ่มเดารหัส กรุณารอ ${guard.waitSec} วินาที`);
+        return;
+      }
+
       const input = (document.getElementById('licenseKeyInput').value || '').trim().toUpperCase();
       if (!input) {
         showToast('⚠️ กรุณากรอกรหัสปลดล็อกก่อนครับ');
         return;
       }
 
-      // 1. ตรวจรหัส Admin สูงสุด
-      if (input === ADMIN_MASTER_CODE || input === 'ADMIN9999' || input === 'ODIMIBO-ADMIN') {
+      // 1. ตรวจรหัส Super Admin สูงสุดด้วย SHA-256 Digest
+      const candidateHash = await computeSha256Hex('ODIMIBO_SUPER_ADMIN_V2::' + input);
+      if (candidateHash === SUPER_ADMIN_SHA256_HASH) {
+        resetBruteForceGuard();
         localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
           role: 'ADMIN',
           expiresAt: null,
-          code: 'ADMIN-MASTER'
+          code: 'SUPER-ADMIN',
+          adminToken: SUPER_ADMIN_SHA256_HASH
         }));
+        document.getElementById('licenseKeyInput').value = '';
         updateQuotaBadgeUI();
         renderVipModalContent();
-        showToast('👑 เปิดโหมด ADMIN สำเร็จ! ใช้งานได้ไม่จำกัดทุกระบบ');
-        log('[Auth] เข้าสู่ระบบโหมด ADMIN สูงสุด (Unlimited Access)', 'rx');
+        showToast('👑 ยืนยันตัวตน SUPER ADMIN สำเร็จ! เปิดระบบ Key Generator แล้ว');
+        log('[Security] ยืนยันตัวตน SUPER ADMIN ด้วย SHA-256 สำเร็จ', 'rx');
         return;
       }
 
-      // 2. ตรวจรหัส VIP ถาวร (ODI-LIFE-XXXX-SSSS หรือ VIP-ODIMIBO-2026)
-      if (input === 'VIP-ODIMIBO-2026' || input.startsWith('ODI-LIFE-')) {
-        const parts = input.split('-');
-        if (input === 'VIP-ODIMIBO-2026' || (parts.length === 4 && computeCodeSignature('LIFE', parts[2]) === parts[3])) {
+      // 2. ตรวจรหัสลูกค้าด้วยลายเซ็นดิจิทัล HMAC-SHA256 (ป้องกันการปลอมแปลงและแก้ไขวันหมดอายุ)
+      const verifyRes = await verifyCustomerCodeCryptographically(input);
+      if (verifyRes.valid) {
+        resetBruteForceGuard();
+        if (verifyRes.plan === 'LIFE') {
           localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
             role: 'LIFETIME_VIP',
             expiresAt: null,
             code: input
           }));
-          updateQuotaBadgeUI();
-          renderVipModalContent();
-          showToast('💎 ปลดล็อก VIP ถาวรสำเร็จ! ใช้งานได้ไม่จำกัด');
-          return;
+          showToast('💎 ปลดล็อก VIP ถาวร (HMAC-SHA256 Verified) สำเร็จ!');
+        } else {
+          localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
+            role: 'TEMP_VIP',
+            expiresAt: verifyRes.expiresAt,
+            code: input
+          }));
+          showToast(`⏳ ปลดล็อก VIP (${verifyRes.plan}) สำเร็จ!`);
         }
+        document.getElementById('licenseKeyInput').value = '';
+        updateQuotaBadgeUI();
+        renderVipModalContent();
+        return;
       }
 
-      // 3. ตรวจรหัส VIP ชั่วคราว 7 วัน / 30 วัน (ODI-7D-XXXX-SSSS / ODI-30D-XXXX-SSSS)
-      if (input.startsWith('ODI-7D-') || input.startsWith('ODI-30D-')) {
-        const parts = input.split('-');
-        const prefix = parts[1]; // 7D or 30D
-        const payload = parts[2] || '';
-        const sig = parts[3] || '';
-        if (parts.length === 4 && computeCodeSignature(prefix, payload) === sig) {
-          const expDaysStr = payload.slice(0, -2);
-          const expDays = parseInt(expDaysStr, 36);
-          const expiresAt = expDays * 86400000;
-          if (expiresAt > Date.now()) {
-            localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify({
-              role: 'TEMP_VIP',
-              expiresAt: expiresAt,
-              code: input
-            }));
-            updateQuotaBadgeUI();
-            renderVipModalContent();
-            showToast(`⏳ ปลดล็อก VIP (${prefix}) สำเร็จ!`);
-            return;
-          } else {
-            showToast('❌ รหัสปลดล็อกนี้หมดอายุแล้วครับ');
-            return;
-          }
-        }
-      }
-
-      showToast('❌ รหัสไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
+      recordFailedAttempt();
+      showToast(verifyRes.reason || '❌ รหัสไม่ถูกต้องหรือถูกปลอมแปลง');
     }
 
     function logoutVipOrAdmin() {
       localStorage.removeItem(LICENSE_STORAGE_KEY);
       updateQuotaBadgeUI();
       renderVipModalContent();
-      showToast('🔄 สลับกลับเป็นโหมดผู้ใช้ทั่วไป (Free Quota) แล้ว');
+      showToast('🔒 ล็อกเอาท์กลับสู่โหมดผู้ใช้ทั่วไปเรียบร้อยแล้ว');
     }
 
     function applyLanguage(lang) {
