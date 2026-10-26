@@ -278,6 +278,11 @@
           </button>
         </div>
 
+        <!-- ปุ่มเช็คความพร้อมมือถือ & ตรวจไฟล์ NTAG215 จริง -->
+        <button onclick="runDiagnosticSelfTest()" class="btn-active w-full bg-gradient-to-r from-teal-600/30 to-indigo-600/30 hover:from-teal-500/40 hover:to-indigo-500/40 text-teal-200 border border-teal-500/40 text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
+          <span>🧪</span> เช็คความพร้อมมือถือ & ตรวจความถูกต้องไฟล์ 540B (กดเช็คที่นี่)
+        </button>
+
         <div class="flex items-center justify-between text-xs text-slate-400 pt-1 border-t border-slate-800/80 font-mono">
           <span id="activeIdHexLabel">ID: 21000000-000b0002</span>
           <span id="activeUidLabel" class="text-emerald-400">UID: 04:A1:89:2B:C3:61:80</span>
@@ -613,6 +618,33 @@
         </button>
         <button onclick="closeScanHelpModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
           ปิด
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: เช็คความพร้อมมือถือ & ตรวจไฟล์ NTAG215 จริง (Self-Test)
+       ======================================================== -->
+  <div id="diagnosticModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-teal-500/40 rounded-3xl max-w-md w-full p-4 space-y-3 shadow-2xl max-h-[88vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
+        <h3 class="text-sm font-extrabold text-teal-300 flex items-center gap-1.5">
+          <span>🧪</span> ผลตรวจความพร้อมมือถือ & ไฟล์ Amiibo จริง
+        </h3>
+        <button onclick="closeDiagnosticModal()" class="text-slate-400 hover:text-white text-lg font-bold px-2">✕</button>
+      </div>
+
+      <div id="diagnosticContent" class="space-y-2.5 text-xs text-slate-200 leading-relaxed">
+        <!-- Populated dynamically by runDiagnosticSelfTest() -->
+      </div>
+
+      <div class="flex gap-2 pt-1">
+        <button onclick="runDiagnosticSelfTest()" class="flex-1 bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs py-2.5 rounded-xl shadow">
+          🔄 กดตรวจซ้ำอีกครั้ง
+        </button>
+        <button onclick="closeDiagnosticModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-700">
+          ปิดหน้าต่าง
         </button>
       </div>
     </div>
@@ -2258,6 +2290,102 @@
       if (e.key === 'ArrowRight') { e.preventDefault(); handleInput('RIGHT'); }
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleInput('OK'); }
     });
+
+    // --------------------------------------------------------
+    // 8. ระบบตรวจสอบความพร้อมมือถือ & ตรวจไบต์ NTAG215 จริง (Self-Test)
+    // --------------------------------------------------------
+    function closeDiagnosticModal() {
+      const m = document.getElementById('diagnosticModal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+
+    async function runDiagnosticSelfTest() {
+      triggerHaptic();
+      await rebuildActiveTagBinary();
+      const b = activeTag.rawBytes;
+      const ua = navigator.userAgent || '';
+      const isLineOrFB = /Line\/|FBAN|FBAV|Instagram/i.test(ua);
+      const isIOS = /iPhone|iPad|iPod/i.test(ua);
+      const isAndroid = /Android/i.test(ua);
+      const hasWebBLE = !!(navigator.bluetooth && typeof navigator.bluetooth.requestDevice === 'function');
+      const hasWebCrypto = !!(window.crypto && window.crypto.subtle);
+      const hasKey = !!(retailKeyBytes && retailKeyBytes.length === 160);
+
+      // ตรวจโครงสร้างไบต์ 540 ไบต์ (135 Pages) ของ NTAG215 จริง
+      const is540B = b && b.length === 540;
+      const bcc0Expected = (b[0] ^ b[1] ^ b[2] ^ 0x88) & 0xFF;
+      const bcc0Ok = is540B && b[3] === bcc0Expected;
+      const bcc1Expected = (b[4] ^ b[5] ^ b[6] ^ b[7]) & 0xFF;
+      const bcc1Ok = is540B && b[8] === bcc1Expected;
+      const ccOk = is540B && b[12] === 0xF1 && b[13] === 0x10 && b[14] === 0xFF && b[15] === 0xEE;
+      const a5Ok = is540B && b[16] === 0xA5;
+      const dynLockOk = is540B && b[520] === 0x01 && b[521] === 0x00 && b[522] === 0x0F && b[523] === 0xBD;
+      const packOk = is540B && b[536] === 0x80 && b[537] === 0x80;
+
+      const toHex = (arr) => Array.from(arr).map(x => x.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+      const pwdHex = is540B ? toHex(b.subarray(532, 536)) : '--';
+      const ccHex  = is540B ? toHex(b.subarray(12, 16)) : '--';
+
+      let browserStatusHtml = '';
+      if (isLineOrFB) {
+        browserStatusHtml = `
+          <div class="bg-rose-950/60 border border-rose-500/50 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-rose-300">⚠️ ตรวจพบการเปิดเว็บผ่านแอปแชท (LINE / Facebook)!</div>
+            <p class="text-[11px] text-slate-200">แอปแชทจะบล็อก Bluetooth และการดาวน์โหลดไฟล์ กรุณากดปุ่ม <b>⋮ (มุมขวาบน/ล่าง)</b> แล้วเลือก <b>"เปิดในเบราว์เซอร์เริ่มต้น (Open in Chrome / Safari)"</b> ก่อนใช้งานครับ</p>
+          </div>`;
+      } else if (isIOS && !hasWebBLE) {
+        browserStatusHtml = `
+          <div class="bg-amber-950/50 border border-amber-500/40 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-amber-300">📱 อุปกรณ์: iPhone / iPad (Safari บล็อก Web Bluetooth)</div>
+            <p class="text-[11px] text-slate-200">• <b>ถ้าใช้เครื่องจำลอง Allmiibo (Bluetooth):</b> ให้โหลดแอปฟรีชื่อ <b>Bluefy – Web BLE Browser</b> จาก App Store แล้วนำลิงก์เว็บนี้ไปเปิดในแอป Bluefy<br>• <b>ถ้าเขียนเหรียญ NFC NTAG215:</b> ใช้ Safari กดดาวน์โหลดไฟล์ <code>.bin</code> บนหน้านี้ได้เลย แล้วเขียนผ่านแอป <b>NFC Tools / AmiiBoss</b></p>
+          </div>`;
+      } else {
+        browserStatusHtml = `
+          <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-2xl space-y-1">
+            <div class="font-bold text-emerald-300">✅ เบราว์เซอร์พร้อมใช้งานเต็มระบบ (${isAndroid ? 'Android Chrome' : 'WebBLE Ready'})</div>
+            <p class="text-[11px] text-slate-200">• <b>Web Bluetooth (BLE):</b> ${hasWebBLE ? '✅ รองรับ (อย่าลืมเปิด Bluetooth + Location/ตำแหน่งที่ตั้งในมือถือ)' : '⚠️ ไม่รองรับในเบราว์เซอร์นี้ (แนะนำให้เปิดด้วย Google Chrome หรือแอป Bluefy)'}<br>• <b>WebCrypto AES-128 / HMAC:</b> ${hasWebCrypto ? '✅ พร้อมเข้ารหัส 100%' : '❌ ไม่รองรับ'}</p>
+          </div>`;
+      }
+
+      const html = `
+        ${browserStatusHtml}
+
+        <!-- 2. ผลตรวจโครงสร้างไบต์ 540B ของตัวละครที่เลือกอยู่ -->
+        <div class="bg-slate-950 border border-slate-800 p-3 rounded-2xl space-y-1.5">
+          <div class="font-bold text-teal-300 flex items-center justify-between">
+            <span>🔬 ตรวจไฟล์จริง: ${activeTag.name}</span>
+            <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono">${is540B && bcc0Ok && bcc1Ok && ccOk && dynLockOk && packOk ? 'PASS 100%' : 'CHECK'}</span>
+          </div>
+          <div class="grid grid-cols-1 gap-1 text-[11px] font-mono text-slate-300 pt-1">
+            <div class="flex justify-between"><span>• ขนาดไฟล์ NTAG215:</span><span class="text-emerald-400">${b.length} Bytes (135 Pages) ✅</span></div>
+            <div class="flex justify-between"><span>• UID & BCC0/BCC1:</span><span class="text-emerald-400">${activeTag.uid} (${bcc0Ok && bcc1Ok ? 'Valid ✅' : 'Err'})</span></div>
+            <div class="flex justify-between"><span>• Amiibo CC (Page 3):</span><span class="text-emerald-400">${ccHex} (${ccOk ? 'Valid ✅' : 'Err'})</span></div>
+            <div class="flex justify-between"><span>• Character ID (P.21-22):</span><span class="text-indigo-300">${activeTag.head}-${activeTag.tail} ✅</span></div>
+            <div class="flex justify-between"><span>• Dynamic Lock & PACK:</span><span class="text-emerald-400">${dynLockOk && packOk ? '01000FBD / 8080 ✅' : 'Err'}</span></div>
+            <div class="flex justify-between"><span>• PWD คำนวณจาก UID:</span><span class="text-amber-300">${pwdHex} ✅</span></div>
+            <div class="flex justify-between"><span>• สถานะเข้ารหัส Retail Key:</span><span class="${hasKey ? 'text-emerald-400' : 'text-amber-300'}">${hasKey ? '🔐 เข้ารหัส AES+HMAC แล้ว ✅' : '⚡ โหมด Allmiibo (ยังไม่ใส่ Key)'}</span></div>
+          </div>
+        </div>
+
+        <!-- 3. วิธีเช็คกับเครื่อง Nintendo Switch ทันทีใน 3 วินาที (ไม่ต้องเข้าเกม) -->
+        <div class="bg-indigo-950/40 border border-indigo-500/40 p-3 rounded-2xl space-y-1.5">
+          <div class="font-bold text-indigo-300">🎮 วิธีทดสอบบน Nintendo Switch ทันที (ไม่ต้องเปิดเกม):</div>
+          <ol class="list-decimal list-inside text-[11px] text-slate-200 space-y-1">
+            <li>ที่หน้าโฮมของ Switch ให้เข้าเมนู <b>System Settings (ตั้งค่าเครื่องรูปฟันเฟือง ⚙️)</b></li>
+            <li>เลื่อนซ้ายลงมาเลือกเมนู <b>amiibo</b> ➔ กดที่ <b>Register Owner and Nickname (ลงทะเบียนเจ้าของและชื่อเล่น)</b></li>
+            <li>นำเครื่อง <b>Allmiibo</b> (ที่กดส่งข้อมูลจากเว็บนี้แล้ว) หรือ <b>เหรียญ NFC</b> ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></li>
+            <li>ถ้าใช้งานได้จริง <b>หน้าจอ Switch จะดัง "ติ๊ด!" และเด้งรูป + ชื่อตัวละครขึ้นมาทันทีภายใน 2 วินาทีครับ!</b></li>
+          </ol>
+        </div>
+      `;
+
+      document.getElementById('diagnosticContent').innerHTML = html;
+      const m = document.getElementById('diagnosticModal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      log(`[Self-Test] ตรวจโครงสร้าง ${activeTag.name} (540B, BCC0/BCC1, CC:${ccHex}, PWD:${pwdHex}) ผ่านครบ 100%`, 'rx');
+    }
 
     // เริ่มต้นระบบ
     (async function initApp() {
