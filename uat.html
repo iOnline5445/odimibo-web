@@ -251,6 +251,80 @@
       background-color: var(--t-accent-soft) !important;
       border: 1px solid var(--t-border);
     }
+
+    /* ========================================================
+       DIRECTIONAL VIEW TRANSITIONS & STEPPER (Modern Web Guidance)
+       ======================================================== */
+    @keyframes slide-to-left {
+      to { transform: translateX(-24px); opacity: 0; }
+    }
+    @keyframes slide-from-right {
+      from { transform: translateX(24px); opacity: 0; }
+    }
+    @keyframes slide-to-right {
+      to { transform: translateX(24px); opacity: 0; }
+    }
+    @keyframes slide-from-left {
+      from { transform: translateX(-24px); opacity: 0; }
+    }
+
+    ::view-transition-group(root) {
+      animation-duration: 0.28s;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    html:active-view-transition-type(forward)::view-transition-old(root) {
+      animation-name: slide-to-left;
+    }
+    html:active-view-transition-type(forward)::view-transition-new(root) {
+      animation-name: slide-from-right;
+    }
+    html:active-view-transition-type(backward)::view-transition-old(root) {
+      animation-name: slide-to-right;
+    }
+    html:active-view-transition-type(backward)::view-transition-new(root) {
+      animation-name: slide-from-left;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      ::view-transition-group(root) {
+        animation: none !important;
+      }
+    }
+
+    .wizard-step-pane {
+      animation: fadeInStep 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes fadeInStep {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .wizard-step-btn {
+      color: #94a3b8;
+      background-color: transparent;
+      border: 1px solid #1e293b;
+    }
+    .wizard-step-btn .step-num {
+      background-color: #1e293b;
+      color: #94a3b8;
+      border: 1px solid #334155;
+      transition: all 0.2s ease;
+    }
+    .wizard-step-btn.active {
+      color: #ffffff;
+      background-color: #0f172a;
+      border-color: #6366f1;
+      box-shadow: 0 4px 12px -2px rgba(99, 102, 241, 0.25);
+    }
+    .wizard-step-btn.active .step-num {
+      background-color: #4f46e5;
+      color: #ffffff;
+      border-color: #818cf8;
+    }
+    .wizard-step-btn.completed .step-num {
+      background-color: #059669;
+      color: #ffffff;
+      border-color: #34d399;
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
@@ -351,9 +425,37 @@
     <!-- ----------------------------------------------------
          TAB 1: ตัวเครื่อง Allmiibo จำลอง & สลับเกมด่วน
          ---------------------------------------------------- -->
+        <!-- ----------------------------------------------------
+         TAB 1: ตัวเครื่อง Allmiibo จำลอง & สลับเกมด่วน (3-Step Wizard)
+         ---------------------------------------------------- -->
     <div id="tabDevice" class="tab-pane space-y-3.5">
 
+      <!-- Stepper Navigation Header (3 Steps) -->
+      <nav id="wizardStepperNav" class="bg-slate-900/95 border border-slate-800 rounded-2xl p-2 shadow-lg" aria-label="Step progress">
+        <div class="grid grid-cols-3 gap-1.5">
+          <button type="button" id="stepNavBtn1" onclick="goToWizardStep(1)" class="wizard-step-btn active flex flex-col items-center justify-center py-2 px-1 rounded-xl text-center transition group cursor-pointer">
+            <span class="step-num text-[11px] font-black w-6 h-6 rounded-full flex items-center justify-center mb-1">1</span>
+            <span id="stepNavLbl1" class="text-xs font-bold leading-tight">วิธีใช้งาน</span>
+            <span id="stepNavSub1" class="text-[9.5px] opacity-75">เลือกอุปกรณ์</span>
+          </button>
+          <button type="button" id="stepNavBtn2" onclick="goToWizardStep(2)" class="wizard-step-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-center transition group cursor-pointer">
+            <span class="step-num text-[11px] font-black w-6 h-6 rounded-full flex items-center justify-center mb-1">2</span>
+            <span id="stepNavLbl2" class="text-xs font-bold leading-tight">เลือกตัวละคร</span>
+            <span id="stepNavSub2" class="text-[9.5px] opacity-75">เกม & Amiibo</span>
+          </button>
+          <button type="button" id="stepNavBtn3" onclick="goToWizardStep(3)" class="wizard-step-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-center transition group cursor-pointer">
+            <span class="step-num text-[11px] font-black w-6 h-6 rounded-full flex items-center justify-center mb-1">3</span>
+            <span id="stepNavLbl3" class="text-xs font-bold leading-tight">ส่งเข้า Switch</span>
+            <span id="stepNavSub3" class="text-[9.5px] opacity-75">จำลอง & สแกน</span>
+          </button>
+        </div>
+      </nav>
+
       <!-- ========================================================
+           SCREEN 1 (#wizardStepView1): เลือกวิธีใช้งานกับ Nintendo Switch
+           ======================================================== -->
+      <section id="wizardStepView1" class="wizard-step-pane space-y-3" aria-labelledby="lblStep1MethodHeader">
+        <!-- ========================================================
            ⚡ ขั้นตอนที่ 1: เลือกวิธีใช้งานกับ Nintendo Switch (Select Usage Method First)
            ======================================================== -->
       <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow-lg">
@@ -390,7 +492,17 @@
         </div>
       </div>
 
+        <!-- Next to Step 2 Button -->
+        <button type="button" id="btnNextToStep2" onclick="goToWizardStep(2)" class="w-full btn-active bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-extrabold text-xs py-3 px-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition cursor-pointer">
+          <span id="btnNextToStep2Text">ถัดไป: เลือกเกม & ตัวละคร Amiibo (ขั้นตอนที่ 2) ➔</span>
+        </button>
+      </section>
+
       <!-- ========================================================
+           SCREEN 2 (#wizardStepView2): เลือกเกม & ตัวละคร Amiibo
+           ======================================================== -->
+      <section id="wizardStepView2" class="wizard-step-pane hidden space-y-3" aria-labelledby="lblSelectGameHeader">
+        <!-- ========================================================
            🎮 ขั้นตอนที่ 2: เลือกเกม & ตัวละคร Amiibo (Select Game & Character)
            ======================================================== -->
       <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-3 space-y-2 shadow-lg">
@@ -481,7 +593,48 @@
         </div>
       </div>
 
-      <!-- OdimibO Device Body Simulation -->
+        <!-- กล่องแสดงรายละเอียดตัวละคร & ของรางวัลในเกม + วิธีสแกนในเกมนั้นๆ -->
+      <div id="activeAmiiboCard" class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow-md">
+        <div class="flex items-center gap-3">
+          <div class="w-16 h-16 bg-slate-950 rounded-xl p-1 flex items-center justify-center border border-slate-800 flex-shrink-0 relative overflow-hidden">
+            <img id="activeAmiiboImg" src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png" alt="OdimibO" class="max-h-14 object-contain">
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span id="activeGameTagPill" class="text-[11px] bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2 py-0.5 rounded font-bold">
+                Fire Emblem
+              </span>
+              <span id="activeGameSeries" class="text-xs text-slate-400 truncate">Fire Emblem: Engage / Three Houses</span>
+            </div>
+            <h3 id="activeAmiiboName" class="text-sm font-bold text-white truncate mt-0.5">Marth - เจ้าชายผู้กล้า (ใช้ได้ทุกภาค Fire Emblem)</h3>
+            <p id="activeRewards" class="text-xs text-amber-300/95 leading-snug mt-1">🎁 【Engage】ชุด Marth + เพลง Beneath a New Light 【Three Houses】เพลงรบพิเศษ + ของใน Holy Tomb</p>
+          </div>
+        </div>
+
+        <!-- คำแนะนำจุดสแกนในเกมของตัวละครที่เลือกอยู่ (Dynamic In-Game Scan Guide) -->
+        <div id="inGameScanHint" class="bg-indigo-950/40 border border-indigo-500/30 rounded-xl p-2.5 text-xs text-slate-200 leading-relaxed">
+          <span id="lblInGameScanTitle" class="font-bold text-indigo-300">🕹️ สแกนตอนไหนในเกมนี้:</span>
+          <span id="inGameScanHintText">ใน <b>Fire Emblem Engage</b> ให้เดินไปที่ <b>ศาลา Gazebo (ใน Somniel)</b> ➔ กดเลือก <b>Scan Tag</b> ➔ นำเครื่อง OdimibO/เหรียญ NFC แตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></span>
+        </div>
+      </div>
+
+        <!-- Step 2 Navigation Buttons -->
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <button type="button" id="btnBackToStep1" onclick="goToWizardStep(1)" class="btn-active bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-bold text-xs py-2.5 px-3 rounded-xl shadow flex items-center justify-center gap-1.5 transition cursor-pointer">
+            <span id="btnBackToStep1Text">◀ เปลี่ยนวิธีใช้ (Step 1)</span>
+          </button>
+          <button type="button" id="btnNextToStep3" onclick="goToWizardStep(3)" class="btn-active bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-lg flex items-center justify-center gap-1.5 transition cursor-pointer">
+            <span id="btnNextToStep3Text">ถัดไป: สแกนเข้า Switch (ขั้นตอนที่ 3) ➔</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           SCREEN 3 (#wizardStepView3): จำลองหน้าจอ OLED & ส่งข้อมูลเข้า Switch
+           ======================================================== -->
+      <section id="wizardStepView3" class="wizard-step-pane hidden space-y-3" aria-labelledby="lblStep3ActionHeader">
+        
+        <!-- OdimibO Device Body Simulation -->
       <div class="relative pt-2">
         
         <!-- ปุ่มโยก 3 ปุ่มด้านบนตัวเครื่อง (Physical Top Rocker Switch) -->
@@ -916,30 +1069,16 @@
 
       </div>
 
-      <!-- กล่องแสดงรายละเอียดตัวละคร & ของรางวัลในเกม + วิธีสแกนในเกมนั้นๆ -->
-      <div id="activeAmiiboCard" class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-2.5 shadow-md">
-        <div class="flex items-center gap-3">
-          <div class="w-16 h-16 bg-slate-950 rounded-xl p-1 flex items-center justify-center border border-slate-800 flex-shrink-0 relative overflow-hidden">
-            <img id="activeAmiiboImg" src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png" alt="OdimibO" class="max-h-14 object-contain">
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center gap-1.5">
-              <span id="activeGameTagPill" class="text-[11px] bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2 py-0.5 rounded font-bold">
-                Fire Emblem
-              </span>
-              <span id="activeGameSeries" class="text-xs text-slate-400 truncate">Fire Emblem: Engage / Three Houses</span>
-            </div>
-            <h3 id="activeAmiiboName" class="text-sm font-bold text-white truncate mt-0.5">Marth - เจ้าชายผู้กล้า (ใช้ได้ทุกภาค Fire Emblem)</h3>
-            <p id="activeRewards" class="text-xs text-amber-300/95 leading-snug mt-1">🎁 【Engage】ชุด Marth + เพลง Beneath a New Light 【Three Houses】เพลงรบพิเศษ + ของใน Holy Tomb</p>
-          </div>
+        <!-- Step 3 Navigation Buttons -->
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <button type="button" id="btnBackToStep2" onclick="goToWizardStep(2)" class="btn-active bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-bold text-xs py-2.5 px-3 rounded-xl shadow flex items-center justify-center gap-1.5 transition cursor-pointer">
+            <span id="btnBackToStep2Text">◀ เปลี่ยนตัวละคร (Step 2)</span>
+          </button>
+          <button type="button" onclick="switchTab('tabManual')" class="btn-active bg-indigo-950/60 hover:bg-indigo-900/60 text-indigo-300 border border-indigo-500/40 font-bold text-xs py-2.5 px-3 rounded-xl shadow flex items-center justify-center gap-1.5 transition cursor-pointer">
+            <span id="btnViewGuideStep3Text">📖 ดูวิธีสแกนในเกม</span>
+          </button>
         </div>
-
-        <!-- คำแนะนำจุดสแกนในเกมของตัวละครที่เลือกอยู่ (Dynamic In-Game Scan Guide) -->
-        <div id="inGameScanHint" class="bg-indigo-950/40 border border-indigo-500/30 rounded-xl p-2.5 text-xs text-slate-200 leading-relaxed">
-          <span id="lblInGameScanTitle" class="font-bold text-indigo-300">🕹️ สแกนตอนไหนในเกมนี้:</span>
-          <span id="inGameScanHintText">ใน <b>Fire Emblem Engage</b> ให้เดินไปที่ <b>ศาลา Gazebo (ใน Somniel)</b> ➔ กดเลือก <b>Scan Tag</b> ➔ นำเครื่อง OdimibO/เหรียญ NFC แตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b></span>
-        </div>
-      </div>
+      </section>
 
       <!-- กล่องใส่ KeyGen เพื่อปลดล็อกเพิ่มความสามารถแอป -->
       <div id="keyStatusBox" onclick="openVipModal()" class="cursor-pointer bg-slate-900 hover:bg-slate-800/90 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-3 flex items-center justify-between gap-2 transition">
@@ -2094,6 +2233,53 @@
       const m = document.getElementById('scanHelpModal');
       m.classList.add('hidden');
       m.classList.remove('flex');
+    }
+
+    
+    // ========================================================
+    // 🧭 MULTI-STEP WIZARD NAVIGATION (Modern Web Guidance)
+    // ========================================================
+    let currentWizardStep = 1;
+
+    function goToWizardStep(stepNum) {
+      if (stepNum < 1 || stepNum > 3 || stepNum === currentWizardStep) return;
+      triggerHaptic();
+      const direction = stepNum > currentWizardStep ? 'forward' : 'backward';
+      const targetStep = stepNum;
+
+      const updateDOM = () => {
+        currentWizardStep = targetStep;
+        updateWizardUI();
+      };
+
+      if (document.startViewTransition) {
+        document.startViewTransition({
+          update: updateDOM,
+          types: [direction]
+        });
+      } else {
+        updateDOM();
+      }
+    }
+
+    function updateWizardUI() {
+      const v1 = document.getElementById('wizardStepView1');
+      const v2 = document.getElementById('wizardStepView2');
+      const v3 = document.getElementById('wizardStepView3');
+
+      if (v1) v1.classList.toggle('hidden', currentWizardStep !== 1);
+      if (v2) v2.classList.toggle('hidden', currentWizardStep !== 2);
+      if (v3) v3.classList.toggle('hidden', currentWizardStep !== 3);
+
+      [1, 2, 3].forEach(num => {
+        const btn = document.getElementById('stepNavBtn' + num);
+        if (btn) {
+          btn.classList.toggle('active', currentWizardStep === num);
+          btn.classList.toggle('completed', currentWizardStep > num);
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function scrollToStep3Action() {
@@ -3731,7 +3917,10 @@
 
       currentScreen = 'TAG_EMULATE';
       renderOLED();
-      if (shouldSwitchTab) switchTab('tabDevice');
+      if (shouldSwitchTab) {
+        switchTab('tabDevice');
+        goToWizardStep(3);
+      }
 
       const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       log(isEn
@@ -4528,7 +4717,18 @@
         lblPdpaCardTitle: 'ความปลอดภัยข้อมูลส่วนบุคคล (PDPA & GDPR)',
         lblPdpaCardDesc: '<b>ความปลอดภัย 100%:</b> ข้อมูลทุกอย่าง (ไฟล์ Key, สถิติการใช้งาน, รหัส VIP, และประวัติการสแกน) จัดเก็บใน <b>หน่วยความจำเครื่องของผู้ใช้เท่านั้น (Client-Side Local Storage)</b> ไม่มีการส่งข้อมูลส่วนบุคคลออกไปยังเซิร์ฟเวอร์ภายนอก สอดคล้องตามมาตรฐาน <b>PDPA (ไทย)</b>, <b>GDPR (ยุโรป)</b> และมาตรฐานสากล',
         lblPdpaWipeHint: 'สิทธิ์ในการลบข้อมูลส่วนบุคคล (Right to Erasure):',
-        btnWipeLocalData: '🗑️ ล้างข้อมูลในเครื่องทั้งหมด'
+        btnWipeLocalData: '🗑️ ล้างข้อมูลในเครื่องทั้งหมด',
+        stepNavLbl1: '1. วิธีใช้งาน',
+        stepNavSub1: 'เลือกอุปกรณ์',
+        stepNavLbl2: '2. เลือกตัวละคร',
+        stepNavSub2: 'เกม & ภาค',
+        stepNavLbl3: '3. ส่งเข้า Switch',
+        stepNavSub3: 'จำลอง & สแกน',
+        btnNextToStep2Text: 'ถัดไป: เลือกเกม & ตัวละคร Amiibo (ขั้นตอนที่ 2) ➔',
+        btnBackToStep1Text: '◀ เปลี่ยนวิธีใช้ (Step 1)',
+        btnNextToStep3Text: 'ถัดไป: สแกนเข้า Switch (ขั้นตอนที่ 3) ➔',
+        btnBackToStep2Text: '◀ เปลี่ยนตัวละคร (Step 2)',
+        btnViewGuideStep3Text: '📖 ดูวิธีสแกนในเกม'
       },
       en: {
         topSubStatus: 'OdimibO Labs • Seattle & SF Bay Area • 950 Tag Library',
@@ -4726,7 +4926,18 @@
         lblPdpaCardTitle: 'Client Privacy & Data Protection (PDPA / GDPR)',
         lblPdpaCardDesc: '<b>100% Client-Side Privacy:</b> All data (retail keys, local usage metrics, VIP license codes, and scan records) is stored exclusively in your <b>local browser storage (Client-Side Local Storage)</b>. No personal telemetry or usage records are ever transmitted to remote servers, fully complying with <b>Thailand PDPA</b>, <b>EU GDPR</b>, and international privacy standards.',
         lblPdpaWipeHint: 'Right to Erasure (PDPA / GDPR):',
-        btnWipeLocalData: '🗑️ Wipe All Local Data'
+        btnWipeLocalData: '🗑️ Wipe All Local Data',
+        stepNavLbl1: '1. Method',
+        stepNavSub1: 'Choose Device',
+        stepNavLbl2: '2. Amiibo',
+        stepNavSub2: 'Game & Series',
+        stepNavLbl3: '3. Emulate',
+        stepNavSub3: 'Scan to Switch',
+        btnNextToStep2Text: 'Next: Select Game & Character (Step 2) ➔',
+        btnBackToStep1Text: '◀ Change Method (Step 1)',
+        btnNextToStep3Text: 'Next: Scan to Switch (Step 3) ➔',
+        btnBackToStep2Text: '◀ Change Character (Step 2)',
+        btnViewGuideStep3Text: '📖 In-Game Scan Guide'
       }
     };
 
@@ -5478,7 +5689,9 @@
         'lblOledHowToTitle', 'badgeOledReady', 'lblNextStepsTitle', 'btnScrollStep3Text',
 
         // PDPA & Global Privacy Standards
-        'lblPdpaCardTitle', 'lblPdpaWipeHint', 'btnWipeLocalData'
+        'lblPdpaCardTitle', 'lblPdpaWipeHint', 'btnWipeLocalData',
+        'stepNavLbl1', 'stepNavSub1', 'stepNavLbl2', 'stepNavSub2', 'stepNavLbl3', 'stepNavSub3',
+        'btnNextToStep2Text', 'btnBackToStep1Text', 'btnNextToStep3Text', 'btnBackToStep2Text', 'btnViewGuideStep3Text'
       ];
       textKeys.forEach(k => setTxt(k, t[k]));
 
