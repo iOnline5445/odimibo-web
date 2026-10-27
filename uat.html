@@ -246,10 +246,54 @@
     body[data-theme="pokemon"] #btnSendBle {
       color: #000000 !important;
     }
+    /* Bottom Navigation Bar Items (Crystal Clear Active vs Inactive) */
+    .nav-btn {
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1.5px solid transparent !important;
+      border-radius: 0.85rem;
+    }
+    .nav-btn .nav-indicator {
+      width: 20px;
+      height: 3px;
+      border-radius: 9999px;
+      margin-top: 2px;
+      opacity: 0;
+      transform: scaleX(0.3);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-btn.active {
+      color: #ffffff !important;
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98)) !important;
+      border-color: #6366f1 !important;
+      box-shadow: 0 4px 16px -2px rgba(99, 102, 241, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+    }
+    .nav-btn.active .nav-indicator {
+      opacity: 1;
+      transform: scaleX(1);
+      background-color: #818cf8;
+      box-shadow: 0 0 8px rgba(129, 140, 248, 0.8);
+    }
+    .nav-btn:not(.active) {
+      color: #94a3b8 !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+    .nav-btn:not(.active):hover {
+      color: #e2e8f0 !important;
+      background-color: rgba(255, 255, 255, 0.04) !important;
+    }
+
     body[data-theme] .nav-btn.active {
-      color: var(--t-accent-text) !important;
-      background-color: var(--t-accent-soft) !important;
-      border: 1px solid var(--t-border);
+      color: #ffffff !important;
+      background: linear-gradient(180deg, var(--t-accent-soft), rgba(15, 23, 42, 0.95)) !important;
+      border-color: var(--t-accent) !important;
+      box-shadow: 0 4px 16px -2px var(--t-oled-glow), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    }
+    body[data-theme] .nav-btn.active .nav-indicator {
+      background-color: var(--t-accent) !important;
+      box-shadow: 0 0 8px var(--t-accent) !important;
     }
 
     /* ========================================================
@@ -2147,21 +2191,24 @@
        BOTTOM MOBILE NAVIGATION BAR
        ======================================================== -->
   <nav class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 px-3 py-1.5 max-w-md mx-auto shadow-2xl">
-    <div class="grid grid-cols-3 gap-1">
+    <div class="grid grid-cols-3 gap-1.5">
       
-      <button onclick="switchTab('tabDevice')" id="navBtnDevice" class="nav-btn active flex flex-col items-center justify-center py-1.5 rounded-xl text-indigo-400 bg-slate-800/80 transition">
-        <span class="text-lg">🎮</span>
-        <span id="navLblDevice" class="text-xs font-bold">หน้าจอ & สลับเกม</span>
+      <button onclick="switchTab('tabDevice')" id="navBtnDevice" class="nav-btn active flex flex-col items-center justify-center py-1.5 px-1 rounded-xl transition cursor-pointer">
+        <span class="text-base">🎮</span>
+        <span id="navLblDevice" class="text-xs font-bold leading-tight">หน้าจอ & สลับเกม</span>
+        <span class="nav-indicator"></span>
       </button>
 
-      <button onclick="switchTab('tabCatalog')" id="navBtnCatalog" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
-        <span class="text-lg">📚</span>
-        <span id="navLblCatalog" class="text-xs font-bold">คลัง 950 ตัว (2026)</span>
+      <button onclick="switchTab('tabCatalog')" id="navBtnCatalog" class="nav-btn flex flex-col items-center justify-center py-1.5 px-1 rounded-xl transition cursor-pointer">
+        <span class="text-base">📚</span>
+        <span id="navLblCatalog" class="text-xs font-bold leading-tight">คลัง 950 ตัว (2026)</span>
+        <span class="nav-indicator"></span>
       </button>
 
-      <button onclick="switchTab('tabManual')" id="navBtnManual" class="nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 transition">
-        <span class="text-lg">📖</span>
-        <span id="navLblManual" class="text-xs font-bold">วิธีใช้ทีละขั้น & Key</span>
+      <button onclick="switchTab('tabManual')" id="navBtnManual" class="nav-btn flex flex-col items-center justify-center py-1.5 px-1 rounded-xl transition cursor-pointer">
+        <span class="text-base">📖</span>
+        <span id="navLblManual" class="text-xs font-bold leading-tight">วิธีใช้ทีละขั้น & Key</span>
+        <span class="nav-indicator"></span>
       </button>
 
     </div>
@@ -4328,28 +4375,24 @@
     function switchTab(tabId) {
       triggerHaptic();
       document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
-      document.getElementById(tabId).classList.remove('hidden');
+      const targetPane = document.getElementById(tabId);
+      if (targetPane) targetPane.classList.remove('hidden');
 
-      document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.classList.remove('text-indigo-400', 'bg-slate-800/80');
-        btn.classList.add('text-slate-400');
+      const tabs = [
+        { id: 'tabDevice', btn: 'navBtnDevice' },
+        { id: 'tabCatalog', btn: 'navBtnCatalog' },
+        { id: 'tabManual', btn: 'navBtnManual' }
+      ];
+
+      tabs.forEach(t => {
+        const btn = document.getElementById(t.btn);
+        if (!btn) return;
+        const isActive = (t.id === tabId);
+        btn.classList.toggle('active', isActive);
       });
 
-      if (tabId === 'tabDevice') {
-        document.getElementById('navBtnDevice').classList.add('text-indigo-400', 'bg-slate-800/80');
-        document.getElementById('navBtnDevice').classList.remove('text-slate-400');
-      } else if (tabId === 'tabCatalog') {
-        document.getElementById('navBtnCatalog').classList.add('text-indigo-400', 'bg-slate-800/80');
-        document.getElementById('navBtnCatalog').classList.remove('text-slate-400');
-      } else if (tabId === 'tabManual') {
-        document.getElementById('navBtnManual').classList.add('text-indigo-400', 'bg-slate-800/80');
-        document.getElementById('navBtnManual').classList.remove('text-slate-400');
-      }
-
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function log(msg, type = 'info') {
+    }   function log(msg, type = 'info') {
       const box = document.getElementById('logBox');
       if (!box) return;
       const div = document.createElement('div');
