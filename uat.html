@@ -353,21 +353,6 @@
          ---------------------------------------------------- -->
     <div id="tabDevice" class="tab-pane space-y-3.5">
 
-      <!-- แถบเลือกธีมสีตามเกมด่วน (10 Game Themes + Auto Sync) -->
-      <div class="bg-slate-900/95 border border-slate-800 rounded-2xl px-3 py-2 space-y-1.5 shadow-lg">
-        <div class="flex items-center justify-between">
-          <span id="lblQuickThemeTitle" class="text-[11px] font-extrabold text-white flex items-center gap-1">
-            <span>🎨</span> ธีมสีแอป & ตัวเครื่อง (Game Themes):
-          </span>
-          <button id="btnAutoThemeToggle" onclick="toggleAutoThemeBySeries()" class="text-[10px] font-bold px-2 py-0.5 rounded-lg border border-emerald-500/50 bg-emerald-500/20 text-emerald-300 transition">
-            🔄 เปลี่ยนสีตามเกม: เปิด
-          </button>
-        </div>
-        <div id="quickThemeStrip" class="flex gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
-          <!-- Rendered by renderThemeButtons() -->
-        </div>
-      </div>
-
       <!-- ========================================================
            ⚡ ขั้นตอนที่ 1: เลือกวิธีใช้งานกับ Nintendo Switch (Select Usage Method First)
            ======================================================== -->
@@ -479,9 +464,16 @@
               <h2 id="activeGameTitle" class="text-xs font-bold text-white truncate">Marth - เจ้าชายผู้กล้า</h2>
             </div>
           </div>
-          <button id="btnBannerHowToScan" onclick="switchTab('tabManual')" class="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold px-2.5 py-1.5 rounded-xl shadow flex-shrink-0">
-            วิธีสแกน ❓
-          </button>
+          <div class="flex items-center gap-1.5 flex-shrink-0">
+            <!-- ย้ายปุ่มเก็บโปรดมาไว้ตรงนี้ ตามตำแหน่งที่เลือกตัวละคร -->
+            <button onclick="toggleFavoriteActive()" id="activeFavBtn" title="เพิ่ม/ลบ จากรายการโปรด"
+              class="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold px-2.5 py-1.5 rounded-xl shadow flex items-center gap-1 transition">
+              ⭐ เก็บโปรด
+            </button>
+            <button id="btnBannerHowToScan" onclick="switchTab('tabManual')" class="text-xs bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/40 font-bold px-2.5 py-1.5 rounded-xl shadow flex-shrink-0">
+              วิธีสแกน ❓
+            </button>
+          </div>
         </div>
       </div>
 
@@ -555,18 +547,73 @@
       </div>
 
       <!-- ========================================================
+           📟 แนะนำวิธีใช้จอ & ขั้นตอนต่อไปหลังจากเลือกตัวละคร (OLED & Next Steps Helper)
+           ======================================================== -->
+      <div id="afterSelectionHelperBox" class="bg-gradient-to-br from-indigo-950/60 via-slate-900 to-slate-950 border border-indigo-500/30 rounded-2xl p-3.5 space-y-2.5 shadow-lg">
+        
+        <!-- ส่วนที่ 1: จอนี้ใช้งานอย่างไร & ปุ่มควบคุม 3 ปุ่ม -->
+        <div class="flex items-start gap-2.5">
+          <span class="text-xl flex-shrink-0">📟</span>
+          <div class="space-y-1 min-w-0 flex-1">
+            <div class="flex items-center justify-between gap-1">
+              <h4 id="lblOledHowToTitle" class="text-xs font-extrabold text-indigo-300">
+                วิธีใช้งานหน้าจอจำลอง & ปุ่มควบคุม 3 ปุ่ม:
+              </h4>
+              <span id="badgeOledReady" class="text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded-full font-bold flex-shrink-0">
+                ตัวละครพร้อมสแกน ●
+              </span>
+            </div>
+            <p id="lblOledHowToDesc" class="text-[11px] text-slate-300 leading-relaxed">
+              • <b>ปุ่ม [● ตกลง]:</b> สลับระหว่างหน้าตัวละคร กับ เมนูเครื่อง (หากหน้าจอขึ้นเมนู ให้เลือก <b>[ AMIIBO ]</b> แล้วกดปุ่มนี้เพื่อกลับมาหน้าตัวละคร)<br>
+              • <b>ปุ่ม [◀ ซ้าย] / [ขวา ▶]:</b> สุ่ม UID ใหม่ทันที เพื่อให้สแกนรับไอเทมในเกมซ้ำได้ไม่จำกัดรอบในวันเดียว
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-800/80"></div>
+
+        <!-- ส่วนที่ 2: หลังจากเลือกตัวละครแล้ว ต้องทำอย่างไรต่อ -->
+        <div class="flex items-start gap-2.5">
+          <span class="text-xl flex-shrink-0">🎯</span>
+          <div class="space-y-1.5 flex-1 min-w-0">
+            <h4 id="lblNextStepsTitle" class="text-xs font-extrabold text-amber-300">
+              หลังจากเลือกตัวละครแล้ว ต้องทำอย่างไรต่อ?
+            </h4>
+            <div class="text-[11px] text-slate-300 space-y-1.5">
+              <p id="lblNextStepsDesc">เลื่อนลงไปที่ <b>ขั้นตอนที่ 3 ด้านล่างนี้</b> เพื่อรับไฟล์หรือส่งข้อมูลตามวิธีที่คุณเลือกไว้:</p>
+              <div class="bg-slate-950/80 rounded-xl p-2.5 border border-slate-800 space-y-1.5 text-[10.5px]">
+                <div class="flex items-start gap-1.5">
+                  <span class="text-indigo-400 font-extrabold flex-shrink-0">วิธีที่ 1:</span>
+                  <span id="lblNextStepM1">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> ในขั้นตอนที่ 3 ด้านล่าง แล้วนำไฟล์ไปเปิดในแอป <b>JoyCon Droid</b> หรือ <b>joycontrol</b> เพื่อส่งสัญญาณเข้า Switch</span>
+                </div>
+                <div class="flex items-start gap-1.5">
+                  <span class="text-emerald-400 font-extrabold flex-shrink-0">วิธีที่ 2:</span>
+                  <span id="lblNextStepM2">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> หรือกดส่งผ่าน <b>บลูทูธ (BLE)</b> เข้าเครื่อง OdimibO ได้ทันที</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ปุ่มลัดเลื่อนลงไปขั้นตอนที่ 3 ทันที -->
+            <button onclick="scrollToStep3Action()" id="btnScrollToStep3"
+              class="w-full btn-active bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-extrabold text-xs py-2 px-3 rounded-xl shadow-md flex items-center justify-center gap-1.5 transition">
+              <span id="btnScrollStep3Text">⬇️ เลื่อนลงไปขั้นตอนที่ 3 ทันที (รับไฟล์ .bin / ส่งบลูทูธ)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========================================================
            📥 ขั้นตอนที่ 3: รับไฟล์ / ส่งข้อมูลตามวิธีที่เลือก (Action & Transfer Execution)
            ======================================================== -->
-      <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
+      <div id="step3Container" class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow-lg transition-all duration-300">
         
         <div class="flex items-center justify-between text-xs font-bold text-slate-300 pb-0.5">
           <span class="flex items-center gap-1.5">
             <span class="text-emerald-400">📥</span>
             <span id="lblStep3ActionHeader">ขั้นตอนที่ 3: รับไฟล์ / ส่งข้อมูลตามวิธีที่เลือก</span>
           </span>
-          <button onclick="toggleFavoriteActive()" id="activeFavBtn" class="text-xs px-2 py-0.5 rounded-lg bg-slate-800 border border-slate-700 text-amber-300 font-bold">
-            ☆ เก็บโปรด
-          </button>
+          <span class="text-[10px] text-slate-400 font-mono">Action & Output</span>
         </div>
 
         <!-- ====================================================
@@ -1915,10 +1962,10 @@
     let retailKeyBytes = null; // 160-byte key_retail.bin (unfixed-info 80B + locked-secret 80B)
 
     const MAIN_MENUS = [
-      { id: 'emulator', title: 'Emulator', icon: '[ a ]' },
-      { id: 'db', title: 'Amiibo DB', icon: '[DB ]' },
-      { id: 'ble', title: 'BLE Transfer', icon: '((B))' },
-      { id: 'settings', title: 'Settings', icon: '[SET]' }
+      { id: 'emulator', title: '1. Amiibo Tag (สแกนตัวนี้)', titleEn: '1. Amiibo Tag (Active Scan)', icon: '[ AMIIBO ]' },
+      { id: 'db', title: '2. ฐานข้อมูล Amiibo', titleEn: '2. Amiibo Database', icon: '[ DB ]' },
+      { id: 'ble', title: '3. บลูทูธ OdimibO BLE', titleEn: '3. BLE Bluetooth Sync', icon: '(( BLE ))' },
+      { id: 'settings', title: '4. ตั้งค่า / สุ่ม UID', titleEn: '4. Settings / Random UID', icon: '[ SET ]' }
     ];
 
     let currentScreen = 'TAG_EMULATE';
@@ -1962,6 +2009,16 @@
       const m = document.getElementById('scanHelpModal');
       m.classList.add('hidden');
       m.classList.remove('flex');
+    }
+
+    function scrollToStep3Action() {
+      triggerHaptic();
+      const el = document.getElementById('step3Container');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.classList.add('ring-2', 'ring-emerald-400');
+        setTimeout(() => el.classList.remove('ring-2', 'ring-emerald-400'), 1500);
+      }
     }
 
     // --------------------------------------------------------
@@ -2641,39 +2698,48 @@
         const item = MAIN_MENUS[menuIdx];
         const prev = MAIN_MENUS[(menuIdx - 1 + MAIN_MENUS.length) % MAIN_MENUS.length];
         const next = MAIN_MENUS[(menuIdx + 1) % MAIN_MENUS.length];
+        const itemTitle = isEn ? (item.titleEn || item.title) : item.title;
 
         body.innerHTML = `
           <div class="flex items-center justify-between w-full px-2">
-            <div class="text-white/30 text-lg">${prev.icon}</div>
-            <div class="border-2 border-white px-3.5 py-1 text-2xl font-bold tracking-wider shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+            <div class="text-white/30 text-xs font-mono">${prev.icon}</div>
+            <div class="border-2 border-emerald-400 bg-emerald-950/50 text-emerald-300 px-3 py-1 text-xl font-black tracking-wider shadow-[0_0_12px_rgba(52,211,153,0.5)]">
               ${item.icon}
             </div>
-            <div class="text-white/30 text-lg">${next.icon}</div>
+            <div class="text-white/30 text-xs font-mono">${next.icon}</div>
+          </div>
+          <div class="text-[11px] text-amber-300 font-bold text-center mt-1">
+            ${isEn ? '👉 Press [● OK] to activate' : '👉 กดปุ่ม [● ตกลง] เพื่อเปิดใช้งาน'}
           </div>
         `;
-        footerText.textContent = item.title;
+        footerText.textContent = itemTitle;
       }
       else if (currentScreen === 'TAG_EMULATE') {
         headerLeft.textContent = activeTag.isEncrypted ? '[SIGNED]' : '[NTAG215]';
         const rawName = (activeTag?.name || 'OdimibO').replace('.bin', '');
         const nameClean = isEn ? rawName.split(' - ')[0] : rawName;
         const bleStatusMsg = isEn
-          ? (isBleConnected ? 'BLE Ready — Send to OdimibO' : 'Send via BLE or Download .bin')
-          : (isBleConnected ? 'เชื่อมต่อ BLE พร้อมส่งเข้า OdimibO' : 'กดส่ง BLE หรือโหลด .bin เขียนเหรียญ');
+          ? (isBleConnected ? 'BLE Connected — Ready to Scan' : 'Ready — Download .bin below')
+          : (isBleConnected ? 'เชื่อมต่อ BLE แล้ว — พร้อมสแกน' : 'พร้อมใช้งาน — เลื่อนลงไปขั้นตอนที่ 3');
 
         body.innerHTML = `
           <div class="w-full text-left px-1 space-y-0.5 leading-tight">
-            <div class="text-[11px] text-white/60 truncate">ID: ${activeTag.head}-${activeTag.tail}</div>
+            <div class="flex justify-between items-center text-[11px] text-white/60">
+              <span class="truncate">ID: ${activeTag.head}-${activeTag.tail}</span>
+              <span class="text-emerald-400 font-bold">READY ●</span>
+            </div>
             <div class="text-lg font-bold truncate bg-white text-black px-1 tracking-tight">${nameClean}</div>
             <div class="text-xs tracking-wider text-emerald-300 pt-0.5">UID: ${activeTag?.uid}</div>
-            <div class="text-[11px] text-amber-300 flex items-center gap-1 nfc-signal pt-0.5">
+            <div class="text-[11px] text-amber-300 flex items-center gap-1 nfc-signal pt-0.5 truncate">
               <span>●</span> <span>${bleStatusMsg}</span>
             </div>
           </div>
         `;
-        footerText.textContent = isEn ? '◀ Rand UID | OK=Menu' : '◀ สุ่มUID | OK=เมนู';
-        document.getElementById('activeUidLabel').textContent = `UID: ${activeTag?.uid}`;
-        document.getElementById('activeIdHexLabel').textContent = `ID: ${activeTag.head}-${activeTag.tail}`;
+        footerText.textContent = isEn ? '◀ Rand UID | OK=Menu' : '◀ สุ่ม UID | OK=เมนูเครื่อง';
+        const uidEl = document.getElementById('activeUidLabel');
+        if (uidEl) uidEl.textContent = `UID: ${activeTag?.uid}`;
+        const idEl = document.getElementById('activeIdHexLabel');
+        if (idEl) idEl.textContent = `ID: ${activeTag.head}-${activeTag.tail}`;
       }
       else if (currentScreen === 'BLE_MODE') {
         headerLeft.textContent = '[BLE SYNC]';
@@ -2701,6 +2767,9 @@
             currentScreen = 'TAG_EMULATE';
           } else if (sel === 'ble') {
             currentScreen = 'BLE_MODE';
+          } else if (sel === 'settings') {
+            randomizeUid();
+            currentScreen = 'TAG_EMULATE';
           }
         }
       } else if (currentScreen === 'TAG_EMULATE') {
@@ -2805,11 +2874,11 @@
       const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       const key = `${activeTag.head}-${activeTag.tail}`;
       if (favoriteKeys.has(key)) {
-        btn.textContent = isEn ? '⭐ Saved in Favorites' : '⭐ อยู่ในรายการโปรดแล้ว';
-        btn.className = 'text-xs px-2.5 py-0.5 rounded-lg bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold';
+        btn.textContent = isEn ? '⭐ Saved' : '⭐ บันทึกแล้ว';
+        btn.className = 'text-xs bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/60 font-bold px-2.5 py-1.5 rounded-xl shadow flex items-center gap-1 transition';
       } else {
-        btn.textContent = isEn ? '☆ Add to Favorites' : '☆ เก็บเข้ารายการโปรด';
-        btn.className = 'text-xs px-2.5 py-0.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 font-bold';
+        btn.textContent = isEn ? '☆ Add Fav' : '☆ เก็บโปรด';
+        btn.className = 'text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 font-bold px-2.5 py-1.5 rounded-xl shadow flex items-center gap-1 transition';
       }
     }
 
@@ -4294,6 +4363,16 @@
         lblM2OptionBDesc: 'สำหรับผู้ที่มีเครื่องจำลอง OdimibO, Allmiibo หรือ Pixl.js เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องเพื่อนำไปแตะกับ Switch ได้ทันที',
         btnM2BatchSend: 'ส่งหมวดนี้เข้าเครื่อง',
 
+        // OLED Simulation & Helper box
+        lblOledHowToTitle: 'วิธีใช้งานหน้าจอจำลอง & ปุ่มควบคุม 3 ปุ่ม:',
+        badgeOledReady: 'ตัวละครพร้อมสแกน ●',
+        lblOledHowToDesc: '• <b>ปุ่ม [● ตกลง]:</b> สลับระหว่างหน้าตัวละคร กับ เมนูเครื่อง (หากหน้าจอขึ้นเมนู ให้เลือก <b>[ AMIIBO ]</b> แล้วกดปุ่มนี้เพื่อกลับมาหน้าตัวละคร)<br>• <b>ปุ่ม [◀ ซ้าย] / [ขวา ▶]:</b> สุ่ม UID ใหม่ทันที เพื่อให้สแกนรับไอเทมในเกมซ้ำได้ไม่จำกัดรอบในวันเดียว',
+        lblNextStepsTitle: 'หลังจากเลือกตัวละครแล้ว ต้องทำอย่างไรต่อ?',
+        lblNextStepsDesc: 'เลื่อนลงไปที่ <b>ขั้นตอนที่ 3 ด้านล่างนี้</b> เพื่อรับไฟล์หรือส่งข้อมูลตามวิธีที่คุณเลือกไว้:',
+        lblNextStepM1: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> ในขั้นตอนที่ 3 ด้านล่าง แล้วนำไฟล์ไปเปิดในแอป <b>JoyCon Droid</b> หรือ <b>joycontrol</b> เพื่อส่งสัญญาณเข้า Switch',
+        lblNextStepM2: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> หรือกดส่งผ่าน <b>บลูทูธ (BLE)</b> เข้าเครื่อง OdimibO ได้ทันที',
+        btnScrollStep3Text: '⬇️ เลื่อนลงไปขั้นตอนที่ 3 ทันที (รับไฟล์ .bin / ส่งบลูทูธ)',
+
         // Self test & Console
         btnSelfTestText: 'เช็ค 540B & ความพร้อม',
         logBoxInitLine: '[System] โหลดคลัง 950 OdimibO (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อย',
@@ -4456,6 +4535,16 @@
         lblM2OptionBTitle: '2B. Send to Portable BLE Hardware (OdimibO)',
         lblM2OptionBDesc: 'For users with an OdimibO, Allmiibo, or Pixl.js hardware device. Connect via Bluetooth and transmit profiles directly without writing tags.',
         btnM2BatchSend: 'Send Category to BLE',
+
+        // OLED Simulation & Helper box
+        lblOledHowToTitle: 'How to Use the OLED Screen & 3 Buttons:',
+        badgeOledReady: 'Ready to Scan ●',
+        lblOledHowToDesc: '• <b>[● OK Button]:</b> Toggles between Active Tag and Device Menu (if screen shows menu, select <b>[ AMIIBO ]</b> and press OK to activate).<br>• <b>[◀ Left] / [Right ▶] Buttons:</b> Randomizes UID instantly so you can scan repeatedly in the same game today without waiting 24 hours.',
+        lblNextStepsTitle: 'What to Do Next After Selecting an Amiibo?',
+        lblNextStepsDesc: 'Scroll down to <b>Step 3 below</b> to download files or transmit data for your chosen method:',
+        lblNextStepM1: 'Click <b>[Download .bin]</b> in Step 3 below, then open the file in <b>JoyCon Droid</b> or <b>joycontrol</b> to transmit directly to Switch.',
+        lblNextStepM2: 'Click <b>[Download .bin]</b> to write onto an <b>NTAG215 coin/card</b>, or tap <b>[Send via BLE]</b> to beam to your OdimibO device.',
+        btnScrollStep3Text: '⬇️ Jump to Step 3 Now (Get .bin / BLE Beam)',
 
         // Self test & Console
         btnSelfTestText: 'Self-Test 540B & Readiness',
@@ -5231,6 +5320,9 @@
         'lblShopeeAffiliateTitle', 'btnAffiliateCoinText', 'btnAffiliateCardText',
         'lblShopeeModalTitle', 'btnAffiliateModalCoinText', 'btnAffiliateModalCardText',
 
+        // OLED Simulation & Helper box
+        'lblOledHowToTitle', 'badgeOledReady', 'lblNextStepsTitle', 'btnScrollStep3Text',
+
         // PDPA & Global Privacy Standards
         'lblPdpaCardTitle', 'lblPdpaWipeHint', 'btnWipeLocalData'
       ];
@@ -5242,6 +5334,12 @@
       setHtml('lblLicenseHint', t.lblLicenseHint);
       setHtml('vipDonateChannelDesc', t.vipDonateChannelDesc);
       setHtml('lblPdpaCardDesc', t.lblPdpaCardDesc);
+
+      // OLED Helper Box HTML descriptions
+      setHtml('lblOledHowToDesc', t.lblOledHowToDesc);
+      setHtml('lblNextStepsDesc', t.lblNextStepsDesc);
+      setHtml('lblNextStepM1', t.lblNextStepM1);
+      setHtml('lblNextStepM2', t.lblNextStepM2);
 
       // Method 1 & 2 HTML content descriptions
       setHtml('lblM1OptionADesc', t.lblM1OptionADesc);
