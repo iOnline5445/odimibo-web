@@ -782,7 +782,7 @@
               </button>
             </div>
 
-            <!-- กล่องลิ้งก์ Shopee Affiliate (2 ลิ้งก์: เหรียญ NTAG215 กลม & การ์ดขาว PVC) -->
+            <!-- กล่องลิ้งก์ Shopee Affiliate (3 ลิ้งก์: เหรียญ Coin, การ์ด Card mini, NFC amiibo) -->
             <div class="bg-gradient-to-r from-orange-950/40 via-slate-900 to-amber-950/40 border border-orange-500/40 rounded-xl p-2.5 space-y-1.5">
               <div class="flex items-center justify-between text-[11px]">
                 <span class="font-extrabold text-orange-400 flex items-center gap-1">
@@ -790,14 +790,18 @@
                 </span>
                 <span class="text-[9px] bg-orange-500/20 text-orange-300 px-1.5 py-0.2 rounded font-bold">SHOPEE</span>
               </div>
-              <div class="grid grid-cols-2 gap-2">
-                <a id="lnkAffiliateCoin" href="https://shope.ee/ntag215-coin" target="_blank" rel="noopener noreferrer"
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+                <a id="lnkAffiliateCoin" href="https://s.shopee.co.th/4B12kmtmFS" target="_blank" rel="noopener noreferrer"
                   class="btn-active bg-orange-500/20 hover:bg-orange-500/30 text-orange-300 border border-orange-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
-                  <span>🪙</span> <span id="btnAffiliateCoinText">สั่งซื้อเหรียญกลม 25mm</span>
+                  <span>🪙</span> <span id="btnAffiliateCoinText">สั่งซื้อแบบเหรียญ Coin</span>
                 </a>
-                <a id="lnkAffiliateCard" href="https://shope.ee/ntag215-card" target="_blank" rel="noopener noreferrer"
+                <a id="lnkAffiliateCard" href="https://s.shopee.co.th/8VA1udgnOE" target="_blank" rel="noopener noreferrer"
                   class="btn-active bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
-                  <span>💳</span> <span id="btnAffiliateCardText">สั่งซื้อการ์ดขาว PVC</span>
+                  <span>💳</span> <span id="btnAffiliateCardText">สั่งซื้อแบบ Card mini</span>
+                </a>
+                <a id="lnkAffiliateNfc" href="https://s.shopee.co.th/6VOxX86Igv" target="_blank" rel="noopener noreferrer"
+                  class="btn-active bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
+                  <span>⚡</span> <span id="btnAffiliateNfcText">สั่งซื้อ NFC amiibo</span>
                 </a>
               </div>
             </div>
@@ -1957,14 +1961,18 @@
             </span>
             <span class="text-[9px] bg-orange-500/20 text-orange-300 px-1.5 py-0.2 rounded font-bold">AFFILIATE</span>
           </div>
-          <div class="grid grid-cols-2 gap-2">
-            <a id="lnkAffiliateModalCoin" href="https://shope.ee/ntag215-coin" target="_blank" rel="noopener noreferrer"
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+            <a id="lnkAffiliateModalCoin" href="https://s.shopee.co.th/4B12kmtmFS" target="_blank" rel="noopener noreferrer"
               class="btn-active bg-orange-500/20 hover:bg-orange-500/30 text-orange-300 border border-orange-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
-              <span>🪙</span> <span id="btnAffiliateModalCoinText">ซื้อเหรียญกลม 25mm</span>
+              <span>🪙</span> <span id="btnAffiliateModalCoinText">ซื้อแบบเหรียญ Coin</span>
             </a>
-            <a id="lnkAffiliateModalCard" href="https://shope.ee/ntag215-card" target="_blank" rel="noopener noreferrer"
+            <a id="lnkAffiliateModalCard" href="https://s.shopee.co.th/8VA1udgnOE" target="_blank" rel="noopener noreferrer"
               class="btn-active bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
-              <span>💳</span> <span id="btnAffiliateModalCardText">ซื้อการ์ดขาว PVC</span>
+              <span>💳</span> <span id="btnAffiliateModalCardText">ซื้อแบบ Card mini</span>
+            </a>
+            <a id="lnkAffiliateModalNfc" href="https://s.shopee.co.th/6VOxX86Igv" target="_blank" rel="noopener noreferrer"
+              class="btn-active bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/50 text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 text-center shadow">
+              <span>⚡</span> <span id="btnAffiliateModalNfcText">ซื้อ NFC amiibo</span>
             </a>
           </div>
         </div>
@@ -2395,12 +2403,12 @@
 
       // Test 10: Client-Side Privacy & PDPA / GDPR Standard
       const hasWipeBtn = !!document.getElementById('btnWipeLocalData');
-      const hasAffiliateLinks = !!document.getElementById('lnkAffiliateCoin') && !!document.getElementById('lnkAffiliateCard');
+      const hasAffiliateLinks = !!document.getElementById('lnkAffiliateCoin') && !!document.getElementById('lnkAffiliateCard') && !!document.getElementById('lnkAffiliateNfc');
       testResults.push({
         id: 'T10',
-        title: isEn ? 'Client-Side Privacy Architecture (PDPA / GDPR & Shopee Links)' : 'ระบบความปลอดภัยส่วนบุคคล (PDPA/GDPR & ลิ้งก์ Shopee)',
+        title: isEn ? 'Client-Side Privacy Architecture (PDPA / GDPR & 3 Shopee Links)' : 'ระบบความปลอดภัยส่วนบุคคล (PDPA/GDPR & ลิ้งก์ Shopee 3 แบบ)',
         passed: hasWipeBtn && hasAffiliateLinks,
-        detail: 'Local storage isolation verified | 2 Shopee links verified'
+        detail: 'Local storage isolation verified | 3 Shopee affiliate links active'
       });
 
       const totalElapsed = (performance.now() - startTime).toFixed(1);
@@ -4508,11 +4516,13 @@
 
         // Shopee Affiliate Links
         lblShopeeAffiliateTitle: 'พิกัดสั่งซื้อเหรียญ / การ์ด NTAG215 (Shopee):',
-        btnAffiliateCoinText: 'สั่งซื้อเหรียญกลม 25mm',
-        btnAffiliateCardText: 'สั่งซื้อการ์ดขาว PVC',
+        btnAffiliateCoinText: 'สั่งซื้อแบบเหรียญ Coin',
+        btnAffiliateCardText: 'สั่งซื้อแบบ Card mini',
+        btnAffiliateNfcText: 'สั่งซื้อ NFC amiibo',
         lblShopeeModalTitle: 'สั่งซื้อเหรียญ / การ์ด NTAG215 (Shopee):',
-        btnAffiliateModalCoinText: 'ซื้อเหรียญกลม 25mm',
-        btnAffiliateModalCardText: 'ซื้อการ์ดขาว PVC',
+        btnAffiliateModalCoinText: 'ซื้อแบบเหรียญ Coin',
+        btnAffiliateModalCardText: 'ซื้อแบบ Card mini',
+        btnAffiliateModalNfcText: 'ซื้อ NFC amiibo',
 
         // PDPA & Global Privacy Standards
         lblPdpaCardTitle: 'ความปลอดภัยข้อมูลส่วนบุคคล (PDPA & GDPR)',
@@ -4704,11 +4714,13 @@
 
         // Shopee Affiliate Links
         lblShopeeAffiliateTitle: 'Order NTAG215 Coin & PVC Card (Shopee):',
-        btnAffiliateCoinText: 'Buy 25mm Round Coins',
-        btnAffiliateCardText: 'Buy White PVC Cards',
+        btnAffiliateCoinText: 'Order NTAG Coin (Shopee)',
+        btnAffiliateCardText: 'Order Mini Card (Shopee)',
+        btnAffiliateNfcText: 'Order NFC Amiibo (Shopee)',
         lblShopeeModalTitle: 'Order NTAG215 Coin & PVC Card (Shopee):',
-        btnAffiliateModalCoinText: 'Buy 25mm Round Coins',
-        btnAffiliateModalCardText: 'Buy White PVC Cards',
+        btnAffiliateModalCoinText: 'Buy NTAG Coin',
+        btnAffiliateModalCardText: 'Buy Mini Card',
+        btnAffiliateModalNfcText: 'Buy NFC Amiibo',
 
         // PDPA & Global Privacy Standards
         lblPdpaCardTitle: 'Client Privacy & Data Protection (PDPA / GDPR)',
@@ -5459,8 +5471,8 @@
         'lblDevCreditTitle', 'lblDevCreditSub', 'uatBannerTitle',
 
         // Shopee Affiliate Links
-        'lblShopeeAffiliateTitle', 'btnAffiliateCoinText', 'btnAffiliateCardText',
-        'lblShopeeModalTitle', 'btnAffiliateModalCoinText', 'btnAffiliateModalCardText',
+        'lblShopeeAffiliateTitle', 'btnAffiliateCoinText', 'btnAffiliateCardText', 'btnAffiliateNfcText',
+        'lblShopeeModalTitle', 'btnAffiliateModalCoinText', 'btnAffiliateModalCardText', 'btnAffiliateModalNfcText',
 
         // OLED Simulation & Helper box
         'lblOledHowToTitle', 'badgeOledReady', 'lblNextStepsTitle', 'btnScrollStep3Text',
