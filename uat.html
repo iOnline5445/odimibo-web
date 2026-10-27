@@ -365,21 +365,25 @@
           <span id="lblStep1Badge" class="text-[10px] bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 px-2 py-0.5 rounded-full font-bold">เลือกวิธีใช้งานก่อน</span>
         </div>
 
-        <!-- 2 ปุ่มสลับหมวดหลัก (Toggle 2 Main Tabs) -->
-        <div class="grid grid-cols-2 gap-1.5 p-1 bg-slate-950 rounded-xl border border-slate-800">
-          <button id="tabBtnMethod1" onclick="switchMethodTab(1)" class="btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-indigo-600 text-white shadow">
-            <span class="flex items-center gap-1">🚫 <span id="tabBtnMethod1Title">แบบที่ 1: ไม่ใช้ตัวกลาง</span></span>
-            <span id="tabBtnMethod1Sub" class="text-[9px] font-normal opacity-90">มือถือ / โน้ตบุ๊กยิงเข้า Switch</span>
+        <!-- 3 ปุ่มสลับแนวทางหลัก (Toggle 3 Main Methods) -->
+        <div class="grid grid-cols-3 gap-1.5 p-1 bg-slate-950 rounded-xl border border-slate-800">
+          <button id="tabBtnMethod1" onclick="switchMethodTab(1)" class="btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-cyan-600 text-white shadow">
+            <span class="flex items-center gap-1"><span>📶</span> <span id="tabBtnMethod1Title">แนวทาง 1: OdimibO</span></span>
+            <span id="tabBtnMethod1Sub" class="text-[9px] font-normal opacity-90 truncate">จบในเว็บ 100%</span>
           </button>
-          <button id="tabBtnMethod2" onclick="switchMethodTab(2)" class="btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-transparent text-slate-400 hover:text-white">
-            <span class="flex items-center gap-1">🪙 <span id="tabBtnMethod2Title">แบบที่ 2: ใช้ตัวกลาง NFC</span></span>
-            <span id="tabBtnMethod2Sub" class="text-[9px] font-normal opacity-90">เหรียญ NTAG215 / เครื่อง BLE</span>
+          <button id="tabBtnMethod2" onclick="switchMethodTab(2)" class="btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-transparent text-slate-400 hover:text-white">
+            <span class="flex items-center gap-1"><span>🪙</span> <span id="tabBtnMethod2Title">แนวทาง 2: เหรียญ NFC</span></span>
+            <span id="tabBtnMethod2Sub" class="text-[9px] font-normal opacity-90 truncate">ใช้ยาวตลอดชีพ</span>
+          </button>
+          <button id="tabBtnMethod3" onclick="switchMethodTab(3)" class="btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-transparent text-slate-400 hover:text-white">
+            <span class="flex items-center gap-1"><span>📱</span> <span id="tabBtnMethod3Title">แนวทาง 3: จอยมือถือ</span></span>
+            <span id="tabBtnMethod3Sub" class="text-[9px] font-normal opacity-90 truncate">JoyCon Droid (ฟรี)</span>
           </button>
         </div>
 
         <!-- แถบสรุปวิธีที่เลือกแบบกระชับ (Quick Method Status Summary) -->
         <div id="methodSummaryBar" class="text-[11px] px-2.5 py-1.5 rounded-xl bg-slate-950/80 border border-slate-800/80 flex items-center justify-between text-slate-300">
-          <span id="methodSummaryText" class="truncate">👉 กำลังเลือก: แบบที่ 1 (ไม่ใช้อุปกรณ์เสริม - มือถือ Android / โน้ตบุ๊กยิงตรง)</span>
+          <span id="methodSummaryText" class="truncate">👉 กำลังเลือก: แนวทางที่ 1 (เครื่องบลูทูธ OdimibO - จบในเว็บ 100% ไม่ต้องโหลดไฟล์)</span>
           <button onclick="switchTab('tabManual')" class="text-[10px] text-amber-300 hover:text-white font-bold flex items-center gap-0.5 flex-shrink-0">
             📖 <span id="methodSummaryGuideLink">ดูคู่มือวิธีนี้</span>
           </button>
@@ -583,12 +587,16 @@
               <p id="lblNextStepsDesc">เลื่อนลงไปที่ <b>ขั้นตอนที่ 3 ด้านล่างนี้</b> เพื่อรับไฟล์หรือส่งข้อมูลตามวิธีที่คุณเลือกไว้:</p>
               <div class="bg-slate-950/80 rounded-xl p-2.5 border border-slate-800 space-y-1.5 text-[10.5px]">
                 <div class="flex items-start gap-1.5">
-                  <span class="text-indigo-400 font-extrabold flex-shrink-0">วิธีที่ 1:</span>
-                  <span id="lblNextStepM1">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> ในขั้นตอนที่ 3 ด้านล่าง แล้วนำไฟล์ไปเปิดในแอป <b>JoyCon Droid</b> หรือ <b>joycontrol</b> เพื่อส่งสัญญาณเข้า Switch</span>
+                  <span class="text-cyan-400 font-extrabold flex-shrink-0">แนวทาง 1:</span>
+                  <span id="lblNextStepM1">กดปุ่ม <b>[ส่งเข้า OdimibO (BLE)]</b> บนเว็บได้ทันที ข้อมูลส่งเข้าเครื่องใน 1 วินาที จบในเว็บไม่ต้องโหลดไฟล์</span>
                 </div>
                 <div class="flex items-start gap-1.5">
-                  <span class="text-emerald-400 font-extrabold flex-shrink-0">วิธีที่ 2:</span>
-                  <span id="lblNextStepM2">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> หรือกดส่งผ่าน <b>บลูทูธ (BLE)</b> เข้าเครื่อง OdimibO ได้ทันที</span>
+                  <span class="text-emerald-400 font-extrabold flex-shrink-0">แนวทาง 2:</span>
+                  <span id="lblNextStepM2">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> ผ่านแอป TagMo / AmiiBoss ใช้ได้ตลอดชีพ</span>
+                </div>
+                <div class="flex items-start gap-1.5">
+                  <span class="text-indigo-400 font-extrabold flex-shrink-0">แนวทาง 3:</span>
+                  <span id="lblNextStepM3">กดปุ่ม <b>[ดาวน์โหลด .bin]</b> แล้วเปิดในแอป <b>JoyCon Droid</b> บนมือถือเพื่อจำลองเป็นจอยส่งตรงเข้า Switch</span>
                 </div>
               </div>
             </div>
@@ -617,68 +625,40 @@
         </div>
 
         <!-- ====================================================
-             เนื้อหาแบบที่ 1: ไม่ใช้อุปกรณ์ NFC เสริม (ยิงเข้า Switch โดยตรง)
+             แนวทางที่ 1: เครื่องจำลองบลูทูธ OdimibO (Web Bluetooth BLE) — จบในเว็บ 100%
              ==================================================== -->
         <div id="method1Panel" class="space-y-2.5">
-          
-          <!-- แถบตรวจจับอุปกรณ์อัตโนมัติ -->
-          <div id="m1DeviceDetectBox" class="bg-indigo-950/40 border border-indigo-500/40 rounded-xl p-2.5 flex items-center justify-between text-[11px]">
-            <div class="flex items-center gap-2">
-              <span id="m1DeviceIcon" class="text-base">📱</span>
-              <div>
-                <span id="m1DeviceTitle" class="font-bold text-white">กำลังตรวจเช็คมือถือของคุณ...</span>
-                <p id="m1DeviceDesc" class="text-[10px] text-slate-300">รองรับ Android 9+ (เช่น Samsung หรือเครื่องที่ Root)</p>
-              </div>
-            </div>
-            <span id="m1DeviceBadge" class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">พร้อมใช้</span>
-          </div>
-
-          <!-- ตัวเลือก 1A: มือถือ Android ทันที (JoyCon Droid) -->
-          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
+          <div class="bg-gradient-to-r from-cyan-950/60 via-slate-900 to-indigo-950/60 border border-cyan-500/40 rounded-2xl p-3.5 space-y-2.5 shadow-lg">
             <div class="flex items-center justify-between">
-              <div class="font-bold text-xs text-indigo-300 flex items-center gap-1.5">
-                <span>📱</span> <span id="lblM1OptionATitle">1A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)</span>
-              </div>
-              <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.2 rounded font-mono font-bold">540B PRE-ENCRYPTED</span>
+              <span class="text-xs font-extrabold text-cyan-300 flex items-center gap-1.5">
+                <span>📶</span> <span id="lblM1BleTitle">แนวทาง 1: เครื่องจำลอง OdimibO (Bluetooth BLE)</span>
+              </span>
+              <span id="lblM1BleBadge" class="text-[9px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 px-2 py-0.5 rounded-full font-bold">
+                จบในเว็บ 100%
+              </span>
             </div>
-            <p id="lblM1OptionADesc" class="text-[11px] text-slate-300 leading-snug">
-              กดโหลดไฟล์ <code>.bin</code> เข้ารหัสแท้ 540B ด้านล่างนี้ ➔ เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ เชื่อมต่อกับ Switch (หน้า Change Grip/Order) ➔ กดสแกนแล้วเลือกไฟล์นี้ได้ทันที!
+            <p id="lblM1BleDesc" class="text-[11px] text-slate-300 leading-relaxed">
+              ✨ <b>วิธีที่สะดวกที่สุด:</b> ไม่ต้องดาวน์โหลดไฟล์ <code>.bin</code> และไม่ต้องติดตั้งแอปเสริมใดๆ! เพียงเปิดบลูทูธบนเครื่อง OdimibO แล้วกดส่งจากหน้าเว็บ ข้อมูลจะวิ่งเข้าเครื่องทันทีใน 1 วินาที นำไปแตะที่อนาล็อกขวาของ Switch ได้เลย
             </p>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="downloadForJoyConDroid()" class="btn-active bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-xs py-2 px-2.5 rounded-xl shadow flex items-center justify-center gap-1.5">
-                <span>📲</span> <span id="btnM1DownloadJoyCon">โหลด .bin (JoyCon Droid)</span>
+            <div class="grid grid-cols-2 gap-2 pt-1">
+              <button id="btnSendBle" onclick="sendCurrentToBLE()" class="btn-active bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-extrabold py-2 px-2.5 rounded-xl shadow flex items-center justify-center gap-1.5">
+                <span>📡</span> <span id="lblSendBle">ส่งเข้า OdimibO (BLE)</span>
               </button>
-              <button onclick="copyJoyConDroidGuide()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📖</span> <span id="btnM1GuideJoyCon">วิธีใช้ JoyCon Droid</span>
+              <button onclick="switchTab('tabCatalog')" class="btn-active bg-slate-800 hover:bg-slate-700 text-cyan-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-cyan-500/40 flex items-center justify-center gap-1">
+                <span>📦</span> <span id="btnM2BatchSend">ส่งหมวดนี้เข้าเครื่อง</span>
+              </button>
+            </div>
+            <div class="flex items-center justify-between text-[10px] bg-slate-950/80 rounded-xl px-2.5 py-1.5 border border-slate-800 text-slate-400">
+              <span id="lblBleStatusSub">สถานะบลูทูธ: เชื่อมต่อผ่าน Web Bluetooth API โดยตรง</span>
+              <button onclick="toggleBLE()" class="text-cyan-300 hover:text-white font-bold underline">
+                กดสลับเชื่อมต่อ BLE
               </button>
             </div>
           </div>
-
-          <!-- ตัวเลือก 1B: บนเว็บผ่านโน้ตบุ๊ก / PC (joycontrol Bluetooth HID) -->
-          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
-            <div class="flex items-center justify-between">
-              <div class="font-bold text-xs text-cyan-300 flex items-center gap-1.5">
-                <span>💻</span> <span id="lblM1OptionBTitle">1B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)</span>
-              </div>
-              <span class="text-[9px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.2 rounded font-mono font-bold">PYTHON HID</span>
-            </div>
-            <p id="lblM1OptionBDesc" class="text-[11px] text-slate-300 leading-snug">
-              ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ
-            </p>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="downloadJoycontrolPayload()" class="btn-active bg-cyan-600/30 hover:bg-cyan-600/40 border border-cyan-500/50 text-cyan-200 font-bold text-xs py-2 px-2.5 rounded-xl flex items-center justify-center gap-1.5">
-                <span>💻</span> <span id="btnM1DownloadJoycontrol">โหลด .bin + คำสั่งคอม</span>
-              </button>
-              <button onclick="copyJoycontrolCliCommand()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📋</span> <span id="btnM1CopyJoycontrol">คัดลอกคำสั่งรัน</span>
-              </button>
-            </div>
-          </div>
-
         </div>
 
         <!-- ====================================================
-             เนื้อหาแบบที่ 2: ใช้ผ่านอุปกรณ์แตะ NFC (เหรียญ NTAG215 / เครื่อง BLE)
+             แนวทางที่ 2: ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า — ทำครั้งเดียว ใช้ยาวตลอดชีพ
              ==================================================== -->
         <div id="method2Panel" class="hidden space-y-2.5">
           
@@ -686,7 +666,7 @@
           <div class="bg-slate-950 border border-emerald-500/30 rounded-2xl p-3 space-y-2.5">
             <div class="flex items-center justify-between">
               <span class="text-xs font-extrabold text-emerald-300 flex items-center gap-1.5">
-                <span>🪙</span> <span id="lblM2OptionATitle">2A. ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)</span>
+                <span>🪙</span> <span id="lblM2OptionATitle">แนวทาง 2: ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)</span>
               </span>
               <span id="lblM2OptionABadge" class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">ใช้ได้ทุกมือถือ 100%</span>
             </div>
@@ -800,28 +780,87 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- ตัวเลือก 2B: อุปกรณ์พกพาจำลอง Amiibo ผ่าน BLE (OdimibO / Allmiibo / Pixl.js) -->
-          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
-            <div class="flex items-center justify-between">
-              <div class="font-bold text-xs text-amber-300 flex items-center gap-1.5">
-                <span>📟</span> <span id="lblM2OptionBTitle">2B. ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)</span>
+        <!-- ====================================================
+             แนวทางที่ 3: ใช้มือถือ Android (JoyCon Droid) หรือโน้ตบุ๊ก (joycontrol) — ฟรี 100%
+             ==================================================== -->
+        <div id="method3Panel" class="hidden space-y-2.5">
+          <!-- แถบตรวจจับอุปกรณ์อัตโนมัติ -->
+          <div id="m1DeviceDetectBox" class="bg-indigo-950/40 border border-indigo-500/40 rounded-xl p-2.5 flex items-center justify-between text-[11px]">
+            <div class="flex items-center gap-2">
+              <span id="m1DeviceIcon" class="text-base">📱</span>
+              <div>
+                <span id="m1DeviceTitle" class="font-bold text-white">กำลังตรวจเช็คมือถือของคุณ...</span>
+                <p id="m1DeviceDesc" class="text-[10px] text-slate-300">รองรับ Android 9+ (เช่น Samsung หรือเครื่องที่ Root)</p>
               </div>
-              <span class="text-[9px] bg-amber-500/20 text-amber-300 px-1.5 py-0.2 rounded font-mono font-bold">WIRELESS BLE</span>
             </div>
-            <p id="lblM2OptionBDesc" class="text-[11px] text-slate-300 leading-snug">
-              สำหรับผู้ที่มีเครื่องจำลอง OdimibO, Allmiibo หรือ Pixl.js เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องเพื่อนำไปแตะกับ Switch ได้ทันที
+            <span id="m1DeviceBadge" class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">พร้อมใช้</span>
+          </div>
+
+          <!-- ตัวเลือก 3A: มือถือ Android จำลองจอย (JoyCon Droid) -->
+          <div class="bg-slate-950/90 border border-indigo-500/40 rounded-xl p-3 space-y-2.5">
+            <div class="flex items-center justify-between">
+              <div class="font-bold text-xs text-indigo-300 flex items-center gap-1.5">
+                <span>📱</span> <span id="lblM1OptionATitle">3A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)</span>
+              </div>
+              <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.2 rounded font-mono font-bold">ฟรี 100%</span>
+            </div>
+            <p id="lblM1OptionADesc" class="text-[11px] text-slate-300 leading-snug">
+              เปลี่ยนมือถือ Android ให้เป็นจอย Nintendo Switch แล้วส่งสัญญาณ Amiibo เข้าเกมได้ทันที ไม่ต้องซื้อเหรียญหรืออุปกรณ์เสริมใดๆ
             </p>
-            <div class="grid grid-cols-2 gap-2">
-              <button id="btnSendBle" onclick="sendCurrentToBLE()" class="btn-active bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold py-2 px-2.5 rounded-xl shadow flex items-center justify-center gap-1.5">
-                <span>📡</span> <span id="lblSendBle">ส่งเข้า OdimibO (BLE)</span>
+            
+            <!-- 3 ปุ่ม Action หลัก: โหลดไฟล์ .bin + ลิ้งก์โหลดแอป + ลิ้งก์คู่มือ GitBook -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+              <button onclick="downloadForJoyConDroid()" class="btn-active bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-xs py-2 px-2 rounded-xl shadow flex items-center justify-center gap-1">
+                <span>💾</span> <span id="btnM1DownloadJoyCon">โหลด .bin (JoyCon Droid)</span>
               </button>
-              <button onclick="switchTab('tabCatalog')" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📦</span> <span id="btnM2BatchSend">ส่งหมวดนี้เข้าเครื่อง</span>
-              </button>
+              <a href="https://github.com/TeamJCD/JoyConDroid/releases" target="_blank" rel="noopener noreferrer"
+                class="btn-active bg-purple-600/30 hover:bg-purple-600/40 border border-purple-500/50 text-purple-200 text-xs font-bold py-2 px-2 rounded-xl flex items-center justify-center gap-1 text-center shadow">
+                <span>📲</span> <span id="btnJoyConDroidApp">โหลดแอป JoyCon Droid</span>
+              </a>
+              <a href="https://translate.google.com/translate?u=https://joycondroid.gitbook.io/joycondroid/guides/connecting-to-your-switch&hl=th&sl=en&tl=th&client=srp" target="_blank" rel="noopener noreferrer"
+                class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2 rounded-xl border border-slate-700 flex items-center justify-center gap-1 text-center shadow">
+                <span>📖</span> <span id="btnJoyConDroidGitbook">คู่มือทางการ (GitBook)</span>
+              </a>
+            </div>
+
+            <!-- กล่องสรุปวิธีตั้งค่าในแอปแบบ Step-by-Step -->
+            <div class="bg-slate-900/90 rounded-xl p-2.5 border border-slate-800 space-y-1.5 text-[11px] text-slate-200">
+              <div class="font-extrabold text-indigo-300 flex items-center gap-1">
+                <span>⚙️</span> <span id="lblJoyConSetupTitle">วิธีตั้งค่าแอป JoyCon Droid อย่างละเอียด:</span>
+              </div>
+              <ol class="list-decimal list-inside space-y-1 text-slate-300 leading-relaxed text-[10.5px]">
+                <li>เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ ไปที่ <b>Settings (ฟันเฟือง)</b></li>
+                <li>ตรงหัวข้อ <b>Controller Type</b> ให้เลือกเป็น <b>Right Joy-Con</b> หรือ <b>Pro Controller</b> <i>(ต้องเลือกจอยขวาหรือ Pro Controller เท่านั้น เพราะจอยซ้ายไม่มีเสาอากาศ NFC!)</i></li>
+                <li>เลื่อนลงมาติ๊กเปิด <b>"Enable NFC"</b> หรือ <b>"NFC Emulation"</b></li>
+                <li>เปิดเครื่อง Nintendo Switch ➔ หน้าโฮมเลือก <b>Controllers ➔ Change Grip/Order</b></li>
+                <li>บนมือถือกดเลือกจอย ➔ กดยืนยัน <b>"Pair" (จับคู่)</b> เมื่อไฟ Player 1 ติด แสดงว่าเชื่อมต่อสำเร็จ</li>
+                <li>ในเกมบน Switch เมื่อเข้าจุดสแกน ➔ ในแอป JoyCon Droid แตะไอคอน <b>NFC / Amiibo</b> แล้วเลือกไฟล์ <code>.bin</code> ที่โหลดจากเว็บนี้ สัญญาณจะส่งเข้าเครื่องทันที!</li>
+              </ol>
             </div>
           </div>
 
+          <!-- ตัวเลือก 3B: บนเว็บผ่านโน้ตบุ๊ก / PC (joycontrol Bluetooth HID) -->
+          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="font-bold text-xs text-cyan-300 flex items-center gap-1.5">
+                <span>💻</span> <span id="lblM1OptionBTitle">3B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)</span>
+              </div>
+              <span class="text-[9px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.2 rounded font-mono font-bold">PYTHON HID</span>
+            </div>
+            <p id="lblM1OptionBDesc" class="text-[11px] text-slate-300 leading-snug">
+              ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ
+            </p>
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="downloadJoycontrolPayload()" class="btn-active bg-cyan-600/30 hover:bg-cyan-600/40 border border-cyan-500/50 text-cyan-200 font-bold text-xs py-2 px-2.5 rounded-xl flex items-center justify-center gap-1.5">
+                <span>💻</span> <span id="btnM1DownloadJoycontrol">โหลด .bin + คำสั่งคอม</span>
+              </button>
+              <button onclick="copyJoycontrolCliCommand()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
+                <span>📋</span> <span id="btnM1CopyJoycontrol">คัดลอกคำสั่งรัน</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- แถบล่างสุด: สุ่ม UID ใหม่ + เช็คความพร้อม 540B -->
@@ -984,11 +1023,12 @@
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
               <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 1</span>
               <div class="space-y-1">
-                <div class="font-bold text-white">เลือกวิธีใช้งานกับ Switch ก่อน (Select Usage Method First)</div>
+                <div class="font-bold text-white">เลือกแนวทางใช้งานกับ Switch ก่อน (Select Usage Method First)</div>
                 <p class="text-slate-300 leading-relaxed">
-                  เลือกวิธีที่คุณต้องการเชื่อมต่อกับ Nintendo Switch ที่หัวข้อ <b>ขั้นตอนที่ 1</b> บนหน้าแรก:<br>
-                  • <b>🚫 แบบที่ 1: ไม่ใช้ตัวกลาง:</b> สำหรับผู้ที่ต้องการใช้ <b>มือถือ Android (JoyCon Droid)</b> หรือ <b>โน้ตบุ๊ก/PC (joycontrol)</b> ยิงสัญญาณตรงเข้า Switch ไม่ต้องซื้อเหรียญหรืออุปกรณ์เสริม<br>
-                  • <b>🪙 แบบที่ 2: ใช้ตัวกลาง NFC:</b> สำหรับผู้ที่ใช้ <b>เหรียญ/การ์ด NTAG215 เปล่า</b> (ใช้ได้กับมือถือทุกรุ่น 100% ทั้ง iPhone และ Android) หรือมี <b>เครื่องจำลอง OdimibO BLE</b>
+                  เลือกแนวทางที่คุณต้องการใช้งานที่หัวข้อ <b>ขั้นตอนที่ 1</b> บนหน้าแรก (แบ่งเป็น 3 แนวทางชัดเจน):<br>
+                  • <b>📶 แนวทางที่ 1: เครื่องบลูทูธ OdimibO:</b> สะดวกที่สุด จบในเว็บ 100% ไม่ต้องโหลดไฟล์ ไม่ต้องลงแอปเสริม เชื่อมต่อแล้วกดส่งเข้าเครื่องใน 1 วินาที<br>
+                  • <b>🪙 แนวทางที่ 2: เหรียญ/การ์ด NTAG215 เปล่า:</b> แตะเขียนครั้งเดียว 10 วินาที ได้เหรียญพกพาใช้ได้ตลอดชีพ สแกนติด 100% ใช้ได้กับทุกมือถือ (iPhone & Android)<br>
+                  • <b>📱 แนวทางที่ 3: จอยมือถือ JoyCon Droid / โน้ตบุ๊ก joycontrol:</b> ฟรี 100% ไม่ต้องซื้ออุปกรณ์เสริมใดๆ จำลองมือถือหรือคอมเป็นจอยส่งตรงเข้า Switch
                 </p>
               </div>
             </div>
@@ -1011,83 +1051,56 @@
               <div class="space-y-1">
                 <div class="font-bold text-amber-300">รับไฟล์ / ส่งข้อมูล และเปิดโหมดสแกนในเกม (Action & In-Game Scan)</div>
                 <p class="text-slate-300 leading-relaxed">
-                  กดปุ่มรับไฟล์หรือส่งข้อมูลใน <b>ขั้นตอนที่ 3</b> ตามวิธีที่คุณเลือกไว้ จากนั้นเปิดเกมบน Nintendo Switch เข้าเมนูสแกนของเกมนั้นๆ แล้วทำตามขั้นตอนการสแกนในแต่ละวิธีด้านล่างนี้
+                  กดปุ่มรับไฟล์หรือส่งข้อมูลใน <b>ขั้นตอนที่ 3</b> ตามแนวทางที่คุณเลือกไว้ จากนั้นเปิดเกมบน Nintendo Switch เข้าเมนูสแกนของเกมนั้นๆ แล้วทำตามขั้นตอนการสแกนในแต่ละวิธีด้านล่างนี้
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ส่วนที่ 2: เจาะลึกวิธีใช้งานจริงครบทั้ง 4 แบบ (Deep Dive: All 4 Real-World Methods) -->
+        <!-- ส่วนที่ 2: เจาะลึกวิธีใช้งานจริงครบทั้ง 3 แนวทาง (Deep Dive: All 3 Pathways) -->
         <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3.5 shadow-lg">
           <div class="flex items-center gap-2 border-b border-slate-800 pb-2">
             <span class="text-lg">🛠️</span>
             <div>
-              <h3 class="text-sm font-extrabold text-white">เจาะลึกวิธีใช้งานจริงครบทั้ง 4 แบบ (กดอะไร ➔ สแกนยังไง)</h3>
-              <p class="text-xs text-slate-400">เลือกอ่านวิธีที่ตรงกับอุปกรณ์ที่คุณมี สแกนติดแน่นอน</p>
+              <h3 class="text-sm font-extrabold text-white">เจาะลึกวิธีใช้งานจริงครบทั้ง 3 แนวทาง (กดอะไร ➔ สแกนยังไง)</h3>
+              <p class="text-xs text-slate-400">เลือกอ่านวิธีที่ตรงกับความสะดวกและอุปกรณ์ของคุณ สแกนติดแน่นอน</p>
             </div>
           </div>
 
           <div class="space-y-3 text-xs">
-            <!-- 1A: JoyCon Droid -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-indigo-500/30 space-y-2">
-              <div class="flex items-center justify-between">
-                <div class="font-extrabold text-indigo-300 text-sm flex items-center gap-1.5">
-                  <span>📱</span> <span>วิธีที่ 1A: ใช้มือถือ Android ยิงเข้า Switch โดยตรง (JoyCon Droid)</span>
-                </div>
-                <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-bold">ไม่ใช้อุปกรณ์เสริม</span>
-              </div>
-              <p class="text-slate-300 leading-relaxed">
-                เปลี่ยนมือถือ Android ให้เป็นจอย Nintendo Switch ไร้สาย และส่งไฟล์ Amiibo เข้าเกมได้ทันทีโดยไม่ต้องซื้อเหรียญหรืออุปกรณ์ใดๆ
-              </p>
-              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-indigo-400 font-bold">📲 อุปกรณ์ที่รองรับ:</div>
-                <p class="text-slate-300">สมาร์ตโฟน Android 9.0 ขึ้นไป (เช่น Samsung Galaxy บางรุ่น หรือเครื่อง Android ที่เปิด Bluetooth HID Device Profile ได้ หรือเครื่องที่ผ่านการ Root)</p>
-                <div class="text-indigo-400 font-bold pt-1">📝 ขั้นตอนทีละสเต็ป:</div>
-                <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>บนเว็บ เลือกตัวละครที่ต้องการ ➔ ในขั้นตอนที่ 3 กดปุ่ม <b>"📲 โหลด .bin (JoyCon Droid)"</b> (จะได้ไฟล์ 540B เข้ารหัสแท้)</li>
-                  <li>ดาวน์โหลดและเปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ ไปที่ Settings เลือกประเภท Controller เป็น <b>Right Joy-Con</b> หรือ <b>Pro Controller</b></li>
-                  <li>เปิดเครื่อง Nintendo Switch ➔ ไปที่หน้าจอหลักเลือกเมนู <b>Controllers ➔ Change Grip/Order</b></li>
-                  <li>บนมือถือ กดปุ่มเชื่อมต่อ Bluetooth จับคู่กับ Switch (เมื่อไฟติดที่ช่อง Player 1 แสดงว่าเชื่อมต่อสำเร็จ)</li>
-                  <li>เปิดเกมบน Switch เข้าสู่ฉากที่ต้องการสแกน ➔ ในแอป JoyCon Droid ให้แตะไอคอนรูป <b>NFC / Amiibo</b> ➔ เลือกไฟล์ <code>.bin</code> ที่ดาวน์โหลดไว้ ตัวเกมจะรับไอเทมทันที!</li>
-                </ol>
-              </div>
-            </div>
-
-            <!-- 1B: joycontrol -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-cyan-500/30 space-y-2">
+            <!-- แนวทางที่ 1: OdimibO BLE -->
+            <div class="bg-slate-950 p-3.5 rounded-xl border border-cyan-500/40 space-y-2">
               <div class="flex items-center justify-between">
                 <div class="font-extrabold text-cyan-300 text-sm flex items-center gap-1.5">
-                  <span>💻</span> <span>วิธีที่ 1B: ใช้โน้ตบุ๊ก / PC ยิงเข้า Switch โดยตรง (joycontrol Bluetooth HID)</span>
+                  <span>📶</span> <span>แนวทางที่ 1: เครื่องจำลองบลูทูธ OdimibO (Web Bluetooth BLE) — จบในเว็บ 100%</span>
                 </div>
-                <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-bold">ไม่ต้องรูทมือถือ</span>
+                <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-bold">สะดวกที่สุด ไม่ต้องโหลดไฟล์</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
-                ใช้ Bluetooth ของคอมพิวเตอร์หรือโน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller และแนบข้อมูล NFC ส่งเข้าเครื่องเกมโดยตรง
+                สำหรับผู้ที่มีอุปกรณ์พกพา OdimibO, Allmiibo หรือ Pixl.js OLED เชื่อมต่อบลูทูธผ่านหน้าเว็บได้โดยตรง ไม่ต้องโหลดไฟล์ .bin และไม่ต้องติดตั้งแอปเสริม
               </p>
               <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-cyan-400 font-bold">💻 อุปกรณ์ที่รองรับ:</div>
-                <p class="text-slate-300">คอมพิวเตอร์/โน้ตบุ๊กที่มี Bluetooth (รองรับ Linux, Ubuntu, Raspberry Pi หรือ Windows ผ่าน WSL2 / Linux VM)</p>
-                <div class="text-cyan-400 font-bold pt-1">📝 ขั้นตอนทีละสเต็ป:</div>
+                <div class="text-cyan-400 font-bold">📝 ขั้นตอนทีละสเต็ป:</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>บนเว็บ เลือกตัวละคร ➔ ในขั้นตอนที่ 3 กดปุ่ม <b>"💻 โหลด .bin + คำสั่งคอม"</b> หรือกด <b>"📋 คัดลอกคำสั่งรัน"</b></li>
-                  <li>เปิดหน้า <b>Change Grip/Order</b> บนเครื่อง Nintendo Switch</li>
-                  <li>บนคอมพิวเตอร์ รันสคริปต์ <code>joycontrol</code> เพื่อจำลอง Pro Controller ผ่าน Bluetooth และจับคู่กับ Switch</li>
-                  <li>เมื่อตัวเกมเข้าสู่จุดสแกน Amiibo ให้พิมพ์คำสั่งในคอมพิวเตอร์: <code>nfc &lt;path_to_bin&gt;</code> สัญญาณ Amiibo จะส่งเข้า Switch เสมือนมี Amiibo มาแตะจริง!</li>
+                  <li>เปิดเครื่องจำลอง OdimibO ของคุณ และเปิดโหมด Bluetooth BLE</li>
+                  <li>บนหน้าเว็บ กดปุ่ม <b>"BLE"</b> ที่แถบด้านบนเพื่อค้นหาและจับคู่อุปกรณ์ (ผู้ใช้ iPhone ให้เปิดเว็บนี้ผ่านแอป <b>Bluefy – Web BLE Browser</b>)</li>
+                  <li>เลือกตัวละครที่ต้องการ ➔ ในขั้นตอนที่ 3 กดปุ่ม <b>"📡 ส่งเข้า OdimibO (BLE)"</b> หรือกด <b>"📦 ส่งหมวดนี้เข้าเครื่อง"</b> ข้อมูลจะส่งเข้าเครื่องใน 1 วินาที!</li>
+                  <li>นำเครื่องจำลอง OdimibO ไปแตะที่อนาล็อกขวา (R-Stick) ของ Switch เพื่อสแกนรับของรางวัลได้ทันที!</li>
                 </ol>
               </div>
             </div>
 
-            <!-- 2A: NTAG215 Coin / Card -->
+            <!-- แนวทางที่ 2: NTAG215 Coin / Card -->
             <div class="bg-slate-950 p-3.5 rounded-xl border border-emerald-500/30 space-y-2">
               <div class="flex items-center justify-between">
                 <div class="font-extrabold text-emerald-300 text-sm flex items-center gap-1.5">
-                  <span>🪙</span> <span>วิธีที่ 2A: ใช้เหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน 100%)</span>
+                  <span>🪙</span> <span>แนวทางที่ 2: ใช้เหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน 100%)</span>
                 </div>
-                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">ใช้ได้ทุกมือถือ</span>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">ใช้ได้ทุกมือถือ แตะครั้งเดียวใช้ยาว</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
-                วิธีมาตรฐานที่ง่ายที่สุด เสถียรที่สุด และใช้ได้กับสมาร์ตโฟนทุกเครื่อง ทั้ง iPhone และ Android โดยเขียนข้อมูลลงเหรียญหรือการ์ดเปล่า
+                วิธีมาตรฐานที่ง่ายที่สุด เสถียรที่สุด และใช้ได้กับสมาร์ตโฟนทุกเครื่อง ทั้ง iPhone และ Android โดยเขียนข้อมูลลงเหรียญหรือการ์ดเปล่าครั้งเดียว ใช้ได้ตลอดชีพ
               </p>
               <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
                 <div class="text-emerald-400 font-bold">🪙 ชนิดเหรียญที่ต้องใช้:</div>
@@ -1095,7 +1108,7 @@
                 <div class="text-emerald-400 font-bold pt-1">📝 ขั้นตอนทีละสเต็ป:</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300">
                   <li>บนเว็บ เลือกตัวละครที่ต้องการ ➔ ในขั้นตอนที่ 3 กดปุ่มสีเขียว <b>"💾 ดาวน์โหลด .bin (540B สำหรับเขียนเหรียญ)"</b></li>
-                  <li>ใช้แอปฟรีบนมือถือเพื่อเขียนข้อมูลลงเหรียญ NTAG215:
+                  <li>ใช้แอปฟรีบนมือถือเพื่อเขียนข้อมูลลงเหรียญ NTAG215 (ใช้เวลาเขียนเพียง 10 วินาที):
                     <ul class="list-disc list-inside pl-3 pt-0.5 space-y-0.5 text-slate-300">
                       <li><b>Android:</b> โหลดแอป <b>TagMo</b> ➔ กด "Load Tag" เลือกไฟล์ <code>.bin</code> ➔ กด "Write Tag (Auto)" ➔ นำเหรียญ NTAG215 มาแตะที่หลังมือถือ</li>
                       <li><b>iPhone:</b> โหลดแอป <b>AmiiBoss</b> หรือ <b>NFC Tools</b> ➔ เลือกไฟล์ <code>.bin</code> ➔ กด "Write" ➔ นำเหรียญ NTAG215 มาแตะที่ขอบบนของ iPhone</li>
@@ -1107,27 +1120,48 @@
               </div>
             </div>
 
-            <!-- 2B: OdimibO BLE Emulator -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-amber-500/30 space-y-2">
+            <!-- แนวทางที่ 3: JoyCon Droid & joycontrol -->
+            <div class="bg-slate-950 p-3.5 rounded-xl border border-indigo-500/30 space-y-2">
               <div class="flex items-center justify-between">
-                <div class="font-extrabold text-amber-300 text-sm flex items-center gap-1.5">
-                  <span>📟</span> <span>วิธีที่ 2B: เครื่องจำลอง Amiibo พกพาไร้สาย (OdimibO / Allmiibo ผ่าน Bluetooth BLE)</span>
+                <div class="font-extrabold text-indigo-300 text-sm flex items-center gap-1.5">
+                  <span>📱</span> <span>แนวทางที่ 3: ใช้มือถือ Android (JoyCon Droid) หรือโน้ตบุ๊ก (joycontrol) — ฟรี 100%</span>
                 </div>
-                <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold">พกพาสะดวก</span>
+                <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-bold">ฟรี ไม่ต้องซื้อของ</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
-                สำหรับผู้ที่มีอุปกรณ์พกพา OdimibO, Allmiibo หรือ Pixl.js OLED ส่งไฟล์ผ่านบลูทูธไร้สายได้โดยไม่ต้องเขียนเหรียญ
+                เปลี่ยนมือถือ Android ให้เป็นจอย Nintendo Switch ไร้สาย และส่งไฟล์ Amiibo เข้าเกมได้ทันทีโดยไม่ต้องซื้อเหรียญหรืออุปกรณ์เสริมใดๆ
               </p>
-              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-amber-400 font-bold">📝 ขั้นตอนทีละสเต็ป:</div>
-                <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>เปิดเครื่องจำลอง OdimibO ของคุณ และเปิดโหมด Bluetooth BLE</li>
-                  <li>บนหน้าเว็บ กดปุ่ม <b>"BLE"</b> ที่แถบด้านบนเพื่อค้นหาและจับคู่อุปกรณ์ (ผู้ใช้ iPhone ให้เปิดเว็บนี้ผ่านแอป <b>Bluefy – Web BLE Browser</b>)</li>
-                  <li>เลือกตัวละครที่ต้องการ ➔ กดปุ่มสีม่วง <b>"📡 ส่งเข้า OdimibO (BLE)"</b> หรือกด <b>"📦 ส่งหมวดนี้เข้าเครื่อง"</b> ระบบจะสร้างโฟลเดอร์แยกตามเกมในเครื่องให้อัตโนมัติ!</li>
-                  <li>นำเครื่องจำลอง OdimibO ไปแตะที่อนาล็อกขวา (R-Stick) ของ Switch เพื่อสแกนรับของรางวัล</li>
+              
+              <!-- 3A: มือถือ JoyCon Droid -->
+              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-2 text-slate-200">
+                <div class="flex items-center justify-between text-indigo-400 font-bold">
+                  <span>📱 3A. มือถือ Android (JoyCon Droid):</span>
+                  <div class="flex gap-1">
+                    <a href="https://github.com/TeamJCD/JoyConDroid/releases" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-purple-600/30 text-purple-200 px-2 py-0.5 rounded border border-purple-500/40 font-bold">โหลดแอป APK</a>
+                    <a href="https://translate.google.com/translate?u=https://joycondroid.gitbook.io/joycondroid/guides/connecting-to-your-switch&hl=th&sl=en&tl=th&client=srp" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-indigo-600/30 text-indigo-200 px-2 py-0.5 rounded border border-indigo-500/40 font-bold">คู่มือทางการ GitBook</a>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-[11px]"><b>อุปกรณ์ที่รองรับ:</b> สมาร์ตโฟน Android 9.0 ขึ้นไป (เช่น Samsung Galaxy หรือเครื่องที่รองรับ Bluetooth HID Profile)</p>
+                <div class="text-indigo-400 font-bold pt-0.5">📝 ขั้นตอนการตั้งค่าและเชื่อมต่ออย่างละเอียด:</div>
+                <ol class="list-decimal list-inside space-y-1 text-slate-300 text-[11px]">
+                  <li>บนเว็บ เลือกตัวละครที่ต้องการ ➔ ในขั้นตอนที่ 3 กดปุ่ม <b>"💾 โหลด .bin (JoyCon Droid)"</b></li>
+                  <li>ติดตั้งและเปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ ไปที่ <b>Settings (ฟันเฟือง)</b></li>
+                  <li>ตรงหัวข้อ <b>Controller Type</b> ให้เลือกเป็น <b>Right Joy-Con</b> หรือ <b>Pro Controller</b> <i>(สำคัญมาก: ห้ามเลือก Left Joy-Con เพราะจอยซ้ายไม่มีเสาอากาศ NFC!)</i></li>
+                  <li>เลื่อนลงมาติ๊กเปิด <b>"Enable NFC"</b> หรือ <b>"NFC Emulation"</b></li>
+                  <li>เปิดเครื่อง Switch ➔ หน้าโฮมเลือก <b>Controllers ➔ Change Grip/Order</b></li>
+                  <li>บนมือถือกดเลือกจอย ➔ กดยืนยัน <b>"Pair" (จับคู่)</b> เมื่อไฟ Player 1 ติด แสดงว่าเชื่อมต่อสำเร็จ</li>
+                  <li>ในเกมบน Switch เมื่อเข้าจุดสแกน ➔ ในแอป JoyCon Droid แตะไอคอน <b>NFC / Amiibo</b> แล้วเลือกไฟล์ <code>.bin</code> ที่โหลดจากเว็บนี้ สัญญาณจะส่งเข้าเครื่องทันที!</li>
                 </ol>
               </div>
+
+              <!-- 3B: คอมพิวเตอร์ joycontrol -->
+              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
+                <div class="text-cyan-400 font-bold">💻 3B. โน้ตบุ๊ก / PC (joycontrol Bluetooth HID):</div>
+                <p class="text-slate-300 text-[11px]">ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller รันคำสั่ง <code>joycontrol</code> บน Linux / WSL2 แล้วพิมพ์คำสั่ง <code>nfc &lt;path_to_bin&gt;</code> เพื่อส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ</p>
+              </div>
             </div>
+          </div>
+        </div>
           </div>
         </div>
 
@@ -1213,9 +1247,10 @@
               <div class="space-y-1">
                 <div class="font-bold text-white">Select Usage Method for Switch First</div>
                 <p class="text-slate-300 leading-relaxed">
-                  Choose how you want to connect to your Nintendo Switch at <b>Step 1</b> on the Home tab:<br>
-                  • <b>🚫 Method 1: Direct to Switch:</b> For users connecting directly via <b>Android Phone (JoyCon Droid)</b> or <b>Laptop / PC (joycontrol)</b> without extra hardware or tags.<br>
-                  • <b>🪙 Method 2: Use NFC Hardware:</b> For users writing to <b>Blank NTAG215 Coins/Cards</b> (works on all phones 100%, iPhone & Android) or using an <b>OdimibO BLE hardware emulator</b>.
+                  Choose how you want to connect to your Nintendo Switch at <b>Step 1</b> on the Home tab (3 clear pathways):<br>
+                  • <b>📶 Method 1: OdimibO Hardware (BLE):</b> Most convenient, 100% all-in-one web, no file download, no extra apps needed. Transmits in 1s.<br>
+                  • <b>🪙 Method 2: Blank NTAG215 Coin / Card:</b> Write once in 10s, permanent lifetime use on physical coin/card. 100% compatible with all phones (iPhone & Android).<br>
+                  • <b>📱 Method 3: JoyCon Droid Phone / PC joycontrol:</b> 100% free with no hardware required. Emulate a Switch controller directly.
                 </p>
               </div>
             </div>
@@ -1245,73 +1280,46 @@
           </div>
         </div>
 
-        <!-- Part 2 (EN): Deep Dive on All 4 Real-World Methods -->
+        <!-- Part 2 (EN): Deep Dive on All 3 Pathways -->
         <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-3.5 shadow-lg">
           <div class="flex items-center gap-2 border-b border-slate-800 pb-2">
             <span class="text-lg">🛠️</span>
             <div>
-              <h3 class="text-sm font-extrabold text-white">Deep Dive: All 4 Real-World Usage Methods</h3>
-              <p class="text-xs text-slate-400">Step-by-step instructions matching your specific device</p>
+              <h3 class="text-sm font-extrabold text-white">Deep Dive: All 3 Real-World Usage Pathways</h3>
+              <p class="text-xs text-slate-400">Step-by-step instructions matching your specific device setup</p>
             </div>
           </div>
 
           <div class="space-y-3 text-xs">
-            <!-- 1A: JoyCon Droid -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-indigo-500/30 space-y-2">
-              <div class="flex items-center justify-between">
-                <div class="font-extrabold text-indigo-300 text-sm flex items-center gap-1.5">
-                  <span>📱</span> <span>Method 1A: Direct to Switch via Android Phone (JoyCon Droid)</span>
-                </div>
-                <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-bold">No Extra Hardware</span>
-              </div>
-              <p class="text-slate-300 leading-relaxed">
-                Turn your Android phone into a wireless Nintendo Switch Joy-Con and inject Amiibo binaries straight into your game without purchasing tags or dongles.
-              </p>
-              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-indigo-400 font-bold">📲 Supported Devices:</div>
-                <p class="text-slate-300">Android 9.0+ smartphones (e.g., select Samsung Galaxy devices, phones supporting Bluetooth HID Device Profile, or rooted devices).</p>
-                <div class="text-indigo-400 font-bold pt-1">📝 Step-by-Step Instructions:</div>
-                <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>On this web app, pick your desired character ➔ in Step 3, tap <b>"📲 Download .bin (JoyCon Droid)"</b> (540B pre-encrypted format).</li>
-                  <li>Install and open <b>JoyCon Droid</b> on your phone ➔ go to Settings and set Controller Type to <b>Right Joy-Con</b> or <b>Pro Controller</b>.</li>
-                  <li>On Nintendo Switch, navigate to the Home screen ➔ select <b>Controllers ➔ Change Grip/Order</b>.</li>
-                  <li>On your phone, tap to pair via Bluetooth with the Switch. Once Player 1 LED lights up, pairing is complete.</li>
-                  <li>Open your game to the scan location ➔ In the JoyCon Droid app, tap the <b>NFC / Amiibo</b> icon ➔ select the downloaded <code>.bin</code> file. Rewards unlock immediately!</li>
-                </ol>
-              </div>
-            </div>
-
-            <!-- 1B: joycontrol -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-cyan-500/30 space-y-2">
+            <!-- Method 1: OdimibO BLE -->
+            <div class="bg-slate-950 p-3.5 rounded-xl border border-cyan-500/40 space-y-2">
               <div class="flex items-center justify-between">
                 <div class="font-extrabold text-cyan-300 text-sm flex items-center gap-1.5">
-                  <span>💻</span> <span>Method 1B: Direct to Switch via Laptop / PC (joycontrol Bluetooth HID)</span>
+                  <span>📶</span> <span>Method 1: OdimibO Hardware Emulator (Bluetooth BLE) — All-in-One Web</span>
                 </div>
-                <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-bold">No Root Required</span>
+                <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-bold">Fastest • No Downloads</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
-                Use your computer or laptop's built-in Bluetooth adapter to emulate a Switch Pro Controller and stream NFC reports directly over the air.
+                Wirelessly stream profiles directly to your physical OdimibO, Allmiibo, or Pixl.js OLED emulator via Bluetooth without writing physical tags or downloading files.
               </p>
               <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-cyan-400 font-bold">💻 Supported Systems:</div>
-                <p class="text-slate-300">PC or laptop with Bluetooth adapter (Linux, Ubuntu, Raspberry Pi, or Windows via WSL2 / Linux VM).</p>
-                <div class="text-cyan-400 font-bold pt-1">📝 Step-by-Step Instructions:</div>
+                <div class="text-cyan-400 font-bold">📝 Step-by-Step Instructions:</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>On this web app, pick your character ➔ in Step 3, tap <b>"💻 Download .bin + CLI"</b> or <b>"📋 Copy CLI Command"</b>.</li>
-                  <li>Open the <b>Change Grip/Order</b> pairing screen on your Nintendo Switch.</li>
-                  <li>On your computer, run the <code>joycontrol</code> script to emulate a Pro Controller and pair via Bluetooth.</li>
-                  <li>When prompted by the game to scan an Amiibo, type <code>nfc &lt;path_to_bin&gt;</code> in your terminal. The console receives the Amiibo data seamlessly!</li>
+                  <li>Power on your OdimibO emulator device and enable Bluetooth BLE.</li>
+                  <li>On this web app, tap the <b>"BLE"</b> button in the top bar to pair (on iOS, open this site inside the free <b>Bluefy – Web BLE Browser</b> app).</li>
+                  <li>Select your character ➔ in Step 3, tap <b>"📡 Send to OdimibO (BLE)"</b> or <b>"📦 Send Category to BLE"</b>. The tag matrix is transmitted in 1 second!</li>
+                  <li>Touch your OdimibO device to the Switch Right Analog Stick (R-Stick) to scan.</li>
                 </ol>
               </div>
             </div>
 
-            <!-- 2A: NTAG215 Coin / Card -->
+            <!-- Method 2: NTAG215 Coin / Card -->
             <div class="bg-slate-950 p-3.5 rounded-xl border border-emerald-500/30 space-y-2">
               <div class="flex items-center justify-between">
                 <div class="font-extrabold text-emerald-300 text-sm flex items-center gap-1.5">
-                  <span>🪙</span> <span>Method 2A: Write to Blank NTAG215 Coin / Card (Recommended for All)</span>
+                  <span>🪙</span> <span>Method 2: Write to Blank NTAG215 Coin / Card (Recommended for All)</span>
                 </div>
-                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">100% Compatible</span>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">100% Compatible • Lifetime Use</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
                 The most reliable, foolproof method that works on all smartphones (iPhone & Android) by writing the profile onto physical blank NFC coin tags or cards.
@@ -1322,7 +1330,7 @@
                 <div class="text-emerald-400 font-bold pt-1">📝 Step-by-Step Instructions:</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300">
                   <li>On this web app, select your character ➔ in Step 3, tap <b>"💾 Download .bin (540B for NFC Coin)"</b>.</li>
-                  <li>Write to your blank tag using a free smartphone app:
+                  <li>Write to your blank tag using a free smartphone app (takes ~10 seconds):
                     <ul class="list-disc list-inside pl-3 pt-0.5 space-y-0.5 text-slate-300">
                       <li><b>Android:</b> Install <b>TagMo</b> ➔ tap "Load Tag" and select the <code>.bin</code> file ➔ tap "Write Tag (Auto)" ➔ touch your blank NTAG215 coin to the back of your phone.</li>
                       <li><b>iPhone:</b> Install <b>AmiiBoss</b> or <b>NFC Tools</b> ➔ choose the <code>.bin</code> file ➔ tap "Write" ➔ hold the top edge of your iPhone against the NTAG215 tag.</li>
@@ -1334,27 +1342,48 @@
               </div>
             </div>
 
-            <!-- 2B: OdimibO BLE Emulator -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-amber-500/30 space-y-2">
+            <!-- Method 3: JoyCon Droid & joycontrol -->
+            <div class="bg-slate-950 p-3.5 rounded-xl border border-indigo-500/30 space-y-2">
               <div class="flex items-center justify-between">
-                <div class="font-extrabold text-amber-300 text-sm flex items-center gap-1.5">
-                  <span>📟</span> <span>Method 2B: Send to Portable BLE Hardware (OdimibO / Allmiibo / Pixl.js)</span>
+                <div class="font-extrabold text-indigo-300 text-sm flex items-center gap-1.5">
+                  <span>📱</span> <span>Method 3: Direct Gamepad Mode via Android (JoyCon Droid) or PC (joycontrol)</span>
                 </div>
-                <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-bold">Pocket Emulator</span>
+                <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-bold">100% Free Gamepad</span>
               </div>
               <p class="text-slate-300 leading-relaxed">
-                Wirelessly stream profiles directly to your physical OdimibO, Allmiibo, or Pixl.js OLED emulator via Bluetooth without writing physical tags.
+                Turn your Android phone into a wireless Nintendo Switch Joy-Con and inject Amiibo binaries straight into your game without purchasing tags or dongles.
               </p>
-              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
-                <div class="text-amber-400 font-bold">📝 Step-by-Step Instructions:</div>
-                <ol class="list-decimal list-inside space-y-1 text-slate-300">
-                  <li>Power on your OdimibO emulator device and enable Bluetooth BLE.</li>
-                  <li>On this web app, tap the <b>"BLE"</b> button in the top bar to pair (on iOS, open this site inside the free <b>Bluefy – Web BLE Browser</b> app).</li>
-                  <li>Select your character ➔ tap <b>"📡 Send to OdimibO (BLE)"</b> or <b>"📦 Send Category to BLE"</b>. The VFS filesystem organizes games into folders automatically!</li>
-                  <li>Touch your OdimibO device to the Switch Right Analog Stick (R-Stick) to scan.</li>
+              
+              <!-- 3A: Phone JoyCon Droid -->
+              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-2 text-slate-200">
+                <div class="flex items-center justify-between text-indigo-400 font-bold">
+                  <span>📱 3A. Android Phone (JoyCon Droid):</span>
+                  <div class="flex gap-1">
+                    <a href="https://github.com/TeamJCD/JoyConDroid/releases" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-purple-600/30 text-purple-200 px-2 py-0.5 rounded border border-purple-500/40 font-bold">Download APK</a>
+                    <a href="https://joycondroid.gitbook.io/joycondroid/guides/connecting-to-your-switch" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-indigo-600/30 text-indigo-200 px-2 py-0.5 rounded border border-indigo-500/40 font-bold">Official GitBook Guide</a>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-[11px]"><b>Supported Devices:</b> Android 9.0+ smartphones supporting Bluetooth HID Device Profile (e.g., select Samsung Galaxy devices or rooted phones).</p>
+                <div class="text-indigo-400 font-bold pt-0.5">📝 Step-by-Step Setup & Connection:</div>
+                <ol class="list-decimal list-inside space-y-1 text-slate-300 text-[11px]">
+                  <li>On this web app, pick your desired character ➔ in Step 3, tap <b>"💾 Download .bin (JoyCon Droid)"</b>.</li>
+                  <li>Install and open <b>JoyCon Droid</b> on your phone ➔ go to <b>Settings</b>.</li>
+                  <li>Under <b>Controller Type</b>, select <b>Right Joy-Con</b> or <b>Pro Controller</b> <i>(Important: Never select Left Joy-Con because it lacks NFC antenna!)</i>.</li>
+                  <li>Check the box to enable <b>"NFC Emulation"</b> or <b>"Enable NFC"</b>.</li>
+                  <li>On Nintendo Switch, navigate to the Home screen ➔ select <b>Controllers ➔ Change Grip/Order</b>.</li>
+                  <li>On your phone, tap the controller to connect ➔ accept the <b>Bluetooth Pairing Request</b>. Once Player 1 LED lights up, pairing is complete.</li>
+                  <li>In your Switch game at the scan screen ➔ In JoyCon Droid, tap the <b>NFC / Amiibo</b> icon ➔ choose the downloaded <code>.bin</code> file. Rewards unlock immediately!</li>
                 </ol>
               </div>
+
+              <!-- 3B: Computer joycontrol -->
+              <div class="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 space-y-1 text-slate-200">
+                <div class="text-cyan-400 font-bold">💻 3B. Laptop / PC (joycontrol Bluetooth HID):</div>
+                <p class="text-slate-300 text-[11px]">Use your computer's Bluetooth adapter to emulate a Pro Controller on Linux/WSL2 with <code>joycontrol</code> and pipe <code>nfc &lt;path_to_bin&gt;</code> directly over Bluetooth.</p>
+              </div>
             </div>
+          </div>
+        </div>
           </div>
         </div>
 
@@ -2022,7 +2051,7 @@
     }
 
     // --------------------------------------------------------
-    // 0. ระบบแท็บ 2 เมนูหลัก (Method 1: ไม่ใช้ตัวกลาง vs Method 2: ใช้ตัวกลาง NFC) + ระบบ UAT
+    // 0. ระบบแท็บ 3 แนวทางหลัก (Method 1: OdimibO BLE vs Method 2: เหรียญ NTAG215 vs Method 3: JoyCon Droid) + ระบบ UAT
     // --------------------------------------------------------
     let currentMethodTab = 1;
 
@@ -2031,31 +2060,39 @@
       currentMethodTab = tabNum;
       const btn1 = document.getElementById('tabBtnMethod1');
       const btn2 = document.getElementById('tabBtnMethod2');
+      const btn3 = document.getElementById('tabBtnMethod3');
       const p1 = document.getElementById('method1Panel');
       const p2 = document.getElementById('method2Panel');
+      const p3 = document.getElementById('method3Panel');
       const summary = document.getElementById('methodSummaryText');
       const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
-      if (!btn1 || !btn2 || !p1 || !p2) return;
 
-      if (tabNum === 1) {
-        btn1.className = 'btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-indigo-600 text-white shadow';
-        btn2.className = 'btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-transparent text-slate-400 hover:text-white';
-        p1.classList.remove('hidden');
-        p2.classList.add('hidden');
-        if (summary) {
+      const act1 = 'btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-cyan-600 text-white shadow';
+      const act2 = 'btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-emerald-600 text-white shadow';
+      const act3 = 'btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-indigo-600 text-white shadow';
+      const inact = 'btn-active py-2 px-1 rounded-lg text-xs font-black transition flex flex-col items-center justify-center text-center gap-0.5 bg-transparent text-slate-400 hover:text-white';
+
+      if (btn1) btn1.className = tabNum === 1 ? act1 : inact;
+      if (btn2) btn2.className = tabNum === 2 ? act2 : inact;
+      if (btn3) btn3.className = tabNum === 3 ? act3 : inact;
+
+      if (p1) p1.classList.toggle('hidden', tabNum !== 1);
+      if (p2) p2.classList.toggle('hidden', tabNum !== 2);
+      if (p3) p3.classList.toggle('hidden', tabNum !== 3);
+
+      if (summary) {
+        if (tabNum === 1) {
           summary.textContent = isEn
-            ? '👉 Selected: Method 1 (Direct to Switch via Android Phone / PC Laptop)'
-            : '👉 กำลังเลือก: แบบที่ 1 (ไม่ใช้อุปกรณ์เสริม - มือถือ Android / โน้ตบุ๊กยิงตรง)';
-        }
-      } else {
-        btn1.className = 'btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-transparent text-slate-400 hover:text-white';
-        btn2.className = 'btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-emerald-600 text-white shadow';
-        p1.classList.add('hidden');
-        p2.classList.remove('hidden');
-        if (summary) {
+            ? '👉 Selected: Method 1 (OdimibO BLE - All-in-One Web, No Download)'
+            : '👉 กำลังเลือก: แนวทางที่ 1 (เครื่องบลูทูธ OdimibO - จบในเว็บ 100% ไม่ต้องโหลดไฟล์)';
+        } else if (tabNum === 2) {
           summary.textContent = isEn
-            ? '👉 Selected: Method 2 (Use Blank NTAG215 Coins/Cards or BLE Emulator)'
-            : '👉 กำลังเลือก: แบบที่ 2 (ใช้เหรียญ/การ์ด NTAG215 เปล่า หรือเครื่อง BLE)';
+            ? '👉 Selected: Method 2 (Blank NTAG215 Coins/Cards - 10s Write, Lifetime Use)'
+            : '👉 กำลังเลือก: แนวทางที่ 2 (เหรียญ/การ์ด NTAG215 เปล่า - แตะเขียน 10 วิ ใช้ตลอดชีพ)';
+        } else {
+          summary.textContent = isEn
+            ? '👉 Selected: Method 3 (JoyCon Droid Phone / PC joycontrol - 100% Free Gamepad)'
+            : '👉 กำลังเลือก: แนวทางที่ 3 (มือถือ Android จำลองจอย หรือโน้ตบุ๊ก - ฟรี 100%)';
         }
       }
     }
@@ -2284,15 +2321,15 @@
         detail: 'TH and EN dictionaries synchronized'
       });
 
-      // Test 8: Reordered 3-Step Main Flow
-      const hasStep1Method = !!document.getElementById('tabBtnMethod1') && !!document.getElementById('tabBtnMethod2');
+      // Test 8: Reordered 3-Step Main Flow & 3 Distinct Pathways
+      const hasStep1Method = !!document.getElementById('tabBtnMethod1') && !!document.getElementById('tabBtnMethod2') && !!document.getElementById('tabBtnMethod3');
       const hasStep2Game = !!document.getElementById('quickSeriesSelect') && !!document.getElementById('quickSubGameSelect');
-      const hasStep3Action = !!document.getElementById('method1Panel') && !!document.getElementById('method2Panel');
+      const hasStep3Action = !!document.getElementById('method1Panel') && !!document.getElementById('method2Panel') && !!document.getElementById('method3Panel');
       testResults.push({
         id: 'T8',
-        title: isEn ? '3-Step Reordered Workflow (1.Method ➔ 2.Game ➔ 3.Transfer)' : 'ลำดับ 3 ขั้นตอนใหม่ (1.เลือกวิธี ➔ 2.เลือกเกม ➔ 3.รับไฟล์/ส่ง)',
+        title: isEn ? '3-Step Workflow & 3 Pathways (1.BLE / 2.NTAG215 / 3.JoyCon)' : 'ลำดับ 3 ขั้นตอน & แยก 3 แนวทาง (1.BLE / 2.เหรียญ / 3.JoyCon)',
         passed: hasStep1Method && hasStep2Game && hasStep3Action,
-        detail: 'Step 1 Method Selection placed before Step 2 Game Selection'
+        detail: 'Step 1 Method Selection (3 Pathways) and Step 3 Action Panels verified'
       });
 
       // Test 9: Complete 4-Method Step-by-Step User Manual
@@ -4331,25 +4368,23 @@
         btnUatModalRetest: '🔄 รันตรวจซ้ำอีกครั้ง',
         btnUatModalClose: 'ปิด',
 
-        // 2 Main Methods Tabs
-        lblStep2Action: 'เลือกวิธีใช้งานกับ Nintendo Switch (2 แบบหลัก):',
-        tabBtnMethod1Title: 'แบบที่ 1: ไม่ใช้ตัวกลาง',
-        tabBtnMethod1Sub: 'มือถือ / โน้ตบุ๊กยิงเข้า Switch',
-        tabBtnMethod2Title: 'แบบที่ 2: ใช้ตัวกลาง NFC',
-        tabBtnMethod2Sub: 'เหรียญ NTAG215 / เครื่อง BLE',
+        // 3 Main Methods Tabs
+        lblStep2Action: 'เลือกแนวทางใช้งานกับ Nintendo Switch (3 แนวทางหลัก):',
+        tabBtnMethod1Title: 'แนวทาง 1: OdimibO',
+        tabBtnMethod1Sub: 'จบในเว็บ 100%',
+        tabBtnMethod2Title: 'แนวทาง 2: เหรียญ NFC',
+        tabBtnMethod2Sub: 'ใช้ยาวตลอดชีพ',
+        tabBtnMethod3Title: 'แนวทาง 3: จอยมือถือ',
+        tabBtnMethod3Sub: 'JoyCon Droid (ฟรี)',
 
-        // Method 1
-        lblM1OptionATitle: '1A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)',
-        lblM1OptionADesc: 'กดโหลดไฟล์ <code>.bin</code> เข้ารหัสแท้ 540B ด้านล่างนี้ ➔ เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ เชื่อมต่อกับ Switch (หน้า Change Grip/Order) ➔ กดสแกนแล้วเลือกไฟล์นี้ได้ทันที!',
-        btnM1DownloadJoyCon: 'โหลด .bin (JoyCon Droid)',
-        btnM1GuideJoyCon: 'วิธีใช้ JoyCon Droid',
-        lblM1OptionBTitle: '1B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)',
-        lblM1OptionBDesc: 'ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ',
-        btnM1DownloadJoycontrol: 'โหลด .bin + คำสั่งคอม',
-        btnM1CopyJoycontrol: 'คัดลอกคำสั่งรัน',
+        // Method 1 (OdimibO BLE)
+        lblM1BleTitle: 'แนวทาง 1: เครื่องจำลอง OdimibO (Bluetooth BLE)',
+        lblM1BleBadge: 'จบในเว็บ 100%',
+        lblM1BleDesc: '✨ <b>วิธีที่สะดวกที่สุด:</b> ไม่ต้องดาวน์โหลดไฟล์ <code>.bin</code> และไม่ต้องติดตั้งแอปเสริมใดๆ! เพียงเปิดบลูทูธบนเครื่อง OdimibO แล้วกดส่งจากหน้าเว็บ ข้อมูลจะวิ่งเข้าเครื่องทันทีใน 1 วินาที นำไปแตะที่อนาล็อกขวาของ Switch ได้เลย',
+        lblBleStatusSub: 'สถานะบลูทูธ: เชื่อมต่อผ่าน Web Bluetooth API โดยตรง',
 
-        // Method 2
-        lblM2OptionATitle: '2A. ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)',
+        // Method 2 (NTAG215)
+        lblM2OptionATitle: 'แนวทาง 2: ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)',
         lblM2OptionABadge: 'ใช้ได้ทุกมือถือ 100%',
         svgCaptionCoin: 'หน้าตาเหรียญ / การ์ด NTAG215 เปล่า (หาซื้อง่าย ชิ้นละ ~10฿)',
         svgCoinSub: 'เหรียญกลม 25mm',
@@ -4359,9 +4394,27 @@
         svgStep2Label: '2. แตะอนาล็อกขวา (R-Stick)',
         btnM2DownloadBin: 'ดาวน์โหลด .bin (540B สำหรับเขียนเหรียญ)',
         btnM2HelperModal: 'แอปฟรีสำหรับเขียนเหรียญ (TagMo/NFC Tools)',
-        lblM2OptionBTitle: '2B. ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)',
-        lblM2OptionBDesc: 'สำหรับผู้ที่มีเครื่องจำลอง OdimibO, Allmiibo หรือ Pixl.js เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องเพื่อนำไปแตะกับ Switch ได้ทันที',
+        lblM2OptionBTitle: 'ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)',
+        lblM2OptionBDesc: 'เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องจำลองเพื่อนำไปแตะกับ Switch ได้ทันที',
         btnM2BatchSend: 'ส่งหมวดนี้เข้าเครื่อง',
+
+        // Method 3 (JoyCon Droid & PC)
+        lblM1OptionATitle: '3A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)',
+        lblM1OptionADesc: 'เปลี่ยนมือถือ Android ให้เป็นจอย Nintendo Switch แล้วส่งสัญญาณ Amiibo เข้าเกมได้ทันที ไม่ต้องซื้อเหรียญหรืออุปกรณ์เสริมใดๆ',
+        btnM1DownloadJoyCon: 'โหลด .bin (JoyCon Droid)',
+        btnJoyConDroidApp: 'โหลดแอป JoyCon Droid',
+        btnJoyConDroidGitbook: 'คู่มือทางการ (GitBook)',
+        lblJoyConSetupTitle: 'วิธีตั้งค่าแอป JoyCon Droid อย่างละเอียด:',
+        btnM1GuideJoyCon: 'วิธีใช้ JoyCon Droid',
+        lblM1OptionBTitle: '3B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)',
+        lblM1OptionBDesc: 'ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ',
+        btnM1DownloadJoycontrol: 'โหลด .bin + คำสั่งคอม',
+        btnM1CopyJoycontrol: 'คัดลอกคำสั่งรัน',
+
+        // Method Summaries
+        methodSummaryText1: '👉 กำลังเลือก: แนวทางที่ 1 (เครื่องบลูทูธ OdimibO - จบในเว็บ 100% ไม่ต้องโหลดไฟล์)',
+        methodSummaryText2: '👉 กำลังเลือก: แนวทางที่ 2 (เหรียญ/การ์ด NTAG215 เปล่า - แตะเขียน 10 วิ ใช้ตลอดชีพ)',
+        methodSummaryText3: '👉 กำลังเลือก: แนวทางที่ 3 (มือถือ Android จำลองจอย หรือโน้ตบุ๊ก - ฟรี 100%)',
 
         // OLED Simulation & Helper box
         lblOledHowToTitle: 'วิธีใช้งานหน้าจอจำลอง & ปุ่มควบคุม 3 ปุ่ม:',
@@ -4369,8 +4422,9 @@
         lblOledHowToDesc: '• <b>ปุ่ม [● ตกลง]:</b> สลับระหว่างหน้าตัวละคร กับ เมนูเครื่อง (หากหน้าจอขึ้นเมนู ให้เลือก <b>[ AMIIBO ]</b> แล้วกดปุ่มนี้เพื่อกลับมาหน้าตัวละคร)<br>• <b>ปุ่ม [◀ ซ้าย] / [ขวา ▶]:</b> สุ่ม UID ใหม่ทันที เพื่อให้สแกนรับไอเทมในเกมซ้ำได้ไม่จำกัดรอบในวันเดียว',
         lblNextStepsTitle: 'หลังจากเลือกตัวละครแล้ว ต้องทำอย่างไรต่อ?',
         lblNextStepsDesc: 'เลื่อนลงไปที่ <b>ขั้นตอนที่ 3 ด้านล่างนี้</b> เพื่อรับไฟล์หรือส่งข้อมูลตามวิธีที่คุณเลือกไว้:',
-        lblNextStepM1: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> ในขั้นตอนที่ 3 ด้านล่าง แล้วนำไฟล์ไปเปิดในแอป <b>JoyCon Droid</b> หรือ <b>joycontrol</b> เพื่อส่งสัญญาณเข้า Switch',
-        lblNextStepM2: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> หรือกดส่งผ่าน <b>บลูทูธ (BLE)</b> เข้าเครื่อง OdimibO ได้ทันที',
+        lblNextStepM1: 'กดปุ่ม <b>[ส่งเข้า OdimibO (BLE)]</b> บนเว็บได้ทันที ข้อมูลส่งเข้าเครื่องใน 1 วินาที จบในเว็บไม่ต้องโหลดไฟล์',
+        lblNextStepM2: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> เพื่อนำไปเขียนลงเหรียญ <b>NTAG215</b> ผ่านแอป TagMo / AmiiBoss ใช้ได้ตลอดชีพ',
+        lblNextStepM3: 'กดปุ่ม <b>[ดาวน์โหลด .bin]</b> แล้วเปิดในแอป <b>JoyCon Droid</b> บนมือถือเพื่อจำลองเป็นจอยส่งตรงเข้า Switch',
         btnScrollStep3Text: '⬇️ เลื่อนลงไปขั้นตอนที่ 3 ทันที (รับไฟล์ .bin / ส่งบลูทูธ)',
 
         // Self test & Console
@@ -4504,25 +4558,23 @@
         btnUatModalRetest: '🔄 Run Test Suite Again',
         btnUatModalClose: 'Close',
 
-        // 2 Main Methods Tabs
-        lblStep2Action: 'Select Usage Method for Nintendo Switch (2 Main Options):',
-        tabBtnMethod1Title: 'Method 1: Direct to Switch',
-        tabBtnMethod1Sub: 'Direct from Phone / PC Laptop',
-        tabBtnMethod2Title: 'Method 2: Use NFC Hardware',
-        tabBtnMethod2Sub: 'NTAG215 Coin / Card or BLE Device',
+        // 3 Main Methods Tabs
+        lblStep2Action: 'Select Usage Method for Nintendo Switch (3 Main Options):',
+        tabBtnMethod1Title: 'Method 1: OdimibO',
+        tabBtnMethod1Sub: 'All-in-One Web',
+        tabBtnMethod2Title: 'Method 2: NFC Coin',
+        tabBtnMethod2Sub: 'Lifetime Coin',
+        tabBtnMethod3Title: 'Method 3: Gamepad',
+        tabBtnMethod3Sub: 'JoyCon Droid (Free)',
 
-        // Method 1
-        lblM1OptionATitle: '1A. Direct to Switch via Android Phone (JoyCon Droid)',
-        lblM1OptionADesc: 'Download genuine encrypted 540B <code>.bin</code> file below ➔ Open <b>JoyCon Droid</b> app on phone ➔ Pair with Switch (Change Grip/Order screen) ➔ Tap scan and select this file!',
-        btnM1DownloadJoyCon: 'Download .bin (JoyCon Droid)',
-        btnM1GuideJoyCon: 'JoyCon Droid Guide',
-        lblM1OptionBTitle: '1B. Direct to Switch via Laptop / PC (joycontrol)',
-        lblM1OptionBDesc: 'Emulate a Switch Pro Controller over Bluetooth on Linux/WSL2/PC to send Amiibo signals directly without extra hardware or root.',
-        btnM1DownloadJoycontrol: 'Download .bin + CLI',
-        btnM1CopyJoycontrol: 'Copy CLI Command',
+        // Method 1 (OdimibO BLE)
+        lblM1BleTitle: 'Method 1: OdimibO Hardware Emulator (Bluetooth BLE)',
+        lblM1BleBadge: 'All-in-One Web',
+        lblM1BleDesc: '✨ <b>Most Convenient:</b> No <code>.bin</code> file downloads and zero app installations needed! Pair your OdimibO device via Web Bluetooth and beam tags straight from your browser in 1 second, then tap the right stick of your Switch.',
+        lblBleStatusSub: 'Bluetooth Status: Connected directly via browser Web Bluetooth API',
 
-        // Method 2
-        lblM2OptionATitle: '2A. Write to Blank NTAG215 Coin / Card (Recommended)',
+        // Method 2 (NTAG215)
+        lblM2OptionATitle: 'Method 2: Write to Blank NTAG215 Coin / Card (Recommended for All)',
         lblM2OptionABadge: 'Works on All Phones 100%',
         svgCaptionCoin: 'NTAG215 Coin & PVC Card Standard (~$0.30/ea on Amazon/eBay)',
         svgCoinSub: 'Round 25mm Coin',
@@ -4532,9 +4584,27 @@
         svgStep2Label: '2. Tap Right Analog (R-Stick)',
         btnM2DownloadBin: 'Download .bin (540B for NFC Coin)',
         btnM2HelperModal: 'Free NFC Writing Apps (TagMo/NFC Tools)',
-        lblM2OptionBTitle: '2B. Send to Portable BLE Hardware (OdimibO)',
-        lblM2OptionBDesc: 'For users with an OdimibO, Allmiibo, or Pixl.js hardware device. Connect via Bluetooth and transmit profiles directly without writing tags.',
+        lblM2OptionBTitle: 'Send to Portable BLE Hardware (OdimibO)',
+        lblM2OptionBDesc: 'Connect via Bluetooth and transmit profiles directly without writing tags.',
         btnM2BatchSend: 'Send Category to BLE',
+
+        // Method 3 (JoyCon Droid & PC)
+        lblM1OptionATitle: '3A. Direct to Switch via Android Phone (JoyCon Droid)',
+        lblM1OptionADesc: 'Turn your Android phone into a wireless Nintendo Switch Joy-Con and inject Amiibo binaries straight into your game without purchasing tags or dongles.',
+        btnM1DownloadJoyCon: 'Download .bin (JoyCon Droid)',
+        btnJoyConDroidApp: 'Get JoyCon Droid App',
+        btnJoyConDroidGitbook: 'Official Guide (GitBook)',
+        lblJoyConSetupTitle: 'Step-by-Step JoyCon Droid App Setup:',
+        btnM1GuideJoyCon: 'JoyCon Droid Guide',
+        lblM1OptionBTitle: '3B. Direct to Switch via Laptop / PC (joycontrol)',
+        lblM1OptionBDesc: 'Emulate a Switch Pro Controller over Bluetooth on Linux/WSL2/PC to send Amiibo signals directly without extra hardware or root.',
+        btnM1DownloadJoycontrol: 'Download .bin + CLI',
+        btnM1CopyJoycontrol: 'Copy CLI Command',
+
+        // Method Summaries
+        methodSummaryText1: '👉 Selected: Method 1 (OdimibO BLE - All-in-One Web, No Download)',
+        methodSummaryText2: '👉 Selected: Method 2 (Blank NTAG215 Coins/Cards - 10s Write, Lifetime Use)',
+        methodSummaryText3: '👉 Selected: Method 3 (JoyCon Droid Phone / PC joycontrol - 100% Free Gamepad)',
 
         // OLED Simulation & Helper box
         lblOledHowToTitle: 'How to Use the OLED Screen & 3 Buttons:',
@@ -4542,8 +4612,9 @@
         lblOledHowToDesc: '• <b>[● OK Button]:</b> Toggles between Active Tag and Device Menu (if screen shows menu, select <b>[ AMIIBO ]</b> and press OK to activate).<br>• <b>[◀ Left] / [Right ▶] Buttons:</b> Randomizes UID instantly so you can scan repeatedly in the same game today without waiting 24 hours.',
         lblNextStepsTitle: 'What to Do Next After Selecting an Amiibo?',
         lblNextStepsDesc: 'Scroll down to <b>Step 3 below</b> to download files or transmit data for your chosen method:',
-        lblNextStepM1: 'Click <b>[Download .bin]</b> in Step 3 below, then open the file in <b>JoyCon Droid</b> or <b>joycontrol</b> to transmit directly to Switch.',
-        lblNextStepM2: 'Click <b>[Download .bin]</b> to write onto an <b>NTAG215 coin/card</b>, or tap <b>[Send via BLE]</b> to beam to your OdimibO device.',
+        lblNextStepM1: 'Tap <b>[Send to OdimibO (BLE)]</b> on this web page. Transmits directly in 1 second without downloading any file.',
+        lblNextStepM2: 'Click <b>[Download .bin]</b> to write onto a blank <b>NTAG215 coin</b> with TagMo/AmiiBoss for lifetime permanent scanning.',
+        lblNextStepM3: 'Click <b>[Download .bin]</b>, then open in <b>JoyCon Droid</b> app to emulate a Switch controller directly.',
         btnScrollStep3Text: '⬇️ Jump to Step 3 Now (Get .bin / BLE Beam)',
 
         // Self test & Console
@@ -5289,20 +5360,25 @@
         // Step 1 Method Header & Summary
         'lblStep1MethodHeader', 'lblStep1Badge', 'methodSummaryGuideLink', 'lblStep3ActionHeader',
 
-        // 2 Main Methods Tabs
+        // 3 Main Methods Tabs
         'tabBtnMethod1Title', 'tabBtnMethod1Sub',
         'tabBtnMethod2Title', 'tabBtnMethod2Sub',
+        'tabBtnMethod3Title', 'tabBtnMethod3Sub',
 
-        // Method 1
-        'lblM1OptionATitle', 'btnM1DownloadJoyCon', 'btnM1GuideJoyCon',
-        'lblM1OptionBTitle', 'btnM1DownloadJoycontrol', 'btnM1CopyJoycontrol',
+        // Method 1 (OdimibO BLE)
+        'lblM1BleTitle', 'lblM1BleBadge', 'lblBleStatusSub',
 
-        // Method 2
+        // Method 2 (NTAG215)
         'lblM2OptionATitle', 'lblM2OptionABadge',
         'svgCaptionCoin', 'svgCoinSub', 'svgCardSub',
         'svgCaptionSteps', 'svgStep1Label', 'svgStep2Label',
         'btnM2DownloadBin', 'btnM2HelperModal',
         'lblM2OptionBTitle', 'btnM2BatchSend',
+
+        // Method 3 (JoyCon Droid & PC)
+        'lblM1OptionATitle', 'btnM1DownloadJoyCon', 'btnJoyConDroidApp',
+        'btnJoyConDroidGitbook', 'lblJoyConSetupTitle', 'btnM1GuideJoyCon',
+        'lblM1OptionBTitle', 'btnM1DownloadJoycontrol', 'btnM1CopyJoycontrol',
 
         // Self-test button & Console
         'btnSelfTestText',
@@ -5340,15 +5416,17 @@
       setHtml('lblNextStepsDesc', t.lblNextStepsDesc);
       setHtml('lblNextStepM1', t.lblNextStepM1);
       setHtml('lblNextStepM2', t.lblNextStepM2);
+      setHtml('lblNextStepM3', t.lblNextStepM3);
 
-      // Method 1 & 2 HTML content descriptions
+      // Method 1, 2 & 3 HTML content descriptions
+      setHtml('lblM1BleDesc', t.lblM1BleDesc);
       setHtml('lblM1OptionADesc', t.lblM1OptionADesc);
       setHtml('lblM1OptionBDesc', t.lblM1OptionBDesc);
       setHtml('lblM2OptionBDesc', t.lblM2OptionBDesc);
 
       const summary = document.getElementById('methodSummaryText');
       if (summary) {
-        summary.textContent = currentMethodTab === 1 ? t.methodSummaryText1 : t.methodSummaryText2;
+        summary.textContent = currentMethodTab === 1 ? t.methodSummaryText1 : (currentMethodTab === 2 ? t.methodSummaryText2 : t.methodSummaryText3);
       }
 
       // NTAG Helper Modal HTML descriptions
