@@ -262,13 +262,13 @@
     <div class="max-w-md mx-auto flex items-center justify-between gap-1.5">
       <div class="flex items-center gap-1.5 min-w-0">
         <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse flex-shrink-0"></span>
-        <span class="font-extrabold text-white text-[11px] truncate">🧪 UAT SANDBOX (v2.6.0)</span>
+        <span id="uatBannerTitle" class="font-extrabold text-white text-[11px] truncate">🧪 UAT SANDBOX (v2.6.0)</span>
       </div>
       <div class="flex items-center gap-1.5 flex-shrink-0">
-        <button onclick="openUatSuiteModal()" class="btn-active bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-[10px] px-2 py-0.5 rounded-lg border border-purple-400 shadow">
+        <button id="btnUatRunSuite" onclick="openUatSuiteModal()" class="btn-active bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-[10px] px-2 py-0.5 rounded-lg border border-purple-400 shadow">
           ✅ รันตรวจ UAT
         </button>
-        <a href="index.html" class="text-[10px] bg-slate-900/90 text-purple-300 hover:text-white px-2 py-0.5 rounded-lg border border-purple-500/30 font-bold">
+        <a id="lnkUatProd" href="index.html" class="text-[10px] bg-slate-900/90 text-purple-300 hover:text-white px-2 py-0.5 rounded-lg border border-purple-500/30 font-bold">
           🌐 เว็บจริง ➔
         </a>
       </div>
@@ -525,8 +525,8 @@
       <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800 space-y-3 shadow-lg">
         
         <div class="flex items-center justify-between text-xs font-bold text-slate-300 pb-0.5">
-          <span id="lblStep2Action" class="flex items-center gap-1.5">
-            <span class="text-amber-400">⚡</span> <span>เลือกวิธีใช้งานกับ Nintendo Switch (2 แบบหลัก):</span>
+          <span class="flex items-center gap-1.5">
+            <span class="text-amber-400">⚡</span> <span id="lblStep2Action">เลือกวิธีใช้งานกับ Nintendo Switch (2 แบบหลัก):</span>
           </span>
           <button onclick="toggleFavoriteActive()" id="activeFavBtn" class="text-xs px-2 py-0.5 rounded-lg bg-slate-800 border border-slate-700 text-amber-300 font-bold">
             ☆ เก็บโปรด
@@ -536,12 +536,12 @@
         <!-- 2 ปุ่มสลับหมวดหลัก (Toggle 2 Main Tabs) -->
         <div class="grid grid-cols-2 gap-1.5 p-1 bg-slate-950 rounded-xl border border-slate-800">
           <button id="tabBtnMethod1" onclick="switchMethodTab(1)" class="btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-indigo-600 text-white shadow">
-            <span class="flex items-center gap-1">🚫 <span>แบบที่ 1: ไม่ใช้ตัวกลาง</span></span>
-            <span class="text-[9px] font-normal opacity-90">มือถือ / โน้ตบุ๊กยิงเข้า Switch</span>
+            <span class="flex items-center gap-1">🚫 <span id="tabBtnMethod1Title">แบบที่ 1: ไม่ใช้ตัวกลาง</span></span>
+            <span id="tabBtnMethod1Sub" class="text-[9px] font-normal opacity-90">มือถือ / โน้ตบุ๊กยิงเข้า Switch</span>
           </button>
           <button id="tabBtnMethod2" onclick="switchMethodTab(2)" class="btn-active py-2 px-2 rounded-lg text-xs font-black transition flex flex-col items-center justify-center gap-0.5 bg-transparent text-slate-400 hover:text-white">
-            <span class="flex items-center gap-1">🪙 <span>แบบที่ 2: ใช้ตัวกลาง NFC</span></span>
-            <span class="text-[9px] font-normal opacity-90">เหรียญ NTAG215 / เครื่อง BLE</span>
+            <span class="flex items-center gap-1">🪙 <span id="tabBtnMethod2Title">แบบที่ 2: ใช้ตัวกลาง NFC</span></span>
+            <span id="tabBtnMethod2Sub" class="text-[9px] font-normal opacity-90">เหรียญ NTAG215 / เครื่อง BLE</span>
           </button>
         </div>
 
@@ -566,19 +566,19 @@
           <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
             <div class="flex items-center justify-between">
               <div class="font-bold text-xs text-indigo-300 flex items-center gap-1.5">
-                <span>📱</span> <span>1A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)</span>
+                <span>📱</span> <span id="lblM1OptionATitle">1A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)</span>
               </div>
               <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.2 rounded font-mono font-bold">540B PRE-ENCRYPTED</span>
             </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
+            <p id="lblM1OptionADesc" class="text-[11px] text-slate-300 leading-snug">
               กดโหลดไฟล์ <code>.bin</code> เข้ารหัสแท้ 540B ด้านล่างนี้ ➔ เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ เชื่อมต่อกับ Switch (หน้า Change Grip/Order) ➔ กดสแกนแล้วเลือกไฟล์นี้ได้ทันที!
             </p>
             <div class="grid grid-cols-2 gap-2">
               <button onclick="downloadForJoyConDroid()" class="btn-active bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-xs py-2 px-2.5 rounded-xl shadow flex items-center justify-center gap-1.5">
-                <span>📲</span> <span>โหลด .bin (JoyCon Droid)</span>
+                <span>📲</span> <span id="btnM1DownloadJoyCon">โหลด .bin (JoyCon Droid)</span>
               </button>
               <button onclick="copyJoyConDroidGuide()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📖</span> <span>วิธีใช้ JoyCon Droid</span>
+                <span>📖</span> <span id="btnM1GuideJoyCon">วิธีใช้ JoyCon Droid</span>
               </button>
             </div>
           </div>
@@ -587,19 +587,19 @@
           <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
             <div class="flex items-center justify-between">
               <div class="font-bold text-xs text-cyan-300 flex items-center gap-1.5">
-                <span>💻</span> <span>1B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)</span>
+                <span>💻</span> <span id="lblM1OptionBTitle">1B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)</span>
               </div>
               <span class="text-[9px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.2 rounded font-mono font-bold">PYTHON HID</span>
             </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
+            <p id="lblM1OptionBDesc" class="text-[11px] text-slate-300 leading-snug">
               ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ
             </p>
             <div class="grid grid-cols-2 gap-2">
               <button onclick="downloadJoycontrolPayload()" class="btn-active bg-cyan-600/30 hover:bg-cyan-600/40 border border-cyan-500/50 text-cyan-200 font-bold text-xs py-2 px-2.5 rounded-xl flex items-center justify-center gap-1.5">
-                <span>💻</span> <span>โหลด .bin + คำสั่งคอม</span>
+                <span>💻</span> <span id="btnM1DownloadJoycontrol">โหลด .bin + คำสั่งคอม</span>
               </button>
               <button onclick="copyJoycontrolCliCommand()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📋</span> <span>คัดลอกคำสั่งรัน</span>
+                <span>📋</span> <span id="btnM1CopyJoycontrol">คัดลอกคำสั่งรัน</span>
               </button>
             </div>
           </div>
@@ -615,9 +615,9 @@
           <div class="bg-slate-950 border border-emerald-500/30 rounded-2xl p-3 space-y-2.5">
             <div class="flex items-center justify-between">
               <span class="text-xs font-extrabold text-emerald-300 flex items-center gap-1.5">
-                <span>🪙</span> <span>2A. ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)</span>
+                <span>🪙</span> <span id="lblM2OptionATitle">2A. ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)</span>
               </span>
-              <span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">ใช้ได้ทุกมือถือ 100%</span>
+              <span id="lblM2OptionABadge" class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">ใช้ได้ทุกมือถือ 100%</span>
             </div>
 
             <!-- ภาพเวกเตอร์ตัวอย่าง เหรียญ NTAG215 กลม & การ์ดขาว PVC + จุดแตะมือถือ & จุดสแกนจอย Switch -->
@@ -625,7 +625,7 @@
               
               <!-- การ์ดภาพ 1: รูปร่างเหรียญกลม 25 มม. & การ์ด PVC ขาว -->
               <div class="bg-slate-900/90 rounded-xl p-2 border border-slate-800 flex flex-col items-center text-center">
-                <span class="text-[10px] text-slate-400 font-bold mb-1">หน้าตาเหรียญ / การ์ด NTAG215 เปล่า (หาซื้อง่าย ชิ้นละ ~10฿)</span>
+                <span id="svgCaptionCoin" class="text-[10px] text-slate-400 font-bold mb-1">หน้าตาเหรียญ / การ์ด NTAG215 เปล่า (หาซื้อง่าย ชิ้นละ ~10฿)</span>
                 <svg viewBox="0 0 280 120" class="w-full max-h-24 object-contain">
                   <defs>
                     <radialGradient id="ntagCoinGrad" cx="50%" cy="50%" r="50%">
@@ -646,7 +646,7 @@
                   <rect x="58" y="53" width="14" height="14" rx="2" fill="#1e293b"/>
                   <circle cx="65" cy="60" r="3" fill="#38bdf8"/>
                   <text x="65" y="90" font-size="7.5" font-family="sans-serif" font-weight="bold" fill="#0f172a" text-anchor="middle">NTAG215 COIN</text>
-                  <text x="65" y="100" font-size="6.5" font-family="sans-serif" fill="#64748b" text-anchor="middle">เหรียญกลม 25mm</text>
+                  <text id="svgCoinSub" x="65" y="100" font-size="6.5" font-family="sans-serif" fill="#64748b" text-anchor="middle">เหรียญกลม 25mm</text>
 
                   <!-- การ์ดขาว PVC เปล่า -->
                   <rect x="150" y="22" width="115" height="76" rx="6" fill="url(#ntagCardGrad)" stroke="#94a3b8" stroke-width="2"/>
@@ -655,14 +655,14 @@
                   <rect x="165" y="52" width="12" height="12" rx="2" fill="#1e293b"/>
                   <circle cx="171" cy="58" r="2.5" fill="#38bdf8"/>
                   <text x="210" y="55" font-size="8" font-family="sans-serif" font-weight="bold" fill="#0f172a">NTAG215 CARD</text>
-                  <text x="210" y="67" font-size="7" font-family="sans-serif" fill="#475569">การ์ดขาว PVC 504B</text>
+                  <text id="svgCardSub" x="210" y="67" font-size="7" font-family="sans-serif" fill="#475569">การ์ดขาว PVC 504B</text>
                   <text x="210" y="78" font-size="6" font-family="sans-serif" fill="#0284c7">ISO 14443-3A Tag</text>
                 </svg>
               </div>
 
               <!-- การ์ดภาพ 2: ขั้นตอนการแตะ (แตะมือถือเขียน ➔ แตะจอย Switch) -->
               <div class="bg-slate-900/90 rounded-xl p-2 border border-slate-800 flex flex-col items-center text-center">
-                <span class="text-[10px] text-slate-400 font-bold mb-1">ขั้นตอนการสแกนใช้งาน 2 สเต็ป</span>
+                <span id="svgCaptionSteps" class="text-[10px] text-slate-400 font-bold mb-1">ขั้นตอนการสแกนใช้งาน 2 สเต็ป</span>
                 <svg viewBox="0 0 280 120" class="w-full max-h-24 object-contain">
                   <!-- Step 1: แตะหลังมือถือเพื่อเขียนไฟล์ -->
                   <g>
@@ -675,7 +675,7 @@
                     <!-- เหรียญที่นำมาแตะหลังเครื่อง -->
                     <circle cx="70" cy="40" r="14" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
                     <text x="70" y="42" font-size="5" font-weight="bold" fill="#d97706" text-anchor="middle">NTAG</text>
-                    <text x="43" y="112" font-size="7" font-family="sans-serif" font-weight="bold" fill="#38bdf8" text-anchor="middle">1. มือถือแตะเหรียญ</text>
+                    <text id="svgStep1Label" x="43" y="112" font-size="7" font-family="sans-serif" font-weight="bold" fill="#38bdf8" text-anchor="middle">1. มือถือแตะเหรียญ</text>
                   </g>
 
                   <!-- ลูกศรชี้ขั้นตอนต่อไป -->
@@ -693,7 +693,7 @@
                     <!-- เหรียญ NTAG215 แตะทับบน R-Stick -->
                     <circle cx="218" cy="42" r="13" fill="#ffffff" stroke="#d97706" stroke-width="1.5" opacity="0.95"/>
                     <text x="218" y="44" font-size="5" font-weight="bold" fill="#d97706" text-anchor="middle">NTAG</text>
-                    <text x="193" y="112" font-size="7" font-family="sans-serif" font-weight="bold" fill="#4ade80" text-anchor="middle">2. แตะอนาล็อกขวา (R-Stick)</text>
+                    <text id="svgStep2Label" x="193" y="112" font-size="7" font-family="sans-serif" font-weight="bold" fill="#4ade80" text-anchor="middle">2. แตะอนาล็อกขวา (R-Stick)</text>
                   </g>
                 </svg>
               </div>
@@ -702,10 +702,10 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
               <button onclick="downloadCurrentBin()" class="btn-active bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-extrabold text-xs py-2 px-3 rounded-xl shadow flex items-center justify-center gap-1.5">
-                <span>💾</span> <span>ดาวน์โหลด .bin (540B สำหรับเขียนเหรียญ)</span>
+                <span>💾</span> <span id="btnM2DownloadBin">ดาวน์โหลด .bin (540B สำหรับเขียนเหรียญ)</span>
               </button>
               <button onclick="openNtagHelperModal()" class="btn-active bg-slate-800 hover:bg-slate-700 text-emerald-300 text-xs font-bold py-2 px-3 rounded-xl border border-emerald-500/40 flex items-center justify-center gap-1.5">
-                <span>📲</span> <span>แอปฟรีสำหรับเขียนเหรียญ (TagMo/NFC Tools)</span>
+                <span>📲</span> <span id="btnM2HelperModal">แอปฟรีสำหรับเขียนเหรียญ (TagMo/NFC Tools)</span>
               </button>
             </div>
           </div>
@@ -714,11 +714,11 @@
           <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 space-y-2">
             <div class="flex items-center justify-between">
               <div class="font-bold text-xs text-amber-300 flex items-center gap-1.5">
-                <span>📟</span> <span>2B. ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)</span>
+                <span>📟</span> <span id="lblM2OptionBTitle">2B. ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)</span>
               </div>
               <span class="text-[9px] bg-amber-500/20 text-amber-300 px-1.5 py-0.2 rounded font-mono font-bold">WIRELESS BLE</span>
             </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
+            <p id="lblM2OptionBDesc" class="text-[11px] text-slate-300 leading-snug">
               สำหรับผู้ที่มีเครื่องจำลอง OdimibO, Allmiibo หรือ Pixl.js เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องเพื่อนำไปแตะกับ Switch ได้ทันที
             </p>
             <div class="grid grid-cols-2 gap-2">
@@ -726,7 +726,7 @@
                 <span>📡</span> <span id="lblSendBle">ส่งเข้า OdimibO (BLE)</span>
               </button>
               <button onclick="switchTab('tabCatalog')" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold py-2 px-2.5 rounded-xl border border-slate-700 flex items-center justify-center gap-1">
-                <span>📦</span> <span>ส่งหมวดนี้เข้าเครื่อง</span>
+                <span>📦</span> <span id="btnM2BatchSend">ส่งหมวดนี้เข้าเครื่อง</span>
               </button>
             </div>
           </div>
@@ -739,7 +739,7 @@
             <span>🎲</span> <span id="lblRandomUid">สุ่ม UID ใหม่ (สแกนซ้ำได้)</span>
           </button>
           <button id="btnSelfTest" onclick="runDiagnosticSelfTest()" class="btn-active bg-teal-600/20 hover:bg-teal-600/30 text-teal-200 border border-teal-500/40 text-xs font-bold py-2 px-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow">
-            <span>🧪</span> <span>เช็ค 540B & ความพร้อม</span>
+            <span>🧪</span> <span id="btnSelfTestText">เช็ค 540B & ความพร้อม</span>
           </button>
         </div>
 
@@ -1150,7 +1150,7 @@
           <button id="btnClearLog" onclick="clearConsoleLog()" class="text-xs text-slate-400 hover:text-white">ล้าง Log</button>
         </div>
         <div id="logBox" class="bg-black/80 font-mono text-xs text-emerald-400 p-3 rounded-xl h-32 overflow-y-auto space-y-1 border border-slate-800">
-          <div>[System] โหลดคลัง 950 OdimibO (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อยแล้ว</div>
+          <div id="logBoxInitLine">[System] โหลดคลัง 950 OdimibO (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อยแล้ว</div>
         </div>
       </div>
 
@@ -1427,7 +1427,7 @@
       <div id="vipSupportSection" class="bg-gradient-to-br from-indigo-950/60 via-slate-900 to-pink-950/40 border border-pink-500/30 rounded-2xl p-3 space-y-2.5">
         <div class="flex items-center justify-between">
           <span id="vipSupportTitle" class="text-xs font-extrabold text-pink-300">💖 ร่วมโดเนทสนับสนุน & รับโค้ด VIP ไม่จำกัด</span>
-          <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full font-bold">PromptPay / TrueMoney</span>
+          <span id="vipPaymentBadge" class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full font-bold">PromptPay / TrueMoney</span>
         </div>
 
         <p id="vipSupportDesc" class="text-[11px] text-slate-300 leading-relaxed">
@@ -1438,25 +1438,35 @@
         <div class="grid grid-cols-3 gap-1.5 text-center">
           <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2">
             <div class="text-[10px] text-slate-400 font-bold" id="pkg7dLabel">ชั่วคราว 7 วัน</div>
-            <div class="text-sm font-black text-cyan-300 my-0.5">฿29</div>
+            <div class="text-sm font-black text-cyan-300 my-0.5" id="pkg7dPrice">฿29</div>
             <div class="text-[9px] text-emerald-400 font-bold">Unlimited 7D</div>
           </div>
           <div class="bg-slate-950/90 border border-indigo-500/50 rounded-xl p-2">
             <div class="text-[10px] text-indigo-300 font-bold" id="pkg30dLabel">รายเดือน 30 วัน</div>
-            <div class="text-sm font-black text-indigo-300 my-0.5">฿59</div>
+            <div class="text-sm font-black text-indigo-300 my-0.5" id="pkg30dPrice">฿59</div>
             <div class="text-[9px] text-emerald-400 font-bold">Unlimited 30D</div>
           </div>
           <div class="bg-amber-500/10 border border-amber-500/60 rounded-xl p-2 relative">
             <div class="text-[10px] text-amber-300 font-extrabold" id="pkgLifeLabel">🌟 ถาวร (คุ้มสุด)</div>
-            <div class="text-sm font-black text-amber-300 my-0.5">฿149</div>
+            <div class="text-sm font-black text-amber-300 my-0.5" id="pkgLifePrice">฿149</div>
             <div class="text-[9px] text-amber-200 font-bold">Lifetime VIP</div>
           </div>
         </div>
 
         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 text-[11px] text-slate-300 space-y-1">
-          <div class="font-bold text-emerald-300" id="vipDonateChannelTitle">📲 ช่องทางโดเนท / รับรหัสปลดล็อกอัตโนมัติ:</div>
-          <div id="vipDonateChannelDesc">• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส VIP ได้ทันที (แอดมินออกโค้ดให้ใน 1 นาที)</div>
+          <div class="font-bold text-emerald-300" id="vipDonateChannelTitle">📲 ช่องทางสนับสนุน / รับรหัส KeyGen:</div>
+          <div id="vipDonateChannelDesc">• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส KeyGen ปลดล็อกได้ทันที</div>
         </div>
+      </div>
+
+      <!-- Developer / Lab Info Box (US Embedded Systems Lab) -->
+      <div id="developerCreditBox" class="bg-slate-950 border border-slate-800 rounded-2xl p-2.5 text-center text-[10px] text-slate-400 space-y-1">
+        <div class="font-extrabold text-slate-300 flex items-center justify-center gap-1.5">
+          <span>🇺🇸</span> <span id="lblDevCreditTitle">OdimibO Hardware Labs • Seattle, WA & SF Bay Area</span>
+        </div>
+        <p id="lblDevCreditSub" class="text-slate-500 text-[9px] leading-tight">
+          Independent Embedded Systems & ISO 14443A NFC Research • Switch BLE GATT NUS Core v2.6.0
+        </p>
       </div>
 
       <div class="flex justify-end pt-1">
@@ -1476,8 +1486,8 @@
         <div class="flex items-center gap-2">
           <span class="text-xl">🧪</span>
           <div>
-            <h3 class="text-sm font-black text-purple-200">UAT Automated Test Suite (v2.6.0)</h3>
-            <p class="text-[10px] text-purple-300">ทดสอบฟังก์ชันสำคัญทั้งหมดก่อนสั่งขึ้นระบบจริง (Production)</p>
+            <h3 id="lblUatModalTitle" class="text-sm font-black text-purple-200">UAT Automated Test Suite (v2.6.0)</h3>
+            <p id="lblUatModalSub" class="text-[10px] text-purple-300">ทดสอบฟังก์ชันสำคัญทั้งหมดก่อนสั่งขึ้นระบบจริง (Production)</p>
           </div>
         </div>
         <button onclick="closeUatSuiteModal()" class="text-slate-400 hover:text-white font-bold text-lg px-2">✕</button>
@@ -1488,10 +1498,10 @@
       </div>
 
       <div class="pt-2 border-t border-purple-500/30 flex gap-2">
-        <button onclick="runAutomatedUatSuite()" class="btn-active flex-1 bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-xs py-2.5 rounded-xl shadow">
+        <button id="btnUatModalRetest" onclick="runAutomatedUatSuite()" class="btn-active flex-1 bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-xs py-2.5 rounded-xl shadow">
           🔄 รันตรวจซ้ำอีกครั้ง
         </button>
-        <button onclick="closeUatSuiteModal()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs py-2.5 px-4 rounded-xl border border-slate-700">
+        <button id="btnUatModalClose" onclick="closeUatSuiteModal()" class="btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs py-2.5 px-4 rounded-xl border border-slate-700">
           ปิด
         </button>
       </div>
@@ -1507,8 +1517,8 @@
         <div class="flex items-center gap-2">
           <span class="text-xl">🪙</span>
           <div>
-            <h3 class="text-sm font-black text-emerald-300">วิธีเลือกซื้อและเขียนเหรียญ NTAG215</h3>
-            <p class="text-[10px] text-slate-400">เหรียญ/การ์ดเปล่าใช้งานได้กับมือถือทุกรุ่น (iPhone & Android)</p>
+            <h3 id="lblNtagModalTitle" class="text-sm font-black text-emerald-300">วิธีเลือกซื้อและเขียนเหรียญ NTAG215</h3>
+            <p id="lblNtagModalSub" class="text-[10px] text-slate-400">เหรียญ/การ์ดเปล่าใช้งานได้กับมือถือทุกรุ่น (iPhone & Android)</p>
           </div>
         </div>
         <button onclick="closeNtagHelperModal()" class="text-slate-400 hover:text-white font-bold text-lg px-2">✕</button>
@@ -1516,33 +1526,33 @@
 
       <div class="space-y-2.5 text-xs text-slate-200">
         <div class="bg-amber-950/40 border border-amber-500/40 rounded-xl p-2.5 space-y-1">
-          <span class="font-bold text-amber-300">⚠️ ข้อสำคัญเวลาซื้อเหรียญ/การ์ด:</span>
-          <p class="text-[11px] text-slate-300 leading-relaxed">
+          <span id="lblNtagModalWarnTitle" class="font-bold text-amber-300">⚠️ ข้อสำคัญเวลาซื้อเหรียญ/การ์ด:</span>
+          <p id="lblNtagModalWarnDesc" class="text-[11px] text-slate-300 leading-relaxed">
             ต้องเลือกชิป <b>NTAG215 (504 Bytes)</b> เท่านั้น! <b>ห้ามซื้อ NTAG213 หรือ NTAG216 เด็ดขาด</b> เพราะ Nintendo Switch จะสแกนไม่ติดเลยครับ (เหรียญ NTAG215 มีขายทั่วไปใน Shopee / Lazada ราคาเพียงชิ้นละ 8-15 บาท)
           </p>
         </div>
 
         <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
-          <span class="font-bold text-cyan-300 block">📲 แอปฟรีบนมือถือสำหรับเขียนเหรียญ:</span>
+          <span id="lblNtagModalAppsTitle" class="font-bold text-cyan-300 block">📲 แอปฟรีบนมือถือสำหรับเขียนเหรียญ:</span>
           <div class="space-y-2 text-[11px]">
             <div class="border-b border-slate-800 pb-1.5">
-              <span class="font-bold text-emerald-400">1. สำหรับ Android: แอป TagMo (ฟรี & ดีที่สุด)</span>
-              <p class="text-slate-400">โหลดแอป TagMo (จาก Play Store หรือ GitHub) ➔ กด "Load Tag" เลือกไฟล์ <code>.bin</code> จากเว็บนี้ ➔ กด "Write Tag" แล้วเอาหลังมือถือแตะเหรียญ NTAG215 เปล่า เป็นอันเสร็จ!</p>
+              <span id="lblNtagModalApp1Title" class="font-bold text-emerald-400">1. สำหรับ Android: แอป TagMo (ฟรี & ดีที่สุด)</span>
+              <p id="lblNtagModalApp1Desc" class="text-slate-400">โหลดแอป TagMo (จาก Play Store หรือ GitHub) ➔ กด "Load Tag" เลือกไฟล์ <code>.bin</code> จากเว็บนี้ ➔ กด "Write Tag" แล้วเอาหลังมือถือแตะเหรียญ NTAG215 เปล่า เป็นอันเสร็จ!</p>
             </div>
             <div class="border-b border-slate-800 pb-1.5">
-              <span class="font-bold text-rose-400">2. สำหรับ iPhone: แอป AmiiBoss หรือ NFC Tools</span>
-              <p class="text-slate-400">โหลดแอป AmiiBoss หรือ NFC Tools จาก App Store ➔ เลือกไฟล์ <code>.bin</code> ➔ นำหัว iPhone ด้านบนแตะเหรียญ NTAG215</p>
+              <span id="lblNtagModalApp2Title" class="font-bold text-rose-400">2. สำหรับ iPhone: แอป AmiiBoss หรือ NFC Tools</span>
+              <p id="lblNtagModalApp2Desc" class="text-slate-400">โหลดแอป AmiiBoss หรือ NFC Tools จาก App Store ➔ เลือกไฟล์ <code>.bin</code> ➔ นำหัว iPhone ด้านบนแตะเหรียญ NTAG215</p>
             </div>
             <div>
-              <span class="font-bold text-purple-400">3. สแกนเข้าเกม:</span>
-              <p class="text-slate-400">นำเหรียญที่เขียนเสร็จแล้ว ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b> ของ Joy-Con หรือตรงกลางจอย Pro Controller เกมจะเด้งรับของรางวัลทันที!</p>
+              <span id="lblNtagModalApp3Title" class="font-bold text-purple-400">3. สแกนเข้าเกม:</span>
+              <p id="lblNtagModalApp3Desc" class="text-slate-400">นำเหรียญที่เขียนเสร็จแล้ว ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b> ของ Joy-Con หรือตรงกลางจอย Pro Controller เกมจะเด้งรับของรางวัลทันที!</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="pt-1">
-        <button onclick="closeNtagHelperModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs py-2.5 rounded-xl border border-slate-700">
+        <button id="btnNtagModalClose" onclick="closeNtagHelperModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs py-2.5 rounded-xl border border-slate-700">
           เข้าใจแล้ว ปิดหน้าต่าง
         </button>
       </div>
@@ -3868,12 +3878,77 @@
         pkg7dLabel: 'ชั่วคราว 7 วัน',
         pkg30dLabel: 'รายเดือน 30 วัน',
         pkgLifeLabel: '🌟 ถาวร (คุ้มสุด)',
+        vipPaymentBadge: 'PromptPay / TrueMoney',
+        pkg7dPrice: '฿29',
+        pkg30dPrice: '฿59',
+        pkgLifePrice: '฿149',
+        lblDevCreditTitle: 'OdimibO Hardware Labs • Seattle, WA & SF Bay Area',
+        lblDevCreditSub: 'วิจัยและพัฒนาฮาร์ดแวร์ระบบฝังตัวอิสระ • รองรับ ISO 14443A NFC & Switch BLE Core v2.6.0',
+        uatBannerTitle: '🧪 UAT SANDBOX (v2.6.0)',
         vipDonateChannelTitle: '📲 ช่องทางสนับสนุน / รับรหัส KeyGen:',
         vipDonateChannelDesc: '• <b>PromptPay / TrueMoney:</b> สแกนโดเนทแล้วทักแจ้งรับรหัส KeyGen ปลดล็อกได้ทันที',
-        btnCloseVipModal: 'ปิดหน้าต่าง'
+        btnCloseVipModal: 'ปิดหน้าต่าง',
+
+        // UAT Banner & Modal
+        btnUatRunSuite: '✅ รันตรวจ UAT',
+        lnkUatProd: '🌐 เว็บจริง ➔',
+        lblUatModalTitle: 'UAT Automated Test Suite (v2.6.0)',
+        lblUatModalSub: 'ทดสอบฟังก์ชันสำคัญทั้งหมดก่อนสั่งขึ้นระบบจริง (Production)',
+        btnUatModalRetest: '🔄 รันตรวจซ้ำอีกครั้ง',
+        btnUatModalClose: 'ปิด',
+
+        // 2 Main Methods Tabs
+        lblStep2Action: 'เลือกวิธีใช้งานกับ Nintendo Switch (2 แบบหลัก):',
+        tabBtnMethod1Title: 'แบบที่ 1: ไม่ใช้ตัวกลาง',
+        tabBtnMethod1Sub: 'มือถือ / โน้ตบุ๊กยิงเข้า Switch',
+        tabBtnMethod2Title: 'แบบที่ 2: ใช้ตัวกลาง NFC',
+        tabBtnMethod2Sub: 'เหรียญ NTAG215 / เครื่อง BLE',
+
+        // Method 1
+        lblM1OptionATitle: '1A. ใช้มือถือ Android ยิงเข้า Switch (JoyCon Droid)',
+        lblM1OptionADesc: 'กดโหลดไฟล์ <code>.bin</code> เข้ารหัสแท้ 540B ด้านล่างนี้ ➔ เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ เชื่อมต่อกับ Switch (หน้า Change Grip/Order) ➔ กดสแกนแล้วเลือกไฟล์นี้ได้ทันที!',
+        btnM1DownloadJoyCon: 'โหลด .bin (JoyCon Droid)',
+        btnM1GuideJoyCon: 'วิธีใช้ JoyCon Droid',
+        lblM1OptionBTitle: '1B. ใช้บนโน้ตบุ๊ก / PC ยิงเข้า Switch (joycontrol)',
+        lblM1OptionBDesc: 'ใช้ Bluetooth ของคอม/โน้ตบุ๊กจำลองเป็นจอย Switch Pro Controller ส่งสัญญาณ Amiibo เข้า Switch โดยไม่ต้องใช้เหรียญและไม่ต้องรูทมือถือ',
+        btnM1DownloadJoycontrol: 'โหลด .bin + คำสั่งคอม',
+        btnM1CopyJoycontrol: 'คัดลอกคำสั่งรัน',
+
+        // Method 2
+        lblM2OptionATitle: '2A. ใช้คู่กับเหรียญ / การ์ด NTAG215 เปล่า (แนะนำสำหรับทุกคน)',
+        lblM2OptionABadge: 'ใช้ได้ทุกมือถือ 100%',
+        svgCaptionCoin: 'หน้าตาเหรียญ / การ์ด NTAG215 เปล่า (หาซื้อง่าย ชิ้นละ ~10฿)',
+        svgCoinSub: 'เหรียญกลม 25mm',
+        svgCardSub: 'การ์ดขาว PVC 504B',
+        svgCaptionSteps: 'ขั้นตอนการสแกนใช้งาน 2 สเต็ป',
+        svgStep1Label: '1. มือถือแตะเหรียญ',
+        svgStep2Label: '2. แตะอนาล็อกขวา (R-Stick)',
+        btnM2DownloadBin: 'ดาวน์โหลด .bin (540B สำหรับเขียนเหรียญ)',
+        btnM2HelperModal: 'แอปฟรีสำหรับเขียนเหรียญ (TagMo/NFC Tools)',
+        lblM2OptionBTitle: '2B. ส่งเข้าเครื่องจำลองพกพา (Bluetooth BLE)',
+        lblM2OptionBDesc: 'สำหรับผู้ที่มีเครื่องจำลอง OdimibO, Allmiibo หรือ Pixl.js เชื่อมต่อ Bluetooth แล้วกดส่งตัวละครเข้าเครื่องเพื่อนำไปแตะกับ Switch ได้ทันที',
+        btnM2BatchSend: 'ส่งหมวดนี้เข้าเครื่อง',
+
+        // Self test & Console
+        btnSelfTestText: 'เช็ค 540B & ความพร้อม',
+        logBoxInitLine: '[System] โหลดคลัง 950 OdimibO (ครบปี 2026 + Fire Emblem ทุกภาค + Super Mario ทุกภาค) เรียบร้อย',
+
+        // NTAG Helper Modal
+        lblNtagModalTitle: 'วิธีเลือกซื้อและเขียนเหรียญ NTAG215',
+        lblNtagModalSub: 'เหรียญ/การ์ดเปล่าใช้งานได้กับมือถือทุกรุ่น (iPhone & Android)',
+        lblNtagModalWarnTitle: '⚠️ ข้อสำคัญเวลาซื้อเหรียญ/การ์ด:',
+        lblNtagModalWarnDesc: 'ต้องเลือกชิป <b>NTAG215 (504 Bytes)</b> เท่านั้น! <b>ห้ามซื้อ NTAG213 หรือ NTAG216 เด็ดขาด</b> เพราะ Nintendo Switch จะสแกนไม่ติดเลยครับ (เหรียญ NTAG215 มีขายทั่วไปใน Shopee / Lazada ราคาเพียงชิ้นละ 8-15 บาท)',
+        lblNtagModalAppsTitle: '📲 แอปฟรีบนมือถือสำหรับเขียนเหรียญ:',
+        lblNtagModalApp1Title: '1. สำหรับ Android: แอป TagMo (ฟรี & ดีที่สุด)',
+        lblNtagModalApp1Desc: 'โหลดแอป TagMo (จาก Play Store หรือ GitHub) ➔ กด "Load Tag" เลือกไฟล์ <code>.bin</code> จากเว็บนี้ ➔ กด "Write Tag" แล้วเอาหลังมือถือแตะเหรียญ NTAG215 เปล่า เป็นอันเสร็จ!',
+        lblNtagModalApp2Title: '2. สำหรับ iPhone: แอป AmiiBoss หรือ NFC Tools',
+        lblNtagModalApp2Desc: 'โหลดแอป AmiiBoss หรือ NFC Tools จาก App Store ➔ เลือกไฟล์ <code>.bin</code> ➔ นำหัว iPhone ด้านบนแตะเหรียญ NTAG215',
+        lblNtagModalApp3Title: '3. สแกนเข้าเกม:',
+        lblNtagModalApp3Desc: 'นำเหรียญที่เขียนเสร็จแล้ว ไปแตะที่ <b>แกนอนาล็อกขวา (R-Stick)</b> ของ Joy-Con หรือตรงกลางจอย Pro Controller เกมจะเด้งรับของรางวัลทันที!',
+        btnNtagModalClose: 'เข้าใจแล้ว ปิดหน้าต่าง'
       },
       en: {
-        topSubStatus: '950 OdimibO DB (2026 Ready • NTAG215 Smart Tag)',
+        topSubStatus: 'OdimibO Labs • Seattle & SF Bay Area • 950 Tag Library',
         cryptoWarn: '⚠️ Requires OdimibO BLE Device or NTAG215 Coin',
         vipUpgradeLink: '⚙️ Settings / Lang / Guide / KeyGen',
         lblSelectGameHeader: '🎮 Select Game Series & Title (OdimibO)',
@@ -3892,7 +3967,7 @@
         btnRockerOk: '● Select (OK)',
         btnRockerRight: 'Right (Next) ▶',
         lblInGameScanTitle: '📍 How to Scan in This Game:',
-        lblStep2Action: '⚡ 2. Send to OdimibO or Download File',
+        lblStep2Action: 'Select Usage Method for Nintendo Switch (2 Main Options):',
         lblRandomUid: 'Randomize UID (Rescan)',
         lblSendBle: 'Send to OdimibO (BLE)',
         lblBtnLoadKey: '🔑 Enter KeyGen',
@@ -3908,7 +3983,7 @@
         btnClearSavedKey: 'Clear',
         lblBleProtocolTitle: '📡 Select Bluetooth Transfer Mode (BLE Protocol)',
         btnClearLog: 'Clear Log',
-        legalDisclaimerBox: '🛡️ <b>OdimibO</b> is an independent Bluetooth BLE & NTAG215 hardware management utility. It is not affiliated with or endorsed by any console manufacturer.',
+        legalDisclaimerBox: '🛡️ <b>OdimibO Web Suite</b> • Built with ❤️ by independent embedded hardware engineers in Seattle, WA & San Francisco, CA. Open-source ISO 14443-3A NTAG215 & Bluetooth HID research utility. Not affiliated with, endorsed, or sponsored by Nintendo Co., Ltd.',
         navLblDevice: 'OdimibO & Switch',
         navLblCatalog: '950 OdimibO DB',
         navLblManual: 'Step-by-Step Guide',
@@ -3941,14 +4016,79 @@
         lblAdminHistoryTitle: '📜 Recently Generated Codes:',
         btnAdminClearHistory: 'Clear History',
         lblAdminQuotaCfg: 'Configure Daily Free Quota (Uses/Day):',
-        vipSupportTitle: '💖 Support OdimibO & Unlock Unlimited KeyGen',
-        vipSupportDesc: 'Free tier includes <b>' + dailyFreeLimit + ' uses/day</b> (resets daily). Support the OdimibO project to receive a KeyGen code for <b>unlimited</b> access:',
+        vipSupportTitle: '💖 Sponsor Independent Hardware Engineering & Unlock KeyGen',
+        vipSupportDesc: 'Free tier includes <b>' + dailyFreeLimit + ' uses/day</b> (resets daily at 00:00 UTC / 4PM PST). Unlock <b>unlimited high-speed access</b> by supporting our open-source hardware & reverse engineering research:',
         pkg7dLabel: '7-Day Pass',
         pkg30dLabel: '30-Day Pass',
         pkgLifeLabel: '🌟 Lifetime VIP',
-        vipDonateChannelTitle: '📲 How to Support & Get Your KeyGen Code:',
-        vipDonateChannelDesc: '• <b>PromptPay / TrueMoney:</b> Scan to support the project and receive your KeyGen unlock code.',
-        btnCloseVipModal: 'Close Window'
+        vipPaymentBadge: 'Stripe • PayPal • Apple Pay • Ko-fi',
+        pkg7dPrice: '$0.99',
+        pkg30dPrice: '$1.99',
+        pkgLifePrice: '$4.99',
+        lblDevCreditTitle: 'OdimibO Hardware Labs • Seattle, WA & SF Bay Area',
+        lblDevCreditSub: 'Independent Embedded Systems & ISO 14443A NFC Research • Switch BLE GATT NUS Core v2.6.0',
+        uatBannerTitle: '🧪 UAT SANDBOX (Staging Build v2.6.0)',
+        vipDonateChannelTitle: '📲 Sponsor Channels & Instant KeyGen Delivery:',
+        vipDonateChannelDesc: '• <b>PayPal / Stripe / Apple Pay / Ko-fi:</b> Automated instant key delivery via checkout or Discord community bot.',
+        btnCloseVipModal: 'Close Window',
+
+        // UAT Banner & Modal
+        btnUatRunSuite: '✅ Run UAT Suite',
+        lnkUatProd: '🌐 Live App ➔',
+        lblUatModalTitle: 'UAT Automated Test Suite (v2.6.0)',
+        lblUatModalSub: 'Validate all critical features before deploying to Production',
+        btnUatModalRetest: '🔄 Run Test Suite Again',
+        btnUatModalClose: 'Close',
+
+        // 2 Main Methods Tabs
+        lblStep2Action: 'Select Usage Method for Nintendo Switch (2 Main Options):',
+        tabBtnMethod1Title: 'Method 1: Direct to Switch',
+        tabBtnMethod1Sub: 'Direct from Phone / PC Laptop',
+        tabBtnMethod2Title: 'Method 2: Use NFC Hardware',
+        tabBtnMethod2Sub: 'NTAG215 Coin / Card or BLE Device',
+
+        // Method 1
+        lblM1OptionATitle: '1A. Direct to Switch via Android Phone (JoyCon Droid)',
+        lblM1OptionADesc: 'Download genuine encrypted 540B <code>.bin</code> file below ➔ Open <b>JoyCon Droid</b> app on phone ➔ Pair with Switch (Change Grip/Order screen) ➔ Tap scan and select this file!',
+        btnM1DownloadJoyCon: 'Download .bin (JoyCon Droid)',
+        btnM1GuideJoyCon: 'JoyCon Droid Guide',
+        lblM1OptionBTitle: '1B. Direct to Switch via Laptop / PC (joycontrol)',
+        lblM1OptionBDesc: 'Emulate a Switch Pro Controller over Bluetooth on Linux/WSL2/PC to send Amiibo signals directly without extra hardware or root.',
+        btnM1DownloadJoycontrol: 'Download .bin + CLI',
+        btnM1CopyJoycontrol: 'Copy CLI Command',
+
+        // Method 2
+        lblM2OptionATitle: '2A. Write to Blank NTAG215 Coin / Card (Recommended)',
+        lblM2OptionABadge: 'Works on All Phones 100%',
+        svgCaptionCoin: 'NTAG215 Coin & PVC Card Standard (~$0.30/ea on Amazon/eBay)',
+        svgCoinSub: 'Round 25mm Coin',
+        svgCardSub: 'White PVC Card 504B',
+        svgCaptionSteps: '2-Step Scanning Workflow',
+        svgStep1Label: '1. Phone writes to coin',
+        svgStep2Label: '2. Tap Right Analog (R-Stick)',
+        btnM2DownloadBin: 'Download .bin (540B for NFC Coin)',
+        btnM2HelperModal: 'Free NFC Writing Apps (TagMo/NFC Tools)',
+        lblM2OptionBTitle: '2B. Send to Portable BLE Hardware (OdimibO)',
+        lblM2OptionBDesc: 'For users with an OdimibO, Allmiibo, or Pixl.js hardware device. Connect via Bluetooth and transmit profiles directly without writing tags.',
+        btnM2BatchSend: 'Send Category to BLE',
+
+        // Self test & Console
+        btnSelfTestText: 'Self-Test 540B & Readiness',
+        logBoxInitLine: '[System] OdimibO Embedded Web Suite v2.6.0 initialized • Seattle Labs build • 950 tag matrix loaded (2026 Ready)',
+
+        // NTAG Helper Modal
+        lblNtagModalTitle: 'How to Choose & Write NTAG215 Tags',
+        lblNtagModalSub: 'Blank coins/cards work on all mobile phones (iPhone & Android)',
+        lblNtagModalWarnTitle: '⚠️ Critical Buying Advice:',
+        lblNtagModalWarnDesc: 'Must choose <b>NTAG215 (504 Bytes)</b> chip only! <b>Never purchase NTAG213 or NTAG216</b> as Nintendo Switch will reject them. (NTAG215 coin tags and white cards are widely sold on Amazon, eBay, and AliExpress for ~$0.30 - $0.50 each).',
+        lblNtagModalAppsTitle: '📲 Free Mobile Apps for Writing NFC Tags:',
+        lblNtagModalApp1Title: '1. For Android: TagMo App (Free & Best)',
+        lblNtagModalApp1Desc: 'Install TagMo (Play Store or GitHub) ➔ Tap "Load Tag" and select the <code>.bin</code> file from this site ➔ Tap "Write Tag" and touch your blank NTAG215 coin to the back of your phone!',
+        lblNtagModalApp2Title: '2. For iPhone: AmiiBoss or NFC Tools App',
+        lblNtagModalApp2Desc: 'Install AmiiBoss or NFC Tools from the App Store ➔ Choose the <code>.bin</code> file ➔ Hold the top edge of your iPhone against the NTAG215 coin.',
+        lblNtagModalApp3Title: '3. Scan into Game:',
+        lblNtagModalApp3Desc: 'Hold the written coin directly over the <b>Right Analog Stick (R-Stick)</b> of your Joy-Con or center of Pro Controller. Rewards unlock immediately!',
+        btnNtagModalClose: 'Got it, Close'
       }
     };
 
@@ -4635,7 +4775,38 @@
         'lblAdminVerifyTitle', 'btnAdminVerifyCode', 'lblAdminHistoryTitle',
         'btnAdminClearHistory', 'lblAdminQuotaCfg',
         'vipSupportTitle', 'pkg7dLabel', 'pkg30dLabel', 'pkgLifeLabel',
-        'vipDonateChannelTitle', 'btnCloseVipModal'
+        'vipDonateChannelTitle', 'btnCloseVipModal',
+
+        // UAT Banner & Modal
+        'btnUatRunSuite', 'lnkUatProd', 'lblUatModalTitle', 'lblUatModalSub',
+        'btnUatModalRetest', 'btnUatModalClose',
+
+        // 2 Main Methods Tabs
+        'tabBtnMethod1Title', 'tabBtnMethod1Sub',
+        'tabBtnMethod2Title', 'tabBtnMethod2Sub',
+
+        // Method 1
+        'lblM1OptionATitle', 'btnM1DownloadJoyCon', 'btnM1GuideJoyCon',
+        'lblM1OptionBTitle', 'btnM1DownloadJoycontrol', 'btnM1CopyJoycontrol',
+
+        // Method 2
+        'lblM2OptionATitle', 'lblM2OptionABadge',
+        'svgCaptionCoin', 'svgCoinSub', 'svgCardSub',
+        'svgCaptionSteps', 'svgStep1Label', 'svgStep2Label',
+        'btnM2DownloadBin', 'btnM2HelperModal',
+        'lblM2OptionBTitle', 'btnM2BatchSend',
+
+        // Self-test button & Console
+        'btnSelfTestText',
+
+        // NTAG Helper Modal
+        'lblNtagModalTitle', 'lblNtagModalSub', 'lblNtagModalWarnTitle',
+        'lblNtagModalAppsTitle', 'lblNtagModalApp1Title',
+        'lblNtagModalApp2Title', 'lblNtagModalApp3Title', 'btnNtagModalClose',
+
+        // US Developer Credits & Pricing Currency
+        'vipPaymentBadge', 'pkg7dPrice', 'pkg30dPrice', 'pkgLifePrice',
+        'lblDevCreditTitle', 'lblDevCreditSub', 'uatBannerTitle'
       ];
       textKeys.forEach(k => setTxt(k, t[k]));
 
@@ -4645,6 +4816,21 @@
       setHtml('lblLicenseHint', t.lblLicenseHint);
       setHtml('vipDonateChannelDesc', t.vipDonateChannelDesc);
 
+      // Method 1 & 2 HTML content descriptions
+      setHtml('lblM1OptionADesc', t.lblM1OptionADesc);
+      setHtml('lblM1OptionBDesc', t.lblM1OptionBDesc);
+      setHtml('lblM2OptionBDesc', t.lblM2OptionBDesc);
+
+      // NTAG Helper Modal HTML descriptions
+      setHtml('lblNtagModalWarnDesc', t.lblNtagModalWarnDesc);
+      setHtml('lblNtagModalApp1Desc', t.lblNtagModalApp1Desc);
+      setHtml('lblNtagModalApp2Desc', t.lblNtagModalApp2Desc);
+      setHtml('lblNtagModalApp3Desc', t.lblNtagModalApp3Desc);
+
+      // Initial console log line translation
+      const logInit = document.getElementById('logBoxInitLine');
+      if (logInit && t.logBoxInitLine) logInit.textContent = t.logBoxInitLine;
+
       const qInput = document.getElementById('quickSearchInput');
       if (qInput) qInput.placeholder = t.quickSearchPlaceholder;
       const cInput = document.getElementById('searchInput');
@@ -4652,7 +4838,7 @@
       const licInput = document.getElementById('licenseKeyInput');
       if (licInput) licInput.placeholder = t.licenseKeyPlaceholder;
 
-      // รีเรนเดอร์ Dropdown, การ์ดตัวละคร, จอ OLED และสถานะ Key ให้เปลี่ยนภาษาทันที 100%
+      // รีเรนเดอร์ Dropdown, การ์ดตัวละคร, จอ OLED, สถานะปุ่มโปรด และสถานะ Key ให้เปลี่ยนภาษาทันที 100%
       updateKeyStatusUI(!!(retailKeyBytes && retailKeyBytes.length === 160));
       updateQuotaBadgeUI();
       if (typeof renderSeriesMainSelects === 'function') renderSeriesMainSelects();
@@ -4663,6 +4849,8 @@
       if (typeof renderOLED === 'function') renderOLED();
       if (typeof renderVipModalContent === 'function') renderVipModalContent();
       if (typeof renderThemeButtons === 'function') renderThemeButtons();
+      if (typeof detectUserDeviceForMethod1 === 'function') detectUserDeviceForMethod1();
+      if (typeof updateActiveFavBtn === 'function') updateActiveFavBtn();
     }
 
     function toggleLanguage() {
