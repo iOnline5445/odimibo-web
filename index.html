@@ -510,6 +510,44 @@
       <!-- ========================================================
            SCREEN 1 (#wizardStepView1): เลือกวิธีใช้งานกับ Nintendo Switch
            ======================================================== -->
+      
+      <!-- ========================================================
+           🔑 ขั้นตอนที่ 0: ตั้งค่ากุญแจ Nintendo Retail Key (key_retail.bin) — มาตรฐาน TagMo (BYOK)
+           ======================================================== -->
+      <div id="homeKeyGatewayCard" class="bg-gradient-to-r from-amber-950/30 via-slate-900 to-indigo-950/30 border border-amber-500/50 rounded-2xl p-3.5 space-y-2.5 shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2 min-w-0">
+            <span id="homeKeyStatusIcon" class="text-2xl flex-shrink-0">🔑</span>
+            <div class="min-w-0">
+              <h3 id="homeKeyStatusTitle" class="text-xs font-black text-amber-300 truncate">
+                ขั้นตอนที่ 0: กุญแจเข้ารหัสแท้ (key_retail.bin 160 ไบต์)
+              </h3>
+              <p id="homeKeyStatusSub" class="text-[10px] text-slate-300 truncate">
+                มาตรฐานความปลอดภัย Nintendo Switch (ทำครั้งแรกครั้งเดียว จำในเบราว์เซอร์ตลอดชีพ)
+              </p>
+            </div>
+          </div>
+          <span id="homeKeyBadge" class="text-[10px] font-bold px-2 py-0.5 rounded-full border flex-shrink-0 bg-rose-500/20 text-rose-300 border-rose-500/40">
+            🔴 ยังไม่มีกุญแจ
+          </span>
+        </div>
+
+        <div id="homeKeyDesc" class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/80 p-2.5 rounded-xl border border-slate-800">
+          Nintendo Switch บังคับตรวจลายเซ็น <b>HMAC-SHA256</b> หากไม่มีกุญแจ Switch จะขึ้น <i>"This isn't an amiibo."</i> (ระบบเดียวกับที่ใช้ในแอป <b>TagMo</b>)<br>
+          นำไฟล์ <code>key_retail.bin</code> (160 ไบต์) ของคุณมาแตะใส่ที่นี่ ข้อมูลจะถูกเก็บในเบราว์เซอร์ของคุณอย่างปลอดภัย ไม่มีการส่งข้อมูลขึ้นเซิร์ฟเวอร์
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 pt-0.5">
+          <label class="btn-active cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs py-2 px-3 rounded-xl shadow flex items-center gap-1.5">
+            <span>📂</span> <span id="homeKeyUploadBtnText">เลือกไฟล์ key_retail.bin (160 ไบต์)</span>
+            <input type="file" id="homeKeyFileInput" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
+          </label>
+          <button id="homeKeyClearBtn" onclick="clearSavedRetailKey()" class="hidden btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-2 px-3 rounded-xl border border-slate-700">
+            ล้างค่ากุญแจ
+          </button>
+        </div>
+      </div>
+
       <section id="wizardStepView1" class="wizard-step-pane space-y-3" aria-labelledby="lblStep1MethodHeader">
         <!-- ========================================================
            ⚡ ขั้นตอนที่ 1: เลือกวิธีใช้งานกับ Nintendo Switch (Select Usage Method First)
@@ -691,6 +729,35 @@
            ======================================================== -->
       <section id="wizardStepView3" class="wizard-step-pane hidden space-y-3" aria-labelledby="lblStep3ActionHeader">
         
+        <!-- บัตรสรุปตัวละคร Amiibo ที่เลือก (Selected Character Card) -->
+      <div id="characterPreviewCard" class="bg-gradient-to-br from-slate-900 to-slate-950 border border-indigo-500/30 rounded-2xl p-3.5 space-y-3 shadow-xl">
+        <div class="flex items-center gap-3">
+          <img id="cardCharImg" src="odimibo-logo.svg" alt="Amiibo" class="w-16 h-16 object-contain rounded-xl bg-slate-800/80 p-1 border border-slate-700 shadow flex-shrink-0">
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span id="cardCharSeries" class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-bold">Series</span>
+              <span id="cardCharId" class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded font-mono">ID: 00000000-00000000</span>
+            </div>
+            <h3 id="cardCharName" class="text-sm font-extrabold text-white truncate mt-1">ชื่อตัวละคร</h3>
+            <p id="cardCharGame" class="text-[11px] text-slate-300 truncate">เกมที่รองรับ</p>
+          </div>
+        </div>
+        
+        <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80 text-[11px] space-y-1">
+          <div class="font-bold text-amber-300 flex items-center gap-1">
+            <span>🎁</span> <span>ของรางวัลเมื่อนำไปสแกนในเกม (In-Game Rewards):</span>
+          </div>
+          <p id="cardCharRewards" class="text-slate-300 leading-relaxed text-[10.5px]">ของรางวัลในเกม...</p>
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] pt-1 border-t border-slate-800">
+          <span class="text-slate-400 font-bold">สถานะความพร้อมของไฟล์:</span>
+          <span id="cardCryptoStatus" class="font-bold text-rose-400">🔴 ยังไม่เข้ารหัส (ต้องแนบ key_retail.bin ในขั้นที่ 0)</span>
+        </div>
+      </div>
+
+      <!-- ซ่อนตัวจำลองจอ OLED และปุ่มโยกเพื่อรักษา DOM IDs สำหรับ BLE และสคริปต์ -->
+      <div id="hiddenOledPreservation" class="hidden">
         <!-- OdimibO Device Body Simulation -->
       <div class="relative pt-2">
         
@@ -760,7 +827,9 @@
         </div>
       </div>
 
-      <!-- ========================================================
+      
+      </div>
+<!-- ========================================================
            📟 แนะนำวิธีใช้จอ & ขั้นตอนต่อไปหลังจากเลือกตัวละคร (OLED & Next Steps Helper)
            ======================================================== -->
       <div id="afterSelectionHelperBox" class="bg-gradient-to-br from-indigo-950/60 via-slate-900 to-slate-950 border border-indigo-500/30 rounded-2xl p-3.5 space-y-2.5 shadow-lg">
@@ -1138,19 +1207,30 @@
               </a>
             </div>
 
-            <!-- กล่องสรุปวิธีตั้งค่าในแอปแบบ Step-by-Step -->
-            <div class="bg-slate-900/90 rounded-xl p-2.5 border border-slate-800 space-y-1.5 text-[11px] text-slate-200">
-              <div class="font-extrabold text-indigo-300 flex items-center gap-1">
-                <span>⚙️</span> <span id="lblJoyConSetupTitle">วิธีตั้งค่าแอป JoyCon Droid อย่างละเอียด:</span>
+            <!-- กล่องสรุปวิธีตั้งค่าในแอปแบบ Step-by-Step ที่ตรงกับแอปจริง 100% -->
+            <div class="bg-slate-900/90 rounded-xl p-3 border border-indigo-500/40 space-y-2 text-[11px] text-slate-200">
+              <div class="font-extrabold text-indigo-300 flex items-center gap-1.5">
+                <span>⚙️</span> <span id="lblJoyConSetupTitle">วิธีนำไฟล์ .bin ไปใส่ใน JoyCon Droid (ถูกต้องตามแอปจริง 100%):</span>
               </div>
-              <ol class="list-decimal list-inside space-y-1 text-slate-300 leading-relaxed text-[10.5px]">
-                <li>เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ ไปที่ <b>Settings (ฟันเฟือง)</b></li>
-                <li>ตรงหัวข้อ <b>Controller Type</b> ให้เลือกเป็น <b>Right Joy-Con</b> หรือ <b>Pro Controller</b> <i>(ต้องเลือกจอยขวาหรือ Pro Controller เท่านั้น เพราะจอยซ้ายไม่มีเสาอากาศ NFC!)</i></li>
-                <li>เลื่อนลงมาติ๊กเปิด <b>"Enable NFC"</b> หรือ <b>"NFC Emulation"</b></li>
-                <li>เปิดเครื่อง Nintendo Switch ➔ หน้าโฮมเลือก <b>Controllers ➔ Change Grip/Order</b></li>
-                <li>บนมือถือกดเลือกจอย ➔ กดยืนยัน <b>"Pair" (จับคู่)</b> เมื่อไฟ Player 1 ติด แสดงว่าเชื่อมต่อสำเร็จ</li>
-                <li>ในเกมบน Switch เมื่อเข้าจุดสแกน ➔ ในแอป JoyCon Droid แตะไอคอน <b>NFC / Amiibo</b> แล้วเลือกไฟล์ <code>.bin</code> ที่โหลดจากเว็บนี้ สัญญาณจะส่งเข้าเครื่องทันที!</li>
+              <ol class="list-decimal list-inside space-y-1.5 text-slate-300 leading-relaxed text-[11px]">
+                <li>เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ แตะเมนูสามขีด (<b>☰</b>) ด้านบนซ้าย ➔ เข้า <b>Settings (ฟันเฟือง)</b></li>
+                <li>เลื่อนลงมาเปิด <b>"Enable NFC (Experimental..)"</b> ให้เป็นสีฟ้า</li>
+                <li>แตะที่ <b>"NFC Binary Path"</b> ➔ เลือกไฟล์ <code>.bin</code> (ที่ดาวน์โหลดจากเว็บนี้)</li>
+                <li>กดย้อนกลับมาหน้าหลักของแอป ➔ แตะเลือก <b>Right JoyCon (จอยขวา)</b> หรือ Pro Controller</li>
+                <li>บนเครื่อง Nintendo Switch ➔ เมนูโฮมเข้า <b>Controllers ➔ Change Grip/Order</b> ➔ บนมือถือกดยืนยัน <b>"Pair" (จับคู่บลูทูธ)</b> จนไฟ Player 1 ติด</li>
+                <li>เปิดเกมบน Switch เข้าสู่จุดสแกน Amiibo ในเกม ➔ Switch จะอ่านข้อมูล Amiibo ที่คุณตั้งไว้ใน <code>NFC Binary Path</code> ทันที ของรางวัลจะเด้งเข้าเกม!</li>
               </ol>
+
+              <!-- กล่องแก้ปัญหาเมื่อขึ้น This isn't an amiibo -->
+              <div class="bg-rose-950/40 border border-rose-500/50 p-2.5 rounded-lg space-y-1 text-[10.5px] text-rose-200 mt-2">
+                <div class="font-bold flex items-center gap-1 text-rose-300">
+                  <span>🚨</span> <span>ถ้าเครื่อง Switch ขึ้น "This isn't an amiibo." แก้ไขอย่างไร?</span>
+                </div>
+                <ul class="list-disc list-inside space-y-0.5 text-slate-300">
+                  <li><b>สาเหตุที่ 1:</b> ไฟล์ .bin ยังไม่ได้เข้ารหัส ➔ ให้ตรวจสอบว่าคุณได้เลือกไฟล์ <b>key_retail.bin (160 ไบต์) ในขั้นตอนที่ 0</b> ด้านบนสุดของเว็บก่อนดาวน์โหลดหรือไม่</li>
+                  <li><b>สาเหตุที่ 2:</b> ไปเปิดหน้า System Settings ➔ amiibo ➔ "Enter Owner and Nickname" ➔ หน้านี้ Switch จะตรวจเข้มงวดมาก <b>ต้องนำไปสแกนในตัวเกมจริง (เช่น Zelda, Mario, Smash Bros) เท่านั้น</b></li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -1318,6 +1398,17 @@
           </div>
 
           <div class="space-y-2.5 text-xs">
+            <!-- Step 0 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-amber-500/40 flex gap-3 items-start">
+              <span class="bg-amber-600 text-slate-950 font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 0</span>
+              <div class="space-y-1">
+                <div class="font-bold text-amber-300">แนบกุญแจ Nintendo Retail Key ครั้งแรกครั้งเดียว (TagMo BYOK)</div>
+                <p class="text-slate-300 leading-relaxed">
+                  นำไฟล์ <code>key_retail.bin</code> (160 ไบต์) ของคุณมาแตะแนบที่ <b>ขั้นตอนที่ 0</b> บนหน้าแรก เพื่อให้ระบบคำนวณลายเซ็น HMAC-SHA256 แท้ของ Nintendo Switch (ระบบจะจำไว้ในเบราว์เซอร์เครื่องนี้ตลอดชีพ ไม่มีการส่งข้อมูลออกนอกเครื่อง) ปลดล็อกให้ดาวน์โหลดไฟล์แท้ได้ครบทั้ง 950 ตัว
+                </p>
+              </div>
+            </div>
+
             <!-- Step 1 -->
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
               <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">ขั้นที่ 1</span>
@@ -1394,16 +1485,22 @@
                 <div class="bg-amber-950/40 border border-amber-500/50 p-2 rounded text-[10.5px] text-amber-200 leading-relaxed">
                   ⚠️ <b>ข้อจำกัดจริงของระบบ Android:</b> มือถือรุ่นใหม่ที่ใช้ Android 12, 13, 14, 15 ขึ้นไป มักจะจับคู่บลูทูธกับ Nintendo Switch ไม่ผ่าน เนื่องจากข้อจำกัดของระบบปฏิบัติการ หากมือถือของคุณเชื่อมต่อไม่ติด แนะนำให้ใช้ <b>แนวทางที่ 2 (เหรียญ NTAG215)</b> จะแน่นอนและเสถียรที่สุด 100% ครับ
                 </div>
-                <div class="text-indigo-400 font-bold pt-0.5">📝 ขั้นตอนการตั้งค่าและเชื่อมต่ออย่างละเอียด:</div>
+                <div class="text-indigo-400 font-bold pt-0.5">📝 ขั้นตอนการตั้งค่าและเชื่อมต่อที่ถูกต้อง (อิงตามหน้าจอจริงของ JoyCon Droid):</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300 text-[11px]">
-                  <li>บนเว็บ เลือกตัวละครที่ต้องการ ➔ ในขั้นตอนที่ 3 กดปุ่ม <b>"💾 โหลด .bin (JoyCon Droid)"</b></li>
-                  <li>ติดตั้งและเปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ ไปที่ <b>Settings (ฟันเฟือง)</b></li>
-                  <li>ตรงหัวข้อ <b>Controller Type</b> ให้เลือกเป็น <b>Right Joy-Con</b> หรือ <b>Pro Controller</b> <i>(สำคัญมาก: ห้ามเลือก Left Joy-Con เพราะจอยซ้ายไม่มีเสาอากาศ NFC!)</i></li>
-                  <li>เลื่อนลงมาติ๊กเปิด <b>"Enable NFC"</b> หรือ <b>"NFC Emulation"</b></li>
-                  <li>เปิดเครื่อง Switch ➔ หน้าโฮมเลือก <b>Controllers ➔ Change Grip/Order</b></li>
-                  <li>บนมือถือกดเลือกจอย ➔ กดยืนยัน <b>"Pair" (จับคู่)</b> เมื่อไฟ Player 1 ติด แสดงว่าเชื่อมต่อสำเร็จ</li>
-                  <li>ในเกมบน Switch เมื่อเข้าจุดสแกน ➔ ในแอป JoyCon Droid แตะไอคอน <b>NFC / Amiibo</b> แล้วเลือกไฟล์ <code>.bin</code> ที่โหลดจากเว็บนี้ สัญญาณจะส่งเข้าเครื่องทันที!</li>
+                  <li>บนเว็บนี้ แนบกุญแจใน <b>ขั้นที่ 0</b> ➔ เลือกตัวละครใน <b>ขั้นที่ 2</b> ➔ กดปุ่ม <b>"💾 โหลด .bin (JoyCon Droid)"</b> ในขั้นที่ 3</li>
+                  <li>เปิดแอป <b>JoyCon Droid</b> บนมือถือ ➔ แตะเมนูสามขีด (<b>☰</b>) มุมบนซ้าย ➔ เข้า <b>Settings (การตั้งค่า)</b></li>
+                  <li>เลื่อนไปที่หัวข้อ NFC ➔ ติ๊กเปิด <b>"Enable NFC (Experimental..)"</b></li>
+                  <li>แตะที่ <b>"NFC Binary Path"</b> ➔ เลือกไฟล์ <code>[JoyConDroid]_...bin</code> ที่เพิ่งดาวน์โหลดมาจากเว็บ</li>
+                  <li>กดย้อนกลับมาหน้าแรกของแอป ➔ แตะเลือก <b>Right JoyCon (จอยขวา)</b> <i>(สำคัญมาก: ห้ามเลือก Left Joy-Con เพราะจอยซ้ายไม่มีเสาอากาศ NFC!)</i></li>
+                  <li>เปิด Switch ไปที่หน้าโฮม ➔ <b>Controllers ➔ Change Grip/Order</b> ➔ กดยืนยัน <b>"Pair"</b> เมื่อไฟ Player 1 ติด ให้เข้าเกมแล้วเปิดโหมดสแกน Amiibo ของรางวัลจะเข้าเกมทันที!</li>
                 </ol>
+                <div class="bg-slate-950/80 p-2.5 rounded-lg border border-rose-500/40 text-[10.5px] text-rose-200 space-y-1">
+                  <span class="font-bold text-rose-300">🔍 หาก Switch ขึ้นเตือนว่า "This isn't an amiibo.":</span>
+                  <p class="text-slate-300 leading-relaxed">
+                    <b>สาเหตุที่ 1:</b> ยังไม่ได้แนบไฟล์ <code>key_retail.bin</code> ในขั้นตอนที่ 0 ทำให้ไฟล์ที่โหลดไปไม่มีลายเซ็น HMAC แท้ Switch จึงตรวจไม่ผ่าน<br>
+                    <b>สาเหตุที่ 2:</b> คุณนำไปแตะในหน้า <i>System Settings ➔ amiibo ➔ Register Owner and Nickname</i> ซึ่งจุดนี้จะเขียนข้อมูลลงชิปจริง หากต้องการรับไอเทมต้องเปิดสแกน <b>"ข้างในเกมที่รองรับ"</b> (เช่น Zelda, Smash Bros, Animal Crossing) ครับ
+                  </p>
+                </div>
               </div>
 
               <!-- 1B: คอมพิวเตอร์ joycontrol -->
@@ -1571,6 +1668,17 @@
           </div>
 
           <div class="space-y-2.5 text-xs">
+            <!-- Step 0 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-amber-500/40 flex gap-3 items-start">
+              <span class="bg-amber-600 text-slate-950 font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 0</span>
+              <div class="space-y-1">
+                <div class="font-bold text-amber-300">One-Time Setup: Nintendo Retail Key (TagMo BYOK Model)</div>
+                <p class="text-slate-300 leading-relaxed">
+                  Attach your <code>key_retail.bin</code> (160 Bytes) in <b>Step 0</b> on the Home tab. The browser computes authentic HMAC-SHA256 signatures locally and saves the key in your browser for life, enabling full Switch compatibility for all 950 Amiibo.
+                </p>
+              </div>
+            </div>
+
             <!-- Step 1 -->
             <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex gap-3 items-start">
               <span class="bg-indigo-600 text-white font-black px-2.5 py-1 rounded-lg flex-shrink-0">Step 1</span>
@@ -1647,16 +1755,22 @@
                 <div class="bg-amber-950/40 border border-amber-500/50 p-2 rounded text-[10.5px] text-amber-200 leading-relaxed">
                   ⚠️ <b>Android OS Bluetooth Limitation:</b> Newer Android devices (running Android 12, 13, 14, or 15) frequently fail to pair with the Nintendo Switch due to operating system restrictions on Bluetooth HID. If your phone cannot pair, <b>we strongly recommend Method 2 (NTAG215 Coin)</b> as the most dependable and painless alternative.
                 </div>
-                <div class="text-indigo-400 font-bold pt-0.5">📝 Step-by-Step Setup & Connection:</div>
+                <div class="text-indigo-400 font-bold pt-0.5">📝 Correct Step-by-Step Setup (Matching Real JoyCon Droid UI):</div>
                 <ol class="list-decimal list-inside space-y-1 text-slate-300 text-[11px]">
-                  <li>On this web app, pick your desired character ➔ in Step 3, tap <b>"💾 Download .bin (JoyCon Droid)"</b>.</li>
-                  <li>Install and open <b>JoyCon Droid</b> on your phone ➔ go to <b>Settings</b>.</li>
-                  <li>Under <b>Controller Type</b>, select <b>Right Joy-Con</b> or <b>Pro Controller</b> <i>(Important: Never select Left Joy-Con because it lacks NFC antenna!)</i>.</li>
-                  <li>Check the box to enable <b>"NFC Emulation"</b> or <b>"Enable NFC"</b>.</li>
-                  <li>On Nintendo Switch, navigate to the Home screen ➔ select <b>Controllers ➔ Change Grip/Order</b>.</li>
-                  <li>On your phone, tap the controller to connect ➔ accept the <b>Bluetooth Pairing Request</b>. Once Player 1 LED lights up, pairing is complete.</li>
-                  <li>In your Switch game at the scan screen ➔ In JoyCon Droid, tap the <b>NFC / Amiibo</b> icon ➔ choose the downloaded <code>.bin</code> file. Rewards unlock immediately!</li>
+                  <li>On this web app: Attach key in <b>Step 0</b> ➔ Select character in <b>Step 2</b> ➔ Tap <b>"💾 Download .bin (JoyCon Droid)"</b> in Step 3.</li>
+                  <li>Open <b>JoyCon Droid</b> on your phone ➔ tap top-left menu (<b>☰</b>) ➔ tap <b>Settings</b>.</li>
+                  <li>Scroll to NFC section ➔ toggle ON <b>"Enable NFC (Experimental..)"</b>.</li>
+                  <li>Tap <b>"NFC Binary Path"</b> ➔ select the downloaded <code>[JoyConDroid]_...bin</code> file.</li>
+                  <li>Return to JoyCon Droid main screen ➔ tap <b>Right JoyCon</b> <i>(Important: Never select Left Joy-Con because it lacks NFC antenna!)</i>.</li>
+                  <li>On Nintendo Switch: open <b>Controllers ➔ Change Grip/Order</b> ➔ accept Bluetooth pairing ➔ enter your game's Amiibo scan prompt to receive rewards!</li>
                 </ol>
+                <div class="bg-slate-950/80 p-2.5 rounded-lg border border-rose-500/40 text-[10.5px] text-rose-200 space-y-1">
+                  <span class="font-bold text-rose-300">🔍 If Switch displays "This isn't an amiibo.":</span>
+                  <p class="text-slate-300 leading-relaxed">
+                    <b>Cause 1:</b> <code>key_retail.bin</code> was not uploaded in Step 0, resulting in unencrypted dummy HMAC signatures rejected by the Switch.<br>
+                    <b>Cause 2:</b> You scanned inside <i>System Settings ➔ amiibo ➔ Register Owner and Nickname</i> (which requires physical rewritable tags). To unlock in-game rewards, scan directly <b>inside supported games</b> (e.g. Zelda: Tears of the Kingdom, Smash Bros).
+                  </p>
+                </div>
               </div>
 
               <!-- 1B: Computer joycontrol -->
@@ -2558,6 +2672,24 @@
     async function downloadForJoyConDroid() {
       if (!consumeQuotaOrPrompt()) return;
       triggerHaptic();
+
+      if (!retailKeyBytes || retailKeyBytes.length !== 160) {
+        const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+        const proceed = confirm(isEn
+          ? '⚠️ "key_retail.bin" is missing!\nNintendo Switch checks HMAC signatures and will reject this file with "This isn\'t an amiibo."\n\nClick OK to upload key_retail.bin in Step 0 (recommended), or Cancel to download an unencrypted dummy file anyway.'
+          : '⚠️ ยังไม่ได้ใส่กุญแจ "key_retail.bin" (160 ไบต์) ในขั้นตอนที่ 0!\nNintendo Switch บังคับตรวจลายเซ็นเข้ารหัส หากไม่มี Switch จะขึ้นว่า "This isn\'t an amiibo."\n\nกด "ตกลง (OK)" เพื่อไปแนบกุญแจในขั้นตอนที่ 0 ด้านบน (แนะนำ) หรือ "ยกเลิก (Cancel)" หากต้องการดาวน์โหลดไฟล์จำลองต่อไป');
+        if (proceed) {
+          switchTab('tabDevice');
+          const card = document.getElementById('homeKeyGatewayCard');
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.add('ring-4', 'ring-amber-400');
+            setTimeout(() => card.classList.remove('ring-4', 'ring-amber-400'), 2500);
+          }
+          return;
+        }
+      }
+
       await rebuildActiveTagBinary();
       const safeName = (activeTag?.name || 'OdimibO').replace(/[^a-zA-Z0-9_\u0E00-\u0E7F]/g, '_');
       const filename = `[JoyConDroid]_${safeName}.bin`;
@@ -2814,11 +2946,15 @@
             retailKeyBytes = new Uint8Array(160);
             for (let i = 0; i < 160; i++) retailKeyBytes[i] = binStr.charCodeAt(i);
             updateKeyStatusUI(true);
+            updateRetailKeyUI(true);
             log('[Crypto] โหลด key_retail.bin (160B) จากหน่วยความจำสำเร็จ! พร้อมเข้ารหัส AES-128-CTR & HMAC-SHA256', 'rx');
           }
+        } else {
+          updateRetailKeyUI(false);
         }
       } catch (e) {
         console.warn('Failed to load saved retail key:', e);
+        updateRetailKeyUI(false);
       }
     }
 
@@ -2827,11 +2963,27 @@
       if (!file) return;
 
       const buf = await file.arrayBuffer();
-      const bytes = new Uint8Array(buf);
+      let bytes = new Uint8Array(buf);
 
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
       if (bytes.length !== 160) {
-        alert(`ขนาดไฟล์ไม่ถูกต้อง! ไฟล์ key_retail.bin ต้องมีขนาด 160 ไบต์พอดี (ไฟล์ที่เลือกมีขนาด ${bytes.length} ไบต์)`);
+        alert(isEn
+          ? `Invalid file size! key_retail.bin must be exactly 160 bytes (selected file is ${bytes.length} bytes).`
+          : `ขนาดไฟล์ไม่ถูกต้อง! ไฟล์ key_retail.bin ต้องมีขนาด 160 ไบต์พอดี (ไฟล์ที่เลือกมีขนาด ${bytes.length} ไบต์)`);
         return;
+      }
+
+      // ตรวจสอบและสลับลำดับกุญแจอัตโนมัติหากไฟล์ถูกจัดเรียงสลับครึ่ง (มาตรฐาน TagMo)
+      let str1 = '';
+      for (let i = 16; i < 29; i++) str1 += String.fromCharCode(bytes[i]);
+      let str2 = '';
+      for (let i = 96; i < 108; i++) str2 += String.fromCharCode(bytes[i]);
+      if (str1.includes('locked') || str2.includes('unfixed')) {
+        const swapped = new Uint8Array(160);
+        swapped.set(bytes.subarray(80, 160), 0);
+        swapped.set(bytes.subarray(0, 80), 80);
+        bytes = swapped;
+        console.log('[Crypto] Detected reversed key halves; automatically swapped for standard order.');
       }
 
       retailKeyBytes = bytes;
@@ -2840,17 +2992,79 @@
       localStorage.setItem('odimibo_key_retail_b64', btoa(binStr));
 
       updateKeyStatusUI(true);
+      updateRetailKeyUI(true);
       await rebuildActiveTagBinary();
-      showToast('🔑 บันทึก key_retail.bin สำเร็จ! ไฟล์ .bin เข้ารหัสแท้ 100%');
-      log('[Crypto] อัปโหลด key_retail.bin (160B) สำเร็จ! เข้ารหัสแท็กปัจจุบันด้วย AES-128-CTR + HMAC-SHA256 แล้ว', 'rx');
+      showToast(isEn ? '🔑 key_retail.bin saved! 100% genuine retail encryption active.' : '🔑 บันทึก key_retail.bin สำเร็จ! ไฟล์ .bin เข้ารหัสแท้ 100%');
+      log('[Crypto] โหลด key_retail.bin (160B) สำเร็จ! เข้ารหัสแท็กปัจจุบันด้วย AES-128-CTR + HMAC-SHA256 แล้ว', 'rx');
     }
 
     function clearSavedRetailKey() {
       localStorage.removeItem('odimibo_key_retail_b64');
       retailKeyBytes = null;
       updateKeyStatusUI(false);
+      updateRetailKeyUI(false);
       rebuildActiveTagBinary();
-      showToast('ล้างค่า key_retail.bin แล้ว');
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      showToast(isEn ? 'Cleared saved key_retail.bin' : 'ล้างค่า key_retail.bin แล้ว');
+    }
+
+    function updateRetailKeyUI(hasKey) {
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      
+      const card = document.getElementById('homeKeyGatewayCard');
+      const icon = document.getElementById('homeKeyStatusIcon');
+      const title = document.getElementById('homeKeyStatusTitle');
+      const sub = document.getElementById('homeKeyStatusSub');
+      const badge = document.getElementById('homeKeyBadge');
+      const clearBtn = document.getElementById('homeKeyClearBtn');
+      const uploadBtnText = document.getElementById('homeKeyUploadBtnText');
+
+      if (card && icon && title && sub && badge) {
+        if (hasKey) {
+          card.className = "bg-gradient-to-r from-emerald-950/40 via-slate-900 to-teal-950/30 border border-emerald-500/50 rounded-2xl p-3.5 space-y-2.5 shadow-lg transition-all duration-300";
+          icon.textContent = '✅';
+          title.textContent = isEn
+            ? 'Step 0: Nintendo Retail Key Active & Ready'
+            : 'ขั้นตอนที่ 0: กุญแจเข้ารหัส Nintendo พร้อมใช้งานแล้ว';
+          title.className = 'text-xs font-black text-emerald-400 truncate';
+          sub.textContent = isEn
+            ? 'Key securely saved in browser. All 950 Amiibo can now be signed & exported.'
+            : 'ระบบจำกุญแจในเบราว์เซอร์นี้แล้ว สามารถดาวน์โหลดไฟล์แท้ได้ครบทุก 950 ตัว';
+          badge.textContent = isEn ? '🟢 Ready' : '🟢 กุญแจพร้อมใช้งาน';
+          badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full border flex-shrink-0 bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
+          if (clearBtn) clearBtn.classList.remove('hidden');
+          if (uploadBtnText) uploadBtnText.textContent = isEn ? 'Change key_retail.bin' : 'เปลี่ยนไฟล์ key_retail.bin';
+        } else {
+          card.className = "bg-gradient-to-r from-amber-950/30 via-slate-900 to-indigo-950/30 border border-amber-500/50 rounded-2xl p-3.5 space-y-2.5 shadow-lg transition-all duration-300";
+          icon.textContent = '🔑';
+          title.textContent = isEn
+            ? 'Step 0: Nintendo Retail Key (key_retail.bin 160 Bytes)'
+            : 'ขั้นตอนที่ 0: กุญแจเข้ารหัสแท้ (key_retail.bin 160 ไบต์)';
+          title.className = 'text-xs font-black text-amber-300 truncate';
+          sub.textContent = isEn
+            ? 'Required by Nintendo Switch (One-time setup, saved in local browser)'
+            : 'มาตรฐานความปลอดภัย Nintendo Switch (ทำครั้งแรกครั้งเดียว จำในเบราว์เซอร์ตลอดชีพ)';
+          badge.textContent = isEn ? '🔴 Missing Key' : '🔴 ยังไม่มีกุญแจ';
+          badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full border flex-shrink-0 bg-rose-500/20 text-rose-300 border-rose-500/40';
+          if (clearBtn) clearBtn.classList.add('hidden');
+          if (uploadBtnText) uploadBtnText.textContent = isEn ? 'Select key_retail.bin (160 Bytes)' : 'เลือกไฟล์ key_retail.bin (160 ไบต์)';
+        }
+      }
+
+      const cryptoStatus = document.getElementById('cardCryptoStatus');
+      if (cryptoStatus) {
+        if (hasKey) {
+          cryptoStatus.textContent = isEn
+            ? '🟢 Fully Signed & Encrypted (Ready for Switch)'
+            : '🟢 เข้ารหัสแท้ (540B พร้อมสแกนเข้า Switch)';
+          cryptoStatus.className = 'font-bold text-emerald-400';
+        } else {
+          cryptoStatus.textContent = isEn
+            ? '🔴 Not Signed (Requires key_retail.bin in Step 0)'
+            : '🔴 ยังไม่ได้เข้ารหัส (ต้องใส่ key ในขั้นที่ 0)';
+          cryptoStatus.className = 'font-bold text-rose-400';
+        }
+      }
     }
 
     function updateKeyStatusUI(hasKey) {
@@ -3032,7 +3246,7 @@
     async function deriveAmiiboKeys(master80, intl) {
       const hmacKey = master80.subarray(0, 16);
       const typeString = master80.subarray(16, 30); // 14B
-      const magicBytesSize = master80[31];
+      const magicBytesSize = Math.min(16, master80[31]);
       const magicBytes = master80.subarray(32, 32 + magicBytesSize);
       const xorPad = master80.subarray(48, 80); // 32B
 
@@ -3093,7 +3307,25 @@
         const dataKeys = await deriveAmiiboKeys(dataMaster, intl);
         const tagKeys  = await deriveAmiiboKeys(tagMaster, intl);
 
-        // 1. AES-128-CTR Encrypt 392 bytes (intl[0x02C..0x1B3])
+        // ลำดับต้องตรงกับ amiitool nfc3d_amiibo_pack: เซ็น HMAC บน "ข้อมูลดิบ (plaintext)" ก่อน แล้วค่อยเข้ารหัส
+        // 1. Tag HMAC-SHA256 over plain intl[0x1D4..0x207] (52 bytes) -> intl[0x1B4..0x1D3]
+        const tagHmacKeyObj = await crypto.subtle.importKey(
+          'raw', tagKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+        );
+        const tagHmac = new Uint8Array(await crypto.subtle.sign(
+          'HMAC', tagHmacKeyObj, intl.subarray(0x1D4, 0x208)
+        ));
+        intl.set(tagHmac, 0x1B4);
+
+        // 2. Data HMAC-SHA256 over plain intl[0x029..0x207] (รวม Tag HMAC ที่เพิ่งใส่) -> intl[0x008..0x027]
+        const dataHmacKeyObj = await crypto.subtle.importKey(
+          'raw', dataKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+        );
+        const dataHmac = new Uint8Array(await crypto.subtle.sign(
+          'HMAC', dataHmacKeyObj, intl.subarray(0x029, 0x208)
+        ));
+
+        // 3. AES-128-CTR Encrypt 392 bytes (intl[0x02C..0x1B3]) หลังเซ็นเสร็จแล้ว
         const aesKeyObj = await crypto.subtle.importKey(
           'raw', dataKeys.aesKey, { name: 'AES-CTR' }, false, ['encrypt']
         );
@@ -3103,23 +3335,6 @@
           intl.subarray(0x02C, 0x1B4)
         ));
         intl.set(encryptedPayload, 0x02C);
-
-        // 2. Compute Tag HMAC-SHA256 over intl[0x1D4..0x207] (52 bytes) -> store at intl[0x1B4..0x1D3]
-        const tagHmacKeyObj = await crypto.subtle.importKey(
-          'raw', tagKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
-        );
-        const tagHmac = new Uint8Array(await crypto.subtle.sign(
-          'HMAC', tagHmacKeyObj, intl.subarray(0x1D4, 0x208)
-        ));
-        intl.set(tagHmac, 0x1B4);
-
-        // 3. Compute Data HMAC-SHA256 over intl[0x029..0x207] (479 bytes) -> store at intl[0x008..0x027]
-        const dataHmacKeyObj = await crypto.subtle.importKey(
-          'raw', dataKeys.hmacKey, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
-        );
-        const dataHmac = new Uint8Array(await crypto.subtle.sign(
-          'HMAC', dataHmacKeyObj, intl.subarray(0x029, 0x208)
-        ));
         intl.set(dataHmac, 0x008);
 
         const finalTag = internalToTag(intl, baseTag);
@@ -3206,6 +3421,38 @@
           </div>
         `;
         footerText.textContent = isEn ? 'Press OK to exit' : 'กด OK เพื่อออก';
+      }
+
+      // อัปเดตข้อมูลบน Character Preview Card (บัตรสรุปตัวละคร Amiibo หน้าแรก)
+      const cardImg = document.getElementById('cardCharImg');
+      const cardSeries = document.getElementById('cardCharSeries');
+      const cardId = document.getElementById('cardCharId');
+      const cardName = document.getElementById('cardCharName');
+      const cardGame = document.getElementById('cardCharGame');
+      const cardRewards = document.getElementById('cardCharRewards');
+      const cardCryptoStatus = document.getElementById('cardCryptoStatus');
+
+      if (cardImg && activeTag) {
+        if (activeTag.image) cardImg.src = activeTag.image;
+        if (cardSeries) cardSeries.textContent = activeTag.gameBadge || activeTag.cat || 'Amiibo';
+        if (cardId) cardId.textContent = `ID: ${activeTag.head || '00000000'}-${activeTag.tail || '00000000'}`;
+        if (cardName) cardName.textContent = isEn ? (activeTag.name || 'OdimibO').split(' - ')[0] : (activeTag.name || 'OdimibO');
+        if (cardGame) cardGame.textContent = activeTag.game || '';
+        if (cardRewards) cardRewards.textContent = activeTag.rewards || (isEn ? 'Standard In-Game Rewards' : 'ของรางวัลมาตรฐานในเกม');
+      }
+      if (cardCryptoStatus) {
+        const hasKey = !!(retailKeyBytes && retailKeyBytes.length === 160);
+        if (hasKey || activeTag?.isEncrypted) {
+          cardCryptoStatus.textContent = isEn
+            ? '🟢 Fully Signed & Encrypted (Ready for Switch)'
+            : '🟢 เข้ารหัสแท้ (540B พร้อมสแกนเข้า Switch)';
+          cardCryptoStatus.className = 'font-bold text-emerald-400';
+        } else {
+          cardCryptoStatus.textContent = isEn
+            ? '🔴 Not Signed (Requires key_retail.bin in Step 0)'
+            : '🔴 ยังไม่ได้เข้ารหัส (ต้องใส่ key ในขั้นที่ 0)';
+          cardCryptoStatus.className = 'font-bold text-rose-400';
+        }
       }
     }
 
@@ -4124,12 +4371,29 @@
     async function downloadCurrentBin() {
       triggerHaptic();
       if (!consumeQuotaOrPrompt()) return;
+
+      if (!retailKeyBytes || retailKeyBytes.length !== 160) {
+        const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+        const proceed = confirm(isEn
+          ? '⚠️ "key_retail.bin" is missing!\nNintendo Switch will reject this file with "This isn\'t an amiibo."\n\nClick OK to upload key_retail.bin in Step 0, or Cancel to continue anyway.'
+          : '⚠️ ยังไม่ได้ใส่กุญแจ "key_retail.bin" ในขั้นตอนที่ 0!\nSwitch จะแจ้ง "This isn\'t an amiibo." หากไม่มีกุญแจนี้\n\nกด "ตกลง (OK)" เพื่อไปแนบกุญแจที่ขั้นตอนที่ 0 หรือ "ยกเลิก (Cancel)" เพื่อดาวน์โหลดต่อ');
+        if (proceed) {
+          switchTab('tabDevice');
+          const card = document.getElementById('homeKeyGatewayCard');
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.add('ring-4', 'ring-amber-400');
+            setTimeout(() => card.classList.remove('ring-4', 'ring-amber-400'), 2500);
+          }
+          return;
+        }
+      }
+
       await rebuildActiveTagBinary();
       downloadFile(activeTag.rawBytes, `${activeTag.name.replace(/[^a-zA-Z0-9_-]/g, '_')}.bin`);
       showToast(`💾 ดาวน์โหลดไฟล์ .bin (540 ไบต์) สำเร็จ`);
     }
 
-    // สร้างไฟล์ amiibo.json ตามมาตรฐาน XorTroll/emuiibo (รองรับ use_random_uuid: true สแกนซ้ำไม่จำกัด)
     async function downloadCurrentEmuiiboJson() {
       triggerHaptic();
       if (!consumeQuotaOrPrompt()) return;
@@ -5913,6 +6177,7 @@
 
       // รีเรนเดอร์ Dropdown, การ์ดตัวละคร, จอ OLED, สถานะปุ่มโปรด และสถานะ Key ให้เปลี่ยนภาษาทันที 100%
       updateKeyStatusUI(!!(retailKeyBytes && retailKeyBytes.length === 160));
+      updateRetailKeyUI(!!(retailKeyBytes && retailKeyBytes.length === 160));
       updateQuotaBadgeUI();
       if (typeof renderSeriesMainSelects === 'function') renderSeriesMainSelects();
       if (typeof populateSubGameSelects === 'function') populateSubGameSelects(currentSeries, currentSubGame);
