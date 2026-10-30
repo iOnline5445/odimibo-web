@@ -542,6 +542,9 @@
             <span>📂</span> <span id="homeKeyUploadBtnText">เลือกไฟล์ key_retail.bin (160 ไบต์)</span>
             <input type="file" id="homeKeyFileInput" accept=".bin" class="hidden" onchange="handleKeyFileUpload(event)">
           </label>
+          <button type="button" onclick="promptPasteKeyRetail()" class="btn-active bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs py-2 px-3 rounded-xl border border-amber-500/40 flex items-center gap-1">
+            <span>📋</span> <span id="homeKeyPasteBtnText">วางรหัสกุญแจ (Paste Key)</span>
+          </button>
           <button id="homeKeyClearBtn" onclick="clearSavedRetailKey()" class="hidden btn-active bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-2 px-3 rounded-xl border border-slate-700">
             ล้างค่ากุญแจ
           </button>
@@ -2996,6 +2999,51 @@
       await rebuildActiveTagBinary();
       showToast(isEn ? '🔑 key_retail.bin saved! 100% genuine retail encryption active.' : '🔑 บันทึก key_retail.bin สำเร็จ! ไฟล์ .bin เข้ารหัสแท้ 100%');
       log('[Crypto] โหลด key_retail.bin (160B) สำเร็จ! เข้ารหัสแท็กปัจจุบันด้วย AES-128-CTR + HMAC-SHA256 แล้ว', 'rx');
+    }
+
+    async function promptPasteKeyRetail() {
+      triggerHaptic();
+      const isEn = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      const input = prompt(isEn
+        ? "Paste your key_retail.bin Base64 code below:"
+        : "วางรหัสข้อความ (Base64) ของ key_retail.bin ในช่องด้านล่างนี้:");
+      if (!input) return;
+
+      const clean = input.trim();
+      try {
+        const binStr = atob(clean);
+        if (binStr.length !== 160) {
+          alert(isEn
+            ? `Invalid key length! Expected 160 bytes, got ${binStr.length} bytes.`
+            : `ความยาวรหัสไม่ถูกต้อง! ต้องได้ขนาด 160 ไบต์พอดี (รหัสที่วางได้ ${binStr.length} ไบต์)`);
+          return;
+        }
+        let bytes = new Uint8Array(160);
+        for (let i = 0; i < 160; i++) bytes[i] = binStr.charCodeAt(i);
+
+        let str1 = '';
+        for (let i = 16; i < 29; i++) str1 += String.fromCharCode(bytes[i]);
+        let str2 = '';
+        for (let i = 96; i < 108; i++) str2 += String.fromCharCode(bytes[i]);
+        if (str1.includes('locked') || str2.includes('unfixed')) {
+          const swapped = new Uint8Array(160);
+          swapped.set(bytes.subarray(80, 160), 0);
+          swapped.set(bytes.subarray(0, 80), 80);
+          bytes = swapped;
+        }
+
+        retailKeyBytes = bytes;
+        let finalBinStr = '';
+        for (let i = 0; i < 160; i++) finalBinStr += String.fromCharCode(bytes[i]);
+        localStorage.setItem('odimibo_key_retail_b64', btoa(finalBinStr));
+
+        updateKeyStatusUI(true);
+        updateRetailKeyUI(true);
+        await rebuildActiveTagBinary();
+        showToast(isEn ? '🔑 Key saved successfully!' : '🔑 บันทึกรหัสกุญแจสำเร็จ 100%!');
+      } catch (e) {
+        alert(isEn ? 'Invalid Base64 format!' : 'รูปแบบรหัสไม่ถูกต้อง (ต้องเป็น Base64)');
+      }
     }
 
     function clearSavedRetailKey() {
